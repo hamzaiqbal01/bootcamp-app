@@ -1,11 +1,48 @@
 "use client";
 
 import type { FormEvent } from "react";
+import { useState } from "react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { SHEETDB_CONTACT_API_URL } from "@/lib/external-links";
+
+type SubmitState = "idle" | "submitting" | "success" | "error";
 
 export function ContactSection() {
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  const [state, setState] = useState<SubmitState>("idle");
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    const form = e.currentTarget;
+    const fd = new FormData(form);
+
+    const Name = String(fd.get("Name") ?? "").trim();
+    const Email = String(fd.get("Email") ?? "").trim();
+    const Subject = String(fd.get("Subject") ?? "").trim();
+    const Message = String(fd.get("Message") ?? "").trim();
+
+    setState("submitting");
+
+    try {
+      const res = await fetch(SHEETDB_CONTACT_API_URL, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          data: [{ Name, Email, Subject, Message }],
+        }),
+      });
+
+      if (!res.ok) {
+        throw new Error(`SheetDB responded with ${res.status}`);
+      }
+
+      setState("success");
+      form.reset();
+    } catch {
+      setState("error");
+    }
   }
 
   return (
@@ -22,86 +59,82 @@ export function ContactSection() {
             onSubmit={handleSubmit}
             className="space-y-6 rounded-2xl border border-slate-200 bg-slate-50/50 p-8 shadow-sm"
           >
-            <div className="grid gap-6 sm:grid-cols-2">
-              <div>
-                <label htmlFor="firstName" className="block text-sm font-medium text-slate-700">
-                  First Name
-                </label>
-                <input
-                  id="firstName"
-                  name="firstName"
-                  type="text"
-                  placeholder="John"
-                  required
-                  className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none ring-brand-500/0 transition focus:border-brand-500 focus:ring-4 focus:ring-brand-500/15"
-                />
-              </div>
-              <div>
-                <label htmlFor="lastName" className="block text-sm font-medium text-slate-700">
-                  Last Name
-                </label>
-                <input
-                  id="lastName"
-                  name="lastName"
-                  type="text"
-                  placeholder="Doe"
-                  required
-                  className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-500/15"
-                />
-              </div>
+            <div>
+              <label htmlFor="contact-name" className="block text-sm font-medium text-slate-700">
+                Name
+              </label>
+              <input
+                id="contact-name"
+                name="Name"
+                type="text"
+                autoComplete="name"
+                placeholder="Your full name"
+                required
+                disabled={state === "submitting"}
+                className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none ring-brand-500/0 transition focus:border-brand-500 focus:ring-4 focus:ring-brand-500/15 disabled:opacity-60"
+              />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-slate-700">
+              <label htmlFor="contact-email" className="block text-sm font-medium text-slate-700">
                 Email
               </label>
               <input
-                id="email"
-                name="email"
+                id="contact-email"
+                name="Email"
                 type="email"
-                placeholder="john@example.com"
+                autoComplete="email"
+                placeholder="you@example.com"
                 required
-                className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-500/15"
+                disabled={state === "submitting"}
+                className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-500/15 disabled:opacity-60"
               />
             </div>
             <div>
-              <label htmlFor="subject" className="block text-sm font-medium text-slate-700">
+              <label htmlFor="contact-subject" className="block text-sm font-medium text-slate-700">
                 Subject
               </label>
-              <select
-                id="subject"
-                name="subject"
+              <input
+                id="contact-subject"
+                name="Subject"
+                type="text"
+                placeholder="What is this regarding?"
                 required
-                defaultValue=""
-                className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-500/15"
-              >
-                <option value="" disabled>
-                  Select a topic
-                </option>
-                <option>Application Services</option>
-                <option>Tutoring Services</option>
-                <option>Pricing Information</option>
-                <option>Schedule a Consultation</option>
-                <option>Other</option>
-              </select>
+                disabled={state === "submitting"}
+                className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-500/15 disabled:opacity-60"
+              />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-slate-700">
+              <label htmlFor="contact-message" className="block text-sm font-medium text-slate-700">
                 Message
               </label>
               <textarea
-                id="message"
-                name="message"
+                id="contact-message"
+                name="Message"
                 rows={4}
-                placeholder="Tell us about your goals..."
+                placeholder="Your message..."
                 required
-                className="mt-2 w-full resize-y rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-500/15"
+                disabled={state === "submitting"}
+                className="mt-2 w-full resize-y rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-500/15 disabled:opacity-60"
               />
             </div>
+
+            {state === "success" && (
+              <p className="text-sm font-medium text-emerald-700" role="status">
+                Thanks — your message was sent. We&apos;ll get back to you soon.
+              </p>
+            )}
+            {state === "error" && (
+              <p className="text-sm font-medium text-red-600" role="alert">
+                Something went wrong. Please try again in a moment.
+              </p>
+            )}
+
             <button
               type="submit"
-              className="w-full rounded-xl bg-brand-600 py-3.5 text-base font-semibold text-white transition hover:bg-brand-700 sm:w-auto sm:px-10"
+              disabled={state === "submitting"}
+              className="w-full rounded-xl bg-brand-600 py-3.5 text-base font-semibold text-white transition hover:bg-brand-700 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto sm:px-10"
             >
-              Send Message
+              {state === "submitting" ? "Sending…" : "Send Message"}
             </button>
           </form>
 

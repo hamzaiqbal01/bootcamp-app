@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { ADMISSION_SERVICES_TYPEFORM } from "@/lib/external-links";
+import Link from "next/link";
 
 const PAGE_GRID =
   "relative mx-auto grid w-full max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[minmax(0,1.12fr)_minmax(300px,460px)] lg:items-center lg:gap-x-16 lg:gap-y-12 lg:px-8";
@@ -29,14 +29,12 @@ export function Hero() {
             get accepted, and launch your dental career with confidence.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <a
-              href={ADMISSION_SERVICES_TYPEFORM}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/schedule"
               className="inline-flex items-center justify-center rounded-xl bg-brand-600 px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-indigo-500/20 transition hover:bg-brand-700"
             >
-              Schedule Free Consultation
-            </a>
+              Schedule a free call
+            </Link>
             <a
               href="#experts"
               className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-8 py-3.5 text-base font-semibold text-slate-900 shadow-sm transition hover:border-slate-300 hover:bg-slate-50"

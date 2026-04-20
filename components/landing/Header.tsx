@@ -63,7 +63,7 @@ export function Header() {
           </div>
           <div className="ml-8 flex items-center gap-2 xl:ml-10 xl:gap-3">
             <Link href="/schedule" className={`nav-link btn btn-outline ${btnOutline}`}>
-              Schedule a Free Consult
+              Schedule a free call
             </Link>
             <Link href="/contact" className={`nav-link btn btn-primary ${btnPrimary}`}>
               Contact Us
@@ -122,7 +122,7 @@ export function Header() {
                 className={`nav-link btn btn-outline ${btnOutline} px-3 py-3 text-center`}
                 onClick={() => setOpen(false)}
               >
-                Schedule a Free Consult
+                Schedule a free call
               </Link>
               <Link
                 href="/contact"
