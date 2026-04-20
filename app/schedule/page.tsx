@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
-import { ConsultSection } from "@/components/landing/ConsultSection";
 import { ContactSection } from "@/components/landing/ContactSection";
 
 export const metadata: Metadata = {
@@ -15,7 +14,6 @@ export default function SchedulePage() {
     <>
       <Header />
       <main>
-        <ConsultSection />
         <ContactSection />
       </main>
       <Footer />

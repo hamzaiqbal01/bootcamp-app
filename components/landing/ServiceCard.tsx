@@ -1,5 +1,5 @@
-import Link from "next/link";
 import type { IncludeEntry, ServiceBadge, ServicePackage } from "@/lib/data/services";
+import { ADMISSION_SERVICES_TYPEFORM } from "@/lib/external-links";
 
 function badgeStyles(badge: ServiceBadge): string {
   switch (badge) {
@@ -167,8 +167,10 @@ export function ServiceCard({ pkg }: { pkg: ServicePackage }) {
       </div>
 
       <div className="px-6 pb-7 sm:px-9">
-        <Link
-          href="#contact"
+        <a
+          href={ADMISSION_SERVICES_TYPEFORM}
+          target="_blank"
+          rel="noopener noreferrer"
           className={`inline-flex w-full items-center justify-center rounded-xl px-6 py-3.5 text-base font-semibold transition ${
             ctaWhite || isFeatured
               ? "bg-white text-brand-700 shadow-sm hover:bg-indigo-50"
@@ -179,7 +181,7 @@ export function ServiceCard({ pkg }: { pkg: ServicePackage }) {
           <span className="ml-1 inline-block" aria-hidden>
             →
           </span>
-        </Link>
+        </a>
       </div>
     </article>
   );

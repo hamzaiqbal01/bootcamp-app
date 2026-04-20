@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
 import { FaqSection } from "@/components/landing/FaqSection";
-import { ConsultSection } from "@/components/landing/ConsultSection";
 
 export const metadata: Metadata = {
   title: "FAQ | DentalPath",
@@ -16,7 +15,6 @@ export default function FaqPage() {
       <Header />
       <main>
         <FaqSection />
-        <ConsultSection />
       </main>
       <Footer />
     </>
