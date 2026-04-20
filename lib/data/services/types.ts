@@ -1,4 +1,4 @@
-export type ServiceBadge = "platinum" | "gold" | "express" | "course";
+export type ServiceBadge = "platinum" | "gold" | "express";
 
 export type IncludeEntry =
   | string
@@ -20,6 +20,6 @@ export type ServicePackage = {
   featured?: boolean;
   ribbon?: string;
   courseIntros?: string[];
-  /** Paragraph after the bullet list (e.g. interview course) */
+  /** Paragraph after the bullet list */
   courseClosing?: string[];
 };

@@ -173,7 +173,7 @@ export const servicePackages: ServicePackage[] = [
     price: "$87",
     priceAlt: "$147",
     includes: [
-      "30 minute / 60 minute phone call with an admissions consultant who will answer your questions regarding studying for the DAT, application process, dental school or anything else dental school related.",
+      "15/30 min phone call with an admissions consultant who will answer your questions regarding studying for the DAT, application process, dental school or anything else dental school related.",
     ],
     descriptions: [
       "Our general consulting service is designed to give you direction, clear answers and provide you with an encompassing answer. We can discuss the pros and cons of attending certain dental schools, help you with your study plan, outline the application process, create an application plan or whatever else comes to your mind. Get expert answers fast and make an informed decision.",
@@ -184,7 +184,7 @@ export const servicePackages: ServicePackage[] = [
     id: "complete",
     title: "Complete Application Package",
     price: "$1,997",
-    priceUnit: "Save 7% when you bundle!",
+    priceUnit: "10% discount when you bundle!",
     featured: true,
     ribbon: "Best Value",
     includes: [
@@ -193,34 +193,12 @@ export const servicePackages: ServicePackage[] = [
       "Experience Review",
       "School Selection",
       "Interview Coaching",
+      "Admissions advising throughout your application cycle",
     ],
     descriptions: [
-      "The complete application bundle is designed to include everything you need to build a successful application and maximize your chances of receiving a dental school acceptance. Be confident in your application when you hit that submit button!",
+      "The complete application bundle includes advising plus everything you need to build a successful application and maximize your chances of receiving a dental school acceptance. Be confident in your application when you hit that submit button!",
     ],
     cta: "Save with the Complete Application Package",
     ctaVariant: "white",
-  },
-  {
-    id: "interview-course",
-    badge: "course",
-    title: "Dental School Interview Course",
-    price: "$267",
-    courseIntros: [
-      "Roadmap Prep is a comprehensive online video course helping students beat their dental school interviews, led by Joel from DAT Bootcamp.",
-      "Joel will teach you everything you need to know to beat the interview in 8+ hours of actionable interview videos.",
-    ],
-    includes: [
-      "Step-by-step strategies for thinking about and responding to dental school interview questions",
-      "How to score in the top-percentile of applicants by delivering a well-rounded response",
-      "How to communicate effectively and clearly",
-      "How to maximize your time",
-      "How to deliver nuanced responses that showcase you're well equipped to enter the profession",
-      "How to stand out from the huge number of other qualified applicants who are applying",
-    ],
-    descriptions: [],
-    courseClosing: [
-      "Start watching over 2 hours of lessons for free at Roadmap Prep.",
-    ],
-    cta: "Start Learning for Free",
   },
 ];

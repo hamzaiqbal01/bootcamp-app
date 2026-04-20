@@ -9,8 +9,6 @@ function badgeStyles(badge: ServiceBadge): string {
       return "bg-linear-to-br from-amber-100 to-amber-200 text-amber-800";
     case "express":
       return "bg-linear-to-br from-emerald-100 to-emerald-200 text-emerald-800";
-    case "course":
-      return "bg-linear-to-br from-fuchsia-100 to-pink-200 text-pink-800";
     default:
       return "";
   }
