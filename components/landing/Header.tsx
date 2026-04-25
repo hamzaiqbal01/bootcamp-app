@@ -7,7 +7,7 @@ import { Logo } from "@/components/ui/Logo";
 const nav = [
   { href: "/", label: "Application Services", external: false },
   {
-    href: "https://bootcamp.com/dat/tutoring-services",
+    href: "https://bootcamp.com/dat/private-tutoring",
     label: "Tutoring Services",
     external: true,
   },
