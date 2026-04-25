@@ -19,14 +19,11 @@ export function Hero() {
             Trusted by 500+ Future Dentists
           </span>
           <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-[3.25rem] lg:leading-[1.12]">
-            Your Path to Dental
-            <br />
-            School{" "}
-            <span className="text-brand-600">Starts Here</span>
+            Future Dentist{" "}
+            <span className="text-brand-600">Prep</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600 lg:max-w-2xl">
-            Expert-led admissions consulting and tutoring to help you stand out,
-            get accepted, and launch your dental career with confidence.
+            Trusted by thousands of current dental students and dentists.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
             <Link
@@ -54,7 +51,7 @@ export function Hero() {
             </div>
             <div className="hidden h-10 w-px bg-slate-200 sm:block" />
             <div>
-              <div className="text-3xl font-bold text-slate-900">500+</div>
+              <div className="text-3xl font-bold text-slate-900">10,000 +</div>
               <div className="text-sm font-medium text-slate-500">Students Helped</div>
             </div>
             <div className="hidden h-10 w-px bg-slate-200 sm:block" />
