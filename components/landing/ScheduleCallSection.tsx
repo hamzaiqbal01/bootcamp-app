@@ -56,11 +56,8 @@ export function ScheduleCallSection() {
                 href="/contact"
                 className="mt-10 inline-flex rounded-xl bg-white px-8 py-3.5 text-base font-semibold text-brand-700 shadow-lg transition hover:bg-indigo-50"
               >
-                Contact us
+                Book call
               </Link>
-              <p className="mt-4 max-w-md text-sm text-indigo-200/90">
-                Send a message with your questions or goals—we&apos;ll reply as soon as we can.
-              </p>
             </div>
 
             <div className="rounded-2xl border border-white/15 bg-white/10 p-6 backdrop-blur-sm lg:max-w-sm">
