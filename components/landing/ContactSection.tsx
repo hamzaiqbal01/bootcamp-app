@@ -154,40 +154,14 @@ export function ContactSection() {
               </div>
               <div>
                 <strong className="text-slate-900">Email</strong>
-                <p className="mt-1 text-slate-600">hello@dentalpath.com</p>
-              </div>
-            </div>
-            <div className="flex gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-50">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden>
-                  <path
-                    d="M22 16.92V19.92C22 20.48 21.56 20.93 21 20.97C20.76 20.99 20.52 21 20.27 21C10.79 21 3 13.21 3 3.73C3 3.48 3.01 3.24 3.03 3C3.07 2.44 3.52 2 4.08 2H7.08C7.57 2 7.99 2.35 8.07 2.84C8.14 3.27 8.27 3.68 8.44 4.07L6.91 5.6C8.51 8.57 10.93 10.99 13.9 12.59L15.43 11.06C15.82 11.23 16.23 11.36 16.66 11.43C17.15 11.51 17.5 11.93 17.5 12.42V16.92C17.5 17.47 17.06 17.92 16.5 17.92"
-                    stroke="#4F46E5"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-              <div>
-                <strong className="text-slate-900">Phone</strong>
-                <p className="mt-1 text-slate-600">(555) 123-4567</p>
-              </div>
-            </div>
-            <div className="flex gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-50">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden>
-                  <path
-                    d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.03 7.03 1 12 1C16.97 1 21 5.03 21 10Z"
-                    stroke="#4F46E5"
-                    strokeWidth="2"
-                  />
-                  <circle cx="12" cy="10" r="3" stroke="#4F46E5" strokeWidth="2" />
-                </svg>
-              </div>
-              <div>
-                <strong className="text-slate-900">Location</strong>
-                <p className="mt-1 text-slate-600">Philadelphia, PA</p>
+                <p className="mt-1">
+                  <a
+                    href="mailto:facedoctoralex@gmail.com"
+                    className="text-slate-600 underline-offset-2 transition hover:text-brand-600 hover:underline"
+                  >
+                    facedoctoralex@gmail.com
+                  </a>
+                </p>
               </div>
             </div>
           </div>

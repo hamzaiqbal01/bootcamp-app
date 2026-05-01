@@ -1,4 +1,4 @@
-import { ADMISSION_SERVICES_TYPEFORM } from "@/lib/external-links";
+import Link from "next/link";
 
 const benefits = [
   "No obligation — see if we’re a fit",
@@ -52,25 +52,19 @@ export function ScheduleCallSection() {
                   </li>
                 ))}
               </ul>
-              <a
-                href={ADMISSION_SERVICES_TYPEFORM}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/contact"
                 className="mt-10 inline-flex rounded-xl bg-white px-8 py-3.5 text-base font-semibold text-brand-700 shadow-lg transition hover:bg-indigo-50"
               >
-                Book your call — opens in a new tab
-              </a>
+                Contact us
+              </Link>
               <p className="mt-4 max-w-md text-sm text-indigo-200/90">
-                You&apos;ll complete a quick form so we can prepare. Prefer email only?{" "}
-                <a href="/contact" className="font-medium text-white underline decoration-white/40 underline-offset-2 hover:decoration-white">
-                  Contact us
-                </a>{" "}
-                instead.
+                Send a message with your questions or goals—we&apos;ll reply as soon as we can.
               </p>
             </div>
 
             <div className="rounded-2xl border border-white/15 bg-white/10 p-6 backdrop-blur-sm lg:max-w-sm">
-              <p className="text-sm font-semibold uppercase tracking-wide text-indigo-100">Before you book</p>
+              <p className="text-sm font-semibold uppercase tracking-wide text-indigo-100">Before you reach out</p>
               <ul className="mt-4 space-y-3 text-sm leading-relaxed text-white/95">
                 <li className="flex gap-2">
                   <span className="text-indigo-200" aria-hidden>
@@ -88,7 +82,7 @@ export function ScheduleCallSection() {
                   <span className="text-indigo-200" aria-hidden>
                     •
                   </span>
-                  The form takes about two minutes; then you can pick a time.
+                  A few details about your timeline help us reply with useful next steps.
                 </li>
               </ul>
             </div>

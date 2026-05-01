@@ -16,7 +16,7 @@ export function Hero() {
       <div className={PAGE_GRID}>
         <div className="relative z-1 max-w-2xl lg:max-w-none">
           <span className="inline-flex rounded-full bg-violet-100 px-4 py-1.5 text-xs font-semibold tracking-wide text-violet-900 ring-1 ring-violet-200/70">
-            Trusted by 500+ Future Dentists
+            Trusted by 10,000+ Future Dentists
           </span>
           <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-[3.25rem] lg:leading-[1.12]">
             Future Dentist{" "}
