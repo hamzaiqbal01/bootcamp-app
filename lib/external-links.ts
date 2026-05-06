@@ -1,6 +1,6 @@
 /** Pre-screening / admission services (Typeform). */
 export const ADMISSION_SERVICES_TYPEFORM =
-  "https://datbootcamp.typeform.com/to/JNM4bf?typeform-source=bootcamp.com";
+  "https://form.typeform.com/to/Tgt9DWfK";
 
 /** SheetDB spreadsheet API (contact form rows). Override via env if needed. */
 export const SHEETDB_CONTACT_API_URL =
