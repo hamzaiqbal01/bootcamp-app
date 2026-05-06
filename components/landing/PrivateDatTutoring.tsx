@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ExpertsSection } from "@/components/landing/ExpertsSection";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { TUTORING_SERVICES_TYPEFORM } from "@/lib/external-links";
 import {
   getPackageWhatsIncluded,
   privateDatTutoringFaq,
@@ -60,12 +61,14 @@ export function PrivateDatTutoring() {
                   Save ${pkg.save} Instantly
                 </p>
                 <p className="mt-4 text-sm leading-relaxed text-slate-600">{pkg.blurb}</p>
-                <Link
-                  href="/contact"
+                <a
+                  href={TUTORING_SERVICES_TYPEFORM}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-brand-600 px-4 py-3 text-center text-sm font-semibold text-white shadow transition hover:bg-brand-700"
                 >
                   {pkg.cta}
-                </Link>
+                </a>
                 <p className="mt-8 text-sm font-semibold text-slate-900">What is included:</p>
                 <ul className="mt-3 space-y-2 text-sm text-slate-600">
                   {getPackageWhatsIncluded(pkg.hours).map((line) => (
