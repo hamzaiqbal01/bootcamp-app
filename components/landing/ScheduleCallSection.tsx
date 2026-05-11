@@ -3,7 +3,7 @@ import Link from "next/link";
 const benefits = [
   "No obligation — see if we’re a fit",
   "Personalized advice for your timeline and goals",
-  "About 30 minutes with an admissions specialist",
+  "About 15 minutes with an admissions specialist",
 ];
 
 export function ScheduleCallSection() {
@@ -11,8 +11,8 @@ export function ScheduleCallSection() {
     <section className="scroll-mt-24 bg-slate-50 py-16 sm:py-24">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto mb-12 max-w-2xl text-center sm:mb-16">
-          <span className="inline-flex rounded-full bg-brand-50 px-3.5 py-1.5 text-[0.8rem] font-semibold uppercase tracking-[0.05em] text-brand-700">
-            Admissions
+          <span className="inline-block max-w-full rounded-full bg-brand-50 px-3.5 py-1.5 text-center text-[0.8rem] font-semibold leading-snug tracking-tight text-brand-700 sm:px-4">
+            Dental school admissions and DAT tutoring
           </span>
           <h1 className="mt-4 text-4xl font-extrabold tracking-[-0.02em] text-slate-900 sm:text-[2.5rem]">
             Schedule a free call

@@ -25,6 +25,12 @@ export function Hero() {
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600 lg:max-w-2xl">
             Trusted by thousands of current dental students and dentists.
           </p>
+          <p className="mt-4 max-w-xl text-lg italic leading-relaxed text-slate-600 lg:max-w-2xl">
+            I&apos;m{" "}
+            <span className="font-semibold text-slate-800">Dr. Alexander Takshyn</span>. I lead
+            Future Dentist Prep and have spent over ten years helping pre-dental students navigate
+            dental school admissions—from coursework and the DAT to applications and interviews.
+          </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
             <Link
               href="/schedule"
