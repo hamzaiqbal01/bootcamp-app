@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 const PAGE_GRID =
@@ -25,12 +26,38 @@ export function Hero() {
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600 lg:max-w-2xl">
             Trusted by thousands of current dental students and dentists.
           </p>
-          <p className="mt-4 max-w-xl text-lg italic leading-relaxed text-slate-600 lg:max-w-2xl">
-            I&apos;m{" "}
-            <span className="font-semibold text-slate-800">Dr. Alexander Takshyn</span>. I lead
-            Future Dentist Prep and have spent over ten years helping pre-dental students navigate
-            dental school admissions—from coursework and the DAT to applications and interviews.
-          </p>
+          <div className="mt-4 flex max-w-xl flex-col gap-5 sm:max-w-2xl sm:flex-row sm:items-start sm:gap-6 lg:max-w-none">
+            <a
+              href="#experts"
+              className="group relative shrink-0 self-start outline-none focus-visible:ring-4 focus-visible:ring-brand-500/30 focus-visible:ring-offset-2 focus-visible:ring-offset-[#FAFAFE] sm:mt-1"
+            >
+              <span
+                className="pointer-events-none absolute -inset-2 rounded-[1.25rem] bg-linear-to-br from-brand-500/25 via-violet-500/20 to-indigo-600/25 opacity-70 blur-sm transition-opacity duration-300 group-hover:opacity-85"
+                aria-hidden
+              />
+              <span className="relative block -rotate-2 transition-transform duration-300 ease-out group-hover:rotate-0">
+                <span className="block rounded-2xl bg-linear-to-br from-brand-500 via-indigo-600 to-violet-600 p-[2px] shadow-md shadow-indigo-500/15">
+                  <span className="block overflow-hidden rounded-[14px] bg-slate-100 ring-1 ring-white/80">
+                    <Image
+                      src="/images/aleex.png"
+                      alt="Dr. Alex Takshyn"
+                      width={112}
+                      height={112}
+                      sizes="(max-width: 640px) 88px, 112px"
+                      className="h-22 w-22 object-cover object-top sm:h-28 sm:w-28"
+                    />
+                  </span>
+                </span>
+              </span>
+            </a>
+            <p className="min-w-0 flex-1 text-lg italic leading-relaxed text-slate-600 sm:pt-1">
+              I&apos;m{" "}
+              <span className="font-semibold text-slate-800 not-italic">Dr. Alexander Takshyn</span>
+              . I lead Future Dentist Prep and have spent over ten years helping pre-dental students
+              navigate dental school admissions—from coursework and the DAT to applications and
+              interviews.
+            </p>
+          </div>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
             <Link
               href="/schedule"
