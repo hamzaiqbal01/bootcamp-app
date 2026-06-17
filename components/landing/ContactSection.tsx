@@ -3,7 +3,6 @@
 import type { FormEvent } from "react";
 import { useState } from "react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { SHEETDB_CONTACT_API_URL } from "@/lib/external-links";
 
 type SubmitState = "idle" | "submitting" | "success" | "error";
 
@@ -15,27 +14,25 @@ export function ContactSection() {
     const form = e.currentTarget;
     const fd = new FormData(form);
 
-    const Name = String(fd.get("Name") ?? "").trim();
-    const Email = String(fd.get("Email") ?? "").trim();
-    const Subject = String(fd.get("Subject") ?? "").trim();
-    const Message = String(fd.get("Message") ?? "").trim();
+    const name = String(fd.get("Name") ?? "").trim();
+    const email = String(fd.get("Email") ?? "").trim();
+    const subject = String(fd.get("Subject") ?? "").trim();
+    const message = String(fd.get("Message") ?? "").trim();
 
     setState("submitting");
 
     try {
-      const res = await fetch(SHEETDB_CONTACT_API_URL, {
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          data: [{ Name, Email, Subject, Message }],
-        }),
+        body: JSON.stringify({ name, email, subject, message }),
       });
 
       if (!res.ok) {
-        throw new Error(`SheetDB responded with ${res.status}`);
+        throw new Error(`Contact API responded with ${res.status}`);
       }
 
       setState("success");
