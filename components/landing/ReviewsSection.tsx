@@ -86,7 +86,7 @@ export function ReviewsSection() {
               key={`${item.author}-${idx}`}
               className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
             >
-              <div className="mb-3 flex items-center gap-1" aria-label="5 star rating">
+              <div className="mb-3 flex items-center gap-1" role="img" aria-label="5 star rating">
                 {stars.map((_, starIdx) => (
                   <svg
                     key={starIdx}
