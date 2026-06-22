@@ -7,6 +7,7 @@ import { Logo } from "@/components/ui/Logo";
 const nav = [
   { href: "/", label: "Application Services", external: false },
   { href: "/private-dat-tutoring", label: "Tutoring Services", external: false },
+  { href: "/blog", label: "Blog", external: false },
   { href: "/faq", label: "FAQ", external: false },
 ];
 

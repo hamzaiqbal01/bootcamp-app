@@ -9,9 +9,25 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "DentalPath | Dental School Admissions Bootcamp",
+  metadataBase: new URL("https://futuredentistprep.com"),
+  title: {
+    default: "Future Dentist Prep | Dental School Admissions Consulting & DAT Tutoring",
+    template: "%s | Future Dentist Prep",
+  },
   description:
-    "Expert-led admissions consulting and tutoring to help you stand out, get accepted, and launch your dental career with confidence.",
+    "Expert-led dental school admissions consulting and DAT tutoring by Dr. Alexander Takshyn and a team of top dental professionals. Trusted by 10,000+ pre-dental students.",
+  openGraph: {
+    siteName: "Future Dentist Prep",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
