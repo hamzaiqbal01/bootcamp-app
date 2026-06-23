@@ -124,12 +124,24 @@ export default function BlogPage() {
                   </div>
                 </div>
 
-                {/* Gradient art side */}
-                <div className={`hidden bg-gradient-to-br ${featured.coverGradient} lg:flex items-center justify-center`}>
-                  <span className="text-[8rem]" role="img" aria-label={featured.category}>
-                    {featured.coverEmoji}
-                  </span>
-                </div>
+                {/* Cover image or gradient art */}
+                {featured.coverImage ? (
+                  <div className="relative hidden overflow-hidden lg:block">
+                    <Image
+                      src={featured.coverImage}
+                      alt={featured.title}
+                      fill
+                      className="object-cover"
+                      sizes="420px"
+                    />
+                  </div>
+                ) : (
+                  <div className={`hidden bg-gradient-to-br ${featured.coverGradient} lg:flex items-center justify-center`}>
+                    <span className="text-[8rem]" role="img" aria-label={featured.category}>
+                      {featured.coverEmoji}
+                    </span>
+                  </div>
+                )}
               </div>
             </Link>
 
@@ -147,11 +159,23 @@ export default function BlogPage() {
                       className="group flex flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition hover:shadow-lg hover:border-brand-100"
                     >
                       {/* Card cover */}
-                      <div className={`flex h-40 items-center justify-center bg-gradient-to-br ${post.coverGradient}`}>
-                        <span className="text-6xl" role="img" aria-label={post.category}>
-                          {post.coverEmoji}
-                        </span>
-                      </div>
+                      {post.coverImage ? (
+                        <div className="relative h-40 w-full overflow-hidden">
+                          <Image
+                            src={post.coverImage}
+                            alt={post.title}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                          />
+                        </div>
+                      ) : (
+                        <div className={`flex h-40 items-center justify-center bg-gradient-to-br ${post.coverGradient}`}>
+                          <span className="text-6xl" role="img" aria-label={post.category}>
+                            {post.coverEmoji}
+                          </span>
+                        </div>
+                      )}
 
                       {/* Card body */}
                       <div className="flex flex-1 flex-col p-6">

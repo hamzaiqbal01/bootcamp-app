@@ -27,11 +27,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       publishedTime: post.publishedAt,
       authors: [post.author.name],
+      ...(post.coverImage ? { images: [{ url: post.coverImage, width: 1200, height: 630 }] } : {}),
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.description,
+      ...(post.coverImage ? { images: [post.coverImage] } : {}),
     },
   };
 }
@@ -133,6 +135,27 @@ function renderMarkdown(content: string) {
           ))}
         </ul>,
       );
+    } else if (/^\d+\. /.test(line)) {
+      const items: string[] = [];
+      while (i < lines.length && /^\d+\. /.test(lines[i])) {
+        items.push(lines[i].replace(/^\d+\. /, ""));
+        i++;
+      }
+      elements.push(
+        <ol key={key++} className="my-5 space-y-2 pl-1">
+          {items.map((item, ii) => (
+            <li key={ii} className="flex items-start gap-3 text-slate-700">
+              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-100 text-xs font-bold text-brand-700">
+                {ii + 1}
+              </span>
+              <span
+                className="leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: item.replaceAll(/\*\*(.+?)\*\*/g, "<strong class='font-semibold text-slate-900'>$1</strong>").replaceAll(/\[(.+?)\]\((.+?)\)/g, "<a href='$2' class='text-brand-600 hover:underline'>$1</a>") }}
+              />
+            </li>
+          ))}
+        </ol>,
+      );
     } else if (line.startsWith("- ")) {
       const items: string[] = [];
       while (i < lines.length && lines[i].startsWith("- ")) {
@@ -229,8 +252,20 @@ export default async function BlogPostPage({ params }: Props) {
       />
       <main>
         {/* Post header */}
-        <section className={`relative overflow-hidden bg-gradient-to-br ${post.coverGradient} pb-16 pt-14 sm:pb-20 sm:pt-18`}>
-          <div className="pointer-events-none absolute inset-0 bg-black/20" />
+        <section className={`relative overflow-hidden ${post.coverImage ? "bg-slate-900" : `bg-gradient-to-br ${post.coverGradient}`} pb-16 pt-14 sm:pb-20 sm:pt-18`}>
+          {post.coverImage && (
+            <div className="absolute inset-0">
+              <Image
+                src={post.coverImage}
+                alt={post.title}
+                fill
+                className="object-cover opacity-40"
+                priority
+                sizes="100vw"
+              />
+            </div>
+          )}
+          <div className="pointer-events-none absolute inset-0 bg-black/30" />
           <div className="relative mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8">
             <Link
               href="/blog"
