@@ -24,6 +24,333 @@ const DR_ALEX = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "dental-school-interview-questions",
+    title: "30 Most Common Dental School Interview Questions (With Sample Answers)",
+    description:
+      "Preparing for your dental school interview? These are the 30 most frequently asked dental school interview questions — with expert sample answers, strategy breakdowns, and insider tips from a dentist who has sat on both sides of the table.",
+    publishedAt: "2026-06-24",
+    readingTime: "15 min read",
+    category: "Interview Prep",
+    coverGradient: "from-indigo-600 to-blue-700",
+    coverEmoji: "🎤",
+    coverImage: "/images/blog-dental-interview-cover.png",
+    author: DR_ALEX,
+    content: `
+## Getting a Dental School Interview Is Half the Battle — Winning It Is the Other Half
+
+You just got the email: *"We would like to invite you for an interview."*
+
+That moment of excitement is real — and it should be. Only about 10–15% of dental school applicants who submit a complete AADSAS application receive an interview invitation at any given school. You've already beaten the majority of the applicant pool on paper.
+
+But here's what most pre-dental students get wrong: they show up to the interview thinking their GPA and DAT score will carry them. They won't. The interview is a completely different evaluation — and schools use it specifically because they've already seen your numbers.
+
+What they're evaluating now is **who you are**, **how you think**, and **whether they want you in their program for the next four years.**
+
+This guide covers the 30 most common dental school interview questions, exactly how to approach each one, and the strategy behind building answers that actually land.
+
+---
+
+## How Dental School Interviews Are Structured
+
+Before diving into specific questions, understand the two most common dental school interview formats:
+
+### Traditional Panel or One-on-One Interview
+
+You sit across from 1–3 faculty members or admissions committee members for 20–45 minutes. They ask questions, you answer. This is the most common format and the one most applicants are familiar with.
+
+**What they're assessing:** Communication skills, professionalism, self-awareness, genuine motivation for dentistry.
+
+### Multiple Mini Interviews (MMI)
+
+You rotate through 6–10 stations, each lasting 6–8 minutes. Each station presents a scenario, ethical dilemma, or question. A different evaluator scores you at each station.
+
+**What they're assessing:** Critical thinking, adaptability, ethical reasoning, and how you perform under pressure with strangers.
+
+Schools like UNC, USC, and many Canadian programs use MMI. Many others use a hybrid. Research your specific schools before you prep — the format changes how you should prepare.
+
+---
+
+## The STAR Method: Your Answer Framework
+
+Before we get to the questions, you need one core framework: **STAR**.
+
+- **S**ituation — Set the scene briefly (2–3 sentences max)
+- **T**ask — What was your role or challenge?
+- **A**ction — What did you specifically do? (This is the most important part)
+- **R**esult — What was the outcome, and what did you learn?
+
+For behavioral questions ("Tell me about a time when…"), STAR is your foundation. For opinion or motivational questions, lead with your position and support it with a personal story. We'll see this play out in every question below.
+
+---
+
+## Motivation & Why Dentistry Questions
+
+### 1. "Why do you want to be a dentist?"
+
+This is the most important question in the entire interview. It's also the one most applicants answer terribly.
+
+**What they're actually asking:** Is your motivation genuine, personal, and specific to dentistry — or are you here because it's a stable career and your parents suggested it?
+
+**What not to say:** "I've always loved helping people" (every profession helps people). "It combines art and science" (every applicant says this). "My dentist was my role model growing up" (fine as a detail, not as your whole answer).
+
+**What to say instead:** Ground your answer in a *specific, personal experience* that made you choose dentistry over medicine, nursing, or any other healthcare field. Then connect it to what you've done since — shadowing, volunteering, research — to confirm that the initial feeling was right.
+
+**Sample framework:**
+Start with the experience. Then say: "That experience made me start shadowing Dr. [Name], and what I found was [specific observation]. That's when I realized dentistry wasn't just a career I could do — it was the one I wanted."
+
+---
+
+### 2. "Why dentistry and not medicine?"
+
+This is a trap for applicants who haven't thought carefully. Adcoms ask it to test whether you understand what is *unique* about dentistry.
+
+**Strong angles:**
+- The direct relationship between dentist and patient (autonomy and continuity of care that many MD specialties don't have)
+- The ability to see immediate, visible results of your work
+- The integration of technical precision with patient rapport
+- Specific clinical experiences where you saw a dentist transform a patient's life
+
+Avoid making medicine sound inferior. Instead, frame dentistry as the better *fit for you specifically*.
+
+---
+
+### 3. "What specifically draws you to [this school]?"
+
+This is a research test. If you give a generic answer, you've already failed this question.
+
+**What to do:** Go to the school's website, look at their mission statement, curriculum structure, community engagement programs, research opportunities, and faculty. Find 2–3 things that are *genuinely specific to that school* and connect them to your goals.
+
+"I'm drawn to [School]'s problem-based learning curriculum because of my research experience, where I learned I absorb material better when I'm solving real problems rather than memorizing from a textbook. I also read about Dr. [Faculty Name]'s work in [specific area], which aligns directly with my interest in [area]."
+
+---
+
+### 4. "Where do you see yourself in 10 years?"
+
+They're not asking for a 10-year career plan. They're testing whether you've thought about what kind of dentist you want to be and whether it's realistic.
+
+**Good answers include:** A specialty you're considering and why, a practice setting (private practice, community health, academic), and a commitment to continuing education or mentorship. Don't be afraid to say you're still exploring — as long as you demonstrate you've been thinking about it.
+
+---
+
+## Background & Self-Awareness Questions
+
+### 5. "Tell me about yourself."
+
+This is not an invitation to recite your CV. They have your application. This is your chance to give them the narrative that connects everything on paper into a coherent story about who you are.
+
+**Structure:** 30 seconds on your background/origin, 60 seconds on your most defining experience and what it taught you, 30 seconds on where you're heading and why this interview matters to you. Two minutes total. Rehearsed but not robotic.
+
+---
+
+### 6. "What is your greatest strength?"
+
+Choose one strength that is *directly relevant to being a dentist*. Attention to detail, manual dexterity, calm under pressure, communication with anxious patients — these all work. Back it up with a specific example. Avoid generic answers like "I'm a hard worker" without evidence.
+
+---
+
+### 7. "What is your greatest weakness?"
+
+The worst answers: "I work too hard" or "I'm a perfectionist." These are transparent non-answers and interviewers have heard them thousands of times.
+
+Give a real weakness. Then explain what you've actively done to address it. This shows self-awareness and growth — both of which are more impressive than pretending to have no weaknesses.
+
+**Example:** "Early in my undergrad, I struggled to ask for help when I was falling behind in Organic Chemistry. I thought needing help was a sign of weakness. After getting a 68 on my first exam, I joined a study group and started going to office hours every week. That change was significant — not just for my grade, but for how I approach challenges now."
+
+---
+
+### 8. "How do you handle stress?"
+
+Dental school is relentless. This question tests whether you have real coping strategies or whether you're going to burn out in your first year.
+
+Be specific. Name actual practices: exercise routine, journaling, time-blocking, therapy, cooking, time with family. Anything that is real and sustainable. Then demonstrate self-awareness about what warning signs of burnout look like for you personally.
+
+---
+
+### 9. "Tell me about a failure or setback you experienced."
+
+This question separates applicants who have reflected on their life from those who haven't. Don't pick something trivial ("I forgot an assignment once"). Pick a real setback — a failed exam, a dropped research project, a difficult semester. Then walk through what you learned and what changed afterward.
+
+---
+
+### 10. "What makes you unique compared to other applicants?"
+
+Don't answer this with a list of accomplishments — those are already in your application. Answer it with something about *how you think, experience things, or approach problems* that is genuinely different. Your non-traditional background, your perspective as a first-generation student, your experience in a specific country or community, your skill in another profession before pre-dent.
+
+---
+
+## Clinical & Professional Questions
+
+### 11. "How many hours have you spent shadowing a dentist?"
+
+Most competitive applicants have 100–200+ hours. But hours alone are not the answer they want. Follow up with something you *observed* or *learned* from your shadowing experience that influenced your understanding of dentistry.
+
+---
+
+### 12. "What did you observe during your dental shadowing that surprised you?"
+
+This tests whether you were actively paying attention or just logging hours. Think about a specific moment: a case that was more complex than expected, a patient who arrived terrified and left smiling, a technique you hadn't learned about in class.
+
+---
+
+### 13. "How do you handle a patient who is afraid of the dentist?"
+
+Dental anxiety is one of the most common barriers to dental care. They want to know you've thought about this. Strong answers acknowledge the fear as real and valid, describe de-escalation techniques (clear communication, control signals, distraction), and reference a real experience where you managed an anxious person.
+
+---
+
+### 14. "What do you think is the most important quality in a dentist?"
+
+There is no single correct answer — this is a values alignment question. Common answers: communication, empathy, technical skill, commitment to lifelong learning, patience. Pick one, defend it with reasoning, and support it with an experience.
+
+---
+
+### 15. "How do you stay current with developments in dentistry?"
+
+This tests professional curiosity. Name specific things: journals you follow (JADA, Journal of Endodontics), podcasts, dental conferences you've attended or read about, a specific advancement in materials or technology that caught your interest.
+
+---
+
+## Ethical Scenario Questions
+
+### 16. "A colleague tells you they have been drinking before seeing patients. What do you do?"
+
+This is a patient safety scenario. The answer is always: patient safety comes first. You address it directly with the colleague if safe to do so, escalate to supervision if they do not respond, and document appropriately.
+
+Never say you'd ignore it or "give them the benefit of the doubt" when patient safety is at stake. Show that you understand the hierarchy of responsibility.
+
+---
+
+### 17. "A patient refuses treatment you know they need. How do you respond?"
+
+Patient autonomy is a core medical ethics principle. A competent adult has the right to refuse treatment, even if that treatment is in their best interest. Your role is to ensure they have complete information to make an informed decision — not to override their choice.
+
+Discuss the situation honestly, explain the consequences clearly, document the refusal, and leave the door open for them to return.
+
+---
+
+### 18. "You discover that a dentist in your clinic is overcharging patients. What do you do?"
+
+Fraud and ethics violation. Document what you've observed, report to the practice owner or state dental board as appropriate, and do not cover it up. Demonstrate that you understand professional accountability — even when it's uncomfortable.
+
+---
+
+### 19. "A patient cannot afford the treatment they need. What options do you consider?"
+
+This question tests social awareness and problem-solving. Discuss: payment plans, sliding scale fees at community health centers, dental school clinics, charitable programs, and helping navigate public insurance options. Show that you see the patient as a whole person, not just a treatment case.
+
+---
+
+### 20. "Should dentists be required to treat patients regardless of their ability to pay?"
+
+This is an opinion/policy question — there is no correct answer. What they're evaluating is whether you can construct a coherent argument, acknowledge the other side, and hold a nuanced position without becoming defensive.
+
+---
+
+## Teamwork & Communication Questions
+
+### 21. "Tell me about a time you worked in a team where there was conflict."
+
+Use STAR. Choose a situation where you played an active role in resolving the conflict — not one where someone else fixed it or where you simply avoided the person. What matters is your specific action and what you learned about collaboration.
+
+---
+
+### 22. "Describe a time you had to adapt to a sudden change."
+
+Dental school — and dental practice — are full of things not going according to plan. They want to see flexibility and resilience. Choose a story where the change was real (not trivial), your response was thoughtful, and you can describe what the experience taught you.
+
+---
+
+### 23. "Tell me about a time you led a group."
+
+Leadership doesn't require a title. Peer tutoring, club organization, lab team lead, community project coordinator — all qualify. Focus on the specific actions you took and how you supported others toward a shared goal.
+
+---
+
+## Research & Academics Questions
+
+### 24. "How do you explain your low GPA in [semester/year]?"
+
+Don't be defensive. Own it, explain the context briefly (personal difficulty, taking on too much, underestimating the workload), and then describe what changed. If your grades trended upward afterward, highlight that trajectory specifically. Schools want to see that you learned from difficulty.
+
+---
+
+### 25. "Tell me about your research experience."
+
+Even if your research wasn't published or groundbreaking — the process matters. Walk through what you studied, what your role was, what you found (or didn't), and what the experience taught you about scientific inquiry. If you don't have research, pivot to another analytical experience.
+
+---
+
+## Future & Commitment Questions
+
+### 26. "Do you plan to specialize or go into general dentistry?"
+
+Either answer is fine. What they want to see is *reasoning*. If you're considering a specialty, name it and explain why — based on your shadowing or academic experience. If you want general dentistry, articulate the value of comprehensive care and the patient relationships that makes it meaningful.
+
+---
+
+### 27. "How will you serve underserved communities?"
+
+This is a values question, and many schools — especially public universities — weight it heavily. If you have real experience with underserved populations (free clinics, community health, rural shadowing, international service), lead with that. If not, speak honestly about what you've learned from your research into oral health disparities and how you intend to address it in your career.
+
+---
+
+### 28. "What will you do if you don't get in this cycle?"
+
+They're testing your commitment and self-awareness. The right answer is NOT "that won't happen." Show that you've already thought about this: strengthening weak areas (retaking the DAT, adding shadowing hours, retaking coursework), gaining more clinical experience, applying more broadly next cycle, and seeking mentorship. The fact that you have a contingency plan actually demonstrates maturity — not doubt.
+
+---
+
+## Questions You Ask Them
+
+### 29. "Do you have any questions for us?"
+
+This is one of the most important moments of the interview — and most applicants blow it by saying "No, I think you covered everything."
+
+Always have 2–3 questions prepared for each school. Good questions:
+- "What do students who thrive here have in common that might not show up on paper?"
+- "How does the school support students who are struggling in the preclinical years?"
+- "What has changed about the curriculum or culture in the last few years that you're most excited about?"
+
+Avoid questions about tuition, salary, or anything easily found on the website.
+
+---
+
+### 30. "Is there anything you'd like to add or that we haven't covered?"
+
+This is your final impression. Treat it as a closing statement. If there is something meaningful in your application that didn't come up — a challenge you overcame, a perspective you haven't shared — this is the moment. If you've covered everything, a brief, confident closing that reaffirms your commitment to the school is perfect.
+
+"I just want to say that this conversation has reinforced everything I already felt about [School]. The mission to train dentists who serve diverse communities aligns exactly with my goals, and I would be grateful for the opportunity to contribute to this program."
+
+---
+
+## How to Prepare: A 4-Week Interview Prep Plan
+
+**Week 1 — Foundation**
+Research each school thoroughly. Write out your core stories (why dentistry, greatest strength/weakness, biggest challenge). Practice out loud, not just in your head. Talking in the mirror is uncomfortable and effective.
+
+**Week 2 — Behavioral Questions**
+Work through all 30 questions above. For each behavioral question, identify 1–2 real experiences from your life. Record yourself on your phone. Listen back and identify filler words, pacing, and clarity.
+
+**Week 3 — Mock Interviews**
+Schedule at least 2 mock interviews — one with a mentor, advisor, or pre-dental society, and one with someone who will give you honest, critical feedback. Ask them to ask follow-up questions, not just let you finish your answer.
+
+**Week 4 — Polish and Logistics**
+Review your secondary application for each school so you remember what you wrote. Prepare your questions for each program. Confirm logistics (travel, attire, what to bring). Sleep and arrive early.
+
+---
+
+## One Final Thing
+
+The applicants who perform best in dental school interviews are not the ones with the most polished answers — they're the ones who have genuinely reflected on their experiences and can speak about them honestly.
+
+The goal of the interview is not to be impressive. It's to be *real and prepared at the same time.*
+
+If you want expert, personalized dental school interview coaching from a dentist who has advised hundreds of successful applicants, [schedule a free 15-minute call with our team](/schedule). We'll assess your current readiness, identify your blind spots, and build a prep plan around your specific interview dates.
+
+Your interview invitation was earned. Now go close the deal.
+`,
+  },
+  {
     slug: "best-dat-tutor-guide",
     title: "How to Find the Best DAT Tutor in 2025–2026 (Complete Guide)",
     description:

@@ -126,12 +126,12 @@ export default function BlogPage() {
 
                 {/* Cover image or gradient art */}
                 {featured.coverImage ? (
-                  <div className="relative hidden overflow-hidden lg:block">
+                  <div className="relative hidden min-h-[260px] overflow-hidden lg:block">
                     <Image
                       src={featured.coverImage}
                       alt={featured.title}
                       fill
-                      className="object-cover"
+                      className="object-cover object-right"
                       sizes="420px"
                     />
                   </div>
