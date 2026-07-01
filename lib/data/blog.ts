@@ -24,6 +24,612 @@ const DR_ALEX = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "dental-school-application-timeline",
+    title: "Dental School Application Timeline: Month-by-Month Guide for 2025–2026 Applicants",
+    description:
+      "Missing a deadline or submitting late can cost you an entire application cycle. This month-by-month dental school application timeline covers every step from DAT prep to acceptance — so you know exactly what to do, and when, to give yourself the best shot at getting in.",
+    publishedAt: "2026-07-01",
+    readingTime: "14 min read",
+    category: "Application Tips",
+    coverGradient: "from-violet-600 to-sky-600",
+    coverEmoji: "🗓️",
+    coverImage: "/images/blog-dental-application-timeline-cover.png",
+    author: DR_ALEX,
+    content: `
+## The Biggest Mistake Pre-Dental Students Make Is Starting Too Late
+
+Every year, qualified pre-dental students submit strong applications — and then don't hear back from a single school. Not because their GPA or DAT was too low. Not because their personal statement was weak. But because they submitted two or three months after the application opened, when most schools had already filled the majority of their interview slots.
+
+Dental school admissions is **rolling**. That single word changes everything about how you should approach your timeline.
+
+Rolling admissions means schools begin reviewing and inviting applicants to interview from the moment applications become complete — which is as early as late June. Schools don't wait until the deadline to evaluate everyone at once. They evaluate applicants continuously as they arrive, and they fill seats as they go.
+
+A complete application submitted in June competes with a handful of other June applicants. The same application submitted in October competes with thousands — and many seats are already spoken for.
+
+This guide gives you the exact month-by-month timeline you need to be a June applicant, not an October one.
+
+---
+
+## Overview: The Full Dental School Application Cycle
+
+Here is the complete application cycle for students applying to start dental school in the fall:
+
+| Phase | Timeframe | Key Actions |
+|---|---|---|
+| Preparation | 12–18 months before matriculation | DAT prep, prerequisites, shadowing |
+| DAT Exam | 12–15 months before matriculation | Take and pass the DAT |
+| AADSAS Opens | Early May (application year) | Begin filling out application |
+| AADSAS Earliest Submission | Early June | Submit primary application |
+| Verification Complete | Late June – July | Application verified and sent to schools |
+| Secondary Applications | July – October | Complete school-specific secondaries |
+| Interviews | August – March | Attend dental school interviews |
+| Acceptance Notifications | December – April | Receive decisions |
+| Deposit Deadline | April 30 | Commit to one school |
+| Matriculation | August | Begin dental school |
+
+The most important date in the entire cycle: **early June**. That's when you want your primary application submitted — not the deadline, which is typically December or January. That window of 6+ months between early submission and deadline represents the difference between getting interviews and not getting them.
+
+---
+
+## 18 Months Before Matriculation (January–June, Junior Year)
+
+### Finalize Your Prerequisite Plan
+
+Map out which science prerequisites you still need to complete and confirm they'll be done before you matriculate. Any in-progress courses at the time of application need to be clearly listed on AADSAS.
+
+Review our [dental school prerequisites guide](/blog/dental-school-prerequisites) to make sure your course list matches what your target schools require. Schools vary on specifics — check each one directly.
+
+### Begin Serious DAT Preparation
+
+If you're targeting a June application submission, your DAT should ideally be taken **no later than April or May** of your application year. That means serious preparation needs to begin 10–14 weeks before your target test date — which puts the start of real prep at January or February of your junior year.
+
+Many students underestimate how long DAT prep takes. A well-structured plan takes 10–12 weeks minimum. Rushing the DAT to hit the early submission window and scoring below your target is far worse than taking a few extra weeks and submitting in July.
+
+Read our [complete DAT study schedule](/blog/how-to-study-for-the-dat) to build your plan based on your current starting point.
+
+### Begin Identifying Recommenders
+
+This is the most time-sensitive background task in your entire application. Letters of recommendation cannot be rushed — recommenders need 3–4 months to write a thoughtful letter. Start identifying your 3–4 recommenders now and begin building or strengthening those relationships.
+
+Review our [dental school letters of recommendation guide](/blog/dental-school-letters-of-recommendation) for a complete walkthrough of who to ask and when.
+
+### Start Building Your School List
+
+Create a working list of 10–15 dental schools based on your current GPA, projected DAT score, geographic preferences, and mission alignment. This list will evolve — but having a working draft now lets you research each school's specific requirements, average accepted stats, and application deadlines.
+
+---
+
+## 12–15 Months Before Matriculation (February–May, Junior/Senior Year)
+
+### Take the DAT
+
+Your target window: **February through May** for a June application submission. This gives you time to receive official scores (typically 3–5 business days after testing) before AADSAS opens.
+
+If you score below your target on the first attempt, you have a decision to make: submit without the retake and update your application when improved scores arrive, or delay submission by 4–6 weeks to retake first. The right answer depends on how far below target you scored and how strong the rest of your application is.
+
+**One important rule:** Do not rush the DAT just to hit an early submission date. A 19 submitted in June is not better than a 22 submitted in August. The DAT score is a major component of your competitiveness — optimize it first.
+
+### Formally Ask Your Recommenders
+
+With your target submission date now firm, approach your recommenders formally — in person where possible. Give them at least 4 months of lead time from your target submission date.
+
+Send each recommender a complete packet: your CV, personal statement draft, a brag sheet specific to your relationship with them, and clear AADSAS submission instructions. The more material you give them, the more specific and compelling their letter will be.
+
+### Draft Your Personal Statement
+
+Start writing early. Your personal statement needs multiple drafts, external feedback, and time to breathe between revision sessions. A first draft in March gives you time for 4–6 rounds of revisions before your June submission target.
+
+Read our [dental school personal statement guide](/blog/dental-school-personal-statement-guide) for a complete breakdown of what adcoms want to see and what to avoid.
+
+### Complete the Activities Section
+
+AADSAS includes a detailed activities/experiences section where you list shadowing, research, volunteering, employment, leadership, and extracurriculars — with descriptions. Start compiling this information now. It takes longer than most applicants expect.
+
+For each shadowing experience, have the dentist's name, practice name, dates, and total hours ready. For research, have your PI's contact information and a clear description of your role and findings.
+
+---
+
+## 10–12 Months Before Matriculation (May–June, Application Opening)
+
+### AADSAS Opens — Fill Out Every Section Immediately (Early May)
+
+The AADSAS application typically opens in **early May**. The moment it opens, begin filling it out. You cannot submit until it opens, but you can complete every section in advance.
+
+Work through:
+- Personal information and contact details
+- Academic history (every institution attended, every course taken)
+- Standardized test scores (your DAT score should already be released)
+- Experiences and activities
+- Personal statement (paste your final draft)
+- Dental school selections (finalize your list)
+- Letters of recommendation assignments
+
+The academic history section is the most time-consuming — you must manually enter every course from every institution, with grades and credit hours, exactly as they appear on your transcripts. Budget 4–6 hours for this section alone.
+
+### Request Official Transcripts (Early May)
+
+Every institution where you completed coursework needs to send an official transcript to AADSAS. Request these in May — processing takes 1–4 weeks at most registrar offices. Transcript processing is the most common reason applications are delayed past the early submission window.
+
+Request your transcripts the day AADSAS opens. Don't wait.
+
+### Submit Your Application as Early as Possible (Early June)
+
+**Target date: first week of June.**
+
+This is the single most impactful action in your entire application. Early June applicants are reviewed first, interviewed first, and accepted first. Every week of delay after June costs you relative competitiveness in a rolling cycle.
+
+Once you submit, AADSAS begins the verification process — cross-checking your self-reported coursework against your official transcripts. Verification typically takes **3–6 weeks** during peak season. Your application is not transmitted to schools until verification is complete.
+
+---
+
+## 9–11 Months Before Matriculation (June–August)
+
+### Track Verification Status
+
+After submission, log into AADSAS regularly to track your verification status. If AADSAS flags a discrepancy between your self-reported grades and your official transcripts, respond immediately. Delays in resolving discrepancies delay verification — which delays transmission to schools.
+
+### Secondary Applications Begin Arriving (Late June – July)
+
+Once your primary application is verified and transmitted to schools, individual programs begin sending secondary applications. These are school-specific supplemental applications with additional essays, short-answer questions, and sometimes additional fees.
+
+**The critical rule with secondaries:** Complete and return them within 2–3 weeks of receiving them. Schools track how quickly applicants respond to secondaries — a prompt response signals genuine interest and organizational ability.
+
+Typical secondary essay prompts:
+- Why do you want to attend our specific school?
+- Describe a challenge you've overcome.
+- How will you contribute to our school's mission?
+- Tell us about a meaningful clinical or service experience.
+
+Do not write generic secondaries. Every school-specific prompt deserves a school-specific answer. Research the program, its mission, its curriculum, and its student culture before writing a single word.
+
+### Prepare for Interviews
+
+Interview invitations typically begin arriving in August and September for June applicants. Start preparing now — before the first invitation arrives.
+
+Build your answer bank for the most common dental school interview questions. Schedule at least 2 mock interviews. Research every school you applied to so you can speak specifically about why you chose them.
+
+Read our [dental school interview prep guide](/blog/dental-school-interview-questions) for the 30 most common questions with sample answers and a structured 4-week prep plan.
+
+---
+
+## 6–9 Months Before Matriculation (August–November)
+
+### Interview Season
+
+Interview invitations roll in from August through December for most programs. Some schools continue inviting into January or February.
+
+**What to do when you receive an invitation:** Confirm your attendance immediately. Your promptness in accepting the invitation is noted. If you need to reschedule, do so as early as possible and for a legitimate reason only — rescheduling signals lower enthusiasm.
+
+**Day-of logistics:**
+- Arrive at least 15–20 minutes early
+- Dress professionally and conservatively
+- Bring printed copies of your application materials for reference
+- Send a thank-you email to your interviewer within 24 hours
+
+### Continue Completing Secondaries
+
+New secondary invitations may continue arriving into October and November, especially at schools that do more selective screening of who receives secondaries. Stay on top of your email and respond quickly to every new invitation.
+
+### Evaluate Your Application's Progress
+
+By October, you should have a clear picture of which schools have sent you secondary invitations and which haven't. A pattern of schools not sending secondaries may signal a school-list calibration issue.
+
+If you applied to 15 schools and have received secondaries from 12, your school list is reasonably well calibrated. If you've received secondaries from 3, something in your primary application needs to be reconsidered — either the list itself or the application components.
+
+---
+
+## 3–6 Months Before Matriculation (December–March)
+
+### Acceptance Notifications Begin
+
+Many programs begin releasing acceptances starting in December. Others wait until January or later. The timing varies significantly by program.
+
+**If you receive an acceptance:** Congratulations — but don't stop. Continue pursuing other applications and attending remaining interviews unless you're certain this is your top choice. You're allowed to hold multiple acceptances.
+
+**If you're waitlisted:** This is not a rejection. Many students are admitted off waitlists — sometimes as late as August. Write a letter of continued interest to programs where you're waitlisted, update them on any meaningful developments in your application (improved grades, new experiences), and attend any remaining interviews at programs where you haven't yet been waitlisted.
+
+**If you haven't heard from a school by March:** It's appropriate to contact admissions and inquire about your status. A brief, professional email is acceptable.
+
+### Consider Whether to Update Your Application
+
+If your grades improved significantly, you completed meaningful new shadowing or clinical work, or you retook the DAT and improved your score, notify schools proactively. Send a brief update email to each school's admissions office.
+
+---
+
+## April 30 — Commitment Deadline
+
+By **April 30**, you must commit to one school and release all other acceptances. This date is standardized across AADSAS programs to prevent students from holding multiple seats indefinitely.
+
+If you're still on a waitlist at your top-choice school as of April 30, you have a decision to make: commit to your in-hand acceptance while remaining on the waitlist (many schools allow this), or decline your acceptance to wait for the other school (riskier — only do this if you're confident you'll come off the waitlist).
+
+---
+
+## What Happens If You Don't Get In This Cycle
+
+Not matching in a given cycle is not the end. Many successful dentists applied multiple times before being accepted. The important thing is to understand specifically why you didn't match and build a deliberate plan to address it.
+
+**Common reasons for not matching:**
+- Late submission (missing the early applicant advantage)
+- DAT score below program averages
+- GPA below the competitive range for your school list
+- School list not calibrated to your actual profile
+- Interview performance (if you received interviews but no acceptances)
+- Personal statement or secondary essays that didn't differentiate you
+
+If you didn't receive interview invitations, the problem is in the primary application or school list. If you received interviews but no acceptances, the problem is in the interview performance or secondary essays.
+
+In either case: get specific feedback, address the weak areas, and reapply with a stronger application. A [free consultation with our admissions team](/schedule) can help you build an honest post-cycle analysis and a targeted plan for the next cycle.
+
+---
+
+## Your 18-Month Master Checklist
+
+### 18 Months Out
+- [ ] Finalize prerequisite course plan
+- [ ] Begin DAT prep (if targeting early exam)
+- [ ] Identify potential recommenders and begin building relationships
+- [ ] Start building target school list
+
+### 12–15 Months Out
+- [ ] Take the DAT (target: February–May)
+- [ ] Formally ask recommenders — send complete materials packet
+- [ ] Begin writing personal statement
+- [ ] Compile activities/experiences list
+
+### 10–12 Months Out (May–June)
+- [ ] AADSAS opens — begin filling immediately
+- [ ] Request official transcripts from all institutions
+- [ ] Finalize and polish personal statement
+- [ ] Finalize school list
+- [ ] Submit primary application — target: first week of June
+
+### 9–11 Months Out (June–August)
+- [ ] Track verification status — resolve any discrepancies immediately
+- [ ] Complete secondary applications within 2–3 weeks of receiving each
+- [ ] Begin structured interview preparation
+
+### 6–9 Months Out (August–November)
+- [ ] Attend interviews — send thank-you notes within 24 hours
+- [ ] Continue completing secondaries
+- [ ] Evaluate secondary invitation pattern and adjust if needed
+
+### 3–6 Months Out (December–March)
+- [ ] Respond to acceptances, waitlists, and rejections
+- [ ] Write letters of continued interest to waitlisted programs
+- [ ] Send application updates where applicable
+
+### April 30
+- [ ] Commit to one school — release all other acceptances
+
+---
+
+## Frequently Asked Questions
+
+**When does AADSAS open each year?**
+AADSAS typically opens in early May each year. The exact date varies slightly — check the ADEA website annually for the confirmed date.
+
+**What is the AADSAS application deadline?**
+Most schools have deadlines between December and February. However, because admissions is rolling, submitting at the deadline puts you at a significant disadvantage compared to applicants who submitted in June.
+
+**Can I apply without having taken the DAT?**
+You can submit AADSAS without DAT scores, but your application cannot be complete until scores are received. Most programs won't review an application until all components — including DAT scores — are complete. Take the DAT before or immediately after submitting AADSAS.
+
+**How many dental schools should I apply to?**
+Most applicants apply to 10–18 schools. Fewer than 8 carries significant risk. More than 20 is generally unnecessary and expensive. Build a list with a mix of schools where you're above average, at average, and slightly below average for their entering class stats.
+
+**Can I apply to dental school and medical school in the same cycle?**
+Yes. AADSAS and AMCAS are separate application systems. Some applicants pursue both simultaneously. Be honest about your first choice in interviews for each — adcoms will ask.
+
+**What if I need to retake the DAT after submitting AADSAS?**
+You can submit your application and then have an improved DAT score added once it's available. Schools will update your file when new scores arrive. If your initial score is significantly below a school's average, it may be better to delay submission until improved scores are available.
+
+---
+
+## The Bottom Line
+
+The dental school application process rewards preparation and timing above almost everything else. A complete, polished application submitted in June will always outperform a slightly stronger application submitted in October — because the seats fill before October applicants are even being reviewed.
+
+Start earlier than you think you need to. Submit earlier than you think you need to. And if you want expert guidance on building your strongest possible application for this cycle, [schedule a free 15-minute call with our team](/schedule).
+
+We'll review your current timeline, identify the gaps, and make sure you're not leaving acceptances on the table because of a timing mistake that's entirely preventable.
+`,
+  },
+  {
+    slug: "dental-school-prerequisites",
+    title: "Dental School Prerequisites: The Complete List of Required Courses for 2025–2026",
+    description:
+      "Not sure which courses you need before applying to dental school? This complete guide covers every dental school prerequisite — biology, chemistry, physics, math, and beyond — plus which courses are most important for your GPA, how to handle AP credit, and how to plan your schedule to stay on track.",
+    publishedAt: "2026-07-01",
+    readingTime: "13 min read",
+    category: "Application Tips",
+    coverGradient: "from-indigo-500 to-emerald-600",
+    coverEmoji: "📚",
+    coverImage: "/images/blog-dental-prerequisites-cover.png",
+    author: DR_ALEX,
+    content: `
+## The Question That Trips Up Every First-Year Pre-Dental Student
+
+You've decided you want to go to dental school. You're planning your undergraduate schedule. And then you open the admissions page of a dental school and see a list of required courses that looks intimidating, confusing, or both.
+
+*Do I need two semesters of biology or one? Does my AP Chemistry count? What is biochemistry listed as "recommended" rather than "required"? Will this online course count?*
+
+These are real questions — and getting the wrong answers early in your undergraduate career can create serious problems later. Taking the wrong courses, using AP credit where a school won't accept it, or missing a required lab sequence are mistakes that cost time, money, and sometimes an entire application cycle.
+
+This guide gives you the complete, honest picture of dental school prerequisites — what's universally required, what varies by school, how grades in these courses affect your application, and how to build a smart course plan starting from your first semester.
+
+---
+
+## Why Prerequisites Matter Beyond Just Checking Boxes
+
+Before listing every required course, it's worth understanding what prerequisites actually accomplish in the admissions process.
+
+**They establish your academic foundation.** Dental school coursework assumes you have a working knowledge of biology, chemistry, and physics at the undergraduate level. Prerequisites ensure you arrive at orientation ready to absorb first-year content — not catching up.
+
+**They test whether you can handle rigorous science coursework.** The grades you earn in prerequisite courses are among the most heavily scrutinized in your application. A 4.0 in elective courses and a 3.0 in prerequisites is a red flag. A 3.5 across both signals consistent academic capability.
+
+**They signal commitment.** Taking advanced science coursework — biochemistry, anatomy, physiology — beyond the minimum required shows intellectual engagement with the field, not just a checklist mentality.
+
+---
+
+## The Universal Dental School Prerequisites
+
+While every school has its own specific list, the following courses are required by the **vast majority of accredited U.S. dental schools**. If you complete all of these, you will meet the minimum prerequisite requirements for most programs.
+
+### Biology
+
+**Standard requirement:** 2 semesters (1 year) of Biology with laboratory
+
+This is the single most important prerequisite subject for dental school. You'll need introductory biology covering cell biology, genetics, evolution, and organismal diversity — typically Biology I and Biology II with accompanying lab sections.
+
+**What schools are looking for:** Not just that you passed, but that you engaged with the material. A student who earned a B+ in Bio I and an A in Bio II with a lab demonstrates an upward trajectory. A student who took both courses pass/fail raises questions.
+
+**Upper-division biology:** Many competitive programs either require or strongly recommend additional upper-division biology courses — Genetics, Cell Biology, Microbiology, or Physiology. Even if a school doesn't require them, taking one or two signals scientific depth.
+
+### General Chemistry
+
+**Standard requirement:** 2 semesters (1 year) of General Chemistry with laboratory
+
+General Chemistry I and II with labs is required by nearly every dental school. This covers atomic structure, stoichiometry, bonding, thermodynamics, kinetics, equilibrium, acids and bases, and electrochemistry.
+
+**Why it matters specifically:** The BCP (Biology, Chemistry, Physics) GPA is calculated from these courses and weighted heavily in dental school admissions. Your performance in General Chemistry is a direct signal of your readiness for the basic sciences in dental school.
+
+### Organic Chemistry
+
+**Standard requirement:** 2 semesters (1 year) of Organic Chemistry with laboratory
+
+Organic Chemistry I and II with labs. This covers reaction mechanisms, functional group chemistry, stereochemistry, spectroscopy, and synthesis. Many students find this the most challenging prerequisite — and for good reason.
+
+**The DAT connection:** Organic Chemistry is 30 of the 100 questions in the DAT's Survey of Natural Sciences section. Your performance in these courses prepares you directly for the DAT, making it one of the highest-leverage prerequisites in your schedule. Read our [complete DAT study guide](/blog/how-to-study-for-the-dat) for how to connect your coursework to exam prep.
+
+### Physics
+
+**Standard requirement:** 2 semesters (1 year) of Physics with laboratory
+
+Most schools accept either calculus-based or algebra-based physics. Physics I typically covers mechanics, motion, energy, and waves. Physics II covers electricity, magnetism, light, and optics.
+
+**Important note:** Many pre-dental students take algebra-based physics, which is generally accepted everywhere. If you're a strong math student, calculus-based physics won't hurt — but it's not required for admissions.
+
+### English / Writing
+
+**Standard requirement:** 2 semesters (1 year) of English composition or writing-intensive coursework
+
+Dental schools include English because effective written and verbal communication is a core professional competency. Patient education, treatment explanations, clinical documentation — all require clear communication.
+
+Most programs accept English Composition I and II, or one composition course plus a writing-intensive course in another discipline (literature, humanities, social science).
+
+### Mathematics
+
+**Standard requirement:** 1 semester of college-level mathematics (varies significantly by school)
+
+This is the most variable prerequisite. Requirements range from Pre-calculus to Calculus I to Statistics. Some programs accept any college-level math course; others specifically require calculus or statistics.
+
+**Best approach:** Take Calculus I and one semester of Statistics. This satisfies nearly every school's math requirement and demonstrates quantitative ability beyond the minimum.
+
+---
+
+## Commonly Required or Strongly Recommended Additional Courses
+
+Beyond the universals above, the following courses appear on many school-specific prerequisite lists — and carrying these on your transcript, even when not strictly required, strengthens your application.
+
+### Biochemistry
+
+**Status:** Required by many top programs; recommended by most others
+
+Biochemistry is increasingly listed as a requirement rather than a recommendation by competitive programs. It bridges general chemistry and biology directly — exactly the foundation dental school biochemistry courses build on. If you're serious about applying to top-tier programs, take biochemistry.
+
+### Microbiology
+
+**Status:** Required by some; recommended by most
+
+Understanding microbiology is clinically relevant to dentistry — oral bacteria, infection control, antibiotic pharmacology. Many programs require it or give preference to applicants who have completed it.
+
+### Anatomy or Physiology
+
+**Status:** Recommended by most; required by some
+
+Human Anatomy and/or Physiology are listed as recommended prerequisites at many programs and directly relevant to dental school gross anatomy — a notoriously demanding first-year course. Taking these before dental school gives you a significant advantage in year one.
+
+### Statistics
+
+**Status:** Required or recommended at a growing number of programs
+
+Evidence-based dentistry requires the ability to interpret research data. Statistics is increasingly expected, and some programs now list it as a formal requirement.
+
+### Psychology or Sociology
+
+**Status:** Required by some; recommended by others
+
+Understanding patient behavior, anxiety management, and social determinants of health is part of modern dental education. Some programs — particularly those with community health missions — require at least one social science course.
+
+---
+
+## Course-by-Course Prerequisite Checklist
+
+Use this as your planning reference:
+
+| Course | Semesters | Lab Required? | Priority |
+|---|---|---|---|
+| Biology I & II | 2 | Yes | Essential |
+| General Chemistry I & II | 2 | Yes | Essential |
+| Organic Chemistry I & II | 2 | Yes | Essential |
+| Physics I & II | 2 | Yes | Essential |
+| English Composition | 2 | No | Essential |
+| Mathematics (Calculus or Statistics) | 1–2 | No | Essential |
+| Biochemistry | 1 | Sometimes | Strongly Recommended |
+| Microbiology | 1 | Sometimes | Recommended |
+| Anatomy / Physiology | 1–2 | Sometimes | Recommended |
+| Statistics | 1 | No | Recommended |
+| Psychology or Sociology | 1 | No | Recommended |
+
+**Total minimum credits:** Approximately 60–70 credit hours of required and recommended prerequisite coursework. This represents roughly half of a typical 120-credit undergraduate degree.
+
+---
+
+## How AP and IB Credits Are Handled
+
+This is one of the most common points of confusion — and getting it wrong is costly.
+
+**The general rule:** Most dental schools do not accept AP or IB credits to satisfy prerequisite requirements. They want to see you complete these courses at the university level, under the academic rigor of a college classroom, with a grade on your official transcript.
+
+**The exception:** A minority of programs will accept AP credit for introductory prerequisites like English or Calculus — but almost never for Biology, Chemistry, or Physics.
+
+**What this means for you:** Even if you placed out of introductory Biology or Chemistry through AP credit, you likely still need to take the college-level courses to satisfy dental school prerequisites. Do not assume AP credit satisfies a requirement without checking each school's specific policy.
+
+**The silver lining:** Students who earned high AP scores and then retake the subject at the university level often do very well — they're covering familiar material with greater maturity and stronger study skills, which helps their prerequisite GPA.
+
+---
+
+## Online Courses and Community College Credits
+
+### Online Prerequisite Courses
+
+Post-pandemic, this policy has evolved. Some dental schools now explicitly accept online prerequisite courses — particularly for lecture components. However:
+
+- Laboratory requirements almost universally must be completed in person
+- Many competitive programs still prefer or require in-person coursework
+- If you complete online prerequisites, check each school's current policy individually
+
+**Best practice:** Complete prerequisites at a four-year university if at all possible. If you use community college or online courses for one or two prerequisites, compensate with strong performance in upper-division courses at your home institution.
+
+### Community College Prerequisites
+
+Accepted at many programs — but with caveats. Some schools specifically require that a certain number of prerequisite courses be completed at a four-year accredited institution. Others accept all accredited college coursework regardless of institution type.
+
+If finances or scheduling require taking some prerequisites at community college, research your target schools' specific policies before registering. Taking all prerequisites at a community college and applying to top programs puts your application at a disadvantage.
+
+---
+
+## When to Take Each Course: A Suggested Pre-Dental Timeline
+
+Planning your prerequisite sequence matters — both for your GPA and for DAT preparation. Here's a logical 4-year framework:
+
+### Freshman Year
+- Biology I and II (with labs)
+- General Chemistry I and II (with labs)
+- English Composition I and II
+- Mathematics (Calculus I or Statistics)
+
+**Why this order:** Biology and General Chemistry first gives you the foundation for Organic Chemistry, which builds directly on both. Taking these in year one ensures you have time for additional upper-division courses later.
+
+### Sophomore Year
+- Organic Chemistry I and II (with labs)
+- Physics I and II (with labs)
+- One elective biology course (Genetics, Cell Biology)
+
+**Why this order:** Organic Chemistry builds on General Chemistry. Physics can run concurrently. By end of sophomore year, most core prerequisites are complete — giving you junior and senior years for upper-division courses, research, and DAT prep.
+
+### Junior Year
+- Biochemistry
+- Microbiology or Anatomy/Physiology
+- Statistics
+- Psychology or Sociology
+- Begin DAT preparation (target late junior year or summer before senior year)
+
+### Senior Year
+- Upper-division biology electives
+- Finalize shadowing hours
+- Submit AADSAS application (ideally June–July of senior year)
+- Complete secondary applications
+
+---
+
+## The Grades That Matter Most
+
+Not all prerequisite grades carry equal weight in your application.
+
+**Highest scrutiny:** Biology, General Chemistry, Organic Chemistry — these form your BCP (Biology, Chemistry, Physics) GPA, calculated separately on AADSAS and reviewed closely by every program.
+
+**High scrutiny:** Physics, Biochemistry — especially at research-focused programs.
+
+**Moderate scrutiny:** English, Mathematics — reviewed as part of total and non-science GPA.
+
+**What this means practically:** If you have limited time and energy in a given semester, prioritize performance in your BCP courses above all others. A B in English with an A in Organic Chemistry is a much stronger signal than the reverse.
+
+### What to Do If You Perform Poorly in a Prerequisite
+
+Do not ignore it and move on. A C or D in Organic Chemistry doesn't disappear — it sits on your AADSAS transcript and in your BCP GPA calculation forever.
+
+**Your options:**
+1. **Retake the course** — both grades appear on AADSAS, but an A after a C shows remediation and growth. Most programs view a strong retake positively if accompanied by an explanation.
+2. **Supplement with advanced coursework** — strong grades in Biochemistry or upper-division Chemistry courses demonstrate you've mastered the underlying material.
+3. **Address it in your application** — the additional information section of AADSAS exists for exactly this purpose. A brief, honest explanation of what happened and what changed is better than leaving the adcom to draw their own conclusions.
+
+---
+
+## Checking Prerequisites School by School
+
+Because requirements vary, always verify directly against each school's admissions page before submitting your application.
+
+**What to look for on each school's page:**
+- The specific courses they require (not just subject areas)
+- Whether labs are required for each course
+- Whether online or community college coursework is accepted
+- Whether AP/IB credit satisfies any requirements
+- The minimum grade required in prerequisite courses (many require a C or better)
+- Prerequisite completion deadlines (some require completion before application; others allow completion during the application year)
+
+**The ADEA Official Guide to Dental Schools** is published annually and lists prerequisite requirements for every accredited U.S. program in one place. It's an invaluable planning resource.
+
+---
+
+## Frequently Asked Questions
+
+**Can I apply to dental school before finishing all prerequisites?**
+Yes — most schools allow you to apply with prerequisites in progress, as long as you complete them before matriculation. Clearly list any in-progress courses on your AADSAS application. Do not leave them off.
+
+**What if I'm a non-traditional applicant who graduated years ago?**
+Prerequisite courses taken 10+ years ago may be flagged as outdated by some programs, particularly in rapidly evolving fields like biochemistry and cell biology. If you graduated more than 7–10 years ago, consider retaking or supplementing older prerequisites with recent coursework.
+
+**Do I need a science degree to apply to dental school?**
+No. Dental schools do not require a specific major — they require specific courses. A student who majored in Music and completed all required science prerequisites is eligible to apply. That said, a science-related major often makes prerequisite planning more straightforward.
+
+**What is the minimum grade accepted in prerequisite courses?**
+Most programs require a C or better in each prerequisite course. Some competitive programs expect B or better. Any grade below C in a prerequisite course is a serious flag and should be addressed through retaking the course.
+
+**Does biochemistry replace one of the chemistry prerequisites?**
+No. Biochemistry is an additional course that complements — not replaces — General Chemistry and Organic Chemistry requirements. All three are distinct prerequisites at schools that require biochemistry.
+
+**How many total prerequisite credit hours do I need?**
+Minimum requirements typically add up to 60–70 credit hours, though completing recommended courses (Biochemistry, Anatomy, Statistics, etc.) may bring the total to 80–90. This is roughly half of a standard 120-credit undergraduate degree.
+
+---
+
+## Your Prerequisite Action Plan
+
+Here is what to do based on where you are right now:
+
+**If you're a freshman:** Map out a 4-year course plan this semester. Meet with your pre-health advisor. Front-load the biology and chemistry sequence. Confirm with your top 5 target schools that your planned coursework satisfies their specific requirements.
+
+**If you're a sophomore or junior:** Audit what you've completed against the checklist above. Identify any gaps and schedule the missing courses. Start thinking about when you'll take the DAT and work backward from there.
+
+**If you're a senior or post-bacc:** Complete any remaining prerequisites before your application cycle deadline. Identify any weak prerequisite grades that need to be addressed — either through retaking or supplementing with advanced coursework.
+
+**Wherever you are:** Research your specific target schools. Prerequisites vary enough between programs that a course that satisfies School A may not satisfy School B. Build your plan around the most demanding school on your list — if you meet their requirements, you meet everyone else's.
+
+If you'd like a personalized review of your current coursework and how it maps to the specific schools you're targeting, [schedule a free call with our team](/schedule). We'll identify any gaps before they become problems.
+`,
+  },
+  {
     slug: "dental-school-letters-of-recommendation",
     title: "Dental School Letters of Recommendation: Who to Ask, How to Ask, and What Makes a Letter Actually Strong",
     description:
