@@ -24,6 +24,530 @@ const DR_ALEX = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "dat-pat-tips-and-strategies",
+    title: "DAT PAT: Complete Guide to the Perceptual Ability Test (Tips, Strategies, and Practice)",
+    description:
+      "The DAT Perceptual Ability Test is the section that drags down more DAT scores than any other. This complete guide covers all 6 PAT question types, proven strategies for each, the best practice resources, and a daily practice plan that builds the spatial reasoning skills you need to score 20+ on PAT.",
+    publishedAt: "2026-07-03",
+    readingTime: "13 min read",
+    category: "DAT Prep",
+    coverGradient: "from-violet-600 to-indigo-600",
+    coverEmoji: "🧠",
+    coverImage: "/images/blog-dat-pat-guide-cover.png",
+    author: DR_ALEX,
+    content: `
+## Why PAT Destroys More DAT Scores Than Any Other Section
+
+Ask any pre-dental student which DAT section surprised them most — and nine times out of ten, the answer is PAT.
+
+Not Organic Chemistry. Not Biology. The Perceptual Ability Test.
+
+Here's why: every other DAT section tests knowledge. You learn it, you practice applying it, you get better. PAT is different. It tests **spatial reasoning** — the ability to mentally rotate objects, visualize 3D shapes from 2D representations, and recognize spatial patterns under time pressure. It doesn't care how much you've memorized. It rewards a specific kind of visual thinking that most students have never deliberately trained.
+
+The good news: spatial reasoning is trainable. It is a skill that improves with targeted, consistent practice — not a fixed trait you either have or don't. Students who commit to daily PAT practice over 8–12 weeks routinely improve by 3–5 points on this section alone. That kind of improvement on a single section can move your Academic Average by a full point or more.
+
+This guide covers all six PAT question types, the most effective strategy for each, common mistakes that cost students points, and how to build a practice routine that actually develops the spatial reasoning skills the test demands.
+
+---
+
+## PAT Format and Scoring: What You're Actually Dealing With
+
+The Perceptual Ability Test is the second section of the DAT, immediately following the Survey of Natural Sciences. Here's the structure:
+
+| Detail | Value |
+|---|---|
+| Number of questions | 90 total |
+| Time allowed | 60 minutes |
+| Time per question | ~40 seconds |
+| Question types | 6 types, 15 questions each |
+| Score range | 1–30 |
+| Competitive score | 18+ |
+| Strong score | 20+ |
+| Top programs | 21–23+ |
+
+Forty seconds per question. Sixty minutes. Ninety questions. Six completely different types of visual reasoning — back to back, with no breaks between types.
+
+This is not a section you can bull your way through on test day. Speed and accuracy both matter, and both are built through practice — not through reading explanations.
+
+---
+
+## The 6 PAT Question Types
+
+### 1. Keyhole (Apertures)
+
+**What it tests:** Given a 3D object, identify which hole (aperture) it can pass through without rotating or forcing.
+
+**How it works:** You're shown a 3D shape on the left and five 2D silhouette outlines on the right. The object must be able to pass through the hole straight-on — no rotation, no tilting, no forcing. You're choosing which silhouette is an accurate representation of the object's profile from a specific viewing angle.
+
+**The core strategy — systematic elimination:**
+Work by eliminating wrong answers rather than searching for the right one.
+1. Look at the object from the front. Eliminate any aperture that doesn't match the front profile.
+2. Look at the object from the top. Eliminate any aperture inconsistent with the top profile.
+3. Look at the object from the side. The remaining aperture is your answer.
+
+Most students try to find the right answer immediately — this leads to errors when two options look similar. Elimination is faster and more accurate.
+
+**Common mistake:** Forgetting that the object must pass completely through the aperture — not just fit into it. If any part of the object is wider than the hole, that aperture is wrong.
+
+**Practice focus:** Start with simple shapes (cubes, cylinders, L-shapes) and add complexity as you improve. The first 5–10 keyhole questions in any practice set are usually simpler — use them to build speed before the harder ones appear.
+
+---
+
+### 2. Top-Front-End (Orthographic Projections)
+
+**What it tests:** Given two of the three orthographic projections (top, front, end/side views) of a 3D object, identify the missing third view.
+
+**How it works:** Orthographic projection is a standardized engineering drawing technique where a 3D object is represented by flat 2D views from three perpendicular angles. The test gives you two views and asks you to determine what the third would look like.
+
+**The core strategy — build the object mentally:**
+1. From the front view, establish the object's height and width.
+2. From the top view, establish the object's depth and width.
+3. Combine these to mentally construct the 3D object.
+4. Now ask: what does this object look like from the end/side?
+
+**The line rule:** In orthographic projections, solid lines represent visible edges and dashed lines represent hidden edges. When evaluating answer choices, eliminate any that have solid lines where there should be dashed lines (or vice versa).
+
+**Common mistake:** Students try to work directly from 2D views without building the 3D object first. This leads to confusion when the views are for a complex object. Always build the 3D object in your mind before evaluating the third view.
+
+**Practice focus:** Draw physical 3D objects from household items (boxes, cups, books) and practice creating their three orthographic views. Then reverse the process. This physical practice builds the mental translation skill faster than purely screen-based practice.
+
+---
+
+### 3. Angle Ranking
+
+**What it tests:** Given four angles labeled A, B, C, and D, rank them from smallest to largest (or largest to smallest, as specified).
+
+**How it works:** Four angles are displayed, and you choose which answer correctly orders them from smallest to largest. This sounds simple — and it mostly is — but the test deliberately presents angles that appear similar in size to create confusion.
+
+**The core strategy — use the baseline method:**
+Mentally extend one arm of each angle to a common baseline. When all four angles share the same reference point and one arm direction, their differences become much more visually apparent. Angles that appear ambiguous in isolation become clearly distinguishable when normalized.
+
+**Speed tip:** Angle ranking is the fastest PAT question type for most students once they have a strategy. Target completing all 15 angle ranking questions in under 8 minutes, leaving more time for keyhole and top-front-end.
+
+**Common mistake:** Misjudging obtuse angles. An angle that appears large because its arms are long may actually be smaller than a compact angle with short arms. What matters is the degree of opening between the arms — not the length of the arms.
+
+**Practice focus:** Practice on paper first, drawing angles and ranking them. Then move to timed digital practice. Build the habit of using the baseline method on every question — don't skip it even when an angle seems obviously smallest or largest.
+
+---
+
+### 4. Hole Punching (Paper Folding)
+
+**What it tests:** A square piece of paper is shown being folded one or more times, then punched through with a hole. When unfolded, what does the pattern of holes look like?
+
+**How it works:** Each question shows 2–4 fold steps (usually depicted as the paper folding along a dotted line) followed by a hole punch. You must determine where the holes appear when the paper is fully unfolded. Answer choices show 5 possible hole patterns.
+
+**The core strategy — reverse unfold:**
+Work backward from the hole punch, unfolding one step at a time.
+1. Start with the punched hole in its current position.
+2. For each fold in reverse order, reflect the hole across the fold line to show where the reflected hole appears.
+3. Repeat for each fold until fully unfolded.
+4. The total set of holes is your answer.
+
+**The symmetry principle:** Every fold creates a reflection. A single fold creates 2 holes (original + reflection). Two folds create 4 holes. Three folds create 8 holes. If your answer has the wrong number of holes, you've made an error.
+
+**Common mistake:** Misidentifying the fold line direction. Pay careful attention to whether the fold is horizontal, vertical, or diagonal — the reflection axis is different for each, and a wrong axis completely changes the answer.
+
+**Practice focus:** Use actual paper. Fold a real piece of paper, punch a hole with a pen, unfold it, and verify your mental prediction against the actual result. This physical practice builds intuition for reflections far faster than purely visual practice.
+
+---
+
+### 5. Cube Counting
+
+**What it tests:** Given a 3D structure of cubes stacked on a surface, count how many individual cubes have exactly 1, 2, 3, 4, or 5 of their faces painted — given that the structure is dipped in paint on all exposed outer surfaces, and cubes resting on the ground do not have their bottom face painted.
+
+**How it works:** The question shows a stacked cube structure and asks something like: "How many cubes have exactly 3 painted faces?" You must visualize which cubes are in corner positions (3 exposed faces), edge positions (2 exposed faces), face positions (1 exposed face), or interior positions (0 exposed faces).
+
+**The core strategy — position mapping:**
+Rather than counting painted faces on individual cubes, categorize cubes by position:
+- **Corner cubes** (exposed on 3 sides): always have 3 painted faces
+- **Edge cubes** (exposed on 2 sides): always have 2 painted faces
+- **Face cubes** (exposed on 1 side): always have 1 painted face
+- **Interior cubes** (surrounded): always have 0 painted faces
+
+The tricky part: structures are not always simple rectangles. They have overhangs, recesses, and irregular shapes. For each cube, ask: how many of its 6 faces are exposed to the outside environment? Don't forget the bottom face rule — cubes resting on the ground (or on another cube) don't count that face as painted.
+
+**Common mistake:** Forgetting that cubes resting on other cubes block the top face of the cube below. The bottom face of a cube sitting on top of another cube is also not painted (it's touching another cube, not exposed).
+
+**Practice focus:** Build physical cube structures with sugar cubes, dice, or building blocks. Count painted faces on the physical structure. This 3D tactile practice builds spatial intuition much faster than screen practice alone.
+
+---
+
+### 6. Pattern Folding (3D Form Development)
+
+**What it tests:** Given an unfolded 2D pattern (a net), determine which 3D shape it folds into.
+
+**How it works:** You're shown a flat, cross-like or irregular 2D shape — a net — which represents the unfolded surface of a 3D geometric solid. You must choose which of 4 answer choices correctly represents the 3D shape that net would fold into.
+
+**The core strategy — anchor and fold:**
+1. Identify the base face — usually the largest or most central panel in the net.
+2. Mentally fold each adjacent face up from the base.
+3. Focus on the faces that will be visible from the front of the 3D shape.
+4. Pay special attention to edge relationships — faces sharing an edge become adjacent faces on the 3D solid.
+
+**The pattern check:** When answer choices have patterns, markings, or shading on faces, use these as eliminators. A marking on a specific face of the net must appear on the correct face of the 3D solid with the correct orientation. Wrong orientation = wrong answer.
+
+**Common mistake:** Ignoring face orientation. Students often correctly identify which faces are visible but choose an answer where the pattern on a face is rotated incorrectly. Always check orientation, not just which faces are showing.
+
+**Practice focus:** Crack DAT PAT has the most varied pattern folding practice bank. Focus on nets with markings or asymmetric patterns — these eliminate wrong answers fastest. Practice identifying the base face immediately and building from there.
+
+---
+
+## Time Management Strategy for PAT
+
+With 90 questions in 60 minutes, time management is as important as accuracy.
+
+**Target time allocation by question type:**
+
+| Question Type | Questions | Target Time | Seconds/Question |
+|---|---|---|---|
+| Keyhole | 15 | 12 min | ~48 sec |
+| Top-Front-End | 15 | 15 min | ~60 sec |
+| Angle Ranking | 15 | 7 min | ~28 sec |
+| Hole Punching | 15 | 10 min | ~40 sec |
+| Cube Counting | 15 | 8 min | ~32 sec |
+| Pattern Folding | 15 | 8 min | ~32 sec |
+| **Total** | **90** | **60 min** | **~40 sec avg** |
+
+Top-Front-End is your time bank — it's the most complex question type. If you're fast on Angle Ranking and Cube Counting (which most students are with practice), you create buffer time for Top-Front-End.
+
+**The triage rule:** On timed practice, never spend more than 90 seconds on any single question. If you're stuck, mark your best guess and move on. A question you spend 2 minutes on is worth the same 1 point as a question you solve in 20 seconds. Don't let one difficult question steal time from 3 easy ones.
+
+---
+
+## The Daily PAT Practice Plan That Actually Works
+
+### Phase 1: Learn Each Type (Weeks 1–2)
+
+Work through each of the 6 question types individually — not mixed. Spend 2 days on each type:
+- Day 1: Read the strategy, watch video walkthroughs, solve 15 questions untimed
+- Day 2: Solve 15 questions with a relaxed time limit (2x normal pace), analyze every error
+
+By the end of week 2, you should have a working strategy for each type and a clear sense of which types are your weakest.
+
+### Phase 2: Mixed Practice with Timing (Weeks 3–7)
+
+This is where real improvement happens. Every day:
+- Complete a full PAT section (90 questions) in 60 minutes
+- After scoring, analyze every wrong answer: was it a knowledge gap, a strategy error, or a timing mistake?
+- Spend 20 minutes on your weakest type with focused drill
+
+The key: **always timed.** Untimed practice builds false confidence. Timed practice builds the actual skill the test demands.
+
+### Phase 3: Full-Length Integration (Weeks 8–10)
+
+- Take full-length DAT practice tests 2–3 times per week (PAT included)
+- Track your PAT score by question type across all practice tests
+- Identify the 1–2 question types where you're still losing the most points and focus your remaining prep there
+
+### The Non-Negotiable Rule: Practice Every Day
+
+PAT skills degrade faster than knowledge-based skills when you take days off. Even on light study days, do at least 15 PAT questions. The spatial reasoning pathways you're building need consistent activation to stick.
+
+---
+
+## Best Resources for DAT PAT Practice
+
+| Resource | Best For | Cost |
+|---|---|---|
+| **Crack DAT PAT** | Largest PAT-specific practice bank, all 6 types | Paid |
+| **DAT Bootcamp PAT** | Realistic difficulty calibration, detailed explanations | Paid |
+| **DAT Destroyer** | High-difficulty practice (harder than real exam) | Paid |
+| **ADA Official Practice Tests** | Most accurate difficulty for real exam calibration | Paid |
+| **YouTube (search each type)** | Free walkthroughs, especially Top-Front-End | Free |
+
+**Crack DAT PAT** is the gold standard for PAT-specific practice volume. If you're serious about improving PAT, it's worth the investment. DAT Bootcamp has excellent explanations for each question — valuable for understanding why you got something wrong, not just what the right answer was.
+
+---
+
+## The PAT Score You Should Actually Target
+
+What PAT score do you need? Here's the realistic benchmark:
+
+| PAT Score | Assessment |
+|---|---|
+| Below 17 | Significantly below average — needs major improvement |
+| 17–18 | Below competitive range — targeted practice required |
+| 19–20 | Competitive at most programs |
+| 21–22 | Strong — above average for most programs |
+| 23+ | Exceptional — top percentile |
+
+The national average PAT score for dental school applicants is approximately 18–19. Most competitive programs want to see 19+. Top programs (Penn, Harvard, Columbia) typically see entering classes averaging 21+.
+
+If your practice PAT scores are consistently below 18, this section deserves more daily time — not less. Every point you add to PAT adds directly to your Academic Average. A 3-point PAT improvement (17 → 20) can increase your AA by almost a full point when averaged across all sections.
+
+---
+
+## Frequently Asked Questions
+
+**How long does it take to improve your DAT PAT score?**
+Most students see measurable improvement within 3–4 weeks of consistent daily practice (30–60 minutes/day). Significant improvement — 3–5 points — typically requires 8–10 weeks of structured daily practice. Students who practice PAT sporadically or less than daily see much slower progress.
+
+**Is PAT harder on the real DAT than on practice tests?**
+DAT Bootcamp is calibrated to be approximately the same difficulty as the real exam on PAT. Crack DAT PAT can be slightly easier for some question types. ADA official practice tests are the closest proxy for real exam difficulty. If your Bootcamp PAT scores are consistently 20+, expect a similar result on test day.
+
+**What if I'm naturally bad at spatial reasoning?**
+Spatial reasoning ability varies between people — but it is absolutely trainable. Research consistently shows that spatial visualization skills improve significantly with targeted practice. Students who describe themselves as "terrible at spatial stuff" and then commit to 8 weeks of daily PAT practice routinely achieve scores they thought were impossible. The key is consistency and correct technique, not innate talent.
+
+**Should I skip PAT questions I find difficult and come back to them?**
+Yes — with a caveat. Flag difficult questions and make your best guess before moving on. The DAT does not penalize wrong answers, so leaving any question blank is worse than guessing. If time allows, return to flagged questions. If not, your best guess is already recorded.
+
+**Can I use scratch paper during the PAT section?**
+Yes. You are provided a physical whiteboard and marker at the testing center. Use it — especially for hole punching (tracking fold steps), angle ranking (baseline method), and cube counting (tallying cubes by type). Students who use scratch paper score higher than students who try to work purely mentally.
+
+**Is PAT weighted more heavily in the DAT score calculation?**
+No. The PAT score is one of the four subsection scores used to calculate the Academic Average (AA) — it carries the same weight as the Reading Comprehension, Quantitative Reasoning, and Total Science scores. However, because it's the section where the highest variance in applicant performance exists, a strong PAT score differentiates you more meaningfully than a strong QR score where most students perform similarly.
+
+---
+
+## Your PAT Improvement Plan Starts Today
+
+The students who score 21+ on PAT are not smarter than the students who score 17. They practiced differently — more consistently, more deliberately, and with specific strategies for each question type.
+
+Start with the type you find hardest. Build the strategy, practice it untimed, then timed, then under full exam conditions. Move to the next type. Repeat for all six. Then integrate them into full timed PAT sections daily.
+
+If you want a personalized DAT study plan that integrates PAT practice into your full prep schedule — or if you're stuck on a specific question type and need expert guidance — a [DAT tutor](/blog/best-dat-tutor-guide) can diagnose your specific errors and accelerate your improvement far faster than self-study alone.
+
+For a complete overview of the entire DAT and how to approach every section, read our [full DAT study guide](/blog/how-to-study-for-the-dat). And if you're ready to talk through your full application strategy, [schedule a free call with our team](/schedule).
+`,
+  },
+  {
+    slug: "dental-school-waitlist",
+    title: "Dental School Waitlist: What to Do Right Now to Maximize Your Chances of Getting Off",
+    description:
+      "Being waitlisted at a dental school is not a rejection — but what you do next determines whether you get in. This guide covers exactly how dental school waitlists work, what moves the needle, how to write a letter of continued interest that actually helps, and how to protect yourself while you wait.",
+    publishedAt: "2026-07-03",
+    readingTime: "11 min read",
+    category: "Application Tips",
+    coverGradient: "from-amber-500 to-violet-700",
+    coverEmoji: "⏳",
+    coverImage: "/images/blog-dental-waitlist-cover.png",
+    author: DR_ALEX,
+    content: `
+## A Waitlist Is Not a Rejection — But It Requires Action
+
+You checked your application portal and saw the word you weren't hoping for: *Waitlisted*.
+
+The first feeling is usually somewhere between disappointment and confusion. Not in. Not out. Suspended in a state where you can't move forward and can't let go.
+
+Here is what you need to understand immediately: **a dental school waitlist is a legitimate pathway to acceptance.** It is not a soft rejection or a consolation message. At most programs, a meaningful percentage of final acceptances come from the waitlist every cycle — sometimes as late as July or August, weeks before the school year begins.
+
+What separates students who get off the waitlist from those who don't is rarely GPA or DAT score — those got you on the list in the first place. It's almost always what they did between the waitlist notification and the final decision.
+
+This guide tells you exactly what to do — step by step, starting today.
+
+---
+
+## How Dental School Waitlists Actually Work
+
+Before you can act strategically, you need to understand the mechanics of how waitlists move.
+
+### The Waitlist Timeline
+
+Dental school waitlist movement follows a predictable pattern tied to the overall admissions calendar:
+
+| Period | What's Happening |
+|---|---|
+| December – February | Initial acceptances go out. Waitlists are formed. |
+| March – April | Accepted students evaluate offers. Some begin declining. |
+| April 30 | AADSAS commitment deadline. Students must choose one school and release all other acceptances. |
+| May – June | Largest wave of waitlist movement. Declined seats create openings. |
+| June – August | Continued movement as students finalize plans, defer, or withdraw. |
+| August | Final waitlist decisions before orientation. Movement ends. |
+
+**The most important date on this calendar: April 30.** When accepted students release all but one acceptance, schools suddenly see how many seats are actually open. This is when the largest single wave of waitlist movement happens — and why staying actively engaged through April is critical.
+
+### Ranked vs. Unranked Waitlists
+
+Some dental schools maintain a **ranked waitlist** — students are ordered by priority, and movement follows that order. Others maintain an **unranked waitlist** — all waitlisted students are considered equally, and decisions may depend on factors like geographic diversity, specialty interest, or mission fit.
+
+Many schools don't disclose which type they use. Contact the admissions office to ask directly: *"Is your waitlist ranked or unranked, and is there any information you can share about where I stand?"* Some offices will tell you; others won't. Either answer is useful information.
+
+### How Many Students Actually Get Off the Waitlist?
+
+This varies significantly by program and by year. Factors that affect waitlist movement include:
+- How many students accepted from other programs declined for financial or geographic reasons
+- Whether the incoming class is smaller or larger than projected
+- How many students defer or withdraw after accepting
+
+At most programs, **5–20% of the final entering class** comes from the waitlist in a typical cycle. At some programs in high-waitlist years, that figure is higher. This is a meaningful number — not a lottery.
+
+---
+
+## Step 1: Respond to the Waitlist Offer Immediately
+
+This sounds obvious, but many students delay because they're not sure what to do.
+
+Within 24 hours of receiving a waitlist notification, formally accept your position on the waitlist if the school gives you the option to do so. Some schools ask you to actively confirm your continued interest. Others automatically hold you on the list unless you withdraw.
+
+**Do not withdraw from a waitlist at a program you genuinely want to attend** — even if you've already accepted elsewhere. You can hold a paid acceptance at another school and remain on multiple waitlists simultaneously. This is standard practice, expected by all parties, and explicitly allowed by AADSAS rules.
+
+The only exception: if a program notifies you that they require you to withdraw from all other programs as a condition of your waitlist position, you'll need to evaluate that school's priority in your personal ranking before agreeing.
+
+---
+
+## Step 2: Write a Letter of Continued Interest
+
+This is the single most impactful action you can take as a waitlisted applicant — and the one most students handle poorly or skip entirely.
+
+A **Letter of Continued Interest (LOCI)** is a professional written communication to the admissions committee that:
+1. Confirms that you remain committed to attending if offered a seat
+2. Updates them on meaningful developments since your application was submitted
+3. Reinforces why this specific program is your top choice
+
+### What a Strong LOCI Does
+
+A well-written letter of continued interest accomplishes something subtle but important: it keeps you alive as a person in the admissions file rather than a static profile. Admissions committees remember engaged, professional candidates — especially when they're deliberating over which waitlisted applicant to advance.
+
+### When to Send It
+
+Send your LOCI within 2 weeks of receiving your waitlist notification — not immediately (too reactive), and not 2 months later (too late to matter in early deliberations).
+
+### What to Include
+
+**Opening — state your purpose clearly:**
+Do not bury the lead. Your first sentence should be direct: *"I am writing to confirm my continued and enthusiastic interest in [School Name]'s Doctor of Dental Medicine program and to update you on recent developments since my application was submitted."*
+
+**A genuine update since your application:**
+This is the most valuable part of the letter. What has changed or been accomplished since you submitted AADSAS? Strong updates include:
+- Improved DAT score (if you retook the exam)
+- Additional shadowing hours or a new clinical observation that reinforced your interest
+- A completed research project, publication, or presentation
+- New volunteer or community health experience
+- Completion of additional coursework with strong grades (especially for borderline GPA applicants)
+- A meaningful professional experience
+
+If nothing significant has changed, don't invent an update — focus instead on reaffirming your specific fit with the program.
+
+**Why this school specifically:**
+Generic flattery is useless. Specific reasons are valuable. Reference something concrete: a particular faculty member's research, a curriculum feature (problem-based learning, specific clinical rotations), a community partnership, or a program mission that genuinely aligns with your career goals. If you visited the campus or attended a virtual information session, mention it and what you took away.
+
+**A clear statement of commitment:**
+End by stating directly that if offered a seat, you would enroll. Admissions committees want to admit people who will actually show up. *"If offered admission from the waitlist, [School Name] is where I would choose to attend"* — or a similar unambiguous statement — removes any uncertainty about your intent.
+
+### What to Avoid in a LOCI
+
+- Desperation or emotional appeals (*"This has been my dream since I was 5 years old..."*) — these don't help and often hurt
+- Generic language that could apply to any dental school
+- Listing your original application stats as if they're new information
+- Letters longer than one page — focused and professional is always better than exhaustive
+- Sending a follow-up LOCI every two weeks — one strong letter is better than multiple mediocre ones
+
+---
+
+## Step 3: Send Any Meaningful Updates Promptly
+
+Beyond the initial LOCI, contact the admissions office whenever you have a genuinely significant update to share. Not every minor event warrants communication — but these do:
+
+**Improved DAT score:** If you retake the DAT after being waitlisted and improve your score — particularly if a low DAT was likely a weak point in your original application — notify the admissions office immediately. Send an update email with your new score report attached. An improvement of 2–3+ points is a meaningful development that changes your competitiveness.
+
+**Strong end-of-semester grades:** If your most recent semester produced a GPA significantly higher than your application average — particularly in science courses — send an official transcript with a brief note. An upward trend in grades addresses one of the most common concerns about borderline applicants.
+
+**New shadowing or clinical experience:** A substantial new shadowing engagement (especially in a specialty area relevant to the school's mission) is worth mentioning. Brief it specifically: *"Since submitting my application, I completed 60 hours of oral surgery shadowing at [Institution], which deepened my understanding of complex extractions and the surgical decision-making process."*
+
+**A new letter of recommendation:** If you have cultivated a new professional relationship — a dentist you've shadowed extensively, a clinical supervisor, a faculty member — and they can write you a strong, specific letter, some schools accept additional letters after the initial application. Email the admissions office first to ask if they'll accept supplementary letters for waitlisted applicants.
+
+---
+
+## Step 4: Protect Yourself With an Acceptance Elsewhere
+
+This is non-negotiable: **you should have at least one paid acceptance in hand before April 30.**
+
+Being waitlisted at your top-choice program while holding no other acceptance puts you in an extremely vulnerable position. If you're released from the waitlist in July or August with no acceptance, you face the prospect of another full application cycle — another year, another AADSAS submission, another set of secondary fees.
+
+If you haven't been accepted anywhere yet and you're waitlisted at multiple schools, consider the following:
+
+**Contact other programs where your application is under review.** A brief, professional email to programs that haven't yet issued a decision — expressing continued interest and asking whether a decision has been made — is appropriate. This keeps your file active and sometimes prompts a decision that might otherwise have been delayed.
+
+**Evaluate whether to apply to additional schools.** If it is still within the application cycle and you have no acceptance in hand, adding programs to your AADSAS application (if the cycle is still open) may be worth the additional fees. Prioritize programs with acceptance rates above 20% where your stats are at or above their median.
+
+**Consider the backup plan.** If the current cycle ends without an acceptance, start planning your reapplication now. Identify the specific weaknesses in your application, build a plan to address them, and target an earlier submission in the next cycle. Students who reapply with a meaningfully stronger application and submit in the first week of AADSAS opening have strong reapplication success rates.
+
+---
+
+## Step 5: Know When to Move On
+
+There is a point at which continued waiting stops being a strategy and starts being a cost — emotional, professional, and financial.
+
+If you haven't heard from a waitlisted program by **late July**, the realistic probability of being admitted from that waitlist in the current cycle drops significantly. Orientation typically begins in mid-to-late August, and schools need enough time to process new acceptances and give admitted students time to prepare.
+
+At this point, ask yourself:
+- Do I have an acceptance elsewhere that I can commit to?
+- If not, is reapplication a stronger path than continuing to wait?
+
+If you have an acceptance at a program you're genuinely excited about, commit fully and release your other waitlist positions. Continuing to hold a waitlist position at another school while deferring full commitment to your acceptance is a legitimate choice — but it's only worth doing if the waitlisted school meaningfully changes your outcome.
+
+If you have no acceptance and late July arrives with no waitlist movement: shift your energy to reapplication planning. The worst outcome is spending the fall in limbo rather than actively building a stronger application for the next cycle.
+
+---
+
+## How to Write a Letter of Continued Interest: Template Framework
+
+Here is a structural framework you can adapt. Do not copy this verbatim — personalize every section.
+
+---
+
+**[Date]**
+
+**To the Admissions Committee, [School Name] School of Dentistry:**
+
+I am writing to reaffirm my sincere and continued interest in [School Name]'s DMD program following my recent waitlist notification. [School Name] remains my first choice for dental school, and I would be honored to join the Class of [Year] if given the opportunity.
+
+Since submitting my AADSAS application, I have [brief description of meaningful update: retaken the DAT / completed additional shadowing / finished a relevant course / published research / etc.]. [One to two sentences elaborating on the specific experience and what you gained from it.]
+
+My commitment to [School Name] specifically stems from [one or two genuinely specific reasons: a curriculum feature, a mission element, a faculty member's work, a community partnership]. I [attended/watched/researched] [specific event or initiative] and [brief specific takeaway].
+
+I remain fully committed to attending [School Name] if offered a seat. I would bring [one sentence on a quality or perspective you'd contribute to the class] — and I look forward to the possibility of contributing to your program.
+
+Thank you for your continued consideration.
+
+Sincerely,
+[Your full name]
+[AADSAS ID]
+[Email address]
+[Phone number]
+
+---
+
+**Length:** One page maximum. This framework fits comfortably in 4–5 tight paragraphs.
+
+---
+
+## Frequently Asked Questions
+
+**Does calling the admissions office help your waitlist chances?**
+A brief, professional phone call to ask about the status of the waitlist or confirm that your materials are complete is acceptable. Calling repeatedly or using the call to lobby for your application is not. If you call, be courteous, brief, and ask a specific question — not an open-ended plea.
+
+**Should I visit the campus while waitlisted?**
+If the school is within reasonable distance and you can arrange a brief campus visit during the waitlist period, it demonstrates genuine interest and commitment. Contact the admissions office to ask if visits during the waitlist period are appropriate and whether a brief meeting with an admissions counselor would be possible.
+
+**Can I send multiple letters of continued interest?**
+Send one strong LOCI, then follow up only when you have a meaningful update — a new score, new grades, or significant new experience. Two to three thoughtful communications over the waitlist period (February through July) is reasonable. More than that becomes noise.
+
+**What if I'm on the waitlist at my top choice but accepted at my second choice, and the deposit deadline is approaching?**
+Pay the deposit at your second choice and remain on the waitlist at your first choice. You will forfeit the deposit if your first choice admits you, but that is a known and acceptable cost. Never forfeit an acceptance without a confirmed acceptance elsewhere.
+
+**Is it appropriate to ask for feedback on my application while waitlisted?**
+Some schools will provide feedback to waitlisted applicants; many won't. It's worth asking professionally — *"I would greatly appreciate any feedback on my application that might help me strengthen my candidacy"* — but accept gracefully if they decline. Never argue with feedback you receive.
+
+**What does being waitlisted mean for a reapplication?**
+Being waitlisted — as opposed to rejected — is generally a positive signal for reapplication. It means the school considered you seriously. If you reapply with a demonstrably stronger application (improved DAT, additional clinical experience, stronger personal statement), programs where you were previously waitlisted are often among your strongest prospects in the next cycle.
+
+---
+
+## The Mindset That Separates Students Who Get Off the Waitlist
+
+There's a temptation, after receiving a waitlist notification, to either catastrophize (treat it as a rejection) or passively hope (assume the school will figure it out on their own).
+
+Neither serves you.
+
+The students who get off waitlists are the ones who stay engaged, stay professional, and stay prepared. They send a strong LOCI within two weeks. They have a meaningful update ready. They contact the school when something genuinely changes. They hold an acceptance elsewhere so they're never negotiating from desperation. And they have a clear plan if the waitlist doesn't move.
+
+Being waitlisted is uncomfortable. But it is absolutely a position from which you can — and many students do — earn a dental school acceptance.
+
+If you want personalized support navigating your waitlist strategy — including a review of your letter of continued interest before you send it — [schedule a free call with our team](/schedule). We've helped many students turn waitlist positions into acceptances, and we know exactly what moves the needle.
+`,
+  },
+  {
     slug: "dental-school-acceptance-rates",
     title: "Dental School Acceptance Rates: What Are Your Real Odds of Getting In?",
     description:
