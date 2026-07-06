@@ -55,7 +55,21 @@ function renderMarkdown(content: string) {
   while (i < lines.length) {
     const line = lines[i];
 
-    if (line.startsWith("## ")) {
+    if (line.startsWith("#### ")) {
+      elements.push(
+        <h4 key={key++} className="mb-2 mt-6 text-base font-bold text-slate-800">
+          {line.slice(5)}
+        </h4>,
+      );
+      i++;
+    } else if (line.startsWith("### ")) {
+      elements.push(
+        <h3 key={key++} className="mb-3 mt-8 text-xl font-bold text-slate-900">
+          {line.slice(4)}
+        </h3>,
+      );
+      i++;
+    } else if (line.startsWith("## ")) {
       elements.push(
         <h2
           key={key++}
@@ -65,11 +79,11 @@ function renderMarkdown(content: string) {
         </h2>,
       );
       i++;
-    } else if (line.startsWith("### ")) {
+    } else if (line.startsWith("# ")) {
       elements.push(
-        <h3 key={key++} className="mb-3 mt-8 text-xl font-bold text-slate-900">
-          {line.slice(4)}
-        </h3>,
+        <h1 key={key++} className="mb-4 mt-10 text-3xl font-extrabold tracking-tight text-slate-900">
+          {line.slice(2)}
+        </h1>,
       );
       i++;
     } else if (line.startsWith("---")) {
@@ -211,6 +225,10 @@ function renderMarkdown(content: string) {
             }}
           />,
         );
+      } else {
+        // Safety: if nothing was captured, advance i to prevent an infinite loop
+        // on any unrecognised line (e.g. a lone "#" or other edge-case character)
+        i++;
       }
     }
   }
