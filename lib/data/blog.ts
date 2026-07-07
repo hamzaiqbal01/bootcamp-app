@@ -24,6 +24,433 @@ const DR_ALEX = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "dental-school-mmi-interview-guide",
+    title: "Dental School MMI Interview: The Complete Station-by-Station Guide (2025–2026)",
+    description:
+      "Everything you need to know about the dental school Multiple Mini Interview (MMI) — how it works, what each station type tests, how scoring works, and proven preparation strategies. Includes sample prompts and model answers for every station type.",
+    publishedAt: "2026-07-07",
+    readingTime: "15 min read",
+    category: "Interview Prep",
+    coverGradient: "from-indigo-600 to-violet-700",
+    coverEmoji: "🚪",
+    coverImage: "/images/blog-mmi-interview-guide-cover.png",
+    author: DR_ALEX,
+    content: `
+## What Is the MMI and Why Do Dental Schools Use It?
+
+The Multiple Mini Interview (MMI) is an interview format used by a growing number of dental schools in the United States and Canada. Instead of a single long conversation with a panel, applicants rotate through a series of short, timed stations — typically 6 to 10 — each with a different evaluator and a different type of question or scenario.
+
+The format was originally developed by medical schools to address a well-documented flaw in traditional panel interviews: interviewers who liked an applicant early in the conversation tended to rate everything they said more favorably, regardless of the quality of the response. The MMI reduces this bias by using multiple independent evaluators across multiple unconnected scenarios.
+
+For dental schools specifically, the MMI is designed to assess competencies that GPA and DAT scores cannot: ethical reasoning, communication, empathy, professional judgment, and the ability to think under pressure.
+
+**Schools currently using the MMI format include:**
+- University of the Pacific Arthur A. Dugoni School of Dentistry
+- Oregon Health & Science University School of Dentistry
+- University of Nevada, Las Vegas School of Dental Medicine
+- Boston University Henry M. Goldman School of Dental Medicine
+- Many Canadian dental schools (University of Toronto, University of British Columbia, etc.)
+
+Always check directly with programs you're applying to — formats change between cycles.
+
+---
+
+## How the MMI Works: The Basics
+
+**Number of stations:** Typically 6–10 stations per circuit
+
+**Time per station:** Usually 8–10 minutes total per station. This often breaks down as:
+- 2 minutes reading the prompt outside the door
+- 6–8 minutes inside the room responding and answering follow-up questions
+
+**Who evaluates:** Each station has a different trained evaluator — often faculty, current dental students, community members, or standardized patients
+
+**Scoring:** Each evaluator scores independently using a rubric. Scores are combined at the end. Because each rater sees only one station, a poor performance at one station does not contaminate the rest of your evaluation.
+
+**What you wear:** Same as a traditional interview — professional business attire
+
+**What you bring:** Nothing. No notes are allowed inside stations. The prompt is on the door and sometimes repeated inside on a card.
+
+---
+
+## The 6 Station Types You Will Encounter
+
+### Station Type 1: Ethical Dilemma
+
+This is the station most applicants dread — and most often over-prepare for in the wrong direction.
+
+**What it looks like:**
+> *"A dental student sees a classmate cheating on a practical exam. The classmate is a close friend. What should the student do?"*
+
+**What evaluators are looking for:**
+They are NOT looking for you to reach the "correct" answer. They are evaluating your reasoning process — whether you identify the competing interests, consider consequences for all parties, apply relevant professional principles, and arrive at a thoughtful position.
+
+**How to approach it:**
+Use a simple 4-step framework:
+1. Identify who is affected and how
+2. Name the competing values (loyalty vs. integrity, for example)
+3. Consider what professional obligations are at stake
+4. State your position and explain why
+
+**Model response (abbreviated):**
+> *"There are a few competing interests here. My friend's career and reputation are at stake, but so is the integrity of the licensing process and ultimately the safety of future patients who will be treated by graduates of this program. The dental profession has a clear expectation of honesty in educational settings, and a student who cheats on a practical is practicing deception in exactly the kind of skill-based context that will matter in clinical care. I would talk to my friend privately first — not to ask them to confess, but to understand what happened and make clear I couldn't ignore it. If they weren't willing to address it themselves, I would report it to the faculty. This is difficult. But the integrity of the profession has to take precedence over a friendship."*
+
+**What to avoid:**
+- "It depends" without ever taking a position
+- Refusing to acknowledge any conflict ("I would just report them immediately")
+- Going off-topic into personal stories
+
+---
+
+### Station Type 2: Communication / Empathy
+
+**What it looks like:**
+> *"A patient has just been told they need to have a tooth extracted. They are visibly upset and insist they don't want the extraction. How do you respond?"*
+
+Or a role-play version where you're actually speaking with an actor playing the patient.
+
+**What evaluators are looking for:**
+Active listening. Acknowledging the patient's feelings before jumping to clinical explanation. The ability to give information without being paternalistic or dismissive.
+
+**How to approach it:**
+1. Pause and acknowledge the emotion first ("I can hear that this is upsetting")
+2. Validate that the concern is legitimate
+3. Provide information clearly and at an appropriate level
+4. Respect autonomy while ensuring informed consent
+
+**Model response (abbreviated):**
+> *"The first thing I'd do is slow down. If a patient is visibly upset, launching straight into the clinical rationale for the extraction isn't going to help — they can't process it in that state. I'd acknowledge what they're feeling: 'I can see this isn't what you were hoping to hear, and that's a completely understandable reaction.' Then I'd give them space to ask questions before I explain anything. Once they're ready to hear more, I'd walk through what leaving the tooth might mean for adjacent teeth and overall oral health — in plain language, not clinical terminology. And I'd make clear the decision is theirs. My job is to make sure they have the information to make it. I wouldn't pressure them."*
+
+---
+
+### Station Type 3: Reflection / Personal Experience
+
+**What it looks like:**
+> *"Describe a time when you made a mistake and what you learned from it."*
+> *"Tell me about an experience that changed how you see a particular group of people."*
+
+**What evaluators are looking for:**
+Self-awareness. Genuine reflection. The ability to acknowledge failure without excessive self-criticism or deflection.
+
+**How to approach it:**
+Be specific. Name the mistake or experience clearly. Describe the impact honestly. Then explain what actually changed — not just "I learned to be more careful" but a concrete shift in behavior or perspective.
+
+**Common mistake:** Choosing a mistake that is so minor it reads as humble-bragging ("I worked too hard on a project and missed a deadline"). Choose something real.
+
+---
+
+### Station Type 4: Collaboration / Teamwork
+
+**What it looks like:**
+> *"You are working on a group project and one team member is consistently not contributing. The deadline is in two days. What do you do?"*
+
+**What evaluators are looking for:**
+How you handle conflict within a team. Whether you prioritize the task, the relationship, or the principle — and whether your approach is proportionate and constructive.
+
+**How to approach it:**
+1. Clarify what you know (don't assume the person is lazy — there may be circumstances you're unaware of)
+2. Direct, private conversation with the person first
+3. Escalate only if necessary
+4. Keep the team's goal in focus throughout
+
+---
+
+### Station Type 5: Healthcare / Current Issues
+
+**What it looks like:**
+> *"What is your opinion on water fluoridation? What are the arguments for and against it?"*
+> *"How does the shortage of dentists in rural communities affect public health?"*
+
+**What evaluators are looking for:**
+That you can discuss a nuanced issue with balance and accuracy. That you have genuine familiarity with oral health policy. That you can hold a position without being dismissive of counterarguments.
+
+**How to approach it:**
+Prepare 3–4 current dental/public health topics before your interview. Know the evidence. Know the main counterarguments. Be able to summarize both sides before offering your own view.
+
+**Topics to know:**
+- Access to care in underserved communities
+- Water fluoridation (evidence, controversy, CDC position)
+- The oral-systemic health connection (diabetes, cardiovascular disease)
+- Teledentistry and its role in expanding access
+- Student loan burden and dentist distribution
+
+---
+
+### Station Type 6: "Why Dentistry" / Motivation
+
+**What it looks like:**
+> *"Walk me through what led you to apply to dental school."*
+> *"What experience made you most certain that dentistry was the right career for you?"*
+
+**What evaluators are looking for:**
+Authentic motivation backed by real experience. See our full guide on [How to Answer "Why Dentistry?"](/blog/why-dentistry-interview-answer) for a detailed breakdown of this question.
+
+---
+
+## MMI Scoring: How You Are Actually Evaluated
+
+Each station evaluator uses a rubric that typically scores several dimensions:
+
+| Dimension | What It Assesses |
+|---|---|
+| Communication | Clarity, active listening, appropriate tone |
+| Reasoning | Logic, consideration of multiple perspectives |
+| Professionalism | Composure, appropriate language, ethical grounding |
+| Empathy | Recognition of others' feelings and interests |
+| Knowledge | Relevant factual accuracy (where applicable) |
+
+Scores across all stations are aggregated. Most programs weight MMI scores heavily — often equally to or more than academic metrics in the interview stage.
+
+**Important:** A single bad station does not end your candidacy. Because each evaluator is independent, a poor performance at station 3 has no effect on how station 5 is scored. This is very different from a traditional panel interview where one bad answer can color the committee's perception of everything that follows.
+
+---
+
+## How to Prepare: A 4-Week MMI Plan
+
+### Week 1: Understand the Format and Build Your Framework
+
+- Read this guide thoroughly
+- Research which specific stations the schools you've been invited to use (ask current students, check forums)
+- Learn the basic ethical frameworks: autonomy, beneficence, non-maleficence, justice
+- Practice the 4-step ethical reasoning process until it's automatic
+
+### Week 2: Content Knowledge
+
+- Study 5–6 current dental/public health topics
+- Read recent ADA policy statements on access to care, fluoridation, and dental workforce issues
+- Learn the oral-systemic connection research basics
+- Prepare 3–4 personal stories you can adapt for reflection and teamwork stations
+
+### Week 3: Timed Practice
+
+- Find a practice partner (ideally another applicant or a current dental student)
+- Practice with actual MMI prompts — many are available on Reddit's r/PreDental, SDN forums, and various prep books
+- Time yourself strictly: 2 minutes reading, 8 minutes responding
+- Record yourself on video at least twice — watch for filler words, eye contact, and pacing
+
+### Week 4: Refinement and Logistics
+
+- Do at least one full mock circuit (6–8 stations in sequence) with a partner
+- Finalize your travel and lodging arrangements for interview day
+- Prepare your interview outfit and have it ready
+- Plan your morning routine to arrive calm and with time to spare
+
+---
+
+## On the Day: What to Expect
+
+**Arrival:** You'll typically check in with an administrator who explains the format and timing. Most programs have a group orientation before the circuit begins.
+
+**The waiting room:** Between stations you'll be in a waiting area or hallway. Do not discuss prompts with other applicants who have already gone through — this is typically prohibited and can disqualify you.
+
+**Reading time:** Use every second. Identify the core issue. Sketch a 3-point structure in your head. Decide on your position before you walk in.
+
+**Inside the station:** Greet the evaluator naturally. They will often say very little — this is intentional. They want to hear you talk, not have a conversation. Don't interpret silence as disapproval.
+
+**Follow-up questions:** Be ready for pushback. "What if the situation were different?" or "What if your friend asked you not to report them?" These are designed to see how you handle pressure on your position. It's fine to adjust your reasoning — just explain why.
+
+**Between stations:** Take a breath. Reset completely. What just happened at the last station is irrelevant.
+
+---
+
+## The Single Most Common MMI Mistake
+
+The biggest error applicants make is trying to give the "right" answer rather than showing their thinking process.
+
+MMI evaluators are not looking for a specific conclusion. They are watching how you think. An answer that identifies the right ethical tension, considers multiple stakeholders, acknowledges complexity, and arrives at a thoughtful position — even an imperfect one — will outscore a confident recitation of a memorized "correct" answer every time.
+
+Think out loud. Show your reasoning. And when you're not sure, say so — and then work through it anyway.
+
+If you'd like to do a mock MMI session with personalized feedback from someone who has reviewed dental school applications from the inside, [reach out to Future Dentist Prep](/contact). We work through actual MMI circuits with applicants and give you the specific, actionable feedback you need to perform at your best.
+`,
+  },
+  {
+    slug: "dental-school-personal-statement-mistakes",
+    title: "10 Dental School Personal Statement Mistakes That Get You Rejected (And How to Fix Each One)",
+    description:
+      "The personal statement mistakes that admissions committees see in thousands of applications every cycle — and the fixes that turn a weak statement into a strong one. Real before-and-after examples for every mistake.",
+    publishedAt: "2026-07-07",
+    readingTime: "13 min read",
+    category: "Personal Statement",
+    coverGradient: "from-red-600 to-rose-700",
+    coverEmoji: "🚫",
+    coverImage: "/images/blog-personal-statement-mistakes-cover.png",
+    author: DR_ALEX,
+    content: `
+## Why Good Applicants Get Rejected for Bad Writing
+
+Every year, applicants with 3.7 GPAs and 22 DAT scores receive rejection letters from programs they were statistically qualified for. One of the most common reasons: a personal statement that failed to differentiate them from thousands of other qualified applicants.
+
+The personal statement is your only opportunity in the AADSAS application to speak directly to the admissions committee as a person — not as a GPA, not as a test score, not as a list of activities. Most applicants waste it.
+
+This guide covers the 10 most common dental school personal statement mistakes, with before-and-after examples for each one. If you can eliminate these from your statement, you will be ahead of the majority of the applicant pool.
+
+---
+
+## Mistake 1: Opening With a Cliché
+
+**What it looks like:**
+> *"I have always wanted to be a dentist. Since I was a child, I was fascinated by teeth and how dentists could transform smiles and change lives."*
+
+> *"Dentistry is the perfect combination of science and art, and I knew from a young age that it was my calling."*
+
+**Why it fails:** Admissions committees have read variations of these sentences tens of thousands of times. When a reader sees a cliché opening, they immediately downgrade their expectations for everything that follows. You have lost them before you have said anything meaningful.
+
+**The fix:** Open with a specific scene, observation, or moment — something the reader cannot have read before because it belongs only to you.
+
+**Rewrite:**
+> *"The patient in chair four had been avoiding this appointment for six years. I could tell from the way she kept her eyes on the ceiling — not looking at the instruments, not looking at Dr. Park — just waiting for it to be over. By the end of the appointment, she was asking questions. That shift — from dread to engagement — was the moment I understood what dentistry actually was."*
+
+---
+
+## Mistake 2: Listing Accomplishments Instead of Telling a Story
+
+**What it looks like:**
+> *"During my undergraduate career, I completed 120 hours of shadowing with three different dentists, volunteered at a free clinic, worked as a research assistant in a biochemistry lab, and maintained a 3.8 GPA while serving as president of my pre-dental club."*
+
+**Why it fails:** This information is already in your Activities section. Repeating it in the personal statement wastes characters and tells the committee nothing new. Your CV proves what you did. Your personal statement should prove who you are.
+
+**The fix:** Pick one or two experiences and go deep instead of wide. What did you notice? What surprised you? What changed about how you think?
+
+**Rewrite:**
+> *"One hundred and twenty hours of shadowing sounds like a lot until you realize that most of what I was watching wasn't dentistry — it was the conversation before dentistry. Dr. Park spending three minutes explaining a procedure in simple terms to a patient who had clearly never been told what to expect. That conversation, I came to understand, was as technically necessary as the instrumentation."*
+
+---
+
+## Mistake 3: Explaining Why You Chose Healthcare Instead of Dentistry Specifically
+
+**What it looks like:**
+> *"I want to make a difference in people's lives through healthcare. I am passionate about helping others and improving patient outcomes. Dentistry gives me the opportunity to contribute to patients' overall wellbeing."*
+
+**Why it fails:** Substitute "medicine," "nursing," or "physical therapy" for "dentistry" in those sentences. They still work. The committee is evaluating dental school applicants, and they need a reason why dentistry — not healthcare generally.
+
+**The fix:** Be specific about what you have observed or experienced in dental settings that you could not have found in another clinical field.
+
+**Rewrite:**
+> *"What drew me to dentistry specifically was the directness of the feedback loop. In a single appointment, I watched a patient go from acute pain to relief. The clinical problem was identified, addressed, and resolved — not managed over months, not referred somewhere else. That immediacy, combined with the kind of long-term relationship a general dentist builds with patients over decades, is a combination I haven't found anywhere else in healthcare."*
+
+---
+
+## Mistake 4: The Childhood Dentist Story (Used Generically)
+
+**What it looks like:**
+> *"My interest in dentistry began when I was eight years old and visited my dentist, Dr. Johnson. He was kind and patient, and he made me feel comfortable even though I was scared. I knew from that moment that I wanted to do the same for others someday."*
+
+**Why it fails:** This is the single most common dental school personal statement narrative. It is not inherently wrong — but it is almost always told without any specificity, and it places your motivation entirely in childhood, suggesting you haven't developed a more mature understanding since.
+
+**The fix:** If your childhood dentist genuinely influenced you, use the story — but anchor it in something specific and connect it to what you've learned since through your own direct experience.
+
+**Better version:**
+> *"My childhood dentist was the first person who ever explained a procedure to me before doing it. I was eleven. I remember being surprised that someone would bother. I thought about that years later when I was shadowing Dr. Torres and watched her explain every step of a root canal to a visibly anxious patient — the same way, the same patience, the same assumption that the patient deserved to understand what was happening to their own body. The experience I'd filed away at eleven suddenly had context."*
+
+---
+
+## Mistake 5: Using Filler Phrases That Mean Nothing
+
+**What they look like:**
+- "I am deeply passionate about..."
+- "I have always had a strong desire to..."
+- "Dentistry has always been my calling..."
+- "I am uniquely positioned to..."
+- "I am a compassionate, dedicated, and hardworking individual..."
+
+**Why it fails:** These phrases are assertions without evidence. Saying you are compassionate does not make you seem compassionate. Showing a moment where you demonstrated compassion does.
+
+**The fix:** Delete every filler phrase. Replace each one with a concrete observation, moment, or behavior that demonstrates the quality you were trying to claim.
+
+**Before:** *"I am deeply passionate about helping underserved communities access dental care."*
+
+**After:** *"The free clinic ran on Friday afternoons. By 1 PM, the waiting room was full. Most patients hadn't seen a dentist in three, five, sometimes ten years — not by choice. After six months of volunteering, I started noticing patterns in why people waited so long: cost, transportation, time off work, distrust of the system. Those patterns became the focus of the health policy presentation I gave at the state pre-dental conference last spring."*
+
+---
+
+## Mistake 6: Addressing GPA or DAT Defensively
+
+**What it looks like:**
+> *"Although my GPA dipped during my junior year due to personal circumstances, I believe I have demonstrated significant improvement and am committed to academic excellence."*
+
+**Why it fails:** The defensive tone draws more attention to the weakness than it resolves. "Personal circumstances" is vague and sounds evasive. And "I believe I have demonstrated" is passive and unconfident.
+
+**The fix:** If you need to address an academic dip, do it in one or two sentences — directly, specifically, and in a way that explains rather than excuses. Then move on quickly. The rest of your statement should not be about recovering from weakness; it should be about demonstrating strength.
+
+**Better version:**
+> *"My junior year was academically difficult — my mother's illness required me to take on additional responsibilities at home, and my GPA dropped to a 3.1 that semester. The following year, with better systems in place, I finished with a 3.9. I've included an explanation in the additional information section if the committee would like more context."*
+
+Then move directly to something substantive about your clinical experience or research.
+
+---
+
+## Mistake 7: Writing About What Dental School Will Do For You
+
+**What it looks like:**
+> *"I am excited to attend dental school because I know it will give me the skills and knowledge I need to achieve my goals. I look forward to the hands-on training and clinical experience that will prepare me for a career in dentistry."*
+
+**Why it fails:** The committee is not evaluating how much dental school can help you. They are evaluating what you will contribute to their program. A statement focused on what you will gain reads as self-centered and suggests you haven't thought carefully about the profession as a reciprocal relationship.
+
+**The fix:** Reframe. What will you bring? What perspective, experience, or commitment do you offer? What kind of dentist are you working toward becoming, and why does it matter?
+
+**Better version:**
+> *"I want to practice in a community health setting — specifically the kind of underserved rural practice that the National Health Service Corps supports. I've spent three years building the clinical exposure, the language skills, and the understanding of what that patient population actually needs. Dental school is where I build the technical foundation. The direction is already set."*
+
+---
+
+## Mistake 8: A Vague or Generic Closing
+
+**What it looks like:**
+> *"In conclusion, I believe that I have the skills, dedication, and passion to become an excellent dentist. I am excited to contribute to your program and look forward to the opportunity to pursue my dream of becoming a dental professional."*
+
+**Why it fails:** This closing says absolutely nothing specific. It could have been written by any of 5,000 applicants. A weak closing leaves the reader with a weak final impression — and the last thing they read is often what they remember most.
+
+**The fix:** End with an image, a specific intention, or a statement that connects back to your opening. Give the reader something concrete to remember.
+
+**Better version:**
+> *"The patient in chair four — the one who'd avoided this for six years — came back three months later. I know because I was still shadowing the practice. She had a question about a restoration she'd been putting off. She was going to get it done. That is the kind of continuity I want to build a career around."*
+
+---
+
+## Mistake 9: Ignoring the Character Limit Strategy
+
+**What it looks like:** A statement that hits 4,490 characters with the introduction taking 1,200 of them, leaving the substantive middle sections rushed and the closing cut short.
+
+**Why it fails:** The AADSAS personal statement limit is 4,500 characters (not words — characters, including spaces). Most applicants don't count characters until they're almost done writing, which means the structure is set before the budget is allocated.
+
+**The fix:** Plan your structure first, with character estimates:
+- Opening hook: 300–400 characters
+- Why dentistry paragraph: 700–900 characters
+- Your unique background/perspective: 700–900 characters
+- Clinical and academic experiences (substantive): 900–1,100 characters
+- Closing: 400–500 characters
+- Total: ~3,800–4,200 characters (leaves room for revision)
+
+Write to this budget from the start, and your statement will have the right proportions.
+
+---
+
+## Mistake 10: Skipping Real Feedback
+
+**What it looks like:** A statement revised based on friends' and family feedback, or revised multiple times in isolation without outside perspective.
+
+**Why it fails:** People who know you well are the worst readers for your personal statement. They fill in context that isn't on the page. They're too familiar with your story to notice what's missing or unclear. And they often won't give honest critical feedback because they don't want to hurt your feelings.
+
+**The fix:** Get feedback from people who don't know your story — a pre-health advisor, a mentor outside your immediate circle, or an admissions consultant who has read hundreds of applications. Ask them specifically:
+- What is the main thing you remember after reading this?
+- Where did you feel like you were reading something you'd read before?
+- Where did you want more detail?
+
+If you can't answer "what is the main thing they'll remember?" after someone reads your statement, it needs more work.
+
+---
+
+## A Final Note on Authenticity
+
+The goal of all of these fixes is not to produce a polished, impressive-sounding statement. It is to produce a statement that sounds like you — a specific, thoughtful, experienced version of you that the committee hasn't met yet.
+
+The best personal statements are easy to read, specific in every paragraph, and leave the reader with a clear sense of who this person is and what kind of dentist they will become. They don't try to be impressive. They try to be honest.
+
+If you're ready to get real feedback on your personal statement — not encouragement, but the kind of specific, honest critique that actually makes it better — [schedule a free consultation with Future Dentist Prep](/contact). We work through statements line by line and tell you exactly what's working and what isn't.
+`,
+  },
+  {
     slug: "why-dentistry-interview-answer",
     title: "How to Answer 'Why Dentistry?' in Your Dental School Interview (With Sample Answers)",
     description:
