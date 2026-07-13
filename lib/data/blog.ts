@@ -24,6 +24,218 @@ const DR_ALEX = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "dat-general-chemistry-study-guide",
+    title: "DAT General Chemistry: High-Yield Study Guide to Score 20+ (2025–2026)",
+    description:
+      "DAT General Chemistry is 30 questions that decide your Total Science score. This complete high-yield guide covers the topics that appear most often, the formulas you must know cold, the best resources ranked by score impact, and a study plan that actually moves the needle.",
+    publishedAt: "2026-07-13",
+    readingTime: "15 min read",
+    category: "DAT Prep",
+    coverGradient: "from-blue-700 to-cyan-700",
+    coverEmoji: "⚗️",
+    coverImage: "/images/blog-dat-general-chemistry-cover.png",
+    author: DR_ALEX,
+    content: `
+## Why DAT General Chemistry Is a Score Lever Most Applicants Underuse
+
+General Chemistry is 30 of the 100 Survey of Natural Sciences questions — the same weight as Organic Chemistry, and less than Biology's 40. But Gen Chem is different from both of those sections: it is formula-heavy, calculation-driven, and highly predictable. The students who score 20+ on Gen Chem are almost never the ones who "know chemistry." They are the ones who drilled the same high-yield problem types until the setup became automatic.
+
+If your Biology is solid and your Orgo is average, Gen Chem is often the fastest path to raising your Total Science (TS) and Academic Average (AA). A two-point jump here is more achievable in four weeks of focused practice than the same jump in Biology, where content volume is much larger.
+
+This guide covers what actually shows up, which formulas you need cold, the best resources, and a study sequence that works.
+
+---
+
+## DAT General Chemistry: Format and Scoring
+
+**Number of questions:** 30
+
+**Time context:** Part of the 90-minute Survey of Natural Sciences (Biology + Gen Chem + Orgo)
+
+**Typical time budget:** Roughly 25–28 minutes for Gen Chem if Biology takes ~33 minutes and Orgo ~30 minutes
+
+**Question style:** Mix of conceptual recall and multi-step calculations. Many questions are "set up the equation correctly" more than they are "remember a fact."
+
+**Scoring:** Scaled 1–30. A 20 is competitive for most programs. Top schools often want TS and AA in the 20–22+ range.
+
+---
+
+## High-Yield Topic Map (What Actually Appears)
+
+### Tier 1: Must-Know Cold
+
+**Stoichiometry and Mole Concept**
+- Mole conversions, molar mass, percent composition
+- Limiting reactant problems
+- Empirical and molecular formulas
+- Solution stoichiometry (Molarity = mol/L)
+- Dilution equation: M1V1 = M2V2
+
+**Gas Laws**
+- Ideal Gas Law: PV = nRT (know units of R)
+- Combined Gas Law
+- Dalton's Law of Partial Pressures
+- Graham's Law of Effusion
+- STP definitions and molar volume (~22.4 L)
+
+**Acids, Bases, and Equilibrium**
+- Strong vs. weak acids/bases — know common strong acids (HCl, HBr, HI, HNO3, H2SO4, HClO4)
+- pH, pOH, Kw = 1.0 × 10⁻¹⁴
+- Ka, Kb, and relationship Ka × Kb = Kw for conjugates
+- Henderson-Hasselbalch equation for buffers
+- Titration curves: equivalence point, half-equivalence, indicators
+- Le Chatelier's Principle — predict shifts for concentration, pressure, temperature
+
+**Thermochemistry**
+- First Law: ΔE = q + w
+- Enthalpy (ΔH), endothermic vs. exothermic
+- Hess's Law
+- Bond energies and heat of formation
+- Spontaneity: ΔG = ΔH − TΔS (know signs and what they mean)
+
+**Atomic Structure and Periodic Trends**
+- Electron configurations (including exceptions like Cr and Cu)
+- Quantum numbers
+- Ionization energy, electron affinity, electronegativity, atomic radius trends
+- Isoelectronic series and effective nuclear charge
+
+### Tier 2: Frequently Tested
+
+**Kinetics**
+- Rate laws and order of reaction
+- Rate-determining step
+- Activation energy and catalysts
+- Arrhenius relationship (qualitative understanding is enough for most questions)
+
+**Electrochemistry**
+- Oxidation vs. reduction; oxidizing/reducing agents
+- Balancing redox in acid/base
+- Galvanic vs. electrolytic cells
+- Standard reduction potentials — which way spontaneous?
+- Nernst equation (conceptual + basic calculation)
+
+**Solutions and Colligative Properties**
+- Solubility rules (know the common soluble/insoluble salts)
+- Molality, mole fraction
+- Freezing point depression, boiling point elevation
+- Osmotic pressure basics
+
+**Nuclear Chemistry**
+- Alpha, beta, gamma decay
+- Half-life calculations
+- Binding energy concepts (less frequent, but short and testable)
+
+**Bonding and Molecular Geometry**
+- Ionic vs. covalent vs. metallic
+- Lewis structures, formal charge, resonance
+- VSEPR shapes (linear, trigonal planar, tetrahedral, trigonal bipyramidal, octahedral)
+- Hybridization (sp, sp2, sp3)
+- Polarity and intermolecular forces (H-bonding, dipole-dipole, London dispersion)
+
+### Tier 3: Lower Frequency (Study After Tier 1–2)
+
+- Detailed solid-state chemistry (unit cells)
+- Advanced spectroscopy
+- Laboratory technique trivia beyond core methods
+
+---
+
+## Formulas You Must Have Instant Recall For
+
+Write these on a single sheet and quiz yourself until they are automatic:
+
+| Topic | Formula / Rule |
+|---|---|
+| Dilution | M1V1 = M2V2 |
+| Ideal Gas | PV = nRT |
+| pH | pH = −log[H+], pOH = −log[OH−], pH + pOH = 14 |
+| Buffer | pH = pKa + log([A−]/[HA]) |
+| Free Energy | ΔG = ΔH − TΔS |
+| Equilibrium | K = products/reactants (activities); Q vs. K direction |
+| Density | d = m/V |
+| Percent yield | (actual/theoretical) × 100 |
+| Half-life (1st order) | t1/2 = 0.693/k |
+
+If you hesitate on any of these under timed conditions, that hesitation will cost you questions elsewhere.
+
+---
+
+## Best Resources for DAT Gen Chem (Ranked)
+
+**1. DAT Booster General Chemistry**
+Closest question style to the real exam for most students. Use after you review a topic — not as your first exposure.
+
+**2. Chad's Prep / Organic Chemistry Tutor (YouTube) for weak concepts**
+When a topic feels fuzzy (buffers, electrochemistry, kinetics), a 15-minute concept video often saves hours of frustrated drilling.
+
+**3. Anki or a Gen Chem formula/fact deck**
+Flashcards for strong acids, solubility rules, periodic trends, and formulas. Calculations still need practice problems — cards alone are not enough.
+
+**4. DAT Destroyer Gen Chem (for 22+ targets)**
+Harder than the real DAT. Excellent once you are already scoring 19–20 and want to push higher. Not ideal as a starting resource.
+
+**5. Practice full SNS sections under timed conditions**
+Gen Chem score collapses when Biology eats too much clock time. Practice Gen Chem inside full SNS blocks, not only as isolated 30-question quizzes.
+
+---
+
+## 4-Week Study Plan to Raise Gen Chem
+
+### Week 1: Stoichiometry, Gases, Atomic Structure
+- Review content for each topic (notes or video)
+- 40–60 practice questions across the three areas
+- Drill M1V1, PV=nRT, and mole conversions until automatic
+
+### Week 2: Acids/Bases, Equilibrium, Thermochemistry
+- This is the highest-yield week for most students
+- Master pH calculations, Ka/Kb, buffers, Le Chatelier, ΔG/ΔH/ΔS
+- End the week with a timed Gen Chem mini-section (30 questions)
+
+### Week 3: Kinetics, Electrochemistry, Bonding, Solutions
+- Redox and cell potentials trip up many applicants — give them extra time
+- VSEPR + hybridization + IMFs as a short daily drill
+- Review every missed question in a "error log"
+
+### Week 4: Mixed Practice and Weak-Area Targeting
+- 3–4 full Survey of Natural Sciences practice blocks
+- After each, score Gen Chem separately and only review your bottom 3 topics
+- Final 3 days: formula sheet + error log + light mixed sets (no new content)
+
+---
+
+## The Mistakes That Cap Gen Chem Scores at 17–18
+
+**1. Knowing the concept but failing the setup**
+Students say "I understand buffers" but cannot plug Henderson-Hasselbalch correctly under time pressure. Understanding is not enough — reps are required.
+
+**2. Skipping unit discipline**
+Wrong R value, mL vs. L, Celsius vs. Kelvin — these are free points you are giving away.
+
+**3. Studying Gen Chem only in isolation**
+On test day it comes after Biology. If you never practice Gen Chem when already mentally fatigued, your practice scores will overestimate your real score.
+
+**4. Ignoring Le Chatelier and qualitative equilibrium**
+Not every question is a calculation. Qualitative "which way does the reaction shift?" items are high-yield and fast if you have the rules cold.
+
+**5. Over-indexing on obscure topics**
+Unit cells and exotic nuclear details are lower yield. Lock Tier 1 first.
+
+---
+
+## How Gen Chem Fits With Biology and Orgo
+
+If you are following a full DAT plan, Gen Chem pairs well with Organic Chemistry on the same study days (both are calculation/mechanism heavy), while Biology stays on Anki + reading. For a complete Biology strategy, see our [DAT Biology high-yield guide](/blog/dat-biology-study-guide). For overall scheduling, use [How to Study for the DAT](/blog/how-to-study-for-the-dat).
+
+---
+
+## When Tutoring Helps Faster Than Solo Practice
+
+If you are stuck at 17–18 after two solid weeks of practice, the bottleneck is usually a small set of topics — buffers, electrochemistry, or stoichiometry setups — not "all of chemistry." Targeted tutoring on those clusters often moves scores faster than another month of unfocused drilling.
+
+If you want help identifying your Gen Chem weak points and fixing them with a structured plan, [schedule a free consultation with Future Dentist Prep](/contact).
+`,
+  },
+  {
     slug: "how-to-prepare-for-dental-school-interview",
     title: "How to Prepare for a Dental School Interview in 2 Weeks: A Day-by-Day Action Plan",
     description:
