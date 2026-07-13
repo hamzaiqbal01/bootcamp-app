@@ -24,6 +24,228 @@ const DR_ALEX = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "dat-organic-chemistry-study-guide",
+    title: "DAT Organic Chemistry: High-Yield Reactions and Study Guide to Score 20+ (2025–2026)",
+    description:
+      "DAT Organic Chemistry intimidates more students than any other SNS section — but it is also one of the most pattern-based. This guide covers the high-yield reactions, mechanisms, and lab concepts that show up most often, plus a study plan that turns Orgo from a liability into a score booster.",
+    publishedAt: "2026-07-13",
+    readingTime: "16 min read",
+    category: "DAT Prep",
+    coverGradient: "from-indigo-700 to-amber-600",
+    coverEmoji: "🧪",
+    coverImage: "/images/blog-dat-organic-chemistry-cover.png",
+    author: DR_ALEX,
+    content: `
+## Why DAT Organic Chemistry Feels Harder Than It Is
+
+Organic Chemistry is 30 questions on the Survey of Natural Sciences — the same weight as General Chemistry. But it produces more anxiety than any other section for most pre-dental students. That anxiety is usually not about intelligence. It is about study method.
+
+Students who treat Orgo like a memorization dump of every reaction from Organic Chemistry I and II burn out and still miss questions. Students who treat it like a pattern recognition test — reagents, functional groups, stereochemistry, and a short list of high-yield mechanisms — consistently score 20+.
+
+The DAT does not ask you to invent new chemistry. It asks you to recognize structures, predict products, choose reagents, and apply a limited set of concepts under time pressure. This guide maps those concepts and gives you a study sequence that works.
+
+---
+
+## DAT Organic Chemistry: Format Overview
+
+**Questions:** 30
+
+**Time context:** Last section of the 90-minute Survey of Natural Sciences
+
+**Typical budget:** ~28–32 minutes if Biology and Gen Chem stay on schedule
+
+**Question types you will see:**
+- Predict the product
+- Identify the reagent
+- Name / classify a structure or functional group
+- Stereochemistry (R/S, E/Z, enantiomers, diastereomers, meso)
+- Spectroscopy / lab technique (IR, NMR basics, TLC, extraction)
+- Mechanism recognition (SN1/SN2, E1/E2, addition, substitution)
+
+**Scoring:** Scaled 1–30. A 20 is strong. Orgo often decides whether your Total Science clears the competitive range.
+
+---
+
+## High-Yield Content Map
+
+### Tier 1: Must-Know Cold
+
+**Functional Groups and Nomenclature**
+- Alkanes, alkenes, alkynes, aromatics
+- Alcohols, ethers, epoxides
+- Aldehydes, ketones, carboxylic acids, esters, amides, acid chlorides
+- Amines and thiols
+- IUPAC basics and common names that appear on the DAT
+
+**Stereochemistry**
+- Chirality, enantiomers, diastereomers, meso compounds
+- R/S assignment (priority rules)
+- E/Z for alkenes
+- Optical activity and racemic mixtures
+- How stereochemistry changes in SN1 vs. SN2
+
+**Substitution and Elimination**
+- SN1 vs. SN2: substrate, nucleophile, solvent, leaving group
+- E1 vs. E2: same decision factors + heat / bulky base
+- Zaitsev vs. Hofmann products
+- Carbocation rearrangements (hydride / alkyl shifts)
+
+**Addition Reactions to Alkenes and Alkynes**
+- Hydrohalogenation (Markovnikov; peroxide effect for HBr)
+- Acid-catalyzed hydration
+- Hydroboration-oxidation (anti-Markovnikov)
+- Halogenation and halohydrin formation
+- Hydrogenation (syn)
+- Ozonolysis (know products)
+- Epoxidation and dihydroxylation (syn vs. anti)
+
+**Aromatic Chemistry**
+- Benzene stability and aromaticity criteria (Hückel's rule basics)
+- Electrophilic aromatic substitution: halogenation, nitration, sulfonation, Friedel-Crafts alkylation/acylation
+- Ortho/para vs. meta directors
+- Activating vs. deactivating groups
+
+### Tier 2: Frequently Tested
+
+**Alcohols, Ethers, Epoxides**
+- Oxidation of alcohols (PCC vs. strong oxidants; primary vs. secondary)
+- Conversion of alcohols to alkyl halides / tosylates
+- Williamson ether synthesis
+- Epoxide opening (acidic vs. basic conditions — regiochemistry)
+
+**Aldehydes and Ketones**
+- Nucleophilic addition (Grignard, hydride reductions)
+- Acetal / hemiacetal formation
+- Imine and enamine formation
+- Aldol condensation (basic idea + product recognition)
+- Wittig reaction (product recognition)
+
+**Carboxylic Acid Derivatives**
+- Relative reactivity: acid chloride > anhydride > ester > amide
+- Nucleophilic acyl substitution pattern
+- Saponification, Fischer esterification
+- Amide formation and hydrolysis
+
+**Amines**
+- Basicity trends
+- Alkylation and reductive amination
+- Diazonium chemistry at a recognition level
+
+**Spectroscopy and Lab**
+- IR: key peaks (O–H, C=O, C≡N / C≡C, C–H)
+- 1H NMR: chemical shift regions, integration, splitting (n+1)
+- Mass spectrometry basics (molecular ion)
+- Extraction, distillation, TLC (polarity and Rf)
+
+### Tier 3: Lower Frequency
+- Advanced rearrangements beyond common carbocation shifts
+- Detailed polymer chemistry
+- Exotic named reactions that rarely appear
+
+Master Tier 1 and 2 before spending serious time here.
+
+---
+
+## The Decision Framework That Wins Orgo Points
+
+For substitution/elimination questions, run this checklist every time:
+
+1. **What is the carbon?** Methyl / primary / secondary / tertiary
+2. **What is the nucleophile or base?** Strong or weak? Bulky?
+3. **What is the solvent?** Polar protic vs. polar aprotic
+4. **Heat present?** Favors elimination
+5. **Leaving group quality?**
+
+This five-step habit alone lifts SN1/SN2/E1/E2 accuracy for most students.
+
+For aromatic EAS questions:
+1. Identify the existing substituent
+2. Decide activating/deactivating
+3. Decide ortho/para vs. meta
+4. Predict major product(s)
+
+---
+
+## Best Resources for DAT Orgo
+
+**1. DAT Booster Organic Chemistry**
+Best primary practice bank for most applicants. Explanations matter as much as the questions — read every miss.
+
+**2. Organic Chemistry as a Second Language (Klein) — selected chapters**
+Excellent for rebuilding foundations in stereochemistry, substitution/elimination, and carbonyl chemistry if your undergrad Orgo was weak.
+
+**3. Reaction summary sheets + Anki**
+Make (or use) a compact reaction sheet: reagent → transformation. Drill until recognition is instant. Anki for IR peaks, directors, and SN/E rules.
+
+**4. Chad's Videos / Organic Chemistry Tutor**
+Use for stuck topics only — not as your entire curriculum.
+
+**5. DAT Destroyer Orgo (for 22+ push)**
+Harder than the real exam. Use after you are already near 19–20.
+
+Also pair this with our [DAT General Chemistry guide](/blog/dat-general-chemistry-study-guide) and [DAT Biology guide](/blog/dat-biology-study-guide) so SNS study stays balanced.
+
+---
+
+## 4-Week Orgo Study Plan
+
+### Week 1: Structure, Stereochemistry, SN/E
+- Functional groups + nomenclature daily
+- Stereochemistry drills (R/S, meso, optical activity)
+- SN1/SN2/E1/E2 until the decision framework is automatic
+- 50–70 practice questions
+
+### Week 2: Alkenes, Alkynes, Aromatics
+- Addition reactions and product prediction
+- EAS + directors
+- Timed mini-sets every other day
+
+### Week 3: Oxygen- and Nitrogen-Containing Compounds
+- Alcohols, ethers, epoxides
+- Aldehydes/ketones and carboxylic acid derivatives
+- Amines basics
+- Start spectroscopy/lab mixed questions
+
+### Week 4: Mixed Orgo + Full SNS Practice
+- 3–4 full Survey of Natural Sciences practice blocks
+- Error log only on your bottom topics
+- Final days: reaction sheet + spectroscopy peaks + no new reactions
+
+---
+
+## Common Mistakes That Cap Orgo at 16–18
+
+**1. Memorizing reactions without conditions**
+Knowing "HBr adds to alkenes" is not enough. Markovnikov vs. peroxide, rearrangements, and stereochemistry are where the DAT separates scores.
+
+**2. Ignoring stereochemistry until the end**
+Stereochemistry is woven through SN2, additions, and meso questions. Study it early.
+
+**3. Skipping spectroscopy because it "feels rare"**
+A few IR/NMR items are nearly free points if you know the signature peaks and splitting patterns.
+
+**4. Studying Orgo when exhausted and never under time**
+Orgo is last in SNS. Practice it after Bio + Gen Chem blocks, not only fresh in the morning.
+
+**5. Collecting more resources instead of drilling misses**
+One solid Q-bank + a reaction sheet beats five passive video playlists.
+
+---
+
+## How to Know If You Are Ready for 20+
+
+You are close when:
+- You can classify SN1/SN2/E1/E2 in under 20 seconds
+- You can name the major product of common alkene additions without notes
+- You know ortho/para vs. meta directors without hesitation
+- Your timed Orgo subsection is stable at 19–21 across multiple practice sets
+
+If you are stuck below that after consistent practice, the issue is almost always a small cluster — stereochemistry, EAS directors, or carbonyl reactivity — not "all of organic chemistry."
+
+For focused help on those weak clusters, [schedule a free consultation with Future Dentist Prep](/contact). Private DAT tutoring is built exactly for this kind of targeted score recovery.
+`,
+  },
+  {
     slug: "dat-general-chemistry-study-guide",
     title: "DAT General Chemistry: High-Yield Study Guide to Score 20+ (2025–2026)",
     description:
