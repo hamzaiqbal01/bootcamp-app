@@ -24,6 +24,357 @@ const DR_ALEX = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "dat-quantitative-reasoning-study-guide",
+    title: "DAT Quantitative Reasoning: Complete Study Guide to Score 20+ (2025–2026)",
+    description:
+      "DAT Quantitative Reasoning is the section where timing kills more scores than content. This complete QR study guide covers high-yield math topics, calculator strategy, pacing rules, and a 3-week plan to break into the 20+ range.",
+    publishedAt: "2026-07-15",
+    readingTime: "14 min read",
+    category: "DAT Prep",
+    coverGradient: "from-teal-700 to-emerald-600",
+    coverEmoji: "🔢",
+    coverImage: "/images/blog-dat-quantitative-reasoning-cover.png",
+    author: DR_ALEX,
+    content: `
+## Why DAT Quantitative Reasoning Scores Stall Out
+
+Quantitative Reasoning (QR) is 40 questions in 45 minutes — about 67 seconds per question. That is not enough time to "work every problem carefully." Students who treat QR like a classroom math test run out of time and leave 6–10 questions blank or guessed.
+
+The applicants who score 20+ do three things differently:
+
+1. They know which topics actually show up
+2. They have a skip system so hard questions don't destroy the section
+3. They practice with the on-screen calculator under timed conditions — not with a physical calculator at their desk
+
+This guide gives you the topic map, pacing system, and a study plan that raises QR without requiring you to relearn all of high school math.
+
+---
+
+## DAT QR Format at a Glance
+
+| Item | Detail |
+|---|---|
+| Questions | 40 |
+| Time | 45 minutes |
+| Calculator | On-screen basic calculator provided |
+| Score scale | 1–30 |
+| Competitive target | 20+ |
+
+QR is scored separately from Survey of Natural Sciences, but it still affects your Academic Average (AA). A weak QR score can hold down an otherwise strong application profile.
+
+---
+
+## High-Yield Topic Map
+
+### Tier 1: Highest Frequency
+
+**Arithmetic and Number Properties**
+- Fractions, decimals, percents, ratios
+- Absolute value and number line logic
+- Exponents and roots (including fractional exponents)
+- Scientific notation
+- Order of operations under time pressure
+
+**Algebra**
+- Linear equations and inequalities
+- Systems of equations (2 variables)
+- Quadratic equations (factoring, quadratic formula recognition)
+- Functions and interpreting f(x)
+- Word problems that turn into algebra quickly
+
+**Word Problems / Applied Math**
+- Rate, work, and distance problems
+- Percentage increase/decrease and successive percents
+- Mixture and proportion setups
+- Average / weighted average
+
+### Tier 2: Frequently Tested
+
+**Geometry**
+- Triangles (especially 30-60-90 and 45-45-90 ratios)
+- Circles: area, circumference, arcs
+- Rectangles, parallelograms, trapezoids
+- Volume of common solids (box, cylinder, sphere basics)
+- Coordinate geometry: slope, midpoint, distance
+
+**Probability and Statistics**
+- Basic probability (independent vs. dependent)
+- Combinations vs. permutations at a recognition level
+- Mean, median, mode, range
+- Simple interpretation of charts/tables
+
+**Data Interpretation**
+- Reading a graph under time pressure
+- Converting table data into an equation or comparison
+
+### Tier 3: Lower Frequency
+- Trigonometry beyond basic right-triangle SOH-CAH-TOA
+- Advanced probability counting proofs
+- Formal statistics (z-scores, regressions)
+
+If your time is limited, lock Tier 1 and 2 first.
+
+---
+
+## The Scoring Secret: Skip Strategy
+
+Your goal is not to solve every question. Your goal is to maximize correct answers.
+
+**First pass (about 30–32 minutes):**
+- Do every question you can answer in under 60–70 seconds
+- Flag and skip anything that looks messy, multi-step, or unfamiliar
+
+**Second pass (about 10–12 minutes):**
+- Return to flagged questions
+- Guess strategically on anything remaining — never leave blanks if there is time left
+
+A common pattern among mid-scoring students: they spend 3 minutes on one geometry monster, then rush the last 10 questions and miss easy arithmetic. That is reverse efficiency. Easy points first always.
+
+---
+
+## Calculator Strategy (Most Students Use It Wrong)
+
+The DAT calculator is slow compared with a physical one. Overusing it costs time.
+
+**Use the calculator for:**
+- Ugly decimals
+- Division checks when the answer choices are close
+- Confirming an equation result
+
+**Do NOT use the calculator for:**
+- Simple fraction operations you can do mentally
+- Percent calculations you already know (10%, 25%, 50%)
+- Comparing which expression is larger when approximation is enough
+
+Practice QR with the same on-screen calculator style you will see on test day. Desk calculator practice creates false confidence.
+
+---
+
+## Best Resources for DAT QR
+
+**1. DAT Booster Quantitative Reasoning**
+Strong primary Q-bank. Do mixed timed sets, not only topic drills.
+
+**2. Math Destroyer (selective use)**
+Good for hardening weak topics once basics are stable. Can be harder than the real DAT — use with intention.
+
+**3. Error log (non-negotiable)**
+For every miss, write:
+- Topic
+- Why you missed (concept / setup / arithmetic / timing)
+- The fastest correct approach
+
+Most QR improvement comes from reviewing the same mistake types, not from grinding endless new questions.
+
+**4. Timed full sections**
+At least 2–3 full 40-question timed QR sections per week in the final month.
+
+Pair this with our other SNS guides — [Biology](/blog/dat-biology-study-guide), [General Chemistry](/blog/dat-general-chemistry-study-guide), [Organic Chemistry](/blog/dat-organic-chemistry-study-guide) — and the overall plan in [How to Study for the DAT](/blog/how-to-study-for-the-dat).
+
+---
+
+## 3-Week QR Improvement Plan
+
+### Week 1: Content Rebuild
+- Day 1–2: Arithmetic + percents + ratios
+- Day 3–4: Algebra foundations + systems
+- Day 5–6: Geometry essentials
+- Day 7: Timed 40-question diagnostic + error log
+
+Target: identify your bottom 3 topics.
+
+### Week 2: Drill Weak Topics + Pacing
+- 50–70 questions on weak topics
+- 2 timed sections
+- Practice skip decisions aggressively (do not heroically finish hard items)
+
+### Week 3: Mixed Timed Performance
+- 3 full timed QR sections
+- Only review misses from the error log
+- Final 2 days: light mixed practice, sleep prioritized
+
+---
+
+## Common Mistakes That Cap QR at 17–18
+
+1. **No skip system** — one hard question destroys pacing for 8 easy ones
+2. **Calculator overuse** — burning 20 seconds per simple step
+3. **Studying untimed only** — untimed accuracy does not transfer
+4. **Ignoring word-problem translation** — math is fine, setup is wrong
+5. **No error log** — repeating the same miss pattern every week
+
+---
+
+## When QR Tutoring Helps Fast
+
+If your content diagnostics say you "know" the math but timed scores stay flat, the bottleneck is process: setup speed, skip discipline, or calculator habits. Targeted tutoring focused on timed decision-making usually moves QR faster than another month of random practice.
+
+If you want help building a QR plan around your weak topics, [schedule a free consultation with Future Dentist Prep](/contact).
+`,
+  },
+  {
+    slug: "dat-reading-comprehension-study-guide",
+    title: "DAT Reading Comprehension: Strategy Guide to Score 20+ Without Speed-Reading Myths (2025–2026)",
+    description:
+      "DAT Reading Comprehension is less about reading faster and more about finding answers efficiently. This guide covers passage strategy, question types, timing frameworks, and a practice plan that raises RC scores for science-heavy applicants.",
+    publishedAt: "2026-07-15",
+    readingTime: "13 min read",
+    category: "DAT Prep",
+    coverGradient: "from-indigo-700 to-violet-600",
+    coverEmoji: "📖",
+    coverImage: "/images/blog-dat-reading-comprehension-cover.png",
+    author: DR_ALEX,
+    content: `
+## The Myth That Keeps DAT Reading Scores Stuck
+
+Most applicants believe Reading Comprehension (RC) is a reading-speed test. They download speed-reading apps, force themselves to "read faster," and their scores barely move.
+
+DAT RC is not about maximum words per minute. It is about:
+
+- Locating information quickly
+- Distinguishing main idea from detail
+- Avoiding trap answers that are true but not supported
+- Managing three dense passages under time pressure
+
+Applicants who score 20+ usually are not the fastest readers in the room. They are the most efficient searchers.
+
+---
+
+## DAT Reading Comprehension Format
+
+| Item | Detail |
+|---|---|
+| Passages | 3 |
+| Questions | 50 total |
+| Time | 60 minutes |
+| Style | Science / natural science–style passages (often dense) |
+| Score scale | 1–30 |
+| Target | 20+ |
+
+Average pacing: about 20 minutes per passage including questions. If one passage runs to 25 minutes, you are borrowing from the next ones.
+
+---
+
+## What RC Actually Tests
+
+**1. Main idea / primary purpose**
+What is the passage mostly doing — explaining, arguing, comparing, criticizing?
+
+**2. Detail retrieval**
+Can you find a specific fact and answer without overreading?
+
+**3. Inference**
+What must be true based on the passage (not what might be true in real life)?
+
+**4. Tone / attitude**
+Is the author supportive, skeptical, neutral, cautious?
+
+**5. Structure / function**
+Why is this paragraph here? What role does a sentence play?
+
+**6. Strengthen / weaken or application-style items** (less frequent, but high value when they appear)
+
+The trap answer almost always does one of these:
+- Uses outside knowledge not in the passage
+- Is too extreme ("always," "never," "proves")
+- Matches a detail from the wrong paragraph
+- Is partially true but misses the question stem
+
+---
+
+## The Best Passage Approach for Most Students
+
+There is no single correct method for every reader, but this hybrid approach works for the majority of pre-dental applicants:
+
+### Step 1: Preview (20–30 seconds)
+Skim the first sentence of each paragraph and the last paragraph. Get the roadmap before diving deep.
+
+### Step 2: Read for structure, not memorization (3–5 minutes)
+Mark (mentally or on scratch):
+- Main claim of each paragraph
+- Where definitions, experiments, comparisons, or conclusions appear
+
+Do not try to memorize every number and name. Know where they live.
+
+### Step 3: Attack questions with targeted lookup
+For detail questions, go back to the passage. High scorers return to the text constantly. Low scorers guess from memory and bleed points.
+
+### Step 4: For main idea questions, delay until you have passage structure
+If a main idea question appears first, mark it and return after a few detail questions once the map is clear.
+
+---
+
+## Timing Framework That Prevents Meltdowns
+
+**Passage 1:** 19–20 minutes  
+**Passage 2:** 19–20 minutes  
+**Passage 3:** 20–22 minutes (slight buffer)
+
+If you are at minute 17 of a passage and still have 10 unanswered questions, switch modes:
+- Answer all quick detail retrieval items first
+- Guess and flag the worst inference item rather than eating the whole clock
+
+Finishing all three passages with controlled guessing beats a perfect Passage 1 and a collapsed Passage 3.
+
+---
+
+## High-Yield Practice Habits
+
+**1. Always practice timed**
+Untimed RC creates a false sense of readiness.
+
+**2. Review every wrong answer with a written reason**
+- Did I miss the stem?
+- Did I use outside knowledge?
+- Did I fail to go back to the passage?
+- Was the answer too extreme?
+
+**3. Build a "trap journal"**
+After 4–5 practice passages, your miss patterns become obvious. Most students only have 2–3 repeating error types.
+
+**4. Do not train only on easy passages**
+DAT RC denseness is part of the challenge. Practice material should feel scientifically dense.
+
+Recommended practice sources commonly used by high scorers include DAT Booster RC sets and mixed full-length practice tests in the final month.
+
+For overall DAT scheduling, see [How to Study for the DAT](/blog/how-to-study-for-the-dat). For science section support that often pairs with AA goals, use our [Biology](/blog/dat-biology-study-guide) and [QR](/blog/dat-quantitative-reasoning-study-guide) guides.
+
+---
+
+## 2-Week RC Score Boost Plan
+
+### Week 1: Method + Diagnostics
+- Day 1: Timed diagnostic (1 full RC section)
+- Day 2–3: Practice main idea + detail questions only (focus on return-to-text habit)
+- Day 4–5: Inference and tone questions with trap-answer review
+- Day 6: Full timed RC section
+- Day 7: Error-pattern summary (write your top 3 miss reasons)
+
+### Week 2: Performance Under Fatigue
+- 4 timed RC sections across the week
+- One section done after a science study block (to simulate mental fatigue)
+- Final 2 days: one timed section + light review only
+
+---
+
+## Common Mistakes That Cap RC at 17–19
+
+1. **Trying to memorize the passage** — wastes time and still misses details
+2. **Answering from memory on detail questions** — free points lost
+3. **Choosing "true in real life" answers** — DAT cares about the passage
+4. **Spending 30 minutes on Passage 1** — destroys Passages 2 and 3
+5. **Only reading more English content casually** — not the same skill as DAT RC search-and-verify
+
+---
+
+## Who Improves Fastest
+
+Students who are strong in science but weak in RC usually improve quickly once they stop treating RC like "just read carefully" and start treating it like a timed search task with rules.
+
+If your RC score is the only section holding down your AA, structured practice with feedback can compress weeks of random drilling into a few focused sessions. [Reach out to Future Dentist Prep](/contact) if you want a personalized RC pacing plan.
+`,
+  },
+  {
     slug: "dat-organic-chemistry-study-guide",
     title: "DAT Organic Chemistry: High-Yield Reactions and Study Guide to Score 20+ (2025–2026)",
     description:

@@ -1,4 +1,4 @@
-import type { ServicePackage } from "./types";
+ import type { ServicePackage } from "./types";
 
 export const servicePackages: ServicePackage[] = [
   {
