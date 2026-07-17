@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "About Us | Future Dentist Prep",
   description:
     "Meet Dr. Alexander Takshyn and the Future Dentist Prep team — dental professionals and top students who have helped 10,000+ pre-dental students get accepted to dental school.",
+  alternates: {
+    canonical: "/about",
+  },
   openGraph: {
     title: "About Future Dentist Prep",
     description:

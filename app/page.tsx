@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Future Dentist Prep | Dental School Admissions Consulting & DAT Tutoring",
   description:
     "Trusted by 10,000+ pre-dental students. Expert admissions consulting, DAT tutoring, personal statement coaching, and interview prep from Dr. Alexander Takshyn and a team of top dental professionals.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Future Dentist Prep | Dental School Admissions Consulting & DAT Tutoring",
     description:

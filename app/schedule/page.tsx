@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Schedule a Free Call | DentalPath",
   description:
     "Book a free call with a DentalPath admissions specialist. No obligation—get personalized guidance on dental school applications and your timeline.",
+  alternates: {
+    canonical: "/schedule",
+  },
 };
 
 export default function SchedulePage() {

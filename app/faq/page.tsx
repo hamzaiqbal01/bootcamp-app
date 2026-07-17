@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "FAQ | DentalPath",
   description:
     "Find answers to common questions about our dental school admissions consulting and DAT tutoring services.",
+  alternates: {
+    canonical: "/faq",
+  },
 };
 
 export default function FaqPage() {

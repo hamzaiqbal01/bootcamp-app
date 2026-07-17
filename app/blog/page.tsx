@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Blog | Future Dentist Prep",
   description:
     "Expert guides on dental school admissions, DAT prep, personal statements, and interview tips — written by dentists and current dental students.",
+  alternates: {
+    canonical: "/blog",
+  },
   openGraph: {
     title: "Future Dentist Prep Blog",
     description:

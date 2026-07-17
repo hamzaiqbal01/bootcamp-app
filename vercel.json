@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.futuredentistprep.com" }],
+      "destination": "https://futuredentistprep.com/:path*",
+      "permanent": true
+    }
+  ]
+}

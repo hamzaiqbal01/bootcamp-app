@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Privacy Policy | Future Dentist Prep",
   description:
     "Learn how Future Dentist Prep collects, uses, and protects your personal information when you use our website and services.",
+  alternates: {
+    canonical: "/privacy",
+  },
 };
 
 const LAST_UPDATED = "June 22, 2026";

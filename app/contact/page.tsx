@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Contact Us | DentalPath",
   description:
     "Get in touch with the DentalPath team. We're here to answer your questions about dental school admissions and DAT tutoring.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {

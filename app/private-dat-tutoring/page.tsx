@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Private DAT Tutoring | DentalPath",
   description:
     "One-on-one DAT tutoring from 99th percentile tutors. Packages from 10–20 hours with personalized study plans and expert educators.",
+  alternates: {
+    canonical: "/private-dat-tutoring",
+  },
 };
 
 export default function PrivateDatTutoringPage() {
