@@ -24,6 +24,363 @@ const DR_ALEX = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "how-to-become-a-dentist-in-the-usa",
+    title: "How to Become a Dentist in the USA: The Complete Step-by-Step Guide (2025–2026)",
+    description:
+      "A complete step-by-step guide to becoming a dentist in the United States — from undergraduate prerequisites and the DAT to dental school, licensure, and choosing a specialty. Includes timeline, costs, and answers to the questions pre-dental students ask most.",
+    publishedAt: "2026-07-22",
+    readingTime: "17 min read",
+    category: "Admissions Guide",
+    coverGradient: "from-blue-700 to-indigo-800",
+    coverEmoji: "🦷",
+    coverImage: "/images/blog-how-to-become-a-dentist-usa-cover.png",
+    author: DR_ALEX,
+    content: `
+## The Path to Becoming a Dentist in the USA
+
+Becoming a dentist in the United States is a long, structured path — usually **8 years after high school** (4 years undergraduate + 4 years dental school), followed by licensure and, optionally, specialty training. It is competitive, expensive, and demanding. It is also one of the most rewarding healthcare careers in terms of autonomy, work-life balance, and earning potential.
+
+This guide walks through every step of the journey, in order, so you know exactly what to do and when. Whether you are a high school student, a college freshman, or a career-changer, this is the roadmap.
+
+---
+
+## Step 1: Complete Your Undergraduate Degree and Prerequisites
+
+You do not need a specific major to apply to dental school. You can major in anything — biology, chemistry, engineering, music, business — as long as you complete the **prerequisite science courses** most dental schools require.
+
+**Typical prerequisites:**
+- Biology with lab (1 year)
+- General Chemistry with lab (1 year)
+- Organic Chemistry with lab (1 year)
+- Physics with lab (1 year)
+- Biochemistry (1 semester, increasingly required)
+- English / writing (1 year)
+- Math (varies — some schools require calculus or statistics)
+
+Most successful applicants major in a science because it overlaps with prerequisites, but admissions committees genuinely do not favor one major over another. What matters is a **strong GPA** — competitive applicants typically have a 3.5+ overall and science GPA. For a full breakdown, see our guide on [dental school GPA requirements](/blog/dental-school-gpa-requirements) and the complete [prerequisites list](/blog/dental-school-prerequisites).
+
+---
+
+## Step 2: Gain Dental Experience (Shadowing and More)
+
+Dental schools want proof that you understand the profession. This means **shadowing dentists** — observing them work across different settings (general practice, specialties, community clinics).
+
+**How many hours?** Most competitive applicants have **100+ shadowing hours**, ideally across general dentistry and at least one specialty. See our detailed guide on [how many shadowing hours you need](/blog/dental-shadowing-hours-for-dental-school).
+
+Beyond shadowing, strengthen your application with:
+- Community service / volunteering (especially health-related)
+- Research experience (valued by academic programs)
+- Leadership roles
+- Manual dexterity activities (art, crafts, playing instruments — dentistry is a hands-on career)
+
+---
+
+## Step 3: Take the DAT (Dental Admission Test)
+
+The **DAT** is a standardized exam required by nearly all US dental schools. It tests:
+- **Survey of Natural Sciences** (Biology, General Chemistry, Organic Chemistry)
+- **Perceptual Ability Test (PAT)** — spatial reasoning
+- **Reading Comprehension**
+- **Quantitative Reasoning**
+
+Scores range from 1–30, and competitive applicants typically score **20+**. Most students study for **3–4 months** before taking the exam, usually in their junior year of college.
+
+We have complete section-by-section guides to help you prepare:
+- [How to Study for the DAT](/blog/how-to-study-for-the-dat) (overall strategy)
+- [DAT Biology](/blog/dat-biology-study-guide), [General Chemistry](/blog/dat-general-chemistry-study-guide), [Organic Chemistry](/blog/dat-organic-chemistry-study-guide)
+- [DAT PAT](/blog/dat-pat-tips-and-strategies), [Quantitative Reasoning](/blog/dat-quantitative-reasoning-study-guide), [Reading Comprehension](/blog/dat-reading-comprehension-study-guide)
+
+If you are struggling to hit your target score, working with a [DAT tutor](/blog/best-dat-tutor-guide) can significantly accelerate your progress.
+
+---
+
+## Step 4: Apply to Dental School Through AADSAS
+
+US dental school applications go through a centralized service called **AADSAS** (Associated American Dental Schools Application Service), run by the ADEA. This is where you submit:
+
+- Academic transcripts and GPA
+- DAT scores
+- Personal statement (4,500-character limit)
+- Letters of recommendation
+- Activities and experiences
+
+The application cycle **opens in early summer** (usually late May / early June) for the following year's entering class. **Applying early matters enormously** because most schools use rolling admissions. See our [month-by-month application timeline](/blog/dental-school-application-timeline).
+
+Key application components we cover in depth:
+- [How to write your personal statement](/blog/how-to-write-dental-school-personal-statement)
+- [Letters of recommendation](/blog/dental-school-letters-of-recommendation)
+- [Secondary essays](/blog/dental-school-secondary-essays)
+
+---
+
+## Step 5: Interview at Dental Schools
+
+If your application is competitive, schools will invite you to **interview**. Formats vary:
+- **Traditional panel interviews** (1–2 interviewers, conversational)
+- **Multiple Mini Interviews (MMI)** — rotating stations with different scenarios
+
+Interviews assess communication, ethics, professionalism, and genuine motivation for dentistry. Prepare with:
+- [How to prepare for a dental school interview in 2 weeks](/blog/how-to-prepare-for-dental-school-interview)
+- [The MMI station-by-station guide](/blog/dental-school-mmi-interview-guide)
+- [30 common interview questions](/blog/dental-school-interview-questions)
+- [How to answer "Why dentistry?"](/blog/why-dentistry-interview-answer)
+
+---
+
+## Step 6: Attend Dental School (4 Years)
+
+US dental school is a **4-year Doctor of Dental Surgery (DDS)** or **Doctor of Dental Medicine (DMD)** program. The two degrees are equivalent — schools simply choose which name to use.
+
+**Typical structure:**
+- **Years 1–2:** Basic sciences (anatomy, physiology, microbiology, dental materials) plus pre-clinical lab work on models
+- **Years 3–4:** Clinical rotations treating real patients under supervision
+
+During dental school you will also take the **Integrated National Board Dental Examination (INBDE)**, which is required for licensure.
+
+---
+
+## Step 7: Get Licensed
+
+To practice dentistry in the US, you must be **licensed in the state** where you intend to work. Licensure generally requires:
+
+1. Graduation from a **CODA-accredited** dental school
+2. Passing the **INBDE** (written national board exam)
+3. Passing a **clinical licensure exam** (regional board exams like ADEX, CDCA, WREB, or a school-based alternative)
+4. Meeting state-specific requirements (background check, jurisprudence exam)
+
+Once licensed, you can practice general dentistry.
+
+---
+
+## Step 8 (Optional): Specialize
+
+General dentists can practice immediately after licensure. But if you want to specialize, you will need **additional residency training** (2–6 years depending on the specialty). The ADA recognizes 12 dental specialties, including:
+
+- **Orthodontics** (braces and alignment)
+- **Oral and Maxillofacial Surgery** (the longest and most competitive — 4–6 years)
+- **Endodontics** (root canals)
+- **Periodontics** (gums and implants)
+- **Pediatric Dentistry**
+- **Prosthodontics**
+- **Oral and Maxillofacial Radiology / Pathology**
+- **Dental Public Health**
+- **Oral Medicine, Orofacial Pain, Anesthesiology**
+
+Specialties are competitive and require strong dental school performance and often research.
+
+---
+
+## How Long Does It Take? (Timeline Summary)
+
+| Stage | Duration |
+|---|---|
+| Undergraduate degree | 4 years |
+| Dental school (DDS/DMD) | 4 years |
+| **Subtotal (general dentist)** | **~8 years** |
+| Optional specialty residency | +2–6 years |
+
+---
+
+## How Much Does It Cost?
+
+Dental school is one of the most expensive graduate programs in the US. Total cost of attendance (tuition + living) commonly ranges from **$200,000 to $500,000+** across four years, depending on public vs. private and in-state vs. out-of-state status.
+
+The good news: dentistry has strong earning potential, and there are many ways to manage the cost. See our guide on [how to pay for dental school](/blog/how-to-pay-for-dental-school), covering scholarships, federal loans, HPSP military scholarships, and loan forgiveness programs.
+
+---
+
+## What Does a Dentist Earn?
+
+According to the US Bureau of Labor Statistics, dentists earn a strong median income, with general dentists typically earning well into six figures and specialists (especially oral surgeons and orthodontists) earning considerably more. Actual income varies by location, practice ownership, and specialty.
+
+---
+
+## Frequently Asked Questions
+
+**Do I need a science major to become a dentist?**
+No. Any major works as long as you complete the prerequisite courses and maintain a strong GPA.
+
+**How competitive is dental school admission?**
+Very. Overall acceptance rates hover around the range covered in our [dental school acceptance rates](/blog/dental-school-acceptance-rates) guide. Strong GPA, DAT, experience, and application materials all matter.
+
+**Can international students become dentists in the US?**
+Yes, but the path differs. Many internationally trained dentists complete an **Advanced Standing** program (2–3 years) at a US dental school to earn a DDS/DMD and qualify for licensure.
+
+**DDS vs DMD — which is better?**
+Neither. They are equivalent degrees. The school decides which title to award.
+
+**What's the fastest way to become a dentist?**
+The minimum realistic path is 8 years (undergrad + dental school) plus licensure. Some students shorten undergrad slightly with AP credits or accelerated BS/DDS programs, but the core training is fixed.
+
+---
+
+## Your Next Step
+
+Becoming a dentist is a marathon, not a sprint — but every successful dentist started exactly where you are now. The most important thing you can do today is understand the roadmap and start executing on the current step, whether that's raising your GPA, logging shadowing hours, or preparing for the DAT.
+
+If you want expert guidance mapping out your personal path — from DAT prep to application strategy to interviews — [schedule a free consultation with Future Dentist Prep](/contact). We have helped thousands of pre-dental students turn this roadmap into an acceptance letter.
+`,
+  },
+  {
+    slug: "dental-school-vs-medical-school",
+    title: "Dental School vs Medical School: How to Decide Which Path Is Right for You (2025–2026)",
+    description:
+      "Dental school vs medical school — a complete, honest comparison of training length, cost, lifestyle, income, competitiveness, and day-to-day work. Use this guide to figure out which healthcare path actually fits your goals and personality.",
+    publishedAt: "2026-07-22",
+    readingTime: "15 min read",
+    category: "Admissions Guide",
+    coverGradient: "from-teal-600 to-blue-700",
+    coverEmoji: "⚖️",
+    coverImage: "/images/blog-dental-vs-medical-school-cover.png",
+    author: DR_ALEX,
+    content: `
+## Dental School vs Medical School: The Real Decision
+
+"Should I go to dental school or medical school?" is one of the most common questions pre-health students wrestle with. Both are prestigious, competitive healthcare paths. Both require serious academic ability, years of training, and significant financial investment. But the day-to-day realities — and the reasons to choose one over the other — are very different.
+
+This guide gives you an honest, side-by-side comparison so you can make the decision based on facts and self-knowledge, not assumptions. There is no universally "better" choice — only the one that fits *you*.
+
+---
+
+## Quick Comparison Table
+
+| Factor | Dental School | Medical School |
+|---|---|---|
+| Degree | DDS / DMD | MD / DO |
+| Length (school) | 4 years | 4 years |
+| Residency | Optional (general) or 2–6 yrs (specialty) | Required, 3–7 years |
+| Time to practice independently | ~8 years | ~11–15 years |
+| Entrance exam | DAT | MCAT |
+| Work-life balance | Generally better | Variable, often demanding |
+| Practice ownership | Very common | Less common (trend toward employment) |
+| Focus | Oral health | Whole-body health |
+
+---
+
+## 1. Training Length: Dentistry Is Faster to Practice
+
+This is one of the biggest practical differences.
+
+**Dentistry:** After 4 years of dental school, you can be **licensed and practicing as a general dentist** — no residency required. Total: ~8 years after high school.
+
+**Medicine:** After 4 years of medical school, you **must complete a residency** (3–7 years depending on specialty) before practicing independently. Total: ~11–15 years after high school.
+
+If practicing sooner and starting to earn a full income earlier matters to you, dentistry has a clear advantage.
+
+---
+
+## 2. The Entrance Exams: DAT vs MCAT
+
+**DAT (Dental Admission Test):**
+- Sections: Natural Sciences (Bio, Gen Chem, Orgo), Perceptual Ability (PAT), Reading Comprehension, Quantitative Reasoning
+- Notably includes the **PAT** — a spatial reasoning test unique to dentistry
+- Generally considered slightly less broad than the MCAT
+- Most students prepare 3–4 months
+
+**MCAT (Medical College Admission Test):**
+- Sections: Biological/Biochemical, Chemical/Physical, Psychological/Social, Critical Analysis (CARS)
+- Longer exam (~7.5 hours), broader content including psychology and sociology
+- Typically requires 4–6 months of preparation
+
+If you have strong spatial/visual skills, the DAT's PAT may play to your strengths. If you enjoy broad integrative science and reading analysis, the MCAT may suit you. See our [DAT study guides](/blog/how-to-study-for-the-dat) if you're leaning dental.
+
+---
+
+## 3. The Work Itself: Hands vs. Breadth
+
+This is the heart of the decision — what do you actually want to *do* all day?
+
+**Dentistry is:**
+- Highly **procedural and hands-on** — you work with your hands constantly (fillings, crowns, extractions, cleanings)
+- Focused on the **oral cavity** and related structures
+- Often **immediate** — you diagnose and treat a problem in the same visit
+- Built on **long-term patient relationships** in a practice setting
+- Requires excellent **manual dexterity** and fine motor precision
+
+**Medicine is:**
+- **Broader** — you can work in dozens of fields, from primary care to neurosurgery to psychiatry to radiology
+- Often more focused on **diagnosis and management** of complex, systemic conditions
+- More varied in setting (hospital, clinic, ICU, ER, research)
+- Can involve **higher-acuity, life-or-death** situations
+- Offers enormous **specialty diversity**
+
+**Ask yourself:** Do you want to master a focused, hands-on craft (dentistry), or do you want breadth and the option to work across the entire human body (medicine)?
+
+---
+
+## 4. Lifestyle and Work-Life Balance
+
+Dentistry is well known for offering **better work-life balance**, especially for general dentists:
+- More predictable hours (often no overnight call)
+- Many dentists work 4-day weeks
+- Outpatient setting, rarely emergencies at 3 AM
+
+Medicine varies enormously by specialty. Some fields (dermatology, radiology) offer good balance; others (surgery, OB/GYN, emergency medicine) are demanding with long hours and call. Residency in particular is intense regardless of specialty.
+
+If lifestyle predictability is a top priority, dentistry generally wins.
+
+---
+
+## 5. Income and Business Ownership
+
+Both careers offer strong earning potential. A few nuances:
+
+**Dentistry:**
+- General dentists earn strong six-figure incomes
+- **Practice ownership is very common** — many dentists own their practices and earn as business owners, not just clinicians
+- Specialists (oral surgeons, orthodontists) are among the highest earners in healthcare
+
+**Medicine:**
+- Wide income range by specialty (primary care lower, procedural specialties much higher)
+- **Trend toward hospital employment** rather than private practice ownership
+- Higher ceiling in the top surgical specialties
+
+If entrepreneurship and owning your own business appeals to you, dentistry offers a more accessible path to ownership.
+
+---
+
+## 6. Cost of Education
+
+Both are expensive. Dental school total cost of attendance commonly runs **$200K–$500K+**; medical school is similar or higher. The key difference is timing of earnings — dentists typically start earning a full attending-level income years earlier because they skip the lower-paid residency years.
+
+For managing dental school costs specifically, see [how to pay for dental school](/blog/how-to-pay-for-dental-school).
+
+---
+
+## 7. Competitiveness of Admission
+
+Both are competitive. Dental school admission requires a strong GPA (typically 3.5+) and a DAT score around 20+. Medical school is also highly competitive with strong GPA and MCAT expectations. Neither is "easy" — see our [dental school acceptance rates](/blog/dental-school-acceptance-rates) guide for realistic dental numbers.
+
+---
+
+## How to Actually Decide
+
+Ask yourself these honest questions:
+
+1. **Do I love working with my hands on precise, detailed tasks?** → Points to dentistry
+2. **Do I want breadth and the option to work across the whole body?** → Points to medicine
+3. **How important is work-life balance and predictable hours to me?** → Dentistry generally offers more
+4. **Do I want to practice (and earn) sooner?** → Dentistry is faster
+5. **Do I want to own my own business?** → Dentistry makes this more accessible
+6. **Am I drawn to high-acuity, complex, sometimes life-or-death medicine?** → Points to medicine
+7. **Have I actually shadowed both?** → If not, do this before deciding anything
+
+**The single most important step:** shadow dentists *and* physicians before you commit. Reading about the difference is not the same as watching the actual work. Most people who shadow both find that one clearly resonates more.
+
+---
+
+## The Bottom Line
+
+Choose **dentistry** if you want a hands-on, focused craft with excellent work-life balance, a faster path to practice, and strong business-ownership potential.
+
+Choose **medicine** if you want breadth, the widest range of specialties, and you're drawn to managing complex whole-body health — and you're willing to invest more years in training.
+
+Neither is better. The right choice is the one that matches your personality, your strengths, and the life you want to build.
+
+If you've decided dentistry is your path — or you're leaning that way and want help getting started — [schedule a free consultation with Future Dentist Prep](/contact). We'll help you build a plan from DAT prep through your acceptance. And if you're still exploring, start with our complete guide on [how to become a dentist in the USA](/blog/how-to-become-a-dentist-in-the-usa).
+`,
+  },
+  {
     slug: "how-to-write-dental-school-personal-statement",
     title: "How to Write a Dental School Personal Statement (Step-by-Step Guide for AADSAS 2025–2026)",
     description:
