@@ -5,6 +5,11 @@
       "has": [{ "type": "host", "value": "www.futuredentistprep.com" }],
       "destination": "https://futuredentistprep.com/:path*",
       "permanent": true
+    },
+    {
+      "source": "/blog/dental-school-personal-statement-guide",
+      "destination": "/blog/how-to-write-dental-school-personal-statement",
+      "permanent": true
     }
   ]
 }

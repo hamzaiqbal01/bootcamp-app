@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { blogPosts } from "@/lib/data/blog";
+import { blogPosts, getAllCategories, slugifyCategory } from "@/lib/data/blog";
 
 const BASE = "https://futuredentistprep.com";
 
@@ -20,6 +20,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
   ];
 
+  const categoryRoutes: MetadataRoute.Sitemap = getAllCategories().map((category) => ({
+    url: `${BASE}/blog/category/${slugifyCategory(category)}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
   const blogRoutes: MetadataRoute.Sitemap = blogPosts.map((post) => ({
     url: `${BASE}/blog/${post.slug}`,
     lastModified: new Date(post.publishedAt),
@@ -27,5 +34,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...blogRoutes];
+  return [...staticRoutes, ...categoryRoutes, ...blogRoutes];
 }

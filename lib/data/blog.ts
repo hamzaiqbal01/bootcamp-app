@@ -83,7 +83,7 @@ The **DAT** is a standardized exam required by nearly all US dental schools. It 
 - **Reading Comprehension**
 - **Quantitative Reasoning**
 
-Scores range from 1–30, and competitive applicants typically score **20+**. Most students study for **3–4 months** before taking the exam, usually in their junior year of college.
+Scores range from 1–30, and competitive applicants typically score **20+**. Most students study for **10–12 weeks** before taking the exam (often junior year), adjusting longer or shorter based on diagnostic scores. See our [DAT study schedule guide](/blog/how-to-study-for-the-dat) for a diagnostic-based timeline.
 
 We have complete section-by-section guides to help you prepare:
 - [How to Study for the DAT](/blog/how-to-study-for-the-dat) (overall strategy)
@@ -218,6 +218,17 @@ The minimum realistic path is 8 years (undergrad + dental school) plus licensure
 
 Becoming a dentist is a marathon, not a sprint — but every successful dentist started exactly where you are now. The most important thing you can do today is understand the roadmap and start executing on the current step, whether that's raising your GPA, logging shadowing hours, or preparing for the DAT.
 
+## Sources & Further Reading
+
+- American Dental Association (ADA) — dental education and DAT program information
+- American Dental Education Association (ADEA) / AADSAS — application process and cycle guidance
+- Commission on Dental Accreditation (CODA) — accredited program standards
+- U.S. Bureau of Labor Statistics — dentist occupational outlook (earnings context)
+
+*Last reviewed: July 23, 2026. Program requirements vary by school — always verify on official ADEA/AADSAS and school admissions pages.*
+
+---
+
 If you want expert guidance mapping out your personal path — from DAT prep to application strategy to interviews — [schedule a free consultation with Future Dentist Prep](/contact). We have helped thousands of pre-dental students turn this roadmap into an acceptance letter.
 `,
   },
@@ -275,7 +286,7 @@ If practicing sooner and starting to earn a full income earlier matters to you, 
 - Sections: Natural Sciences (Bio, Gen Chem, Orgo), Perceptual Ability (PAT), Reading Comprehension, Quantitative Reasoning
 - Notably includes the **PAT** — a spatial reasoning test unique to dentistry
 - Generally considered slightly less broad than the MCAT
-- Most students prepare 3–4 months
+- Most students prepare **10–12 weeks** (adjust by diagnostic; 6–8 weeks only if already ~20+)
 
 **MCAT (Medical College Admission Test):**
 - Sections: Biological/Biochemical, Chemical/Physical, Psychological/Social, Critical Analysis (CARS)
@@ -3352,7 +3363,7 @@ Once your application clears the initial screen, schools move to holistic review
 
 **Clinical experience and shadowing depth:** Not just hours — quality of exposure. A student who shadowed across three settings (general dentistry, OMFS, community health) with 180 hours tells a richer story than 180 hours with a single family dentist. Read our [dental shadowing guide](/blog/dental-shadowing-hours-for-dental-school) for how to maximize this.
 
-**Personal statement quality:** The most consistently undervalued component. Two applicants with identical GPA and DAT scores — one with a generic personal statement and one with a specific, compelling narrative — do not have equal odds. Read our [personal statement guide](/blog/dental-school-personal-statement-guide) for what actually differentiates a compelling statement.
+**Personal statement quality:** The most consistently undervalued component. Two applicants with identical GPA and DAT scores — one with a generic personal statement and one with a specific, compelling narrative — do not have equal odds. Read our [personal statement guide](/blog/how-to-write-dental-school-personal-statement) for what actually differentiates a compelling statement.
 
 **Letters of recommendation:** Generic letters from professors who barely know you don't add to your competitiveness. Specific, enthusiastic letters from people who know your character and clinical curiosity do. Read our [letters of recommendation guide](/blog/dental-school-letters-of-recommendation).
 
@@ -3465,6 +3476,16 @@ For every school on your list, spend 15 minutes on their website understanding t
 
 **Step 5 — Submit early.**
 Everything else being equal, submitting in the first week of AADSAS opening is the single highest-leverage action available to any applicant. Don't undermine a strong application by submitting it 3 months after the cycle opens.
+
+## Sources & Further Reading
+
+- ADEA / AADSAS official applicant resources and dental school guides
+- Individual dental school admissions pages (entering class profiles and requirements)
+- ADA education resources for prospective dental students
+
+*Last reviewed: July 23, 2026. Acceptance rates and class profiles change yearly — verify current figures on each school’s official site before finalizing your list.*
+
+---
 
 If you'd like a personalized school list review based on your specific GPA, DAT score, clinical experience, and state of residency, [schedule a free call with our team](/schedule). We'll evaluate your profile against current program data and help you build a list that maximizes your chances of at least one — and ideally several — acceptances.
 `,
@@ -3867,7 +3888,7 @@ Send each recommender a complete packet: your CV, personal statement draft, a br
 
 Start writing early. Your personal statement needs multiple drafts, external feedback, and time to breathe between revision sessions. A first draft in March gives you time for 4–6 rounds of revisions before your June submission target.
 
-Read our [dental school personal statement guide](/blog/dental-school-personal-statement-guide) for a complete breakdown of what adcoms want to see and what to avoid.
+Read our [dental school personal statement guide](/blog/how-to-write-dental-school-personal-statement) for a complete breakdown of what adcoms want to see and what to avoid.
 
 ### Complete the Activities Section
 
@@ -5039,7 +5060,7 @@ Admissions readers have seen thousands of generic "my shadowing confirmed I want
 
 Your shadowing journal is where these stories live. Mine it before you write a single sentence of your personal statement.
 
-If you need help crafting a personal statement that makes your shadowing experience come alive on the page, read our guide on [dental school personal statements](/blog/dental-school-personal-statement-guide).
+If you need help crafting a personal statement that makes your shadowing experience come alive on the page, read our guide on [dental school personal statements](/blog/how-to-write-dental-school-personal-statement).
 
 ### AADSAS Application
 
@@ -5105,7 +5126,7 @@ The students who get into dental school are not the ones who happened to have mo
 
 Your application starts in the dental chair — as an observer. Make it count.
 
-If you'd like personalized guidance on how to position your shadowing experience in your [personal statement](/blog/dental-school-personal-statement-guide) or prepare to discuss it in your [dental school interview](/blog/dental-school-interview-questions), our team is here to help. [Schedule a free call](/schedule) to get started.
+If you'd like personalized guidance on how to position your shadowing experience in your [personal statement](/blog/how-to-write-dental-school-personal-statement) or prepare to discuss it in your [dental school interview](/blog/dental-school-interview-questions), our team is here to help. [Schedule a free call](/schedule) to get started.
 `,
   },
   {
@@ -6025,12 +6046,14 @@ The Dental Admission Test (DAT) is scored 1–30, with 17 being average. Competi
 A 22 AA will make you competitive at virtually every program. A 19 AA combined with a 3.7 GPA can still get you accepted at many schools.
 
 **Top DAT prep strategies:**
-1. Use DAT Bootcamp — the closest simulation to the real exam
-2. Study 3–4 months minimum (6–8 weeks is not enough)
+1. Use a high-quality question bank (DAT Booster / Bootcamp) that matches real exam style
+2. Set your study window from a diagnostic score — most students need **10–12 weeks**; **6–8 weeks** is only enough if you are already scoring ~20+ and refining
 3. Take timed full-length practice tests weekly in the final month
 4. Focus on your weakest sections first
 
-**Average study hours:** 300–400 hours total
+**Average study hours:** roughly 250–400 hours total, depending on starting point
+
+*Last reviewed: July 23, 2026. Cross-check official DAT details with the ADA/DAT program documentation before test day.*
 
 ---
 
@@ -6248,13 +6271,20 @@ High-yield and high-volume. Evolution, cell biology, genetics, anatomy, physiolo
 
 ## How Long Should You Study for the DAT?
 
-| Background | Recommended Study Time |
-|------------|------------------------|
-| Strong science background | 3–4 months |
-| Average science background | 4–5 months |
-| Weak in sciences or retaking | 5–6 months |
+Use a diagnostic-based window (same framework as our full study guide):
 
-**Study hours:** 4–6 hours/day is sustainable and effective. More than 8 hours/day leads to burnout without proportional gains.
+| Starting Diagnostic AA | Recommended Study Time |
+|---|---|
+| 14–16 | 14–18 weeks |
+| 17–18 | 10–12 weeks |
+| 19–20 | 8–10 weeks |
+| 20+ | 6–8 weeks (refinement) |
+
+**Most students do best with 10–12 weeks.** A blanket “3–4 months for everyone” rule oversimplifies — strong scorers refining a 20+ diagnostic may only need 6–8 weeks, while lower diagnostics need longer.
+
+**Study hours:** 4–6 hours/day is sustainable and effective. More than 8 hours/day often leads to burnout without proportional gains.
+
+*Last reviewed: July 23, 2026.*
 
 ---
 
@@ -6287,178 +6317,16 @@ If your score is below 19, seriously consider retaking. If it's 19–20, it depe
 - Study for **4–5 months** with a structured plan and consistent practice tests
 - If you scored below your target, identify the root cause before retaking
 
+## Sources & Further Reading
+
+- Official DAT / ADA testing program documentation (exam structure and scoring overview)
+- ADEA guidance for applicants preparing for dental school admissions
+
+*Last reviewed: July 23, 2026. Always confirm current DAT policies on official ADA/DAT pages before registering.*
+
+---
+
 Need a personalized DAT study plan or 1-on-1 tutoring from 99th-percentile tutors? [Learn about our DAT tutoring services](/private-dat-tutoring).
-`,
-  },
-
-  {
-    slug: "dental-school-personal-statement-guide",
-    title: "How to Write a Dental School Personal Statement That Gets You Accepted",
-    description:
-      "A step-by-step guide to writing an outstanding dental school personal statement — with examples of what works, what to avoid, and how to tell your story compellingly in 4,500 characters.",
-    publishedAt: "2026-03-10",
-    readingTime: "11 min read",
-    category: "Personal Statement",
-    coverGradient: "from-rose-500 to-pink-600",
-    coverEmoji: "✍️",
-    author: DR_ALEX,
-    content: `
-## The One Document That Can Make or Break Your Application
-
-Your GPA gets you past the initial screen. Your DAT score confirms you can handle the academics. Your personal statement answers the only question that matters once you've cleared those thresholds:
-
-**Why do you want to be a dentist — and why should we admit *you*?**
-
-Admissions committees read thousands of personal statements every cycle. The ones that stand out share a common trait: they tell a specific, honest, human story that couldn't have been written by anyone else.
-
----
-
-## Before You Write a Single Word
-
-Answer these questions in bullet points (don't worry about writing yet):
-
-1. What is the defining moment or experience that confirmed dentistry was right for you?
-2. What in your life — background, challenges, interests — shaped how you see the world?
-3. What specifically about dentistry (not medicine, not nursing, not research) drew you to it?
-4. What kind of dentist do you want to be, and why?
-5. What have you done that demonstrates your commitment to this path?
-
-If your answers are vague ("I've always wanted to help people"), dig deeper. Every applicant wants to help people. What's *your* version of that?
-
----
-
-## The Structure That Works
-
-There is no single correct format for a personal statement. But after reviewing thousands of successful applications, the following structure works most consistently:
-
-### Opening Hook (100–150 characters)
-Start *in medias res* — in the middle of a scene. Put the reader in the room with you.
-
-**Weak opening:**
-> "Ever since I was a young child, I have been fascinated by science and helping others..."
-
-**Strong opening:**
-> "The patient gripped the armrest as Dr. Hernandez explained the extraction. I watched his hands relax — just slightly — as she continued talking. That moment taught me something no textbook had."
-
-### Your Journey (1,200–1,500 characters)
-Connect the hook to your broader path. What experiences led you here? Be specific — name programs, locations, what you actually did. Avoid vague claims ("I worked with underserved communities"). Use concrete details ("I assisted at a free clinic in Allentown serving uninsured patients on Saturday mornings").
-
-### Why Dentistry Specifically (800–1,000 characters)
-This is where most applicants fail. They write why they like science, or why they want to help people — both of which apply to medicine, pharmacy, and nursing equally.
-
-What makes dentistry unique:
-- The intersection of artistry and science
-- The ability to build long-term relationships with patients
-- Procedural immediacy (results are visible)
-- The role of the dentist as a small business owner and clinician
-
-Reference what you *observed* during shadowing that cemented your decision.
-
-### Future Goals (500–700 characters)
-Where do you see yourself in 10 years? This doesn't need to be fully formed — you're applying to dental school, not finishing it — but show that you've thought beyond "I want to be a dentist."
-
-### Closing (200–300 characters)
-Return to your opening image or theme. Avoid clichés ("I look forward to contributing to your program"). End on something specific and forward-looking.
-
----
-
-## What Admissions Committees Actually Say
-
-After speaking with admissions directors and committee members at several schools, here are the patterns they highlight:
-
-**What gets remembered:**
-- Unusual background that connects logically to dentistry
-- A specific patient or patient-care moment described vividly
-- Demonstrated self-awareness about why *this* field fits *this* person
-- Clear writing — short sentences, active verbs, no passive constructions
-
-**What gets forgotten:**
-- "I want to make a difference"
-- Lists of activities (that's what the activity section is for)
-- Excessive family dentist stories (everyone has one)
-- Anything in the passive voice
-- Medical jargon used to sound impressive
-
----
-
-## Common Mistakes (With Fixes)
-
-### Mistake 1: Writing about someone else
-
-> "My grandmother struggled with dental pain her whole life because she couldn't afford care. Watching her suffer made me want to become a dentist."
-
-The reader learns about your grandmother — not you. Fix: Describe *your* reaction, *your* action, what *you* did as a result.
-
-### Mistake 2: The activity summary
-
-The personal statement is not a prose version of your activity list. If you're describing every shadowing experience chronologically, you're listing — not storytelling.
-
-### Mistake 3: Starting too early
-
-> "From a young age, I was always fascinated by teeth..."
-
-Admissions readers see this opening hundreds of times. Start with a specific moment, not a biography.
-
-### Mistake 4: Not connecting experiences
-
-Your shadowing, your research, your volunteer work, your background — these should feel like chapters of the same story, not unrelated bullet points.
-
-### Mistake 5: Perfect grammar, no personality
-
-A technically flawless essay that reads like a formal report is forgettable. Your statement should sound like *you* — clear, thoughtful, and human.
-
----
-
-## The Review Process That Works
-
-Do not rely on one reviewer. Use this sequence:
-
-1. **First draft:** Write without editing. Get everything out.
-2. **48-hour break:** Step away completely.
-3. **Second draft:** Cut every sentence that doesn't earn its place.
-4. **Reviewer 1:** A dentist or dental student — for clinical accuracy and credibility
-5. **Reviewer 2:** A non-dentist (friend, family member) — they'll catch jargon you've normalized
-6. **Reviewer 3:** A professional editor or admissions consultant — for structure and narrative
-7. **Final read:** Read it aloud. If you stumble, the sentence needs fixing.
-
----
-
-## Character Count Strategy
-
-AADSAS gives you **4,500 characters** (approximately 650–700 words). Use them.
-
-A 3,000-character statement signals you didn't take the application seriously. A 4,400-character statement is thorough without padding.
-
-**Approximate allocation:**
-- Hook: 150 characters
-- Journey: 1,400 characters
-- Why dentistry: 1,000 characters
-- Future goals: 600 characters
-- Closing: 250 characters
-- Transitions and connective tissue: 1,100 characters
-
----
-
-## Before You Submit: Final Checklist
-
-- [ ] Opens with a specific scene, not a general statement
-- [ ] Explains *why dentistry* not just *why healthcare*
-- [ ] Every experience mentioned is connected to a point
-- [ ] No passive voice (ctrl+F "was" and "were")
-- [ ] Read aloud — every sentence sounds natural
-- [ ] Under 4,500 characters (with spaces)
-- [ ] Reviewed by at least one dentist or dental student
-- [ ] Spell-checked and proofread by someone else
-
----
-
-## Getting Professional Help
-
-Most accepted applicants report that professional feedback was the single biggest improvement to their personal statement. Not because consultants write it for you — they don't — but because expert eyes catch things you'll never see in your own writing.
-
-We offer [personal statement review services](/schedule) where a current dental student or dentist-consultant reads your draft, gives line-by-line feedback, and works with you through revisions until it's ready.
-
-If you have a draft you'd like feedback on, or if you're staring at a blank page, [schedule a free call](/schedule) and we'll figure out the best next step together.
 `,
   },
 ];
@@ -6466,3 +6334,41 @@ If you have a draft you'd like feedback on, or if you're staring at a blank page
 export function getPostBySlug(slug: string): BlogPost | undefined {
   return blogPosts.find((p) => p.slug === slug);
 }
+
+export function slugifyCategory(category: string): string {
+  return category
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+export function getAllCategories(): string[] {
+  return Array.from(new Set(blogPosts.map((p) => p.category)));
+}
+
+export function getCategoryFromSlug(slug: string): string | undefined {
+  return getAllCategories().find((c) => slugifyCategory(c) === slug);
+}
+
+export function getPostsByCategory(category: string): BlogPost[] {
+  return blogPosts.filter((p) => p.category === category);
+}
+
+export function getRelatedPosts(slug: string, limit = 3): BlogPost[] {
+  const post = getPostBySlug(slug);
+  if (!post) return [];
+  const sameCategory = blogPosts.filter((p) => p.slug !== slug && p.category === post.category);
+  const other = blogPosts.filter((p) => p.slug !== slug && p.category !== post.category);
+  return [...sameCategory, ...other].slice(0, limit);
+}
+
+export function getAdjacentPosts(slug: string): { newer?: BlogPost; older?: BlogPost } {
+  const sorted = [...blogPosts].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+  const idx = sorted.findIndex((p) => p.slug === slug);
+  if (idx < 0) return {};
+  return {
+    newer: idx > 0 ? sorted[idx - 1] : undefined,
+    older: idx < sorted.length - 1 ? sorted[idx + 1] : undefined,
+  };
+}
+

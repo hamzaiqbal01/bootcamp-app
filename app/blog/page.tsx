@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
-import { blogPosts } from "@/lib/data/blog";
+import { blogPosts, getAllCategories, slugifyCategory } from "@/lib/data/blog";
 
 export const metadata: Metadata = {
   title: "Blog | Future Dentist Prep",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-const categories = ["All", ...Array.from(new Set(blogPosts.map((p) => p.category)))];
+const categories = ["All", ...getAllCategories()];
 
 function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString("en-US", {
@@ -58,22 +58,30 @@ export default function BlogPage() {
                 Guides, strategies, and insider knowledge from Dr. Alexander Takshyn and our team
                 of dental professionals — written to help you get accepted.
               </p>
+              <p className="mt-3 text-sm text-indigo-200">{blogPosts.length} published articles</p>
             </div>
 
             {/* Category pills */}
             <div className="mt-10 flex flex-wrap gap-2">
-              {categories.map((cat) => (
-                <span
-                  key={cat}
-                  className={`rounded-full px-4 py-1.5 text-sm font-medium ring-1 transition ${
-                    cat === "All"
-                      ? "bg-indigo-500 text-white ring-indigo-400"
-                      : "bg-white/10 text-slate-300 ring-white/20 hover:bg-white/20 cursor-pointer"
-                  }`}
-                >
-                  {cat}
-                </span>
-              ))}
+              {categories.map((cat) =>
+                cat === "All" ? (
+                  <Link
+                    key={cat}
+                    href="/blog"
+                    className="rounded-full bg-indigo-500 px-4 py-1.5 text-sm font-medium text-white ring-1 ring-indigo-400"
+                  >
+                    {cat}
+                  </Link>
+                ) : (
+                  <Link
+                    key={cat}
+                    href={`/blog/category/${slugifyCategory(cat)}`}
+                    className="rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-slate-300 ring-1 ring-white/20 transition hover:bg-white/20"
+                  >
+                    {cat}
+                  </Link>
+                ),
+              )}
             </div>
           </div>
         </section>

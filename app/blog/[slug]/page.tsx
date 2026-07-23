@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
-import { blogPosts, getPostBySlug } from "@/lib/data/blog";
+import { blogPosts, getAdjacentPosts, getPostBySlug, getRelatedPosts, slugifyCategory } from "@/lib/data/blog";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -244,7 +244,8 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
-  const related = blogPosts.filter((p) => p.slug !== slug).slice(0, 2);
+  const related = getRelatedPosts(slug, 3);
+  const { newer, older } = getAdjacentPosts(slug);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -288,6 +289,31 @@ export default async function BlogPostPage({ params }: Props) {
           )}
           <div className="pointer-events-none absolute inset-0 bg-black/30" />
           <div className="relative mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8">
+            <nav aria-label="Breadcrumb" className="mb-5 text-sm text-white/70">
+              <ol className="flex flex-wrap items-center gap-2">
+                <li>
+                  <Link href="/" className="hover:text-white">
+                    Home
+                  </Link>
+                </li>
+                <li aria-hidden>/</li>
+                <li>
+                  <Link href="/blog" className="hover:text-white">
+                    Blog
+                  </Link>
+                </li>
+                <li aria-hidden>/</li>
+                <li>
+                  <Link
+                    href={`/blog/category/${slugifyCategory(post.category)}`}
+                    className="hover:text-white"
+                  >
+                    {post.category}
+                  </Link>
+                </li>
+              </ol>
+            </nav>
+
             <Link
               href="/blog"
               className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-sm ring-1 ring-white/30 transition hover:bg-white/25"
@@ -299,9 +325,12 @@ export default async function BlogPostPage({ params }: Props) {
             </Link>
 
             <div className="mt-6 flex flex-wrap items-center gap-3">
-              <span className="rounded-full bg-white/20 px-3.5 py-1 text-xs font-bold text-white ring-1 ring-white/30 backdrop-blur-sm">
+              <Link
+                href={`/blog/category/${slugifyCategory(post.category)}`}
+                className="rounded-full bg-white/20 px-3.5 py-1 text-xs font-bold text-white ring-1 ring-white/30 backdrop-blur-sm transition hover:bg-white/30"
+              >
                 {post.category}
-              </span>
+              </Link>
               <span className="text-sm text-white/70">{formatDate(post.publishedAt)}</span>
               <span className="text-sm text-white/70">·</span>
               <span className="text-sm text-white/70">{post.readingTime}</span>
@@ -391,14 +420,46 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
         </section>
 
+        {/* Prev / Next */}
+        {(newer || older) && (
+          <section className="border-t border-slate-100 bg-white py-10">
+            <div className="mx-auto grid w-full max-w-4xl gap-4 px-4 sm:grid-cols-2 sm:px-6 lg:px-8">
+              {older ? (
+                <Link
+                  href={`/blog/${older.slug}`}
+                  className="rounded-2xl border border-slate-100 bg-slate-50 p-5 transition hover:border-brand-200 hover:bg-white"
+                >
+                  <p className="text-xs font-bold tracking-widest text-slate-400 uppercase">
+                    Older article
+                  </p>
+                  <p className="mt-2 font-semibold text-slate-900 line-clamp-2">{older.title}</p>
+                </Link>
+              ) : (
+                <div />
+              )}
+              {newer ? (
+                <Link
+                  href={`/blog/${newer.slug}`}
+                  className="rounded-2xl border border-slate-100 bg-slate-50 p-5 text-right transition hover:border-brand-200 hover:bg-white sm:justify-self-end"
+                >
+                  <p className="text-xs font-bold tracking-widest text-slate-400 uppercase">
+                    Newer article
+                  </p>
+                  <p className="mt-2 font-semibold text-slate-900 line-clamp-2">{newer.title}</p>
+                </Link>
+              ) : null}
+            </div>
+          </section>
+        )}
+
         {/* Related posts */}
         {related.length > 0 && (
           <section className="border-t border-slate-100 bg-slate-50 py-16 sm:py-20">
             <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
               <p className="mb-8 text-xs font-bold uppercase tracking-widest text-slate-500">
-                Continue Reading
+                Related in {post.category}
               </p>
-              <div className="grid gap-8 sm:grid-cols-2">
+              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 {related.map((rp) => (
                   <Link
                     key={rp.slug}

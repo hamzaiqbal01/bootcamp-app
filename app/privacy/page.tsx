@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
 };
 
-const LAST_UPDATED = "June 22, 2026";
+const LAST_UPDATED = "July 23, 2026";
 const SITE_NAME = "Future Dentist Prep";
 const SITE_URL = "https://futuredentistprep.com";
 const CONTACT_EMAIL = "facedoctoralex@gmail.com";
@@ -33,7 +33,7 @@ export default function PrivacyPage() {
             </h1>
             <p className="mt-4 text-base text-slate-500">
               Last updated:{" "}
-              <time dateTime="2026-06-22" className="font-medium text-slate-700">
+              <time dateTime="2026-07-23" className="font-medium text-slate-700">
                 {LAST_UPDATED}
               </time>
             </p>
@@ -76,10 +76,70 @@ export default function PrivacyPage() {
                 identification.
               </p>
 
-              <h3>c) Cookies</h3>
+              <h3>c) Cookies and Similar Technologies</h3>
               <p>
-                Our website does not use advertising, tracking, or third-party analytics cookies.
-                Basic session cookies may be set by the web hosting infrastructure.
+                We and our partners may use cookies, web beacons, pixels, and similar technologies
+                to operate the website, measure performance, and — when advertising is enabled —
+                deliver and measure ads.
+              </p>
+              <p>These technologies may collect or process information such as:</p>
+              <ul>
+                <li>IP address and approximate location</li>
+                <li>Device, browser, and operating system information</li>
+                <li>Pages viewed, links clicked, and referring URLs</li>
+                <li>Cookie identifiers and advertising identifiers</li>
+              </ul>
+              <p>
+                Basic session and security cookies may also be set by our hosting provider (Vercel)
+                to keep the site running securely.
+              </p>
+
+              <h3>d) Advertising (Google AdSense)</h3>
+              <p>
+                We may use <strong>Google AdSense</strong> and related Google advertising services
+                to display ads on certain pages of our website (primarily informational blog
+                content). Google and its partners may use cookies and similar technologies to:
+              </p>
+              <ul>
+                <li>Serve personalized and/or non-personalized ads</li>
+                <li>Measure ad performance and frequency</li>
+                <li>Prevent fraud and ensure ad security</li>
+              </ul>
+              <p>
+                Third-party vendors, including Google, may use cookies to serve ads based on a
+                user&apos;s prior visits to this website or other websites. Users may opt out of
+                personalized advertising by visiting{" "}
+                <a
+                  href="https://www.google.com/settings/ads"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Google Ads Settings
+                </a>
+                {" "}
+                or{" "}
+                <a
+                  href="https://www.aboutads.info/choices/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  aboutads.info/choices
+                </a>
+                . For more information about how Google uses data, see{" "}
+                <a
+                  href="https://policies.google.com/technologies/partner-sites"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  How Google uses information from sites or apps that use our services
+                </a>
+                .
+              </p>
+              <p>
+                Visitors in the European Economic Area (EEA), United Kingdom, and Switzerland may
+                see a consent message (Google-certified Consent Management Platform) that allows
+                them to manage advertising and cookie preferences before personalized ads are
+                shown.
               </p>
 
               <hr className="my-10 border-slate-100" />
@@ -92,8 +152,13 @@ export default function PrivacyPage() {
                 <li>Send relevant information you have explicitly requested</li>
               </ul>
               <p>
-                We do <strong>not</strong> sell, rent, or share your personal information with
-                third parties for marketing purposes.
+                Information collected through cookies and advertising technologies may be used to
+                operate the site, understand traffic, and (where enabled) deliver and measure
+                advertising.
+              </p>
+              <p>
+                We do <strong>not</strong> sell, rent, or share your contact-form personal
+                information with third parties for their own marketing purposes.
               </p>
 
               <hr className="my-10 border-slate-100" />
@@ -123,6 +188,14 @@ export default function PrivacyPage() {
                   Vercel&apos;s Privacy Policy
                 </a>{" "}
                 for details.
+              </p>
+
+              <h3>Google AdSense and Advertising Partners</h3>
+              <p>
+                When ads are enabled, Google and participating third-party vendors may receive
+                technical data (such as IP address, cookie IDs, and page URLs) to serve and
+                measure ads. Their processing is governed by their own privacy policies in
+                addition to this policy.
               </p>
 
               <hr className="my-10 border-slate-100" />
