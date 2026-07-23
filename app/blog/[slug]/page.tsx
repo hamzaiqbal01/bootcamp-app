@@ -4,6 +4,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
+import { BlogAdSense } from "@/components/ads/BlogAdSense";
+import { BlogAdSenseLoader } from "@/components/ads/BlogAdSenseLoader";
 import { blogPosts, getAdjacentPosts, getPostBySlug, getRelatedPosts, slugifyCategory } from "@/lib/data/blog";
 
 type Props = {
@@ -19,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getPostBySlug(slug);
   if (!post) return {};
   return {
-    title: `${post.title} | Future Dentist Prep`,
+    title: post.title,
     description: post.description,
     alternates: {
       canonical: `/blog/${slug}`,
@@ -265,13 +267,54 @@ export default async function BlogPostPage({ params }: Props) {
     },
   };
 
+  const gpaFaqLd =
+    slug === "dental-school-gpa-requirements"
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Can I get into dental school with a 3.0 GPA?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. A 3.0 overall GPA is not an automatic rejection, but you typically need compensating strengths such as a DAT AA of 21–22+, an upward grade trend, strong shadowing, and a realistic school list that includes mid-tier and access-mission programs.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is a 3.5 GPA good enough for dental school?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "A 3.5 overall GPA is competitive at many U.S. dental schools when paired with a 20+ DAT, strong clinical experience, and a well-prepared application.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the minimum GPA to apply to dental school?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Most schools do not publish a hard minimum. In practice, applicants below about 2.75 rarely advance, and a 3.0 is a more realistic floor for most programs without extraordinary compensating factors.",
+              },
+            },
+          ],
+        }
+      : null;
+
   return (
     <>
       <Header />
+      <BlogAdSenseLoader />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {gpaFaqLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(gpaFaqLd) }}
+        />
+      )}
       <main>
         {/* Post header */}
         <section className={`relative overflow-hidden ${post.coverImage ? "bg-slate-900" : `bg-gradient-to-br ${post.coverGradient}`} pb-16 pt-14 sm:pb-20 sm:pt-18`}>
@@ -364,7 +407,9 @@ export default async function BlogPostPage({ params }: Props) {
             <div className="grid gap-16 lg:grid-cols-[1fr_260px] lg:items-start">
               {/* Main content */}
               <article className="min-w-0">
+                <BlogAdSense format="horizontal" className="mb-2 mt-0" />
                 {renderMarkdown(post.content)}
+                <BlogAdSense format="rectangle" />
               </article>
 
               {/* Sticky sidebar */}

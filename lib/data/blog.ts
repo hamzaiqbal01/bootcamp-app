@@ -24,6 +24,141 @@ const DR_ALEX = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "dat-perceptual-ability-practice-guide",
+    title: "DAT Perceptual Ability Practice Guide: Keyhole, Cubes, Angles & Spatial Reasoning",
+    description:
+      "Targeted DAT PAT practice for perceptual ability, spatial reasoning, keyhole, angle ranking, and cube counting. Learn drills that raise weak PAT subsections without wasting hours on random questions.",
+    publishedAt: "2026-07-23",
+    readingTime: "12 min read",
+    category: "DAT Prep",
+    coverGradient: "from-cyan-700 to-blue-800",
+    coverEmoji: "🧩",
+    coverImage: "/images/blog-dat-perceptual-ability-practice-cover.png",
+    author: DR_ALEX,
+    content: `
+## Why Generic PAT Practice Stalls Your Score
+
+Most students “do PAT questions” every day and still sit at 17–18. The problem is usually not effort — it is **undifferentiated practice**. Keyhole errors and cube-counting errors are different skills. If you only mix random sets, you never isolate the weakness that is capping your Perceptual Ability score.
+
+This guide is the practice companion to our broader [DAT PAT tips and strategies](/blog/dat-pat-tips-and-strategies) article. Use that for overview; use this page for **drills by question family**.
+
+---
+
+## PAT Practice Map (What to Drill)
+
+| Question family | What it trains | Common failure |
+|---|---|---|
+| Keyhole | Mental rotation through apertures | Guessing orientation instead of eliminating edges |
+| Angle ranking | Fine angle discrimination | Rushing; not comparing systematically |
+| Cube counting | Hidden faces / stacked visualization | Losing track of interior cubes |
+| Hole punching | Fold + punch prediction | Wrong fold order |
+| Pattern folding | 2D net → 3D solid | Ignoring which faces meet |
+| TFE / views | Orthographic projection | Confusing front vs end views |
+
+---
+
+## Spatial Reasoning: The Real Skill Under PAT
+
+“Perceptual ability” on the DAT is mostly **spatial working memory under time**. That means:
+
+1. Short daily drills beat weekend marathons
+2. Accuracy first, then speed
+3. Error logs by *type*, not by “wrong/right”
+
+**Minimum effective dose:** 20–40 focused PAT items daily for 6–10 weeks (adjust with diagnostic). Students already near 20+ may only need refinement — see the timing framework in [How to Study for the DAT](/blog/how-to-study-for-the-dat).
+
+---
+
+## Keyhole Practice Protocol
+
+**Goal:** eliminate wrong apertures fast.
+
+**Drill (15 minutes):**
+- 10 keyhole items
+- For every miss, write: *which edge/feature disproved the choice?*
+- Redo only the missed shapes the next day
+
+**Rule:** if you cannot explain why the wrong answers fail, you are guessing — not practicing.
+
+---
+
+## Angle Ranking Practice Protocol
+
+**Goal:** consistent pairwise comparison.
+
+**Drill:**
+- Rank 4 angles without looking at choices first
+- Then match to options
+- Misses go into an “almost equal angles” review set
+
+Angle ranking rewards calm process. Speed comes after your method is stable.
+
+---
+
+## Cube Counting Practice Protocol
+
+**Goal:** never lose interior cubes.
+
+**Drill:**
+- Count painted vs unpainted systematically (same order every time)
+- Sketch a quick tally for multi-layer stacks when needed
+- Time only after 3 clean untimed sets
+
+Cube counting improves with **consistent counting order**, not intuition.
+
+---
+
+## Hole Punching & Pattern Folding
+
+These punish skipped mental steps.
+
+**Drill structure:**
+1. Narrate fold order out loud (quietly)
+2. Predict punch result before options
+3. Only then check choices
+
+If you jump to answers, you train recognition of distractors — not the skill.
+
+---
+
+## A 14-Day PAT Specialty Sprint
+
+| Days | Focus |
+|---|---|
+| 1–3 | Keyhole only + error log |
+| 4–5 | Angle ranking only |
+| 6–8 | Cube counting only |
+| 9–10 | Hole punch + pattern folding |
+| 11–12 | Mixed timed sets |
+| 13–14 | Full PAT section timed + review |
+
+Then return to mixed practice inside your full DAT schedule ([study guide](/blog/how-to-study-for-the-dat)).
+
+---
+
+## Resources That Match This Drill Style
+
+- Crack DAT PAT / Booster PAT banks for volume
+- Official practice material for difficulty calibration
+- An error spreadsheet with columns: date, type, cause, fix
+
+For score targets and how PAT fits AA, see [Average DAT Score 2026](/blog/dat-score-guide).
+
+---
+
+## Sources & Further Reading
+
+- Official DAT / ADA program materials (exam structure overview)
+- ADEA applicant resources for DAT preparation context
+
+*Last reviewed: July 23, 2026.*
+
+---
+
+If PAT is the section holding your AA down and self-study has plateaued, [private DAT tutoring](/private-dat-tutoring) can isolate your exact miss pattern faster than more random question volume.
+`,
+  },
+  {
     slug: "how-to-become-a-dentist-in-the-usa",
     title: "How to Become a Dentist in the USA: The Complete Step-by-Step Guide (2025–2026)",
     description:
@@ -2525,9 +2660,9 @@ If you're preparing for interviews and want structured feedback on your response
   },
   {
     slug: "dental-school-personal-statement-examples",
-    title: "Dental School Personal Statement Examples: What Admissions Committees Actually Want to Read",
+    title: "Dental School Personal Statement Examples (With Analysis) That Actually Work",
     description:
-      "Real dental school personal statement examples with expert analysis. Learn exactly what makes a personal statement stand out — and what makes committees put it in the reject pile. Includes paragraph-by-paragraph breakdowns, before/after rewrites, and a proven structure used by successful applicants.",
+      "See dental school personal statement examples with expert before/after analysis — what admissions committees want, which openings fail, and how to write a specific 4,500-character AADSAS statement that stands out.",
     publishedAt: "2026-07-06",
     readingTime: "14 min read",
     category: "Personal Statement",
@@ -2719,9 +2854,9 @@ If you can check all six boxes, your statement is ready. If not, go back and loo
   },
   {
     slug: "dat-pat-tips-and-strategies",
-    title: "DAT PAT: Complete Guide to the Perceptual Ability Test (Tips, Strategies, and Practice)",
+    title: "DAT PAT Practice: Tips, Strategies & All 6 Question Types to Score 20+",
     description:
-      "The DAT Perceptual Ability Test is the section that drags down more DAT scores than any other. This complete guide covers all 6 PAT question types, proven strategies for each, the best practice resources, and a daily practice plan that builds the spatial reasoning skills you need to score 20+ on PAT.",
+      "Struggling with DAT PAT? Learn proven strategies for keyhole, angle ranking, cube counting, hole punching, and more — plus a daily practice plan to raise your Perceptual Ability Test score to 20+.",
     publishedAt: "2026-07-03",
     readingTime: "13 min read",
     category: "DAT Prep",
@@ -3000,6 +3135,8 @@ The students who score 21+ on PAT are not smarter than the students who score 17
 Start with the type you find hardest. Build the strategy, practice it untimed, then timed, then under full exam conditions. Move to the next type. Repeat for all six. Then integrate them into full timed PAT sections daily.
 
 If you want a personalized DAT study plan that integrates PAT practice into your full prep schedule — or if you're stuck on a specific question type and need expert guidance — a [DAT tutor](/blog/best-dat-tutor-guide) can diagnose your specific errors and accelerate your improvement far faster than self-study alone.
+
+For drilled practice by question type (keyhole, angle ranking, cube counting, hole punching), use our dedicated [DAT Perceptual Ability practice guide](/blog/dat-perceptual-ability-practice-guide).
 
 For a complete overview of the entire DAT and how to approach every section, read our [full DAT study guide](/blog/how-to-study-for-the-dat). And if you're ready to talk through your full application strategy, [schedule a free call with our team](/schedule).
 `,
@@ -4659,9 +4796,9 @@ If you want a personalized review of your planned recommender list and how to fr
   },
   {
     slug: "dental-school-gpa-requirements",
-    title: "Dental School GPA Requirements: What GPA Do You Actually Need to Get In?",
+    title: "Dental School GPA Requirements 2026: What GPA Do You Need to Get In?",
     description:
-      "Is your GPA good enough for dental school? This guide breaks down the average and minimum GPA for dental school acceptance, how science GPA is calculated separately, what to do if your GPA is low, and how top programs weigh GPA alongside your DAT score and application.",
+      "What GPA do you need for dental school? See average and competitive GPAs, how science GPA is calculated, what a 3.0–3.3 GPA means for your odds, and how a strong DAT can offset a lower GPA.",
     publishedAt: "2026-06-30",
     readingTime: "13 min read",
     category: "Application Tips",
@@ -4868,7 +5005,18 @@ Yes. All undergraduate grades appear on your AADSAS transcript. However, if your
 A 3.5 overall GPA is competitive at the majority of accredited U.S. dental schools. Paired with a 20+ DAT, strong clinical experience, and a well-prepared application, a 3.5 is a genuinely viable profile for many programs — including some competitive ones. It's below the average for top-tier programs but above the median for a large number of accredited schools.
 
 **Can you get into dental school with a 3.0 GPA?**
-Yes — but it requires careful strategy. A 3.0 overall GPA needs meaningful compensating strengths: a strong DAT score (22+), substantial clinical and shadowing experience, a compelling personal statement, and a school list calibrated to programs where a 3.0 is within their accepted range. Some programs with community health missions have accepted applicants with GPAs below 3.0 in cases with exceptional service records and mission alignment.
+Yes — many students ask this exact question every cycle. A **3.0 overall GPA** is not an automatic rejection, but it *is* a weaker academic signal that must be offset deliberately.
+
+**What usually works with a 3.0 GPA:**
+- DAT Academic Average of **21–22+** (proves academic readiness)
+- Strong upward grade trend (weak early years + strong junior/senior science grades)
+- 100–150+ quality shadowing hours and a specific clinical narrative
+- A school list with genuine mid- and access-mission programs — not only top-20 schools
+- Clear explanation (brief) in AADSAS additional information if there was a real academic setback you fixed
+
+**What usually fails:** applying only to ultra-competitive schools with a flat 3.0, average DAT (~18–19), and a generic personal statement. For a deeper plan, also read [dental school acceptance rates](/blog/dental-school-acceptance-rates) and [DAT score requirements](/blog/dat-score-guide).
+
+*Last reviewed: July 23, 2026.*
 
 **Does a post-bacc GPA replace your undergraduate GPA?**
 No. Both GPAs appear separately on your AADSAS application. Post-bacc coursework is added to your transcript and factored into your cumulative GPA, but schools can see both your original undergraduate performance and your post-bacc performance. A strong post-bacc record demonstrates recent academic ability — which is what matters to adcoms evaluating whether you can handle dental school coursework.
@@ -6169,9 +6317,9 @@ If you want personalized guidance on your specific situation, [schedule a free 1
 
   {
     slug: "dat-score-guide",
-    title: "DAT Score Requirements by Dental School (2025–2026)",
+    title: "Average DAT Score 2026: Requirements by Dental School (AA, PAT, TS)",
     description:
-      "A data-driven breakdown of average DAT AA, PAT, and TS scores for accepted applicants at top dental schools — plus expert tips to hit your target score.",
+      "What is a good DAT score in 2026? See average DAT AA, PAT, and TS by school tier, score percentiles, and expert tips to hit a competitive 20+ Academic Average.",
     publishedAt: "2026-04-28",
     readingTime: "9 min read",
     category: "DAT Prep",
@@ -6206,6 +6354,28 @@ Three composite scores are reported:
 - **PAT:** Standalone score
 
 A score of 17 is national average. **20 is the benchmark for competitive applicants.** Top programs look for 22+.
+
+---
+
+## Average DAT Score 2026: What “Good” Looks Like Right Now
+
+When students search “average DAT score 2026,” they usually want three numbers:
+
+| Benchmark | Typical AA range | How to read it |
+|---|---|---|
+| Below average | ≤17 | High risk at most programs without major compensating strengths |
+| Competitive floor | 19–20 | Viable at many schools with strong GPA + experiences |
+| Strong / widely competitive | 20–21 | Solid target for most applicants |
+| Highly competitive | 22+ | Competitive at selective programs |
+
+**Section context that still matters in 2026:**
+- **PAT** often decides ties — many schools watch PAT closely even when AA is fine. See our [DAT PAT practice guide](/blog/dat-perceptual-ability-practice-guide) and [PAT tips](/blog/dat-pat-tips-and-strategies).
+- **TS (Total Science)** should generally stay near your AA; a big science drop raises questions.
+- Percentiles move slightly year to year — treat school entering-class profiles (ADEA / school sites) as the source of truth for the cycle you apply.
+
+**Practical target:** most applicants should plan study time to clear **20+ AA** first, then push weak sections (often PAT or Orgo) rather than chasing a vanity 24 before fundamentals are stable.
+
+*Last reviewed: July 23, 2026. Always verify current scoring details on official ADA/DAT documentation.*
 
 ---
 

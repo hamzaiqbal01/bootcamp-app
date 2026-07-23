@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
+import { BlogAdSenseLoader } from "@/components/ads/BlogAdSenseLoader";
 import { blogPosts, getAllCategories, slugifyCategory } from "@/lib/data/blog";
 
 export const metadata: Metadata = {
@@ -36,6 +37,7 @@ export default function BlogPage() {
   return (
     <>
       <Header />
+      <BlogAdSenseLoader />
       <main>
         {/* Hero */}
         <section className="relative overflow-hidden bg-[linear-gradient(135deg,#0F172A_0%,#1E1B4B_60%,#312E81_100%)] pb-24 pt-20 sm:pb-32 sm:pt-24">

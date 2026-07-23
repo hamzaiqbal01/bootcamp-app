@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
+import { BlogAdSenseLoader } from "@/components/ads/BlogAdSenseLoader";
 import {
   getAllCategories,
   getCategoryFromSlug,
@@ -52,6 +53,7 @@ export default async function BlogCategoryPage({ params }: Props) {
   return (
     <>
       <Header />
+      <BlogAdSenseLoader />
       <main>
         <section className="border-b border-slate-100 bg-[linear-gradient(135deg,#0F172A_0%,#1E1B4B_60%,#312E81_100%)] pb-16 pt-14 sm:pb-20 sm:pt-18">
           <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">

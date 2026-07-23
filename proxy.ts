@@ -15,7 +15,8 @@ export function proxy(request: NextRequest) {
     pathname.startsWith("/images") ||
     pathname === "/favicon.ico" ||
     pathname === "/robots.txt" ||
-    pathname === "/sitemap.xml"
+    pathname === "/sitemap.xml" ||
+    pathname === "/ads.txt"
   ) {
     return NextResponse.next();
   }

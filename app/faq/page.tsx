@@ -4,9 +4,9 @@ import { Header } from "@/components/landing/Header";
 import { FaqSection } from "@/components/landing/FaqSection";
 
 export const metadata: Metadata = {
-  title: "FAQ | DentalPath",
+  title: "FAQ: Dental Admissions Consulting & DAT Tutoring Questions",
   description:
-    "Find answers to common questions about our dental school admissions consulting and DAT tutoring services.",
+    "Get clear answers about Future Dentist Prep — DAT tutoring, personal statement help, interview prep, pricing basics, and how to book a free 15-minute consultation.",
   alternates: {
     canonical: "/faq",
   },

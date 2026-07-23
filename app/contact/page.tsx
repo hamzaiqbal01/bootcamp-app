@@ -4,9 +4,9 @@ import { Header } from "@/components/landing/Header";
 import { ContactSection } from "@/components/landing/ContactSection";
 
 export const metadata: Metadata = {
-  title: "Contact Us | DentalPath",
+  title: "Contact Us",
   description:
-    "Get in touch with the DentalPath team. We're here to answer your questions about dental school admissions and DAT tutoring.",
+    "Get in touch with the Future Dentist Prep team about dental school admissions consulting and DAT tutoring.",
   alternates: {
     canonical: "/contact",
   },
