@@ -24,6 +24,235 @@ const DR_ALEX = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "should-i-retake-the-dat",
+    title: "Should I Retake the DAT? When a Retake Helps (and When It Hurts)",
+    description:
+      "Got a 17, 18, 19, or 20 on the DAT and wondering if you should retake? This guide shows when a DAT retake improves dental school odds, when it wastes months, and how to decide using GPA, school list, and section scores.",
+    publishedAt: "2026-07-23",
+    readingTime: "11 min read",
+    category: "DAT Prep",
+    coverGradient: "from-amber-600 to-orange-700",
+    coverEmoji: "🔄",
+    coverImage: "/images/blog-should-i-retake-the-dat-cover.png",
+    author: DR_ALEX,
+    content: `
+## The Real Question Is Not “Can I Score Higher?”
+
+Almost everyone *can* score higher with more time. The real question is:
+
+**Will a higher DAT score change your admission outcomes enough to justify the delay, cost, and risk?**
+
+A retake that raises AA from 18 → 21 can unlock a much stronger school list. A retake that raises 21 → 22 while your application timeline slips into August often helps less than applicants expect.
+
+Use this framework before you re-register.
+
+---
+
+## Quick Decision Framework
+
+| Your AA | Typical advice |
+|---|---|
+| ≤17 | Retake is usually worth it if you can add a real study plan |
+| 18–19 | Often worth it — especially with GPA ≤3.5 or a competitive school list |
+| 20–21 | Retake only if one section is dragging you (often PAT/Orgo) and you have a clear fix |
+| 22+ | Retake rarely worth it unless a single section is an outlier for target schools |
+
+Also weigh:
+- Your [GPA profile](/blog/dental-school-gpa-requirements)
+- Whether you can still submit early in the cycle ([application timeline](/blog/dental-school-application-timeline))
+- Whether the weak section is fixable in 6–10 weeks
+
+For score targets by school tier, see [Average DAT Score 2026](/blog/dat-score-guide).
+
+---
+
+## When a Retake Helps
+
+**1. Your AA is below the floor for your school list**
+If every school you want sits around 20–21 mean AA and you scored 17–18, more applications will not fix the academic signal.
+
+**2. One section is obviously broken**
+Examples:
+- PAT 15 with everything else 20+
+- Orgo crushing TS while Bio/GC are fine
+
+Targeted retake prep beats “study everything again.” Use section guides:
+- [PAT practice](/blog/dat-perceptual-ability-practice-guide)
+- [Biology](/blog/dat-biology-study-guide) / [Gen Chem](/blog/dat-general-chemistry-study-guide) / [Orgo](/blog/dat-organic-chemistry-study-guide)
+- [QR](/blog/dat-quantitative-reasoning-study-guide) / [Reading](/blog/dat-reading-comprehension-study-guide)
+
+**3. You have time without wrecking early submission**
+If retaking pushes primary submission deep into the cycle, calculate the trade carefully. Early AADSAS timing matters.
+
+**4. Your practice tests already show a higher ceiling**
+If recent full-lengths are 21–22 and the real exam was 18, a controlled retake with better pacing is rational.
+
+---
+
+## When a Retake Hurts
+
+**1. You scored 21–22+ and want “just two more points”**
+Diminishing returns. Adcoms care more about a complete, early, coherent application than a vanity bump.
+
+**2. You have no new method — only more hours**
+Repeating the same Booster/Bootcamp loop usually reproduces the same score.
+
+**3. GPA + experiences are the real bottleneck**
+A DAT retake will not repair a flat activity section or a generic personal statement. Fix the weaker lever first.
+
+**4. Timeline damage**
+Missing early verification / secondary windows to chase +1 AA is a common expensive mistake.
+
+---
+
+## How to Retake the Smart Way
+
+1. **Diagnose by section**, not vibes  
+2. Build a 6–10 week plan from [How to Study for the DAT](/blog/how-to-study-for-the-dat)  
+3. Take timed full SNS + PAT blocks weekly in the final month  
+4. Freeze a test date before you start  
+5. Only sit when 2–3 recent practice AAs clear your target
+
+---
+
+## How Schools View Multiple Attempts
+
+Policies and interpretations vary. Some committees focus on highest scores; others notice patterns. Practical stance:
+
+- One well-prepared retake with a clear jump looks fine
+- Multiple flat attempts look worse than one strong sitting
+
+Do not retake “to see what happens.”
+
+---
+
+## Sources & Further Reading
+
+- Official DAT / ADA testing program information (registration and scoring overview)
+- ADEA / AADSAS applicant guidance for cycle timing
+
+*Last reviewed: July 23, 2026. Always confirm current DAT retake rules on official ADA/DAT pages before registering.*
+
+---
+
+If you are stuck between “retake now” vs “apply with this score,” [schedule a free consultation](/contact) and bring your section scores, GPA, and school list — that decision is profile-specific.
+`,
+  },
+  {
+    slug: "when-does-aadsas-open",
+    title: "When Does AADSAS Open? 2026–2027 Dental School Application Cycle Guide",
+    description:
+      "When does AADSAS open for the 2026–2027 dental school cycle? Learn the typical May/June open window, why applying early matters with rolling admissions, and a week-by-week checklist so your primary is ready on day one.",
+    publishedAt: "2026-07-23",
+    readingTime: "10 min read",
+    category: "Application Tips",
+    coverGradient: "from-teal-700 to-indigo-800",
+    coverEmoji: "📅",
+    coverImage: "/images/blog-when-does-aadsas-open-cover.png",
+    author: DR_ALEX,
+    content: `
+## When Does AADSAS Open?
+
+For most cycles, **AADSAS (ADEA AADSAS)** opens in **late May or early June** for the following year’s entering class. Exact open and submit dates shift slightly each year — always confirm on the official ADEA AADSAS site before you plan travel, DAT dates, or letter deadlines.
+
+What does *not* change: **early submission is a competitive advantage** at many schools that use rolling admissions.
+
+If you want the full month-by-month map, use our [dental school application timeline](/blog/dental-school-application-timeline).
+
+---
+
+## Why “Open Date” Matters More Than Applicants Think
+
+When AADSAS opens, two clocks start:
+
+1. **Your completion clock** — transcripts, DAT, letters, personal statement, school list  
+2. **Schools’ review clock** — many begin reviewing as applications become complete
+
+Submitting in the first 1–2 weeks (when your file is truly ready) is very different from “opening an account in June and submitting in September.”
+
+---
+
+## What Must Be Ready Before Opening Day
+
+### 1. DAT strategy
+Either:
+- Score already in hand, or
+- Test date scheduled so scores arrive without wrecking early submission
+
+See [Average DAT Score 2026](/blog/dat-score-guide) and [Should I retake the DAT?](/blog/should-i-retake-the-dat).
+
+### 2. Personal statement draft (near-final)
+AADSAS limit is **4,500 characters**. Do not start the statement the week AADSAS opens. Use:
+- [How to write your personal statement](/blog/how-to-write-dental-school-personal-statement)
+- [Examples](/blog/dental-school-personal-statement-examples)
+- [Common mistakes](/blog/dental-school-personal-statement-mistakes)
+
+### 3. Letters of recommendation in motion
+Letters are the #1 silent delay. Ask early. See [letters of recommendation guide](/blog/dental-school-letters-of-recommendation).
+
+### 4. School list (draft)
+Build aspirational / target / safety using GPA + DAT reality:
+- [GPA requirements](/blog/dental-school-gpa-requirements)
+- [Acceptance rates](/blog/dental-school-acceptance-rates)
+
+### 5. Experiences documented
+Shadowing hours, roles, reflections — ready to enter cleanly. See [shadowing hours guide](/blog/dental-shadowing-hours-for-dental-school).
+
+---
+
+## Week-by-Week: 8 Weeks Before AADSAS Opens
+
+| Timing | Focus |
+|---|---|
+| 8 weeks out | Confirm DAT plan; outline personal statement |
+| 6 weeks out | Ask LORs; draft school list |
+| 4 weeks out | Full PS draft; collect activity descriptions |
+| 2 weeks out | PS final polish; verify transcript plan |
+| Open week | Create/submit primary as soon as materials are complete — not incomplete-and-hopeful |
+
+After primary submission, prepare for [secondaries](/blog/dental-school-secondary-essays) quickly — delays here erase early-primary advantages.
+
+---
+
+## Common Myths
+
+**“I should wait for a perfect DAT before opening AADSAS.”**  
+You can open and prepare the application while finishing DAT — but do not submit a weak incomplete strategy. Plan the score arrival date deliberately.
+
+**“Submitting in August is fine if my stats are strong.”**  
+Sometimes yes at specific schools — often no for rolling programs. Early still wins more than applicants admit.
+
+**“More schools always = better.”**  
+Volume without secondary quality creates weaker interviews later.
+
+---
+
+## After AADSAS Opens: First 14 Days Checklist
+
+- [ ] Account created / profile completed  
+- [ ] Colleges attended + coursework plan clear  
+- [ ] DAT scores routed correctly  
+- [ ] Personal statement pasted and character-checked  
+- [ ] Experiences entered with strong descriptions  
+- [ ] Evaluators assigned / LORs tracked  
+- [ ] Program list finalized for first submission wave  
+- [ ] Fee assistance / payment ready  
+
+---
+
+## Sources & Further Reading
+
+- ADEA AADSAS official applicant website (open/submit dates and instructions)
+- Individual dental school admissions pages (rolling vs deadline behavior)
+
+*Last reviewed: July 23, 2026. Confirm the current cycle’s exact open date on ADEA AADSAS before locking your calendar.*
+
+---
+
+If you want a day-one submission plan built around your GPA, DAT, and school list, [schedule a free consultation](/contact).
+`,
+  },
+  {
     slug: "dat-perceptual-ability-practice-guide",
     title: "DAT Perceptual Ability Practice Guide: Keyhole, Cubes, Angles & Spatial Reasoning",
     description:
