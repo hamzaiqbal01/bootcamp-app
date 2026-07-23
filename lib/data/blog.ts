@@ -6702,6 +6702,8 @@ Use a diagnostic-based window (same framework as our full study guide):
 
 If your score is below 19, seriously consider retaking. If it's 19–20, it depends on the rest of your application. If it's 21+, retaking is rarely worth the risk.
 
+For a full decision framework (when retakes help vs hurt, section-based strategy, and timeline tradeoffs), read **[Should I Retake the DAT?](/blog/should-i-retake-the-dat)**.
+
 **The risk of retaking:** Your highest score is typically reported, but some schools consider all attempts. Retaking and scoring lower is damaging. Only retake if you have a concrete plan to improve.
 
 **Our guidance:** If you scored below your target, work with a tutor who has scored 22+ on the real exam to identify exactly where your study plan fell short.
