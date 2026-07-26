@@ -468,7 +468,7 @@ US dental school applications go through a centralized service called **AADSAS**
 - Letters of recommendation
 - Activities and experiences
 
-The application cycle **opens in early summer** (usually late May / early June) for the following year's entering class. **Applying early matters enormously** because most schools use rolling admissions. See our [month-by-month application timeline](/blog/dental-school-application-timeline).
+The application cycle **opens in early summer** (usually late May / early June) for the following year's entering class. **Applying early matters enormously** because most schools use rolling admissions. See our [month-by-month application timeline](/blog/dental-school-application-timeline) and **[When Does AADSAS Open?](/blog/when-does-aadsas-open)** for the day-one checklist.
 
 Key application components we cover in depth:
 - [How to write your personal statement](/blog/how-to-write-dental-school-personal-statement)
@@ -3709,7 +3709,7 @@ If you're planning to reapply, the improvements need to be real and visible: imp
 
 In a rolling admissions cycle, submission timing directly affects your effective acceptance rate. An applicant who submits in June is competing for a full seat pool. An applicant who submits in October is competing for whatever seats remain after 4 months of rolling acceptances.
 
-Submitting in the first two weeks of AADSAS opening can increase your effective odds by 30–50% compared to submitting in October — not because your application changed, but because the competition changes. See our [dental school application timeline guide](/blog/dental-school-application-timeline) for the exact dates that matter.
+Submitting in the first two weeks of AADSAS opening can increase your effective odds by 30–50% compared to submitting in October — not because your application changed, but because the competition changes. See our [dental school application timeline guide](/blog/dental-school-application-timeline) for the exact dates that matter, and [When Does AADSAS Open?](/blog/when-does-aadsas-open) for the day-one readiness checklist.
 
 ---
 
@@ -4204,6 +4204,8 @@ Here is the complete application cycle for students applying to start dental sch
 
 The most important date in the entire cycle: **early June**. That's when you want your primary application submitted — not the deadline, which is typically December or January. That window of 6+ months between early submission and deadline represents the difference between getting interviews and not getting them.
 
+For the exact open-window checklist (what must be ready on day one), see **[When Does AADSAS Open?](/blog/when-does-aadsas-open)**.
+
 ---
 
 ## 18 Months Before Matriculation (January–June, Junior Year)
@@ -4242,7 +4244,7 @@ Your target window: **February through May** for a June application submission. 
 
 If you score below your target on the first attempt, you have a decision to make: submit without the retake and update your application when improved scores arrive, or delay submission by 4–6 weeks to retake first. The right answer depends on how far below target you scored and how strong the rest of your application is.
 
-**One important rule:** Do not rush the DAT just to hit an early submission date. A 19 submitted in June is not better than a 22 submitted in August. The DAT score is a major component of your competitiveness — optimize it first.
+**One important rule:** Do not rush the DAT just to hit an early submission date. A 19 submitted in June is not better than a 22 submitted in August. The DAT score is a major component of your competitiveness — optimize it first. If you already sat the exam and the score is below your school-list floor, read **[Should I Retake the DAT?](/blog/should-i-retake-the-dat)** before you re-register.
 
 ### Formally Ask Your Recommenders
 
@@ -4285,7 +4287,7 @@ The academic history section is the most time-consuming — you must manually en
 
 Every institution where you completed coursework needs to send an official transcript to AADSAS. Request these in May — processing takes 1–4 weeks at most registrar offices. Transcript processing is the most common reason applications are delayed past the early submission window.
 
-Request your transcripts the day AADSAS opens. Don't wait.
+Request your transcripts the day AADSAS opens. Don't wait. Confirm the current cycle open date and day-one checklist in our guide: [When Does AADSAS Open?](/blog/when-does-aadsas-open).
 
 ### Submit Your Application as Early as Possible (Early June)
 
@@ -5182,7 +5184,7 @@ Some students enroll in formal post-bacc programs (Harvard Extension, Columbia P
 
 If your GPA is below the typical range for your target programs, your DAT score takes on disproportionate importance. A 22+ AA is one of the strongest compensating factors for a below-average GPA. It directly addresses the core concern adcoms have about a low GPA: *can this student handle the academic demands of dental school?* A high DAT score says yes.
 
-If you haven't taken the DAT yet, prioritize it. If you've taken it and scored below 20, consider retaking it after a structured [DAT study plan](/blog/how-to-study-for-the-dat). For many students with lower GPAs, a strong DAT score is the single highest-leverage action they can take to improve their competitiveness.
+If you haven't taken the DAT yet, prioritize it. If you've taken it and scored below 20, consider retaking it after a structured [DAT study plan](/blog/how-to-study-for-the-dat). For a clear decision framework (when a retake helps vs hurts), see **[Should I Retake the DAT?](/blog/should-i-retake-the-dat)**. For many students with lower GPAs, a strong DAT score is the single highest-leverage action they can take to improve their competitiveness.
 
 Read our complete guide on [DAT score requirements for dental school](/blog/dat-score-guide) to understand what scores competitive programs expect.
 
@@ -5812,7 +5814,7 @@ For most dental schools: 19–20 AA. For competitive programs: 21–22 AA. For t
 DAT Bootcamp practice tests are calibrated to be approximately the same difficulty as the real exam, sometimes slightly harder. ADA official tests are the closest match. If you're consistently scoring 20–21 on Bootcamp full-lengths, expect a similar result on the real exam.
 
 **What if I score below my target on test date?**
-First: don't retake impulsively. Identify exactly what went wrong (nerves, specific section, time management) and build a targeted plan. Most students who retake within 90 days with a structured plan improve by 2–4 points. Contact our team for a [free consultation](/schedule) on retake strategy.
+First: don't retake impulsively. Identify exactly what went wrong (nerves, specific section, time management) and build a targeted plan. Most students who retake within 90 days with a structured plan improve by 2–4 points. Use our full guide **[Should I Retake the DAT?](/blog/should-i-retake-the-dat)** before you re-register, or contact our team for a [free consultation](/schedule) on retake strategy.
 
 ---
 
