@@ -299,7 +299,46 @@ export default async function BlogPostPage({ params }: Props) {
             },
           ],
         }
-      : null;
+      : slug === "aadsas-bcp-gpa-explained"
+        ? {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What does BCP stand for on AADSAS?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "BCP stands for Biology, Chemistry, and Physics. On ADEA AADSAS, BCP GPA reporting also includes Biochemistry coursework classified in those subject categories.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Does math count toward AADSAS BCP GPA?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Usually no. Math and statistics typically count toward Science GPA (or Other Science), not the narrower BCP GPA used on AADSAS.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Is BCP GPA the same as science GPA on AADSAS?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "No. BCP GPA is limited to Biology, Chemistry, Physics, and Biochemistry. Science GPA is broader and can include math and other science courses.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Do repeated courses replace the old grade in AADSAS BCP GPA?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "No. AADSAS includes all graded attempts. Retaking a course does not erase the original grade from BCP GPA calculations.",
+                },
+              },
+            ],
+          }
+        : null;
 
   return (
     <>

@@ -24,6 +24,171 @@ const DR_ALEX = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "aadsas-bcp-gpa-explained",
+    title: "AADSAS BCP GPA Explained: How It's Calculated",
+    description:
+      "Confused about your AADSAS BCP GPA? Here's exactly how Biology, Chemistry, Physics, and Biochemistry courses factor in — with real calculation examples, BCP vs Science GPA, and common mistakes.",
+    publishedAt: "2026-07-28",
+    readingTime: "10 min read",
+    category: "Application Tips",
+    coverGradient: "from-emerald-600 to-teal-800",
+    coverEmoji: "🧮",
+    coverImage: "/images/blog-dental-school-gpa-cover.png",
+    author: DR_ALEX,
+    content: `
+## Quick Answer: What Is AADSAS BCP GPA?
+
+**BCP GPA** on ADEA AADSAS is your grade-point average from courses classified as **Biology, Chemistry, Physics, and Biochemistry** — not your overall GPA, and **not** math.
+
+If you searched “AADSAS BCP GPA definition biology chemistry physics,” this is the page that answers it directly: which courses count, how quality points work, and how BCP differs from Science GPA.
+
+For the threshold question — *what GPA do I need to get in?* — use our [dental school GPA requirements](/blog/dental-school-gpa-requirements) guide. This post is the **calculation / definition** companion.
+
+---
+
+## What Is BCP GPA (and How It Differs From Overall/Cumulative GPA)
+
+AADSAS does not report one single GPA. After verification, your Academic Audit typically shows several:
+
+| GPA type | What it includes | Why adcoms care |
+|---|---|---|
+| **Overall / Total GPA** | All graded coursework | Broad academic signal |
+| **BCP GPA** | Biology, Chemistry, Physics, Biochemistry | Core science readiness for dental school |
+| **Science GPA** | BCP + Other Science (often includes Math and related sciences) | Broader science performance |
+| **Non-Science GPA** | Everything not in Science | Breadth and consistency |
+
+**Overall GPA** answers: “How did you do in college overall?”  
+**BCP GPA** answers: “How did you do in the hard sciences dental school is built on?”
+
+That is why a 3.7 overall with a 3.1 BCP raises more concern than a 3.4 overall with a 3.6 BCP. Committees read both numbers.
+
+---
+
+## Which Courses Count Toward BCP GPA
+
+Under ADEA AADSAS subject classification, **BCP** includes courses that fall into:
+
+- **Biology** (e.g., general biology, anatomy, physiology, microbiology, genetics, cell bio — when classified as Biology)
+- **Chemistry** (general chemistry, organic chemistry, and related chemistry coursework)
+- **Physics** (algebra- or calculus-based physics sequences and labs when classified as Physics)
+- **Biochemistry** (often listed with BCP in AADSAS reporting)
+
+### What usually does *not* count toward BCP
+
+- **Math / statistics / calculus** — these typically sit in Science (or Other Science), **not** BCP
+- English, psychology, sociology, history, and most non-science electives
+- Pure “Other Science” courses that AADSAS does not map into Bio/Chem/Physics/Biochem
+
+**Practical rule:** when you enter coursework in AADSAS, the **subject category** you assign (and that verification may correct) decides which GPA bucket the course feeds. Title alone is not enough — department + AADSAS subject list matter.
+
+If a course title is ambiguous, follow AADSAS instructions: categorize by the course subject list / department guidance, then expect verification to reclassify mistakes.
+
+---
+
+## How AADSAS Calculates Your BCP GPA (Step-by-Step)
+
+AADSAS uses the same core formula for every GPA bucket:
+
+1. Convert each letter grade to an AADSAS grade value (quality points per credit)
+2. Multiply grade value × **semester credit hours** = quality points for that course
+3. Sum quality points for all courses in the bucket
+4. Divide by total **attempted semester hours** in that bucket  
+   **BCP GPA = Total BCP Quality Points ÷ Total BCP Attempted Hours**
+
+### Key AADSAS rules that surprise people
+
+- **All graded attempts count.** Retakes are **not** grade-replaced. Original C and retake A both stay in the calculation.
+- **Quarter hours** convert to semester hours (commonly × **0.667**).
+- **Pass / Satisfactory / AP credit without a letter grade** usually does **not** enter GPA math.
+- **WF** is generally treated like an **F**.
+- Verification can **reclassify** courses — your self-entered categories are not final until verified.
+
+### Worked example (BCP only)
+
+| Course | Grade | AADSAS value | Credits | Quality points |
+|---|---|---|---|---|
+| Biology 101 | A | 4.0 | 4 | 16.0 |
+| Chem 101 | B+ | 3.3 | 4 | 13.2 |
+| Chem 102 | A- | 3.7 | 4 | 14.8 |
+| Physics 1 | B | 3.0 | 4 | 12.0 |
+| Biochemistry | A | 4.0 | 3 | 12.0 |
+| **BCP totals** |  |  | **19** | **68.0** |
+
+**BCP GPA = 68.0 ÷ 19 ≈ 3.58**
+
+Now add Calculus I (A, 4 credits). That course may raise your **Science GPA**, but it should **not** move your **BCP GPA** if it is classified as Math — which is exactly why students get confused by “biology chemistry physics only” search language.
+
+---
+
+## BCP GPA vs BCPM GPA: What's the Difference
+
+| Term | Where you see it | Includes Math? |
+|---|---|---|
+| **BCP** (AADSAS / dental) | Dental school applications | **No** — Bio, Chem, Physics (+ Biochem in AADSAS BCP reporting) |
+| **BCPM** (often med / AMCAS-style language) | Medical school conversations | **Yes** — Bio, Chem, Physics, **Math** |
+| **Science GPA** (AADSAS) | Dental applications | Broader than BCP; often includes Math + Other Science |
+
+If a forum post says “BCPM,” do not assume AADSAS uses the same bucket. For dental school, learn **BCP** and **Science GPA** as AADSAS defines them.
+
+---
+
+## Common BCP GPA Calculation Mistakes
+
+1. **Assuming your university GPA = AADSAS GPA** — different grade scales, plus AADSAS recalculates after verification.
+2. **Putting math into BCP** — Calculus/stats usually help Science GPA, not BCP.
+3. **Thinking a retake erases the first grade** — both attempts remain.
+4. **Ignoring labs / credit-hour weighting** — a 1-credit lab still matters; a 5-credit orgo hits harder than a 3-credit elective.
+5. **Mis-categorizing courses** — wrong subject tags warp every science bucket until verification fixes them.
+6. **Using only overall GPA to judge competitiveness** — adcoms read BCP separately. See [GPA requirements by school tier](/blog/dental-school-gpa-requirements).
+
+---
+
+## What's a Competitive BCP GPA for Dental School
+
+National accepted-applicant averages sit roughly around **~3.5 overall** and **~3.4–3.5 science/BCP** (exact ADEA figures shift by cycle). Use ranges, not myths:
+
+| Competitiveness | Rough BCP / science range |
+|---|---|
+| Highly selective programs | Often ~3.6–3.85+ |
+| Broad competitive range | Often ~3.2–3.55 |
+| Access / broader-mission programs | Wider; stronger DAT + story matter more |
+
+A below-average BCP is not an automatic rejection — but it raises the bar on [DAT performance](/blog/dat-score-guide), upward grade trends, and school-list strategy. If your BCP is the weak number, fix the signal with post-bacc / SMP coursework and a realistic list — not hope alone.
+
+---
+
+## FAQ
+
+**What does BCP stand for on AADSAS?**  
+Biology, Chemistry, and Physics — with Biochemistry included in AADSAS BCP reporting.
+
+**Does math count toward AADSAS BCP GPA?**  
+Usually **no**. Math typically falls under Science / Other Science, not BCP.
+
+**Is BCP GPA the same as science GPA?**  
+**No.** Science GPA is broader. BCP is the narrower core-science bucket adcoms watch closely.
+
+**Do repeated courses replace the old grade in BCP?**  
+**No.** AADSAS keeps both graded attempts in the calculation.
+
+**Where do I see my official BCP GPA?**  
+On your AADSAS Academic Audit after verification — not only on your college transcript GPA.
+
+---
+
+## Sources & last reviewed
+
+- ADEA AADSAS applicant help: GPA calculation / quality points methodology  
+- ADEA AADSAS GPA guides describing BCP (Biology, Chemistry, Physics, Biochemistry) vs Science GPA  
+
+*Last reviewed: July 2026. Always confirm current subject lists inside the official AADSAS instructions for your cycle.*
+
+---
+
+If you want help reading your transcript the way adcoms will — BCP vs Science vs overall — [schedule a free call](/schedule) and we will map your numbers to a realistic school list.
+`,
+  },
+  {
     slug: "should-i-retake-the-dat",
     title: "Should I Retake the DAT? When a Retake Helps (and When It Hurts)",
     description:
@@ -193,6 +358,7 @@ Letters are the #1 silent delay. Ask early. See [letters of recommendation guide
 ### 4. School list (draft)
 Build aspirational / target / safety using GPA + DAT reality:
 - [GPA requirements](/blog/dental-school-gpa-requirements)
+- [AADSAS BCP GPA explained](/blog/aadsas-bcp-gpa-explained)
 - [Acceptance rates](/blog/dental-school-acceptance-rates)
 
 ### 5. Experiences documented
@@ -5074,7 +5240,9 @@ Most pre-dental students know their overall GPA. Fewer understand that dental sc
 
 ### Science GPA (BCP)
 
-The Biology, Chemistry, and Physics GPA — commonly called the **BCP GPA** — is calculated from all biology, chemistry (general and organic), and physics coursework you've completed. This is computed separately on AADSAS.
+The Biology, Chemistry, and Physics GPA — commonly called the **BCP GPA** — is calculated from biology, chemistry (general and organic), physics, and biochemistry coursework as classified on AADSAS. This is computed separately from your overall GPA.
+
+For the full calculation (which courses count, quality points, retakes, and BCP vs Science GPA), see [AADSAS BCP GPA explained](/blog/aadsas-bcp-gpa-explained).
 
 Why does it matter more? Because dentistry is fundamentally a science-based profession. Adcoms want to see that you can handle the biological and chemical foundations of clinical dental education. A student with a 3.8 overall GPA but a 3.0 BCP raises a flag. A student with a 3.4 overall GPA but a 3.6 BCP looks considerably stronger in this dimension.
 
