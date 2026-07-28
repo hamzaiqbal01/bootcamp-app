@@ -338,7 +338,46 @@ export default async function BlogPostPage({ params }: Props) {
               },
             ],
           }
-        : null;
+        : slug === "how-long-does-it-take-to-become-a-dentist"
+          ? {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "How long does it take to become a dentist?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "In the United States, it typically takes about 8 years after high school: 4 years of undergraduate study plus 4 years of dental school (DDS or DMD), followed by licensure before you can practice.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "How many years is dental school?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "U.S. dental school is almost always 4 years for a DDS or DMD degree. Specialty residencies add 2–6 more years after graduation if you pursue them.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Can you become a dentist in less than 8 years?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Sometimes. Accelerated 3+4 programs, heavy AP credit, and skipping gap years can shorten the path, but accredited dental school itself remains about 4 years for most U.S. graduates.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Do general dentists need a residency?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "No. General dentists can license and practice after dental school without a residency. Residencies are required or expected mainly for specialty careers.",
+                  },
+                },
+              ],
+            }
+          : null;
 
   return (
     <>

@@ -24,6 +24,136 @@ const DR_ALEX = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "how-long-does-it-take-to-become-a-dentist",
+    title: "How Long Does It Take to Become a Dentist? (Full Timeline, Year by Year)",
+    description:
+      "From undergrad to DDS/DMD to licensure — here's the real timeline for how many years it takes to become a dentist, step by step, including accelerated paths and specialty training.",
+    publishedAt: "2026-07-28",
+    readingTime: "9 min read",
+    category: "Admissions Guide",
+    coverGradient: "from-sky-700 to-indigo-900",
+    coverEmoji: "⏱️",
+    coverImage: "/images/blog-how-to-become-a-dentist-usa-cover.png",
+    author: DR_ALEX,
+    content: `
+## The Short Answer: 8 Years Minimum
+
+**How long does it take to become a dentist in the U.S.?** For most people: **about 8 years after high school** —
+
+- **4 years** undergraduate (bachelor’s + prerequisites)
+- **4 years** dental school (DDS or DMD)
+- Then **licensure** (exams + state requirements) before you can practice
+
+That 8-year figure is the standard path to becoming a **general dentist**. Specialty training (orthodontics, oral surgery, etc.) adds **2–6 more years**. Gap years, retakes, or delayed applications can stretch the timeline further.
+
+If you want the full *how* (prerequisites, DAT, AADSAS, interviews), use our process guide: [How to become a dentist in the USA](/blog/how-to-become-a-dentist-in-the-usa). This page answers the **duration** question only.
+
+---
+
+## Step 1: Undergrad Prerequisites (4 Years)
+
+Most applicants complete a **4-year bachelor’s degree** while finishing dental school prerequisites (biology, general/organic chemistry, physics, often biochemistry, English, and sometimes math/stats).
+
+| What you’re doing | Typical time |
+|---|---|
+| Bachelor’s degree | ~4 years |
+| Shadowing + experiences | Alongside undergrad (often Years 2–4) |
+| DAT prep + exam | Usually junior year or early senior year |
+| AADSAS application | Summer before / of senior year |
+
+You do **not** need a biology major — but you do need the science prerequisites and a competitive [GPA](/blog/dental-school-gpa-requirements) / [DAT](/blog/dat-score-guide).
+
+**Can undergrad be shorter?** Sometimes — heavy AP/IB credit, summer terms, or rare accelerated tracks. Most students still land near four academic years before dental school matriculation.
+
+---
+
+## Step 2: Dental School — DDS/DMD (4 Years)
+
+U.S. dental school is almost always **four years**:
+
+| Years | Focus |
+|---|---|
+| D1–D2 | Biomedical sciences, preclinical skills, early patient exposure |
+| D3–D4 | Clinical dentistry, patient care, competency requirements |
+
+**DDS and DMD are equivalent** — the degree name depends on the school, not prestige or length.
+
+After graduation you still need **licensure** (national/regional clinical exams + state rules) before independent practice. Licensure timing is usually weeks to a few months after graduation if you plan ahead — not another full academic year, but it is a real step on the clock.
+
+For the admissions-cycle calendar (when AADSAS opens, secondaries, interviews), see the [dental school application timeline](/blog/dental-school-application-timeline) — that is a different “timeline” (one application year), not total years to become a dentist.
+
+---
+
+## Optional: Specialization / Residency (2–6 More Years)
+
+| Path | Extra time after dental school |
+|---|---|
+| General dentist (no residency required) | **0** — license and practice |
+| Many specialties (e.g., endo, perio, ortho, peds) | Often **2–3 years** |
+| Oral & maxillofacial surgery | Often **4–6 years** (program-dependent) |
+
+If your goal is “practicing dentist,” count **~8 years**. If your goal is a named specialty, plan **~10–14 years** total after high school.
+
+---
+
+## Can You Speed It Up? (Accelerated & 3+4 Programs)
+
+Ways people shorten the path (without skipping dental school):
+
+1. **3+4 / BS-DDS linked programs** — compressed undergrad + guaranteed or preferred dental seat if you meet benchmarks (highly competitive; not available everywhere)
+2. **AP / dual-enrollment credit** — finish bachelor’s requirements faster
+3. **No gap year** — apply on-cycle and matriculate the summer after graduation
+4. **Strong first-pass DAT** — avoid retake delays ([should you retake?](/blog/should-i-retake-the-dat))
+
+What you **cannot** skip: the accredited **4-year DDS/DMD** (unless you are an internationally trained dentist in an Advanced Standing pathway — typically **2–3 years**, different route).
+
+---
+
+## Full Timeline Chart, Year by Year
+
+Example path for a student who goes straight through with no gap year:
+
+| Year | Stage |
+|---|---|
+| 1–4 | Undergrad + prerequisites + shadowing |
+| ~3–4 | DAT + [AADSAS](/blog/when-does-aadsas-open) application cycle |
+| 5–8 | Dental school (D1–D4) |
+| End of Year 8 | Graduate → licensure → general practice |
+| 9+ | Optional specialty residency |
+
+**With one gap year** (common for DAT retake, grades, or experiences): add ~1 year → **~9 years** to practice.
+
+**With specialty training:** add residency length on top of Year 8.
+
+---
+
+## FAQ
+
+**How many years of dental school?**  
+Almost always **4 years** for DDS/DMD in the U.S.
+
+**Is it 8 years including high school?**  
+No — the common “8 years” means **after high school** (4 undergrad + 4 dental school).
+
+**How long to become an orthodontist / oral surgeon?**  
+Dental school first (~8 years path to DDS/DMD), then specialty training (often **2–3** for many specialties; oral surgery often longer).
+
+**Does residency add required years for general dentists?**  
+No. General dentists can license and practice after dental school without a residency.
+
+**What’s the difference between this and the application timeline?**  
+Application timeline = one admissions cycle. This page = total years from college start to practicing dentist.
+
+---
+
+## Next Step
+
+Know the years — then execute the steps. Start here: [How to become a dentist in the USA](/blog/how-to-become-a-dentist-in-the-usa).
+
+Want a timeline built around *your* GPA, DAT date, and school list? [Schedule a free call](/schedule).
+`,
+  },
+  {
     slug: "aadsas-bcp-gpa-explained",
     title: "AADSAS BCP GPA Explained: How It's Calculated",
     description:
@@ -557,9 +687,9 @@ If PAT is the section holding your AA down and self-study has plateaued, [privat
   },
   {
     slug: "how-to-become-a-dentist-in-the-usa",
-    title: "How to Become a Dentist in the USA: The Complete Step-by-Step Guide (2025–2026)",
+    title: "How to Become a Dentist in the USA: Step-by-Step Guide (2026)",
     description:
-      "A complete step-by-step guide to becoming a dentist in the United States — from undergraduate prerequisites and the DAT to dental school, licensure, and choosing a specialty. Includes timeline, costs, and answers to the questions pre-dental students ask most.",
+      "Step-by-step path to becoming a dentist in the U.S. — prerequisites, DAT, AADSAS, dental school, licensure, and specialties. For total years required, see our how-long timeline guide.",
     publishedAt: "2026-07-22",
     readingTime: "17 min read",
     category: "Admissions Guide",
@@ -570,9 +700,11 @@ If PAT is the section holding your AA down and self-study has plateaued, [privat
     content: `
 ## The Path to Becoming a Dentist in the USA
 
-Becoming a dentist in the United States is a long, structured path — usually **8 years after high school** (4 years undergraduate + 4 years dental school), followed by licensure and, optionally, specialty training. It is competitive, expensive, and demanding. It is also one of the most rewarding healthcare careers in terms of autonomy, work-life balance, and earning potential.
+Becoming a dentist in the United States is a long, structured path — usually **8 years after high school** (4 years undergraduate + 4 years dental school), followed by licensure and, optionally, specialty training. For the full year-by-year duration breakdown (accelerated programs, specialties, gap years), see [how long it takes to become a dentist](/blog/how-long-does-it-take-to-become-a-dentist).
 
-This guide walks through every step of the journey, in order, so you know exactly what to do and when. Whether you are a high school student, a college freshman, or a career-changer, this is the roadmap.
+It is competitive, expensive, and demanding — and one of the most rewarding healthcare careers in terms of autonomy, work-life balance, and earning potential.
+
+This guide walks through every **step of the process**, in order, so you know exactly what to do and when. Whether you are a high school student, a college freshman, or a career-changer, this is the roadmap.
 
 ---
 
@@ -711,6 +843,7 @@ Specialties are competitive and require strong dental school performance and oft
 | **Subtotal (general dentist)** | **~8 years** |
 | Optional specialty residency | +2–6 years |
 
+Want the full year-by-year chart, accelerated 3+4 options, and specialty add-ons? Read [how long it takes to become a dentist](/blog/how-long-does-it-take-to-become-a-dentist).
 ---
 
 ## How Much Does It Cost?
@@ -742,7 +875,7 @@ Yes, but the path differs. Many internationally trained dentists complete an **A
 Neither. They are equivalent degrees. The school decides which title to award.
 
 **What's the fastest way to become a dentist?**
-The minimum realistic path is 8 years (undergrad + dental school) plus licensure. Some students shorten undergrad slightly with AP credits or accelerated BS/DDS programs, but the core training is fixed.
+The minimum realistic path is 8 years (undergrad + dental school) plus licensure. Some students shorten undergrad slightly with AP credits or accelerated BS/DDS programs, but the core training is fixed. See the full duration guide: [how long it takes to become a dentist](/blog/how-long-does-it-take-to-become-a-dentist).
 
 ---
 
