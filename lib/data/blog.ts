@@ -254,9 +254,9 @@ If you want a day-one submission plan built around your GPA, DAT, and school lis
   },
   {
     slug: "dat-perceptual-ability-practice-guide",
-    title: "DAT Perceptual Ability Practice Guide: Keyhole, Cubes, Angles & Spatial Reasoning",
+    title: "DAT Spatial Reasoning Practice: Perceptual Ability (PAT) Drills",
     description:
-      "Targeted DAT PAT practice for perceptual ability, spatial reasoning, keyhole, angle ranking, and cube counting. Learn drills that raise weak PAT subsections without wasting hours on random questions.",
+      "Improve DAT spatial reasoning and perceptual ability with targeted PAT drills — keyhole, cubes, angles, hole punching, and pattern folding. Practice that raises weak subsections.",
     publishedAt: "2026-07-23",
     readingTime: "12 min read",
     category: "DAT Prep",
@@ -267,9 +267,11 @@ If you want a day-one submission plan built around your GPA, DAT, and school lis
     content: `
 ## Why Generic PAT Practice Stalls Your Score
 
+If you searched for **DAT spatial reasoning** or **DAT perceptual ability**, you are looking at the same skill the PAT measures — mental rotation, 3D visualization, and pattern recognition under time.
+
 Most students “do PAT questions” every day and still sit at 17–18. The problem is usually not effort — it is **undifferentiated practice**. Keyhole errors and cube-counting errors are different skills. If you only mix random sets, you never isolate the weakness that is capping your Perceptual Ability score.
 
-This guide is the practice companion to our broader [DAT PAT tips and strategies](/blog/dat-pat-tips-and-strategies) article. Use that for overview; use this page for **drills by question family**.
+This guide is the practice companion to our broader [DAT PAT tips and strategies](/blog/dat-pat-tips-and-strategies) article. Use that for overview; use this page for **spatial reasoning drills by question family**.
 
 ---
 
@@ -3858,9 +3860,9 @@ If you'd like a personalized school list review based on your specific GPA, DAT 
   },
   {
     slug: "how-to-pay-for-dental-school",
-    title: "How to Pay for Dental School: Scholarships, Loans, and Financial Aid Explained",
+    title: "How to Pay for Dental School in 2026: Loans, Scholarships & Grants",
     description:
-      "Dental school costs $200,000–$400,000. But most students don't know about the scholarships, service programs, loan forgiveness options, and financial aid strategies that can dramatically reduce that number. This guide covers every funding option available — so debt doesn't stop you from becoming a dentist.",
+      "How to pay for dental school without drowning in debt: federal loans, scholarships, grants, HPSP, and loan forgiveness — plus a practical plan to fund $200K–$400K in tuition.",
     publishedAt: "2026-07-02",
     readingTime: "13 min read",
     category: "Application Tips",
@@ -5027,9 +5029,9 @@ If you want a personalized review of your planned recommender list and how to fr
   },
   {
     slug: "dental-school-gpa-requirements",
-    title: "Dental School GPA Requirements 2026: What GPA Do You Need to Get In?",
+    title: "Average Dental School GPA 2026: Requirements & What You Need",
     description:
-      "What GPA do you need for dental school? See average and competitive GPAs, how science GPA is calculated, what a 3.0–3.3 GPA means for your odds, and how a strong DAT can offset a lower GPA.",
+      "Average dental school GPA is about 3.55 overall (science ~3.46). See competitive ranges by school tier, what a 3.0–3.3 means, and how a strong DAT can offset a lower GPA.",
     publishedAt: "2026-06-30",
     readingTime: "13 min read",
     category: "Application Tips",

@@ -4,9 +4,9 @@ import { Header } from "@/components/landing/Header";
 import { PrivateDatTutoring } from "@/components/landing/PrivateDatTutoring";
 
 export const metadata: Metadata = {
-  title: "Private DAT Tutoring",
+  title: "DAT Tutoring: Private 1-on-1 Prep from 99th Percentile Tutors",
   description:
-    "One-on-one DAT tutoring from 99th percentile tutors. Packages from 10–20 hours with personalized study plans and expert educators.",
+    "Looking for DAT tutoring? Get private 1-on-1 DAT tutoring from 99th percentile tutors — personalized study plans, weak-section drills, and packages from 10–20 hours.",
   alternates: {
     canonical: "/private-dat-tutoring",
   },

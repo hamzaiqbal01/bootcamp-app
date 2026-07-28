@@ -19,7 +19,7 @@ export function PrivateDatTutoring() {
         </div>
         <div className="relative z-1 mx-auto w-full max-w-5xl px-4 text-center sm:px-6 lg:px-8">
           <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.5rem] lg:leading-tight">
-            Private DAT Tutoring
+            DAT Tutoring — Private 1-on-1 Prep
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
             The DAT will be one of the most important exams you will take, but you do not have to face
