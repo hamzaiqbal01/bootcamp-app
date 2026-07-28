@@ -6,6 +6,8 @@ import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
 import { BlogAdSense } from "@/components/ads/BlogAdSense";
 import { BlogAdSenseLoader } from "@/components/ads/BlogAdSenseLoader";
+import { BlogTableOfContents } from "@/components/blog/BlogTableOfContents";
+import { extractH2Headings, slugifyHeading } from "@/lib/blog-toc";
 import { blogPosts, getAdjacentPosts, getPostBySlug, getRelatedPosts, slugifyCategory } from "@/lib/data/blog";
 
 type Props = {
@@ -56,6 +58,7 @@ function renderMarkdown(content: string) {
   const elements: React.ReactNode[] = [];
   let key = 0;
   let i = 0;
+  const h2Seen = new Map<string, number>();
 
   while (i < lines.length) {
     const line = lines[i];
@@ -69,18 +72,26 @@ function renderMarkdown(content: string) {
       i++;
     } else if (line.startsWith("### ")) {
       elements.push(
-        <h3 key={key++} className="mb-3 mt-8 text-xl font-bold text-slate-900">
+        <h3 key={key++} className="mb-3 mt-8 text-xl font-bold text-slate-900 scroll-mt-28">
           {line.slice(4)}
         </h3>,
       );
       i++;
     } else if (line.startsWith("## ")) {
+      const raw = line.slice(3).trim();
+      const text = raw.replaceAll(/\*\*/g, "");
+      const baseId = slugifyHeading(text);
+      const count = h2Seen.get(baseId) ?? 0;
+      const id = count > 0 ? `${baseId}-${count + 1}` : baseId;
+      h2Seen.set(baseId, count + 1);
+
       elements.push(
         <h2
           key={key++}
-          className="mb-4 mt-12 text-2xl font-extrabold tracking-tight text-slate-900 first:mt-0"
+          id={id}
+          className="mb-4 mt-12 scroll-mt-28 text-2xl font-extrabold tracking-tight text-slate-900 first:mt-0 sm:text-[1.65rem]"
         >
-          {line.slice(3)}
+          {raw.replaceAll(/\*\*(.+?)\*\*/g, "$1")}
         </h2>,
       );
       i++;
@@ -104,8 +115,8 @@ function renderMarkdown(content: string) {
       }
       const rows = tableLines.filter((l) => !/^\|[-| :]+\|$/.test(l.trim()));
       elements.push(
-        <div key={key++} className="my-6 overflow-x-auto rounded-xl border border-slate-200 shadow-sm">
-          <table className="min-w-full divide-y divide-slate-100 text-sm">
+        <div key={key++} className="my-7 overflow-x-auto rounded-xl border border-slate-200 shadow-sm">
+          <table className="min-w-full divide-y divide-slate-100 text-sm sm:text-[0.95rem]">
             <thead>
               <tr className="bg-slate-50">
                 {rows[0]
@@ -221,7 +232,7 @@ function renderMarkdown(content: string) {
         elements.push(
           <p
             key={key++}
-            className="my-5 leading-[1.8] text-slate-700"
+            className="my-5 text-[1.05rem] leading-[1.85] text-slate-700 sm:text-[1.075rem]"
             dangerouslySetInnerHTML={{
               __html: text
                 .replaceAll(/\*\*(.+?)\*\*/g, "<strong class='font-semibold text-slate-900'>$1</strong>")
@@ -248,6 +259,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   const related = getRelatedPosts(slug, 3);
   const { newer, older } = getAdjacentPosts(slug);
+  const tocHeadings = extractH2Headings(post.content);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -409,7 +421,7 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
           )}
           <div className="pointer-events-none absolute inset-0 bg-black/30" />
-          <div className="relative mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
             <nav aria-label="Breadcrumb" className="mb-5 text-sm text-white/70">
               <ol className="flex flex-wrap items-center gap-2">
                 <li>
@@ -457,10 +469,10 @@ export default async function BlogPostPage({ params }: Props) {
               <span className="text-sm text-white/70">{post.readingTime}</span>
             </div>
 
-            <h1 className="mt-5 text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl lg:text-[2.75rem]">
+            <h1 className="mt-5 max-w-4xl text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl lg:text-[2.75rem]">
               {post.title}
             </h1>
-            <p className="mt-5 max-w-2xl text-lg text-white/80">{post.description}</p>
+            <p className="mt-5 max-w-3xl text-lg text-white/80">{post.description}</p>
 
             {/* Author */}
             <div className="mt-8 flex items-center gap-4">
@@ -480,62 +492,60 @@ export default async function BlogPostPage({ params }: Props) {
         </section>
 
         {/* Article body */}
-        <section className="bg-white py-16 sm:py-20">
-          <div className="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8">
-            <div className="grid gap-16 lg:grid-cols-[1fr_260px] lg:items-start">
-              {/* Main content */}
-              <article className="min-w-0">
-                <BlogAdSense format="horizontal" className="mb-2 mt-0" />
-                {renderMarkdown(post.content)}
-                <BlogAdSense format="rectangle" />
-              </article>
+        <section className="bg-white py-12 sm:py-16 lg:py-20">
+          <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+            {/* Mobile TOC */}
+            <BlogTableOfContents headings={tocHeadings} variant="mobile" />
 
-              {/* Sticky sidebar */}
-              <aside className="hidden lg:block">
-                <div className="sticky top-28 space-y-6">
-                  {/* Author card */}
-                  <div className="rounded-2xl border border-slate-100 bg-slate-50 p-6 shadow-sm">
-                    <p className="mb-4 text-xs font-bold uppercase tracking-widest text-slate-500">
-                      Written By
-                    </p>
-                    <div className="flex items-center gap-3">
-                      <Image
-                        src={post.author.imageUrl}
-                        alt={post.author.name}
-                        width={48}
-                        height={48}
-                        className="h-12 w-12 rounded-full object-cover object-top"
-                      />
-                      <div>
-                        <p className="font-semibold text-slate-900">{post.author.name}</p>
-                        <p className="text-xs text-slate-500">{post.author.role}</p>
-                      </div>
+            <div className="grid gap-10 xl:grid-cols-[minmax(0,1fr)_280px] xl:items-start xl:gap-14">
+              {/* Main content — wider reading column */}
+              <article className="min-w-0 max-w-none">
+                <BlogAdSense format="horizontal" className="mb-2 mt-0" />
+                <div className="blog-prose">{renderMarkdown(post.content)}</div>
+                <BlogAdSense format="rectangle" />
+
+                {/* Author card — below content */}
+                <div className="mt-12 rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
+                  <p className="mb-4 text-xs font-bold uppercase tracking-widest text-slate-500">
+                    Written By
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <Image
+                      src={post.author.imageUrl}
+                      alt={post.author.name}
+                      width={56}
+                      height={56}
+                      className="h-14 w-14 rounded-full object-cover object-top"
+                    />
+                    <div>
+                      <p className="font-semibold text-slate-900">{post.author.name}</p>
+                      <p className="text-sm text-slate-500">{post.author.role}</p>
                     </div>
                   </div>
+                </div>
+              </article>
 
-                  {/* CTA card */}
-                  <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-brand-600 to-violet-700 p-6 text-white shadow-lg shadow-indigo-500/20">
-                    <p className="text-sm font-bold uppercase tracking-widest text-indigo-200">
+              {/* Sticky TOC + CTA — desktop */}
+              <aside className="hidden xl:block">
+                <div className="sticky top-28 space-y-6">
+                  <BlogTableOfContents headings={tocHeadings} variant="sidebar" />
+
+                  <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-brand-600 to-brand-700 p-6 text-white shadow-lg shadow-brand-600/15">
+                    <p className="text-sm font-bold uppercase tracking-widest text-brand-100">
                       Free Consultation
                     </p>
                     <p className="mt-3 text-lg font-extrabold leading-snug">
                       Get personalized guidance for your application
                     </p>
-                    <p className="mt-2 text-sm text-indigo-100">
+                    <p className="mt-2 text-sm text-brand-100">
                       15 minutes. No obligation. Real advice.
                     </p>
                     <Link
                       href="/schedule"
-                      className="mt-5 block rounded-xl bg-white py-3 text-center text-sm font-semibold text-brand-700 transition hover:bg-indigo-50"
+                      className="mt-5 block rounded-xl bg-white py-3 text-center text-sm font-semibold text-brand-700 transition hover:bg-brand-50"
                     >
                       Schedule Free Call →
                     </Link>
-                  </div>
-
-                  {/* Reading time */}
-                  <div className="rounded-2xl border border-slate-100 bg-white p-5 text-center shadow-sm">
-                    <p className="text-3xl font-extrabold text-slate-900">{post.readingTime.split(" ")[0]}</p>
-                    <p className="text-sm text-slate-500">minute read</p>
                   </div>
                 </div>
               </aside>
@@ -546,7 +556,7 @@ export default async function BlogPostPage({ params }: Props) {
         {/* Prev / Next */}
         {(newer || older) && (
           <section className="border-t border-slate-100 bg-white py-10">
-            <div className="mx-auto grid w-full max-w-4xl gap-4 px-4 sm:grid-cols-2 sm:px-6 lg:px-8">
+            <div className="mx-auto grid w-full max-w-6xl gap-4 px-4 sm:grid-cols-2 sm:px-6 lg:px-8">
               {older ? (
                 <Link
                   href={`/blog/${older.slug}`}
