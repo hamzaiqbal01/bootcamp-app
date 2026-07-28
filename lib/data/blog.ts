@@ -3083,9 +3083,9 @@ If you can check all six boxes, your statement is ready. If not, go back and loo
   },
   {
     slug: "dat-pat-tips-and-strategies",
-    title: "DAT PAT Practice: Tips, Strategies & All 6 Question Types to Score 20+",
+    title: "How to Score 20+ on the DAT PAT (All 6 Question Types)",
     description:
-      "Struggling with DAT PAT? Learn proven strategies for keyhole, angle ranking, cube counting, hole punching, and more — plus a daily practice plan to raise your Perceptual Ability Test score to 20+.",
+      "Raise your DAT PAT score with strategies for keyhole, TFE, angle ranking, hole punching, cube counting, and pattern folding — plus a daily practice plan that actually sticks.",
     publishedAt: "2026-07-03",
     readingTime: "13 min read",
     category: "DAT Prep",
@@ -5270,9 +5270,9 @@ If you'd like to talk through your specific GPA, DAT score, and application stra
   },
   {
     slug: "dental-shadowing-hours-for-dental-school",
-    title: "How Many Dental Shadowing Hours Do You Need for Dental School? (2025–2026 Guide)",
+    title: "Dental Shadowing Hours for Dental School: Aim for 100–150 (2026)",
     description:
-      "Confused about how many dental shadowing hours you need? This guide answers exactly that — plus how to find shadowing opportunities, what to observe and record, and how to turn your shadowing experience into a compelling part of your dental school application.",
+      "Competitive applicants typically log 100–150 dental shadowing hours. See school ranges, how to find opportunities, what to document, and how to use your hours in AADSAS.",
     publishedAt: "2026-06-26",
     readingTime: "11 min read",
     category: "Application Tips",
@@ -5283,13 +5283,15 @@ If you'd like to talk through your specific GPA, DAT score, and application stra
     content: `
 ## Why Dental Shadowing Is the Most Underestimated Part of Your Application
 
+**Quick answer:** Most competitive dental school applicants aim for **100–150 shadowing hours** (often more for top programs). School minimums commonly fall in the **40–100** range when published — but committees care as much about sustained, varied observation as the raw total.
+
 Most pre-dental students treat shadowing as a checkbox — something to get done so they can say they did it. That's exactly the wrong way to think about it.
 
 Dental shadowing is the only part of your application where you can demonstrate firsthand knowledge of the profession. Your GPA shows you can handle coursework. Your DAT score shows you can perform under pressure. But shadowing shows something neither of those can: that you have genuinely seen dentistry from the inside, understand what the work actually looks like, and have made an informed decision to pursue it.
 
-Admissions committees are not looking for a number of hours. They are looking for evidence that you know what you're getting into — and that you chose dentistry anyway.
+Admissions committees are not only looking for a number of hours. They want evidence that you know what you're getting into — and that you chose dentistry anyway.
 
-This guide covers everything you need to know: how many hours you actually need, how to find shadowing, what to do while you're there, how to document it, and how to use it effectively in your application.
+This guide covers how many hours you actually need, how to find shadowing, what to do while you're there, how to document it, and how to use it effectively in your application.
 
 ---
 
