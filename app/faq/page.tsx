@@ -4,9 +4,11 @@ import { Header } from "@/components/landing/Header";
 import { FaqSection } from "@/components/landing/FaqSection";
 
 export const metadata: Metadata = {
-  title: "FAQ: Dental Admissions Consulting & DAT Tutoring Questions",
+  title: {
+    absolute: "Dental Admissions FAQ: GPA, DAT & Apps | FDP",
+  },
   description:
-    "Get clear answers about Future Dentist Prep — DAT tutoring, personal statement help, interview prep, pricing basics, and how to book a free 15-minute consultation.",
+    "Dental school admissions FAQ — GPA, DAT scores, personal statements, interviews, and tutoring. Clear answers for pre-dental students.",
   alternates: {
     canonical: "/faq",
   },

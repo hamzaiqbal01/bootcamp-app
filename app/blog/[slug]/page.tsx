@@ -23,7 +23,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getPostBySlug(slug);
   if (!post) return {};
   return {
-    title: post.title,
+    title: {
+      absolute: `${post.title} | FDP`,
+    },
     description: post.description,
     alternates: {
       canonical: `/blog/${slug}`,

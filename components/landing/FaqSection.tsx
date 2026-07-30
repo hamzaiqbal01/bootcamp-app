@@ -7,8 +7,8 @@ export function FaqSection() {
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
           badge="Common Questions"
-          title="FAQ"
-          description="Everything you need to know about our services and process."
+          title="Dental School Admissions FAQ"
+          description="Clear answers on GPA, DAT, applications, tutoring, and how we help pre-dental students."
         />
 
         <div className="mx-auto max-w-3xl space-y-3">

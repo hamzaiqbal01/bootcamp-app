@@ -25,9 +25,9 @@ const DR_ALEX = {
 export const blogPosts: BlogPost[] = [
   {
     slug: "how-long-does-it-take-to-become-a-dentist",
-    title: "How Long Does It Take to Become a Dentist? (Full Timeline, Year by Year)",
+    title: "How Long to Become a Dentist? (8-Year Timeline)",
     description:
-      "From undergrad to DDS/DMD to licensure — here's the real timeline for how many years it takes to become a dentist, step by step, including accelerated paths and specialty training.",
+      "It usually takes 8 years after high school to become a dentist (4 undergrad + 4 dental school). See the year-by-year chart, accelerated paths, and specialties.",
     publishedAt: "2026-07-28",
     readingTime: "9 min read",
     category: "Admissions Guide",
@@ -550,9 +550,9 @@ If you want a day-one submission plan built around your GPA, DAT, and school lis
   },
   {
     slug: "dat-perceptual-ability-practice-guide",
-    title: "DAT Spatial Reasoning Practice: Perceptual Ability (PAT) Drills",
+    title: "DAT Spatial Reasoning Practice (PAT Drills)",
     description:
-      "Improve DAT spatial reasoning and perceptual ability with targeted PAT drills — keyhole, cubes, angles, hole punching, and pattern folding. Practice that raises weak subsections.",
+      "Improve DAT spatial reasoning with PAT drills — keyhole, cubes, angles, hole punching, and pattern folding. Practice that raises weak subsections.",
     publishedAt: "2026-07-23",
     readingTime: "12 min read",
     category: "DAT Prep",
@@ -687,9 +687,9 @@ If PAT is the section holding your AA down and self-study has plateaued, [privat
   },
   {
     slug: "how-to-become-a-dentist-in-the-usa",
-    title: "How to Become a Dentist in the USA: Step-by-Step Guide (2026)",
+    title: "How to Become a Dentist in the USA (2026)",
     description:
-      "Step-by-step path to becoming a dentist in the U.S. — prerequisites, DAT, AADSAS, dental school, licensure, and specialties. For total years required, see our how-long timeline guide.",
+      "Step-by-step path to becoming a U.S. dentist — prerequisites, DAT, AADSAS, dental school, and licensure. For total years, see our how-long timeline.",
     publishedAt: "2026-07-22",
     readingTime: "17 min read",
     category: "Admissions Guide",
@@ -1058,9 +1058,9 @@ If you've decided dentistry is your path — or you're leaning that way and want
   },
   {
     slug: "how-to-write-dental-school-personal-statement",
-    title: "How to Write a Dental School Personal Statement (Step-by-Step Guide for AADSAS 2025–2026)",
+    title: "Dental School Personal Statement That Gets Interviews",
     description:
-      "A complete step-by-step guide to writing your dental school personal statement for AADSAS — from brainstorming and structure to the 4,500-character limit, revision process, and a final pre-submit checklist that admissions committees actually notice.",
+      "Write a dental school personal statement that stands out — structure, openings, the 4,500-character AADSAS limit, and what adcoms actually look for.",
     publishedAt: "2026-07-16",
     readingTime: "15 min read",
     category: "Personal Statement",
@@ -3384,9 +3384,9 @@ If you can check all six boxes, your statement is ready. If not, go back and loo
   },
   {
     slug: "dat-pat-tips-and-strategies",
-    title: "How to Score 20+ on the DAT PAT (All 6 Question Types)",
+    title: "How to Score 20+ on the DAT PAT",
     description:
-      "Raise your DAT PAT score with strategies for keyhole, TFE, angle ranking, hole punching, cube counting, and pattern folding — plus a daily practice plan that actually sticks.",
+      "Raise your DAT PAT score with strategies for all 6 question types — keyhole, TFE, angles, hole punching, cubes, pattern folding — plus a daily practice plan.",
     publishedAt: "2026-07-03",
     readingTime: "13 min read",
     category: "DAT Prep",
@@ -3401,11 +3401,11 @@ Ask any pre-dental student which DAT section surprised them most — and nine ti
 
 Not Organic Chemistry. Not Biology. The Perceptual Ability Test.
 
-Here's why: every other DAT section tests knowledge. You learn it, you practice applying it, you get better. PAT is different. It tests **spatial reasoning** — the ability to mentally rotate objects, visualize 3D shapes from 2D representations, and recognize spatial patterns under time pressure. It doesn't care how much you've memorized. It rewards a specific kind of visual thinking that most students have never deliberately trained.
+Here's why: every other DAT section tests knowledge. You learn it, you practice applying it, you get better. PAT is different. It tests visual–spatial skill under time — mental rotation, 3D from 2D, and pattern recognition — not memorized content. Most students have never trained that skill deliberately.
 
-The good news: spatial reasoning is trainable. It is a skill that improves with targeted, consistent practice — not a fixed trait you either have or don't. Students who commit to daily PAT practice over 8–12 weeks routinely improve by 3–5 points on this section alone. That kind of improvement on a single section can move your Academic Average by a full point or more.
+The good news: PAT ability is trainable. Students who commit to daily practice over 8–12 weeks routinely improve by 3–5 points on this section alone. That kind of improvement on a single section can move your Academic Average by a full point or more.
 
-This guide covers all six PAT question types, the most effective strategy for each, common mistakes that cost students points, and how to build a practice routine that actually develops the spatial reasoning skills the test demands.
+This guide covers all six PAT question types, the most effective strategy for each, common mistakes that cost students points, and how to build a practice routine that raises your score. For targeted drills by question family, use our [DAT spatial reasoning practice guide](/blog/dat-perceptual-ability-practice-guide).
 
 ---
 
@@ -3600,7 +3600,7 @@ The key: **always timed.** Untimed practice builds false confidence. Timed pract
 
 ### The Non-Negotiable Rule: Practice Every Day
 
-PAT skills degrade faster than knowledge-based skills when you take days off. Even on light study days, do at least 15 PAT questions. The spatial reasoning pathways you're building need consistent activation to stick.
+PAT skills degrade faster than knowledge-based skills when you take days off. Even on light study days, do at least 15 PAT questions. The visual skills you're building need consistent activation to stick.
 
 ---
 
@@ -3644,8 +3644,8 @@ Most students see measurable improvement within 3–4 weeks of consistent daily 
 **Is PAT harder on the real DAT than on practice tests?**
 DAT Bootcamp is calibrated to be approximately the same difficulty as the real exam on PAT. Crack DAT PAT can be slightly easier for some question types. ADA official practice tests are the closest proxy for real exam difficulty. If your Bootcamp PAT scores are consistently 20+, expect a similar result on test day.
 
-**What if I'm naturally bad at spatial reasoning?**
-Spatial reasoning ability varies between people — but it is absolutely trainable. Research consistently shows that spatial visualization skills improve significantly with targeted practice. Students who describe themselves as "terrible at spatial stuff" and then commit to 8 weeks of daily PAT practice routinely achieve scores they thought were impossible. The key is consistency and correct technique, not innate talent.
+**What if I'm naturally bad at PAT / visual puzzles?**
+Natural aptitude varies — but PAT scores improve significantly with targeted practice. Students who describe themselves as "terrible at spatial stuff" and then commit to 8 weeks of daily PAT practice routinely achieve scores they thought were impossible. The key is consistency and correct technique, not innate talent. Use our [DAT spatial reasoning practice guide](/blog/dat-perceptual-ability-practice-guide) for drills by question type.
 
 **Should I skip PAT questions I find difficult and come back to them?**
 Yes — with a caveat. Flag difficult questions and make your best guess before moving on. The DAT does not penalize wrong answers, so leaving any question blank is worse than guessing. If time allows, return to flagged questions. If not, your best guess is already recorded.
@@ -3666,7 +3666,7 @@ Start with the type you find hardest. Build the strategy, practice it untimed, t
 
 If you want a personalized DAT study plan that integrates PAT practice into your full prep schedule — or if you're stuck on a specific question type and need expert guidance — a [DAT tutor](/blog/best-dat-tutor-guide) can diagnose your specific errors and accelerate your improvement far faster than self-study alone.
 
-For drilled practice by question type (keyhole, angle ranking, cube counting, hole punching), use our dedicated [DAT Perceptual Ability practice guide](/blog/dat-perceptual-ability-practice-guide).
+For drilled practice by question type (keyhole, angle ranking, cube counting, hole punching), use our dedicated [DAT spatial reasoning practice guide](/blog/dat-perceptual-ability-practice-guide).
 
 For a complete overview of the entire DAT and how to approach every section, read our [full DAT study guide](/blog/how-to-study-for-the-dat). And if you're ready to talk through your full application strategy, [schedule a free call with our team](/schedule).
 `,
@@ -4159,9 +4159,9 @@ If you'd like a personalized school list review based on your specific GPA, DAT 
   },
   {
     slug: "how-to-pay-for-dental-school",
-    title: "How to Pay for Dental School in 2026: Loans, Scholarships & Grants",
+    title: "How to Pay for Dental School (2026)",
     description:
-      "How to pay for dental school without drowning in debt: federal loans, scholarships, grants, HPSP, and loan forgiveness — plus a practical plan to fund $200K–$400K in tuition.",
+      "How to pay for dental school: federal loans, scholarships, grants, HPSP, and loan forgiveness — a practical plan for $200K–$400K in tuition.",
     publishedAt: "2026-07-02",
     readingTime: "13 min read",
     category: "Application Tips",
@@ -4461,9 +4461,9 @@ If you want to talk through how to position your application for schools where s
   },
   {
     slug: "dental-school-application-timeline",
-    title: "Dental School Application Timeline: Month-by-Month Guide for 2025–2026 Applicants",
+    title: "Dental School Application Timeline 2026",
     description:
-      "Missing a deadline or submitting late can cost you an entire application cycle. This month-by-month dental school application timeline covers every step from DAT prep to acceptance — so you know exactly what to do, and when, to give yourself the best shot at getting in.",
+      "Month-by-month dental school application timeline — DAT, AADSAS open, secondaries, interviews, and acceptances — so you submit early and stay competitive.",
     publishedAt: "2026-07-01",
     readingTime: "14 min read",
     category: "Application Tips",
@@ -5328,9 +5328,9 @@ If you want a personalized review of your planned recommender list and how to fr
   },
   {
     slug: "dental-school-gpa-requirements",
-    title: "Average Dental School GPA 2026: Requirements & What You Need",
+    title: "Average Dental School GPA 2026",
     description:
-      "Average dental school GPA is about 3.55 overall (science ~3.46). See competitive ranges by school tier, what a 3.0–3.3 means, and how a strong DAT can offset a lower GPA.",
+      "Average dental school GPA is ~3.55 overall (science ~3.46). See competitive ranges, what a 3.0 means, and how a strong DAT can offset a lower GPA.",
     publishedAt: "2026-06-30",
     readingTime: "13 min read",
     category: "Application Tips",
@@ -5538,7 +5538,7 @@ Yes. All undergraduate grades appear on your AADSAS transcript. However, if your
 **Is a 3.5 GPA good enough for dental school?**
 A 3.5 overall GPA is competitive at the majority of accredited U.S. dental schools. Paired with a 20+ DAT, strong clinical experience, and a well-prepared application, a 3.5 is a genuinely viable profile for many programs — including some competitive ones. It's below the average for top-tier programs but above the median for a large number of accredited schools.
 
-**Can you get into dental school with a 3.0 GPA?**
+**Can I get into dental school with a 3.0 GPA?**
 Yes — many students ask this exact question every cycle. A **3.0 overall GPA** is not an automatic rejection, but it *is* a weaker academic signal that must be offset deliberately.
 
 **What usually works with a 3.0 GPA:**
@@ -5550,7 +5550,7 @@ Yes — many students ask this exact question every cycle. A **3.0 overall GPA**
 
 **What usually fails:** applying only to ultra-competitive schools with a flat 3.0, average DAT (~18–19), and a generic personal statement. For a deeper plan, also read [dental school acceptance rates](/blog/dental-school-acceptance-rates) and [DAT score requirements](/blog/dat-score-guide).
 
-*Last reviewed: July 23, 2026.*
+*Last reviewed: July 30, 2026.*
 
 **Does a post-bacc GPA replace your undergraduate GPA?**
 No. Both GPAs appear separately on your AADSAS application. Post-bacc coursework is added to your transcript and factored into your cumulative GPA, but schools can see both your original undergraduate performance and your post-bacc performance. A strong post-bacc record demonstrates recent academic ability — which is what matters to adcoms evaluating whether you can handle dental school coursework.
@@ -5573,9 +5573,9 @@ If you'd like to talk through your specific GPA, DAT score, and application stra
   },
   {
     slug: "dental-shadowing-hours-for-dental-school",
-    title: "Dental Shadowing Hours for Dental School: Aim for 100–150 (2026)",
+    title: "Dental Shadowing Hours: How Many You Need",
     description:
-      "Competitive applicants typically log 100–150 dental shadowing hours. See school ranges, how to find opportunities, what to document, and how to use your hours in AADSAS.",
+      "Aim for 100–150 dental shadowing hours for dental school. See school ranges, how to find opportunities, what to log, and how hours work in AADSAS.",
     publishedAt: "2026-06-26",
     readingTime: "11 min read",
     category: "Application Tips",
@@ -5815,9 +5815,9 @@ If you'd like personalized guidance on how to position your shadowing experience
   },
   {
     slug: "how-to-study-for-the-dat",
-    title: "How to Study for the DAT: The Complete Study Schedule and Strategy Guide",
+    title: "How to Study for the DAT: Schedule & Strategy",
     description:
-      "Don't know where to start with DAT prep? This complete guide breaks down exactly how to build your DAT study schedule, which resources to use for each section, how long to study, and the strategies that separate 20+ scorers from everyone else.",
+      "Build a DAT study schedule that works — how long to study, which resources per section, and strategies that separate 20+ scorers from everyone else.",
     publishedAt: "2026-06-26",
     readingTime: "14 min read",
     category: "DAT Prep",
@@ -5855,7 +5855,7 @@ The Dental Admission Test has four scored sections:
 
 The Academic Average (AA) is calculated from all four sections. Most competitive dental schools want a **19–20+ AA**, with top programs expecting **21–23**.
 
-**The most important thing to understand:** Biology, General Chemistry, and Organic Chemistry together make up 100 questions — that's the largest single block of the exam. PAT is entirely unique and most students underestimate how much time it takes to build those spatial reasoning skills. These two areas deserve the most attention in your schedule.
+**The most important thing to understand:** Biology, General Chemistry, and Organic Chemistry together make up 100 questions — that's the largest single block of the exam. PAT is entirely unique and most students underestimate how much time it takes to build those visual skills. These two areas deserve the most attention in your schedule.
 
 ---
 
@@ -5897,7 +5897,7 @@ This is one of the most common questions I get, and the honest answer is: it dep
 
 **Studying too long:** If you stretch prep to 5–6 months without a structured plan, you'll forget early material before you need it and hit motivational burnout by week 8. Intensity beats duration every time.
 
-**Studying too short:** Cramming 6 weeks of prep for a 10-week gap costs you points. You can't build PAT spatial reasoning in two weeks — it takes consistent daily practice over 8–10 weeks to genuinely improve.
+**Studying too short:** Cramming 6 weeks of prep for a 10-week gap costs you points. You can't build PAT skills in two weeks — it takes consistent daily practice over 8–10 weeks to genuinely improve. For drills by question type, use our [DAT spatial reasoning practice guide](/blog/dat-perceptual-ability-practice-guide).
 
 **Scheduling your test date:** Once you have a study window, schedule your actual test date before you start prep. A fixed deadline creates the urgency that turns good intentions into consistent work.
 
@@ -6013,7 +6013,7 @@ Orgo is 30 questions in the SNS and terrifies most pre-dental students. Here's t
 
 ### PAT — The Section That Rewards Consistency
 
-The Perceptual Ability Test is unlike anything else on the exam. It tests 3D spatial reasoning, pattern recognition, and visual problem-solving. You either build these skills through consistent daily practice — or you don't.
+The Perceptual Ability Test is unlike anything else on the exam. It tests 3D visualization, pattern recognition, and visual problem-solving. You either build these skills through consistent daily practice — or you don't. For targeted drills, see our [DAT spatial reasoning practice guide](/blog/dat-perceptual-ability-practice-guide).
 
 **The 6 PAT question types:**
 1. **Keyhole** — Which hole does a 3D object fit through?
@@ -6853,9 +6853,9 @@ If you want personalized guidance on your specific situation, [schedule a free 1
 
   {
     slug: "dat-score-guide",
-    title: "Average DAT Score 2026: Requirements by Dental School (AA, PAT, TS)",
+    title: "Average DAT Score 2026 by School",
     description:
-      "What is a good DAT score in 2026? See average DAT AA, PAT, and TS by school tier, score percentiles, and expert tips to hit a competitive 20+ Academic Average.",
+      "What is a good DAT score in 2026? See average DAT AA, PAT, and TS by school tier — plus tips to hit a competitive 20+ Academic Average.",
     publishedAt: "2026-04-28",
     readingTime: "9 min read",
     category: "DAT Prep",
@@ -6905,7 +6905,7 @@ When students search “average DAT score 2026,” they usually want three numbe
 | Highly competitive | 22+ | Competitive at selective programs |
 
 **Section context that still matters in 2026:**
-- **PAT** often decides ties — many schools watch PAT closely even when AA is fine. See our [DAT PAT practice guide](/blog/dat-perceptual-ability-practice-guide) and [PAT tips](/blog/dat-pat-tips-and-strategies).
+- **PAT** often decides ties — many schools watch PAT closely even when AA is fine. See our [DAT spatial reasoning practice guide](/blog/dat-perceptual-ability-practice-guide) and [PAT tips](/blog/dat-pat-tips-and-strategies).
 - **TS (Total Science)** should generally stay near your AA; a big science drop raises questions.
 - Percentiles move slightly year to year — treat school entering-class profiles (ADEA / school sites) as the source of truth for the cycle you apply.
 
