@@ -281,117 +281,271 @@ export default async function BlogPostPage({ params }: Props) {
     },
   };
 
-  const gpaFaqLd =
-    slug === "dental-school-gpa-requirements"
-      ? {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: [
-            {
-              "@type": "Question",
-              name: "Can I get into dental school with a 3.0 GPA?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "Yes. A 3.0 overall GPA is not an automatic rejection, but you typically need compensating strengths such as a DAT AA of 21–22+, an upward grade trend, strong shadowing, and a realistic school list that includes mid-tier and access-mission programs.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "Is a 3.5 GPA good enough for dental school?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "A 3.5 overall GPA is competitive at many U.S. dental schools when paired with a 20+ DAT, strong clinical experience, and a well-prepared application.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "What is the minimum GPA to apply to dental school?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "Most schools do not publish a hard minimum. In practice, applicants below about 2.75 rarely advance, and a 3.0 is a more realistic floor for most programs without extraordinary compensating factors.",
-              },
-            },
-          ],
-        }
-      : slug === "aadsas-bcp-gpa-explained"
-        ? {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "What does BCP stand for on AADSAS?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "BCP stands for Biology, Chemistry, and Physics. On ADEA AADSAS, BCP GPA reporting also includes Biochemistry coursework classified in those subject categories.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Does math count toward AADSAS BCP GPA?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Usually no. Math and statistics typically count toward Science GPA (or Other Science), not the narrower BCP GPA used on AADSAS.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Is BCP GPA the same as science GPA on AADSAS?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "No. BCP GPA is limited to Biology, Chemistry, Physics, and Biochemistry. Science GPA is broader and can include math and other science courses.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Do repeated courses replace the old grade in AADSAS BCP GPA?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "No. AADSAS includes all graded attempts. Retaking a course does not erase the original grade from BCP GPA calculations.",
-                },
-              },
-            ],
-          }
-        : slug === "how-long-does-it-take-to-become-a-dentist"
-          ? {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: [
-                {
-                  "@type": "Question",
-                  name: "How long does it take to become a dentist?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "In the United States, it typically takes about 8 years after high school: 4 years of undergraduate study plus 4 years of dental school (DDS or DMD), followed by licensure before you can practice.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "How many years is dental school?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "U.S. dental school is almost always 4 years for a DDS or DMD degree. Specialty residencies add 2–6 more years after graduation if you pursue them.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "Can you become a dentist in less than 8 years?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Sometimes. Accelerated 3+4 programs, heavy AP credit, and skipping gap years can shorten the path, but accredited dental school itself remains about 4 years for most U.S. graduates.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "Do general dentists need a residency?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "No. General dentists can license and practice after dental school without a residency. Residencies are required or expected mainly for specialty careers.",
-                  },
-                },
-              ],
-            }
-          : null;
+  const blogFaqBySlug: Record<
+    string,
+    { "@context": string; "@type": string; mainEntity: Array<{ "@type": string; name: string; acceptedAnswer: { "@type": string; text: string } }> }
+  > = {
+    "dental-school-gpa-requirements": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Can I get into dental school with a 3.0 GPA?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. A 3.0 overall GPA is not an automatic rejection, but you typically need compensating strengths such as a DAT AA of 21–22+, an upward grade trend, strong shadowing, and a realistic school list that includes mid-tier and access-mission programs.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a 3.5 GPA good enough for dental school?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A 3.5 overall GPA is competitive at many U.S. dental schools when paired with a 20+ DAT, strong clinical experience, and a well-prepared application.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the minimum GPA to apply to dental school?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Most schools do not publish a hard minimum. In practice, applicants below about 2.75 rarely advance, and a 3.0 is a more realistic floor for most programs without extraordinary compensating factors.",
+          },
+        },
+      ],
+    },
+    "aadsas-bcp-gpa-explained": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What does BCP stand for on AADSAS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "BCP stands for Biology, Chemistry, and Physics. On ADEA AADSAS, BCP GPA reporting also includes Biochemistry coursework classified in those subject categories.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does math count toward AADSAS BCP GPA?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Usually no. Math and statistics typically count toward Science GPA (or Other Science), not the narrower BCP GPA used on AADSAS.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does AADSAS Science GPA include math and statistics?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Usually yes. AADSAS Science GPA is broader than BCP and typically includes math and statistics, while BCP GPA is limited to Biology, Chemistry, Physics, and Biochemistry.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the AADSAS numeric grade value for A-?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "On ADEA AADSAS, A- converts to 3.67 for quality-point calculations — not 3.7. Always confirm against your verified Academic Audit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is BCP GPA the same as science GPA on AADSAS?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. BCP GPA is limited to Biology, Chemistry, Physics, and Biochemistry. Science GPA is broader and can include math and other science courses.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do repeated courses replace the old grade in AADSAS BCP GPA?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. AADSAS includes all graded attempts. Retaking a course does not erase the original grade from BCP GPA calculations.",
+          },
+        },
+      ],
+    },
+    "how-long-does-it-take-to-become-a-dentist": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How long does it take to become a dentist?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "In the United States, it typically takes about 8 years after high school: 4 years of undergraduate study plus 4 years of dental school (DDS or DMD), followed by licensure before you can practice.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How many years is dental school?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "U.S. dental school is almost always 4 years for a DDS or DMD degree. Specialty residencies add 2–6 more years after graduation if you pursue them.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can you become a dentist in less than 8 years?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sometimes. Accelerated 3+4 programs, heavy AP credit, and skipping gap years can shorten the path, but accredited dental school itself remains about 4 years for most U.S. graduates.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do general dentists need a residency?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. General dentists can license and practice after dental school without a residency. Residencies are required or expected mainly for specialty careers.",
+          },
+        },
+      ],
+    },
+    "dat-scoring-scale-200-600": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Is the DAT still scored 1 to 30?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No for exams on or after March 1, 2025. Official DAT scores are reported on a 200 to 600 scale in 10-point increments. Older attempts may still show 2-digit history in the DTS Hub.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is a 20 DAT score on the new scale?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "An Academic Average of 20 on the old 1–30 scale is approximately equivalent to a 420 Academic Average on the new 200–600 scale, per the ADA DAT concordance table.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is a good DAT score on the 200–600 scale?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Many applicants target about 420–440 Academic Average (roughly old 20–21) for a competitive school list, while selective programs often look closer to 460+ (roughly old 22+). Always check current school class profiles.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Are unofficial DAT scores still available at the testing center?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. Beginning March 1, 2025, unofficial scores are not provided at the testing site under the new scoring model.",
+          },
+        },
+      ],
+    },
+    "dental-school-decision-day": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "When is dental school Decision Day 2026?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For the 2026–27 ADEA AADSAS cycle (Fall 2027 entry), the acceptance notification date is December 15, 2026 — the first day schools may begin notifying accepted applicants.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do all dental schools send acceptances on Decision Day?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. December 15 is the earliest allowed notification date. Many schools continue offering seats through winter and spring via rolling admissions and waitlists.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Decision Day the same as when AADSAS opens?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. For 2026–27, AADSAS opens May 12, 2026 and submissions begin June 2, 2026. Decision Day is mid-December.",
+          },
+        },
+      ],
+    },
+    "can-i-get-into-dental-school-with-a-2-5-gpa": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Can I get into dental school with a 2.5 GPA?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Almost never on a flat 2.5 alone. Accepted averages are near 3.55 overall. A realistic path usually requires an academic rebuild such as a post-bacc or SMP with strong recent science grades, plus a competitive DAT and a careful school list.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a 2.5 GPA too low for dental school?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A 2.5 cumulative GPA is well below typical dental school ranges and is usually too low to apply competitively without first earning a much stronger recent academic record.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can a high DAT make up for a 2.5 GPA?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A strong DAT helps after you show you can earn A grades in rigorous science coursework. A high DAT alone rarely replaces the need for a rebuilt transcript when the cumulative GPA is around 2.5.",
+          },
+        },
+      ],
+    },
+    "dental-school-application-timeline-fall-2027": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "When do I apply for Fall 2027 dental school?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Apply in the 2026–27 ADEA AADSAS cycle. The application opens May 12, 2026, and the first submit day is June 2, 2026.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "When is Decision Day for Fall 2027 entry?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "December 15, 2026 is the 2026–27 dental school acceptance notification date — the first day schools may begin releasing acceptances for Fall 2027 matriculation.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "When should I take the DAT for Fall 2027 entry?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ideally by late spring or early summer 2026 so scores are ready near AADSAS submission, with an earlier first attempt if you want room for a 90-day retake.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "When do I apply for Fall 2028 dental school?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Fall 2028 entry uses the 2027–28 AADSAS cycle, typically opening and submitting around May–June 2027 once ADEA publishes exact dates. Use 2026–27 as a planning template until then.",
+          },
+        },
+      ],
+    },
+  };
+
+  const gpaFaqLd = blogFaqBySlug[slug] ?? null;
 
   return (
     <>

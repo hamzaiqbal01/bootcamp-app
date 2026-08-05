@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "gsc:auth": "node scripts/gsc/auth.mjs",
+    "gsc:sites": "node scripts/gsc/sites.mjs",
+    "gsc:pull": "node scripts/gsc/pull.mjs"
   },
   "dependencies": {
     "next": "16.2.4",
@@ -20,6 +23,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
+    "googleapis": "^174.0.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

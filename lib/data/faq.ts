@@ -6,10 +6,30 @@ export type FaqItem = {
 
 export const faqItems: FaqItem[] = [
   {
+    question: "Can I get into dental school with a 3.0 GPA?",
+    answer:
+      "Yes — a 3.0 overall GPA is not an automatic rejection, but you typically need compensating strengths such as a DAT AA of 21–22+, an upward grade trend, strong shadowing, and a realistic school list. See our full GPA guide for ranges and strategy.",
+    defaultOpen: true,
+  },
+  {
+    question: "What is a good DAT score for dental school?",
+    answer:
+      "Competitive applicants often aim for about a 20+ Academic Average, with stronger scores helping at more selective schools. PAT and Total Science also matter. Check our Average DAT Score guide for school-tier ranges.",
+  },
+  {
+    question: "When do dental school applications open?",
+    answer:
+      "AADSAS typically opens in May, with earliest submissions in early June. Applying early matters because many schools use rolling admissions. See our application timeline for the full month-by-month plan.",
+  },
+  {
+    question: "Does AADSAS Science GPA include math?",
+    answer:
+      "Usually yes — math and statistics typically count toward Science GPA. They do not count toward the narrower BCP GPA (Biology, Chemistry, Physics, Biochemistry). Our BCP GPA guide explains the difference with examples.",
+  },
+  {
     question: "How does the admissions consulting process work?",
     answer:
       "We start with a free consultation to understand your background, goals, and timeline. From there, we match you with an expert who creates a personalized plan. You'll work together on every aspect of your application — from school selection to personal statements to interview prep.",
-    defaultOpen: true,
   },
   {
     question: "When should I start working with a consultant?",

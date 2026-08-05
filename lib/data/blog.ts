@@ -24,6 +24,489 @@ const DR_ALEX = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "dat-scoring-scale-200-600",
+    title: "DAT Scoring Scale 200–600 Explained (Old 1–30 Chart)",
+    description:
+      "DAT scores now use a 200–600 scale (10-point steps) since March 2025. See what a good score is, old 1–30 conversions (20 ≈ 420 AA), and percentiles.",
+    publishedAt: "2026-08-05",
+    readingTime: "10 min read",
+    category: "DAT Prep",
+    coverGradient: "from-teal-600 to-emerald-900",
+    coverEmoji: "📐",
+    author: DR_ALEX,
+    content: `
+## Short Answer: DAT Is Now 200–600
+
+Since **March 1, 2025**, the ADA reports DAT scores on a **3-digit scale from 200 to 600** in **10-point increments** (200, 210, 220… 600). The old **1–30** scale is no longer how new exams are scored.
+
+**Quick conversion most students need (Academic Average):**
+
+| Old AA (1–30) | Approx. new AA (200–600) | Rough meaning |
+|---|---|---|
+| 17 | **370** | Near national average |
+| 18 | **390** | Common school floor language |
+| 19 | **410** | Solid / workable |
+| 20 | **420** | Competitive target for many applicants |
+| 21 | **440** | Strong |
+| 22 | **460** | Highly competitive |
+| 23 | **470** | Top-tier range |
+
+These come from the ADA **DAT Concordance Table** (approximate equivalents — always verify on [ADA DAT materials](https://www.ada.org/education/testing/exams/dental-admission-test-dat)). AADSAS now receives **all** official scores on the 3-digit scale, including older attempts that are psychometrically converted.
+
+For school-by-school targets and strategy, still use our [average DAT score guide](/blog/dat-score-guide) — but read scores in **200–600** terms going forward.
+
+---
+
+## What Changed on March 1, 2025?
+
+| Topic | Before | Now (Mar 1, 2025+) |
+|---|---|---|
+| Score range | 1–30 (2-digit) | **200–600** (3-digit), 10-point steps |
+| Unofficial scores at test center | Often available | **No** — unofficial site scores discontinued |
+| AADSAS reporting | Old scale historically | **All scores reported as 200–600** |
+| Old scores still “valid”? | — | Yes — 2-digit results remain valid; Hub can still show original 2-digit for pre–Mar 2025 attempts |
+
+**Why the change?** The ADA frames it as a psychometric upgrade: more precise skill estimates for admissions. For you as an applicant, the practical effect is: **stop comparing Reddit “I got a 22” posts to your 460 without converting**.
+
+---
+
+## Sections and Composites (Same Structure, New Numbers)
+
+You still get section scores plus composites:
+
+| Report | What it covers |
+|---|---|
+| Biology, Gen Chem, Orgo | Individual science sections |
+| PAT | Perceptual Ability (standalone) |
+| RC | Reading Comprehension |
+| QR | Quantitative Reasoning |
+| **AA (Academic Average)** | Average of BIO, GC, OC, RC, QR |
+| **TS / SNS** | Science composite (Survey of Natural Sciences / Total Science framing) |
+
+Content and timing of the exam did not suddenly become a different test — **the reporting scale did**. Prep still means science mastery + [PAT practice](/blog/dat-perceptual-ability-practice-guide) + timing.
+
+---
+
+## Old 1–30 → New 200–600 Concordance (AA Focus)
+
+Use this when a school, advisor, or older article still says “20+ AA”:
+
+| Old AA | New AA (approx.) |
+|---|---|
+| 15 | 330 |
+| 16 | 350 |
+| 17 | 370 |
+| 18 | 390 |
+| 19 | 410 |
+| 20 | 420 |
+| 21 | 440 |
+| 22 | 460 |
+| 23 | 470 |
+| 24 | 490 |
+| 25 | 510 |
+
+**Example (from ADA FAQ logic):** an old Biology **18** ≈ new Biology **390**. If your retake shows Biology **420**, you improved.
+
+**Section tip:** concordance is **section-specific**. PAT 20 ≈ **430** PAT on the new scale; RC conversions differ from AA. When in doubt, open the official concordance PDF rather than averaging by feel.
+
+---
+
+## What Is a “Good” DAT Score on the 200–600 Scale?
+
+Think in **percentiles and school lists**, not magic numbers.
+
+| New AA (approx.) | Old AA (approx.) | How applicants usually use it |
+|---|---|---|
+| ~370 | ~17 | Near average — need strong GPA/experiences or a retake plan |
+| ~390–410 | ~18–19 | Viable at many programs with strong rest of app |
+| **~420–440** | **~20–21** | Default competitive target for most school lists |
+| ~460+ | ~22+ | Strong for selective programs |
+
+Percentile ranks are published by the ADA for the 3-digit scale (national normative sample). Roughly: AA **420** sits in a strong band; AA **460** is elite territory. Treat school entering-class profiles as the source of truth for *your* cycle.
+
+If you are deciding whether to retake, read [Should I retake the DAT?](/blog/should-i-retake-the-dat) with **new-scale** numbers in mind.
+
+---
+
+## Retakes, AADSAS, and Mixed Old/New Scores
+
+- **90-day wait** and attempt limits still apply — plan retakes into your [application timeline](/blog/dental-school-application-timeline-fall-2027).
+- You may self-report both formats in places that still show history; **official AADSAS delivery is on the 3-digit scale**.
+- Comparing attempt 1 (old) to attempt 2 (new): convert attempt 1 with the concordance table first, then compare.
+
+---
+
+## FAQ
+
+**Is the DAT still scored 1–30?**  
+No for exams on/after March 1, 2025. New reporting is **200–600**. Older Hub records may still show 2-digit history.
+
+**What is a 20 DAT in the new scale?**  
+Academic Average **20 ≈ 420** on the ADA concordance table.
+
+**Do dental schools understand both scales?**  
+Yes. AADSAS receives 3-digit scores for everyone; schools use concordance when comparing historical class data.
+
+**Are unofficial scores still given at the testing center?**  
+No — not under the new scoring model (as of March 1, 2025).
+
+**Where do I verify conversions?**  
+ADA DAT concordance / scoring update pages (search ADA.org DAT Concordance Table). Numbers above are approximations for planning, not a substitute for the official table.
+
+---
+
+## Next Step
+
+Translate your practice scores into **200–600**, set a realistic AA target for your school list, then build a section plan (often PAT or Orgo).
+
+Want a score target and retake calendar for Fall 2027 entry? [Schedule a free call](/schedule).
+`,
+  },
+  {
+    slug: "dental-school-decision-day",
+    title: "Dental School Decision Day 2026: Dec 15 Acceptances",
+    description:
+      "Dental school Decision Day for the 2026–27 cycle is December 15, 2026 — the first date schools may notify acceptances. What to expect, rolling admits, and what to do while you wait.",
+    publishedAt: "2026-08-05",
+    readingTime: "8 min read",
+    category: "Admissions Guide",
+    coverGradient: "from-indigo-600 to-slate-900",
+    coverEmoji: "📅",
+    author: DR_ALEX,
+    content: `
+## Short Answer: Decision Day Is December 15, 2026
+
+For the **2026–27 ADEA AADSAS cycle** (students applying in summer 2026 for **Fall 2027** entry), the national **acceptance notification date** is **December 15, 2026**.
+
+That is the earliest date participating schools may begin releasing **acceptances**. It is **not** the day every applicant hears back — and it is not a rejection deadline.
+
+| Cycle | Matriculation | Decision Day (first acceptance notifications) |
+|---|---|---|
+| 2026–27 | Fall 2027 | **December 15, 2026** |
+| Typical pattern | Next fall | Mid-December (confirm each year on ADEA AADSAS) |
+
+Always double-check [ADEA AADSAS important dates](https://www.adea.org/godental/Apply/apply-to-adea-aadsas) — cycles can shift by a day or two year to year.
+
+Full summer→matriculation calendar: [Fall 2027 application timeline](/blog/dental-school-application-timeline-fall-2027).
+
+---
+
+## What “Decision Day” Actually Means
+
+**Decision Day** (also called the dental school acceptance notification date) is a coordinated ADEA rule: schools wait until that date to start offering seats for the cycle.
+
+What it is **not**:
+- A single email blast to every applicant
+- The only day acceptances happen
+- A guarantee you will hear “yes” or “no” that week
+
+Many programs use **rolling admissions**. Strong early applicants may get interviews in late summer/fall and then an offer on or shortly after Dec 15. Others interview into winter/spring and admit later from waitlists.
+
+---
+
+## What Happens Before December 15?
+
+Typical flow for a Fall 2027 applicant:
+
+1. **June 2026+** — submit AADSAS early; verification (often ~4–6 weeks)
+2. **Summer–fall** — secondaries, Casper if required, interviews
+3. **Dec 15, 2026** — first wave of formal acceptances may go out
+4. **Winter–spring 2027** — more offers, waitlist movement, deposit decisions
+5. **By ~April 1** — commonly, applicants should hold **one** seat (multiple-deposit rules matter — follow AADSAS/school policies)
+
+If you have not interviewed by Decision Day, you are not automatically out — later interview invites still happen.
+
+---
+
+## Acceptance, Waitlist, or Silence?
+
+| Outcome near Decision Day | What it usually means |
+|---|---|
+| Acceptance | Seat offered — read deposit deadlines carefully |
+| Waitlist | Still in play; schools move lists into spring |
+| No update | Common — many files are still in review |
+| Rejection | Possible after review; not everyone hears on Dec 15 |
+
+**Do not spiral on Dec 14.** Refresh status portals, but keep studying/working your plan. Anxiety does not change the committee calendar.
+
+---
+
+## Holding Multiple Acceptances
+
+If you receive more than one offer:
+- Compare cost, location, curriculum, and fit — not just brand name
+- Know deposit refund policies and AADSAS multiple-acceptance reporting rules
+- By the spring deadline (often around **April 1**), plan to commit to **one** program
+
+When in doubt, ask each school’s admissions office for written policy — do not rely only on forum lore.
+
+---
+
+## FAQ
+
+**When is dental school Decision Day 2026?**  
+**December 15, 2026** for the 2026–27 cycle (Fall 2027 entry).
+
+**Do all schools accept on December 15?**  
+No. That is the **first allowed** notification date. Offers continue for months.
+
+**Is Decision Day the same as AADSAS opening?**  
+No. AADSAS for 2026–27 opens **May 12, 2026** (submit from **June 2, 2026**). Decision Day is mid-December.
+
+**What if I applied late?**  
+Later verification and interviews often mean later decisions. Applying early still helps — see [when AADSAS opens](/blog/when-does-aadsas-open).
+
+---
+
+## Next Step
+
+If Decision Day is months away, control what you can: interview prep, academic updates, and a sane school list.
+
+Need a plan for offers vs waitlists? [Schedule a free call](/schedule).
+`,
+  },
+  {
+    slug: "can-i-get-into-dental-school-with-a-2-5-gpa",
+    title: "Can I Get Into Dental School With a 2.5 GPA?",
+    description:
+      "A 2.5 GPA is below typical dental school ranges — but not always game over. See realistic odds, when a post-bacc helps, DAT targets on the 200–600 scale, and alternatives.",
+    publishedAt: "2026-08-05",
+    readingTime: "9 min read",
+    category: "Application Tips",
+    coverGradient: "from-rose-600 to-slate-900",
+    coverEmoji: "🎯",
+    author: DR_ALEX,
+    content: `
+## Short Answer: Possible, but Rare Without a Rebuild
+
+**Can you get into dental school with a 2.5 GPA?** Directly, with a flat 2.5 and average everything else — **usually no**. National accepted averages sit near **~3.55 overall / ~3.46 science**. A **2.5** sits far below most programs’ practical floors.
+
+That does **not** mean “never become a dentist.” It means you almost always need a **academic rebuild** first (post-bacc / SMP / strong upward trend with many new graded credits), then a competitive DAT and a realistic school list — not a hopeful shotgun to top-20 schools.
+
+If you are closer to **3.0**, start with our [3.0 GPA guide](/blog/dental-school-gpa-requirements) instead — the strategy is different.
+
+---
+
+## Why 2.5 Is a Different Problem Than 3.0
+
+| GPA | Typical admissions read |
+|---|---|
+| **3.5+** | Competitive academically at many schools |
+| **3.2–3.4** | Viable with strong DAT + experiences |
+| **~3.0** | Possible with clear compensating strengths |
+| **2.7–2.9** | High risk; often needs recent A’s in hard sciences |
+| **~2.5** | Usually need a **new academic record** before a serious cycle |
+
+Committees are not only looking at “love of dentistry.” They are predicting whether you survive biomedical coursework. A 2.5 overall (especially a low BCP) is a risk signal unless newer grades prove otherwise.
+
+How AADSAS calculates BCP vs Science GPA: [AADSAS BCP GPA explained](/blog/aadsas-bcp-gpa-explained).
+
+---
+
+## When a 2.5 Applicant Still Has a Path
+
+Paths that sometimes work:
+
+1. **Post-baccalaureate / career-changer program** — 1–2 years of full-time upper-level science with mostly A’s, then apply with a much higher recent GPA
+2. **Special Master’s (SMP)** — rigorous grad science; only useful if you actually earn strong grades
+3. **Late upward trend already underway** — e.g., early disasters + last 60 credits at 3.7+ in BCP courses (still hard at 2.5 cumulative; transparency matters)
+4. **Extraordinary context + proof of change** — illness, family crisis, etc., *plus* documented recovery grades (explanation alone is not enough)
+
+What usually fails: applying “just to see” with a 2.5, DAT ~370 AA (~17 old), and thin shadowing.
+
+---
+
+## DAT Targets If You Are Rebuilding (200–600 Scale)
+
+After March 2025, think in **200–600** scores ([full scale guide](/blog/dat-scoring-scale-200-600)):
+
+| Situation | Rough DAT AA target (new scale) | Old AA approx. |
+|---|---|---|
+| Soft GPA (~3.0) with strong story | **440–460** | ~21–22 |
+| Rebuilding from ~2.5 via post-bacc | **420–460+** after new grades | ~20–22+ |
+| Flat 2.5, no new record | Retake plan first — DAT alone rarely “fixes” 2.5 |
+
+A high DAT helps **after** you show you can earn A’s in tough science. It rarely replaces that proof.
+
+---
+
+## School List and Application Honesty
+
+- Prefer programs with access missions and broader GPA ranges — not only brand-name schools
+- Use AADSAS **Academic Update** and additional information to show the *new* transcript clearly
+- Do not hide repeats — AADSAS includes attempts; plan for that in [GPA strategy](/blog/dental-school-gpa-requirements)
+
+---
+
+## Alternatives If Dental School Is Not Realistic Yet
+
+- Finish a serious post-bacc before spending another full AADSAS cycle
+- Consider related careers (hygiene, lab, public health) as interim steps — not as “giving up,” as income + exposure while you rebuild
+- Delay application a year if your new coursework is only half done
+
+Applying early with a broken academic story can burn letters, money, and morale.
+
+---
+
+## FAQ
+
+**Can I get into dental school with a 2.5 GPA?**  
+Almost never on the 2.5 alone. A rebuild (post-bacc/SMP + strong recent science + competitive DAT) is the realistic path.
+
+**Is 2.5 better if my science GPA is higher?**  
+A higher BCP helps, but a 2.5 overall still needs a careful plan and usually more A’s on the record.
+
+**Should I apply this cycle anyway?**  
+Only if recent coursework already shows a clear A-level trend and your DAT is competitive. Otherwise, invest the year in grades first.
+
+**What about a 2.7 or 2.8?**  
+Still difficult — closer to salvageable with recent strength than a flat 2.5, but not “safe.”
+
+---
+
+## Next Step
+
+Be honest about whether this cycle is an application year or a **rebuild year**. That decision saves applicants years.
+
+Want a transcript review and post-bacc vs apply-now call? [Schedule a free consultation](/schedule).
+`,
+  },
+  {
+    slug: "dental-school-application-timeline-fall-2027",
+    title: "Dental School Timeline 2027: AADSAS Dates & DAT Plan",
+    description:
+      "Fall 2027 dental school entry: AADSAS opens May 12, 2026; submit June 2; Decision Day Dec 15, 2026. Month-by-month DAT, Casper, and interview plan — plus how to prep for 2028.",
+    publishedAt: "2026-08-05",
+    readingTime: "11 min read",
+    category: "Admissions Guide",
+    coverGradient: "from-amber-600 to-orange-900",
+    coverEmoji: "🗓️",
+    author: DR_ALEX,
+    content: `
+## Short Answer: Fall 2027 = 2026–27 AADSAS Cycle
+
+If you want to **start dental school in Fall 2027**, you apply in the **2026–27 ADEA AADSAS cycle** (summer 2026), not in 2027.
+
+**Official 2026–27 dates (ADEA):**
+
+| Date | Milestone |
+|---|---|
+| **April 15, 2026** | Fee Assistance Program (FAP) opens |
+| **May 12, 2026** | AADSAS application opens (fill, don’t submit yet) |
+| **June 2, 2026** | First day you can **submit** |
+| Aug 13 – Sep 29, 2026 | Academic Update window #1 |
+| Dec 1, 2026 – Feb 5, 2027 | Academic Update window #2 |
+| **December 15, 2026** | [Decision Day](/blog/dental-school-decision-day) — first acceptances |
+| **February 5, 2027** | AADSAS cycle closes |
+| February 11, 2027 | Last day for official documents (per ADEA) |
+
+Confirm on [ADEA AADSAS](https://www.adea.org/godental/Apply/apply-to-adea-aadsas) — always the source of truth.
+
+General (non-year-specific) process: [dental school application timeline](/blog/dental-school-application-timeline). Opening mechanics: [when does AADSAS open?](/blog/when-does-aadsas-open).
+
+---
+
+## Month-by-Month Plan (Fall 2027 Entry)
+
+### Late 2025 – Early 2026 (now → spring)
+
+- Lock prerequisites and request **letters of evaluation** early
+- Start DAT content if you have not — plan **4–6 months** of serious prep
+- Shadowing hours and experiences should already be underway ([shadowing guide](/blog/dental-shadowing-hours-for-dental-school))
+- Draft personal statement outlines before May rush
+
+### January – May 2026
+
+- **Register for the DAT** (eligibility windows; schedule Prometric early)
+- Target DAT by **spring / early summer 2026** so scores arrive before or soon after submit
+- Remember: scores are on the **200–600 scale** ([DAT 200–600 explained](/blog/dat-scoring-scale-200-600)); old “20 AA” ≈ **420 AA**
+- **April 15** — apply for FAP if eligible
+- **May 12** — open AADSAS; enter coursework carefully
+- Texas applicants: track **TMDSAS** dates separately (often early May)
+
+### June – August 2026
+
+- **June 2** — submit as early as your transcript/DAT plan allows
+- Expect verification often **~4–6 weeks** after complete materials
+- Complete secondaries quickly; take **Casper** if your schools require it (often May–June)
+- Interview invites can start mid/late summer for early, strong files
+
+### September – December 2026
+
+- Interview season
+- Academic Update #1 (Aug 13–Sep 29) for summer grades
+- **December 15, 2026** — Decision Day ([full explainer](/blog/dental-school-decision-day))
+
+### January – Summer 2027
+
+- Waitlists, additional offers, deposit decisions (plan for ~April single-seat norms)
+- Academic Update #2 into early February
+- Matriculate **Fall 2027**
+
+---
+
+## DAT Timing for 2027 Matriculation
+
+| Goal | Suggested DAT window |
+|---|---|
+| Apply on-time June 2026 | Take by **May–June 2026** (earlier if possible) |
+| Buffer for one retake | First attempt by **March–April 2026** (90-day wait) |
+| Still finishing Orgo | Don’t force a bad date — but know late scores delay secondaries |
+
+Retake policy details: [Should I retake the DAT?](/blog/should-i-retake-the-dat).
+
+---
+
+## Looking Ahead: Fall 2028 / 2027–28 Cycle
+
+If you are a **sophomore or junior** aiming at **Fall 2028** entry, you will apply in the **2027–28** cycle (roughly May–June **2027** submit — exact dates publish closer to the year).
+
+What to do in **2026–27** while Fall 2027 applicants are in-cycle:
+- Finish prereqs + upward GPA trend
+- Build shadowing and leadership depth
+- Take DAT when content is fresh — many aim **spring 2027**
+- Watch ADEA for 2027–28 FAP / open / submit / Decision Day announcements
+
+Do **not** invent dates for 2027–28 until ADEA posts them. Use 2026–27 as the template pattern.
+
+---
+
+## Checklist Before You Submit (June 2026)
+
+- [ ] All colleges listed; coursework matches transcripts
+- [ ] DAT taken or date planned and disclosed
+- [ ] LORs requested with deadlines
+- [ ] Personal statement proofread
+- [ ] School list matches GPA/DAT reality ([GPA requirements](/blog/dental-school-gpa-requirements))
+- [ ] FAP applied if eligible
+- [ ] Shadowing hours documented
+
+---
+
+## FAQ
+
+**When do I apply for Fall 2027 dental school?**  
+Summer **2026** (AADSAS opens May 12; submit from June 2, 2026).
+
+**When is Decision Day for Fall 2027 entry?**  
+**December 15, 2026.**
+
+**When should I take the DAT for 2027 entry?**  
+Ideally by late spring / early summer **2026**, with room for a retake.
+
+**What about Fall 2028?**  
+That is the **2027–28** cycle — prepare academically in 2026–27; submit around May/June **2027** once dates are posted.
+
+---
+
+## Next Step
+
+Pick your entry year (2027 vs 2028), reverse-plan DAT and submit week, then execute weekly.
+
+Want a personalized 2027 calendar (DAT date + school list)? [Schedule a free call](/schedule).
+`,
+  },
+  {
     slug: "how-long-does-it-take-to-become-a-dentist",
     title: "How Long to Become a Dentist? (8-Year Timeline)",
     description:
@@ -80,7 +563,7 @@ U.S. dental school is almost always **four years**:
 
 After graduation you still need **licensure** (national/regional clinical exams + state rules) before independent practice. Licensure timing is usually weeks to a few months after graduation if you plan ahead — not another full academic year, but it is a real step on the clock.
 
-For the admissions-cycle calendar (when AADSAS opens, secondaries, interviews), see the [dental school application timeline](/blog/dental-school-application-timeline) — that is a different “timeline” (one application year), not total years to become a dentist.
+For the admissions-cycle calendar (when AADSAS opens, secondaries, interviews), see the [dental school application timeline](/blog/dental-school-application-timeline) or the year-specific [Fall 2027 timeline](/blog/dental-school-application-timeline-fall-2027) — that is a different “timeline” (one application year), not total years to become a dentist.
 
 ---
 
@@ -155,24 +638,29 @@ Want a timeline built around *your* GPA, DAT date, and school list? [Schedule a 
   },
   {
     slug: "aadsas-bcp-gpa-explained",
-    title: "AADSAS BCP GPA Explained: How It's Calculated",
+    title: "Does AADSAS Science GPA Include Math? (BCP Guide)",
     description:
-      "Confused about your AADSAS BCP GPA? Here's exactly how Biology, Chemistry, Physics, and Biochemistry courses factor in — with real calculation examples, BCP vs Science GPA, and common mistakes.",
+      "AADSAS Science GPA usually includes math and statistics — BCP GPA does not. See A- = 3.67, BCP vs Science GPA, and a worked calculation example.",
     publishedAt: "2026-07-28",
-    readingTime: "10 min read",
+    readingTime: "11 min read",
     category: "Application Tips",
     coverGradient: "from-emerald-600 to-teal-800",
     coverEmoji: "🧮",
     coverImage: "/images/blog-dental-school-gpa-cover.png",
     author: DR_ALEX,
     content: `
-## Quick Answer: What Is AADSAS BCP GPA?
+## Quick Answers Students Search For
 
-**BCP GPA** on ADEA AADSAS is your grade-point average from courses classified as **Biology, Chemistry, Physics, and Biochemistry** — not your overall GPA, and **not** math.
+**Does AADSAS Science GPA include math / statistics?**  
+**Yes.** Math and statistics usually count toward **Science GPA** (or Other Science). They do **not** count toward the narrower **BCP GPA**.
 
-If you searched “AADSAS BCP GPA definition biology chemistry physics,” this is the page that answers it directly: which courses count, how quality points work, and how BCP differs from Science GPA.
+**What is AADSAS BCP GPA?**  
+Your average from courses classified as **Biology, Chemistry, Physics, and Biochemistry** — not overall GPA, and not math.
 
-For the threshold question — *what GPA do I need to get in?* — use our [dental school GPA requirements](/blog/dental-school-gpa-requirements) guide. This post is the **calculation / definition** companion.
+**What is the AADSAS numeric grade for A-?**  
+**A- = 3.67** on ADEA AADSAS (not 3.7). Schools may round displays, but the conversion AADSAS uses for quality points is **3.67**.
+
+For the threshold question — *what GPA do I need?* / *can I get in with a 3.0?* — use [dental school GPA requirements](/blog/dental-school-gpa-requirements). This page is the **calculation / definition** companion.
 
 ---
 
@@ -215,6 +703,44 @@ If a course title is ambiguous, follow AADSAS instructions: categorize by the co
 
 ---
 
+## Does AADSAS Science GPA Include Math and Statistics?
+
+This is the most common AADSAS GPA confusion:
+
+| Course type | BCP GPA? | Science GPA? |
+|---|---|---|
+| Biology / Chemistry / Physics / Biochemistry | **Yes** | **Yes** |
+| Math / Statistics / Calculus | **No** | **Usually yes** |
+| Other Science (as classified by AADSAS) | **No** | **Yes** |
+| English / social sciences / humanities | **No** | **No** (Non-Science) |
+
+So if someone says “AADSAS science GPA includes math statistics,” they are talking about the **broader Science GPA**, not BCP. Your Academic Audit shows both — read the correct column.
+
+---
+
+## AADSAS Numeric Grade Values (A- = 3.67)
+
+ADEA AADSAS converts letter grades to fixed numeric values before calculating quality points. Common conversions:
+
+| Letter grade | AADSAS value |
+|---|---|
+| A | 4.00 |
+| A- | **3.67** |
+| B+ | 3.33 |
+| B | 3.00 |
+| B- | 2.67 |
+| C+ | 2.33 |
+| C | 2.00 |
+| C- | 1.67 |
+| D+ | 1.33 |
+| D | 1.00 |
+| D- | 0.67 |
+| F | 0.00 |
+
+**A- is 3.67, not 3.7.** Some campus portals round displays to one decimal; AADSAS quality-point math uses the published conversion (3.67 for A-). Always trust the verified Academic Audit over a hand spreadsheet that used 3.7.
+
+---
+
 ## How AADSAS Calculates Your BCP GPA (Step-by-Step)
 
 AADSAS uses the same core formula for every GPA bucket:
@@ -237,14 +763,14 @@ AADSAS uses the same core formula for every GPA bucket:
 
 | Course | Grade | AADSAS value | Credits | Quality points |
 |---|---|---|---|---|
-| Biology 101 | A | 4.0 | 4 | 16.0 |
-| Chem 101 | B+ | 3.3 | 4 | 13.2 |
-| Chem 102 | A- | 3.7 | 4 | 14.8 |
-| Physics 1 | B | 3.0 | 4 | 12.0 |
-| Biochemistry | A | 4.0 | 3 | 12.0 |
-| **BCP totals** |  |  | **19** | **68.0** |
+| Biology 101 | A | 4.00 | 4 | 16.00 |
+| Chem 101 | B+ | 3.33 | 4 | 13.32 |
+| Chem 102 | A- | **3.67** | 4 | 14.68 |
+| Physics 1 | B | 3.00 | 4 | 12.00 |
+| Biochemistry | A | 4.00 | 3 | 12.00 |
+| **BCP totals** |  |  | **19** | **68.00** |
 
-**BCP GPA = 68.0 ÷ 19 ≈ 3.58**
+**BCP GPA = 68.00 ÷ 19 ≈ 3.58**
 
 Now add Calculus I (A, 4 credits). That course may raise your **Science GPA**, but it should **not** move your **BCP GPA** if it is classified as Math — which is exactly why students get confused by “biology chemistry physics only” search language.
 
@@ -292,8 +818,14 @@ A below-average BCP is not an automatic rejection — but it raises the bar on [
 **What does BCP stand for on AADSAS?**  
 Biology, Chemistry, and Physics — with Biochemistry included in AADSAS BCP reporting.
 
+**Does AADSAS Science GPA include math and statistics?**  
+**Usually yes.** Math/statistics typically count toward **Science GPA**, not the narrower **BCP GPA**.
+
 **Does math count toward AADSAS BCP GPA?**  
 Usually **no**. Math typically falls under Science / Other Science, not BCP.
+
+**What is the AADSAS numeric grade value for A-?**  
+**3.67.** Do not use 3.7 in hand calculations if you want to match AADSAS quality points.
 
 **Is BCP GPA the same as science GPA?**  
 **No.** Science GPA is broader. BCP is the narrower core-science bucket adcoms watch closely.
@@ -311,7 +843,7 @@ On your AADSAS Academic Audit after verification — not only on your college tr
 - ADEA AADSAS applicant help: GPA calculation / quality points methodology  
 - ADEA AADSAS GPA guides describing BCP (Biology, Chemistry, Physics, Biochemistry) vs Science GPA  
 
-*Last reviewed: July 2026. Always confirm current subject lists inside the official AADSAS instructions for your cycle.*
+*Last reviewed: August 2026. Always confirm current subject lists and grade conversions inside the official AADSAS instructions for your cycle.*
 
 ---
 
@@ -452,7 +984,7 @@ For most cycles, **AADSAS (ADEA AADSAS)** opens in **late May or early June** fo
 
 What does *not* change: **early submission is a competitive advantage** at many schools that use rolling admissions.
 
-If you want the full month-by-month map, use our [dental school application timeline](/blog/dental-school-application-timeline).
+If you want the full month-by-month map, use our [dental school application timeline](/blog/dental-school-application-timeline). For **Fall 2027 entry** (2026–27 cycle) exact dates — May 12 open, June 2 submit, Dec 15 Decision Day — see [Dental school timeline 2027](/blog/dental-school-application-timeline-fall-2027).
 
 ---
 
@@ -899,9 +1431,9 @@ If you want expert guidance mapping out your personal path — from DAT prep to 
   },
   {
     slug: "dental-school-vs-medical-school",
-    title: "Dental School vs Medical School: How to Decide Which Path Is Right for You (2025–2026)",
+    title: "Dental School vs Medical School: Key Differences",
     description:
-      "Dental school vs medical school — a complete, honest comparison of training length, cost, lifestyle, income, competitiveness, and day-to-day work. Use this guide to figure out which healthcare path actually fits your goals and personality.",
+      "Do dentists go to medical school? No — DDS/DMD is a separate path. Compare training length, cost, lifestyle, income, and day-to-day work before you choose.",
     publishedAt: "2026-07-22",
     readingTime: "15 min read",
     category: "Admissions Guide",
@@ -910,6 +1442,14 @@ If you want expert guidance mapping out your personal path — from DAT prep to 
     coverImage: "/images/blog-dental-vs-medical-school-cover.png",
     author: DR_ALEX,
     content: `
+## Do Dentists Go to Medical School?
+
+**No.** Dentists do **not** attend medical school to become dentists. They earn a **DDS or DMD** from a dental school — a separate professional degree from the MD/DO path. Some dental specialties (especially oral & maxillofacial surgery) may involve hospital-based training that overlaps with medical environments, but the standard path to general dentistry is dental school, not medical school.
+
+If you're choosing between the two careers, use the comparison below.
+
+---
+
 ## Dental School vs Medical School: The Real Decision
 
 "Should I go to dental school or medical school?" is one of the most common questions pre-health students wrestle with. Both are prestigious, competitive healthcare paths. Both require serious academic ability, years of training, and significant financial investment. But the day-to-day realities — and the reasons to choose one over the other — are very different.
@@ -4461,9 +5001,9 @@ If you want to talk through how to position your application for schools where s
   },
   {
     slug: "dental-school-application-timeline",
-    title: "Dental School Application Timeline 2026",
+    title: "When Do Dental School Applications Open? 2026",
     description:
-      "Month-by-month dental school application timeline — DAT, AADSAS open, secondaries, interviews, and acceptances — so you submit early and stay competitive.",
+      "Dental school applications (AADSAS) typically open in May with earliest submission in early June. See the full 2026 month-by-month timeline — DAT, secondaries, interviews, and Decision Day.",
     publishedAt: "2026-07-01",
     readingTime: "14 min read",
     category: "Application Tips",
@@ -4472,6 +5012,20 @@ If you want to talk through how to position your application for schools where s
     coverImage: "/images/blog-dental-application-timeline-cover.png",
     author: DR_ALEX,
     content: `
+## When Do Dental School Applications Open?
+
+**Quick answer:** ADEA AADSAS usually opens for data entry in **early/mid May**, and the earliest submit window is typically **early June**. Exact dates shift slightly each cycle — confirm on the official AADSAS site — but the strategy does not: **submit early**.
+
+**Related timing questions:**
+- **When does dental school start?** Most U.S. programs matriculate in **August**.
+- **When do interviews start?** Often **August–March** (rolling).
+- **When do acceptances come out?** Many schools begin offers around **mid-December** (“Decision Day”), continuing into spring.
+- **April 30** is the common national deposit deadline.
+
+For the day-one checklist, see **[When Does AADSAS Open?](/blog/when-does-aadsas-open)**. The rest of this guide is the full month-by-month plan.
+
+---
+
 ## The Biggest Mistake Pre-Dental Students Make Is Starting Too Late
 
 Every year, qualified pre-dental students submit strong applications — and then don't hear back from a single school. Not because their GPA or DAT was too low. Not because their personal statement was weak. But because they submitted two or three months after the application opened, when most schools had already filled the majority of their interview slots.
@@ -4774,9 +5328,9 @@ We'll review your current timeline, identify the gaps, and make sure you're not 
   },
   {
     slug: "dental-school-prerequisites",
-    title: "Dental School Prerequisites: The Complete List of Required Courses for 2025–2026",
+    title: "Dental School Prerequisites: Required Courses",
     description:
-      "Not sure which courses you need before applying to dental school? This complete guide covers every dental school prerequisite — biology, chemistry, physics, math, and beyond — plus which courses are most important for your GPA, how to handle AP credit, and how to plan your schedule to stay on track.",
+      "Complete dental school prerequisite list — biology, chemistry, physics, math, and more — plus AP credit rules, GPA impact, and how to plan your schedule.",
     publishedAt: "2026-07-01",
     readingTime: "13 min read",
     category: "Application Tips",
@@ -5328,9 +5882,9 @@ If you want a personalized review of your planned recommender list and how to fr
   },
   {
     slug: "dental-school-gpa-requirements",
-    title: "Average Dental School GPA 2026",
+    title: "Can I Get Into Dental School With a 3.0 GPA?",
     description:
-      "Average dental school GPA is ~3.55 overall (science ~3.46). See competitive ranges, what a 3.0 means, and how a strong DAT can offset a lower GPA.",
+      "Yes — a 3.0 GPA is not an automatic rejection. See what usually works (DAT 21–22+, upward trend, school list), average dental school GPA (~3.55), and competitive ranges.",
     publishedAt: "2026-06-30",
     readingTime: "13 min read",
     category: "Application Tips",
@@ -5339,6 +5893,27 @@ If you want a personalized review of your planned recommender list and how to fr
     coverImage: "/images/blog-dental-school-gpa-cover.png",
     author: DR_ALEX,
     content: `
+## Can I Get Into Dental School With a 3.0 GPA?
+
+**Short answer: yes — but not with a “average everything else” application.**
+
+A **3.0 overall GPA** is not an automatic rejection at accredited U.S. dental schools. It *is* a weaker academic signal than the national accepted average (~**3.55** overall / ~**3.46** science). Committees will look for compensating strengths.
+
+**What usually works with a 3.0 GPA:**
+- DAT Academic Average of **21–22+** (proves academic readiness)
+- Strong upward grade trend (weak early years + strong junior/senior science grades)
+- 100–150+ quality shadowing hours and a specific clinical narrative
+- A school list with genuine mid- and access-mission programs — not only top-20 schools
+- Clear explanation (brief) in AADSAS additional information if there was a real academic setback you fixed
+
+**What usually fails:** applying only to ultra-competitive schools with a flat 3.0, average DAT (~18–19 / ~390–410 AA on the [200–600 scale](/blog/dat-scoring-scale-200-600)), and a generic personal statement.
+
+Below 3.0? Read the separate guide: [Can I get into dental school with a 2.5 GPA?](/blog/can-i-get-into-dental-school-with-a-2-5-gpa).
+
+For a deeper plan, also read [dental school acceptance rates](/blog/dental-school-acceptance-rates) and [DAT score requirements](/blog/dat-score-guide). For how AADSAS calculates BCP vs Science GPA (and whether math counts), see [AADSAS BCP GPA explained](/blog/aadsas-bcp-gpa-explained).
+
+---
+
 ## The Question Every Pre-Dental Student Is Afraid to Ask
 
 *Is my GPA good enough to get into dental school?*
@@ -5539,18 +6114,9 @@ Yes. All undergraduate grades appear on your AADSAS transcript. However, if your
 A 3.5 overall GPA is competitive at the majority of accredited U.S. dental schools. Paired with a 20+ DAT, strong clinical experience, and a well-prepared application, a 3.5 is a genuinely viable profile for many programs — including some competitive ones. It's below the average for top-tier programs but above the median for a large number of accredited schools.
 
 **Can I get into dental school with a 3.0 GPA?**
-Yes — many students ask this exact question every cycle. A **3.0 overall GPA** is not an automatic rejection, but it *is* a weaker academic signal that must be offset deliberately.
+Yes — see the answer-first section at the top of this guide. A **3.0 overall GPA** is not an automatic rejection, but it must be offset deliberately with DAT strength, trend, experiences, and a realistic school list.
 
-**What usually works with a 3.0 GPA:**
-- DAT Academic Average of **21–22+** (proves academic readiness)
-- Strong upward grade trend (weak early years + strong junior/senior science grades)
-- 100–150+ quality shadowing hours and a specific clinical narrative
-- A school list with genuine mid- and access-mission programs — not only top-20 schools
-- Clear explanation (brief) in AADSAS additional information if there was a real academic setback you fixed
-
-**What usually fails:** applying only to ultra-competitive schools with a flat 3.0, average DAT (~18–19), and a generic personal statement. For a deeper plan, also read [dental school acceptance rates](/blog/dental-school-acceptance-rates) and [DAT score requirements](/blog/dat-score-guide).
-
-*Last reviewed: July 30, 2026.*
+*Last reviewed: August 5, 2026.*
 
 **Does a post-bacc GPA replace your undergraduate GPA?**
 No. Both GPAs appear separately on your AADSAS application. Post-bacc coursework is added to your transcript and factored into your cumulative GPA, but schools can see both your original undergraduate performance and your post-bacc performance. A strong post-bacc record demonstrates recent academic ability — which is what matters to adcoms evaluating whether you can handle dental school coursework.
@@ -6873,7 +7439,17 @@ But here's what most resources won't tell you: **the score you need depends heav
 
 ## Understanding DAT Scoring
 
-The DAT is scored on a scale of 1–30 in each section:
+**Important (March 1, 2025+):** Official DAT reporting uses a **200–600** scale (10-point steps), not 1–30. Full conversion chart, percentiles, and AADSAS notes: [DAT scoring scale 200–600 explained](/blog/dat-scoring-scale-200-600).
+
+Many school profiles and older articles still quote **1–30**. Use this page’s benchmarks as **legacy AA language**, then convert:
+
+| Old AA (1–30) | Approx. new AA |
+|---|---|
+| 17 | ~370 |
+| 20 | ~420 |
+| 22 | ~460 |
+
+Sections are unchanged in structure:
 
 | Section | Abbreviation |
 |---------|-------------|
@@ -6889,29 +7465,29 @@ Three composite scores are reported:
 - **TS (Total Science):** Average of BIO, GC, OC
 - **PAT:** Standalone score
 
-A score of 17 is national average. **20 is the benchmark for competitive applicants.** Top programs look for 22+.
+On the old scale, **17** was near national average and **20** was the common competitive benchmark (**≈420 AA** now). Top programs often looked for **22+** (**≈460 AA**).
 
 ---
 
 ## Average DAT Score 2026: What “Good” Looks Like Right Now
 
-When students search “average DAT score 2026,” they usually want three numbers:
+When students search “average DAT score 2026,” they usually want three numbers (shown in **old AA** with **new-scale** equivalents):
 
-| Benchmark | Typical AA range | How to read it |
-|---|---|---|
-| Below average | ≤17 | High risk at most programs without major compensating strengths |
-| Competitive floor | 19–20 | Viable at many schools with strong GPA + experiences |
-| Strong / widely competitive | 20–21 | Solid target for most applicants |
-| Highly competitive | 22+ | Competitive at selective programs |
+| Benchmark | Typical AA (old) | Approx. new AA | How to read it |
+|---|---|---|---|
+| Below average | ≤17 | ≤~370 | High risk at most programs without major compensating strengths |
+| Competitive floor | 19–20 | ~410–420 | Viable at many schools with strong GPA + experiences |
+| Strong / widely competitive | 20–21 | ~420–440 | Solid target for most applicants |
+| Highly competitive | 22+ | ~460+ | Competitive at selective programs |
 
 **Section context that still matters in 2026:**
 - **PAT** often decides ties — many schools watch PAT closely even when AA is fine. See our [DAT spatial reasoning practice guide](/blog/dat-perceptual-ability-practice-guide) and [PAT tips](/blog/dat-pat-tips-and-strategies).
 - **TS (Total Science)** should generally stay near your AA; a big science drop raises questions.
 - Percentiles move slightly year to year — treat school entering-class profiles (ADEA / school sites) as the source of truth for the cycle you apply.
 
-**Practical target:** most applicants should plan study time to clear **20+ AA** first, then push weak sections (often PAT or Orgo) rather than chasing a vanity 24 before fundamentals are stable.
+**Practical target:** most applicants should plan study time to clear **~420+ AA (old 20+)** first, then push weak sections (often PAT or Orgo) rather than chasing a vanity top score before fundamentals are stable.
 
-*Last reviewed: July 23, 2026. Always verify current scoring details on official ADA/DAT documentation.*
+*Last reviewed: August 5, 2026. Always verify current scoring details on official ADA/DAT documentation.*
 
 ---
 
