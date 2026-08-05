@@ -33,6 +33,7 @@ export const blogPosts: BlogPost[] = [
     category: "DAT Prep",
     coverGradient: "from-teal-600 to-emerald-900",
     coverEmoji: "📐",
+    coverImage: "/images/blog-dat-scoring-scale-200-600-cover.png",
     author: DR_ALEX,
     content: `
 ## Short Answer: DAT Is Now 200–600
@@ -172,6 +173,7 @@ Want a score target and retake calendar for Fall 2027 entry? [Schedule a free ca
     category: "Admissions Guide",
     coverGradient: "from-indigo-600 to-slate-900",
     coverEmoji: "📅",
+    coverImage: "/images/blog-dental-school-decision-day-cover.png",
     author: DR_ALEX,
     content: `
 ## Short Answer: Decision Day Is December 15, 2026
@@ -275,6 +277,7 @@ Need a plan for offers vs waitlists? [Schedule a free call](/schedule).
     category: "Application Tips",
     coverGradient: "from-rose-600 to-slate-900",
     coverEmoji: "🎯",
+    coverImage: "/images/blog-dental-school-2-5-gpa-cover.png",
     author: DR_ALEX,
     content: `
 ## Short Answer: Possible, but Rare Without a Rebuild
@@ -381,6 +384,7 @@ Want a transcript review and post-bacc vs apply-now call? [Schedule a free consu
     category: "Admissions Guide",
     coverGradient: "from-amber-600 to-orange-900",
     coverEmoji: "🗓️",
+    coverImage: "/images/blog-dental-school-timeline-fall-2027-cover.png",
     author: DR_ALEX,
     content: `
 ## Short Answer: Fall 2027 = 2026–27 AADSAS Cycle
