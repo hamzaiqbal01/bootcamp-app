@@ -264,10 +264,6 @@ export default function PrivacyPage() {
                   <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
                 </li>
                 <li>
-                  <strong>Phone / Text:</strong>{" "}
-                  <a href="sms:+12675845457">267-584-5457</a>
-                </li>
-                <li>
                   <strong>Website:</strong>{" "}
                   <Link href="/contact">Contact form</Link>
                 </li>
