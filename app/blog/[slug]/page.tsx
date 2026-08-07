@@ -294,7 +294,7 @@ export default async function BlogPostPage({ params }: Props) {
           name: "Can I get into dental school with a 3.0 GPA?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. A 3.0 overall GPA is not an automatic rejection, but you typically need compensating strengths such as a DAT AA of 21–22+, an upward grade trend, strong shadowing, and a realistic school list that includes mid-tier and access-mission programs.",
+            text: "Yes. A 3.0 overall GPA is not an automatic rejection, but you typically need compensating strengths such as a DAT AA of about 21–22+ (roughly 440–460 on the 200–600 scale), an upward grade trend, strong shadowing, and a realistic school list that includes mid-tier and access-mission programs.",
           },
         },
         {
@@ -302,7 +302,7 @@ export default async function BlogPostPage({ params }: Props) {
           name: "Is a 3.5 GPA good enough for dental school?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "A 3.5 overall GPA is competitive at many U.S. dental schools when paired with a 20+ DAT, strong clinical experience, and a well-prepared application.",
+            text: "A 3.5 overall GPA is competitive at many U.S. dental schools when paired with a competitive DAT (about 420+ AA on the new scale), strong clinical experience, and a well-prepared application.",
           },
         },
         {
@@ -321,10 +321,18 @@ export default async function BlogPostPage({ params }: Props) {
       mainEntity: [
         {
           "@type": "Question",
-          name: "What does BCP stand for on AADSAS?",
+          name: "What is the AADSAS numeric grade value for A-?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "BCP stands for Biology, Chemistry, and Physics. On ADEA AADSAS, BCP GPA reporting also includes Biochemistry coursework classified in those subject categories.",
+            text: "On ADEA AADSAS, A- converts to 3.67 for quality-point calculations — not 3.7. Always confirm against your verified Academic Audit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does AADSAS Science GPA include math and statistics?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. AADSAS Science GPA is broader than BCP and typically includes math and statistics, while BCP GPA is limited to Biology, Chemistry, Physics, and Biochemistry.",
           },
         },
         {
@@ -337,18 +345,10 @@ export default async function BlogPostPage({ params }: Props) {
         },
         {
           "@type": "Question",
-          name: "Does AADSAS Science GPA include math and statistics?",
+          name: "What does BCP stand for on AADSAS?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Usually yes. AADSAS Science GPA is broader than BCP and typically includes math and statistics, while BCP GPA is limited to Biology, Chemistry, Physics, and Biochemistry.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What is the AADSAS numeric grade value for A-?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "On ADEA AADSAS, A- converts to 3.67 for quality-point calculations — not 3.7. Always confirm against your verified Academic Audit.",
+            text: "BCP stands for Biology, Chemistry, and Physics. On ADEA AADSAS, BCP GPA reporting also includes Biochemistry coursework classified in those subject categories.",
           },
         },
         {
@@ -539,6 +539,104 @@ export default async function BlogPostPage({ params }: Props) {
           acceptedAnswer: {
             "@type": "Answer",
             text: "Fall 2028 entry uses the 2027–28 AADSAS cycle, typically opening and submitting around May–June 2027 once ADEA publishes exact dates. Use 2026–27 as a planning template until then.",
+          },
+        },
+      ],
+    },
+    "how-long-does-aadsas-verification-take": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How long does AADSAS verification take?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Once your ADEA AADSAS application is Complete, verification occurs in chronological order and can take up to 10 business days. Status then changes to Verified.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "When does the AADSAS verification clock start?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The verification queue starts when your application reaches Complete status — after required materials such as official transcripts are received — not merely when you click Submit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How long do AADSAS transcripts take to post?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Official transcripts and test scores typically take about five business days from the date of receipt to post to your AADSAS application.",
+          },
+        },
+      ],
+    },
+    "aadsas-fee-assistance-program-fap": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is the AADSAS Fee Assistance Program?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ADEA FAP is a fee waiver program for eligible applicants. Approved applicants typically receive a waiver covering three ADEA AADSAS dental school designations, valued around $494.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Who qualifies for AADSAS FAP?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Eligibility generally requires that the applicant’s and relevant family members’ adjusted gross income is at or below 300% of the U.S. poverty guidelines, with supporting U.S. tax documents and a FAFSA Submission Summary.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I submit AADSAS before FAP approval?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. If you want the FAP waiver, do not submit your ADEA AADSAS application before you receive FAP approval. Submitting early can make you ineligible.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How long is an AADSAS FAP waiver valid?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Approved FAP waivers are typically active for 30 calendar days from the approval notification. Submit within that window or the funding may be forfeited.",
+          },
+        },
+      ],
+    },
+    "casper-test-dental-school": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Do dental schools require the Casper test?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Some U.S. dental schools require Casper, but it is not universal. Check each school’s admissions page and your Acuity Insights program list for the current cycle.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is Casper for dental school?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Casper is an online situational judgment test from Acuity Insights that uses video and typed open responses to assess attributes like communication, empathy, ethics, and problem-solving.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much does Casper cost for dental school applicants?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "U.S. fees are commonly around $85 base plus per-program distribution fees, but amounts change — confirm on Acuity Insights Dates and Fees. Approved ADEA FAP applicants may qualify for Casper fee assistance.",
           },
         },
       ],

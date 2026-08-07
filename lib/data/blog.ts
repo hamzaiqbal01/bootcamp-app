@@ -24,6 +24,349 @@ const DR_ALEX = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "how-long-does-aadsas-verification-take",
+    title: "How Long Does AADSAS Verification Take?",
+    description:
+      "AADSAS verification usually takes up to 10 business days after your application is Complete. See statuses, what delays verification, and how to submit early for Fall 2027.",
+    publishedAt: "2026-08-07",
+    readingTime: "8 min read",
+    category: "Application Tips",
+    coverGradient: "from-cyan-600 to-slate-900",
+    coverEmoji: "⏳",
+    coverImage: "/images/blog-aadsas-verification-cover.png",
+    author: DR_ALEX,
+    content: `
+## Short Answer: Up to 10 Business Days After “Complete”
+
+**How long does AADSAS verification take?** Once ADEA AADSAS marks your application **Complete**, verification is done in chronological order and can take **up to 10 business days** (often about **~2 weeks** in practice). When finished, status changes to **Verified** and you get a notification.
+
+That clock starts only when required materials are in — not the day you hit Submit with missing transcripts.
+
+| Stage | Typical timing |
+|---|---|
+| Official transcripts / test scores post | Up to **~5 business days** after receipt |
+| Status → **Complete** | When required items are received |
+| Verification queue | **Up to 10 business days** |
+| Status → **Verified** | GPA calculated; schools can use verified file |
+
+Source of truth: [Liaison AADSAS verification help](https://help.liaisonedu.com/ADEA_AADSAS_Applicant_Help_Center/Submitting_and_Monitoring_Your_ADEA_AADSAS_Application/Verification_and_GPA_Calculations_for_ADEA_AADSAS/1_What_is_Verification%3F).
+
+Full cycle dates: [Fall 2027 timeline](/blog/dental-school-application-timeline-fall-2027) · [When AADSAS opens](/blog/when-does-aadsas-open).
+
+---
+
+## What “Verification” Actually Means
+
+Verification is AADSAS standardizing your coursework so schools compare applicants fairly:
+
+- Each course is placed in a **subject category** (this feeds BCP vs Science GPA — see [AADSAS BCP GPA explained](/blog/aadsas-bcp-gpa-explained))
+- Grades convert to AADSAS numeric values (e.g. **A- = 3.67**)
+- Official GPAs are calculated
+- Degrees are confirmed as awarded when applicable
+
+If AADSAS finds significant entry errors, the application can be **undelivered** (returned for corrections) — that resets your place in line. Accuracy on transcript entry matters more than speed alone.
+
+---
+
+## Application Statuses You’ll See
+
+| Status | Meaning |
+|---|---|
+| **In Progress** | Not submitted yet |
+| **Received / Submitted** | Paid and submitted — waiting on materials |
+| **Complete** | Required materials received; **in verification queue** |
+| **Verified** | Processed; verified GPAs available to programs |
+| **Undelivered** | Returned for fixes — correct and resubmit |
+
+Transcripts and official scores often take **about five business days** to post after AADSAS receives them. Evaluations usually update when the letter writer submits.
+
+Schools may still ask for secondaries before or after verification — check each program. Rolling review favors early **Verified** files.
+
+---
+
+## What Usually Delays Verification
+
+1. **Missing or late official transcripts** — most common bottleneck  
+2. **Coursework entry mistakes** → undelivered status  
+3. **Peak June–July volume** — queue is first-come; early Complete = earlier Verified  
+4. **Waiting on DAT / LORs** when a school or your plan treats them as required for “done”
+
+**Do not confuse:** some advisors say “4–6 weeks to process.” That usually means **submit → transcripts arrive → Complete → verify**, not the verification step alone. Liaison’s verification window after Complete is **up to 10 business days**.
+
+---
+
+## How to Get Verified Faster (Without Cutting Corners)
+
+- Order **official transcripts** the week you plan to submit (or earlier)  
+- Double-check coursework before submit — especially repeats, withdrawals, and subject categories  
+- Submit early in the cycle ([May 12 open / June 2 first submit for 2026–27](/blog/dental-school-application-timeline))  
+- Monitor **Check Status** weekly; fix undelivered issues the same day  
+- If you plan a DAT retake, still submit early so verification can finish while you wait on scores (disclose planned test date)
+
+---
+
+## FAQ
+
+**How long does AADSAS verification take in 2026?**  
+Up to **10 business days** after Complete, in chronological order.
+
+**Does Submit start the 10-day clock?**  
+No — **Complete** does (materials received).
+
+**Can schools see me before Verified?**  
+Policies vary; many wait for verified GPAs. Early Complete still helps.
+
+**What if I’m undelivered?**  
+Fix the listed errors quickly and resubmit — you re-enter the queue.
+
+---
+
+## Next Step
+
+Build a submit week that includes transcript shipping time, not just the AADSAS button.
+
+Want a personal submit + DAT calendar for Fall 2027? [Schedule a free call](/schedule).
+`,
+  },
+  {
+    slug: "aadsas-fee-assistance-program-fap",
+    title: "AADSAS Fee Assistance Program (FAP): Who Qualifies?",
+    description:
+      "ADEA FAP waives fees for 3 dental school applications (~$494 value) if AGI is ≤300% of poverty guidelines. See 2026 dates, income table, and 2027–28 planning tips.",
+    publishedAt: "2026-08-07",
+    readingTime: "9 min read",
+    category: "Application Tips",
+    coverGradient: "from-emerald-600 to-teal-900",
+    coverEmoji: "💸",
+    coverImage: "/images/blog-aadsas-fap-cover.png",
+    author: DR_ALEX,
+    content: `
+## Short Answer: 3 School Fee Waiver If You Qualify
+
+The **ADEA AADSAS Fee Assistance Program (FAP)** helps eligible applicants with dental school application costs. If approved, you typically receive a fee waiver for **three** AADSAS-participating dental schools — ADEA has valued that at about **$494**.
+
+**Critical rule:** Do **not** submit your AADSAS application before you receive FAP approval. Submitting early can make you **ineligible** for the waiver.
+
+| Item | Detail |
+|---|---|
+| What you get | Waiver for **3** AADSAS school designations |
+| Income test | Combined AGI ≤ **300%** of U.S. poverty guidelines |
+| Docs | U.S. tax returns + **FAFSA Submission Summary** (and related earnings docs) |
+| After approval | Submit AADSAS within **30 calendar days** or forfeit |
+
+Official hubs: [ADEA FAP](https://www.adea.org/godental/Apply/apply-to-adea-aadsas/fee-assistance-program) · [FAP Help Center](https://faphelp.adea.org/).
+
+---
+
+## 2026–27 Cycle Dates (Reference)
+
+For the cycle tied to **Fall 2027** entry:
+
+| Milestone | Date |
+|---|---|
+| FAP opens | **April 15, 2026** |
+| FAP apply window (typical close) | Through **May 15, 2026** (4:59 p.m. ET — confirm on FAP Help) |
+| Decision emails begin | **June 3, 2026** (most decisions by end of June) |
+| Waiver use window | **30 days** after approval notification |
+| AADSAS opens / first submit | **May 12** / **June 2, 2026** |
+
+If you are reading this **after** the 2026 FAP window closed, plan for **2027–28 FAP** (ADEA indicates reopen around **April 2027**). Same logic applies — gather taxes and FAFSA early.
+
+Cycle calendar: [Fall 2027 timeline](/blog/dental-school-application-timeline-fall-2027).
+
+---
+
+## Income Limits (300% of 2025 Poverty Guidelines)
+
+ADEA sets FAP eligibility at **300%** of the federal poverty guideline (48 contiguous states / D.C. table):
+
+| Household size | Max AGI (ADEA 300% guideline) |
+|---|---|
+| 1 | **$46,950** |
+| 2 | **$63,450** |
+| 3 | **$79,950** |
+| 4 | **$96,450** |
+| 5 | **$112,950** |
+| 6 | **$129,450** |
+| 7 | **$145,950** |
+| 8 | **$162,450** |
+| 9+ | Add **$5,500** per extra person |
+
+If multiple tax returns are required (e.g., you + parent/guardian), **combine AGIs** and compare to the household size limit. Citizenship is not required, but **U.S. tax documentation** is.
+
+Always re-check [FAP eligibility](https://faphelp.adea.org/eligibility/) — tables update by year.
+
+---
+
+## Documents You’ll Need
+
+Typical packet:
+
+- **2025 Form 1040** showing AGI (for the 2026 FAP year)  
+- **W-2 / 1099** as applicable for you, spouse, and/or guardian  
+- **FAFSA Submission Summary** (SAI / Pell estimate accepted to simplify 2026 process)  
+- **DENTPIN** before you apply  
+
+You generally get **one** FAP submission — incomplete docs can mean denial. Decisions are final.
+
+---
+
+## How to Use the Waiver Without Losing It
+
+1. Apply to FAP as early as the window opens (funding is limited / first-come among eligible)  
+2. **Wait** for approval email — do not submit AADSAS yet  
+3. When approved, open AADSAS and select **three schools in one submit** to use the full waiver  
+4. Submit within **30 calendar days** of the approval notice  
+
+Extra schools beyond three are paid normally. Budget those separately.
+
+**Bonus:** Approved **ADEA FAP** status can also help with **Casper** fee assistance through Acuity Insights (upload proof when you reserve). Details: [Casper for dental school](/blog/casper-test-dental-school).
+
+---
+
+## FAQ
+
+**Who qualifies for AADSAS FAP?**  
+Applicants whose relevant household AGI is at or below **300%** of the poverty guidelines and who submit required U.S. tax + FAFSA documentation.
+
+**How many schools does FAP cover?**  
+**Three** AADSAS designations.
+
+**Can I submit AADSAS while waiting on FAP?**  
+**No** — wait for the FAP decision first if you want the waiver.
+
+**When does FAP open for the next cycle?**  
+Historically mid-April; 2027–28 expected around **April 2027** — confirm on ADEA.
+
+---
+
+## Next Step
+
+If cost is a constraint, reverse-plan FAP → AADSAS submit week before you finalize your school list.
+
+Need a low-cost application strategy (FAP + school count + DAT timing)? [Schedule a free call](/schedule).
+`,
+  },
+  {
+    slug: "casper-test-dental-school",
+    title: "Casper Test for Dental School: Do You Need It?",
+    description:
+      "Some U.S. dental schools require Casper (Acuity Insights SJT) — not all. See format (video + typed), cost (~$85), timing with AADSAS, and how to check your school list.",
+    publishedAt: "2026-08-07",
+    readingTime: "9 min read",
+    category: "Admissions Guide",
+    coverGradient: "from-violet-600 to-indigo-950",
+    coverEmoji: "🧠",
+    coverImage: "/images/blog-casper-dental-school-cover.png",
+    author: DR_ALEX,
+    content: `
+## Short Answer: Only If Your Schools Require It
+
+**Do you need Casper for dental school?** **Only if one or more programs on your list require (or strongly recommend) it.** Casper is **not** a universal AADSAS requirement like the DAT. A minority of U.S. dental schools use it.
+
+Casper is an online **situational judgment test (SJT)** from **Acuity Insights**. It samples how you think through interpersonal and ethical scenarios — communication, empathy, professionalism, problem-solving — not organic chemistry.
+
+| Question | Answer |
+|---|---|
+| Required for all dental schools? | **No** |
+| Who runs it? | **Acuity Insights** (acuityinsights.app) |
+| Format | Open responses: **video** + **typed** sections |
+| When to take | After you know your school list; often **May–June** if applying early |
+| Score use | Schools receive results for review; you typically do not get a detailed “score report” like the DAT |
+
+**Always verify** on the school’s admissions page and inside your Acuity account program list. Third-party “Casper dental school lists” go stale every cycle.
+
+---
+
+## What Casper Looks Like (Current Format)
+
+Casper presents short real-world scenarios (video or word-based), then open-ended questions. Structure applicants commonly face:
+
+| Section | Scenarios | Response style | Timing (typical) |
+|---|---|---|---|
+| **Video responses** | ~4 scenarios | Record spoken answers (2 questions each) | ~**1 minute** per question |
+| **Typed responses** | ~7 scenarios | Type answers (2 questions each) | ~**3.5 minutes** total for both questions |
+
+Expect roughly **90–110 minutes** including instructions/breaks (confirm on Acuity for your test reservation). There is no single “correct” script — raters look for clear reasoning, empathy, and professional judgment under time pressure.
+
+Register for the **correct test type** your dental programs list (U.S. Professional Health Sciences codes differ from Canadian or other versions). Example: some schools specify a code such as **CSP-20100** — match exactly what the school posts.
+
+---
+
+## Cost and Fee Assistance
+
+Fees change — check Acuity **Dates and Fees** when you reserve. Recent U.S. cycles commonly quote about **$85** base (includes distribution to a set number of programs) plus a per-program fee for extras.
+
+If you are approved for **ADEA AADSAS FAP**, Acuity may waive Casper fees when you upload valid FAP proof before test day. See [AADSAS FAP guide](/blog/aadsas-fee-assistance-program-fap) and Acuity’s FAP help articles.
+
+---
+
+## Which Dental Schools Require Casper?
+
+The list **changes yearly**. Examples of programs that have required Acuity/Casper in recent cycles include schools such as **Case Western Reserve** (confirm current deadline on their DMD checklist) and a handful of others — but do **not** treat a blog table as final.
+
+**How to check correctly:**
+
+1. Build your school list  
+2. Open each school’s **admissions / how to apply** page  
+3. Confirm in **AADSAS program instructions**  
+4. Create an Acuity account and view participating programs / required assessments  
+
+If **zero** schools on your list require Casper, skip it and invest that time in DAT, secondaries, or interviews ([MMI guide](/blog/dental-school-mmi-interview-guide)).
+
+---
+
+## When to Take Casper for the 2026–27 Cycle
+
+| Goal | Timing tip |
+|---|---|
+| Early AADSAS submit (June) | Take Casper in **May–June** so scores arrive before committee review |
+| Schools with winter deadlines | Still take early — many committees will not fully review until Casper is in |
+| Retake / bad tech day | Know Acuity’s retake rules before you book; prep the sample test first |
+
+Pair with: [application timeline](/blog/dental-school-application-timeline) · [Decision Day](/blog/dental-school-decision-day).
+
+---
+
+## How to Prepare (Without Overpaying for Hype)
+
+Acuity’s own guidance: learn the **format and tech**, run the **system check**, and use the **official practice test** often.
+
+Practical prep that helps:
+
+1. Practice **typing under a 3.5-minute** clock for two questions  
+2. Practice **60-second** spoken answers on camera (eye contact, structure, calm tone)  
+3. Use a simple response frame: **acknowledge → options → choice → why → stakeholders**  
+4. Sleep and test your mic/camera the day before  
+
+You do **not** need a $1,000 Casper course for dental school if only 1–2 programs require it. Free official practice + timed drills are enough for most applicants.
+
+---
+
+## FAQ
+
+**Do all dental schools require Casper?**  
+No — only specific programs. Verify each school.
+
+**Is Casper the same as the DAT?**  
+No. DAT = academic readiness. Casper = situational judgment / professional attributes.
+
+**Can ADEA FAP cover Casper?**  
+Often yes if you have approved ADEA FAP and upload proof to Acuity in time.
+
+**When should I take it?**  
+After your school list is set, early enough for the most restrictive program deadline — often late spring / early summer for on-cycle applicants.
+
+---
+
+## Next Step
+
+Audit your school list for Casper **this week**. If required, book a date; if not, ignore the noise and protect DAT study time.
+
+Want a school-list audit (Casper + DAT + FAP)? [Schedule a free call](/schedule).
+`,
+  },
+  {
     slug: "dat-scoring-scale-200-600",
     title: "DAT Scoring Scale 200–600 Explained (Old 1–30 Chart)",
     description:
@@ -642,9 +985,9 @@ Want a timeline built around *your* GPA, DAT date, and school list? [Schedule a 
   },
   {
     slug: "aadsas-bcp-gpa-explained",
-    title: "Does AADSAS Science GPA Include Math? (BCP Guide)",
+    title: "AADSAS A- = 3.67: Does Science GPA Include Math?",
     description:
-      "AADSAS Science GPA usually includes math and statistics — BCP GPA does not. See A- = 3.67, BCP vs Science GPA, and a worked calculation example.",
+      "A- = 3.67 on AADSAS (not 3.7). Math and statistics count in Science GPA — not BCP. See BCP vs Science GPA table and a worked example.",
     publishedAt: "2026-07-28",
     readingTime: "11 min read",
     category: "Application Tips",
@@ -655,14 +998,21 @@ Want a timeline built around *your* GPA, DAT date, and school list? [Schedule a 
     content: `
 ## Quick Answers Students Search For
 
+**What is the AADSAS numeric grade for A- — 3.7 or 3.67?**  
+**A- = 3.67** on ADEA AADSAS (not 3.7). Schools may round displays, but the conversion AADSAS uses for quality points is **3.67**.
+
 **Does AADSAS Science GPA include math / statistics?**  
 **Yes.** Math and statistics usually count toward **Science GPA** (or Other Science). They do **not** count toward the narrower **BCP GPA**.
 
 **What is AADSAS BCP GPA?**  
 Your average from courses classified as **Biology, Chemistry, Physics, and Biochemistry** — not overall GPA, and not math.
 
-**What is the AADSAS numeric grade for A-?**  
-**A- = 3.67** on ADEA AADSAS (not 3.7). Schools may round displays, but the conversion AADSAS uses for quality points is **3.67**.
+| Question | Short answer |
+|---|---|
+| A- on AADSAS? | **3.67** |
+| Math in BCP GPA? | **No** |
+| Math in Science GPA? | **Usually yes** |
+| BCP vs Science GPA? | BCP is narrower (Bio/Chem/Physics/Biochem only) |
 
 For the threshold question — *what GPA do I need?* / *can I get in with a 3.0?* — use [dental school GPA requirements](/blog/dental-school-gpa-requirements). This page is the **calculation / definition** companion.
 
@@ -5005,9 +5355,9 @@ If you want to talk through how to position your application for schools where s
   },
   {
     slug: "dental-school-application-timeline",
-    title: "When Do Dental School Applications Open? 2026",
+    title: "AADSAS Opens May 12, 2026 — Full Timeline",
     description:
-      "Dental school applications (AADSAS) typically open in May with earliest submission in early June. See the full 2026 month-by-month timeline — DAT, secondaries, interviews, and Decision Day.",
+      "2026–27 cycle: AADSAS opens May 12, submit June 2, Decision Day Dec 15. Month-by-month DAT, secondaries, interviews, and Fall 2027 entry plan.",
     publishedAt: "2026-07-01",
     readingTime: "14 min read",
     category: "Application Tips",
@@ -5018,15 +5368,23 @@ If you want to talk through how to position your application for schools where s
     content: `
 ## When Do Dental School Applications Open?
 
-**Quick answer:** ADEA AADSAS usually opens for data entry in **early/mid May**, and the earliest submit window is typically **early June**. Exact dates shift slightly each cycle — confirm on the official AADSAS site — but the strategy does not: **submit early**.
+**Quick answer (2026–27 cycle / Fall 2027 entry):**
+
+| Milestone | Date |
+|---|---|
+| AADSAS opens | **May 12, 2026** |
+| First submit day | **June 2, 2026** |
+| Decision Day (first acceptances) | **December 15, 2026** |
+
+Exact dates can shift slightly — confirm on the official AADSAS site — but the strategy does not: **submit early**.
 
 **Related timing questions:**
 - **When does dental school start?** Most U.S. programs matriculate in **August**.
 - **When do interviews start?** Often **August–March** (rolling).
-- **When do acceptances come out?** Many schools begin offers around **mid-December** (“Decision Day”), continuing into spring.
+- **When do acceptances come out?** See [Decision Day](/blog/dental-school-decision-day) — **Dec 15, 2026** for this cycle, then rolling into spring.
 - **April 30** is the common national deposit deadline.
 
-For the day-one checklist, see **[When Does AADSAS Open?](/blog/when-does-aadsas-open)**. The rest of this guide is the full month-by-month plan.
+Day-one checklist: **[When Does AADSAS Open?](/blog/when-does-aadsas-open)**. Year-specific plan: **[Fall 2027 application timeline](/blog/dental-school-application-timeline-fall-2027)**. Verification timing: **[How long does AADSAS verification take?](/blog/how-long-does-aadsas-verification-take)**. Fee help: **[AADSAS FAP](/blog/aadsas-fee-assistance-program-fap)**. The rest of this guide is the full month-by-month plan.
 
 ---
 
@@ -5888,7 +6246,7 @@ If you want a personalized review of your planned recommender list and how to fr
     slug: "dental-school-gpa-requirements",
     title: "Can I Get Into Dental School With a 3.0 GPA?",
     description:
-      "Yes — a 3.0 GPA is not an automatic rejection. See what usually works (DAT 21–22+, upward trend, school list), average dental school GPA (~3.55), and competitive ranges.",
+      "Yes. A 3.0 GPA is not an automatic rejection — aim for DAT ~21–22+ (≈440–460 AA), an upward grade trend, and a realistic school list. Average accepted GPA is ~3.55.",
     publishedAt: "2026-06-30",
     readingTime: "13 min read",
     category: "Application Tips",
@@ -5899,18 +6257,16 @@ If you want a personalized review of your planned recommender list and how to fr
     content: `
 ## Can I Get Into Dental School With a 3.0 GPA?
 
-**Short answer: yes — but not with a “average everything else” application.**
-
-A **3.0 overall GPA** is not an automatic rejection at accredited U.S. dental schools. It *is* a weaker academic signal than the national accepted average (~**3.55** overall / ~**3.46** science). Committees will look for compensating strengths.
+**Yes — you can get into dental school with a 3.0 GPA.** It is not an automatic rejection. It *is* below the national accepted average (~**3.55** overall / ~**3.46** science), so the rest of your application has to work harder.
 
 **What usually works with a 3.0 GPA:**
-- DAT Academic Average of **21–22+** (proves academic readiness)
+- DAT Academic Average of **21–22+** (**≈440–460** on the [200–600 scale](/blog/dat-scoring-scale-200-600))
 - Strong upward grade trend (weak early years + strong junior/senior science grades)
 - 100–150+ quality shadowing hours and a specific clinical narrative
 - A school list with genuine mid- and access-mission programs — not only top-20 schools
 - Clear explanation (brief) in AADSAS additional information if there was a real academic setback you fixed
 
-**What usually fails:** applying only to ultra-competitive schools with a flat 3.0, average DAT (~18–19 / ~390–410 AA on the [200–600 scale](/blog/dat-scoring-scale-200-600)), and a generic personal statement.
+**What usually fails:** applying only to ultra-competitive schools with a flat 3.0, average DAT (~18–19 / ~390–410 AA), and a generic personal statement.
 
 Below 3.0? Read the separate guide: [Can I get into dental school with a 2.5 GPA?](/blog/can-i-get-into-dental-school-with-a-2-5-gpa).
 
@@ -7423,9 +7779,9 @@ If you want personalized guidance on your specific situation, [schedule a free 1
 
   {
     slug: "dat-score-guide",
-    title: "Average DAT Score 2026 by School",
+    title: "Good DAT Score 2026: 420 AA ≈ Old 20",
     description:
-      "What is a good DAT score in 2026? See average DAT AA, PAT, and TS by school tier — plus tips to hit a competitive 20+ Academic Average.",
+      "A competitive DAT target is ~420 AA (old 20) on the 200–600 scale. See school-tier averages, old 1–30 conversions, and how to set your AA/PAT/TS goals.",
     publishedAt: "2026-04-28",
     readingTime: "9 min read",
     category: "DAT Prep",
@@ -7434,6 +7790,8 @@ If you want personalized guidance on your specific situation, [schedule a free 1
     author: DR_ALEX,
     content: `
 ## Why Your DAT Score Matters More Than You Think
+
+**Quick answer:** In 2026, treat **~420 Academic Average** as the common competitive floor (**≈ old 20**). Selective programs often look closer to **~460 AA** (**≈ old 22**). Full conversion chart: [DAT scoring scale 200–600](/blog/dat-scoring-scale-200-600).
 
 The DAT (Dental Admission Test) is one of the two most gatekept numbers in dental school admissions — the other being your GPA. While your personal statement shows who you are, your DAT score proves to admissions committees that you can handle the academic rigor of dental school.
 
