@@ -985,9 +985,9 @@ Want a timeline built around *your* GPA, DAT date, and school list? [Schedule a 
   },
   {
     slug: "aadsas-bcp-gpa-explained",
-    title: "AADSAS A- = 3.67: Does Science GPA Include Math?",
+    title: "AADSAS A- Grade = 3.67 (Not 3.7)",
     description:
-      "A- = 3.67 on AADSAS (not 3.7). Math and statistics count in Science GPA — not BCP. See BCP vs Science GPA table and a worked example.",
+      "On AADSAS, A- = 3.67 — not 3.7. Math/statistics count in Science GPA, not BCP. Quick BCP vs Science GPA answers + example.",
     publishedAt: "2026-07-28",
     readingTime: "11 min read",
     category: "Application Tips",
@@ -998,23 +998,23 @@ Want a timeline built around *your* GPA, DAT date, and school list? [Schedule a 
     content: `
 ## Quick Answers Students Search For
 
-**What is the AADSAS numeric grade for A- — 3.7 or 3.67?**  
-**A- = 3.67** on ADEA AADSAS (not 3.7). Schools may round displays, but the conversion AADSAS uses for quality points is **3.67**.
+**ADEA AADSAS numeric grade value for A-: 3.7 or 3.67?**  
+**A- = 3.67** — not 3.7. That is the quality-point value AADSAS uses. Schools may round a display, but your Academic Audit calculation uses **3.67**.
 
 **Does AADSAS Science GPA include math / statistics?**  
-**Yes.** Math and statistics usually count toward **Science GPA** (or Other Science). They do **not** count toward the narrower **BCP GPA**.
+**Yes.** Math and statistics usually count in **Science GPA**. They do **not** count in **BCP GPA**.
 
 **What is AADSAS BCP GPA?**  
-Your average from courses classified as **Biology, Chemistry, Physics, and Biochemistry** — not overall GPA, and not math.
+BCP = **Biology, Chemistry, Physics, and Biochemistry** only — not math, not overall GPA.
 
 | Question | Short answer |
 |---|---|
-| A- on AADSAS? | **3.67** |
+| A- on AADSAS = 3.7 or 3.67? | **3.67** |
+| Math in Science GPA? | **Yes (usually)** |
 | Math in BCP GPA? | **No** |
-| Math in Science GPA? | **Usually yes** |
-| BCP vs Science GPA? | BCP is narrower (Bio/Chem/Physics/Biochem only) |
+| BCP vs Science GPA? | Science is broader; BCP is Bio/Chem/Physics/Biochem only |
 
-For the threshold question — *what GPA do I need?* / *can I get in with a 3.0?* — use [dental school GPA requirements](/blog/dental-school-gpa-requirements). This page is the **calculation / definition** companion.
+For *can I get in with a 3.0?* use [dental school GPA requirements](/blog/dental-school-gpa-requirements). This page is the **AADSAS calculation** guide.
 
 ---
 
@@ -6246,7 +6246,7 @@ If you want a personalized review of your planned recommender list and how to fr
     slug: "dental-school-gpa-requirements",
     title: "Can I Get Into Dental School With a 3.0 GPA?",
     description:
-      "Yes. A 3.0 GPA is not an automatic rejection — aim for DAT ~21–22+ (≈440–460 AA), an upward grade trend, and a realistic school list. Average accepted GPA is ~3.55.",
+      "Yes — you can get into dental school with a 3.0 GPA if you have DAT ~21–22+ (≈440–460 AA), an upward grade trend, and a realistic school list. Average accepted GPA is ~3.55.",
     publishedAt: "2026-06-30",
     readingTime: "13 min read",
     category: "Application Tips",
@@ -6257,16 +6257,20 @@ If you want a personalized review of your planned recommender list and how to fr
     content: `
 ## Can I Get Into Dental School With a 3.0 GPA?
 
-**Yes — you can get into dental school with a 3.0 GPA.** It is not an automatic rejection. It *is* below the national accepted average (~**3.55** overall / ~**3.46** science), so the rest of your application has to work harder.
+**Yes — you can get into dental school with a 3.0 GPA.**
 
-**What usually works with a 3.0 GPA:**
-- DAT Academic Average of **21–22+** (**≈440–460** on the [200–600 scale](/blog/dat-scoring-scale-200-600))
-- Strong upward grade trend (weak early years + strong junior/senior science grades)
-- 100–150+ quality shadowing hours and a specific clinical narrative
-- A school list with genuine mid- and access-mission programs — not only top-20 schools
-- Clear explanation (brief) in AADSAS additional information if there was a real academic setback you fixed
+It is not an automatic rejection. A **3.0 overall** is below the national accepted average (~**3.55** overall / ~**3.46** science), so you need clear compensating strengths — not an “average everything else” application.
 
-**What usually fails:** applying only to ultra-competitive schools with a flat 3.0, average DAT (~18–19 / ~390–410 AA), and a generic personal statement.
+| With a 3.0 GPA | Target |
+|---|---|
+| DAT AA | **21–22+** (**≈440–460** on the [200–600 scale](/blog/dat-scoring-scale-200-600)) |
+| Grades | Strong **upward trend** in recent science |
+| Experiences | 100–150+ quality shadowing + clear clinical story |
+| School list | Mid-tier / access-mission programs — not only top-20 |
+
+**What usually fails:** only ultra-competitive schools + flat 3.0 + average DAT (~18–19 / ~390–410 AA) + generic personal statement.
+
+**Can you get into dental school with a 3.0?** Yes — with the package above. A bare 3.0 alone is rarely enough.
 
 Below 3.0? Read the separate guide: [Can I get into dental school with a 2.5 GPA?](/blog/can-i-get-into-dental-school-with-a-2-5-gpa).
 

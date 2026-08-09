@@ -294,7 +294,15 @@ export default async function BlogPostPage({ params }: Props) {
           name: "Can I get into dental school with a 3.0 GPA?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. A 3.0 overall GPA is not an automatic rejection, but you typically need compensating strengths such as a DAT AA of about 21–22+ (roughly 440–460 on the 200–600 scale), an upward grade trend, strong shadowing, and a realistic school list that includes mid-tier and access-mission programs.",
+            text: "Yes — you can get into dental school with a 3.0 GPA if you pair it with compensating strengths such as a DAT AA of about 21–22+ (roughly 440–460 on the 200–600 scale), an upward grade trend, strong shadowing, and a realistic school list.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can you get into dental school with a 3.0?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. A 3.0 is not an automatic rejection, but a bare 3.0 with an average DAT and only top-tier schools usually fails. Aim for DAT ~21–22+, recent A-level science grades, and mid-tier or access-mission programs.",
           },
         },
         {
@@ -321,7 +329,7 @@ export default async function BlogPostPage({ params }: Props) {
       mainEntity: [
         {
           "@type": "Question",
-          name: "What is the AADSAS numeric grade value for A-?",
+          name: "What is the AADSAS numeric grade value for A- — 3.7 or 3.67?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "On ADEA AADSAS, A- converts to 3.67 for quality-point calculations — not 3.7. Always confirm against your verified Academic Audit.",
@@ -340,7 +348,7 @@ export default async function BlogPostPage({ params }: Props) {
           name: "Does math count toward AADSAS BCP GPA?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Usually no. Math and statistics typically count toward Science GPA (or Other Science), not the narrower BCP GPA used on AADSAS.",
+            text: "No. Math and statistics typically count toward Science GPA (or Other Science), not the narrower BCP GPA used on AADSAS.",
           },
         },
         {
