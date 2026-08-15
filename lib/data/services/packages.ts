@@ -5,7 +5,7 @@ export const servicePackages: ServicePackage[] = [
     id: "ps-platinum",
     badge: "platinum",
     title: "Personal Statement Platinum",
-    price: "$597",
+    price: "$797",
     includes: [
       "Phone & e-mail access to your personal statement specialist",
       "Initial voice call includes: Brainstorming ideas and formulating an outline",
@@ -27,7 +27,7 @@ export const servicePackages: ServicePackage[] = [
     id: "ps-gold",
     badge: "gold",
     title: "Personal Statement Gold",
-    price: "$374",
+    price: "$474",
     includes: [
       "Phone & e-mail access to your personal statement specialist",
       "Brainstorming ideas and formulating an outline",
@@ -84,7 +84,7 @@ export const servicePackages: ServicePackage[] = [
   {
     id: "experience",
     title: "Experience Review",
-    price: "$247",
+    price: "$297",
     priceUnit: "10 experiences",
     includes: [
       "Phone & e-mail access to your application specialist",
@@ -105,7 +105,7 @@ export const servicePackages: ServicePackage[] = [
   {
     id: "critique",
     title: "Application Critique",
-    price: "$647",
+    price: "$847",
     includes: [
       "Email and phone access to your admissions expert",
       {
@@ -137,7 +137,7 @@ export const servicePackages: ServicePackage[] = [
   {
     id: "interview",
     title: "Interview Coaching Package",
-    price: "$297",
+    price: "$347",
     includes: [
       "Phone & e-mail access to your interview specialist",
       "30 minute interview protocol overview",
@@ -157,7 +157,7 @@ export const servicePackages: ServicePackage[] = [
   {
     id: "school-selection",
     title: "School Selection",
-    price: "$197",
+    price: "$247",
     includes: [
       "30 minute video/phone session with our in-house expert to determine which schools are the best fit for you and compile a school list that makes sense",
     ],
@@ -183,7 +183,7 @@ export const servicePackages: ServicePackage[] = [
   {
     id: "complete",
     title: "Complete Application Package",
-    price: "$1,997",
+    price: "$2,397",
     priceUnit: "10% discount when you bundle!",
     featured: true,
     ribbon: "Best Value",
