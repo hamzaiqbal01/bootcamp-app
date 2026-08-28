@@ -25,9 +25,9 @@ const DR_ALEX = {
 export const blogPosts: BlogPost[] = [
   {
     slug: "how-long-does-aadsas-verification-take",
-    title: "How Long Does AADSAS Verification Take?",
+    title: "How Long Does AADSAS Take to Verify? (10 Days)",
     description:
-      "AADSAS verification usually takes up to 10 business days after your application is Complete. See statuses, what delays verification, and how to submit early for Fall 2027.",
+      "AADSAS usually takes up to 10 business days to verify after your application is Complete — not the day you submit. See what delays it and how to get Verified faster.",
     publishedAt: "2026-08-07",
     readingTime: "8 min read",
     category: "Application Tips",
@@ -38,7 +38,7 @@ export const blogPosts: BlogPost[] = [
     content: `
 ## Short Answer: Up to 10 Business Days After “Complete”
 
-**How long does AADSAS verification take?** Once ADEA AADSAS marks your application **Complete**, verification is done in chronological order and can take **up to 10 business days** (often about **~2 weeks** in practice). When finished, status changes to **Verified** and you get a notification.
+**How long does AADSAS take to verify?** Once ADEA AADSAS marks your application **Complete**, verification is chronological and can take **up to 10 business days** (often about **~2 weeks**). Then status becomes **Verified**.
 
 That clock starts only when required materials are in — not the day you hit Submit with missing transcripts.
 
@@ -368,9 +368,9 @@ Want a school-list audit (Casper + DAT + FAP)? [Schedule a free call](/schedule)
   },
   {
     slug: "dat-scoring-scale-200-600",
-    title: "DAT Scoring Scale 200–600 Explained (Old 1–30 Chart)",
+    title: "DAT Conversion Chart: 420 AA = Old 20",
     description:
-      "DAT scores now use a 200–600 scale (10-point steps) since March 2025. See what a good score is, old 1–30 conversions (20 ≈ 420 AA), and percentiles.",
+      "DAT conversion chart for the 200–600 scale: 420 AA ≈ old 20, 460 ≈ old 22. Full 1–30 concordance table, percentiles, and what a good score is now.",
     publishedAt: "2026-08-05",
     readingTime: "10 min read",
     category: "DAT Prep",
@@ -379,25 +379,26 @@ Want a school-list audit (Casper + DAT + FAP)? [Schedule a free call](/schedule)
     coverImage: "/images/blog-dat-scoring-scale-200-600-cover.png",
     author: DR_ALEX,
     content: `
-## Short Answer: DAT Is Now 200–600
+## DAT Conversion Chart (200–600 to Old 1–30)
 
-Since **March 1, 2025**, the ADA reports DAT scores on a **3-digit scale from 200 to 600** in **10-point increments** (200, 210, 220… 600). The old **1–30** scale is no longer how new exams are scored.
+**Need a DAT conversion chart?** Use this Academic Average table. The DAT has been scored **200–600** (10-point steps) since **March 1, 2025**. The old **1–30** scale is no longer how new exams are scored.
 
-**Quick conversion most students need (Academic Average):**
+**Quick conversions people search:**
 
-| Old AA (1–30) | Approx. new AA (200–600) | Rough meaning |
+| New AA (200–600) | Old AA (approx.) | Meaning |
 |---|---|---|
-| 17 | **370** | Near national average |
-| 18 | **390** | Common school floor language |
-| 19 | **410** | Solid / workable |
-| 20 | **420** | Competitive target for many applicants |
-| 21 | **440** | Strong |
-| 22 | **460** | Highly competitive |
-| 23 | **470** | Top-tier range |
+| **390** | 18 | Common floor language |
+| **410** | 19 | Solid / workable |
+| **420** | **20** | Competitive target |
+| **440** | 21 | Strong |
+| **460** | **22** | Highly competitive |
+| **470** | 23 | Top-tier range |
 
-These come from the ADA **DAT Concordance Table** (approximate equivalents — always verify on [ADA DAT materials](https://www.ada.org/education/testing/exams/dental-admission-test-dat)). AADSAS now receives **all** official scores on the 3-digit scale, including older attempts that are psychometrically converted.
+**420 DAT to old score = about 20 AA. 460 DAT to old score = about 22 AA.**
 
-For school-by-school targets and strategy, still use our [average DAT score guide](/blog/dat-score-guide) — but read scores in **200–600** terms going forward.
+Full old-to-new table is below. Always verify on official ADA concordance materials.
+
+For school-by-school targets, use our [DAT score chart / average DAT guide](/blog/dat-score-guide).
 
 ---
 
@@ -985,9 +986,9 @@ Want a timeline built around *your* GPA, DAT date, and school list? [Schedule a 
   },
   {
     slug: "aadsas-bcp-gpa-explained",
-    title: "AADSAS A- Grade = 3.67 (Not 3.7)",
+    title: "Does AADSAS Science GPA Include Math? Yes",
     description:
-      "On AADSAS, A- = 3.67 — not 3.7. Math/statistics count in Science GPA, not BCP. Quick BCP vs Science GPA answers + example.",
+      "Yes — AADSAS Science GPA usually includes math and statistics. BCP GPA does not. A- = 3.67 (not 3.7). See BCP vs Science GPA table.",
     publishedAt: "2026-07-28",
     readingTime: "11 min read",
     category: "Application Tips",
@@ -998,20 +999,20 @@ Want a timeline built around *your* GPA, DAT date, and school list? [Schedule a 
     content: `
 ## Quick Answers Students Search For
 
-**ADEA AADSAS numeric grade value for A-: 3.7 or 3.67?**  
-**A- = 3.67** — not 3.7. That is the quality-point value AADSAS uses. Schools may round a display, but your Academic Audit calculation uses **3.67**.
-
 **Does AADSAS Science GPA include math / statistics?**  
 **Yes.** Math and statistics usually count in **Science GPA**. They do **not** count in **BCP GPA**.
 
-**What is AADSAS BCP GPA?**  
-BCP = **Biology, Chemistry, Physics, and Biochemistry** only — not math, not overall GPA.
+**Does math count toward AADSAS BCP GPA?**  
+**No.** BCP is Biology, Chemistry, Physics, and Biochemistry only.
+
+**ADEA AADSAS numeric grade for A-: 3.7 or 3.67?**  
+**A- = 3.67** — not 3.7. That is the quality-point value AADSAS uses.
 
 | Question | Short answer |
 |---|---|
-| A- on AADSAS = 3.7 or 3.67? | **3.67** |
 | Math in Science GPA? | **Yes (usually)** |
 | Math in BCP GPA? | **No** |
+| A- on AADSAS = 3.7 or 3.67? | **3.67** |
 | BCP vs Science GPA? | Science is broader; BCP is Bio/Chem/Physics/Biochem only |
 
 For *can I get in with a 3.0?* use [dental school GPA requirements](/blog/dental-school-gpa-requirements). This page is the **AADSAS calculation** guide.
@@ -7783,9 +7784,9 @@ If you want personalized guidance on your specific situation, [schedule a free 1
 
   {
     slug: "dat-score-guide",
-    title: "Good DAT Score 2026: 420 AA ≈ Old 20",
+    title: "DAT Score Chart 2026: 420 AA = Old 20",
     description:
-      "A competitive DAT target is ~420 AA (old 20) on the 200–600 scale. See school-tier averages, old 1–30 conversions, and how to set your AA/PAT/TS goals.",
+      "DAT score chart for 2026: ~420 AA (old 20) is the competitive floor; ~460 AA ≈ old 22. School-tier averages plus the conversion chart.",
     publishedAt: "2026-04-28",
     readingTime: "9 min read",
     category: "DAT Prep",
@@ -7795,7 +7796,9 @@ If you want personalized guidance on your specific situation, [schedule a free 1
     content: `
 ## Why Your DAT Score Matters More Than You Think
 
-**Quick answer:** In 2026, treat **~420 Academic Average** as the common competitive floor (**≈ old 20**). Selective programs often look closer to **~460 AA** (**≈ old 22**). Full conversion chart: [DAT scoring scale 200–600](/blog/dat-scoring-scale-200-600).
+**Quick answer:** In 2026, treat **~420 Academic Average** as the common competitive floor (**≈ old 20**). Selective programs often look closer to **~460 AA** (**≈ old 22**).
+
+Need the full **DAT conversion chart** (420, 440, 460 → old scores)? Use [DAT conversion chart: 420 AA = old 20](/blog/dat-scoring-scale-200-600).
 
 The DAT (Dental Admission Test) is one of the two most gatekept numbers in dental school admissions — the other being your GPA. While your personal statement shows who you are, your DAT score proves to admissions committees that you can handle the academic rigor of dental school.
 

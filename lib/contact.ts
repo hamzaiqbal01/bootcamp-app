@@ -90,7 +90,7 @@ export async function sendContactNotificationEmail(
   const from =
     process.env.CONTACT_FROM_EMAIL ?? "Future Dentist Prep <onboarding@resend.dev>";
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://futuredentistprep.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://futuredentalprep.com";
   const logoUrl = `${siteUrl}/images/logo.png`;
   const now = new Date().toLocaleString("en-US", {
     timeZone: "America/New_York",

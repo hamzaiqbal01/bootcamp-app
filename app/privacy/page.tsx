@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const LAST_UPDATED = "July 23, 2026";
 const SITE_NAME = "Future Dentist Prep";
-const SITE_URL = "https://futuredentistprep.com";
+const SITE_URL = "https://futuredentalprep.com";
 const CONTACT_EMAIL = "facedoctoralex@gmail.com";
 
 export default function PrivacyPage() {

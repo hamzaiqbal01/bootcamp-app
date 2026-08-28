@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Future Dentist Prep | DAT Tutoring & Admissions",
     description:
       "Trusted by 10,000+ pre-dental students. Expert admissions consulting, DAT tutoring, personal statement coaching, and interview prep from Dr. Alexander Takshyn.",
-    url: "https://futuredentistprep.com",
+    url: "https://futuredentalprep.com",
     type: "website",
   },
 };

@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://futuredentistprep.com"),
+  metadataBase: new URL("https://futuredentalprep.com"),
   title: {
     default: "Future Dentist Prep | Dental School Admissions Consulting & DAT Tutoring",
     template: "%s | Future Dentist Prep",

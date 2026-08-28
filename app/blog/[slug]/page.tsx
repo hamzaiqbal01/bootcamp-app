@@ -277,7 +277,7 @@ export default async function BlogPostPage({ params }: Props) {
     publisher: {
       "@type": "Organization",
       name: "Future Dentist Prep",
-      url: "https://futuredentistprep.com",
+      url: "https://futuredentalprep.com",
     },
   };
 
@@ -329,14 +329,6 @@ export default async function BlogPostPage({ params }: Props) {
       mainEntity: [
         {
           "@type": "Question",
-          name: "What is the AADSAS numeric grade value for A- — 3.7 or 3.67?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "On ADEA AADSAS, A- converts to 3.67 for quality-point calculations — not 3.7. Always confirm against your verified Academic Audit.",
-          },
-        },
-        {
-          "@type": "Question",
           name: "Does AADSAS Science GPA include math and statistics?",
           acceptedAnswer: {
             "@type": "Answer",
@@ -349,6 +341,14 @@ export default async function BlogPostPage({ params }: Props) {
           acceptedAnswer: {
             "@type": "Answer",
             text: "No. Math and statistics typically count toward Science GPA (or Other Science), not the narrower BCP GPA used on AADSAS.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the AADSAS numeric grade value for A- — 3.7 or 3.67?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "On ADEA AADSAS, A- converts to 3.67 for quality-point calculations — not 3.7. Always confirm against your verified Academic Audit.",
           },
         },
         {
@@ -419,6 +419,30 @@ export default async function BlogPostPage({ params }: Props) {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is a DAT conversion chart?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A DAT conversion chart maps old 1–30 scores to the new 200–600 scale. For Academic Average, 20 ≈ 420 and 22 ≈ 460, per the ADA concordance table.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is a 420 DAT score on the old scale?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A 420 Academic Average on the new 200–600 DAT scale is approximately equivalent to a 20 AA on the old 1–30 scale.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is a 460 DAT to old score?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A 460 Academic Average is approximately equivalent to a 22 AA on the old 1–30 DAT scale.",
+          },
+        },
         {
           "@type": "Question",
           name: "Is the DAT still scored 1 to 30?",
@@ -557,7 +581,7 @@ export default async function BlogPostPage({ params }: Props) {
       mainEntity: [
         {
           "@type": "Question",
-          name: "How long does AADSAS verification take?",
+          name: "How long does AADSAS take to verify?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Once your ADEA AADSAS application is Complete, verification occurs in chronological order and can take up to 10 business days. Status then changes to Verified.",

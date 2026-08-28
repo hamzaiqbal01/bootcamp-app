@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { blogPosts, getAllCategories, slugifyCategory } from "@/lib/data/blog";
 
-const BASE = "https://futuredentistprep.com";
+const BASE = "https://futuredentalprep.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [

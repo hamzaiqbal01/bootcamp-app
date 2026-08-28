@@ -1,9 +1,27 @@
 {
   "redirects": [
     {
+      "source": "/",
+      "has": [{ "type": "host", "value": "futuredentistprep.com" }],
+      "destination": "https://futuredentalprep.com/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "futuredentistprep.com" }],
+      "destination": "https://futuredentalprep.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "www.futuredentistprep.com" }],
+      "destination": "https://futuredentalprep.com/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.futuredentistprep.com" }],
-      "destination": "https://futuredentistprep.com/:path*",
+      "destination": "https://futuredentalprep.com/:path*",
       "permanent": true
     },
     {
