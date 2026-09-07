@@ -28,7 +28,7 @@ export function Footer() {
               academic tutoring. Trusted by 10,000+ pre-dental students.
             </p>
             <a
-              href="mailto:facedoctoralex@gmail.com"
+              href="mailto:facedocturalex@gmail.com"
               className="mt-5 inline-flex items-center gap-2 text-sm text-slate-400 transition hover:text-white"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
@@ -38,7 +38,7 @@ export function Footer() {
                 />
                 <path d="M22 6L12 13L2 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
               </svg>
-              facedoctoralex@gmail.com
+              facedocturalex@gmail.com
             </a>
           </div>
 

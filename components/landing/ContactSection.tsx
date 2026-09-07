@@ -153,10 +153,10 @@ export function ContactSection() {
                 <strong className="text-slate-900">Email</strong>
                 <p className="mt-1">
                   <a
-                    href="mailto:facedoctoralex@gmail.com"
+                    href="mailto:facedocturalex@gmail.com"
                     className="text-slate-600 underline-offset-2 transition hover:text-brand-600 hover:underline"
                   >
-                    facedoctoralex@gmail.com
+                    facedocturalex@gmail.com
                   </a>
                 </p>
               </div>

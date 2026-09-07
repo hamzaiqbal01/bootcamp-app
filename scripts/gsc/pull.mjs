@@ -211,8 +211,13 @@ ${pageQueryBreakdown(pageQueries28)}
 
 ensureDir(OUT_DIR);
 const stamp = isoDate(new Date());
-const mdPath = path.join(OUT_DIR, `report-${stamp}.md`);
-const jsonPath = path.join(OUT_DIR, `raw-${stamp}.json`);
+const siteStamp = siteUrl
+  .replace(/^sc-domain:/, "")
+  .replace(/^https?:\/\//, "")
+  .replace(/\/$/, "")
+  .replace(/[^a-z0-9.-]+/gi, "-");
+const mdPath = path.join(OUT_DIR, `report-${siteStamp}-${stamp}.md`);
+const jsonPath = path.join(OUT_DIR, `raw-${siteStamp}-${stamp}.json`);
 
 fs.writeFileSync(mdPath, report);
 fs.writeFileSync(

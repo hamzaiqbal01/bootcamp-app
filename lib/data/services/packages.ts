@@ -82,6 +82,23 @@ export const servicePackages: ServicePackage[] = [
     cta: "Get a Personal Statement Express Overview",
   },
   {
+    id: "cv-review",
+    title: "CV / Resume Review",
+    price: "$100",
+    includes: [
+      "Email review of your pre-dental CV or resume",
+      "Formatting, bullets, and red-flag check",
+      "One round of written feedback (we do not write the CV for you)",
+    ],
+    descriptions: [
+      "A clean CV helps with research jobs, shadowing, and application extras. We review structure, wording, and what to cut so admissions readers can scan your story fast.",
+    ],
+    notes: [
+      "Please note: We do not write your CV from scratch. We help you revise a draft you already have.",
+    ],
+    cta: "Get a CV Review",
+  },
+  {
     id: "experience",
     title: "Experience Review",
     price: "$297",

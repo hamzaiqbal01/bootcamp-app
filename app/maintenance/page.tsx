@@ -40,10 +40,10 @@ export default function MaintenancePage() {
         <div className="mt-10 rounded-2xl border border-white/10 bg-white/5 px-6 py-5 backdrop-blur-sm">
           <p className="text-sm text-slate-300">Need help in the meantime?</p>
           <a
-            href="mailto:facedoctoralex@gmail.com"
+            href="mailto:facedocturalex@gmail.com"
             className="mt-2 inline-block text-base font-semibold text-white underline decoration-brand-500/60 underline-offset-4 transition hover:decoration-brand-400"
           >
-            facedoctoralex@gmail.com
+            facedocturalex@gmail.com
           </a>
         </div>
 
