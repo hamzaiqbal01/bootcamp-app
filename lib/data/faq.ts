@@ -54,6 +54,6 @@ export const faqItems: FaqItem[] = [
   {
     question: "Can you help international applicants?",
     answer:
-      "Absolutely. Several of our experts, including Dr. Takshyn, were international applicants themselves. We understand the unique challenges and requirements international students face.",
+      "Absolutely. Several of our experts were international applicants themselves. We understand the unique challenges and requirements international students face.",
   },
 ];

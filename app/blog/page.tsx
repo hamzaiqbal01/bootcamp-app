@@ -3,18 +3,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
+import { btn, btnSize } from "@/components/ui/button-styles";
 import { BlogAdSenseLoader } from "@/components/ads/BlogAdSenseLoader";
 import { blogPosts, getAllCategories, slugifyCategory } from "@/lib/data/blog";
 
 export const metadata: Metadata = {
-  title: "Blog | Future Dentist Prep",
+  title: "Blog",
   description:
     "Expert guides on dental school admissions, DAT prep, personal statements, and interview tips — written by dentists and current dental students.",
   alternates: {
     canonical: "/blog",
   },
   openGraph: {
-    title: "Future Dentist Prep Blog",
+    title: "Future Dental Prep Blog",
     description:
       "Expert guides on dental school admissions, DAT prep, and personal statements — written by dentists and current dental students.",
     type: "website",
@@ -57,8 +58,8 @@ export default function BlogPage() {
                 <span className="text-indigo-300">Admissions Blog</span>
               </h1>
               <p className="mt-6 max-w-2xl text-lg text-slate-300">
-                Guides, strategies, and insider knowledge from Dr. Alexander Takshyn and our team
-                of dental professionals — written to help you get accepted.
+                Guides, strategies, and insider knowledge from our team of dental professionals —
+                written to help you get accepted.
               </p>
               <p className="mt-3 text-sm text-indigo-200">{blogPosts.length} published articles</p>
             </div>
@@ -128,7 +129,7 @@ export default function BlogPage() {
                         </p>
                       </div>
                     </div>
-                    <span className="inline-flex items-center gap-1.5 rounded-xl bg-white/10 px-5 py-2.5 text-sm font-semibold text-white ring-1 ring-white/20 transition group-hover:bg-indigo-500 group-hover:ring-indigo-400">
+                    <span className={`${btn.ghost} ${btnSize.sm} gap-1.5`}>
                       Read Article
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden className="transition group-hover:translate-x-0.5">
                         <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -244,7 +245,7 @@ export default function BlogPage() {
                 </div>
                 <Link
                   href="/schedule"
-                  className="inline-flex shrink-0 items-center justify-center rounded-xl bg-white px-8 py-3.5 text-base font-semibold text-brand-700 shadow-lg transition hover:bg-indigo-50"
+                  className={`shrink-0 ${btn.inverse} ${btnSize.lg}`}
                 >
                   Schedule a Free Call
                 </Link>

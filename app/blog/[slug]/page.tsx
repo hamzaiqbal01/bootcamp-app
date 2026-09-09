@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
+import { btn, btnSize } from "@/components/ui/button-styles";
 import { BlogAdSense } from "@/components/ads/BlogAdSense";
 import { BlogAdSenseLoader } from "@/components/ads/BlogAdSenseLoader";
 import { BlogTableOfContents } from "@/components/blog/BlogTableOfContents";
@@ -270,13 +271,12 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.description,
     datePublished: post.publishedAt,
     author: {
-      "@type": "Person",
+      "@type": "Organization",
       name: post.author.name,
-      jobTitle: post.author.role,
     },
     publisher: {
       "@type": "Organization",
-      name: "Future Dentist Prep",
+      name: "Future Dental Prep",
       url: "https://futuredentalprep.com",
     },
   };
@@ -828,7 +828,7 @@ export default async function BlogPostPage({ params }: Props) {
                     </p>
                     <Link
                       href="/schedule"
-                      className="mt-5 block rounded-xl bg-white py-3 text-center text-sm font-semibold text-brand-700 transition hover:bg-brand-50"
+                      className={`mt-5 w-full ${btn.inverse} ${btnSize.sm}`}
                     >
                       Schedule Free Call →
                     </Link>
@@ -911,7 +911,7 @@ export default async function BlogPostPage({ params }: Props) {
             </p>
             <Link
               href="/schedule"
-              className="mt-6 inline-flex items-center justify-center rounded-xl bg-white px-8 py-3.5 text-base font-semibold text-brand-700 shadow-lg transition hover:bg-indigo-50"
+              className={`mt-6 ${btn.inverse} ${btnSize.lg}`}
             >
               Schedule a Free Call
             </Link>

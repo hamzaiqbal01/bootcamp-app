@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { btn, btnSize } from "@/components/ui/button-styles";
 
 const benefits = [
   "No obligation — see if we’re a fit",
@@ -54,7 +55,7 @@ export function ScheduleCallSection() {
               </ul>
               <Link
                 href="/contact"
-                className="mt-10 inline-flex rounded-xl bg-white px-8 py-3.5 text-base font-semibold text-brand-700 shadow-lg transition hover:bg-indigo-50"
+                className={`mt-10 ${btn.inverse} ${btnSize.lg}`}
               >
                 Book call
               </Link>

@@ -88,10 +88,10 @@ export async function sendContactNotificationEmail(
   }
 
   const from =
-    process.env.CONTACT_FROM_EMAIL ?? "Future Dentist Prep <onboarding@resend.dev>";
+    process.env.CONTACT_FROM_EMAIL ?? "Future Dental Prep <onboarding@resend.dev>";
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://futuredentalprep.com";
-  const logoUrl = `${siteUrl}/images/logo.png`;
+  const logoUrl = `${siteUrl}/images/logo-fdp.png`;
   const now = new Date().toLocaleString("en-US", {
     timeZone: "America/New_York",
     dateStyle: "full",
@@ -114,10 +114,10 @@ export async function sendContactNotificationEmail(
           <!-- Header -->
           <tr>
             <td align="center" style="background:linear-gradient(135deg,#4F46E5 0%,#7C3AED 100%);border-radius:16px 16px 0 0;padding:32px 40px;">
-              <img src="${logoUrl}" alt="Future Dentist Prep" width="56" height="56"
+              <img src="${logoUrl}" alt="Future Dental Prep" width="56" height="56"
                 style="display:block;border-radius:12px;margin:0 auto 16px;" />
               <h1 style="margin:0;color:#ffffff;font-size:22px;font-weight:700;letter-spacing:-0.3px;">
-                Future Dentist Prep
+                Future Dental Prep
               </h1>
               <p style="margin:6px 0 0;color:rgba(255,255,255,0.80);font-size:13px;">
                 Contact Form Notification
@@ -208,7 +208,7 @@ export async function sendContactNotificationEmail(
               <p style="margin:0;font-size:12px;color:#94A3B8;line-height:1.6;">
                 This email was sent automatically when a visitor submitted the contact form at
                 <a href="${siteUrl}" style="color:#4F46E5;text-decoration:none;">${siteUrl}</a>.<br />
-                &copy; ${new Date().getFullYear()} Future Dentist Prep. All rights reserved.
+                &copy; ${new Date().getFullYear()} Future Dental Prep. All rights reserved.
               </p>
             </td>
           </tr>

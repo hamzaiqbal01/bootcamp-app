@@ -51,7 +51,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "Alex was amazing! He helped me so much - he helped me come up with ideas for my personal statement, draft it and edited it numerous times, paragraph by paragraph. His service was always fast and efficient, and he always answered emails, texts and calls in a timely manner. Thank you so much for everything!",
+      "My consultant was amazing! They helped me so much — they helped me come up with ideas for my personal statement, draft it and edited it numerous times, paragraph by paragraph. The service was always fast and efficient, and they always answered emails, texts and calls in a timely manner. Thank you so much for everything!",
     author: "Sarah A.",
   },
   {
@@ -71,7 +71,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "Getting that acceptance letter from my #1 school made this service worth every penny. I had written a pretty good personal mission statement on my own, but Alex helped me to dig a little deeper, refine my format, and create a narrative that flowed smoothly. With his help I was able to write an excellent personal mission statement that truly communicated who I am and why I want to be a dentist. I'm honestly so happy I chose to use this service.",
+      "Getting that acceptance letter from my #1 school made this service worth every penny. I had written a pretty good personal mission statement on my own, but my consultant helped me to dig a little deeper, refine my format, and create a narrative that flowed smoothly. With their help I was able to write an excellent personal mission statement that truly communicated who I am and why I want to be a dentist. I'm honestly so happy I chose to use this service.",
     author: "Natiri S.",
   },
   {

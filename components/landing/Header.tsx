@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { btn, btnSize } from "@/components/ui/button-styles";
 import { Logo } from "@/components/ui/Logo";
 
 const nav = [
@@ -11,16 +12,11 @@ const nav = [
   { href: "/faq", label: "FAQ", external: false },
 ];
 
-/** Matches original HTML: .nav-link (muted text) + .btn-outline / .btn-primary */
-
 const navLink =
   "rounded-lg px-2.5 py-2 text-base font-medium text-slate-500 transition-colors hover:text-slate-900";
 
-const btnOutline =
-  "rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-900 transition-colors hover:bg-slate-50";
-
-const btnPrimary =
-  "rounded-lg bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-brand-700";
+const btnOutline = `${btn.outline} ${btnSize.sm}`;
+const btnPrimary = `${btn.primary} ${btnSize.sm}`;
 
 export function Header() {
   const [open, setOpen] = useState(false);

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Under Maintenance | Future Dentist Prep",
-  description: "Future Dentist Prep is temporarily under maintenance. Please check back soon.",
+  title: "Under Maintenance",
+  description: "Future Dental Prep is temporarily under maintenance. Please check back soon.",
   robots: {
     index: false,
     follow: false,
@@ -27,7 +27,7 @@ export default function MaintenancePage() {
 
       <div className="relative z-10 mx-auto max-w-xl text-center">
         <p className="mb-4 text-sm font-semibold tracking-[0.2em] text-brand-100 uppercase">
-          Future Dentist Prep
+          Future Dental Prep
         </p>
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
           We&apos;ll be right back
@@ -40,10 +40,10 @@ export default function MaintenancePage() {
         <div className="mt-10 rounded-2xl border border-white/10 bg-white/5 px-6 py-5 backdrop-blur-sm">
           <p className="text-sm text-slate-300">Need help in the meantime?</p>
           <a
-            href="mailto:facedocturalex@gmail.com"
+            href="/contact"
             className="mt-2 inline-block text-base font-semibold text-white underline decoration-brand-500/60 underline-offset-4 transition hover:decoration-brand-400"
           >
-            facedocturalex@gmail.com
+            Use the contact form
           </a>
         </div>
 

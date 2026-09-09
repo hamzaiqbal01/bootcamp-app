@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ExpertsSection } from "@/components/landing/ExpertsSection";
+import { btn, btnSize } from "@/components/ui/button-styles";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { TUTORING_SERVICES_TYPEFORM } from "@/lib/external-links";
 import {
@@ -7,7 +7,6 @@ import {
   privateDatTutoringFaq,
   privateDatTutoringPackages,
 } from "@/lib/data/dat-private-tutoring";
-import { experts } from "@/lib/data/experts";
 
 export function PrivateDatTutoring() {
   return (
@@ -65,7 +64,7 @@ export function PrivateDatTutoring() {
                   href={TUTORING_SERVICES_TYPEFORM}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-brand-600 px-4 py-3 text-center text-sm font-semibold text-white shadow transition hover:bg-brand-700"
+                  className={`mt-6 w-full ${btn.primary} ${btnSize.sm}`}
                 >
                   {pkg.cta}
                 </a>
@@ -86,8 +85,6 @@ export function PrivateDatTutoring() {
           </div>
         </div>
       </section>
-
-      <ExpertsSection />
 
       <section className="bg-slate-50 py-16 sm:py-28">
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -137,23 +134,12 @@ export function PrivateDatTutoring() {
 
       <section className="bg-white py-16 sm:py-20">
         <div className="mx-auto w-full max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-          <p className="text-sm font-medium text-slate-500">Our team of DAT experts</p>
-          <p className="mt-2 text-lg text-slate-600">
+          <p className="text-lg text-slate-600">
             Have a question that you do not see answered here?
           </p>
-          <div className="mx-auto mt-8 flex max-w-3xl flex-wrap justify-center gap-2">
-            {experts.map((ex) => (
-              <span
-                key={ex.id}
-                className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-700"
-              >
-                {ex.name}
-              </span>
-            ))}
-          </div>
           <Link
             href="/contact"
-            className="mt-10 inline-flex items-center justify-center rounded-xl bg-brand-600 px-8 py-3.5 text-base font-semibold text-white shadow transition hover:bg-brand-700"
+            className={`mt-10 ${btn.primary} ${btnSize.lg}`}
           >
             Send us a message
           </Link>

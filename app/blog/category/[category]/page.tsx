@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const category = getCategoryFromSlug(categorySlug);
   if (!category) return {};
   return {
-    title: `${category} Articles | Future Dentist Prep Blog`,
-    description: `Browse all ${category} guides from Future Dentist Prep — expert advice for pre-dental students.`,
+    title: `${category} Articles`,
+    description: `Browse all ${category} guides from Future Dental Prep — expert advice for pre-dental students.`,
     alternates: {
       canonical: `/blog/category/${categorySlug}`,
     },

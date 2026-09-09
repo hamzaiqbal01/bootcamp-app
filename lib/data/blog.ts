@@ -16,10 +16,10 @@ export type BlogPost = {
   content: string;
 };
 
-const DR_ALEX = {
-  name: "Dr. Alexander Takshyn",
-  role: "DMD, Admissions Consultant & Founder",
-  imageUrl: "/images/aleex.png",
+const BLOG_AUTHOR = {
+  name: "Future Dental Prep",
+  role: "Admissions Team",
+  imageUrl: "/images/logo3.png",
 };
 
 export const blogPosts: BlogPost[] = [
@@ -34,7 +34,7 @@ export const blogPosts: BlogPost[] = [
     coverGradient: "from-cyan-600 to-slate-900",
     coverEmoji: "⏳",
     coverImage: "/images/blog-aadsas-verification-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Short Answer: Up to 10 Business Days After “Complete”
 
@@ -139,7 +139,7 @@ Want a personal submit + DAT calendar for Fall 2027? [Schedule a free call](/sch
     coverGradient: "from-emerald-600 to-teal-900",
     coverEmoji: "💸",
     coverImage: "/images/blog-aadsas-fap-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Short Answer: 3 School Fee Waiver If You Qualify
 
@@ -258,7 +258,7 @@ Need a low-cost application strategy (FAP + school count + DAT timing)? [Schedul
     coverGradient: "from-violet-600 to-indigo-950",
     coverEmoji: "🧠",
     coverImage: "/images/blog-casper-dental-school-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Short Answer: Only If Your Schools Require It
 
@@ -377,7 +377,7 @@ Want a school-list audit (Casper + DAT + FAP)? [Schedule a free call](/schedule)
     coverGradient: "from-teal-600 to-emerald-900",
     coverEmoji: "📐",
     coverImage: "/images/blog-dat-scoring-scale-200-600-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## DAT Conversion Chart (200–600 to Old 1–30)
 
@@ -518,7 +518,7 @@ Want a score target and retake calendar for Fall 2027 entry? [Schedule a free ca
     coverGradient: "from-indigo-600 to-slate-900",
     coverEmoji: "📅",
     coverImage: "/images/blog-dental-school-decision-day-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Short Answer: Decision Day Is December 15, 2026
 
@@ -622,7 +622,7 @@ Need a plan for offers vs waitlists? [Schedule a free call](/schedule).
     coverGradient: "from-rose-600 to-slate-900",
     coverEmoji: "🎯",
     coverImage: "/images/blog-dental-school-2-5-gpa-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Short Answer: Possible, but Rare Without a Rebuild
 
@@ -729,7 +729,7 @@ Want a transcript review and post-bacc vs apply-now call? [Schedule a free consu
     coverGradient: "from-amber-600 to-orange-900",
     coverEmoji: "🗓️",
     coverImage: "/images/blog-dental-school-timeline-fall-2027-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Short Answer: Fall 2027 = 2026–27 AADSAS Cycle
 
@@ -865,7 +865,7 @@ Want a personalized 2027 calendar (DAT date + school list)? [Schedule a free cal
     coverGradient: "from-sky-700 to-indigo-900",
     coverEmoji: "⏱️",
     coverImage: "/images/blog-how-to-become-a-dentist-usa-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## The Short Answer: 8 Years Minimum
 
@@ -995,7 +995,7 @@ Want a timeline built around *your* GPA, DAT date, and school list? [Schedule a 
     coverGradient: "from-emerald-600 to-teal-800",
     coverEmoji: "🧮",
     coverImage: "/images/blog-dental-school-gpa-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Quick Answers Students Search For
 
@@ -1216,7 +1216,7 @@ If you want help reading your transcript the way adcoms will — BCP vs Science 
     coverGradient: "from-amber-600 to-orange-700",
     coverEmoji: "🔄",
     coverImage: "/images/blog-should-i-retake-the-dat-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## The Real Question Is Not “Can I Score Higher?”
 
@@ -1331,7 +1331,7 @@ If you are stuck between “retake now” vs “apply with this score,” [sched
     coverGradient: "from-teal-700 to-indigo-800",
     coverEmoji: "📅",
     coverImage: "/images/blog-when-does-aadsas-open-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## When Does AADSAS Open?
 
@@ -1446,7 +1446,7 @@ If you want a day-one submission plan built around your GPA, DAT, and school lis
     coverGradient: "from-cyan-700 to-blue-800",
     coverEmoji: "🧩",
     coverImage: "/images/blog-dat-perceptual-ability-practice-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Why Generic PAT Practice Stalls Your Score
 
@@ -1583,7 +1583,7 @@ If PAT is the section holding your AA down and self-study has plateaued, [privat
     coverGradient: "from-blue-700 to-indigo-800",
     coverEmoji: "🦷",
     coverImage: "/images/blog-how-to-become-a-dentist-usa-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## The Path to Becoming a Dentist in the USA
 
@@ -1781,7 +1781,7 @@ Becoming a dentist is a marathon, not a sprint — but every successful dentist 
 
 ---
 
-If you want expert guidance mapping out your personal path — from DAT prep to application strategy to interviews — [schedule a free consultation with Future Dentist Prep](/contact). We have helped thousands of pre-dental students turn this roadmap into an acceptance letter.
+If you want expert guidance mapping out your personal path — from DAT prep to application strategy to interviews — [schedule a free consultation with Future Dental Prep](/contact). We have helped thousands of pre-dental students turn this roadmap into an acceptance letter.
 `,
   },
   {
@@ -1795,7 +1795,7 @@ If you want expert guidance mapping out your personal path — from DAT prep to 
     coverGradient: "from-teal-600 to-blue-700",
     coverEmoji: "⚖️",
     coverImage: "/images/blog-dental-vs-medical-school-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Do Dentists Go to Medical School?
 
@@ -1948,7 +1948,7 @@ Choose **medicine** if you want breadth, the widest range of specialties, and yo
 
 Neither is better. The right choice is the one that matches your personality, your strengths, and the life you want to build.
 
-If you've decided dentistry is your path — or you're leaning that way and want help getting started — [schedule a free consultation with Future Dentist Prep](/contact). We'll help you build a plan from DAT prep through your acceptance. And if you're still exploring, start with our complete guide on [how to become a dentist in the USA](/blog/how-to-become-a-dentist-in-the-usa).
+If you've decided dentistry is your path — or you're leaning that way and want help getting started — [schedule a free consultation with Future Dental Prep](/contact). We'll help you build a plan from DAT prep through your acceptance. And if you're still exploring, start with our complete guide on [how to become a dentist in the USA](/blog/how-to-become-a-dentist-in-the-usa).
 `,
   },
   {
@@ -1962,7 +1962,7 @@ If you've decided dentistry is your path — or you're leaning that way and want
     coverGradient: "from-violet-700 to-indigo-800",
     coverEmoji: "📝",
     coverImage: "/images/blog-write-personal-statement-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Why Most Personal Statements Stall Before They Start
 
@@ -2101,7 +2101,7 @@ Your personal statement works best when it aligns with:
 - Your interview answers, especially [why dentistry](/blog/why-dentistry-interview-answer)
 - Your secondary essays (next guide below in this cluster)
 
-If you want line-by-line feedback from someone who has reviewed dental applications from the admissions side, [schedule a free consultation with Future Dentist Prep](/contact).
+If you want line-by-line feedback from someone who has reviewed dental applications from the admissions side, [schedule a free consultation with Future Dental Prep](/contact).
 `,
   },
   {
@@ -2115,7 +2115,7 @@ If you want line-by-line feedback from someone who has reviewed dental applicati
     coverGradient: "from-sky-700 to-blue-900",
     coverEmoji: "🏫",
     coverImage: "/images/blog-dental-school-secondary-essays-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Why Secondary Essays Matter More Than Applicants Think
 
@@ -2262,7 +2262,7 @@ During interview season, your secondaries should already match the stories you w
 
 If you are applying to 10+ schools, secondaries become a volume problem. The risk is not just writing quality — it is sameness and fatigue. A focused review can catch generic phrasing before you send it to your top programs.
 
-If you want help building a secondary story bank and polishing "Why this school?" answers, [schedule a free consultation with Future Dentist Prep](/contact).
+If you want help building a secondary story bank and polishing "Why this school?" answers, [schedule a free consultation with Future Dental Prep](/contact).
 `,
   },
   {
@@ -2276,7 +2276,7 @@ If you want help building a secondary story bank and polishing "Why this school?
     coverGradient: "from-teal-700 to-emerald-600",
     coverEmoji: "🔢",
     coverImage: "/images/blog-dat-quantitative-reasoning-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Why DAT Quantitative Reasoning Scores Stall Out
 
@@ -2451,7 +2451,7 @@ Target: identify your bottom 3 topics.
 
 If your content diagnostics say you "know" the math but timed scores stay flat, the bottleneck is process: setup speed, skip discipline, or calculator habits. Targeted tutoring focused on timed decision-making usually moves QR faster than another month of random practice.
 
-If you want help building a QR plan around your weak topics, [schedule a free consultation with Future Dentist Prep](/contact).
+If you want help building a QR plan around your weak topics, [schedule a free consultation with Future Dental Prep](/contact).
 `,
   },
   {
@@ -2465,7 +2465,7 @@ If you want help building a QR plan around your weak topics, [schedule a free co
     coverGradient: "from-indigo-700 to-violet-600",
     coverEmoji: "📖",
     coverImage: "/images/blog-dat-reading-comprehension-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## The Myth That Keeps DAT Reading Scores Stuck
 
@@ -2613,7 +2613,7 @@ For overall DAT scheduling, see [How to Study for the DAT](/blog/how-to-study-fo
 
 Students who are strong in science but weak in RC usually improve quickly once they stop treating RC like "just read carefully" and start treating it like a timed search task with rules.
 
-If your RC score is the only section holding down your AA, structured practice with feedback can compress weeks of random drilling into a few focused sessions. [Reach out to Future Dentist Prep](/contact) if you want a personalized RC pacing plan.
+If your RC score is the only section holding down your AA, structured practice with feedback can compress weeks of random drilling into a few focused sessions. [Reach out to Future Dental Prep](/contact) if you want a personalized RC pacing plan.
 `,
   },
   {
@@ -2627,7 +2627,7 @@ If your RC score is the only section holding down your AA, structured practice w
     coverGradient: "from-indigo-700 to-amber-600",
     coverEmoji: "🧪",
     coverImage: "/images/blog-dat-organic-chemistry-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Why DAT Organic Chemistry Feels Harder Than It Is
 
@@ -2835,7 +2835,7 @@ You are close when:
 
 If you are stuck below that after consistent practice, the issue is almost always a small cluster — stereochemistry, EAS directors, or carbonyl reactivity — not "all of organic chemistry."
 
-For focused help on those weak clusters, [schedule a free consultation with Future Dentist Prep](/contact). Private DAT tutoring is built exactly for this kind of targeted score recovery.
+For focused help on those weak clusters, [schedule a free consultation with Future Dental Prep](/contact). Private DAT tutoring is built exactly for this kind of targeted score recovery.
 `,
   },
   {
@@ -2849,7 +2849,7 @@ For focused help on those weak clusters, [schedule a free consultation with Futu
     coverGradient: "from-blue-700 to-cyan-700",
     coverEmoji: "⚗️",
     coverImage: "/images/blog-dat-general-chemistry-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Why DAT General Chemistry Is a Score Lever Most Applicants Underuse
 
@@ -3047,7 +3047,7 @@ If you are following a full DAT plan, Gen Chem pairs well with Organic Chemistry
 
 If you are stuck at 17–18 after two solid weeks of practice, the bottleneck is usually a small set of topics — buffers, electrochemistry, or stoichiometry setups — not "all of chemistry." Targeted tutoring on those clusters often moves scores faster than another month of unfocused drilling.
 
-If you want help identifying your Gen Chem weak points and fixing them with a structured plan, [schedule a free consultation with Future Dentist Prep](/contact).
+If you want help identifying your Gen Chem weak points and fixing them with a structured plan, [schedule a free consultation with Future Dental Prep](/contact).
 `,
   },
   {
@@ -3061,7 +3061,7 @@ If you want help identifying your Gen Chem weak points and fixing them with a st
     coverGradient: "from-blue-600 to-sky-700",
     coverEmoji: "📅",
     coverImage: "/images/blog-interview-prep-2-weeks-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## You Have Two Weeks. Here's How to Use Them.
 
@@ -3249,7 +3249,7 @@ Your preparation is done. There is nothing new you can learn today that will hel
 
 Self-preparation gets you a significant portion of the way there. But the most efficient way to close the remaining gap is structured practice with honest feedback from someone who has evaluated interviews from the other side of the table.
 
-At Future Dentist Prep, we run focused mock interview sessions — full panel format or MMI circuit — with specific, written feedback on every response. Most applicants notice a meaningful improvement in their clarity and composure after a single session.
+At Future Dental Prep, we run focused mock interview sessions — full panel format or MMI circuit — with specific, written feedback on every response. Most applicants notice a meaningful improvement in their clarity and composure after a single session.
 
 [Schedule a free consultation](/contact) to find out if interview coaching makes sense for where you are in your preparation.
 `,
@@ -3265,7 +3265,7 @@ At Future Dentist Prep, we run focused mock interview sessions — full panel fo
     coverGradient: "from-green-600 to-teal-700",
     coverEmoji: "🧬",
     coverImage: "/images/blog-dat-biology-study-guide-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Why DAT Biology Deserves More of Your Study Time Than You're Giving It
 
@@ -3472,7 +3472,7 @@ If your practice scores are in the 17–19 range and you're struggling to break 
 
 **Option B:** You know the material but you're making careless errors under time pressure. In this case, slow down your practice and do not check the clock until you've answered every question in a passage. Speed follows accuracy — not the other way around.
 
-For applicants who have been studying consistently and are still falling short of their Biology target, a structured tutoring session focused specifically on your weak topic clusters can close the gap more efficiently than additional solo study. [Reach out to Future Dentist Prep](/contact) if you'd like to work through your Biology weak points with someone who has helped students consistently hit 20+ in this section.
+For applicants who have been studying consistently and are still falling short of their Biology target, a structured tutoring session focused specifically on your weak topic clusters can close the gap more efficiently than additional solo study. [Reach out to Future Dental Prep](/contact) if you'd like to work through your Biology weak points with someone who has helped students consistently hit 20+ in this section.
 `,
   },
   {
@@ -3486,7 +3486,7 @@ For applicants who have been studying consistently and are still falling short o
     coverGradient: "from-indigo-600 to-violet-700",
     coverEmoji: "🚪",
     coverImage: "/images/blog-mmi-interview-guide-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## What Is the MMI and Why Do Dental Schools Use It?
 
@@ -3713,7 +3713,7 @@ MMI evaluators are not looking for a specific conclusion. They are watching how 
 
 Think out loud. Show your reasoning. And when you're not sure, say so — and then work through it anyway.
 
-If you'd like to do a mock MMI session with personalized feedback from someone who has reviewed dental school applications from the inside, [reach out to Future Dentist Prep](/contact). We work through actual MMI circuits with applicants and give you the specific, actionable feedback you need to perform at your best.
+If you'd like to do a mock MMI session with personalized feedback from someone who has reviewed dental school applications from the inside, [reach out to Future Dental Prep](/contact). We work through actual MMI circuits with applicants and give you the specific, actionable feedback you need to perform at your best.
 `,
   },
   {
@@ -3727,7 +3727,7 @@ If you'd like to do a mock MMI session with personalized feedback from someone w
     coverGradient: "from-red-600 to-rose-700",
     coverEmoji: "🚫",
     coverImage: "/images/blog-personal-statement-mistakes-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Why Good Applicants Get Rejected for Bad Writing
 
@@ -3899,7 +3899,7 @@ The goal of all of these fixes is not to produce a polished, impressive-sounding
 
 The best personal statements are easy to read, specific in every paragraph, and leave the reader with a clear sense of who this person is and what kind of dentist they will become. They don't try to be impressive. They try to be honest.
 
-If you're ready to get real feedback on your personal statement — not encouragement, but the kind of specific, honest critique that actually makes it better — [schedule a free consultation with Future Dentist Prep](/contact). We work through statements line by line and tell you exactly what's working and what isn't.
+If you're ready to get real feedback on your personal statement — not encouragement, but the kind of specific, honest critique that actually makes it better — [schedule a free consultation with Future Dental Prep](/contact). We work through statements line by line and tell you exactly what's working and what isn't.
 `,
   },
   {
@@ -3913,7 +3913,7 @@ If you're ready to get real feedback on your personal statement — not encourag
     coverGradient: "from-teal-600 to-emerald-700",
     coverEmoji: "🎤",
     coverImage: "/images/blog-why-dentistry-interview-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## The Question Every Dental School Interviewer Will Ask You
 
@@ -4080,7 +4080,7 @@ Phrased as: "Tell me about a time your interest in dentistry was challenged, and
 
 4. **Prepare for follow-ups.** After "Why dentistry?", the follow-up is often "Why not medicine?" or "What do you find most challenging about pursuing this path?" Have those answers ready.
 
-If you're preparing for interviews and want structured feedback on your responses — including mock interview practice — [reach out to Future Dentist Prep](/contact). This is one of the highest-impact things you can do in the final weeks before interview season.
+If you're preparing for interviews and want structured feedback on your responses — including mock interview practice — [reach out to Future Dental Prep](/contact). This is one of the highest-impact things you can do in the final weeks before interview season.
 `,
   },
   {
@@ -4094,7 +4094,7 @@ If you're preparing for interviews and want structured feedback on your response
     coverGradient: "from-violet-600 to-indigo-700",
     coverEmoji: "✍️",
     coverImage: "/images/blog-personal-statement-examples-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Why Most Dental School Personal Statements Fail
 
@@ -4255,9 +4255,9 @@ Where are you going? What kind of dentist do you intend to become, and why does 
 
 ---
 
-## How Dr. Alex Reviews Personal Statements
+## How We Review Personal Statements
 
-At Future Dentist Prep, every personal statement review is done line by line — not with a generic checklist, but with the same lens an admissions committee uses. We look for what's missing (specificity, narrative arc, genuine voice) and what's unnecessary (clichés, summary sentences, filler language).
+At Future Dental Prep, every personal statement review is done line by line — not with a generic checklist, but with the same lens an admissions committee uses. We look for what's missing (specificity, narrative arc, genuine voice) and what's unnecessary (clichés, summary sentences, filler language).
 
 Most applicants need 2–3 rounds of revision to produce a statement that stands out. The goal isn't a perfect statement — it's an honest one that lets the committee see who you actually are.
 
@@ -4288,7 +4288,7 @@ If you can check all six boxes, your statement is ready. If not, go back and loo
     coverGradient: "from-violet-600 to-indigo-600",
     coverEmoji: "🧠",
     coverImage: "/images/blog-dat-pat-guide-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Why PAT Destroys More DAT Scores Than Any Other Section
 
@@ -4577,7 +4577,7 @@ For a complete overview of the entire DAT and how to approach every section, rea
     coverGradient: "from-amber-500 to-violet-700",
     coverEmoji: "⏳",
     coverImage: "/images/blog-dental-waitlist-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## A Waitlist Is Not a Rejection — But It Requires Action
 
@@ -4814,7 +4814,7 @@ If you want personalized support navigating your waitlist strategy — including
     coverGradient: "from-rose-600 to-indigo-700",
     coverEmoji: "📈",
     coverImage: "/images/blog-dental-acceptance-rates-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Your Odds of Getting Into Dental School — The Honest Numbers
 
@@ -5063,7 +5063,7 @@ If you'd like a personalized school list review based on your specific GPA, DAT 
     coverGradient: "from-emerald-500 to-indigo-600",
     coverEmoji: "💰",
     coverImage: "/images/blog-dental-school-cost-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## The Number That Scares Students Away From Dentistry
 
@@ -5365,7 +5365,7 @@ If you want to talk through how to position your application for schools where s
     coverGradient: "from-violet-600 to-sky-600",
     coverEmoji: "🗓️",
     coverImage: "/images/blog-dental-application-timeline-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## When Do Dental School Applications Open?
 
@@ -5700,7 +5700,7 @@ We'll review your current timeline, identify the gaps, and make sure you're not 
     coverGradient: "from-indigo-500 to-emerald-600",
     coverEmoji: "📚",
     coverImage: "/images/blog-dental-prerequisites-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## The Question That Trips Up Every First-Year Pre-Dental Student
 
@@ -5995,7 +5995,7 @@ If you'd like a personalized review of your current coursework and how it maps t
     coverGradient: "from-amber-500 to-indigo-700",
     coverEmoji: "✉️",
     coverImage: "/images/blog-dental-lor-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Why Letters of Recommendation Matter More Than Students Think
 
@@ -6254,7 +6254,7 @@ If you want a personalized review of your planned recommender list and how to fr
     coverGradient: "from-emerald-500 to-indigo-700",
     coverEmoji: "📊",
     coverImage: "/images/blog-dental-school-gpa-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Can I Get Into Dental School With a 3.0 GPA?
 
@@ -6513,7 +6513,7 @@ If you'd like to talk through your specific GPA, DAT score, and application stra
     coverGradient: "from-sky-600 to-indigo-700",
     coverEmoji: "🦷",
     coverImage: "/images/blog-dental-shadowing-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Why Dental Shadowing Is the Most Underestimated Part of Your Application
 
@@ -6755,7 +6755,7 @@ If you'd like personalized guidance on how to position your shadowing experience
     coverGradient: "from-emerald-600 to-indigo-700",
     coverEmoji: "📅",
     coverImage: "/images/blog-dat-study-schedule-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## The #1 Reason Students Score Below Their Potential on the DAT
 
@@ -7081,7 +7081,7 @@ Your target score is achievable. You just needed the right plan.
     coverGradient: "from-indigo-600 to-blue-700",
     coverEmoji: "🎤",
     coverImage: "/images/blog-dental-interview-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Getting a Dental School Interview Is Half the Battle — Winning It Is the Other Half
 
@@ -7408,7 +7408,7 @@ Your interview invitation was earned. Now go close the deal.
     coverGradient: "from-violet-600 to-indigo-700",
     coverEmoji: "🎯",
     coverImage: "/images/blog-dat-tutor-cover.png",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Do You Actually Need a DAT Tutor?
 
@@ -7588,7 +7588,7 @@ A minimum of 22 AA on the actual DAT exam. Ideally, look for tutors with 23+ who
 
 ---
 
-## Why Future Dentist Prep DAT Tutors Are Different
+## Why Future Dental Prep DAT Tutors Are Different
 
 Our DAT tutors are current dental students and dentists from top programs including Penn, Columbia, Harvard, and UCSF — all of whom scored 22+ on the actual DAT and have tutored multiple students to their target scores.
 
@@ -7609,7 +7609,7 @@ Your DAT score is not fixed. The right tutor, the right plan, and 8–12 weeks o
     category: "Admissions Guide",
     coverGradient: "from-indigo-600 to-violet-700",
     coverEmoji: "🎓",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## The Reality of Dental School Admissions
 
@@ -7792,7 +7792,7 @@ If you want personalized guidance on your specific situation, [schedule a free 1
     category: "DAT Prep",
     coverGradient: "from-emerald-500 to-teal-600",
     coverEmoji: "📊",
-    author: DR_ALEX,
+    author: BLOG_AUTHOR,
     content: `
 ## Why Your DAT Score Matters More Than You Think
 

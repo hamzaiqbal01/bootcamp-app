@@ -1,4 +1,4 @@
-# Agent playbook — Future Dentist Prep + Dental School Secondary
+# Agent playbook — Future Dental Prep + Dental School Secondary
 
 Give this file to an agent (this repo **or** the secondary-site repo). Implement only the section that matches the open project. Do not invent a third brand. Do not shut down old domains.
 
@@ -18,7 +18,7 @@ Give this file to an agent (this repo **or** the secondary-site repo). Implement
 | **bootcamp-app** (this file lives here) | `https://futuredentalprep.com` | DAT + admissions blog + consulting. ~95% of organic clicks. |
 | **dental school secondary** (separate codebase) | `https://www.dentalschoolsecondary.com` | Secondary applications + `/database/[school]` pages. Low traffic; seasonal. |
 
-Brand name on FDP: **Future Dentist Prep** (do not rename to Dentist Path).  
+Brand name on FDP: **Future Dental Prep** (do not rename to Dentist Path).  
 Phone was removed from Contact/Footer/privacy — do not add it back.
 
 ---

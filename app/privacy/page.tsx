@@ -4,18 +4,17 @@ import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Future Dentist Prep",
+  title: "Privacy Policy",
   description:
-    "Learn how Future Dentist Prep collects, uses, and protects your personal information when you use our website and services.",
+    "Learn how Future Dental Prep collects, uses, and protects your personal information when you use our website and services.",
   alternates: {
     canonical: "/privacy",
   },
 };
 
 const LAST_UPDATED = "July 23, 2026";
-const SITE_NAME = "Future Dentist Prep";
+const SITE_NAME = "Future Dental Prep";
 const SITE_URL = "https://futuredentalprep.com";
-const CONTACT_EMAIL = "facedocturalex@gmail.com";
 
 export default function PrivacyPage() {
   return (
@@ -219,8 +218,8 @@ export default function PrivacyPage() {
                 <li>Withdraw consent at any time where processing is based on consent</li>
               </ul>
               <p>
-                To exercise any of these rights, please contact us at{" "}
-                <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
+                To exercise any of these rights, please use our{" "}
+                <Link href="/contact">contact form</Link>.
               </p>
 
               <hr className="my-10 border-slate-100" />
@@ -259,10 +258,6 @@ export default function PrivacyPage() {
                 us:
               </p>
               <ul>
-                <li>
-                  <strong>Email:</strong>{" "}
-                  <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
-                </li>
                 <li>
                   <strong>Website:</strong>{" "}
                   <Link href="/contact">Contact form</Link>

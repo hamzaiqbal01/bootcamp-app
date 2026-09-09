@@ -2,6 +2,7 @@
 
 import type { FormEvent } from "react";
 import { useState } from "react";
+import { btn, btnSize } from "@/components/ui/button-styles";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 
 type SubmitState = "idle" | "submitting" | "success" | "error";
@@ -51,7 +52,7 @@ export function ContactSection() {
           description="Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible."
         />
 
-        <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+        <div className="mx-auto max-w-2xl">
           <form
             onSubmit={handleSubmit}
             className="space-y-6 rounded-2xl border border-slate-200 bg-slate-50/50 p-8 shadow-sm"
@@ -129,39 +130,11 @@ export function ContactSection() {
             <button
               type="submit"
               disabled={state === "submitting"}
-              className="w-full rounded-xl bg-brand-600 py-3.5 text-base font-semibold text-white transition hover:bg-brand-700 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto sm:px-10"
+              className={`${btn.primary} ${btnSize.md} w-full sm:w-auto sm:px-10`}
             >
               {state === "submitting" ? "Sending…" : "Send Message"}
             </button>
           </form>
-
-          <div className="flex flex-col gap-4">
-            <div className="flex gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-50">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden>
-                  <path
-                    d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
-                    stroke="#4F46E5"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path d="M22 6L12 13L2 6" stroke="#4F46E5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-              <div>
-                <strong className="text-slate-900">Email</strong>
-                <p className="mt-1">
-                  <a
-                    href="mailto:facedocturalex@gmail.com"
-                    className="text-slate-600 underline-offset-2 transition hover:text-brand-600 hover:underline"
-                  >
-                    facedocturalex@gmail.com
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

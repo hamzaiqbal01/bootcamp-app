@@ -6,7 +6,7 @@ import { ContactSection } from "@/components/landing/ContactSection";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with the Future Dentist Prep team about dental school admissions consulting and DAT tutoring.",
+    "Get in touch with the Future Dental Prep team about dental school admissions consulting and DAT tutoring.",
   alternates: {
     canonical: "/contact",
   },

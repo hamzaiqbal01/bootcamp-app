@@ -11,13 +11,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://futuredentalprep.com"),
   title: {
-    default: "Future Dentist Prep | Dental School Admissions Consulting & DAT Tutoring",
-    template: "%s | Future Dentist Prep",
+    default: "Future Dental Prep | Dental School Admissions Consulting & DAT Tutoring",
+    template: "%s | Future Dental Prep",
   },
   description:
-    "Expert-led dental school admissions consulting and DAT tutoring by Dr. Alexander Takshyn and a team of top dental professionals. Trusted by 10,000+ pre-dental students.",
+    "Expert-led dental school admissions consulting and DAT tutoring from a team of dental professionals and top students. Trusted by 10,000+ pre-dental students.",
   openGraph: {
-    siteName: "Future Dentist Prep",
+    siteName: "Future Dental Prep",
     type: "website",
     locale: "en_US",
   },

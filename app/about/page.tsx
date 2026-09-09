@@ -1,21 +1,20 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
-import { experts } from "@/lib/data/experts";
+import { btn, btnSize } from "@/components/ui/button-styles";
 
 export const metadata: Metadata = {
-  title: "About Us | Future Dentist Prep",
+  title: "About Us",
   description:
-    "Meet Dr. Alexander Takshyn and the Future Dentist Prep team — dental professionals and top students who have helped 10,000+ pre-dental students get accepted to dental school.",
+    "Future Dental Prep helps pre-dental students with DAT tutoring, admissions consulting, and application coaching. Trusted by 10,000+ students.",
   alternates: {
     canonical: "/about",
   },
   openGraph: {
-    title: "About Future Dentist Prep",
+    title: "About Future Dental Prep",
     description:
-      "Meet Dr. Alexander Takshyn and the Future Dentist Prep team — dental professionals and top students helping pre-dental students get accepted.",
+      "Future Dental Prep helps pre-dental students with DAT tutoring, admissions consulting, and application coaching.",
     type: "website",
   },
 };
@@ -28,9 +27,6 @@ const stats = [
 ];
 
 export default function AboutPage() {
-  const drAlex = experts.find((e) => e.id === "alex")!;
-  const team = experts.filter((e) => e.id !== "alex");
-
   return (
     <>
       <Header />
@@ -42,64 +38,35 @@ export default function AboutPage() {
             <div className="absolute -right-20 top-20 h-[400px] w-[400px] rounded-full bg-indigo-200/25 blur-3xl" />
           </div>
           <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid gap-14 lg:grid-cols-[1fr_420px] lg:items-center lg:gap-20">
-              <div>
-                <span className="inline-flex rounded-full bg-violet-100 px-4 py-1.5 text-xs font-semibold tracking-wide text-violet-900 ring-1 ring-violet-200/70">
-                  Our Story
-                </span>
-                <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-[3.25rem] lg:leading-[1.12]">
-                  Built by Dentists,{" "}
-                  <span className="text-brand-600">for Future Dentists</span>
-                </h1>
-                <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">
-                  Future Dentist Prep was founded by{" "}
-                  <strong className="font-semibold text-slate-800">Dr. Alexander Takshyn</strong>{" "}
-                  with one mission: give every pre-dental student the same level of expert guidance
-                  that used to be reserved for the well-connected few.
-                </p>
-                <p className="mt-4 max-w-xl text-lg leading-relaxed text-slate-600">
-                  After navigating dental school admissions as an international applicant,
-                  completing his DMD with a scholarship at the University of Pennsylvania, and
-                  matching at his #1 surgical program, Dr. Takshyn turned his experience into a
-                  platform — helping thousands of students do the same.
-                </p>
-                <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-                  <Link
-                    href="/schedule"
-                    className="inline-flex items-center justify-center rounded-xl bg-brand-600 px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-indigo-500/20 transition hover:bg-brand-700"
-                  >
-                    Schedule a Free Call
-                  </Link>
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-8 py-3.5 text-base font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50"
-                  >
-                    Get in Touch
-                  </Link>
-                </div>
-              </div>
-
-              {/* Dr. Alex photo card */}
-              <div className="relative mx-auto w-full max-w-sm lg:mx-0">
-                <div className="overflow-hidden rounded-3xl bg-white shadow-xl shadow-slate-200/80 ring-1 ring-slate-100">
-                  <Image
-                    src="/images/aleex.png"
-                    alt="Dr. Alexander Takshyn, DMD — Founder of Future Dentist Prep"
-                    width={420}
-                    height={500}
-                    className="w-full object-cover object-top"
-                    priority
-                  />
-                  <div className="p-6">
-                    <p className="text-lg font-bold text-slate-900">Dr. Alexander Takshyn</p>
-                    <p className="mt-1 text-sm text-brand-600">DMD · Founder & Lead Consultant</p>
-                    <p className="mt-3 text-sm leading-relaxed text-slate-500">
-                      University of Pennsylvania School of Dental Medicine · Oral & Maxillofacial
-                      Surgery, Nova Southeastern University
-                    </p>
-                  </div>
-                </div>
-                <div className="absolute -bottom-5 -right-5 -z-10 h-full w-full rounded-3xl bg-gradient-to-br from-brand-500/20 to-violet-500/20" />
+            <div className="max-w-3xl">
+              <span className="inline-flex rounded-full bg-violet-100 px-4 py-1.5 text-xs font-semibold tracking-wide text-violet-900 ring-1 ring-violet-200/70">
+                Our Story
+              </span>
+              <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-[3.25rem] lg:leading-[1.12]">
+                Built by Dentists,{" "}
+                <span className="text-brand-600">for Future Dentists</span>
+              </h1>
+              <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">
+                Future Dental Prep exists to give every pre-dental student the same level of expert
+                guidance that used to be reserved for the well-connected few.
+              </p>
+              <p className="mt-4 max-w-xl text-lg leading-relaxed text-slate-600">
+                Our consultants and tutors have been through dental school admissions themselves —
+                and they use that experience to help thousands of students do the same.
+              </p>
+              <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+                <Link
+                  href="/schedule"
+                  className={`${btn.primary} ${btnSize.lg}`}
+                >
+                  Schedule a Free Call
+                </Link>
+                <Link
+                  href="/contact"
+                  className={`${btn.outline} ${btnSize.lg}`}
+                >
+                  Get in Touch
+                </Link>
               </div>
             </div>
           </div>
@@ -134,7 +101,7 @@ export default function AboutPage() {
                 converts.
               </p>
               <p>
-                We exist to change that. Every student who works with Future Dentist Prep gets
+                We exist to change that. Every student who works with Future Dental Prep gets
                 one-on-one access to dental professionals who have been through the process
                 themselves — not generic advisors, but current dental students and practicing
                 dentists from Penn, Columbia, Yale, Harvard, UCSF, and beyond.
@@ -144,47 +111,6 @@ export default function AboutPage() {
                 full-cycle consulting, we meet you where you are — and take you where you want to
                 go.
               </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Team */}
-        <section className="bg-white py-20 sm:py-28">
-          <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto mb-3 h-1 w-12 rounded-full bg-brand-600" />
-            <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-              Meet the Team
-            </h2>
-            <p className="mt-4 max-w-2xl text-lg text-slate-600">
-              Our consultants and tutors are current dental students and dentists from top programs
-              across the country.
-            </p>
-
-            <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              {team.map((expert) => (
-                <div
-                  key={expert.id}
-                  className="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition hover:shadow-md hover:border-brand-100"
-                >
-                  <div className="relative h-52 overflow-hidden bg-slate-100">
-                    <Image
-                      src={expert.imageUrl}
-                      alt={expert.name}
-                      fill
-                      className="object-cover object-top transition duration-300 group-hover:scale-105"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    />
-                  </div>
-                  <div className="p-5">
-                    <p className="font-semibold text-slate-900">{expert.name}</p>
-                    <p className="mt-1 text-sm text-brand-600">{expert.role}</p>
-                    <p
-                      className="mt-3 line-clamp-3 text-sm leading-relaxed text-slate-500"
-                      dangerouslySetInnerHTML={{ __html: expert.bio.split("<br")[0] }}
-                    />
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </section>
@@ -202,13 +128,13 @@ export default function AboutPage() {
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
                 href="/schedule"
-                className="inline-flex items-center justify-center rounded-xl bg-white px-8 py-3.5 text-base font-semibold text-brand-700 shadow-lg transition hover:bg-indigo-50"
+                className={`${btn.inverse} ${btnSize.lg}`}
               >
                 Schedule a Free Call
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-xl border border-white/30 bg-white/10 px-8 py-3.5 text-base font-semibold text-white backdrop-blur-sm transition hover:bg-white/20"
+                className={`${btn.ghost} ${btnSize.lg}`}
               >
                 Contact Us
               </Link>
