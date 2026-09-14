@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 import { blogPosts, getAllCategories, slugifyCategory } from "@/lib/data/blog";
+import { schools } from "@/lib/data/secondaries/schools";
+import { getSchoolDetail } from "@/lib/data/secondaries/school-details";
 
 const BASE = "https://futuredentalprep.com";
 
@@ -18,7 +20,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     { url: `${BASE}/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
+    {
+      url: `${BASE}/become-a-tutor`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.3,
+    },
+    {
+      url: `${BASE}/secondaries`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
   ];
+
+  const secondaryRoutes: MetadataRoute.Sitemap = schools
+    .filter((school) => (getSchoolDetail(school.slug)?.questions.length ?? 0) > 0)
+    .map((school) => ({
+      url: `${BASE}/secondaries/${school.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    }));
 
   const categoryRoutes: MetadataRoute.Sitemap = getAllCategories().map((category) => ({
     url: `${BASE}/blog/category/${slugifyCategory(category)}`,
@@ -34,5 +57,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...categoryRoutes, ...blogRoutes];
+  return [...staticRoutes, ...secondaryRoutes, ...categoryRoutes, ...blogRoutes];
 }

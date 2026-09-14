@@ -143,6 +143,13 @@ export function PrivateDatTutoring() {
           >
             Send us a message
           </Link>
+          <p className="mt-8 text-sm text-slate-500">
+            Dental student with a 20+ DAT? We&apos;re adding a few tutors this cycle.{" "}
+            <Link href="/become-a-tutor" className="underline underline-offset-2 hover:text-slate-700">
+              Apply to tutor
+            </Link>
+            .
+          </p>
         </div>
       </section>
     </>
