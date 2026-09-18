@@ -7,16 +7,36 @@ export type TutoringPackage = {
   blurb: string;
   cta: string;
   popular?: boolean;
+  badge?: string;
+  sessions?: number;
+  extras?: string[];
 };
 
 export const privateDatTutoringPackages: TutoringPackage[] = [
+  {
+    hours: 4,
+    title: "4-Hour Starter",
+    priceWas: 599,
+    priceNow: 500,
+    save: 99,
+    blurb:
+      "Three sessions over about two weeks — try tutoring or lock in one weak section, with study resources included.",
+    cta: "Get the 4-Hour Starter",
+    badge: "Starter",
+    sessions: 3,
+    extras: [
+      "3 live sessions (4 hours total)",
+      "DAT study resources and practice drills",
+      "Section-focus plan for your weakest area",
+    ],
+  },
   {
     hours: 10,
     title: "10 Hours of Tutoring",
     priceWas: 2199,
     priceNow: 1999,
     save: 200,
-    blurb: "Great for students who want to try out tutoring or need help in one subject.",
+    blurb: "Great for students who need focused help in one subject after they’ve already started prep.",
     cta: "Get 10 Hours of Tutoring",
   },
   {
@@ -43,18 +63,24 @@ export const privateDatTutoringPackages: TutoringPackage[] = [
 const included = [
   "10 Hours of Private Tutoring",
   "Personalized Study Sessions",
-  "Tutors With 99th Percentile Scores",
   "Review of Your Study Schedule",
 ] as const;
 
-function includedFor(hours: number) {
-  return included.map((line) =>
+function includedFor(hours: number, extras: string[] = []) {
+  const base = included.map((line) =>
     line.replace(/^\d+ Hours/, `${hours} Hours`),
   );
+  const withoutDupHours = extras.some((extra) => /hours|sessions/i.test(extra))
+    ? base.filter((line) => !/^\d+ Hours of Private Tutoring$/.test(line))
+    : base;
+  return [...withoutDupHours, ...extras];
 }
 
-export function getPackageWhatsIncluded(hours: number) {
-  return includedFor(hours);
+export function getPackageWhatsIncluded(pkg: TutoringPackage | number) {
+  if (typeof pkg === "number") {
+    return includedFor(pkg);
+  }
+  return includedFor(pkg.hours, pkg.extras);
 }
 
 export const privateDatTutoringFaq = [
@@ -66,7 +92,7 @@ export const privateDatTutoringFaq = [
   {
     question: "What happens after I sign up for tutoring?",
     answer:
-      "We will get in contact with you and match you with an expert educator. The expert educator will call you within the following day. The purpose of the first phone call with your expert educator is to get comfortable with your personality and situation, introduce you to the technology we use for our tutoring sessions, and set expectations. Your expert educator will ask you questions about your background and your DAT prep, then begin assembling a study schedule that will be shared with you during your first tutoring session. Each tutoring session lasts 2 hours. Most students meet with their tutor once a week at a time that works for both you and the tutor.",
+      "We will get in contact with you and match you with an expert educator. The expert educator will call you within the following day. The purpose of the first phone call with your expert educator is to get comfortable with your personality and situation, introduce you to the technology we use for our tutoring sessions, and set expectations. Your expert educator will ask you questions about your background and your DAT prep, then begin assembling a study schedule that will be shared with you during your first tutoring session. Standard packages use 2-hour sessions, usually once a week. The 4-hour starter is three shorter sessions (4 hours total) over about two weeks, plus study resources.",
   },
   {
     question: "What if I realize tutoring isn't right for me?",

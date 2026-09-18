@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     absolute: "DAT Tutoring | Private 1-on-1 Prep",
   },
   description:
-    "Looking for DAT tutoring? Private 1-on-1 DAT tutoring from 99th percentile tutors — study plans, weak-section drills, packages from 10–20 hours.",
+    "Looking for DAT tutoring? Private 1-on-1 DAT tutoring from 99th percentile tutors — study plans, weak-section drills, and packages from a $500 4-hour starter through 20 hours.",
   alternates: {
     canonical: "/private-dat-tutoring",
   },

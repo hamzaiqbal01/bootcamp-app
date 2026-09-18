@@ -29,7 +29,7 @@ export function PrivateDatTutoring() {
 
       <section className="border-b border-slate-100 bg-white py-16 sm:py-20" id="packages">
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-8 lg:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
             {privateDatTutoringPackages.map((pkg) => (
               <article
                 key={pkg.hours}
@@ -39,14 +39,19 @@ export function PrivateDatTutoring() {
                     : "border-slate-200 bg-white"
                 }`}
               >
-                {pkg.popular ? (
+                {pkg.popular || pkg.badge ? (
                   <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-brand-600 px-3 py-1 text-xs font-semibold text-white shadow">
-                    Most Popular
+                    {pkg.popular ? "Most Popular" : pkg.badge}
                   </span>
                 ) : null}
                 <h2 className="text-lg font-bold text-slate-900">
                   <span className="text-brand-600">{pkg.hours} Hours</span> of Tutoring
                 </h2>
+                {pkg.sessions ? (
+                  <p className="mt-1 text-sm font-medium text-slate-500">
+                    {pkg.sessions} sessions · ~2 weeks
+                  </p>
+                ) : null}
                 <div className="mt-4 flex flex-wrap items-baseline gap-2">
                   <span className="text-lg text-slate-400 line-through">
                     ${pkg.priceWas.toLocaleString("en-US")}
@@ -70,7 +75,7 @@ export function PrivateDatTutoring() {
                 </a>
                 <p className="mt-8 text-sm font-semibold text-slate-900">What is included:</p>
                 <ul className="mt-3 space-y-2 text-sm text-slate-600">
-                  {getPackageWhatsIncluded(pkg.hours).map((line) => (
+                  {getPackageWhatsIncluded(pkg).map((line) => (
                     <li key={line} className="flex gap-2">
                       <span
                         className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500"
