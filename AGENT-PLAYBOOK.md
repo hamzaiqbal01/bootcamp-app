@@ -8,14 +8,15 @@ Give this file to an agent (this repo **or** the secondary-site repo). Implement
 - `sc-domain:futuredentistprep.com` (old; 301 + GSC Change of Address — do not delete)
 - `sc-domain:dentalschoolsecondary.com` (satellite: secondary essays / school database)
 - Also on the same account (ignore unless asked): `facedoctoralex.com`, `toolverse.space`
+  dDA
 
 ---
 
 ## 0. Which repo is this?
 
-| Repo | Live site | Role |
-|------|-----------|------|
-| **bootcamp-app** (this file lives here) | `https://futuredentalprep.com` | DAT + admissions blog + consulting. ~95% of organic clicks. |
+| Repo                                            | Live site                               | Role                                                                        |
+| ----------------------------------------------- | --------------------------------------- | --------------------------------------------------------------------------- |
+| **bootcamp-app** (this file lives here)         | `https://futuredentalprep.com`          | DAT + admissions blog + consulting. ~95% of organic clicks.                 |
 | **dental school secondary** (separate codebase) | `https://www.dentalschoolsecondary.com` | Secondary applications + `/database/[school]` pages. Low traffic; seasonal. |
 
 Brand name on FDP: **Future Dental Prep** (do not rename to Dentist Path).  
@@ -133,12 +134,12 @@ Goal: same impressions, more clicks. Target ~500–800 clicks/week before chasin
 
 Work in `lib/data/blog.ts` titles/descriptions/H1/lead + matching FAQ in `app/blog/[slug]/page.tsx`. Keep slugs **unchanged**.
 
-| Priority | Slug | GSC problem |
-|----------|------|-------------|
-| 1 | `aadsas-bcp-gpa-explained` | Science GPA + math / BCP — high impr, ~0.10% CTR, pos ~5 |
-| 2 | `dat-scoring-scale-200-600` + `dat-score-guide` | “DAT conversion chart”, “420/460 DAT to old score” — high impr, ~0% CTR |
-| 3 | `dental-school-gpa-requirements` | “can I get in with 3.0 GPA” |
-| 4 | `dental-school-application-timeline` / Fall 2027 | timeline queries, CTR &lt; 1% |
+| Priority | Slug                                             | GSC problem                                                             |
+| -------- | ------------------------------------------------ | ----------------------------------------------------------------------- |
+| 1        | `aadsas-bcp-gpa-explained`                       | Science GPA + math / BCP — high impr, ~0.10% CTR, pos ~5                |
+| 2        | `dat-scoring-scale-200-600` + `dat-score-guide`  | “DAT conversion chart”, “420/460 DAT to old score” — high impr, ~0% CTR |
+| 3        | `dental-school-gpa-requirements`                 | “can I get in with 3.0 GPA”                                             |
+| 4        | `dental-school-application-timeline` / Fall 2027 | timeline queries, CTR &lt; 1%                                           |
 
 After 14 days: `gsc:pull` new domain (and old until empty). If CTR did not move, iterate title — do not change URL.
 
@@ -168,16 +169,16 @@ Backlinks already drafted in past chats (GBP, Bing, LinkedIn, YouTube, etc.). Ra
 
 ### Code map (FDP)
 
-| Thing | Where |
-|-------|--------|
-| Blog posts | `lib/data/blog.ts` |
-| Post page + FAQ JSON-LD + ad slots | `app/blog/[slug]/page.tsx` |
-| Canonical host | `app/layout.tsx` `metadataBase`, `app/sitemap.ts`, `app/robots.ts` |
-| Old → new 301 | `vercel.json` |
-| Ads | `components/ads/BlogAdSense.tsx`, `BlogAdSenseLoader.tsx` |
-| ads.txt | `app/ads.txt/route.ts` |
-| Contact emails | `lib/contact.ts` |
-| GSC | `scripts/gsc/*` |
+| Thing                              | Where                                                              |
+| ---------------------------------- | ------------------------------------------------------------------ |
+| Blog posts                         | `lib/data/blog.ts`                                                 |
+| Post page + FAQ JSON-LD + ad slots | `app/blog/[slug]/page.tsx`                                         |
+| Canonical host                     | `app/layout.tsx` `metadataBase`, `app/sitemap.ts`, `app/robots.ts` |
+| Old → new 301                      | `vercel.json`                                                      |
+| Ads                                | `components/ads/BlogAdSense.tsx`, `BlogAdSenseLoader.tsx`          |
+| ads.txt                            | `app/ads.txt/route.ts`                                             |
+| Contact emails                     | `lib/contact.ts`                                                   |
+| GSC                                | `scripts/gsc/*`                                                    |
 
 After code changes in this repo, if `graphify` is on PATH: `graphify update .` (AST only). If the command is missing, skip.
 
