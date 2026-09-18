@@ -6,7 +6,7 @@ Give this file to an agent (this repo **or** the secondary-site repo). Implement
 
 - `sc-domain:futuredentalprep.com` (canonical site after migrate)
 - `sc-domain:futuredentistprep.com` (old; 301 + GSC Change of Address — do not delete)
-- `sc-domain:dentalschoolsecondary.com` (satellite: secondary essays / school database)
+- `sc-domain:dentalschoolsecondary.com` (satellite: secondary essays / school database)d
 - Also on the same account (ignore unless asked): `facedoctoralex.com`, `toolverse.space`
   dDA
 
