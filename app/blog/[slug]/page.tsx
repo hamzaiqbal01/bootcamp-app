@@ -329,6 +329,14 @@ export default async function BlogPostPage({ params }: Props) {
       mainEntity: [
         {
           "@type": "Question",
+          name: "Does AADSAS Science GPA include statistics?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. AADSAS Science GPA usually includes statistics and math. Those courses do not count toward the narrower BCP GPA (Biology, Chemistry, Physics, and Biochemistry).",
+          },
+        },
+        {
+          "@type": "Question",
           name: "Does AADSAS Science GPA include math and statistics?",
           acceptedAnswer: {
             "@type": "Answer",

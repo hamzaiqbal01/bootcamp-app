@@ -383,18 +383,18 @@ Want a school-list audit (Casper + DAT + FAP)? [Schedule a free call](/schedule)
 
 **Need a DAT conversion chart?** Use this Academic Average table. The DAT has been scored **200–600** (10-point steps) since **March 1, 2025**. The old **1–30** scale is no longer how new exams are scored.
 
-**Quick conversions people search:**
+**420 DAT = old 20 AA. 460 DAT = old 22 AA.**
 
 | New AA (200–600) | Old AA (approx.) | Meaning |
 |---|---|---|
+| **370** | 17 | Near average |
 | **390** | 18 | Common floor language |
 | **410** | 19 | Solid / workable |
 | **420** | **20** | Competitive target |
 | **440** | 21 | Strong |
 | **460** | **22** | Highly competitive |
 | **470** | 23 | Top-tier range |
-
-**420 DAT to old score = about 20 AA. 460 DAT to old score = about 22 AA.**
+| **490** | 24 | Elite range |
 
 Full old-to-new table is below. Always verify on official ADA concordance materials.
 
@@ -986,9 +986,9 @@ Want a timeline built around *your* GPA, DAT date, and school list? [Schedule a 
   },
   {
     slug: "aadsas-bcp-gpa-explained",
-    title: "Does AADSAS Science GPA Include Math? Yes",
+    title: "Does AADSAS Science GPA Include Statistics?",
     description:
-      "Yes — AADSAS Science GPA usually includes math and statistics. BCP GPA does not. A- = 3.67 (not 3.7). See BCP vs Science GPA table.",
+      "Yes — AADSAS Science GPA usually includes statistics and math. BCP GPA does not. A- = 3.67, not 3.7. Yes/no table below.",
     publishedAt: "2026-07-28",
     readingTime: "11 min read",
     category: "Application Tips",
@@ -997,23 +997,19 @@ Want a timeline built around *your* GPA, DAT date, and school list? [Schedule a 
     coverImage: "/images/blog-dental-school-gpa-cover.png",
     author: BLOG_AUTHOR,
     content: `
-## Quick Answers Students Search For
+## Does AADSAS Science GPA Include Statistics?
 
-**Does AADSAS Science GPA include math / statistics?**  
-**Yes.** Math and statistics usually count in **Science GPA**. They do **not** count in **BCP GPA**.
+**Yes.** AADSAS **Science GPA** usually includes **statistics and math**. **BCP GPA does not.**
 
-**Does math count toward AADSAS BCP GPA?**  
-**No.** BCP is Biology, Chemistry, Physics, and Biochemistry only.
-
-**ADEA AADSAS numeric grade for A-: 3.7 or 3.67?**  
-**A- = 3.67** — not 3.7. That is the quality-point value AADSAS uses.
-
-| Question | Short answer |
+| Question | Yes / No |
 |---|---|
-| Math in Science GPA? | **Yes (usually)** |
+| Statistics in Science GPA? | **Yes** |
+| Math in Science GPA? | **Yes** |
+| Statistics in BCP GPA? | **No** |
 | Math in BCP GPA? | **No** |
-| A- on AADSAS = 3.7 or 3.67? | **3.67** |
-| BCP vs Science GPA? | Science is broader; BCP is Bio/Chem/Physics/Biochem only |
+| A- = 3.7 on AADSAS? | **No — A- = 3.67** |
+
+BCP is Biology, Chemistry, Physics, and Biochemistry only. Science GPA is the broader bucket.
 
 For *can I get in with a 3.0?* use [dental school GPA requirements](/blog/dental-school-gpa-requirements). This page is the **AADSAS calculation** guide.
 
@@ -1172,6 +1168,9 @@ A below-average BCP is not an automatic rejection — but it raises the bar on [
 
 **What does BCP stand for on AADSAS?**  
 Biology, Chemistry, and Physics — with Biochemistry included in AADSAS BCP reporting.
+
+**Does AADSAS Science GPA include statistics?**  
+**Yes.** Statistics (and math) typically count toward **Science GPA**, not the narrower **BCP GPA**.
 
 **Does AADSAS Science GPA include math and statistics?**  
 **Usually yes.** Math/statistics typically count toward **Science GPA**, not the narrower **BCP GPA**.
@@ -6258,7 +6257,7 @@ If you want a personalized review of your planned recommender list and how to fr
     content: `
 ## Can I Get Into Dental School With a 3.0 GPA?
 
-**Yes — you can get into dental school with a 3.0 GPA.**
+**Yes — you can get into dental school with a 3.0 GPA** if you add DAT **~21–22+ (≈440–460 AA)**, an upward science trend, and a realistic school list.
 
 It is not an automatic rejection. A **3.0 overall** is below the national accepted average (~**3.55** overall / ~**3.46** science), so you need clear compensating strengths — not an “average everything else” application.
 
@@ -6467,19 +6466,21 @@ The 10th percentile GPA tells you the lowest GPA that still made it through in a
 
 ---
 
-## Frequently Asked Questions
+## FAQ: Can I Get Into Dental School With a 3.0 GPA?
 
-**What is the minimum GPA to apply to dental school?**
+**Yes.** A **3.0 overall GPA** is not an automatic rejection. Pair it with DAT **~21–22+ (≈440–460 AA)**, an upward science-grade trend, 100–150+ shadowing hours, and a mid-tier / access-mission school list.
+
+### What is the minimum GPA to apply to dental school?
 Most dental schools do not publish a hard minimum GPA — they review applications holistically. In practice, applicants with overall GPAs below 2.75 rarely receive secondary invitations at accredited U.S. programs. A 3.0 is a more realistic floor for most programs, with exceptions at schools with access missions or for applicants with extraordinary compensating factors.
 
-**Does dental school look at freshman year grades?**
+### Does dental school look at freshman year grades?
 Yes. All undergraduate grades appear on your AADSAS transcript. However, if your freshman grades were low and your subsequent performance was significantly stronger, that upward trend is a meaningful positive signal. Schools can see your grade trajectory semester by semester.
 
-**Is a 3.5 GPA good enough for dental school?**
+### Is a 3.5 GPA good enough for dental school?
 A 3.5 overall GPA is competitive at the majority of accredited U.S. dental schools. Paired with a 20+ DAT, strong clinical experience, and a well-prepared application, a 3.5 is a genuinely viable profile for many programs — including some competitive ones. It's below the average for top-tier programs but above the median for a large number of accredited schools.
 
-**Can I get into dental school with a 3.0 GPA?**
-Yes — see the answer-first section at the top of this guide. A **3.0 overall GPA** is not an automatic rejection, but it must be offset deliberately with DAT strength, trend, experiences, and a realistic school list.
+### Can I get into dental school with a 3.0 GPA?
+Yes — see the answer at the top of this section. A **3.0 overall GPA** is not an automatic rejection, but it must be offset deliberately with DAT strength, trend, experiences, and a realistic school list.
 
 *Last reviewed: August 5, 2026.*
 
@@ -7786,7 +7787,7 @@ If you want personalized guidance on your specific situation, [schedule a free 1
     slug: "dat-score-guide",
     title: "DAT Score Chart 2026: 420 AA = Old 20",
     description:
-      "DAT score chart for 2026: ~420 AA (old 20) is the competitive floor; ~460 AA ≈ old 22. School-tier averages plus the conversion chart.",
+      "420 DAT = old 20. 460 DAT = old 22. 2026 score chart plus the full old↔new conversion table.",
     publishedAt: "2026-04-28",
     readingTime: "9 min read",
     category: "DAT Prep",
@@ -7794,11 +7795,26 @@ If you want personalized guidance on your specific situation, [schedule a free 1
     coverEmoji: "📊",
     author: BLOG_AUTHOR,
     content: `
+## DAT Conversion Chart: 420 = Old 20
+
+**420 DAT = old 20 AA. 460 DAT = old 22 AA.**
+
+| New AA (200–600) | Old AA (approx.) |
+|---|---|
+| 370 | 17 |
+| 390 | 18 |
+| 410 | 19 |
+| **420** | **20** |
+| 440 | 21 |
+| **460** | **22** |
+| 470 | 23 |
+| 490 | 24 |
+
+Full table, percentiles, and AADSAS notes: [DAT conversion chart: 420 AA = old 20](/blog/dat-scoring-scale-200-600).
+
 ## Why Your DAT Score Matters More Than You Think
 
 **Quick answer:** In 2026, treat **~420 Academic Average** as the common competitive floor (**≈ old 20**). Selective programs often look closer to **~460 AA** (**≈ old 22**).
-
-Need the full **DAT conversion chart** (420, 440, 460 → old scores)? Use [DAT conversion chart: 420 AA = old 20](/blog/dat-scoring-scale-200-600).
 
 The DAT (Dental Admission Test) is one of the two most gatekept numbers in dental school admissions — the other being your GPA. While your personal statement shows who you are, your DAT score proves to admissions committees that you can handle the academic rigor of dental school.
 
