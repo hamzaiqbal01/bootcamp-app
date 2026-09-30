@@ -26,27 +26,27 @@ export const ratingBars: BarDatum[] = [
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "The personal statement express was a lifesaver!!! I wasn't even going to apply this application cycle; however, with a last minute change of plans, I found myself scrambling to get everything finished. I had just written my personal statement, and was about to submit my application, and I was able to get feedback just a few hours after I sent it. The advice was very thorough and helpful! I actually talked with a dental school admissions committee on the phone to receive application feedback, and they said I had one of the best personal statements they had ever seen. Thank you DAT Bootcamp!!!",
+      "The personal statement express was a lifesaver!!! I wasn't even going to apply this application cycle; however, with a last minute change of plans, I found myself scrambling to get everything finished. I had just written my personal statement, and was about to submit my application, and I was able to get feedback just a few hours after I sent it. The advice was very thorough and helpful! I actually talked with a dental school admissions committee on the phone to receive application feedback, and they said I had one of the best personal statements they had ever seen. Thank you Future Dental Prep!!!",
     author: "Julia R.",
   },
   {
     quote:
-      "I used the Personal Statement Express Overview that is offered by DAT Bootcamp because I was finished with writing my personal statement, but I couldn't find the \"perfect\" final draft. I wanted an honest opinion from someone who didn't know me. Using this service was a wonderful experience! My assigned expert contacted me through email and thoroughly reviewed my personal statement within a day. The review included an overview of each paragraph with comments on the content, ways to improve the structure of the paper and grammatical corrections. In addition, my expert rated my paper out of 10 and wrote a summary of how the paper was put together and his thoughts on enhancement. The courteous feedback and timeliness of service was exactly what I needed to feel confident in my personal statement. It helped me to take what I wrote and make it into a strong, well-structured personal statement that I loved.",
+      "I used the Personal Statement Express Overview that is offered by Future Dental Prep because I was finished with writing my personal statement, but I couldn't find the \"perfect\" final draft. I wanted an honest opinion from someone who didn't know me. Using this service was a wonderful experience! My assigned expert contacted me through email and thoroughly reviewed my personal statement within a day. The review included an overview of each paragraph with comments on the content, ways to improve the structure of the paper and grammatical corrections. In addition, my expert rated my paper out of 10 and wrote a summary of how the paper was put together and his thoughts on enhancement. The courteous feedback and timeliness of service was exactly what I needed to feel confident in my personal statement. It helped me to take what I wrote and make it into a strong, well-structured personal statement that I loved.",
     author: "Elisa N.",
   },
   {
     quote:
-      "My experience with DAT Bootcamp admission was great. There was a great communication which allowed making the phone call appointment very easy. The phone call itself was very helpful for me. Before making the phone call, I was very unsure of where I stood regarding which schools I have a chance in being admitted but Bootcamp.com made it very clear for me. He carefully answered all the questions I had and even allowed me to ask questions after the session. Now I feel confident regarding what school I will be applying to.",
+      "My experience with Future Dental Prep admissions was great. There was a great communication which allowed making the phone call appointment very easy. The phone call itself was very helpful for me. Before making the phone call, I was very unsure of where I stood regarding which schools I have a chance in being admitted, but my consultant made it very clear for me. He carefully answered all the questions I had and even allowed me to ask questions after the session. Now I feel confident regarding what school I will be applying to.",
     author: "Emily P.",
   },
   {
     quote:
-      "My personal experience with DAT Bootcamp service has been outstanding. Bootcamp.com was very responsive and helpful throughout the process of completing my personal statement. I would highly recommend this service to anyone wanting to craft an immaculate personal statement.",
+      "My personal experience with Future Dental Prep has been outstanding. My consultant was very responsive and helpful throughout the process of completing my personal statement. I would highly recommend this service to anyone wanting to craft an immaculate personal statement.",
     author: "Chris J.",
   },
   {
     quote:
-      "Bootcamp.com is excellent. Always helpful, always available to answer questions. Bootcamp.com helped me a lot in writing my personal statement in a way I could never think. Additionally, Bootcamp.com helped me find the schools that would fit with my academic grades. I will always be grateful for [Team Bootcamp's] help.",
+      "Future Dental Prep is excellent. Always helpful, always available to answer questions. The team helped me a lot in writing my personal statement in a way I could never think. Additionally, they helped me find the schools that would fit with my academic grades. I will always be grateful for their help.",
     author: "Roger M.",
   },
   {
@@ -56,17 +56,17 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "I loved my experience. Bootcamp.com gave me a call and we talked about the personal statement and we had a mini game plan on how to proceed, and Bootcamp.com quickly started a google doc so we could both see my results. Bootcamp.com would revise almost everyday and warn me if something didn't sound good. I loved [Team Bootcamp's] honest opinions and I ended up with a killer PS that we both liked. It got me into 9 top dental schools with scholarships at most of them!",
+      "I loved my experience. My consultant gave me a call and we talked about the personal statement and we had a mini game plan on how to proceed, and they quickly started a google doc so we could both see my results. They would revise almost everyday and warn me if something didn't sound good. I loved the team's honest opinions and I ended up with a killer PS that we both liked. It got me into 9 top dental schools with scholarships at most of them!",
     author: "Monique M.",
   },
   {
     quote:
-      "It's the best resource. I have to say a huge thank you to Bootcamp.com for all of his support. Bootcamp.com made the process of applying to dental school so much better and much more professional for me. I greatly appreciate the DAT Bootcamp team for their help. You guys are the BEST.",
+      "It's the best resource. I have to say a huge thank you to my consultant for all of his support. Future Dental Prep made the process of applying to dental school so much better and much more professional for me. I greatly appreciate the team for their help. You guys are the BEST.",
     author: "Ali T.",
   },
   {
     quote:
-      "I am thrilled with the experience that I had with DAT Bootcamp. It not only helped me with the actual DAT tremendously, but Bootcamp.com was super helpful and prompt at answering and guiding me through the entire application process. I'm extremely happy and grateful for all the help from you guys. Without you guys I wouldn't have been accepted into my dream school.",
+      "I am thrilled with the experience that I had with Future Dental Prep. It not only helped me with the actual DAT tremendously, but my consultant was super helpful and prompt at answering and guiding me through the entire application process. I'm extremely happy and grateful for all the help from you guys. Without you guys I wouldn't have been accepted into my dream school.",
     author: "Jason L.",
   },
   {
@@ -76,17 +76,17 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "I really liked the admission services from DAT bootcamp. Bootcamp.com was quick to respond and even would help me proofread and give me updates about the progress. My essay turned better because of the help that I got!",
+      "I really liked the admission services from Future Dental Prep. My consultant was quick to respond and even would help me proofread and give me updates about the progress. My essay turned better because of the help that I got!",
     author: "Surya P.",
   },
   {
     quote:
-      "This bootcamp service helped my application stand out. It helped me land multiple interviews at competitive schools. I would recommend to a friend!",
+      "This Future Dental Prep service helped my application stand out. It helped me land multiple interviews at competitive schools. I would recommend to a friend!",
     author: "Shah P.",
   },
   {
     quote:
-      "DAT Bootcamp Admission Services helped me a lot, especially with my experience review. I had a hard time explaining what I did in each of my experiences, but with [Team Bootcamp's] help I was able to write concisely and to the point. The communication was fast and my whole experiences were edited in less than a few days.",
+      "Future Dental Prep admissions helped me a lot, especially with my experience review. I had a hard time explaining what I did in each of my experiences, but with the team's help I was able to write concisely and to the point. The communication was fast and my whole experiences were edited in less than a few days.",
     author: "Sahba M.",
   },
   {

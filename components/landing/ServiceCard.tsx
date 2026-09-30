@@ -1,6 +1,6 @@
+import Link from "next/link";
 import { btn, btnSize } from "@/components/ui/button-styles";
 import type { IncludeEntry, ServiceBadge, ServicePackage } from "@/lib/data/services";
-import { ADMISSION_SERVICES_TYPEFORM } from "@/lib/external-links";
 
 function badgeStyles(badge: ServiceBadge, featured: boolean): string {
   if (featured) {
@@ -225,17 +225,15 @@ export function ServiceCard({ pkg }: { pkg: ServicePackage }) {
       </div>
 
       <div className="px-7 pb-8 sm:px-9">
-        <a
-          href={ADMISSION_SERVICES_TYPEFORM}
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href="/contact"
           className={`w-full ${btnSize.md} ${ctaWhite || isFeatured ? btn.inverse : btn.outline}`}
         >
           {pkg.cta}
           <span className="ml-2 text-sm" aria-hidden>
             →
           </span>
-        </a>
+        </Link>
       </div>
     </article>
   );

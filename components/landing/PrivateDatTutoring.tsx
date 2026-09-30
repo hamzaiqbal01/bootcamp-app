@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { btn, btnSize } from "@/components/ui/button-styles";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { TUTORING_SERVICES_TYPEFORM } from "@/lib/external-links";
 import {
   getPackageWhatsIncluded,
   privateDatTutoringFaq,
@@ -65,14 +64,12 @@ export function PrivateDatTutoring() {
                   Save ${pkg.save} Instantly
                 </p>
                 <p className="mt-4 text-sm leading-relaxed text-slate-600">{pkg.blurb}</p>
-                <a
-                  href={TUTORING_SERVICES_TYPEFORM}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/contact"
                   className={`mt-6 w-full ${btn.primary} ${btnSize.sm}`}
                 >
                   {pkg.cta}
-                </a>
+                </Link>
                 <p className="mt-8 text-sm font-semibold text-slate-900">What is included:</p>
                 <ul className="mt-3 space-y-2 text-sm text-slate-600">
                   {getPackageWhatsIncluded(pkg).map((line) => (
