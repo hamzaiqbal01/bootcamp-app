@@ -8,9 +8,11 @@ export function proxy(request: NextRequest) {
 
   const { pathname } = request.nextUrl;
 
-  // Keep the maintenance page itself + static assets reachable
+  // Keep the maintenance page itself, the admin panel + static assets reachable
   if (
     pathname === "/maintenance" ||
+    pathname === "/admin" ||
+    pathname.startsWith("/admin/") ||
     pathname.startsWith("/_next") ||
     pathname.startsWith("/images") ||
     pathname === "/favicon.ico" ||

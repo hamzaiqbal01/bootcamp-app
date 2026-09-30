@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { saveContactToSheetDb, sendContactNotificationEmail } from "@/lib/contact";
+import { saveLeadFromForm } from "@/lib/leads/server";
 import { parseTutorApplyPayload, tutorApplyToContact } from "@/lib/tutor-apply";
 
 export async function POST(request: Request) {
@@ -18,10 +19,17 @@ export async function POST(request: Request) {
 
   const payload = tutorApplyToContact(parsed);
 
-  try {
-    await saveContactToSheetDb(payload);
-  } catch (error) {
-    console.error("SheetDB tutor apply save failed:", error);
+  // Save to the Google Sheet (SheetDB) and the admin database (Supabase).
+  // The submission succeeds if at least one of them stored it.
+  const [sheet, db] = await Promise.allSettled([
+    saveContactToSheetDb(payload),
+    saveLeadFromForm({ ...payload, phone: parsed.phone, source: "tutor-apply" }),
+  ]);
+
+  if (sheet.status === "rejected") console.error("SheetDB tutor apply save failed:", sheet.reason);
+  if (db.status === "rejected") console.error("Supabase tutor apply save failed:", db.reason);
+
+  if (sheet.status === "rejected" && !(db.status === "fulfilled" && db.value)) {
     return NextResponse.json(
       { error: "Could not save your application. Please try again." },
       { status: 502 },
