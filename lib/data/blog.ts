@@ -24,6 +24,460 @@ const BLOG_AUTHOR = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "dat-dates-2027",
+    title: "DAT Dates 2027: There Is No Fixed Test Day",
+    description:
+      "There is no published list of DAT dates for 2027. The exam is year-round at Prometric. Book 60–90 days ahead, and check your school’s score deadline.",
+    publishedAt: "2026-10-12",
+    readingTime: "8 min read",
+    category: "DAT Prep",
+    coverGradient: "from-teal-700 to-slate-900",
+    coverEmoji: "📆",
+    author: BLOG_AUTHOR,
+    content: `
+## There Is No Published List of DAT Dates for 2027
+
+**The DAT does not have national test dates in 2027.** The [ADA](https://www.ada.org/education/testing/exams/dental-admission-test-dat) offers it year-round at Prometric centers in the U.S., U.S. territories including Guam, Puerto Rico, and the Virgin Islands, and at select centers in Canada. Quebec is no longer a testing location. You pick an open seat. The ADA does not post a calendar of DAT dates for 2027, or for any other year.
+
+What people mean by “DAT dates 2027” is usually one of two questions. If you want to **start dental school in Fall 2027**, a test date during calendar year 2027 is probably too late. If you want to **start in Fall 2028**, then 2027 is the year you should sit for the exam. The application calendars are separate: [Fall 2027 timeline](/blog/dental-school-application-timeline-fall-2027) and [Fall 2028 timeline](/blog/dental-school-application-timeline-fall-2028).
+
+---
+
+## How to Book a DAT Seat
+
+**Get a DENTPIN, apply to the ADA, then schedule with Prometric after your eligibility letter arrives.** You cannot pick the day on Prometric first.
+
+1. Create or retrieve a DENTPIN at [ADA.org/DENTPIN](https://www.ada.org/education/manage-your-dentpin).
+2. Submit a DAT application. A new application is required for every attempt. Processing runs on U.S. business days.
+3. After the ADA accepts it, you are eligible to test for **six months**, unless a retake rule shortens that window. You can extend eligibility once, by **45 days**, for a fee.
+4. Call or book Prometric. The ADA says to do this **60 to 90 days** before the day you want, because seats fill.
+
+The ADA’s own timing advice is to take the DAT in the **spring of your junior year, or the summer right after**, and only after the tested courses are done, especially organic chemistry. If the date you want is in 2027, you are on the updated organic chemistry outline: [what changed in DAT organic chemistry](/blog/dat-organic-chemistry-changes-2026).
+
+Official scores are reported within **three to four weeks**. There is no unofficial score at the test center. Do not book a date in the same week a school needs the number.
+
+---
+
+## Which 2027 Dates Still Count for Fall 2027 Entry
+
+**A test in 2027 usually does not help a Fall 2027 application.** That class applies in the 2026–27 AADSAS cycle. The cycle closes **February 5, 2027, at 11:59 PM ET**. Official test scores have to be matched by **February 10, 2027, at 5 PM ET**. A January test can miss that window, because reporting takes three to four weeks. A February or March 2027 test cannot land on a Fall 2027 file.
+
+Schools set earlier cutoffs than the cycle close. [Creighton](https://www.creighton.edu/dentistry/future-students/dentistry-admissions-requirements) says DAT scores for **Fall 2027** matriculation must fall between June 1, 2023 and **November 15, 2026**. That is one school, not a national rule. Another school may want scores earlier, or may still accept a later date. Read the deadline on each program before you pay the $580 application fee.
+
+If you have not submitted AADSAS yet, the school deadline matters more than the February cycle close. That check is in [is it too late to apply for 2027?](/blog/is-it-too-late-to-apply-dental-school-2027).
+
+| Your goal | A DAT date that can still work |
+|---|---|
+| Fall 2027 entry, score not in yet | Only a 2026 date that beats **your school’s** score deadline, with 3–4 weeks left for reporting |
+| One retake before a late 2026 school deadline | First attempt at least **60 days** plus score-report time before that deadline |
+| Fall 2028 entry | A **2027** Prometric date, ideally spring or early summer |
+
+---
+
+## If You Take the DAT in 2027, You Are on the Fall 2028 Cycle
+
+**Spring or early summer 2027 is the normal window for students who will apply in 2027.** ADEA has not posted the 2027–28 open date. The previous cycle opened May 12 and accepted submissions from June 2, so plan to have the official score before you need to submit, not the week of.
+
+Leave room for one retake. The [2026 DAT Candidate Guide](https://www.ada.org/-/media/project/ada-organization/ada/ada-org/files/education/dat_candidate_guide.pdf) requires **60 days** between attempts, with at most four attempts in any 12-month period. After three attempts you must request permission and show that you have applied to dental school. A May test plus a retake will not produce a second score before an early-June submit. If a retake is realistic, sit in **January or February 2027** instead. How to decide is in [should I retake the DAT?](/blog/should-i-retake-the-dat).
+
+A competitive Academic Average is about **420** on the 200–600 scale, roughly an old 20. The table is [420 DAT to old score = 20](/blog/dat-scoring-scale-200-600).
+
+---
+
+## What the 2026 Fee Schedule Says
+
+**The 2026 Candidate Guide lists the DAT examination fee at $580.** That covers the test and score reports to the schools you select when you apply. Fees are non-refundable. A 2027 guide can change the number, so confirm it on the ADA page the day you apply.
+
+| Fee in the 2026 guide | Amount |
+|---|---|
+| Examination, including score reports chosen at application | **$580** |
+| Extra score report after you apply | $55 each |
+| Score audit, within 30 days of the test | $105 |
+| One 45-day eligibility extension | $150 |
+| Reschedule, 30 or more business days out | $50 |
+| Reschedule, 5 to 29 business days | $70 |
+| Reschedule, 1 to 4 business days | $150 |
+
+Saturday and Sunday do not count as business days for those reschedule windows. A missed appointment forfeits the full testing fee. Partial fee waivers, when a batch is open, cover 50% of the exam fee. The ADA said the 2026 waivers were used up and pointed people to the next batch on **January 1, 2027**.
+
+---
+
+## FAQ
+
+### When are the DAT dates in 2027?
+
+**There aren’t any fixed dates.** Prometric posts open seats at each center. You become eligible for six months after the ADA accepts your application, then you book a seat, ideally 60 to 90 days ahead.
+
+### Is a 2027 DAT date early enough for Fall 2027 dental school?
+
+**Usually no.** Fall 2027 applicants needed a score during the 2026–27 cycle. AADSAS stops matching official scores on **February 10, 2027**. Some schools, including Creighton, want the DAT even earlier. A 2027 test date is for **Fall 2028** entry.
+
+### How far ahead should I schedule the DAT?
+
+**60 to 90 days** before the day you want, after organic chemistry and your other tested courses are finished. Popular centers and summer seats go first.
+
+### How long do DAT scores take?
+
+**Three to four weeks** for the official report. Schools do not get an unofficial score on test day.
+
+---
+
+## Next Step
+
+Pick the entry year first. Then book a Prometric day that still leaves three to four weeks, and 60 more days if you might retake.
+
+[Build a free DAT study plan](/dat-study-plan-generator) from that date, or [schedule a call](/schedule) if you are choosing between a late 2026 seat and waiting for 2027.
+`,
+  },
+  {
+    slug: "is-it-too-late-to-apply-dental-school-2027",
+    title: "Is It Too Late to Apply to Dental School for 2027?",
+    description:
+      "The Fall 2027 AADSAS cycle stays open until February 5, 2027, but many school deadlines are sooner. See what is still possible this fall, and what already closed.",
+    publishedAt: "2026-10-12",
+    readingTime: "9 min read",
+    category: "Application Tips",
+    coverGradient: "from-rose-700 to-slate-900",
+    coverEmoji: "⏳",
+    author: BLOG_AUTHOR,
+    content: `
+## No — The Cycle Is Open. Your School’s Deadline May Not Be.
+
+**It is not too late for every Fall 2027 dental school, and it is already too late for some.** ADEA AADSAS for this cycle stays open until **February 5, 2027, at 11:59 PM ET**. ADEA will not send your file to a school after that school’s own deadline, and those deadlines are often weeks or months earlier.
+
+October is late. [ADEA](https://www.adea.org/godental/Apply/apply-to-adea-aadsas) tells applicants to submit in the summer and says processing usually takes about **four to six weeks** after the application, fee, and official transcripts are in. Applicants who finish in the summer are more likely to be invited to interview. A complete file now is still a real application. A file you “perfect” in January can miss the school you wanted.
+
+The full calendar from the start of the cycle is the [Fall 2027 timeline](/blog/dental-school-application-timeline-fall-2027). This page is only the part that is still in front of you.
+
+| Date | What it still controls |
+|---|---|
+| **Now – each school’s deadline** | Last day AADSAS can receive your application for that school. 11:59 PM ET on the school’s date. |
+| **December 1, 2026 – February 5, 2027** | Second Academic Update. Fall grades, if they were listed as planned or in progress. |
+| **December 15, 2026** | Decision Day. The first date schools may release acceptances. Not the day everyone hears back. |
+| **February 5, 2027, 11:59 PM ET** | Last day to submit AADSAS, add the final Academic Update, request evaluations, and order Professional Transcript Entry. |
+| **February 10, 2027** | Last day updated transcripts are matched (5 PM ET) and evaluators can submit (11:59 PM ET). |
+| **February 12, 2027, 11:59 PM ET** | Last day an application can be verified. Processing ends. |
+
+Sources: [ADEA AADSAS dates](https://www.adea.org/godental/Apply/apply-to-adea-aadsas) and the [Liaison cycle calendar](https://help.liaisonedu.com/ADEA_AADSAS_Applicant_Help_Center/Starting_Your_ADEA_AADSAS_Application/Getting_Started_with_Your_ADEA_AADSAS_Application/02_Application_Cycle_Dates).
+
+---
+
+## If You Have Not Submitted Yet
+
+**Open AADSAS and read the deadline on each school before you add it.** The cycle close is not the deadline that matters. Two public examples from this cycle, so you can see how far apart they are:
+
+- [UAB School of Dentistry](https://www.uab.edu/dentistry/home/academics/dmd/how-to-apply) says applications received by AADSAS after **October 31, 2026** cannot be considered for the incoming class.
+- [WesternU](https://www.westernu.edu/dentistry/programs/doctor-of-dental-medicine/apply/) lists **December 1, 2026, at 11:59 PM ET** as the close for both the AADSAS primary and its secondary. Materials after that are not processed.
+
+Other schools are earlier or later. The date inside the program’s AADSAS listing is the one that counts. Do not build the list from a forum thread.
+
+ADEA also says transcripts and letters should arrive at least **four weeks** before your earliest school deadline, because a submitted application still has to become Complete and then Verified. Once it is Complete, verification can take **up to 10 business days**. The steps are in [how long AADSAS verification takes](/blog/how-long-does-aadsas-verification-take).
+
+Before you pay, check three things:
+
+1. The school’s deadline is far enough out that verification can finish. A deadline next week is not a real option if your transcripts are not already there.
+2. The DAT is done, or the official score will exist before that school stops reviewing. Scores take **three to four weeks**, and a retake requires **60 days** between attempts. If the score cannot arrive in time, pick different schools or wait for the next cycle. The retake rules are in [should I retake the DAT?](/blog/should-i-retake-the-dat).
+3. The school list matches your GPA and score. A late application to only the most selective schools is the combination that usually goes nowhere. Use [dental school GPA requirements](/blog/dental-school-gpa-requirements).
+
+You can still add a school later if its deadline has not passed. You cannot edit most of the application after you submit. Letters that were never requested can still be added if you are under the evaluation limit. Finished sections such as the personal statement stay locked, so fix those before you hit submit.
+
+---
+
+## If You Already Submitted
+
+**The first Academic Update window is closed.** It ran **August 13 – September 29, 2026**. The second window opens **December 1, 2026** and closes **February 5, 2027, at 11:59 PM ET**.
+
+[Liaison’s Academic Update instructions](https://help.liaisonedu.com/ADEA_AADSAS_Applicant_Help_Center/Submitting_and_Monitoring_Your_ADEA_AADSAS_Application/Before_and_After_You_Submit_Your_ADEA_AADSAS_Application/03_Updating_Your_Application%2F%2FAcademic_Update) limit what you can change:
+
+- You can update US and English-Canadian courses you marked **planned or in progress**, and you can add planned courses for the next term.
+- You cannot change a term that is already verified, and you cannot add a term from a past year that you forgot.
+- You can update grades **once** in the period. If fall grades are not final, do not click Submit My Updates yet. You do not get a second pass at those courses.
+- You must have at least one program in **Verified** status by February 5, 2027.
+
+After you submit the update, wait for ADEA’s email that it went through. Then send the new official transcript. Transcripts that arrive before that email do not count for the update and have to be sent again. ADEA must receive them by **February 10, 2027**. The new coursework is verified in order and can take up to 10 business days. Your status stays Verified while that happens.
+
+Schools decide whether they require the update. If a program asked for fall grades, this window is how they get them inside AADSAS. GPA math for those courses is the same system as the rest of the file: [AADSAS Science GPA includes math and statistics](/blog/aadsas-bcp-gpa-explained).
+
+While you wait, the sections you can still touch are narrower than people expect. You can update contact info, add a school whose deadline is still open, add a new evaluation request under the cap, and add some new supporting-information entries. You cannot rewrite what is already submitted. Anything else goes straight to the school.
+
+Interviews are already happening. If you have one, prepare for the format that school uses. Start with [dental school interview questions](/blog/dental-school-interview-questions). If you have not been invited yet, that is common this far from Decision Day. It is not a decision.
+
+---
+
+## What December 15 and February Actually Do
+
+**December 15, 2026 is the first day schools may send Fall 2027 acceptances.** It is not the day every applicant gets a yes or a no. Offers, waitlists, and silence all continue after it. How to read each one is in [Decision Day 2026](/blog/dental-school-decision-day).
+
+**February 5 is the last day to submit**, not the last day anyone is admitted. A school can fill its class, keep interviewing, and admit from a waitlist long after AADSAS stops taking new applications. Submitting on February 4 still has to get through verification by February 12, and only if that school’s deadline has not already passed.
+
+If your DAT is not competitive and the only dates left are after a school’s deadline, forcing a 2027 application does not create a seat. The next entry year is Fall 2028, and that application is a different cycle: [dental school timeline 2028](/blog/dental-school-application-timeline-fall-2028).
+
+---
+
+## FAQ
+
+### Is it too late to apply to dental school for Fall 2027?
+
+**Not for the whole cycle.** AADSAS remains open until **February 5, 2027, at 11:59 PM ET**. It is too late for any school whose deadline has passed, and it is tight for a school whose deadline is inside the next four to six weeks if your transcripts are not already in.
+
+### When is the last day to submit AADSAS for 2027 entry?
+
+**February 5, 2027, at 11:59 PM ET**, unless the school’s own deadline is earlier. The school date wins. Updated transcripts must be matched by **February 10, 2027, at 5 PM ET**.
+
+### Can I add my fall grades after I submitted?
+
+**Yes, in the second Academic Update, December 1, 2026 through February 5, 2027**, if those courses were marked planned or in progress. Wait for the final grade. You only get one update. Send the transcript after ADEA confirms the update, not before.
+
+### Is December 15 the last day to hear back?
+
+**No.** December 15, 2026 is the first day acceptances may go out. Interviews and offers continue after that.
+
+---
+
+## Next Step
+
+Look up the deadline for each school still on your list. Drop any date you cannot meet, and submit the ones you can while the file is complete.
+
+If you want that list checked against your GPA, DAT, and the weeks left, [schedule a call](/schedule).
+`,
+  },
+  {
+    slug: "dental-school-application-timeline-fall-2028",
+    title: "Dental School Timeline 2028: Apply in 2027",
+    description:
+      "Fall 2028 dental school means you apply in the 2027–28 cycle. Exact AADSAS dates are not posted yet. Use the 2026–27 pattern to plan your DAT, FAP, and submit week.",
+    publishedAt: "2026-10-12",
+    readingTime: "9 min read",
+    category: "Admissions Guide",
+    coverGradient: "from-sky-700 to-indigo-950",
+    coverEmoji: "📅",
+    author: BLOG_AUTHOR,
+    content: `
+## Fall 2028 Dental School Means You Apply in 2027
+
+**If you want to start dental school in Fall 2028, you apply in the 2027–28 ADEA AADSAS cycle, not in 2028.** ADEA has not published the exact open and submit dates for that cycle yet. The only 2027–28 date it has already stated is that the [Fee Assistance Program reopens in April 2027](https://www.adea.org/godental/Apply/apply-to-adea-aadsas/fee-assistance-program).
+
+Use the finished 2026–27 cycle as a planning template, then replace every date when ADEA posts the real one. Already applying for Fall 2027? Use the [Fall 2027 timeline](/blog/dental-school-application-timeline-fall-2027). If you still have not submitted, read [is it too late to apply for 2027?](/blog/is-it-too-late-to-apply-dental-school-2027).
+
+| 2026–27 milestone (official) | What to plan for 2027–28 |
+|---|---|
+| FAP opened **April 15, 2026** | **April 2027.** ADEA has said FAP reopens then. |
+| Application opened **May 12, 2026** | A **May 2027** open is the pattern. Confirm before you book anything around it. |
+| First day to submit **June 2, 2026** | An **early June 2027** submit week is the pattern. |
+| Academic Update #1: Aug 13 – Sep 29, 2026 | A late-summer grade window. |
+| Decision Day **December 15, 2026** | Mid-December is the usual first-acceptance date. Confirm the 2027 date. |
+| Academic Update #2: Dec 1, 2026 – Feb 5, 2027 | A winter grade window, closing with the cycle. |
+| Cycle closed **February 5, 2027** | An early **February 2028** close is the pattern. |
+
+Source for the 2026–27 column: [ADEA AADSAS](https://www.adea.org/godental/Apply/apply-to-adea-aadsas) and the [Liaison cycle-dates page](https://help.liaisonedu.com/ADEA_AADSAS_Applicant_Help_Center/Starting_Your_ADEA_AADSAS_Application/Getting_Started_with_Your_ADEA_AADSAS_Application/02_Application_Cycle_Dates).
+
+---
+
+## When Should You Take the DAT for a 2027 Application?
+
+**Take the DAT in spring 2027, or by early summer 2027, if your sciences are finished.** Official scores are reported within **three to four weeks** of the test date, and there is no unofficial score at the center. A test in the same week you want to submit is too late.
+
+The [2026 DAT Candidate Guide](https://www.ada.org/education/testing/exams/dental-admission-test-dat) also says you must wait **60 days** between attempts, with at most four attempts in any 12-month period. After three attempts you need permission to test again. If you want one retake before an early-June submit, a first attempt in **January or February 2027** leaves more room than a first attempt in May.
+
+| Your situation | A workable DAT window |
+|---|---|
+| Sciences done, no retake planned | **March–May 2027** |
+| You may need one retake before submit | First attempt **January–February 2027** |
+| Organic chemistry still in progress | Finish the course first. A late summer 2027 test can work, but schools see the score later. |
+
+Book the Prometric seat **60 to 90 days** before the date you want. Eligibility lasts about six months after the ADA accepts your application. If you test in 2027, you are on the reorganized organic chemistry outline: [what changed in DAT organic chemistry](/blog/dat-organic-chemistry-changes-2026).
+
+A competitive Academic Average is about **420** on the 200–600 scale (old 20). Selective programs often look for about **460** (old 22). The table is on the [DAT conversion chart](/blog/dat-scoring-scale-200-600).
+
+---
+
+## What to Finish Before the 2027 Submit Week
+
+**Have the file ready in May 2027, even though you cannot submit until the cycle’s first submit day.** The 2026–27 cycle let people open the application in May and submit in June. Treat May as build month and the first submit day as send day.
+
+Before that week:
+
+- Prerequisite courses are on the transcript, or marked in progress. The list most schools expect is in [dental school prerequisites](/blog/dental-school-prerequisites).
+- Shadowing hours are logged with dates and the dentist’s name. A target range is in [dental shadowing hours](/blog/dental-shadowing-hours-for-dental-school).
+- Letters are requested with a deadline before you submit, not after.
+- The personal statement is done. Start from [how to write a dental school personal statement](/blog/how-to-write-dental-school-personal-statement).
+- The school list matches your GPA and DAT, not a list of only the most famous programs. Use [dental school GPA requirements](/blog/dental-school-gpa-requirements).
+- If you may qualify, apply for FAP in **April 2027** as soon as it reopens. Approval is first-come, and you cannot edit the FAP application after you send it.
+
+Texas residents applying to Texas dental schools use **TMDSAS**, not AADSAS. In recent cycles TMDSAS has opened earlier than the AADSAS submit day. Check TMDSAS directly when you build the 2027 calendar.
+
+---
+
+## DAT Fee Waiver in 2027
+
+**The ADA grants partial DAT fee waivers in batches starting January 1, April 1, and July 1.** The waiver is **50%** of the exam fee for a first attempt and can cover 50% of one later attempt. It also includes one full practice test. It does not cover reschedule fees.
+
+You need a DENTPIN first. The Candidate Guide limits waivers to people who have not taken the DAT before, have not already received a waiver, can show financial hardship, received financial aid at their school, and meet the U.S. citizen or qualifying foreign-national test. The ADA’s DAT page said the 2026 waivers had all been granted and pointed people to **January 1, 2027** for the next batch. Request it from the DENTPIN account. Review can take up to 10 business days.
+
+---
+
+## A Month-by-Month Plan for 2026–27, While You Wait
+
+This is preparation, not an application. Fall 2027 applicants are in their cycle now. You are building the next one.
+
+- **Now through December 2026:** Finish the science courses you are weak in. Do not start a full DAT block the week of finals.
+- **January 1, 2027:** If you need it, request the DAT partial fee waiver when that batch opens.
+- **January–February 2027:** Diagnostic test, then a study block. A free schedule builder is on the [DAT study plan generator](/dat-study-plan-generator).
+- **March–May 2027:** Take the DAT if you are ready. Request letters.
+- **April 2027:** FAP application, if you will use it.
+- **May 2027:** When AADSAS opens, enter coursework, essays, and schools. Do not submit before the first submit day.
+- **Early June 2027:** Submit on the first day you are allowed to, if the file is actually complete. A complete June file beats a rushed file with missing transcripts.
+- **Summer–fall 2027:** Secondary questions, then interviews. Academic Update is how you add final grades later. You can update a planned or in-progress term only once in a window, so wait for the real grade.
+- **December 2027:** Expect the first acceptance date only after ADEA publishes it. December 15 was the date for the prior cycle.
+- **August 2028:** Dental school starts, if you are admitted for Fall 2028.
+
+---
+
+## FAQ
+
+### When do I apply for dental school if I want to start in 2028?
+
+You apply in **2027**, in the 2027–28 AADSAS cycle. Starting in Fall 2027 is a different cycle, and that application window already opened in 2026.
+
+### When does AADSAS open in 2027?
+
+ADEA has not posted the 2027 open date yet. In the 2026–27 cycle the application opened on **May 12, 2026**, and the first submit day was **June 2, 2026**. Plan for a May open and an early-June submit, then confirm on the ADEA site before you rely on a day.
+
+### When should I take the DAT for Fall 2028 entry?
+
+**Spring 2027, or by early summer 2027**, after organic chemistry is done. Leave three to four weeks for the official score, and 60 days if you might retake. Details on a retake are in [should I retake the DAT?](/blog/should-i-retake-the-dat).
+
+### Is December 15, 2027 Decision Day?
+
+Not yet. **December 15, 2026** is Decision Day for the current cycle. The 2027–28 acceptance date is not published. Do not put December 15, 2027 on a form until ADEA lists it.
+
+---
+
+## Next Step
+
+Pick the DAT month that still leaves a retake, then build the weeks backward from that date.
+
+[Build a free DAT study plan](/dat-study-plan-generator) or [schedule a call](/schedule) if you want the 2027 calendar checked against your coursework.
+`,
+  },
+  {
+    slug: "dat-organic-chemistry-changes-2026",
+    title: "Did DAT Organic Chemistry Change in 2026?",
+    description:
+      "No major new content. The ADA’s April 2026 organic chemistry update still has 30 questions, with clearer topic names, curved arrows, and two-step synthesis listed.",
+    publishedAt: "2026-10-12",
+    readingTime: "8 min read",
+    category: "DAT Prep",
+    coverGradient: "from-violet-700 to-amber-700",
+    coverEmoji: "🧪",
+    author: BLOG_AUTHOR,
+    content: `
+## No — DAT Organic Chemistry Did Not Add a New Course
+
+**The April 2026 organic chemistry update did not add a new subject.** The ADA says the new specifications “do not represent major changes to the content that will appear on the examination.” Organic chemistry is still **30 questions**. What changed is the names of the topics and a longer list of subtopics.
+
+If your test date is in **2026 after the update, or any time in 2027**, study the updated outline. The ADA’s note in the [2026 DAT Candidate Guide](https://www.ada.org/-/media/project/ada-organization/ada/ada-org/files/education/dat_candidate_guide.pdf) says the implementation date was anticipated for April 2026, and that you should use the specifications in effect on your test date. The outline itself is in the ADA’s [new organic chemistry examination specifications](https://www.ada.org/-/media/project/ada-organization/ada/ada-org/files/education/new_organic_chemistry_examinationspecifications.pdf).
+
+Reaction practice is still the same work as before. Use the [DAT organic chemistry study guide](/blog/dat-organic-chemistry-study-guide) for the reactions, and this page for what the outline now calls them.
+
+---
+
+## What the Updated Outline Actually Lists
+
+**The section is still 30 items, grouped into five areas.** The ADA did not publish a new count of questions inside each area, so do not rebuild your study time around a rumored weighting change.
+
+| Updated area | What the ADA now lists under it |
+|---|---|
+| Mechanisms | Curved arrows, single mechanisms, combined mechanisms, reaction coordinate diagrams |
+| Chemical synthesis | One-step, **two-step**, multi-step, and reactivity across functional groups |
+| Acid-base chemistry | Ranking acidity and basicity, structure reasons, products and equilibria |
+| Chemical and physical properties | Polarity, intermolecular forces, lab techniques, spectroscopy |
+| Structural evaluation | Nomenclature, stereochemistry, structure and bonding |
+
+Single mechanisms named in the outline include resonance, free radical, proton transfer, addition, elimination, substitution, rearrangements, and other reactions. **Diels-Alder** is the example the ADA gives under “other.” It is an example, not a new required course.
+
+One-step synthesis still covers the reactions you already study: SN1 and SN2, E1 and E2, alkenes and alkynes, alcohols, ethers and epoxides, radicals, aromatics, carboxylic acids and derivatives, ketones and aldehydes, and alpha-carbonyl compounds.
+
+The older outline already had one-step and multi-step synthesis. The updated list names **two-step** synthesis on its own, and it names **reaction coordinate diagrams** on their own under mechanisms. That is a clearer map of question types, not a new textbook.
+
+---
+
+## How Curved-Arrow Questions Work
+
+**A curved-arrow question asks you to connect electrons to a product, or a product back to the arrows.** The Candidate Guide draws the rule in one place:
+
+- A **double-headed** curved arrow is an electron pair.
+- A **single-headed** (fishhook) arrow is one electron.
+- You may be shown starting materials plus arrows and asked for the product.
+- You may be shown starting materials plus the product and asked for the arrows.
+
+Practice both directions. Students who only memorize “reagents in, product out” miss the arrow questions, because those questions are about electron movement.
+
+Acid-base items got a more explicit structure list: charge, atom size, electronegativity, resonance, inductive effect, hybridization, and sterics. You still rank acids and bases and predict the equilibrium. The list is the set of reasons the DAT expects you to use.
+
+Spectroscopy is still there: 1H NMR, 13C NMR, infrared, and questions that use more than one spectrum. Lab techniques still include chromatography, extraction, recrystallization, and distillation.
+
+---
+
+## What You Should Not Change
+
+**Do not throw out a full organic chemistry course because of this update.** The ADA’s own sentence is that the content is not a major change. These stay on the exam:
+
+- Substitution and elimination, including when SN1, SN2, E1, or E2 wins
+- Alkene, alkyne, aromatic, carbonyl, and carboxylic-acid reactions
+- Stereochemistry: chirality, isomers, conformations
+- IUPAC names and functional groups
+- IR and NMR at a first-year level
+- TLC, extraction, and other basic lab theory
+
+Biology and general chemistry were not part of this organic chemistry specification note. Keep those on their own plans: [DAT biology](/blog/dat-biology-study-guide) and [DAT general chemistry](/blog/dat-general-chemistry-study-guide).
+
+Scoring is separate from this outline change. Tests from **March 1, 2025** onward use **200–600**, not 1–30. A **420** Academic Average is about an old 20. The chart is [420 DAT to old score = 20](/blog/dat-scoring-scale-200-600).
+
+---
+
+## How to Study for a 2027 Test Date
+
+**Spend the extra time on arrows, two-step synthesis, and acid-base reasons.** A practical split for the 30-question section:
+
+1. Mechanisms with curved arrows, including one reaction that is really two steps written as one.
+2. One-step reactions by functional group, then two-step and multi-step sequences.
+3. Acid-base ranking with the structure reasons above, not a memorized pKa table alone.
+4. A short spectroscopy and lab set: IR peaks, a simple NMR, TLC, extraction.
+5. Stereochemistry and naming, in the same sessions as the molecules you are already drawing.
+
+If Fall 2028 is your entry year, the application itself is the [2027–28 timeline](/blog/dental-school-application-timeline-fall-2028). Take organic chemistry before you book the DAT. Official scores take three to four weeks, so the outline change is not a reason to delay a test you are already ready for.
+
+---
+
+## FAQ
+
+### Did the DAT organic chemistry section change in 2026?
+
+**The outline was reorganized. The ADA says the content was not a major change.** It is still 30 questions. Topic names are simpler, and the subtopic list is longer.
+
+### Do I need new organic chemistry material for a 2027 DAT?
+
+**No new course.** You do need practice on curved arrows in both directions, two-step synthesis, reaction coordinate diagrams, and the listed acid-base reasons. The reactions in a standard DAT organic chemistry course are still the core.
+
+### When did the new organic chemistry specifications start?
+
+The ADA said implementation was **anticipated in April 2026**, and told candidates to check which specifications apply on their own test date. Anyone testing through 2027 should prepare with the updated list.
+
+### How many organic chemistry questions are on the DAT?
+
+**30.** They sit inside the Survey of Natural Sciences with biology and general chemistry. The ADA did not publish a new per-topic question count with this update.
+
+---
+
+## Next Step
+
+Build the weeks around your test date, with mechanisms and two-step synthesis early enough to review them twice.
+
+[Build a free DAT study plan](/dat-study-plan-generator) or keep going through the [organic chemistry study guide](/blog/dat-organic-chemistry-study-guide).
+`,
+  },
+  {
     slug: "how-long-does-aadsas-verification-take",
     title: "How Long Does AADSAS Take to Verify? (10 Days)",
     description:
@@ -600,7 +1054,7 @@ No. That is the **first allowed** notification date. Offers continue for months.
 No. AADSAS for 2026–27 opens **May 12, 2026** (submit from **June 2, 2026**). Decision Day is mid-December.
 
 **What if I applied late?**  
-Later verification and interviews often mean later decisions. Applying early still helps — see [when AADSAS opens](/blog/when-does-aadsas-open).
+Later verification and interviews often mean later decisions. What is still open for Fall 2027 is in [is it too late to apply for 2027?](/blog/is-it-too-late-to-apply-dental-school-2027).
 
 ---
 
@@ -801,13 +1255,13 @@ General (non-year-specific) process: [dental school application timeline](/blog/
 | Buffer for one retake | First attempt by **March–April 2026** (90-day wait) |
 | Still finishing Orgo | Don’t force a bad date — but know late scores delay secondaries |
 
-Retake policy details: [Should I retake the DAT?](/blog/should-i-retake-the-dat).
+Retake policy details: [Should I retake the DAT?](/blog/should-i-retake-the-dat). There is no national list of exam days: [DAT dates 2027](/blog/dat-dates-2027).
 
 ---
 
 ## Looking Ahead: Fall 2028 / 2027–28 Cycle
 
-If you are a **sophomore or junior** aiming at **Fall 2028** entry, you will apply in the **2027–28** cycle (roughly May–June **2027** submit — exact dates publish closer to the year).
+If you are a **sophomore or junior** aiming at **Fall 2028** entry, you will apply in the **2027–28** cycle. The month-by-month plan, including what ADEA has and has not published, is in [Dental school timeline 2028](/blog/dental-school-application-timeline-fall-2028). Exact open and submit dates publish closer to the year.
 
 What to do in **2026–27** while Fall 2027 applicants are in-cycle:
 - Finish prereqs + upward GPA trend
@@ -2654,7 +3108,7 @@ The DAT does not ask you to invent new chemistry. It asks you to recognize struc
 - Spectroscopy / lab technique (IR, NMR basics, TLC, extraction)
 - Mechanism recognition (SN1/SN2, E1/E2, addition, substitution)
 
-**Scoring:** Scaled 1–30. A 20 is strong. Orgo often decides whether your Total Science clears the competitive range.
+**Scoring:** Tests on or after March 1, 2025 use the **200–600** scale. A **420** is about an old 20. See [420 DAT to old score = 20](/blog/dat-scoring-scale-200-600). If you test in 2026 or 2027, read [what changed in DAT organic chemistry](/blog/dat-organic-chemistry-changes-2026) before you use an older topic list.
 
 ---
 

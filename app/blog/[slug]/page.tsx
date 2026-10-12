@@ -285,6 +285,126 @@ export default async function BlogPostPage({ params }: Props) {
     string,
     { "@context": string; "@type": string; mainEntity: Array<{ "@type": string; name: string; acceptedAnswer: { "@type": string; text: string } }> }
   > = {
+    "dat-dates-2027": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "When are the DAT dates in 2027?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "There is no fixed list of DAT dates in 2027. The exam is offered year-round at Prometric. You apply through the ADA, then book an open seat, ideally 60 to 90 days ahead.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a 2027 DAT date early enough for Fall 2027 dental school?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Usually no. Fall 2027 applicants needed a score during the 2026–27 cycle. AADSAS stops matching official scores on February 10, 2027. A 2027 test date is for Fall 2028 entry.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How long do official DAT scores take?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Official DAT scores are reported within three to four weeks. There is no unofficial score on test day.",
+          },
+        },
+      ],
+    },
+    "is-it-too-late-to-apply-dental-school-2027": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Is it too late to apply to dental school for Fall 2027?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Not for the whole cycle. AADSAS stays open until February 5, 2027, at 11:59 PM ET. It is too late for any school whose deadline has already passed, and tight if your transcripts are not in at least four weeks before that deadline.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "When is the last day to submit AADSAS for 2027 dental school entry?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "February 5, 2027, at 11:59 PM ET, unless the dental school’s own deadline is earlier. Updated transcripts must be matched by February 10, 2027, at 5 PM ET.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I add fall grades to AADSAS after I submit?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, during the second Academic Update from December 1, 2026 through February 5, 2027, if those courses were marked planned or in progress. You can update grades only once, so wait for the final grade.",
+          },
+        },
+      ],
+    },
+    "dental-school-application-timeline-fall-2028": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "When do I apply for dental school if I want to start in 2028?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You apply in 2027, during the 2027–28 AADSAS cycle. Fall 2027 entry is a different cycle and already opened in 2026.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "When does AADSAS open in 2027?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ADEA has not posted the 2027 open date. In the 2026–27 cycle the application opened on May 12, 2026, and the first submit day was June 2, 2026. The Fee Assistance Program is scheduled to reopen in April 2027.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "When should I take the DAT for Fall 2028 entry?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Take the DAT in spring 2027, or by early summer 2027, after organic chemistry. Official scores take three to four weeks, and you must wait 60 days between attempts.",
+          },
+        },
+      ],
+    },
+    "dat-organic-chemistry-changes-2026": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Did the DAT organic chemistry section change in 2026?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The outline was reorganized in April 2026. The ADA says this was not a major content change. Organic chemistry is still 30 questions.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do I need new organic chemistry material for a 2027 DAT?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No new course. Practice curved arrows, two-step synthesis, reaction coordinate diagrams, and the acid-base reasons listed in the updated ADA specifications.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How many organic chemistry questions are on the DAT?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "There are 30 organic chemistry questions. The ADA did not publish a new per-topic question count with the 2026 update.",
+          },
+        },
+      ],
+    },
     "dental-school-gpa-requirements": {
       "@context": "https://schema.org",
       "@type": "FAQPage",
