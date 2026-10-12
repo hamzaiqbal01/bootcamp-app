@@ -423,6 +423,50 @@ export default async function BlogPostPage({ params }: Props) {
         },
       ],
     },
+    "dental-school-vs-medical-school": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Do dentists go to medical school?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. Dentists do not go to medical school. They earn a DDS or DMD from a dental school, which is a separate degree from the MD or DO path.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do dentists go to med school?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. Dental school and medical school are different programs. General dentists train in dental school and can practice after licensure without a medical degree.",
+          },
+        },
+      ],
+    },
+    "dat-score-guide": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is a good DAT score in 2026?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A competitive DAT Academic Average is about 420 on the 200–600 scale, roughly a 20 on the old scale. Selective programs often look for about 460, roughly an old 22.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is a 420 DAT on the old scale?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "420 DAT to old score is about 20 AA. 460 DAT to old score is about 22 AA. The full table is on the DAT conversion chart.",
+          },
+        },
+      ],
+    },
     "dat-scoring-scale-200-600": {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -437,10 +481,10 @@ export default async function BlogPostPage({ params }: Props) {
         },
         {
           "@type": "Question",
-          name: "What is a 420 DAT score on the old scale?",
+          name: "What is 420 DAT to old score?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "A 420 Academic Average on the new 200–600 DAT scale is approximately equivalent to a 20 AA on the old 1–30 scale.",
+            text: "420 DAT to old score is about 20 AA. 460 DAT to old score is about 22 AA on the old 1–30 scale.",
           },
         },
         {

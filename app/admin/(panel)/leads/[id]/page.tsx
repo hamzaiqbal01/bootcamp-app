@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { StudyPlanLeadCard } from "@/components/admin/StudyPlanLeadCard";
 import { DeleteLeadButton, LocalTime, ReplyButtons, StatusBadge } from "@/components/admin/LeadBits";
 import { LeadForm } from "@/components/admin/LeadForm";
 import { requireAdmin } from "@/lib/admin/session";
@@ -62,6 +63,8 @@ export default async function AdminLeadPage({ params }: Props) {
           </div>
         )}
       </section>
+
+      {lead.source === "dat-study-plan" && <StudyPlanLeadCard leadId={lead.id} />}
 
       {/* Edit */}
       <section className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">

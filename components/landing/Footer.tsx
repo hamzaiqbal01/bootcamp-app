@@ -4,6 +4,7 @@ import { Logo } from "@/components/ui/Logo";
 const services = [
   { href: "/", label: "Application Services" },
   { href: "/private-dat-tutoring", label: "DAT Tutoring" },
+  { href: "/dat-study-plan-generator", label: "DAT Study Plan" },
   { href: "/secondaries", label: "Secondary Questions" },
   { href: "/schedule", label: "Schedule a Free Call" },
 ];

@@ -23,6 +23,13 @@ export function PrivateDatTutoring() {
             The DAT will be one of the most important exams you will take, but you do not have to face
             it alone. Get one-on-one attention from a 99th percentile DAT tutor.
           </p>
+          <p className="mx-auto mt-4 max-w-2xl text-sm text-slate-500">
+            Not sure where to start?{" "}
+            <Link href="/dat-study-plan-generator" className="font-semibold text-brand-600 hover:text-brand-700">
+              Build a free DAT study plan
+            </Link>
+            .
+          </p>
         </div>
       </section>
 

@@ -368,9 +368,9 @@ Want a school-list audit (Casper + DAT + FAP)? [Schedule a free call](/schedule)
   },
   {
     slug: "dat-scoring-scale-200-600",
-    title: "DAT Conversion Chart: 420 AA = Old 20",
+    title: "420 DAT to Old Score = 20 (Full Chart)",
     description:
-      "DAT conversion chart for the 200–600 scale: 420 AA ≈ old 20, 460 ≈ old 22. Full 1–30 concordance table, percentiles, and what a good score is now.",
+      "420 DAT to old score = 20. 460 DAT to old score = 22. Full conversion chart from the 200–600 scale to the old 1–30 scale.",
     publishedAt: "2026-08-05",
     readingTime: "10 min read",
     category: "DAT Prep",
@@ -379,11 +379,11 @@ Want a school-list audit (Casper + DAT + FAP)? [Schedule a free call](/schedule)
     coverImage: "/images/blog-dat-scoring-scale-200-600-cover.png",
     author: BLOG_AUTHOR,
     content: `
-## DAT Conversion Chart (200–600 to Old 1–30)
+## 420 DAT to Old Score = 20
 
-**Need a DAT conversion chart?** Use this Academic Average table. The DAT has been scored **200–600** (10-point steps) since **March 1, 2025**. The old **1–30** scale is no longer how new exams are scored.
+**420 DAT to old score = 20 AA. 460 DAT to old score = 22 AA.**
 
-**420 DAT = old 20 AA. 460 DAT = old 22 AA.**
+This is the DAT conversion chart for the **200–600** scale (10-point steps since **March 1, 2025**). The old **1–30** scale is no longer how new exams are scored.
 
 | New AA (200–600) | Old AA (approx.) | Meaning |
 |---|---|---|
@@ -986,9 +986,9 @@ Want a timeline built around *your* GPA, DAT date, and school list? [Schedule a 
   },
   {
     slug: "aadsas-bcp-gpa-explained",
-    title: "Does AADSAS Science GPA Include Statistics?",
+    title: "AADSAS Science GPA Includes Math and Statistics",
     description:
-      "Yes — AADSAS Science GPA usually includes statistics and math. BCP GPA does not. A- = 3.67, not 3.7. Yes/no table below.",
+      "Yes. AADSAS Science GPA includes math and statistics. BCP GPA does not — BCP is Biology, Chemistry, Physics, and Biochemistry only.",
     publishedAt: "2026-07-28",
     readingTime: "11 min read",
     category: "Application Tips",
@@ -997,9 +997,9 @@ Want a timeline built around *your* GPA, DAT date, and school list? [Schedule a 
     coverImage: "/images/blog-dental-school-gpa-cover.png",
     author: BLOG_AUTHOR,
     content: `
-## Does AADSAS Science GPA Include Statistics?
+## AADSAS Science GPA Includes Math and Statistics
 
-**Yes.** AADSAS **Science GPA** usually includes **statistics and math**. **BCP GPA does not.**
+**Yes.** AADSAS **Science GPA** includes **math and statistics**. **BCP GPA does not.**
 
 | Question | Yes / No |
 |---|---|
@@ -1785,9 +1785,9 @@ If you want expert guidance mapping out your personal path — from DAT prep to 
   },
   {
     slug: "dental-school-vs-medical-school",
-    title: "Dental School vs Medical School: Key Differences",
+    title: "Do Dentists Go to Medical School?",
     description:
-      "Do dentists go to medical school? No — DDS/DMD is a separate path. Compare training length, cost, lifestyle, income, and day-to-day work before you choose.",
+      "No. Dentists do not go to medical school. They earn a DDS or DMD at dental school. Compare training, cost, and day-to-day work before you choose.",
     publishedAt: "2026-07-22",
     readingTime: "15 min read",
     category: "Admissions Guide",
@@ -1796,9 +1796,9 @@ If you want expert guidance mapping out your personal path — from DAT prep to 
     coverImage: "/images/blog-dental-vs-medical-school-cover.png",
     author: BLOG_AUTHOR,
     content: `
-## Do Dentists Go to Medical School?
+## No — Dentists Go to Dental School, Not Medical School
 
-**No.** Dentists do **not** attend medical school to become dentists. They earn a **DDS or DMD** from a dental school — a separate professional degree from the MD/DO path. Some dental specialties (especially oral & maxillofacial surgery) may involve hospital-based training that overlaps with medical environments, but the standard path to general dentistry is dental school, not medical school.
+**No.** Dentists do **not** go to medical school. They earn a **DDS or DMD** from a dental school — a separate professional degree from the MD/DO path. Some dental specialties (especially oral & maxillofacial surgery) may involve hospital-based training that overlaps with medical environments, but the standard path to general dentistry is dental school, not medical school.
 
 If you're choosing between the two careers, use the comparison below.
 
@@ -6244,9 +6244,9 @@ If you want a personalized review of your planned recommender list and how to fr
   },
   {
     slug: "dental-school-gpa-requirements",
-    title: "Can I Get Into Dental School With a 3.0 GPA?",
+    title: "Yes, You Can Get Into Dental School With a 3.0",
     description:
-      "Yes — you can get into dental school with a 3.0 GPA if you have DAT ~21–22+ (≈440–460 AA), an upward grade trend, and a realistic school list. Average accepted GPA is ~3.55.",
+      "Yes. A 3.0 GPA can get you into dental school with a DAT around 440–460 (old 21–22), an upward science trend, and a realistic school list.",
     publishedAt: "2026-06-30",
     readingTime: "13 min read",
     category: "Application Tips",
@@ -6255,7 +6255,7 @@ If you want a personalized review of your planned recommender list and how to fr
     coverImage: "/images/blog-dental-school-gpa-cover.png",
     author: BLOG_AUTHOR,
     content: `
-## Can I Get Into Dental School With a 3.0 GPA?
+## Yes — a 3.0 GPA Can Get You Into Dental School
 
 **Yes — you can get into dental school with a 3.0 GPA** if you add DAT **~21–22+ (≈440–460 AA)**, an upward science trend, and a realistic school list.
 
@@ -6767,6 +6767,8 @@ It's the **absence of a structured plan**.
 Every year I see the same pattern: a pre-dental student spends 3 months studying, puts in 6–8 hours a day, works through entire textbooks — and still walks away with a 17 or 18. Then another student studies smarter over 10 focused weeks, follows a deliberate schedule, and hits a 22.
 
 The difference isn't effort. It's strategy.
+
+If you want a schedule built from your own test date, section scores, and weekly hours, start with the [free DAT study plan generator](/dat-study-plan-generator).
 
 This guide is everything I wish someone had handed me when I started DAT prep. It covers how to build your DAT study schedule from scratch, how to approach each section of the exam, which resources are actually worth your time, and what the highest scorers do differently that most students never figure out.
 
@@ -7785,9 +7787,9 @@ If you want personalized guidance on your specific situation, [schedule a free 1
 
   {
     slug: "dat-score-guide",
-    title: "DAT Score Chart 2026: 420 AA = Old 20",
+    title: "What Is a Good DAT Score in 2026?",
     description:
-      "420 DAT = old 20. 460 DAT = old 22. 2026 score chart plus the full old↔new conversion table.",
+      "A competitive DAT is about 420 AA (old 20). Selective schools often want about 460 (old 22). Use the conversion chart for every score.",
     publishedAt: "2026-04-28",
     readingTime: "9 min read",
     category: "DAT Prep",
@@ -7795,9 +7797,11 @@ If you want personalized guidance on your specific situation, [schedule a free 1
     coverEmoji: "📊",
     author: BLOG_AUTHOR,
     content: `
-## DAT Conversion Chart: 420 = Old 20
+## What Is a Good DAT Score?
 
-**420 DAT = old 20 AA. 460 DAT = old 22 AA.**
+**A competitive DAT is about 420 AA (old 20). Selective programs often want about 460 AA (old 22).**
+
+420 DAT to old score = 20. 460 DAT to old score = 22.
 
 | New AA (200–600) | Old AA (approx.) |
 |---|---|
@@ -7810,7 +7814,7 @@ If you want personalized guidance on your specific situation, [schedule a free 1
 | 470 | 23 |
 | 490 | 24 |
 
-Full table, percentiles, and AADSAS notes: [DAT conversion chart: 420 AA = old 20](/blog/dat-scoring-scale-200-600).
+Full table, percentiles, and AADSAS notes: [420 DAT to old score = 20](/blog/dat-scoring-scale-200-600).
 
 ## Why Your DAT Score Matters More Than You Think
 
