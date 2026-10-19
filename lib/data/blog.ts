@@ -39,7 +39,7 @@ export const blogPosts: BlogPost[] = [
 
 **The DAT does not have national test dates in 2027.** The [ADA](https://www.ada.org/education/testing/exams/dental-admission-test-dat) offers it year-round at Prometric centers in the U.S., U.S. territories including Guam, Puerto Rico, and the Virgin Islands, and at select centers in Canada. Quebec is no longer a testing location. You pick an open seat. The ADA does not post a calendar of DAT dates for 2027, or for any other year.
 
-What people mean by “DAT dates 2027” is usually one of two questions. If you want to **start dental school in Fall 2027**, a test date during calendar year 2027 is probably too late. If you want to **start in Fall 2028**, then 2027 is the year you should sit for the exam. The application calendars are separate: [Fall 2027 timeline](/blog/dental-school-application-timeline-fall-2027) and [Fall 2028 timeline](/blog/dental-school-application-timeline-fall-2028).
+What people mean by “DAT dates 2027” is usually one of two questions. If you want to **start dental school in Fall 2027**, a test date during calendar year 2027 is probably too late. If you want to **start in Fall 2028**, then 2027 is the year you should sit for the exam. The application calendars are separate: [Fall 2027 timeline](/blog/dental-school-application-timeline-fall-2027) and [Fall 2028 timeline](/blog/dental-school-application-timeline-fall-2028). If the date has to fit a specific school's deadline, [dental school admissions consulting](/) can check it against your file.
 
 ---
 
@@ -1203,6 +1203,8 @@ If you want to **start dental school in Fall 2027**, you apply in the **2026–2
 | February 11, 2027 | Last day for official documents (per ADEA) |
 
 Confirm on [ADEA AADSAS](https://www.adea.org/godental/Apply/apply-to-adea-aadsas) — always the source of truth.
+
+If you want the school list and the essays built around these dates, that is [dental school admissions consulting](/) at Future Dental Prep.
 
 General (non-year-specific) process: [dental school application timeline](/blog/dental-school-application-timeline). Opening mechanics: [when does AADSAS open?](/blog/when-does-aadsas-open).
 

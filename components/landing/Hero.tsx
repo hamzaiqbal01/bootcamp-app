@@ -99,7 +99,7 @@ export function Hero() {
           <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-400">
             Trusted by 10,000+ Future Dentists
           </p>
-          <h1 className="mt-5 flex flex-wrap items-baseline gap-x-3 text-white">
+          <p className="mt-5 flex flex-wrap items-baseline gap-x-3 text-white">
             <span
               className={`${headingSerif.className} text-3xl text-slate-300 sm:text-4xl lg:text-5xl`}
             >
@@ -111,7 +111,7 @@ export function Hero() {
               Dental{" "}
               <span className="text-indigo-400">Prep</span>
             </span>
-          </h1>
+          </p>
           <p className="mt-5 text-xl font-medium text-slate-200 sm:text-2xl">
             Study smarter. Get further.
           </p>
