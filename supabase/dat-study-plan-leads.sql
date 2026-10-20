@@ -14,7 +14,7 @@ $$;
 alter table public.leads drop constraint if exists leads_source_check;
 alter table public.leads
   add constraint leads_source_check
-  check (source in ('contact', 'tutor-apply', 'sheet', 'manual', 'dat-study-plan'));
+  check (source in ('contact', 'tutor-apply', 'sheet', 'manual', 'dat-study-plan', 'blog-guide'));
 
 create table if not exists public.dat_study_plan_leads (
   id uuid primary key default gen_random_uuid(),

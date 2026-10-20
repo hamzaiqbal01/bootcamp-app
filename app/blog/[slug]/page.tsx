@@ -7,6 +7,8 @@ import { Header } from "@/components/landing/Header";
 import { btn, btnSize } from "@/components/ui/button-styles";
 import { BlogAdSense } from "@/components/ads/BlogAdSense";
 import { BlogAdSenseLoader } from "@/components/ads/BlogAdSenseLoader";
+import { BlogLeadForm } from "@/components/blog/BlogLeadForm";
+import { blogHasLeadForm } from "@/lib/blog-lead";
 import { BlogTableOfContents } from "@/components/blog/BlogTableOfContents";
 import { extractH2Headings, slugifyHeading } from "@/lib/blog-toc";
 import { blogPosts, getAdjacentPosts, getPostBySlug, getRelatedPosts, slugifyCategory } from "@/lib/data/blog";
@@ -960,6 +962,7 @@ export default async function BlogPostPage({ params }: Props) {
               <article className="min-w-0 max-w-none">
                 <BlogAdSense format="horizontal" className="mb-2 mt-0" />
                 <div className="blog-prose">{renderMarkdown(post.content)}</div>
+                {blogHasLeadForm(post.slug) ? <BlogLeadForm slug={post.slug} /> : null}
                 <BlogAdSense format="rectangle" />
 
                 {/* Author card — below content */}

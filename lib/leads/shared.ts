@@ -29,7 +29,14 @@ export const LEAD_STATUS_STYLES: Record<LeadStatus, string> = {
   spam: "bg-rose-50 text-rose-700 ring-rose-200",
 };
 
-export const LEAD_SOURCES = ["contact", "tutor-apply", "sheet", "manual", "dat-study-plan"] as const;
+export const LEAD_SOURCES = [
+  "contact",
+  "tutor-apply",
+  "sheet",
+  "manual",
+  "dat-study-plan",
+  "blog-guide",
+] as const;
 
 export type LeadSource = (typeof LEAD_SOURCES)[number];
 
@@ -39,6 +46,7 @@ export const LEAD_SOURCE_LABELS: Record<LeadSource, string> = {
   sheet: "Google Sheet",
   manual: "Added manually",
   "dat-study-plan": "DAT study plan",
+  "blog-guide": "Blog guide",
 };
 
 export type Lead = {

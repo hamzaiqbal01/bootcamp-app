@@ -11,7 +11,7 @@ create table if not exists public.leads (
   subject text not null default '',
   message text not null default '',
   source text not null default 'contact'
-    check (source in ('contact', 'tutor-apply', 'sheet', 'manual')),
+    check (source in ('contact', 'tutor-apply', 'sheet', 'manual', 'dat-study-plan', 'blog-guide')),
   status text not null default 'new'
     check (status in ('new', 'contacted', 'follow-up', 'converted', 'not-interested', 'spam')),
   notes text not null default '',
