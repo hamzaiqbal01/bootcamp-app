@@ -6,6 +6,7 @@ import {
   type ContactPayload,
 } from "@/lib/contact";
 import { blogHasLeadForm } from "@/lib/blog-lead";
+import { getPostBySlug } from "@/lib/data/blog";
 import { saveLeadFromForm } from "@/lib/leads/server";
 
 async function saveBlogLead(lead: ContactPayload) {
@@ -32,19 +33,18 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid JSON body." }, { status: 400 });
   }
 
+  const record = body && typeof body === "object" ? (body as Record<string, unknown>) : null;
   const payload = parseContactPayload(body);
-  const page =
-    body && typeof body === "object" && "page" in body && typeof body.page === "string"
-      ? body.page
-      : "";
+  const page = typeof record?.page === "string" ? record.page : "";
+  const demoCall = record?.intent === "demo-call" && Boolean(getPostBySlug(page));
 
-  if (!payload || !blogHasLeadForm(page)) {
+  if (!payload || (!blogHasLeadForm(page) && !demoCall)) {
     return NextResponse.json({ error: "Missing or invalid form fields." }, { status: 400 });
   }
 
   const lead = {
     ...payload,
-    subject: `${payload.subject} (${page})`,
+    subject: demoCall ? `Free demo tutor (${page})` : `${payload.subject} (${page})`,
     message: `${payload.message}\n\nPage: /blog/${page}`,
   };
 

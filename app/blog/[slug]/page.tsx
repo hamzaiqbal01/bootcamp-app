@@ -7,6 +7,7 @@ import { Header } from "@/components/landing/Header";
 import { btn, btnSize } from "@/components/ui/button-styles";
 import { BlogAdSense } from "@/components/ads/BlogAdSense";
 import { BlogAdSenseLoader } from "@/components/ads/BlogAdSenseLoader";
+import { BlogDemoCallPopup } from "@/components/blog/BlogDemoCallPopup";
 import { BlogLeadForm } from "@/components/blog/BlogLeadForm";
 import { blogHasLeadForm } from "@/lib/blog-lead";
 import { BlogTableOfContents } from "@/components/blog/BlogTableOfContents";
@@ -1094,6 +1095,7 @@ export default async function BlogPostPage({ params }: Props) {
         </section>
       </main>
       <Footer />
+      <BlogDemoCallPopup slug={post.slug} />
     </>
   );
 }
