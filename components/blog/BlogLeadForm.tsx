@@ -5,11 +5,11 @@ import { useState } from "react";
 import { BLOG_LEAD_OFFERS, blogHasLeadForm } from "@/lib/blog-lead";
 
 export function BlogLeadForm({ slug }: { slug: string }) {
-  const offer = blogHasLeadForm(slug) ? BLOG_LEAD_OFFERS[slug] : null;
   const [state, setState] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [error, setError] = useState("");
 
-  if (!offer) return null;
+  if (!blogHasLeadForm(slug)) return null;
+  const offer = BLOG_LEAD_OFFERS[slug];
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
