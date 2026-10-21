@@ -8,6 +8,8 @@ export type BarDatum = {
 export type Testimonial = {
   quote: string;
   author: string;
+  video?: string;
+  poster?: string;
 };
 
 export const ratingBars: BarDatum[] = [
@@ -24,6 +26,13 @@ export const ratingBars: BarDatum[] = [
 ];
 
 export const testimonials: Testimonial[] = [
+  {
+    quote:
+      "The Future Dental Prep Tutoring Program and my tutor helped me immensely. My favorite part was the mock interviews, which perfectly simulated the real experience. I am incredibly grateful for the guidance and support that helped me succeed!",
+    author: "Gabriela Green",
+    video: "/videos/gabriela-green.mp4",
+    poster: "/images/reviews/gabriela-green.jpg",
+  },
   {
     quote:
       "The personal statement express was a lifesaver!!! I wasn't even going to apply this application cycle; however, with a last minute change of plans, I found myself scrambling to get everything finished. I had just written my personal statement, and was about to submit my application, and I was able to get feedback just a few hours after I sent it. The advice was very thorough and helpful! I actually talked with a dental school admissions committee on the phone to receive application feedback, and they said I had one of the best personal statements they had ever seen. Thank you Future Dental Prep!!!",

@@ -990,6 +990,26 @@ export default async function BlogPostPage({ params }: Props) {
               {/* Sticky TOC + CTA — desktop */}
               <aside className="hidden xl:block">
                 <div className="sticky top-28 space-y-6">
+                  <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+                    <video
+                      src="/videos/gabriela-green.mp4"
+                      poster="/images/reviews/gabriela-green.jpg"
+                      controls
+                      playsInline
+                      preload="metadata"
+                      className="aspect-[1280/854] w-full bg-slate-900 object-cover"
+                    />
+                    <div className="px-4 py-3">
+                      <p className="text-[11px] font-bold tracking-[0.16em] text-brand-600 uppercase">
+                        Student review
+                      </p>
+                      <p className="mt-1 text-sm font-semibold text-slate-900">Gabriela Green</p>
+                      <p className="mt-1 text-xs leading-5 text-slate-500">
+                        Interview at MUSC College of Dentistry after Future Dental Prep tutoring.
+                      </p>
+                    </div>
+                  </div>
+
                   <BlogTableOfContents headings={tocHeadings} variant="sidebar" />
 
                   <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-brand-600 to-brand-700 p-6 text-white shadow-lg shadow-brand-600/15">

@@ -96,3 +96,11 @@ body {
   right: -300px;
   background: rgb(99 102 241 / 0.16);
 }
+
+.reviews-swiper .swiper-slide {
+  height: auto;
+}
+
+.reviews-swiper .swiper-pagination-bullet-active {
+  background: #4f46e5;
+}

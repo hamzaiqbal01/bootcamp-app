@@ -1,8 +1,8 @@
+import { ReviewsCarousel } from "@/components/landing/ReviewsCarousel";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ratingBars, testimonials } from "@/lib/data/reviews";
 
 export function ReviewsSection() {
-  const stars = Array.from({ length: 5 });
 
   return (
     <section
@@ -80,33 +80,7 @@ export function ReviewsSection() {
           </div>
         </div>
 
-        <div className="mt-8 grid gap-5 md:grid-cols-2">
-          {testimonials.map((item, idx) => (
-            <blockquote
-              key={`${item.author}-${idx}`}
-              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
-            >
-              <div className="mb-3 flex items-center gap-1" role="img" aria-label="5 star rating">
-                {stars.map((_, starIdx) => (
-                  <svg
-                    key={starIdx}
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="#F59E0B"
-                    aria-hidden
-                  >
-                    <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                  </svg>
-                ))}
-              </div>
-              <p className="text-base leading-relaxed text-slate-700">&ldquo;{item.quote}&rdquo;</p>
-              <footer className="mt-4 border-t border-slate-100 pt-4">
-                <strong className="text-slate-900">- {item.author}</strong>
-              </footer>
-            </blockquote>
-          ))}
-        </div>
+        <ReviewsCarousel testimonials={testimonials} />
       </div>
     </section>
   );
