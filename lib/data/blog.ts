@@ -19,7 +19,7 @@ export type BlogPost = {
 const BLOG_AUTHOR = {
   name: "Future Dental Prep",
   role: "Admissions Team",
-  imageUrl: "/images/logo3.png",
+  imageUrl: "/images/logo-fdp.png",
 };
 
 export const blogPosts: BlogPost[] = [

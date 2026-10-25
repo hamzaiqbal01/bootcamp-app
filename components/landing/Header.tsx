@@ -27,7 +27,7 @@ export function Header() {
       id="header"
       className="sticky top-0 z-50 border-b border-slate-200 bg-white"
     >
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-6 px-4 py-4 sm:px-6 lg:min-h-17 lg:px-8">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-6 px-4 py-2 sm:px-6 lg:px-8">
         <Logo />
 
         <nav

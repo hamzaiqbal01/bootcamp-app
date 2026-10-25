@@ -10,7 +10,7 @@ function escapeHtml(value: string): string {
 
 function fromAddress(): string {
   const raw = process.env.CONTACT_FROM_EMAIL?.trim();
-  const name = "The Dental Prep";
+  const name = "Future Dental Prep";
   if (!raw) return `${name} <onboarding@resend.dev>`;
   const bracket = raw.match(/<([^>]+)>/);
   if (bracket?.[1]) return `${name} <${bracket[1].trim()}>`;
@@ -90,7 +90,7 @@ export async function sendStudyPlanEmails(input: {
 <p><a href="${escapeHtml(input.planUrl)}">Open your full plan</a></p>
 <p>If you want a tutor to review the plan around ${escapeHtml(input.plan.primaryLabel)}, reply to this email or use the tutor button on your plan page.</p>
 <p>${escapeHtml(input.plan.guidanceNote)}</p>
-<p>The Dental Prep</p>`,
+<p>Future Dental Prep</p>`,
       });
       result.student = true;
     } catch (error) {

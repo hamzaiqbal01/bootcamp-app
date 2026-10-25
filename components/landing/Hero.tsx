@@ -103,7 +103,7 @@ export function Hero() {
             <span
               className={`${headingSerif.className} text-3xl text-slate-300 sm:text-4xl lg:text-5xl`}
             >
-              The
+              Future
             </span>
             <span
               className={`${headingSans.className} text-4xl font-extrabold tracking-[-0.05em] sm:text-5xl lg:text-[3.5rem] lg:leading-[1.1]`}

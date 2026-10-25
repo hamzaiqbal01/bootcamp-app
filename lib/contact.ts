@@ -69,7 +69,7 @@ export async function saveContactToSheetDb(payload: ContactPayload): Promise<voi
 }
 
 function brandedFromAddress(raw: string | undefined): string {
-  const name = "The Dental Prep";
+  const name = "Future Dental Prep";
   const fallback = `${name} <onboarding@resend.dev>`;
   if (!raw?.trim()) return fallback;
 
@@ -124,10 +124,10 @@ export async function sendContactNotificationEmail(
           <!-- Header -->
           <tr>
             <td align="center" style="background:linear-gradient(135deg,#4F46E5 0%,#7C3AED 100%);border-radius:16px 16px 0 0;padding:32px 40px;">
-              <img src="${logoUrl}" alt="The Dental Prep" width="56" height="56"
+              <img src="${logoUrl}" alt="Future Dental Prep" width="56" height="56"
                 style="display:block;border-radius:12px;margin:0 auto 16px;" />
               <h1 style="margin:0;color:#ffffff;font-size:22px;font-weight:700;letter-spacing:-0.3px;">
-                The Dental Prep
+                Future Dental Prep
               </h1>
               <p style="margin:6px 0 0;color:rgba(255,255,255,0.80);font-size:13px;">
                 Contact Form Notification
@@ -218,7 +218,7 @@ export async function sendContactNotificationEmail(
               <p style="margin:0;font-size:12px;color:#94A3B8;line-height:1.6;">
                 This email was sent automatically when a visitor submitted the contact form at
                 <a href="${siteUrl}" style="color:#4F46E5;text-decoration:none;">${siteUrl}</a>.<br />
-                &copy; ${new Date().getFullYear()} The Dental Prep. All rights reserved.
+                &copy; ${new Date().getFullYear()} Future Dental Prep. All rights reserved.
               </p>
             </td>
           </tr>
