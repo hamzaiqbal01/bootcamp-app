@@ -2,6 +2,26 @@
 
 export const servicePackages: ServicePackage[] = [
   {
+    id: "interview",
+    title: "Interview Coaching Package",
+    price: "$347",
+    includes: [
+      "Phone & e-mail access to your interview specialist",
+      "30 minute interview protocol overview",
+      "2 hours of 1-on-1 mock interview video sessions with critique",
+      "Multiple mini interview, traditional, panel & group interview covered",
+      "School-focused interview option",
+      "Common questions with sample responses practice sheet provided",
+      "Assistance with formulating answers",
+      "Additional interview hours can be scheduled at an hourly rate",
+    ],
+    descriptions: [
+      "The last hurdle to overcome prior to an acceptance is the dental school interview. The interview holds immense weight on determining your admissions outcome. Are you ready for the challenge?",
+      "The Interview Coaching Package is put together to remove any doubt at your interview. Your specialist will review interview protocols, provide you with a common question sheet and answer any questions you may have. From there, you have 2 hours of 1-on-1 interview time available to schedule. During your interview sessions, you can choose to tailor your interview sessions towards school-specific interview formats or practice all of them. We offer critiques and make suggestions on how you can improve your responses. We cover all interview formats including MMI, traditional, panel and group interviews. Should you want additional interview practice, an hourly rate will be provided.",
+    ],
+    cta: "Get Interview Coaching",
+  },
+  {
     id: "ps-platinum",
     badge: "platinum",
     title: "Personal Statement Platinum",
@@ -150,26 +170,6 @@ export const servicePackages: ServicePackage[] = [
       "Please note: This service does not offer any editing or revisions; it is not a substitute for each of the other services we offer (Personal Statement Review, Experience Review, School Secondary Essay, etc.)",
     ],
     cta: "Get an Application Critique",
-  },
-  {
-    id: "interview",
-    title: "Interview Coaching Package",
-    price: "$347",
-    includes: [
-      "Phone & e-mail access to your interview specialist",
-      "30 minute interview protocol overview",
-      "2 hours of 1-on-1 mock interview video sessions with critique",
-      "Multiple mini interview, traditional, panel & group interview covered",
-      "School-focused interview option",
-      "Common questions with sample responses practice sheet provided",
-      "Assistance with formulating answers",
-      "Additional interview hours can be scheduled at an hourly rate",
-    ],
-    descriptions: [
-      "The last hurdle to overcome prior to an acceptance is the dental school interview. The interview holds immense weight on determining your admissions outcome. Are you ready for the challenge?",
-      "The Interview Coaching Package is put together to remove any doubt at your interview. Your specialist will review interview protocols, provide you with a common question sheet and answer any questions you may have. From there, you have 2 hours of 1-on-1 interview time available to schedule. During your interview sessions, you can choose to tailor your interview sessions towards school-specific interview formats or practice all of them. We offer critiques and make suggestions on how you can improve your responses. We cover all interview formats including MMI, traditional, panel and group interviews. Should you want additional interview practice, an hourly rate will be provided.",
-    ],
-    cta: "Get Interview Coaching",
   },
   {
     id: "school-selection",

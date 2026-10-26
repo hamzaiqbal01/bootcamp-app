@@ -24,6 +24,155 @@ const BLOG_AUTHOR = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "no-dental-school-interview-invite-yet",
+    title: "No Dental School Interview Invite Yet? What to Do in November and December 2026",
+    description:
+      "No dental school interview by late fall is common in the 2026–27 cycle. Here is what November and December silence means, which deadlines still matter, and what to do before Decision Day.",
+    publishedAt: "2026-10-27",
+    readingTime: "9 min read",
+    category: "Interview Prep",
+    coverGradient: "from-slate-800 to-indigo-900",
+    coverEmoji: "📬",
+    coverImage: "/images/blog-no-interview-invite-cover.png",
+    author: BLOG_AUTHOR,
+    content: `
+## Silence in November Is Not a Decision
+
+**No interview invite by late October or November does not mean you are rejected.** In the 2026–27 cycle, interviews started in the summer and keep going through the fall. Rolling schools are still inviting in October, November, and December. Some programs interview into February or March.
+
+[ADEA](https://www.adea.org/godental/Apply/apply-to-adea-aadsas) set **December 15, 2026** as the first day dental schools may notify applicants of acceptance. A quiet inbox before that date is normal for a lot of files. It is not the same thing as a denial.
+
+What it does mean: the schools that interview early have already started filling interview days. Your job is to check that each file is actually complete, and to be ready the week an invite arrives.
+
+---
+
+## Check the File Before You Assume the Worst
+
+**An incomplete application is not “under review.”** AADSAS usually needs the application, the fee, and official transcripts before a school can evaluate you. Processing often takes about four to six weeks after those pieces are in. A supplemental fee, a letter, or a Casper score can hold a file after AADSAS shows “verified.”
+
+Do this for every school on your list:
+
+1. Open AADSAS and confirm the status is complete, not missing a transcript or letter.
+2. Open the school’s own portal. Many programs send a supplemental only after verification. If that fee or essay is unpaid, they are not reading you.
+3. Match your DAT date to that school’s score deadline, not to the national cycle close. [Creighton](https://www.creighton.edu/dentistry/future-students/dentistry-admissions-requirements) wants Fall 2027 DAT scores by **November 15, 2026**. That date is Creighton’s, not a rule for every school.
+4. If a program’s published deadline has already passed, stop waiting on that one. [UAB](https://bb.uab.edu/dentistry/home/academics/dmd/how-to-apply) listed **October 31, 2026** as the last day to submit through AADSAS for this cycle.
+
+A short email that asks whether the file is complete is reasonable. An email that asks them to interview you is not.
+
+---
+
+## Deadlines That Still Matter After Halloween
+
+**December 1 and December 15 are the dates that sort the rest of this cycle.**
+
+| Date | What it is |
+|---|---|
+| November 15, 2026 | Some schools’ DAT or supplemental cutoff. Creighton uses this date for the DAT. UAB uses it for remaining materials. |
+| December 1, 2026 | AADSAS deadline at several programs, including [Buffalo](https://dental.buffalo.edu/education/dds-program1/how-to-apply-dds/adm-timeline-dds.html), [UIC](https://dentistry.uic.edu/programs/doctor-of-dental-medicine-dmd/how-to-apply-to-the-dmd-program/), and Creighton. Also the start of ADEA’s second Academic Update window. |
+| December 15, 2026 | First day schools may send acceptance notices. Also Creighton’s supplemental deadline, and UAB’s offer day. |
+| February 5, 2027 | AADSAS closes. Submitting that week only helps a school whose own deadline is still open. |
+
+If you still have a school with a December deadline and the file is unfinished, finish it. A polished January draft does not help a December 1 cutoff.
+
+The month-by-month calendar is in the [Fall 2027 application timeline](/blog/dental-school-application-timeline-fall-2027). What “too late” actually means is in [is it too late to apply for 2027?](/blog/is-it-too-late-to-apply-dental-school-2027).
+
+---
+
+## What to Do While You Wait
+
+**Use the wait to get interview-ready, not to refresh the portal.** An invite can give you one or two weeks. That is enough if the stories are already practiced. It is not enough if you start from zero the night the email arrives.
+
+Spend the time on three things:
+
+- **Format.** Traditional, panel, and MMI are different. The two-week plan is [how to prepare for a dental school interview](/blog/how-to-prepare-for-dental-school-interview). Station practice is the [MMI guide](/blog/dental-school-mmi-interview-guide). The question list is [30 common interview questions](/blog/dental-school-interview-questions).
+- **One answer you will actually be asked.** “Why dentistry?” fails when it is a slogan. The version that holds up is in [how to answer why dentistry](/blog/why-dentistry-interview-answer).
+- **Academic Update.** From **December 1, 2026 through February 5, 2027**, ADEA opens the second update window. Add a real grade when you have it. Do not enter a guess.
+
+If December 15 arrives and you have interviews but no offer, read [Decision Day](/blog/dental-school-decision-day) before you treat silence as a final no. Later interview days still exist. Marquette has published January 2027 dates. UIC interviews run through March 2027.
+
+---
+
+## When a Mock Interview Is the Right Next Step
+
+**Practice with a person who will stop you.** Reading questions out loud is not an interview. A mock session shows whether you answer the question that was asked, or the question you memorized.
+
+Future Dental Prep’s interview coaching is two hours of 1-on-1 mock sessions, plus a protocol review, for MMI, traditional, panel, and group formats. You can aim the sessions at one school’s format. [Schedule a free call](/schedule) if you want those hours before an invite lands, not the day after.
+`,
+  },
+  {
+    slug: "virtual-dental-school-interview",
+    title: "Virtual Dental School Interview: How to Prepare for Zoom",
+    description:
+      "A virtual dental school interview is still an interview. How to set up the room, what Zoom schools are using in 2026–27, and how to practice so you do not sound rehearsed.",
+    publishedAt: "2026-10-27",
+    readingTime: "8 min read",
+    category: "Interview Prep",
+    coverGradient: "from-indigo-700 to-slate-900",
+    coverEmoji: "💻",
+    coverImage: "/images/blog-virtual-dental-interview-cover.png",
+    author: BLOG_AUTHOR,
+    content: `
+## A Zoom Interview Is Not a Casual Call
+
+**Schools that interview on Zoom are scoring the same things as schools that interview on campus.** Eye contact, a direct answer, and a story you can defend still decide the room. The camera only adds a few ways to look unprepared: a dark face, a noisy room, or a connection that dies mid-answer.
+
+In the 2026–27 cycle, several programs are explicit that the interview itself is remote. [Boston University](https://www.bu.edu/dental/admissions/dmd/application/) uses a Zoom interview with an admissions committee member. [UIC](https://dentistry.uic.edu/programs/doctor-of-dental-medicine-dmd/how-to-apply-to-the-dmd-program/) runs virtual interviews from September 2026 through March 2027 and says recording the interview can disqualify you. [Marquette](https://www2.mu.edu/dentistry/admissions/) published virtual interview days through November 2026, plus January 2027. [Creighton](https://www.creighton.edu/dentistry/future-students/dentistry-admissions-requirements) pairs a virtual interview with a required in-person presentation, so “virtual” does not always mean you never go to campus.
+
+Read the invitation. Do not assume every school on your list uses the same setup.
+
+---
+
+## Set the Room the Day Before
+
+**Do the technical check once, on the same device you will use.** A phone hotspot and a new pair of earbuds are a bad combination to discover at 8:55 a.m.
+
+- Camera at eye level. Stack books if the laptop is low. Looking down at the lens reads as disengaged.
+- Light in front of your face, not a bright window behind you.
+- Plain wall or a tidy shelf. Nothing you would have to explain.
+- Wired internet if you have it. If you must use Wi-Fi, sit close to the router and close other video apps.
+- Headphones only if they are already comfortable. Earbuds that fall out are worse than a quiet room and the laptop mic.
+- Water off camera. Notes off camera. Reading an answer is obvious on Zoom, and it sounds like reading.
+- Your name in the Zoom window should be the name on the application.
+
+Join a test call with a friend the night before. Ask them if your voice cuts out when you turn your head.
+
+---
+
+## How to Answer on Camera
+
+**Shorter than you think, then stop.** On Zoom, a 90-second answer feels long. A two-minute monologue feels like a speech. Answer the question, give one example, and pause so the interviewer can follow up.
+
+The content is the same as an in-person interview:
+
+- Why dentistry, tied to something you did, not a slogan. Use [how to answer why dentistry](/blog/why-dentistry-interview-answer).
+- A clinical or shadowing story with your role named. “We” is not an answer.
+- A hard moment: a grade, a job, a conflict. What you did next matters more than the flaw.
+- Questions for them that you could not have copied from the homepage.
+
+If the school uses MMI stations on a screen, each station is still a few minutes. The station list is in the [MMI guide](/blog/dental-school-mmi-interview-guide). A full two-week plan, virtual or not, is [how to prepare for a dental school interview](/blog/how-to-prepare-for-dental-school-interview). Common prompts are in [dental school interview questions](/blog/dental-school-interview-questions).
+
+Look at the camera when you make the point, then back at the face on the screen when they talk. Staring at your own preview the whole time is the usual mistake.
+
+---
+
+## The Morning Of
+
+**Log in early and do not fill the silence with jokes.** Most virtual days start with a waiting room. Have the invitation email open, a photo ID nearby if they asked for it, and the school’s name correct. UIC’s policy is a useful reminder even if you are interviewing somewhere else: do not record the session.
+
+If the call drops, rejoin with the same link and say so in one sentence. Do not restart your answer from the top unless they ask. If you have a second device logged into the same meeting as a backup, keep it muted and the camera off until you need it.
+
+Dress the way you would for the campus visit. The frame only shows your shoulders. The rest of the day still feels like an interview if you are dressed for one.
+
+---
+
+## Practice on the Same Setup You Will Use
+
+**A mock interview on Zoom is the only way to hear how you actually sound.** Practicing across a kitchen table does not show the lag, the lighting, or the habit of looking at your notes.
+
+Future Dental Prep’s interview coaching includes 1-on-1 mock sessions on video, for traditional, panel, group, and MMI formats. You can point the session at the school that invited you. [Schedule a free call](/schedule) and do it before interview day, not the night before.
+`,
+  },
+  {
     slug: "dat-dates-2027",
     title: "DAT Dates 2027: There Is No Fixed Test Day",
     description:
