@@ -1,9 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useId, useRef, useState } from "react";
 import type { FormEvent } from "react";
 
-const SHOW_AFTER_MS = 5_000;
+const SHOW_AFTER_MS = 30_000;
 
 export function BlogDemoCallPopup({ slug }: { slug: string }) {
   const titleId = useId();
@@ -111,10 +112,13 @@ export function BlogDemoCallPopup({ slug }: { slug: string }) {
               <path d="M3 3l10 10M13 3L3 13" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
             </svg>
           </button>
-          <p className="text-[11px] font-semibold tracking-[0.18em] text-indigo-200 uppercase">
-            Future Dental Prep
-          </p>
-          <h2 id={titleId} className="mt-3 max-w-[16ch] text-2xl font-extrabold tracking-tight sm:text-3xl">
+          <Link
+            href="/dat-study-plan-generator"
+            className="inline-flex rounded-full bg-white px-3.5 py-1.5 text-xs font-semibold text-[#0B1020] hover:bg-slate-100"
+          >
+            Create DAT study plan
+          </Link>
+          <h2 id={titleId} className="mt-4 max-w-[16ch] text-2xl font-extrabold tracking-tight sm:text-3xl">
             Get a free demo tutor
           </h2>
           <p className="mt-3 max-w-sm text-sm leading-relaxed text-white/75">
