@@ -10,7 +10,8 @@
     "test:dat-plan": "npx --yes tsx scripts/dat-study-plan.test.mts",
     "gsc:auth": "node scripts/gsc/auth.mjs",
     "gsc:sites": "node scripts/gsc/sites.mjs",
-    "gsc:pull": "node scripts/gsc/pull.mjs"
+    "gsc:pull": "node scripts/gsc/pull.mjs",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",
