@@ -6,6 +6,47 @@ export const GA_MEASUREMENT_ID =
 
 export const GA_HOSTS = ["futuredentalprep.com", "www.futuredentalprep.com"];
 
+/** Set by proxy.ts from Vercel's visitor-country header: "eu" for the EEA, UK and Switzerland. */
+export const REGION_COOKIE = "fdp_region";
+/** The visitor's cookie choice on the consent banner: "granted" or "denied". */
+export const CONSENT_KEY = "fdp_consent";
+
+// EU 27 + Iceland, Liechtenstein, Norway (EEA) + United Kingdom + Switzerland.
+export const CONSENT_COUNTRIES = new Set([
+  "AT",
+  "BE",
+  "BG",
+  "HR",
+  "CY",
+  "CZ",
+  "DK",
+  "EE",
+  "FI",
+  "FR",
+  "DE",
+  "GR",
+  "HU",
+  "IE",
+  "IT",
+  "LV",
+  "LT",
+  "LU",
+  "MT",
+  "NL",
+  "PL",
+  "PT",
+  "RO",
+  "SK",
+  "SI",
+  "ES",
+  "SE",
+  "IS",
+  "LI",
+  "NO",
+  "GB",
+  "CH",
+]);
+
 type Params = Record<string, string | number | boolean | undefined>;
 
 /** Send a GA4 event, e.g. track("generate_lead", { method: "contact_form" }). */

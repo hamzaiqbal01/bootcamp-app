@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
 import { Breadcrumbs } from "@/components/seo/JsonLd";
+import { CookieSettingsLink } from "@/components/analytics/CookieConsent";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   },
 };
 
-const LAST_UPDATED = "July 23, 2026";
+const LAST_UPDATED = "November 5, 2026";
 const SITE_NAME = "Future Dental Prep";
 const SITE_URL = "https://futuredentalprep.com";
 
@@ -21,9 +22,7 @@ export default function PrivacyPage() {
   return (
     <>
       <Header />
-      <Breadcrumbs
-        trail={[{ name: "Privacy Policy", path: "/privacy" }]}
-      />
+      <Breadcrumbs trail={[{ name: "Privacy Policy", path: "/privacy" }]} />
       <main>
         {/* Header */}
         <section className="border-b border-slate-100 bg-[linear-gradient(135deg,#FAFAFE_0%,#EEF2FF_50%,#F5F3FF_100%)] py-14 sm:py-18">
@@ -36,7 +35,10 @@ export default function PrivacyPage() {
             </h1>
             <p className="mt-4 text-base text-slate-500">
               Last updated:{" "}
-              <time dateTime="2026-07-23" className="font-medium text-slate-700">
+              <time
+                dateTime="2026-11-05"
+                className="font-medium text-slate-700"
+              >
                 {LAST_UPDATED}
               </time>
             </p>
@@ -47,11 +49,11 @@ export default function PrivacyPage() {
         <section className="bg-white py-16 sm:py-20">
           <div className="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="prose prose-slate max-w-none prose-headings:font-extrabold prose-headings:tracking-tight prose-a:text-brand-600 prose-a:no-underline hover:prose-a:underline">
-
               <p className="lead text-lg text-slate-600">
-                At <strong>{SITE_NAME}</strong> (<a href={SITE_URL}>{SITE_URL}</a>), your privacy
-                matters to us. This policy explains what information we collect, how we use it, and
-                your rights with respect to your data.
+                At <strong>{SITE_NAME}</strong> (
+                <a href={SITE_URL}>{SITE_URL}</a>), your privacy matters to us.
+                This policy explains what information we collect, how we use it,
+                and your rights with respect to your data.
               </p>
 
               <hr className="my-10 border-slate-100" />
@@ -62,30 +64,40 @@ export default function PrivacyPage() {
                 When you submit the contact form on our website, we collect:
               </p>
               <ul>
-                <li><strong>Name</strong></li>
-                <li><strong>Email address</strong></li>
-                <li><strong>Subject</strong></li>
-                <li><strong>Message content</strong></li>
+                <li>
+                  <strong>Name</strong>
+                </li>
+                <li>
+                  <strong>Email address</strong>
+                </li>
+                <li>
+                  <strong>Subject</strong>
+                </li>
+                <li>
+                  <strong>Message content</strong>
+                </li>
               </ul>
-              <p>
-                This information is used solely to respond to your inquiry.
-              </p>
+              <p>This information is used solely to respond to your inquiry.</p>
 
               <h3>b) Automatically Collected Data</h3>
               <p>
-                Like most websites, our server may collect standard log data including your IP
-                address, browser type, pages visited, and time of visit. This data is used for
-                security and performance monitoring only and is not linked to any personal
+                Like most websites, our server may collect standard log data
+                including your IP address, browser type, pages visited, and time
+                of visit. This data is used for security and performance
+                monitoring only and is not linked to any personal
                 identification.
               </p>
 
               <h3>c) Cookies and Similar Technologies</h3>
               <p>
-                We and our partners may use cookies, web beacons, pixels, and similar technologies
-                to operate the website, measure performance, and — when advertising is enabled —
-                deliver and measure ads.
+                We and our partners may use cookies, web beacons, pixels, and
+                similar technologies to operate the website, measure
+                performance, and — when advertising is enabled — deliver and
+                measure ads.
               </p>
-              <p>These technologies may collect or process information such as:</p>
+              <p>
+                These technologies may collect or process information such as:
+              </p>
               <ul>
                 <li>IP address and approximate location</li>
                 <li>Device, browser, and operating system information</li>
@@ -93,15 +105,70 @@ export default function PrivacyPage() {
                 <li>Cookie identifiers and advertising identifiers</li>
               </ul>
               <p>
-                Basic session and security cookies may also be set by our hosting provider (Vercel)
-                to keep the site running securely.
+                Basic session and security cookies may also be set by our
+                hosting provider (Vercel) to keep the site running securely.
               </p>
 
-              <h3>d) Advertising (Google AdSense)</h3>
+              <h3>d) Analytics (Google Analytics 4)</h3>
               <p>
-                We may use <strong>Google AdSense</strong> and related Google advertising services
-                to display ads on certain pages of our website (primarily informational blog
-                content). Google and its partners may use cookies and similar technologies to:
+                We use <strong>Google Analytics 4</strong> to understand how
+                visitors use the site, for example which pages are read, which
+                buttons are clicked (such as &quot;Book a free call&quot; or a
+                package button) and whether a form or booking was completed.
+                Google Analytics uses cookies and collects information such as:
+              </p>
+              <ul>
+                <li>
+                  Pages visited, time on page and the page that referred you
+                </li>
+                <li>
+                  Approximate location (country and city) and device, browser
+                  and operating system
+                </li>
+                <li>
+                  Clicks on key buttons and links, and that a form, chat or
+                  booking was completed
+                </li>
+              </ul>
+              <p>
+                We do not send your name, email address or message content to
+                Google Analytics. We use this information only in aggregate, to
+                improve the website and our services.
+              </p>
+              <p>
+                Visitors in the European Economic Area (EEA), United Kingdom and
+                Switzerland are asked for consent first: analytics cookies are
+                only set if you choose <strong>Accept</strong> on the cookie
+                banner. You can change your choice at any time with the
+                &quot;Cookie settings&quot; link below. Anyone can also opt out
+                of Google Analytics with the{" "}
+                <a
+                  href="https://tools.google.com/dlpage/gaoptout"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Google Analytics opt-out browser add-on
+                </a>
+                . See{" "}
+                <a
+                  href="https://policies.google.com/technologies/partner-sites"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  how Google uses information from sites that use its services
+                </a>
+                .
+              </p>
+              <p>
+                <CookieSettingsLink />
+              </p>
+
+              <h3>e) Advertising (Google AdSense)</h3>
+              <p>
+                We may use <strong>Google AdSense</strong> and related Google
+                advertising services to display ads on certain pages of our
+                website (primarily informational blog content). Google and its
+                partners may use cookies and similar technologies to:
               </p>
               <ul>
                 <li>Serve personalized and/or non-personalized ads</li>
@@ -109,17 +176,17 @@ export default function PrivacyPage() {
                 <li>Prevent fraud and ensure ad security</li>
               </ul>
               <p>
-                Third-party vendors, including Google, may use cookies to serve ads based on a
-                user&apos;s prior visits to this website or other websites. Users may opt out of
-                personalized advertising by visiting{" "}
+                Third-party vendors, including Google, may use cookies to serve
+                ads based on a user&apos;s prior visits to this website or other
+                websites. Users may opt out of personalized advertising by
+                visiting{" "}
                 <a
                   href="https://www.google.com/settings/ads"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Google Ads Settings
-                </a>
-                {" "}
+                </a>{" "}
                 or{" "}
                 <a
                   href="https://www.aboutads.info/choices/"
@@ -134,14 +201,16 @@ export default function PrivacyPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  How Google uses information from sites or apps that use our services
+                  How Google uses information from sites or apps that use our
+                  services
                 </a>
                 .
               </p>
               <p>
-                Visitors in the European Economic Area (EEA), United Kingdom, and Switzerland may
-                see a consent message (Google-certified Consent Management Platform) that allows
-                them to manage advertising and cookie preferences before personalized ads are
+                Visitors in the European Economic Area (EEA), United Kingdom,
+                and Switzerland may see a consent message (Google-certified
+                Consent Management Platform) that allows them to manage
+                advertising and cookie preferences before personalized ads are
                 shown.
               </p>
 
@@ -155,59 +224,106 @@ export default function PrivacyPage() {
                 <li>Send relevant information you have explicitly requested</li>
               </ul>
               <p>
-                Information collected through cookies and advertising technologies may be used to
-                operate the site, understand traffic, and (where enabled) deliver and measure
-                advertising.
+                Information collected through cookies and advertising
+                technologies may be used to operate the site, understand
+                traffic, and (where enabled) deliver and measure advertising.
               </p>
               <p>
-                We do <strong>not</strong> sell, rent, or share your contact-form personal
-                information with third parties for their own marketing purposes.
+                We do <strong>not</strong> sell, rent, or share your
+                contact-form personal information with third parties for their
+                own marketing purposes.
               </p>
 
               <hr className="my-10 border-slate-100" />
 
               <h2>3. Data Storage & Third-Party Services</h2>
-              <p>We use the following third-party services to operate our website:</p>
+              <p>
+                We use the following third-party services to operate our
+                website:
+              </p>
 
               <h3>SheetDB / Google Sheets</h3>
               <p>
-                Contact form submissions are stored in a Google Spreadsheet via SheetDB. This
-                allows our team to manage and respond to inquiries. Data is accessible only to
-                authorized team members.
+                Contact form submissions are stored in a Google Spreadsheet via
+                SheetDB. This allows our team to manage and respond to
+                inquiries. Data is accessible only to authorized team members.
               </p>
 
               <h3>Resend</h3>
               <p>
-                We use Resend to send email notifications to our team when a new contact form is
-                submitted. Your email address is included in these notifications so we can reply
-                to you.
+                We use Resend to send email notifications to our team when a new
+                contact form is submitted. Your email address is included in
+                these notifications so we can reply to you.
               </p>
 
               <h3>Vercel</h3>
               <p>
-                Our website is hosted on Vercel. Vercel may collect server log data as part of
-                standard web hosting operations. See{" "}
-                <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">
+                Our website is hosted on Vercel. Vercel may collect server log
+                data as part of standard web hosting operations. See{" "}
+                <a
+                  href="https://vercel.com/legal/privacy-policy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Vercel&apos;s Privacy Policy
                 </a>{" "}
                 for details.
               </p>
 
+              <h3>Google Analytics</h3>
+              <p>
+                We use Google Analytics 4 to measure how the website is used, as
+                described in section 1(d). See{" "}
+                <a
+                  href="https://policies.google.com/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Google&apos;s Privacy Policy
+                </a>
+                .
+              </p>
+
+              <h3>Calendly</h3>
+              <p>
+                Free calls are booked through Calendly. The details you enter
+                when booking (such as your name, email address and answers to
+                the booking questions) are processed by Calendly and shared with
+                our team so we can prepare for the call. See{" "}
+                <a
+                  href="https://calendly.com/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Calendly&apos;s Privacy Policy
+                </a>
+                .
+              </p>
+
+              <h3>Supabase</h3>
+              <p>
+                Inquiries and leads from our website forms are stored in a
+                secure database hosted by Supabase, which only authorized team
+                members can access.
+              </p>
+
               <h3>Google AdSense and Advertising Partners</h3>
               <p>
-                When ads are enabled, Google and participating third-party vendors may receive
-                technical data (such as IP address, cookie IDs, and page URLs) to serve and
-                measure ads. Their processing is governed by their own privacy policies in
-                addition to this policy.
+                When ads are enabled, Google and participating third-party
+                vendors may receive technical data (such as IP address, cookie
+                IDs, and page URLs) to serve and measure ads. Their processing
+                is governed by their own privacy policies in addition to this
+                policy.
               </p>
 
               <hr className="my-10 border-slate-100" />
 
               <h2>4. Data Retention</h2>
               <p>
-                Contact form data is retained in our records for as long as is necessary to
-                fulfill your request and for legitimate business purposes. You may request
-                deletion of your data at any time by contacting us.
+                Contact form data is retained in our records for as long as is
+                necessary to fulfill your request and for legitimate business
+                purposes. You may request deletion of your data at any time by
+                contacting us.
               </p>
 
               <hr className="my-10 border-slate-100" />
@@ -217,9 +333,15 @@ export default function PrivacyPage() {
               <ul>
                 <li>Access the personal data we hold about you</li>
                 <li>Request correction of inaccurate data</li>
-                <li>Request deletion of your data (&quot;right to be forgotten&quot;)</li>
+                <li>
+                  Request deletion of your data (&quot;right to be
+                  forgotten&quot;)
+                </li>
                 <li>Object to or restrict processing of your data</li>
-                <li>Withdraw consent at any time where processing is based on consent</li>
+                <li>
+                  Withdraw consent at any time where processing is based on
+                  consent
+                </li>
               </ul>
               <p>
                 To exercise any of these rights, please use our{" "}
@@ -230,36 +352,38 @@ export default function PrivacyPage() {
 
               <h2>6. Children&apos;s Privacy</h2>
               <p>
-                Our services are intended for individuals aged 18 and older. We do not knowingly
-                collect personal information from children under 13. If you believe a child has
-                provided us with personal information, please contact us and we will delete it
-                promptly.
+                Our services are intended for individuals aged 18 and older. We
+                do not knowingly collect personal information from children
+                under 13. If you believe a child has provided us with personal
+                information, please contact us and we will delete it promptly.
               </p>
 
               <hr className="my-10 border-slate-100" />
 
               <h2>7. Links to Other Websites</h2>
               <p>
-                Our website may contain links to third-party websites (e.g., scheduling tools,
-                Typeform). We are not responsible for the privacy practices of those sites and
-                encourage you to review their policies independently.
+                Our website may contain links to third-party websites (e.g.,
+                scheduling tools, Typeform). We are not responsible for the
+                privacy practices of those sites and encourage you to review
+                their policies independently.
               </p>
 
               <hr className="my-10 border-slate-100" />
 
               <h2>8. Changes to This Policy</h2>
               <p>
-                We may update this Privacy Policy from time to time. The &quot;Last updated&quot;
-                date at the top of this page will reflect any changes. Continued use of our website
-                after changes are posted constitutes your acceptance of the updated policy.
+                We may update this Privacy Policy from time to time. The
+                &quot;Last updated&quot; date at the top of this page will
+                reflect any changes. Continued use of our website after changes
+                are posted constitutes your acceptance of the updated policy.
               </p>
 
               <hr className="my-10 border-slate-100" />
 
               <h2>9. Contact Us</h2>
               <p>
-                If you have any questions or concerns about this Privacy Policy, please contact
-                us:
+                If you have any questions or concerns about this Privacy Policy,
+                please contact us:
               </p>
               <ul>
                 <li>

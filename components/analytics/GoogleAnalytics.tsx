@@ -2,22 +2,41 @@
 
 import Script from "next/script";
 import { useEffect } from "react";
-import { GA_HOSTS, GA_MEASUREMENT_ID, track } from "@/lib/analytics";
+import { CookieConsent } from "@/components/analytics/CookieConsent";
+import {
+  CONSENT_KEY,
+  GA_HOSTS,
+  GA_MEASUREMENT_ID,
+  REGION_COOKIE,
+  track,
+} from "@/lib/analytics";
 
 // GA4 via gtag.js, loaded after the page is interactive and only on the real domain, so local testing and
 // Vercel preview URLs never send data. Page views on client-side navigation come from GA4's enhanced
 // measurement ("page changes based on browser history events"), which is on by default.
+//
+// Consent: for visitors from the EEA, UK and Switzerland (region cookie "eu", set by proxy.ts) GA is not
+// loaded at all until they choose Accept on the cookie banner, which calls window.fdpLoadGA(). Everyone
+// else gets GA straight away.
 const loader = `
 (function(){
-  if (${JSON.stringify(GA_HOSTS)}.indexOf(location.hostname) === -1) return;
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = function(){ dataLayer.push(arguments); };
-  gtag('js', new Date());
-  gtag('config', '${GA_MEASUREMENT_ID}');
-  var s = document.createElement('script');
-  s.async = true;
-  s.src = 'https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}';
-  document.head.appendChild(s);
+  window.fdpLoadGA = function(){
+    if (window.__fdpGA) return;
+    if (${JSON.stringify(GA_HOSTS)}.indexOf(location.hostname) === -1) return;
+    window.__fdpGA = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function(){ dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('config', '${GA_MEASUREMENT_ID}');
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}';
+    document.head.appendChild(s);
+  };
+  var eu = /(?:^|; )${REGION_COOKIE}=eu(?:;|$)/.test(document.cookie);
+  var choice = null;
+  try { choice = localStorage.getItem('${CONSENT_KEY}'); } catch (e) {}
+  if (!eu || choice === 'granted') window.fdpLoadGA();
 })();
 `;
 
@@ -69,8 +88,11 @@ function useLinkClickEvents() {
 export function GoogleAnalytics() {
   useLinkClickEvents();
   return (
-    <Script id="ga4" strategy="afterInteractive">
-      {loader}
-    </Script>
+    <>
+      <Script id="ga4" strategy="afterInteractive">
+        {loader}
+      </Script>
+      <CookieConsent />
+    </>
   );
 }

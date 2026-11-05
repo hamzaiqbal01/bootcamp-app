@@ -131,6 +131,8 @@ Future Dental Prep’s interview coaching is two hours of 1-on-1 mock sessions, 
 
 **Schools that interview on Zoom are scoring the same things as schools that interview on campus.** Eye contact, a direct answer, and a story you can defend still decide the room. The camera only adds a few ways to look unprepared: a dark face, a noisy room, or a connection that dies mid-answer.
 
+Want to practice with feedback? See our [dental school interview prep](/services/dental-school-interview-prep), with mock MMI and panel interviews.
+
 In the 2026–27 cycle, several programs are explicit that the interview itself is remote. [Boston University](https://www.bu.edu/dental/admissions/dmd/application/) uses a Zoom interview with an admissions committee member. [UIC](https://dentistry.uic.edu/programs/doctor-of-dental-medicine-dmd/how-to-apply-to-the-dmd-program/) runs virtual interviews from September 2026 through March 2027 and says recording the interview can disqualify you. [Marquette](https://www2.mu.edu/dentistry/admissions/) published virtual interview days through November 2026, plus January 2027. [Creighton](https://www.creighton.edu/dentistry/future-students/dentistry-admissions-requirements) pairs a virtual interview with a required in-person presentation, so “virtual” does not always mean you never go to campus.
 
 Read the invitation. Do not assume every school on your list uses the same setup.
@@ -543,6 +545,8 @@ Pick the DAT month that still leaves a retake, then build the weeks backward fro
 ## No — DAT Organic Chemistry Did Not Add a New Course
 
 **The April 2026 organic chemistry update did not add a new subject.** The ADA says the new specifications “do not represent major changes to the content that will appear on the examination.” Organic chemistry is still **30 questions**. What changed is the names of the topics and a longer list of subtopics.
+
+Want 1-on-1 help with this section? Our [DAT Organic Chemistry tutors](/private-dat-tutoring/dat-organic-chemistry-tutor) build a plan around your weakest topics.
 
 If your test date is in **2026 after the update, or any time in 2027**, study the updated outline. The ADA’s note in the [2026 DAT Candidate Guide](https://www.ada.org/-/media/project/ada-organization/ada/ada-org/files/education/dat_candidate_guide.pdf) says the implementation date was anticipated for April 2026, and that you should use the specifications in effect on your test date. The outline itself is in the ADA’s [new organic chemistry examination specifications](https://www.ada.org/-/media/project/ada-organization/ada/ada-org/files/education/new_organic_chemistry_examinationspecifications.pdf).
 
@@ -1849,6 +1853,8 @@ If you want help reading your transcript the way adcoms will — BCP vs Science 
 
 Almost everyone *can* score higher with more time. The real question is:
 
+Prefer to study with a tutor? See [private 1-on-1 DAT tutoring](/private-dat-tutoring), with a study plan built around your weakest sections.
+
 **Will a higher DAT score change your admission outcomes enough to justify the delay, cost, and risk?**
 
 A retake that raises AA from 18 → 21 can unlock a much stronger school list. A retake that raises 21 → 22 while your application timeline slips into August often helps less than applicants expect.
@@ -2078,6 +2084,8 @@ If you want a day-one submission plan built around your GPA, DAT, and school lis
 ## Why Generic PAT Practice Stalls Your Score
 
 If you searched for **DAT spatial reasoning** or **DAT perceptual ability**, you are looking at the same skill the PAT measures — mental rotation, 3D visualization, and pattern recognition under time.
+
+Want 1-on-1 help with this section? Our [DAT PAT tutors](/private-dat-tutoring/dat-pat-tutor) build a plan around your weakest topics.
 
 Most students “do PAT questions” every day and still sit at 17–18. The problem is usually not effort — it is **undifferentiated practice**. Keyhole errors and cube-counting errors are different skills. If you only mix random sets, you never isolate the weakness that is capping your Perceptual Ability score.
 
@@ -2595,6 +2603,8 @@ If you've decided dentistry is your path — or you're leaning that way and want
 
 The AADSAS dental school personal statement is 4,500 characters — including spaces. That is short. Most applicants waste the first 1,000 characters warming up, then rush the ending. Admissions committees notice.
 
+Want a second pair of eyes on your draft? See our [personal statement editing](/services/personal-statement-editing) packages.
+
 This guide walks you through the full process: what to write, how to structure it, how to revise it, and how to finish under the character limit without sounding generic. If you already have a draft, pair this with our guides on [personal statement examples](/blog/dental-school-personal-statement-examples) and [common mistakes that get you rejected](/blog/dental-school-personal-statement-mistakes).
 
 ---
@@ -2909,6 +2919,8 @@ If you want help building a secondary story bank and polishing "Why this school?
 
 Quantitative Reasoning (QR) is 40 questions in 45 minutes — about 67 seconds per question. That is not enough time to "work every problem carefully." Students who treat QR like a classroom math test run out of time and leave 6–10 questions blank or guessed.
 
+Want 1-on-1 help with this section? Our [DAT Quantitative Reasoning tutors](/private-dat-tutoring/dat-quantitative-reasoning-tutor) build a plan around your weakest topics.
+
 The applicants who score 20+ do three things differently:
 
 1. They know which topics actually show up
@@ -3098,6 +3110,8 @@ If you want help building a QR plan around your weak topics, [schedule a free co
 
 Most applicants believe Reading Comprehension (RC) is a reading-speed test. They download speed-reading apps, force themselves to "read faster," and their scores barely move.
 
+Want 1-on-1 help with this section? Our [DAT Reading Comprehension tutors](/private-dat-tutoring/dat-reading-comprehension-tutor) build a plan around your weakest topics.
+
 DAT RC is not about maximum words per minute. It is about:
 
 - Locating information quickly
@@ -3259,6 +3273,8 @@ If your RC score is the only section holding down your AA, structured practice w
 ## Why DAT Organic Chemistry Feels Harder Than It Is
 
 Organic Chemistry is 30 questions on the Survey of Natural Sciences — the same weight as General Chemistry. But it produces more anxiety than any other section for most pre-dental students. That anxiety is usually not about intelligence. It is about study method.
+
+Want 1-on-1 help with this section? Our [DAT Organic Chemistry tutors](/private-dat-tutoring/dat-organic-chemistry-tutor) build a plan around your weakest topics.
 
 Students who treat Orgo like a memorization dump of every reaction from Organic Chemistry I and II burn out and still miss questions. Students who treat it like a pattern recognition test — reagents, functional groups, stereochemistry, and a short list of high-yield mechanisms — consistently score 20+.
 
@@ -3482,6 +3498,8 @@ For focused help on those weak clusters, [schedule a free consultation with Futu
 
 General Chemistry is 30 of the 100 Survey of Natural Sciences questions — the same weight as Organic Chemistry, and less than Biology's 40. But Gen Chem is different from both of those sections: it is formula-heavy, calculation-driven, and highly predictable. The students who score 20+ on Gen Chem are almost never the ones who "know chemistry." They are the ones who drilled the same high-yield problem types until the setup became automatic.
 
+Want 1-on-1 help with this section? Our [DAT General Chemistry tutors](/private-dat-tutoring/dat-general-chemistry-tutor) build a plan around your weakest topics.
+
 If your Biology is solid and your Orgo is average, Gen Chem is often the fastest path to raising your Total Science (TS) and Academic Average (AA). A two-point jump here is more achievable in four weeks of focused practice than the same jump in Biology, where content volume is much larger.
 
 This guide covers what actually shows up, which formulas you need cold, the best resources, and a study sequence that works.
@@ -3694,6 +3712,8 @@ If you want help identifying your Gen Chem weak points and fixing them with a st
 
 Most applicants prepare for dental school interviews the wrong way: they spend hours memorizing answers to lists of possible questions, then walk into the interview room and sound exactly like someone who memorized answers to lists of possible questions.
 
+Want to practice with feedback? See our [dental school interview prep](/services/dental-school-interview-prep), with mock MMI and panel interviews.
+
 Good interview preparation is not about memorizing. It is about building genuine fluency — the ability to access your own stories, articulate your thinking clearly under pressure, and respond to unexpected follow-ups without freezing.
 
 Two weeks is enough time to do this properly, if you use the time well. This guide gives you a specific, day-by-day plan to follow from the moment you receive your interview invitation to the morning of interview day.
@@ -3897,6 +3917,8 @@ At Future Dental Prep, we run focused mock interview sessions — full panel for
 ## Why DAT Biology Deserves More of Your Study Time Than You're Giving It
 
 Biology accounts for 40 questions out of the 100 on the Survey of Natural Sciences — more than General Chemistry (30) and Organic Chemistry (30) combined. Yet most DAT prep plans allocate study time proportionally by difficulty, which leads applicants to spend far too many hours on Orgo and not nearly enough on Bio.
+
+Want 1-on-1 help with this section? Our [DAT Biology tutors](/private-dat-tutoring/dat-biology-tutor) build a plan around your weakest topics.
 
 The result is predictable: applicants hit their target on the chemistry sections and fall short on Biology, pulling their AA and TS averages down precisely where they had the most room to gain.
 
@@ -4118,6 +4140,8 @@ For applicants who have been studying consistently and are still falling short o
 ## What Is the MMI and Why Do Dental Schools Use It?
 
 The Multiple Mini Interview (MMI) is an interview format used by a growing number of dental schools in the United States and Canada. Instead of a single long conversation with a panel, applicants rotate through a series of short, timed stations — typically 6 to 10 — each with a different evaluator and a different type of question or scenario.
+
+Want to practice with feedback? See our [dental school interview prep](/services/dental-school-interview-prep), with mock MMI and panel interviews.
 
 The format was originally developed by medical schools to address a well-documented flaw in traditional panel interviews: interviewers who liked an applicant early in the conversation tended to rate everything they said more favorably, regardless of the quality of the response. The MMI reduces this bias by using multiple independent evaluators across multiple unconnected scenarios.
 
@@ -4360,6 +4384,8 @@ If you'd like to do a mock MMI session with personalized feedback from someone w
 
 Every year, applicants with 3.7 GPAs and 22 DAT scores receive rejection letters from programs they were statistically qualified for. One of the most common reasons: a personal statement that failed to differentiate them from thousands of other qualified applicants.
 
+Want a second pair of eyes on your draft? See our [personal statement editing](/services/personal-statement-editing) packages.
+
 The personal statement is your only opportunity in the AADSAS application to speak directly to the admissions committee as a person — not as a GPA, not as a test score, not as a list of activities. Most applicants waste it.
 
 This guide covers the 10 most common dental school personal statement mistakes, with before-and-after examples for each one. If you can eliminate these from your statement, you will be ahead of the majority of the applicant pool.
@@ -4546,6 +4572,8 @@ If you're ready to get real feedback on your personal statement — not encourag
 
 No matter which school you interview at — whether it's a traditional panel interview, an MMI circuit, or a behavioral format — you will be asked some version of this question:
 
+Want to practice with feedback? See our [dental school interview prep](/services/dental-school-interview-prep), with mock MMI and panel interviews.
+
 **"Why do you want to be a dentist?"**
 
 It might come as "Why dentistry and not medicine?" or "What led you to pursue a career in oral health?" or "Tell me about yourself and how you ended up applying to dental school." Different phrasing. Same underlying question.
@@ -4726,6 +4754,8 @@ If you're preparing for interviews and want structured feedback on your response
 ## Why Most Dental School Personal Statements Fail
 
 Every year, thousands of qualified applicants — strong GPA, solid DAT score, plenty of shadowing hours — receive a rejection letter. Not because they aren't capable of becoming dentists. But because their personal statement reads like everyone else's.
+
+Want a second pair of eyes on your draft? See our [personal statement editing](/services/personal-statement-editing) packages.
 
 Admissions committees at top dental schools read 500–1,500 personal statements per cycle. After the first week, most of them start to blur together. They all say the same things:
 
@@ -4920,6 +4950,8 @@ If you can check all six boxes, your statement is ready. If not, go back and loo
 ## Why PAT Destroys More DAT Scores Than Any Other Section
 
 Ask any pre-dental student which DAT section surprised them most — and nine times out of ten, the answer is PAT.
+
+Want 1-on-1 help with this section? Our [DAT PAT tutors](/private-dat-tutoring/dat-pat-tutor) build a plan around your weakest topics.
 
 Not Organic Chemistry. Not Biology. The Perceptual Ability Test.
 
@@ -7388,6 +7420,8 @@ If you'd like personalized guidance on how to position your shadowing experience
 ## The #1 Reason Students Score Below Their Potential on the DAT
 
 It's not intelligence. It's not even the amount of time they studied.
+
+Prefer to study with a tutor? See [private 1-on-1 DAT tutoring](/private-dat-tutoring), with a study plan built around your weakest sections.
 
 It's the **absence of a structured plan**.
 

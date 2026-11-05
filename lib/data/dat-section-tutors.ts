@@ -525,6 +525,20 @@ export const datSectionPages: DatSectionPage[] = [
   },
 ];
 
+// Blog posts about one DAT section that are not that section's main study guide.
+const EXTRA_SECTION_POSTS: Record<string, string> = {
+  "dat-organic-chemistry-changes-2026": "dat-organic-chemistry-tutor",
+  "dat-pat-tips-and-strategies": "dat-pat-tutor",
+};
+
+/** The DAT section tutor page a blog post should point to, if the post is about one section. */
+export function getDatSectionForPost(postSlug: string) {
+  const extra = EXTRA_SECTION_POSTS[postSlug];
+  return datSectionPages.find(
+    (page) => page.guideSlug === postSlug || page.slug === extra,
+  );
+}
+
 export function getDatSectionPage(slug: string) {
   return datSectionPages.find((page) => page.slug === slug);
 }

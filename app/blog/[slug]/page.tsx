@@ -12,12 +12,19 @@ import { BlogLeadForm } from "@/components/blog/BlogLeadForm";
 import { BlogSummary } from "@/components/blog/BlogSummary";
 import { BlogServiceCta } from "@/components/blog/BlogServiceCta";
 import { getServiceForPost } from "@/lib/data/service-pages";
+import { getDatSectionForPost } from "@/lib/data/dat-section-tutors";
 import { AuthorAvatar } from "@/components/blog/AuthorAvatar";
 import { blogSummaries } from "@/lib/data/blog-summaries";
 import { blogHasLeadForm } from "@/lib/blog-lead";
 import { BlogTableOfContents } from "@/components/blog/BlogTableOfContents";
 import { extractH2Headings, slugifyHeading } from "@/lib/blog-toc";
-import { blogPosts, getAdjacentPosts, getPostBySlug, getRelatedPosts, slugifyCategory } from "@/lib/data/blog";
+import {
+  blogPosts,
+  getAdjacentPosts,
+  getPostBySlug,
+  getRelatedPosts,
+  slugifyCategory,
+} from "@/lib/data/blog";
 import { Breadcrumbs } from "@/components/seo/JsonLd";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -52,7 +59,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       publishedTime: post.publishedAt,
       authors: [post.author.name],
-      ...(post.coverImage ? { images: [{ url: post.coverImage, width: 1200, height: 630 }] } : {}),
+      ...(post.coverImage
+        ? { images: [{ url: post.coverImage, width: 1200, height: 630 }] }
+        : {}),
     },
     twitter: {
       card: "summary_large_image",
@@ -83,14 +92,20 @@ function renderMarkdown(content: string) {
 
     if (line.startsWith("#### ")) {
       elements.push(
-        <h4 key={key++} className="mb-2 mt-6 text-base font-bold text-slate-800">
+        <h4
+          key={key++}
+          className="mb-2 mt-6 text-base font-bold text-slate-800"
+        >
           {line.slice(5)}
         </h4>,
       );
       i++;
     } else if (line.startsWith("### ")) {
       elements.push(
-        <h3 key={key++} className="mb-3 mt-9 scroll-mt-28 text-[1.25rem] font-bold tracking-[-0.01em] text-[#0B1B3A]">
+        <h3
+          key={key++}
+          className="mb-3 mt-9 scroll-mt-28 text-[1.25rem] font-bold tracking-[-0.01em] text-[#0B1B3A]"
+        >
           {line.slice(4)}
         </h3>,
       );
@@ -115,15 +130,16 @@ function renderMarkdown(content: string) {
       i++;
     } else if (line.startsWith("# ")) {
       elements.push(
-        <h1 key={key++} className="mb-4 mt-10 text-3xl font-extrabold tracking-tight text-slate-900">
+        <h1
+          key={key++}
+          className="mb-4 mt-10 text-3xl font-extrabold tracking-tight text-slate-900"
+        >
           {line.slice(2)}
         </h1>,
       );
       i++;
     } else if (line.startsWith("---")) {
-      elements.push(
-        <hr key={key++} className="my-10 border-slate-100" />,
-      );
+      elements.push(<hr key={key++} className="my-10 border-slate-100" />);
       i++;
     } else if (line.startsWith("| ")) {
       const tableLines: string[] = [];
@@ -133,7 +149,10 @@ function renderMarkdown(content: string) {
       }
       const rows = tableLines.filter((l) => !/^\|[-| :]+\|$/.test(l.trim()));
       elements.push(
-        <div key={key++} className="my-7 overflow-x-auto rounded-[16px] border border-slate-200">
+        <div
+          key={key++}
+          className="my-7 overflow-x-auto rounded-[16px] border border-slate-200"
+        >
           <table className="min-w-full divide-y divide-slate-100 text-sm sm:text-[0.95rem]">
             <thead>
               <tr className="bg-slate-50">
@@ -152,13 +171,25 @@ function renderMarkdown(content: string) {
             </thead>
             <tbody className="divide-y divide-slate-50 bg-white">
               {rows.slice(1).map((row, ri) => (
-                <tr key={ri} className={ri % 2 === 0 ? "bg-white" : "bg-slate-50/50"}>
+                <tr
+                  key={ri}
+                  className={ri % 2 === 0 ? "bg-white" : "bg-slate-50/50"}
+                >
                   {row
                     .split("|")
                     .filter(Boolean)
                     .map((cell, ci) => (
                       <td key={ci} className="px-5 py-3.5 text-slate-700">
-                        <span dangerouslySetInnerHTML={{ __html: cell.trim().replaceAll(/\*\*(.+?)\*\*/g, "<strong>$1</strong>") }} />
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: cell
+                              .trim()
+                              .replaceAll(
+                                /\*\*(.+?)\*\*/g,
+                                "<strong>$1</strong>",
+                              ),
+                          }}
+                        />
                       </td>
                     ))}
                 </tr>
@@ -177,8 +208,18 @@ function renderMarkdown(content: string) {
         <ul key={key++} className="my-6 space-y-2">
           {checkItems.map((item, ii) => (
             <li key={ii} className="flex items-center gap-3 text-slate-700">
-              <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded border-2 border-slate-300 bg-white" aria-hidden />
-              <span dangerouslySetInnerHTML={{ __html: item.replaceAll(/\*\*(.+?)\*\*/g, "<strong>$1</strong>") }} />
+              <span
+                className="flex h-5 w-5 shrink-0 items-center justify-center rounded border-2 border-slate-300 bg-white"
+                aria-hidden
+              />
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: item.replaceAll(
+                    /\*\*(.+?)\*\*/g,
+                    "<strong>$1</strong>",
+                  ),
+                }}
+              />
             </li>
           ))}
         </ul>,
@@ -198,7 +239,17 @@ function renderMarkdown(content: string) {
               </span>
               <span
                 className="leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: item.replaceAll(/\*\*(.+?)\*\*/g, "<strong class='font-semibold text-slate-900'>$1</strong>").replaceAll(/\[(.+?)\]\((.+?)\)/g, "<a href='$2' class='font-medium text-[#1F5BD8] underline decoration-[#1F5BD8]/30 underline-offset-2 hover:decoration-[#1F5BD8]'>$1</a>") }}
+                dangerouslySetInnerHTML={{
+                  __html: item
+                    .replaceAll(
+                      /\*\*(.+?)\*\*/g,
+                      "<strong class='font-semibold text-slate-900'>$1</strong>",
+                    )
+                    .replaceAll(
+                      /\[(.+?)\]\((.+?)\)/g,
+                      "<a href='$2' class='font-medium text-[#1F5BD8] underline decoration-[#1F5BD8]/30 underline-offset-2 hover:decoration-[#1F5BD8]'>$1</a>",
+                    ),
+                }}
               />
             </li>
           ))}
@@ -214,10 +265,23 @@ function renderMarkdown(content: string) {
         <ul key={key++} className="my-5 space-y-2 pl-1">
           {items.map((item, ii) => (
             <li key={ii} className="flex items-start gap-3 text-slate-700">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#1F5BD8]" aria-hidden />
+              <span
+                className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#1F5BD8]"
+                aria-hidden
+              />
               <span
                 className="leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: item.replaceAll(/\*\*(.+?)\*\*/g, "<strong class='font-semibold text-slate-900'>$1</strong>").replaceAll(/\[(.+?)\]\((.+?)\)/g, "<a href='$2' class='font-medium text-[#1F5BD8] underline decoration-[#1F5BD8]/30 underline-offset-2 hover:decoration-[#1F5BD8]'>$1</a>") }}
+                dangerouslySetInnerHTML={{
+                  __html: item
+                    .replaceAll(
+                      /\*\*(.+?)\*\*/g,
+                      "<strong class='font-semibold text-slate-900'>$1</strong>",
+                    )
+                    .replaceAll(
+                      /\[(.+?)\]\((.+?)\)/g,
+                      "<a href='$2' class='font-medium text-[#1F5BD8] underline decoration-[#1F5BD8]/30 underline-offset-2 hover:decoration-[#1F5BD8]'>$1</a>",
+                    ),
+                }}
               />
             </li>
           ))}
@@ -225,7 +289,10 @@ function renderMarkdown(content: string) {
       );
     } else if (line.startsWith("> ")) {
       elements.push(
-        <blockquote key={key++} className="my-6 rounded-r-[14px] border-l-4 border-[#1F5BD8] bg-[#F4F7FE] py-4 pl-6 pr-4">
+        <blockquote
+          key={key++}
+          className="my-6 rounded-r-[14px] border-l-4 border-[#1F5BD8] bg-[#F4F7FE] py-4 pl-6 pr-4"
+        >
           <p className="text-base italic text-slate-700">{line.slice(2)}</p>
         </blockquote>,
       );
@@ -241,7 +308,15 @@ function renderMarkdown(content: string) {
       i++;
     } else {
       const paraLines: string[] = [];
-      while (i < lines.length && lines[i].trim() !== "" && !lines[i].startsWith("#") && !lines[i].startsWith("-") && !lines[i].startsWith("|") && !lines[i].startsWith(">") && !lines[i].startsWith("---")) {
+      while (
+        i < lines.length &&
+        lines[i].trim() !== "" &&
+        !lines[i].startsWith("#") &&
+        !lines[i].startsWith("-") &&
+        !lines[i].startsWith("|") &&
+        !lines[i].startsWith(">") &&
+        !lines[i].startsWith("---")
+      ) {
         paraLines.push(lines[i]);
         i++;
       }
@@ -253,9 +328,15 @@ function renderMarkdown(content: string) {
             className="my-5 text-[1.0625rem] leading-[1.85] text-slate-700 sm:text-[1.1rem]"
             dangerouslySetInnerHTML={{
               __html: text
-                .replaceAll(/\*\*(.+?)\*\*/g, "<strong class='font-semibold text-slate-900'>$1</strong>")
+                .replaceAll(
+                  /\*\*(.+?)\*\*/g,
+                  "<strong class='font-semibold text-slate-900'>$1</strong>",
+                )
                 .replaceAll(/\*(.+?)\*/g, "<em>$1</em>")
-                .replaceAll(/\[(.+?)\]\((.+?)\)/g, "<a href='$2' class='font-medium text-[#1F5BD8] underline decoration-[#1F5BD8]/30 underline-offset-2 hover:decoration-[#1F5BD8]'>$1</a>"),
+                .replaceAll(
+                  /\[(.+?)\]\((.+?)\)/g,
+                  "<a href='$2' class='font-medium text-[#1F5BD8] underline decoration-[#1F5BD8]/30 underline-offset-2 hover:decoration-[#1F5BD8]'>$1</a>",
+                ),
             }}
           />,
         );
@@ -280,6 +361,31 @@ export default async function BlogPostPage({ params }: Props) {
   const tocHeadings = extractH2Headings(post.content);
   const summary = blogSummaries[slug] ?? null;
   const service = getServiceForPost(post.slug, post.category);
+  const datSection = getDatSectionForPost(post.slug);
+  // One help box per post: the matching service page, the DAT section tutor page, or DAT tutoring in general.
+  const helpBox = service
+    ? {
+        title: service.h1,
+        detail: service.highlights.slice(0, 2).join(" · "),
+        href: `/services/${service.slug}`,
+        cta: `See ${service.shortName.toLowerCase()}`,
+      }
+    : datSection
+      ? {
+          title: `DAT ${datSection.section} tutoring, 1-on-1`,
+          detail:
+            "Tutors with top DAT scores · A plan built around your weakest topics",
+          href: `/private-dat-tutoring/${datSection.slug}`,
+          cta: `See ${datSection.section.replace(/ \(PAT\)$/, "")} tutoring`,
+        }
+      : post.category === "DAT Prep"
+        ? {
+            title: "Private 1-on-1 DAT tutoring",
+            detail: "Every DAT section · Packages from a $500 4-hour starter",
+            href: "/private-dat-tutoring",
+            cta: "See DAT tutoring",
+          }
+        : null;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -302,7 +408,15 @@ export default async function BlogPostPage({ params }: Props) {
 
   const blogFaqBySlug: Record<
     string,
-    { "@context": string; "@type": string; mainEntity: Array<{ "@type": string; name: string; acceptedAnswer: { "@type": string; text: string } }> }
+    {
+      "@context": string;
+      "@type": string;
+      mainEntity: Array<{
+        "@type": string;
+        name: string;
+        acceptedAnswer: { "@type": string; text: string };
+      }>;
+    }
   > = {
     "dat-dates-2027": {
       "@context": "https://schema.org",
@@ -874,7 +988,10 @@ export default async function BlogPostPage({ params }: Props) {
       <Breadcrumbs
         trail={[
           { name: "Blog", path: "/blog" },
-          { name: post.category, path: `/blog/category/${slugifyCategory(post.category)}` },
+          {
+            name: post.category,
+            path: `/blog/category/${slugifyCategory(post.category)}`,
+          },
           { name: post.title, path: `/blog/${post.slug}` },
         ]}
       />
@@ -898,7 +1015,10 @@ export default async function BlogPostPage({ params }: Props) {
           />
           <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex flex-wrap items-center justify-between gap-3">
-              <nav aria-label="Breadcrumb" className="text-[13.5px] font-medium text-[#8A93A3]">
+              <nav
+                aria-label="Breadcrumb"
+                className="text-[13.5px] font-medium text-[#8A93A3]"
+              >
                 <ol className="flex flex-wrap items-center gap-2">
                   <li>
                     <Link href="/" className="transition hover:text-[#1F5BD8]">
@@ -907,7 +1027,10 @@ export default async function BlogPostPage({ params }: Props) {
                   </li>
                   <li aria-hidden>/</li>
                   <li>
-                    <Link href="/blog" className="transition hover:text-[#1F5BD8]">
+                    <Link
+                      href="/blog"
+                      className="transition hover:text-[#1F5BD8]"
+                    >
                       Blog
                     </Link>
                   </li>
@@ -926,14 +1049,28 @@ export default async function BlogPostPage({ params }: Props) {
                 href="/blog"
                 className="inline-flex items-center gap-1.5 rounded-full border border-[#E4E9F2] bg-white px-3.5 py-1.5 text-[13px] font-bold text-[#33415C] transition hover:border-[#C9D8F6] hover:text-[#1F5BD8]"
               >
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden>
-                  <path d="M13 8H3M3 8L7 4M3 8L7 12" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  aria-hidden
+                >
+                  <path
+                    d="M13 8H3M3 8L7 4M3 8L7 12"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
                 Back to Blog
               </Link>
             </div>
 
-            <div className={`mt-8 grid gap-10 ${post.coverImage ? "lg:grid-cols-[minmax(0,1fr)_460px] lg:items-center" : ""}`}>
+            <div
+              className={`mt-8 grid gap-10 ${post.coverImage ? "lg:grid-cols-[minmax(0,1fr)_460px] lg:items-center" : ""}`}
+            >
               <div className="min-w-0">
                 <div className="flex flex-wrap items-center gap-3 text-[13.5px] font-medium text-[#8A93A3]">
                   <Link
@@ -955,12 +1092,25 @@ export default async function BlogPostPage({ params }: Props) {
                 </p>
 
                 {/* Author */}
-                <Link href={post.author.href} className="group mt-7 inline-flex items-center gap-3">
-                  <AuthorAvatar author={post.author} size={46} className="ring-2 ring-white shadow-[0_6px_16px_-8px_rgba(11,27,58,0.5)]" />
+                <Link
+                  href={post.author.href}
+                  className="group mt-7 inline-flex items-center gap-3"
+                >
+                  <AuthorAvatar
+                    author={post.author}
+                    size={46}
+                    className="ring-2 ring-white shadow-[0_6px_16px_-8px_rgba(11,27,58,0.5)]"
+                  />
                   <div>
-                    <p className="text-[12px] font-semibold text-[#8A93A3]">Written by</p>
-                    <p className="text-[14.5px] font-bold text-[#0B1B3A] transition group-hover:text-[#1F5BD8]">{post.author.name}</p>
-                    <p className="text-[13px] text-[#5B6782]">{post.author.role}</p>
+                    <p className="text-[12px] font-semibold text-[#8A93A3]">
+                      Written by
+                    </p>
+                    <p className="text-[14.5px] font-bold text-[#0B1B3A] transition group-hover:text-[#1F5BD8]">
+                      {post.author.name}
+                    </p>
+                    <p className="text-[13px] text-[#5B6782]">
+                      {post.author.role}
+                    </p>
                   </div>
                 </Link>
 
@@ -969,7 +1119,14 @@ export default async function BlogPostPage({ params }: Props) {
 
               {post.coverImage && (
                 <div className="relative mx-auto hidden aspect-[3/2] w-full max-w-[460px] overflow-hidden rounded-[24px] shadow-[0_30px_60px_-36px_rgba(11,27,58,0.6)] ring-1 ring-[#E4E9F2] lg:block lg:self-start">
-                  <Image src={post.coverImage} alt={post.title} fill className="object-cover" priority sizes="460px" />
+                  <Image
+                    src={post.coverImage}
+                    alt={post.title}
+                    fill
+                    className="object-cover"
+                    priority
+                    sizes="460px"
+                  />
                 </div>
               )}
             </div>
@@ -987,17 +1144,25 @@ export default async function BlogPostPage({ params }: Props) {
               <article className="min-w-0 max-w-[800px]">
                 <BlogAdSense format="horizontal" className="mb-2 mt-0" />
                 <div className="blog-prose">{renderMarkdown(post.content)}</div>
-                {service ? <BlogServiceCta service={service} /> : null}
-                {blogHasLeadForm(post.slug) ? <BlogLeadForm slug={post.slug} /> : null}
+                {helpBox ? <BlogServiceCta {...helpBox} /> : null}
+                {blogHasLeadForm(post.slug) ? (
+                  <BlogLeadForm slug={post.slug} />
+                ) : null}
                 <BlogAdSense format="rectangle" />
 
                 {/* Author card, below content */}
                 <div className="mt-12 flex flex-wrap items-center gap-4 rounded-[20px] border border-[#E4E9F2] bg-[#F7F9FD] p-6">
                   <AuthorAvatar author={post.author} size={56} />
                   <div className="min-w-0 flex-1">
-                    <p className="text-[11px] font-bold tracking-[0.14em] text-[#8A93A3] uppercase">Written by</p>
-                    <p className="mt-0.5 font-bold text-[#0B1B3A]">{post.author.name}</p>
-                    <p className="text-[13.5px] text-[#5B6782]">{post.author.role}</p>
+                    <p className="text-[11px] font-bold tracking-[0.14em] text-[#8A93A3] uppercase">
+                      Written by
+                    </p>
+                    <p className="mt-0.5 font-bold text-[#0B1B3A]">
+                      {post.author.name}
+                    </p>
+                    <p className="text-[13.5px] text-[#5B6782]">
+                      {post.author.role}
+                    </p>
                   </div>
                   <Link
                     href={post.author.href}
@@ -1021,24 +1186,37 @@ export default async function BlogPostPage({ params }: Props) {
                       className="aspect-[1280/854] w-full bg-[#0B1B3A] object-cover"
                     />
                     <div className="px-4 py-3">
-                      <p className="text-[11px] font-bold tracking-[0.14em] text-[#1F5BD8] uppercase">Student review</p>
-                      <p className="mt-1 text-[14px] font-bold text-[#0B1B3A]">Gabriela Green</p>
+                      <p className="text-[11px] font-bold tracking-[0.14em] text-[#1F5BD8] uppercase">
+                        Student review
+                      </p>
+                      <p className="mt-1 text-[14px] font-bold text-[#0B1B3A]">
+                        Gabriela Green
+                      </p>
                       <p className="mt-1 text-[12.5px] leading-5 text-[#5B6782]">
-                        Interview at MUSC College of Dentistry after Future Dental Prep tutoring.
+                        Interview at MUSC College of Dentistry after Future
+                        Dental Prep tutoring.
                       </p>
                     </div>
                   </div>
-                  <BlogTableOfContents headings={tocHeadings} variant="sidebar" />
+                  <BlogTableOfContents
+                    headings={tocHeadings}
+                    variant="sidebar"
+                  />
 
                   <div className="relative overflow-hidden rounded-[20px] bg-[linear-gradient(135deg,#0B1B3A_0%,#132B5E_60%,#1F5BD8_140%)] p-6 text-white">
-                    <div className="pointer-events-none absolute -top-16 -right-12 h-40 w-40 rounded-full bg-[#1F5BD8]/40 blur-3xl" aria-hidden />
+                    <div
+                      className="pointer-events-none absolute -top-16 -right-12 h-40 w-40 rounded-full bg-[#1F5BD8]/40 blur-3xl"
+                      aria-hidden
+                    />
                     <p className="relative text-[11px] font-bold tracking-[0.14em] text-[#9DB9F5] uppercase">
                       Free Consultation
                     </p>
                     <p className="relative mt-2.5 text-[17px] leading-snug font-extrabold">
                       Get personalized guidance for your application
                     </p>
-                    <p className="relative mt-2 text-[13.5px] text-white/70">15 minutes. No obligation. Real advice.</p>
+                    <p className="relative mt-2 text-[13.5px] text-white/70">
+                      15 minutes. No obligation. Real advice.
+                    </p>
                     <Link
                       href="/schedule"
                       className="relative mt-5 inline-flex min-h-[42px] w-full items-center justify-center rounded-full bg-white px-4 text-[14px] font-bold text-[#0B1B3A] transition hover:bg-[#E8EFFD]"
@@ -1046,7 +1224,6 @@ export default async function BlogPostPage({ params }: Props) {
                       Schedule Free Call →
                     </Link>
                   </div>
-
                 </div>
               </aside>
             </div>
@@ -1062,8 +1239,12 @@ export default async function BlogPostPage({ params }: Props) {
                   href={`/blog/${older.slug}`}
                   className="group rounded-[18px] border border-[#E4E9F2] bg-[#F7F9FD] p-5 transition hover:border-[#C9D8F6] hover:bg-white"
                 >
-                  <p className="text-[11px] font-bold tracking-[0.14em] text-[#8A93A3] uppercase">← Older article</p>
-                  <p className="mt-2 line-clamp-2 font-bold text-[#0B1B3A] transition group-hover:text-[#1F5BD8]">{older.title}</p>
+                  <p className="text-[11px] font-bold tracking-[0.14em] text-[#8A93A3] uppercase">
+                    ← Older article
+                  </p>
+                  <p className="mt-2 line-clamp-2 font-bold text-[#0B1B3A] transition group-hover:text-[#1F5BD8]">
+                    {older.title}
+                  </p>
                 </Link>
               ) : (
                 <div />
@@ -1073,8 +1254,12 @@ export default async function BlogPostPage({ params }: Props) {
                   href={`/blog/${newer.slug}`}
                   className="group rounded-[18px] border border-[#E4E9F2] bg-[#F7F9FD] p-5 text-right transition hover:border-[#C9D8F6] hover:bg-white"
                 >
-                  <p className="text-[11px] font-bold tracking-[0.14em] text-[#8A93A3] uppercase">Newer article →</p>
-                  <p className="mt-2 line-clamp-2 font-bold text-[#0B1B3A] transition group-hover:text-[#1F5BD8]">{newer.title}</p>
+                  <p className="text-[11px] font-bold tracking-[0.14em] text-[#8A93A3] uppercase">
+                    Newer article →
+                  </p>
+                  <p className="mt-2 line-clamp-2 font-bold text-[#0B1B3A] transition group-hover:text-[#1F5BD8]">
+                    {newer.title}
+                  </p>
                 </Link>
               ) : null}
             </div>
@@ -1095,7 +1280,9 @@ export default async function BlogPostPage({ params }: Props) {
                     href={`/blog/${rp.slug}`}
                     className="group flex flex-col overflow-hidden rounded-[20px] border border-[#E4E9F2] bg-white shadow-[0_16px_36px_-30px_rgba(11,27,58,0.45)] transition duration-300 hover:-translate-y-0.5 hover:border-[#C9D8F6]"
                   >
-                    <div className={`relative h-36 w-full overflow-hidden bg-gradient-to-br ${rp.coverGradient}`}>
+                    <div
+                      className={`relative h-36 w-full overflow-hidden bg-gradient-to-br ${rp.coverGradient}`}
+                    >
                       {rp.coverImage ? (
                         <Image
                           src={rp.coverImage}
@@ -1105,7 +1292,11 @@ export default async function BlogPostPage({ params }: Props) {
                           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         />
                       ) : (
-                        <span className="absolute inset-0 flex items-center justify-center text-5xl" role="img" aria-label={rp.category}>
+                        <span
+                          className="absolute inset-0 flex items-center justify-center text-5xl"
+                          role="img"
+                          aria-label={rp.category}
+                        >
                           {rp.coverEmoji}
                         </span>
                       )}
@@ -1114,7 +1305,9 @@ export default async function BlogPostPage({ params }: Props) {
                       <h3 className="line-clamp-2 text-[16px] leading-snug font-extrabold text-[#0B1B3A] transition group-hover:text-[#1F5BD8]">
                         {rp.title}
                       </h3>
-                      <p className="mt-2 text-[12.5px] text-[#8A93A3]">{rp.readingTime}</p>
+                      <p className="mt-2 text-[12.5px] text-[#8A93A3]">
+                        {rp.readingTime}
+                      </p>
                     </div>
                   </Link>
                 ))}
@@ -1126,9 +1319,16 @@ export default async function BlogPostPage({ params }: Props) {
         {/* Mobile CTA */}
         <section className="bg-white px-4 py-12 sm:px-6 xl:hidden">
           <div className="relative mx-auto max-w-xl overflow-hidden rounded-[24px] bg-[linear-gradient(135deg,#0B1B3A_0%,#132B5E_60%,#1F5BD8_140%)] p-8 text-center text-white">
-            <div className="pointer-events-none absolute -top-20 -right-16 h-48 w-48 rounded-full bg-[#1F5BD8]/40 blur-3xl" aria-hidden />
-            <h2 className="relative text-[24px] font-extrabold tracking-[-0.02em]">Ready for personalized help?</h2>
-            <p className="relative mt-3 text-white/70">Schedule a free 15-minute call with our team.</p>
+            <div
+              className="pointer-events-none absolute -top-20 -right-16 h-48 w-48 rounded-full bg-[#1F5BD8]/40 blur-3xl"
+              aria-hidden
+            />
+            <h2 className="relative text-[24px] font-extrabold tracking-[-0.02em]">
+              Ready for personalized help?
+            </h2>
+            <p className="relative mt-3 text-white/70">
+              Schedule a free 15-minute call with our team.
+            </p>
             <Link
               href="/schedule"
               className="relative mt-6 inline-flex min-h-[48px] items-center justify-center rounded-full bg-white px-6 text-[15px] font-bold text-[#0B1B3A] transition hover:bg-[#E8EFFD]"
