@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useId, useRef, useState } from "react";
 import type { FormEvent } from "react";
+import { trackLead } from "@/lib/analytics";
 
 // Counted only while the tab is visible, so it appears after a full minute of actual reading.
 const SHOW_AFTER_MS = 60_000;
@@ -11,7 +12,9 @@ export function BlogDemoCallPopup({ slug }: { slug: string }) {
   const titleId = useId();
   const closeRef = useRef<HTMLButtonElement>(null);
   const [open, setOpen] = useState(false);
-  const [state, setState] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [state, setState] = useState<
+    "idle" | "submitting" | "success" | "error"
+  >("idle");
   const [error, setError] = useState("");
 
   useEffect(() => {
@@ -60,7 +63,10 @@ export function BlogDemoCallPopup({ slug }: { slug: string }) {
     try {
       const res = await fetch("/api/blog-lead", {
         method: "POST",
-        headers: { Accept: "application/json", "Content-Type": "application/json" },
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify({
           name: String(fd.get("name") ?? ""),
           email: String(fd.get("email") ?? ""),
@@ -71,9 +77,12 @@ export function BlogDemoCallPopup({ slug }: { slug: string }) {
         }),
       });
       if (!res.ok) {
-        const data = (await res.json().catch(() => null)) as { error?: string } | null;
+        const data = (await res.json().catch(() => null)) as {
+          error?: string;
+        } | null;
         throw new Error(data?.error || "Could not send that.");
       }
+      trackLead("blog_demo_call", { blog_slug: slug });
       setState("success");
     } catch (err) {
       setState("error");
@@ -109,8 +118,19 @@ export function BlogDemoCallPopup({ slug }: { slug: string }) {
             className="absolute top-4 right-4 flex h-9 w-9 items-center justify-center rounded-full text-white/70 transition hover:bg-white/10 hover:text-white"
             aria-label="Close"
           >
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden>
-              <path d="M3 3l10 10M13 3L3 13" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden
+            >
+              <path
+                d="M3 3l10 10M13 3L3 13"
+                stroke="currentColor"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+              />
             </svg>
           </button>
           <Link
@@ -119,19 +139,26 @@ export function BlogDemoCallPopup({ slug }: { slug: string }) {
           >
             Create DAT study plan
           </Link>
-          <h2 id={titleId} className="mt-4 max-w-[16ch] text-2xl font-extrabold tracking-tight sm:text-3xl">
+          <h2
+            id={titleId}
+            className="mt-4 max-w-[16ch] text-2xl font-extrabold tracking-tight sm:text-3xl"
+          >
             Get a free demo tutor
           </h2>
           <p className="mt-3 max-w-sm text-sm leading-relaxed text-white/75">
-            15 minutes with a tutor. No pitch and no obligation. Tell us where you are, and we will point at the next step.
+            15 minutes with a tutor. No pitch and no obligation. Tell us where
+            you are, and we will point at the next step.
           </p>
         </div>
 
         {state === "success" ? (
           <div className="px-6 py-7 sm:px-8">
-            <p className="text-lg font-bold text-slate-900">You are on the list.</p>
+            <p className="text-lg font-bold text-slate-900">
+              You are on the list.
+            </p>
             <p className="mt-2 text-sm leading-relaxed text-slate-600">
-              We will email you to set the 15-minute tutor demo. If nothing arrives in two business days, write us from the same address.
+              We will email you to set the 15-minute tutor demo. If nothing
+              arrives in two business days, write us from the same address.
             </p>
             <button
               type="button"
@@ -144,7 +171,10 @@ export function BlogDemoCallPopup({ slug }: { slug: string }) {
         ) : (
           <form onSubmit={handleSubmit} className="px-6 py-6 sm:px-8">
             <div>
-              <label htmlFor={`${slug}-demo-name`} className="block text-sm font-medium text-slate-700">
+              <label
+                htmlFor={`${slug}-demo-name`}
+                className="block text-sm font-medium text-slate-700"
+              >
                 Name
               </label>
               <input
@@ -158,7 +188,10 @@ export function BlogDemoCallPopup({ slug }: { slug: string }) {
               />
             </div>
             <div className="mt-4">
-              <label htmlFor={`${slug}-demo-email`} className="block text-sm font-medium text-slate-700">
+              <label
+                htmlFor={`${slug}-demo-email`}
+                className="block text-sm font-medium text-slate-700"
+              >
                 Email
               </label>
               <input
@@ -172,7 +205,10 @@ export function BlogDemoCallPopup({ slug }: { slug: string }) {
               />
             </div>
             <div className="mt-4">
-              <label htmlFor={`${slug}-demo-info`} className="block text-sm font-medium text-slate-700">
+              <label
+                htmlFor={`${slug}-demo-info`}
+                className="block text-sm font-medium text-slate-700"
+              >
                 Problem or info
               </label>
               <textarea
@@ -185,7 +221,9 @@ export function BlogDemoCallPopup({ slug }: { slug: string }) {
                 className="mt-1.5 w-full resize-none rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none focus:border-indigo-500 focus:bg-white focus:ring-4 focus:ring-indigo-500/15 disabled:opacity-60"
               />
             </div>
-            {state === "error" ? <p className="mt-3 text-sm text-rose-700">{error}</p> : null}
+            {state === "error" ? (
+              <p className="mt-3 text-sm text-rose-700">{error}</p>
+            ) : null}
             <button
               type="submit"
               disabled={state === "submitting"}
@@ -193,7 +231,9 @@ export function BlogDemoCallPopup({ slug }: { slug: string }) {
             >
               {state === "submitting" ? "Sending…" : "Get my free demo tutor"}
             </button>
-            <p className="mt-3 text-center text-xs text-slate-500">We only use this to set the tutor demo.</p>
+            <p className="mt-3 text-center text-xs text-slate-500">
+              We only use this to set the tutor demo.
+            </p>
           </form>
         )}
       </div>

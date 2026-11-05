@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { coaches } from "@/lib/data/coaches";
+import { track, trackLead } from "@/lib/analytics";
 
 type Message = {
   id: string;
@@ -66,21 +67,58 @@ function Avatars({ size = 36 }: { size?: number }) {
           src={coach.photo ?? ""}
           alt=""
           className="rounded-full object-cover ring-2 ring-[var(--c-ring)]"
-          style={{ width: size, height: size, marginLeft: i === 0 ? 0 : -size * 0.3, objectPosition: coach.photoPosition }}
+          style={{
+            width: size,
+            height: size,
+            marginLeft: i === 0 ? 0 : -size * 0.3,
+            objectPosition: coach.photoPosition,
+          }}
         />
       ))}
     </div>
   );
 }
 
-function Icon({ name, size = 18 }: { name: "chat" | "agent" | "close" | "back" | "send" | "mic" | "smile" | "home" | "inbox" | "stop" | "trash" | "arrow"; size?: number }) {
-  const common = { width: size, height: size, viewBox: "0 0 24 24", fill: "none", "aria-hidden": true } as const;
-  const stroke = { stroke: "currentColor", strokeWidth: 1.9, strokeLinecap: "round", strokeLinejoin: "round" } as const;
+function Icon({
+  name,
+  size = 18,
+}: {
+  name:
+    | "chat"
+    | "agent"
+    | "close"
+    | "back"
+    | "send"
+    | "mic"
+    | "smile"
+    | "home"
+    | "inbox"
+    | "stop"
+    | "trash"
+    | "arrow";
+  size?: number;
+}) {
+  const common = {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    "aria-hidden": true,
+  } as const;
+  const stroke = {
+    stroke: "currentColor",
+    strokeWidth: 1.9,
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+  } as const;
   switch (name) {
     case "chat":
       return (
         <svg {...common}>
-          <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 3.5V17A2.5 2.5 0 0 1 4 14.5z" {...stroke} />
+          <path
+            d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 3.5V17A2.5 2.5 0 0 1 4 14.5z"
+            {...stroke}
+          />
           <path d="M8.5 9.5h7M8.5 12.5h4.5" {...stroke} />
         </svg>
       );
@@ -128,19 +166,28 @@ function Icon({ name, size = 18 }: { name: "chat" | "agent" | "close" | "back" |
       return (
         <svg {...common}>
           <circle cx="12" cy="12" r="8.5" {...stroke} />
-          <path d="M8.5 14c.9 1.2 2.1 1.8 3.5 1.8s2.6-.6 3.5-1.8M9.5 9.8h.01M14.5 9.8h.01" {...stroke} />
+          <path
+            d="M8.5 14c.9 1.2 2.1 1.8 3.5 1.8s2.6-.6 3.5-1.8M9.5 9.8h.01M14.5 9.8h.01"
+            {...stroke}
+          />
         </svg>
       );
     case "home":
       return (
         <svg {...common}>
-          <path d="M4 10.5 12 4l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5.5h-5V20H5a1 1 0 0 1-1-1z" {...stroke} />
+          <path
+            d="M4 10.5 12 4l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5.5h-5V20H5a1 1 0 0 1-1-1z"
+            {...stroke}
+          />
         </svg>
       );
     case "inbox":
       return (
         <svg {...common}>
-          <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 3.5V17A2.5 2.5 0 0 1 4 14.5z" {...stroke} />
+          <path
+            d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 3.5V17A2.5 2.5 0 0 1 4 14.5z"
+            {...stroke}
+          />
         </svg>
       );
     case "stop":
@@ -174,7 +221,11 @@ export function ChatWidget() {
   const [recording, setRecording] = useState(false);
   const [elapsed, setElapsed] = useState(0);
   const [levels, setLevels] = useState<number[]>(() => Array(28).fill(0.15));
-  const [voice, setVoice] = useState<{ blob: Blob; url: string; seconds: number } | null>(null);
+  const [voice, setVoice] = useState<{
+    blob: Blob;
+    url: string;
+    seconds: number;
+  } | null>(null);
   const recorderRef = useRef<MediaRecorder | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
   const chunksRef = useRef<Blob[]>([]);
@@ -200,17 +251,24 @@ export function ChatWidget() {
     try {
       // Drop object URLs; they die with the page. The "Voice note" label stays.
       const keep = messages.map(({ audioUrl: _url, ...rest }) => rest);
-      localStorage.setItem(STORAGE_KEY, JSON.stringify({ email, messages: keep }));
+      localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify({ email, messages: keep }),
+      );
     } catch {}
   }, [email, messages]);
 
   useEffect(() => {
-    listRef.current?.scrollTo({ top: listRef.current.scrollHeight, behavior: "smooth" });
+    listRef.current?.scrollTo({
+      top: listRef.current.scrollHeight,
+      behavior: "smooth",
+    });
   }, [messages, typing, screen, voice]);
 
   useEffect(() => {
     if (!open) return;
-    const onKey = (event: KeyboardEvent) => event.key === "Escape" && setOpen(false);
+    const onKey = (event: KeyboardEvent) =>
+      event.key === "Escape" && setOpen(false);
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [open]);
@@ -223,6 +281,7 @@ export function ChatWidget() {
   const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
 
   function openChat(next: "home" | "chat" | "messages" = "home") {
+    if (!open) track("chat_open");
     setOpen(true);
     setScreen(next);
   }
@@ -238,7 +297,10 @@ export function ChatWidget() {
 
   async function startRecording() {
     setError("");
-    if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === "undefined") {
+    if (
+      !navigator.mediaDevices?.getUserMedia ||
+      typeof MediaRecorder === "undefined"
+    ) {
       setError("Voice notes aren't supported in this browser.");
       return;
     }
@@ -249,15 +311,22 @@ export function ChatWidget() {
       recorderRef.current = recorder;
       chunksRef.current = [];
       cancelledRef.current = false;
-      recorder.ondataavailable = (e) => e.data.size && chunksRef.current.push(e.data);
+      recorder.ondataavailable = (e) =>
+        e.data.size && chunksRef.current.push(e.data);
       const startedAt = Date.now();
       recorder.onstop = () => {
         const seconds = Math.round((Date.now() - startedAt) / 1000);
         stopStream();
         setRecording(false);
         if (cancelledRef.current || chunksRef.current.length === 0) return;
-        const blob = new Blob(chunksRef.current, { type: recorder.mimeType || "audio/webm" });
-        setVoice({ blob, url: URL.createObjectURL(blob), seconds: Math.max(1, seconds) });
+        const blob = new Blob(chunksRef.current, {
+          type: recorder.mimeType || "audio/webm",
+        });
+        setVoice({
+          blob,
+          url: URL.createObjectURL(blob),
+          seconds: Math.max(1, seconds),
+        });
       };
       recorder.start();
       setRecording(true);
@@ -284,7 +353,9 @@ export function ChatWidget() {
       tick();
     } catch {
       stopStream();
-      setError("Microphone access was blocked. Allow it in your browser to send a voice note.");
+      setError(
+        "Microphone access was blocked. Allow it in your browser to send a voice note.",
+      );
     }
   }
 
@@ -321,16 +392,21 @@ export function ChatWidget() {
       from: "you",
       text: text || undefined,
       audioUrl: voice?.url,
-      audioLabel: voice ? `Voice note · ${formatClock(voice.seconds)}` : undefined,
+      audioLabel: voice
+        ? `Voice note · ${formatClock(voice.seconds)}`
+        : undefined,
       at: Date.now(),
     };
 
     try {
       const res = await fetch("/api/chat", { method: "POST", body });
       if (!res.ok) {
-        const data = (await res.json().catch(() => null)) as { error?: string } | null;
+        const data = (await res.json().catch(() => null)) as {
+          error?: string;
+        } | null;
         throw new Error(data?.error ?? "Could not send your message.");
       }
+      if (!hasConversation) trackLead("chat_message");
       setMessages((prev) => [...prev, mine]);
       setDraft("");
       setVoice(null);
@@ -370,14 +446,19 @@ export function ChatWidget() {
         aria-label="Chat with Future Dental Prep"
         inert={!open}
         className={`flex h-[min(640px,calc(100dvh-110px))] w-[min(390px,calc(100vw-32px))] origin-bottom-right flex-col overflow-hidden rounded-[26px] border border-[var(--c-line2)] fdp-chat-panel text-[var(--c-ink)] shadow-[0_30px_80px_-20px_rgba(11,27,58,0.5),0_0_0_1px_rgba(11,27,58,0.04)] transition duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${
-          open ? "pointer-events-auto translate-y-0 scale-100 opacity-100" : "pointer-events-none translate-y-4 scale-95 opacity-0"
+          open
+            ? "pointer-events-auto translate-y-0 scale-100 opacity-100"
+            : "pointer-events-none translate-y-4 scale-95 opacity-0"
         }`}
       >
         {screen === "home" ? (
           <div className="relative flex min-h-0 flex-1 flex-col overflow-x-hidden overflow-y-auto">
             {/* Branded header so the panel stands apart from a white page. */}
             <div className="relative shrink-0 overflow-hidden bg-[linear-gradient(135deg,#0B1B3A_0%,#16306A_55%,#1F5BD8_120%)] px-6 pt-6 pb-16 text-white">
-              <div className="pointer-events-none absolute -top-24 -right-16 h-64 w-64 rounded-full bg-[#4F8BFF]/35 blur-3xl" aria-hidden />
+              <div
+                className="pointer-events-none absolute -top-24 -right-16 h-64 w-64 rounded-full bg-[#4F8BFF]/35 blur-3xl"
+                aria-hidden
+              />
               <div className="relative flex items-center justify-between">
                 <span className="text-[14px] font-extrabold tracking-[-0.01em]">
                   Future <span className="text-[#9DB9F5]">Dental Prep</span>
@@ -408,8 +489,14 @@ export function ChatWidget() {
                 className="group flex items-center justify-between rounded-2xl border border-[var(--c-line)] bg-[var(--c-card)] px-5 py-4 text-left shadow-[0_14px_30px_-22px_rgba(11,27,58,0.6)] transition hover:border-[var(--c-line2)] hover:bg-[var(--c-tint2)]"
               >
                 <span>
-                  <b className="block text-[15px]">{hasConversation ? "Continue the conversation" : "Send us a message"}</b>
-                  <span className="mt-0.5 block text-[13px] text-[var(--c-sub)]">Type or send a voice note · replies within 24h</span>
+                  <b className="block text-[15px]">
+                    {hasConversation
+                      ? "Continue the conversation"
+                      : "Send us a message"}
+                  </b>
+                  <span className="mt-0.5 block text-[13px] text-[var(--c-sub)]">
+                    Type or send a voice note · replies within 24h
+                  </span>
                 </span>
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#1F5BD8] text-white transition group-hover:translate-x-0.5">
                   <Icon name="send" size={16} />
@@ -421,8 +508,12 @@ export function ChatWidget() {
                 className="group flex items-center justify-between rounded-2xl border border-[var(--c-line)] bg-[var(--c-card)] px-5 py-4 shadow-[0_14px_30px_-24px_rgba(11,27,58,0.5)] transition hover:border-[var(--c-line2)] hover:bg-[var(--c-tint2)]"
               >
                 <span>
-                  <b className="block text-[15px]">Book a free 15-minute call</b>
-                  <span className="mt-0.5 block text-[13px] text-[var(--c-sub)]">Talk through your plan with our team</span>
+                  <b className="block text-[15px]">
+                    Book a free 15-minute call
+                  </b>
+                  <span className="mt-0.5 block text-[13px] text-[var(--c-sub)]">
+                    Talk through your plan with our team
+                  </span>
                 </span>
                 <span className="text-[var(--c-mute)] transition group-hover:translate-x-0.5 group-hover:text-[var(--c-ink)]">
                   <Icon name="arrow" />
@@ -434,8 +525,12 @@ export function ChatWidget() {
                 className="group flex items-center justify-between rounded-2xl border border-[var(--c-line)] bg-[var(--c-card)] px-5 py-4 shadow-[0_14px_30px_-24px_rgba(11,27,58,0.5)] transition hover:border-[var(--c-line2)] hover:bg-[var(--c-tint2)]"
               >
                 <span>
-                  <b className="block text-[15px]">Build a free DAT study plan</b>
-                  <span className="mt-0.5 block text-[13px] text-[var(--c-sub)]">Ready in about 2 minutes</span>
+                  <b className="block text-[15px]">
+                    Build a free DAT study plan
+                  </b>
+                  <span className="mt-0.5 block text-[13px] text-[var(--c-sub)]">
+                    Ready in about 2 minutes
+                  </span>
                 </span>
                 <span className="text-[var(--c-mute)] transition group-hover:translate-x-0.5 group-hover:text-[var(--c-ink)]">
                   <Icon name="arrow" />
@@ -468,7 +563,9 @@ export function ChatWidget() {
                   <Avatars size={30} />
                   <span className="min-w-0 flex-1">
                     <b className="block text-[14px]">Future Dental Prep</b>
-                    <span className="block truncate text-[13px] text-[var(--c-sub)]">{lastTeam?.text}</span>
+                    <span className="block truncate text-[13px] text-[var(--c-sub)]">
+                      {lastTeam?.text}
+                    </span>
                   </span>
                   <Icon name="arrow" size={16} />
                 </button>
@@ -478,7 +575,9 @@ export function ChatWidget() {
                     <Icon name="inbox" size={22} />
                   </span>
                   <b className="mt-4 text-[15px]">No messages yet</b>
-                  <p className="mt-1 text-[13px] text-[var(--c-sub)]">Messages from our team will show up here.</p>
+                  <p className="mt-1 text-[13px] text-[var(--c-sub)]">
+                    Messages from our team will show up here.
+                  </p>
                   <button
                     type="button"
                     onClick={() => setScreen("chat")}
@@ -507,7 +606,10 @@ export function ChatWidget() {
               <span className="min-w-0 flex-1">
                 <b className="block text-[14px]">Future Dental Prep</b>
                 <span className="flex items-center gap-1.5 text-[12px] text-white/60">
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#3DDC97]" aria-hidden />
+                  <span
+                    className="h-1.5 w-1.5 rounded-full bg-[#3DDC97]"
+                    aria-hidden
+                  />
                   The team usually replies within a day
                 </span>
               </span>
@@ -521,9 +623,16 @@ export function ChatWidget() {
               </button>
             </div>
 
-            <div ref={listRef} className="flex-1 space-y-3 overflow-x-hidden overflow-y-auto px-4 py-5" aria-live="polite">
+            <div
+              ref={listRef}
+              className="flex-1 space-y-3 overflow-x-hidden overflow-y-auto px-4 py-5"
+              aria-live="polite"
+            >
               {messages.map((m) => (
-                <div key={m.id} className={`flex ${m.from === "you" ? "justify-end" : "justify-start"}`}>
+                <div
+                  key={m.id}
+                  className={`flex ${m.from === "you" ? "justify-end" : "justify-start"}`}
+                >
                   <div
                     className={`max-w-[82%] rounded-[18px] px-4 py-2.5 text-[14px] leading-relaxed ${
                       m.from === "you"
@@ -532,14 +641,20 @@ export function ChatWidget() {
                     }`}
                   >
                     {m.audioUrl ? (
-                      <audio src={m.audioUrl} controls className="fdp-chat-audio mb-1 h-9 w-[220px] max-w-full" />
+                      <audio
+                        src={m.audioUrl}
+                        controls
+                        className="fdp-chat-audio mb-1 h-9 w-[220px] max-w-full"
+                      />
                     ) : m.audioLabel ? (
                       <span className="flex items-center gap-1.5 text-[var(--c-ink2)]">
                         <Icon name="mic" size={15} />
                         {m.audioLabel}
                       </span>
                     ) : null}
-                    {m.text ? <p className="whitespace-pre-wrap">{m.text}</p> : null}
+                    {m.text ? (
+                      <p className="whitespace-pre-wrap">{m.text}</p>
+                    ) : null}
                   </div>
                 </div>
               ))}
@@ -559,7 +674,11 @@ export function ChatWidget() {
             </div>
 
             <div className="p-3">
-              {error ? <p className="mb-2 px-1 text-[12.5px] text-[var(--c-error)]">{error}</p> : null}
+              {error ? (
+                <p className="mb-2 px-1 text-[12.5px] text-[var(--c-error)]">
+                  {error}
+                </p>
+              ) : null}
               <div className="rounded-[20px] border border-[var(--c-line2)] bg-[var(--c-tint)] focus-within:border-[var(--c-line3)]">
                 {!hasConversation || !emailValid ? (
                   <input
@@ -582,11 +701,23 @@ export function ChatWidget() {
                     >
                       <Icon name="trash" size={17} />
                     </button>
-                    <span className="h-2 w-2 shrink-0 animate-pulse rounded-full bg-[#FF5A5F]" aria-hidden />
-                    <span className="w-10 shrink-0 text-[13px] tabular-nums text-[var(--c-ink2)]">{formatClock(elapsed)}</span>
-                    <div className="flex h-8 flex-1 items-center gap-[3px]" aria-hidden>
+                    <span
+                      className="h-2 w-2 shrink-0 animate-pulse rounded-full bg-[#FF5A5F]"
+                      aria-hidden
+                    />
+                    <span className="w-10 shrink-0 text-[13px] tabular-nums text-[var(--c-ink2)]">
+                      {formatClock(elapsed)}
+                    </span>
+                    <div
+                      className="flex h-8 flex-1 items-center gap-[3px]"
+                      aria-hidden
+                    >
                       {levels.map((level, i) => (
-                        <span key={i} className="w-[3px] flex-1 rounded-full bg-[#82A8FF]" style={{ height: `${level * 100}%` }} />
+                        <span
+                          key={i}
+                          className="w-[3px] flex-1 rounded-full bg-[#82A8FF]"
+                          style={{ height: `${level * 100}%` }}
+                        />
                       ))}
                     </div>
                     <button
@@ -608,7 +739,11 @@ export function ChatWidget() {
                     >
                       <Icon name="trash" size={17} />
                     </button>
-                    <audio src={voice.url} controls className="fdp-chat-audio h-9 min-w-0 flex-1" />
+                    <audio
+                      src={voice.url}
+                      controls
+                      className="fdp-chat-audio h-9 min-w-0 flex-1"
+                    />
                     <button
                       type="button"
                       onClick={send}
@@ -687,14 +822,19 @@ export function ChatWidget() {
         ) : null}
 
         {screen !== "chat" ? (
-          <nav className="grid grid-cols-2 border-t border-[var(--c-line)]" aria-label="Chat sections">
+          <nav
+            className="grid grid-cols-2 border-t border-[var(--c-line)]"
+            aria-label="Chat sections"
+          >
             {(["home", "messages"] as const).map((tab) => (
               <button
                 key={tab}
                 type="button"
                 onClick={() => setScreen(tab)}
                 className={`flex flex-col items-center gap-1 py-3 text-[12.5px] font-bold transition ${
-                  screen === tab ? "text-[var(--c-ink)]" : "text-[var(--c-mute)] hover:text-[var(--c-ink2)]"
+                  screen === tab
+                    ? "text-[var(--c-ink)]"
+                    : "text-[var(--c-mute)] hover:text-[var(--c-ink2)]"
                 }`}
               >
                 <Icon name={tab === "home" ? "home" : "inbox"} size={20} />
@@ -708,16 +848,27 @@ export function ChatWidget() {
       {/* Launcher */}
       <button
         type="button"
-        onClick={() => (open ? setOpen(false) : openChat(hasConversation ? "chat" : "home"))}
+        onClick={() =>
+          open ? setOpen(false) : openChat(hasConversation ? "chat" : "home")
+        }
         aria-label={open ? "Close chat" : "Chat with us"}
         aria-expanded={open}
         className="pointer-events-auto relative flex h-14 w-14 items-center justify-center rounded-full bg-[linear-gradient(135deg,#1F5BD8_0%,#3A72E8_100%)] text-white shadow-[0_16px_34px_-10px_rgba(31,91,216,0.7)] transition duration-300 hover:scale-105"
       >
-        {!open ? <span className="absolute inset-0 animate-ping rounded-full bg-[#1F5BD8]/30 motion-reduce:hidden" aria-hidden /> : null}
-        <span className={`absolute transition duration-300 ${open ? "scale-50 rotate-90 opacity-0" : "scale-100 opacity-100"}`}>
+        {!open ? (
+          <span
+            className="absolute inset-0 animate-ping rounded-full bg-[#1F5BD8]/30 motion-reduce:hidden"
+            aria-hidden
+          />
+        ) : null}
+        <span
+          className={`absolute transition duration-300 ${open ? "scale-50 rotate-90 opacity-0" : "scale-100 opacity-100"}`}
+        >
           <Icon name="agent" size={26} />
         </span>
-        <span className={`absolute transition duration-300 ${open ? "scale-100 rotate-0 opacity-100" : "scale-50 -rotate-90 opacity-0"}`}>
+        <span
+          className={`absolute transition duration-300 ${open ? "scale-100 rotate-0 opacity-100" : "scale-50 -rotate-90 opacity-0"}`}
+        >
           <Icon name="close" size={22} />
         </span>
       </button>

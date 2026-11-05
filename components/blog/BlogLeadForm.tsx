@@ -3,9 +3,12 @@
 import type { FormEvent } from "react";
 import { useState } from "react";
 import { BLOG_LEAD_OFFERS, blogHasLeadForm } from "@/lib/blog-lead";
+import { trackLead } from "@/lib/analytics";
 
 export function BlogLeadForm({ slug }: { slug: string }) {
-  const [state, setState] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [state, setState] = useState<
+    "idle" | "submitting" | "success" | "error"
+  >("idle");
   const [error, setError] = useState("");
 
   if (!blogHasLeadForm(slug)) return null;
@@ -21,7 +24,10 @@ export function BlogLeadForm({ slug }: { slug: string }) {
     try {
       const res = await fetch("/api/blog-lead", {
         method: "POST",
-        headers: { Accept: "application/json", "Content-Type": "application/json" },
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify({
           name: String(fd.get("name") ?? ""),
           email: String(fd.get("email") ?? ""),
@@ -31,9 +37,12 @@ export function BlogLeadForm({ slug }: { slug: string }) {
         }),
       });
       if (!res.ok) {
-        const data = (await res.json().catch(() => null)) as { error?: string } | null;
+        const data = (await res.json().catch(() => null)) as {
+          error?: string;
+        } | null;
         throw new Error(data?.error || "Could not send that.");
       }
+      trackLead("blog_form", { blog_slug: slug });
       setState("success");
       form.reset();
     } catch (err) {
@@ -45,9 +54,12 @@ export function BlogLeadForm({ slug }: { slug: string }) {
   if (state === "success") {
     return (
       <div className="mt-10 rounded-2xl border border-emerald-200 bg-emerald-50 p-6 sm:p-8">
-        <p className="text-lg font-bold text-emerald-900">Got it. We will email you back.</p>
+        <p className="text-lg font-bold text-emerald-900">
+          Got it. We will email you back.
+        </p>
         <p className="mt-2 text-sm text-emerald-800">
-          Check the inbox you just used. If you do not see a reply within two business days, write us from that same address.
+          Check the inbox you just used. If you do not see a reply within two
+          business days, write us from that same address.
         </p>
       </div>
     );
@@ -58,13 +70,22 @@ export function BlogLeadForm({ slug }: { slug: string }) {
       onSubmit={handleSubmit}
       className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8"
     >
-      <p className="text-xs font-bold uppercase tracking-widest text-brand-600">Free check</p>
-      <h2 className="mt-2 text-xl font-extrabold tracking-tight text-slate-900">{offer.heading}</h2>
-      <p className="mt-2 text-sm leading-relaxed text-slate-600">{offer.body}</p>
+      <p className="text-xs font-bold uppercase tracking-widest text-brand-600">
+        Free check
+      </p>
+      <h2 className="mt-2 text-xl font-extrabold tracking-tight text-slate-900">
+        {offer.heading}
+      </h2>
+      <p className="mt-2 text-sm leading-relaxed text-slate-600">
+        {offer.body}
+      </p>
 
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
         <div>
-          <label htmlFor={`${slug}-name`} className="block text-sm font-medium text-slate-700">
+          <label
+            htmlFor={`${slug}-name`}
+            className="block text-sm font-medium text-slate-700"
+          >
             Name
           </label>
           <input
@@ -78,7 +99,10 @@ export function BlogLeadForm({ slug }: { slug: string }) {
           />
         </div>
         <div>
-          <label htmlFor={`${slug}-email`} className="block text-sm font-medium text-slate-700">
+          <label
+            htmlFor={`${slug}-email`}
+            className="block text-sm font-medium text-slate-700"
+          >
             Email
           </label>
           <input
@@ -94,7 +118,10 @@ export function BlogLeadForm({ slug }: { slug: string }) {
       </div>
 
       <div className="mt-4">
-        <label htmlFor={`${slug}-message`} className="block text-sm font-medium text-slate-700">
+        <label
+          htmlFor={`${slug}-message`}
+          className="block text-sm font-medium text-slate-700"
+        >
           Where you are
         </label>
         <textarea
@@ -108,7 +135,9 @@ export function BlogLeadForm({ slug }: { slug: string }) {
         />
       </div>
 
-      {state === "error" ? <p className="mt-3 text-sm text-rose-700">{error}</p> : null}
+      {state === "error" ? (
+        <p className="mt-3 text-sm text-rose-700">{error}</p>
+      ) : null}
 
       <button
         type="submit"

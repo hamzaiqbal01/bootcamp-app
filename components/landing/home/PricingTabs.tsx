@@ -1,8 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
-import { getPackageWhatsIncluded, privateDatTutoringPackages } from "@/lib/data/dat-private-tutoring";
+import { useState, useSyncExternalStore } from "react";
+import {
+  getPackageWhatsIncluded,
+  privateDatTutoringPackages,
+} from "@/lib/data/dat-private-tutoring";
 import { servicePackages } from "@/lib/data/services";
 import type { IncludeEntry, ServicePackage } from "@/lib/data/services";
 import { contactLinkForPackage } from "@/lib/contact-link";
@@ -77,9 +80,18 @@ function toPlan(pkg: ServicePackage): Plan {
 
 const allPlans: Plan[] = [...tutoringPlans, ...servicePackages.map(toPlan)];
 
+const noopSubscribe = () => () => {};
+const readTabParam = () =>
+  new URLSearchParams(window.location.search).get("tab") ?? "";
+
 export function PricingTabs({ titleAs = "h2" }: { titleAs?: "h1" | "h2" }) {
   const Title = titleAs;
-  const [active, setActive] = useState(tabs[0].id);
+  // A service card can open a tab with ?tab=interview etc. Without it (home page, plain /pricing) the
+  // first tab shows. Read after hydration so the server and client HTML match.
+  const urlTab = useSyncExternalStore(noopSubscribe, readTabParam, () => "");
+  const [picked, setActive] = useState<string | null>(null);
+  const active =
+    picked ?? (tabs.some((item) => item.id === urlTab) ? urlTab : tabs[0].id);
   const tab = tabs.find((item) => item.id === active) ?? tabs[0];
   const plans = tab.ids
     .map((id) => allPlans.find((plan) => plan.id === id))
@@ -87,7 +99,10 @@ export function PricingTabs({ titleAs = "h2" }: { titleAs?: "h1" | "h2" }) {
   const complete = servicePackages.find((pkg) => pkg.id === "complete");
 
   return (
-    <section id="pricing" className="relative isolate scroll-mt-24 overflow-hidden bg-[#F6F8FC] py-20 sm:py-24">
+    <section
+      id="pricing"
+      className="relative isolate scroll-mt-24 overflow-hidden bg-[#F6F8FC] py-20 sm:py-24"
+    >
       <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden>
         <div className="absolute -top-40 -right-32 h-[560px] w-[560px] rounded-full bg-[radial-gradient(closest-side,rgba(79,123,255,0.22),transparent)]" />
         <div className="absolute -top-28 -right-28 h-[380px] w-[380px] rounded-full border border-[#1F5BD8]/12" />
@@ -131,7 +146,9 @@ export function PricingTabs({ titleAs = "h2" }: { titleAs?: "h1" | "h2" }) {
               {item.label}
               <span
                 className={`rounded-full px-1.5 text-[11px] leading-[18px] ${
-                  item.id === active ? "bg-white/15 text-white" : "bg-[#EEF3FE] text-[#1F5BD8]"
+                  item.id === active
+                    ? "bg-white/15 text-white"
+                    : "bg-[#EEF3FE] text-[#1F5BD8]"
                 }`}
               >
                 {item.ids.length}
@@ -161,11 +178,21 @@ export function PricingTabs({ titleAs = "h2" }: { titleAs?: "h1" | "h2" }) {
                     Most chosen
                   </span>
                 ) : null}
-                <h3 className="min-h-[56px] text-lg leading-snug font-bold text-[#0B1B3A]">{pkg.title}</h3>
+                <h3 className="min-h-[56px] text-lg leading-snug font-bold text-[#0B1B3A]">
+                  {pkg.title}
+                </h3>
                 <p className="mt-3 flex flex-wrap items-baseline gap-1.5">
-                  <b className="text-4xl font-extrabold tracking-[-0.03em] text-[#0B1B3A]">{pkg.price}</b>
-                  {pkg.priceWas ? <s className="text-base text-[#8A93A3]">{pkg.priceWas}</s> : null}
-                  {pkg.priceUnit ? <span className="text-sm text-[#5B6782]">{pkg.priceUnit}</span> : null}
+                  <b className="text-4xl font-extrabold tracking-[-0.03em] text-[#0B1B3A]">
+                    {pkg.price}
+                  </b>
+                  {pkg.priceWas ? (
+                    <s className="text-base text-[#8A93A3]">{pkg.priceWas}</s>
+                  ) : null}
+                  {pkg.priceUnit ? (
+                    <span className="text-sm text-[#5B6782]">
+                      {pkg.priceUnit}
+                    </span>
+                  ) : null}
                 </p>
                 {pkg.note ? (
                   <span className="mt-2 inline-flex w-fit rounded-full bg-[#E3F6EF] px-2.5 py-0.5 text-[12px] font-bold text-[#0F7A5C]">
@@ -182,11 +209,25 @@ export function PricingTabs({ titleAs = "h2" }: { titleAs?: "h1" | "h2" }) {
                 >
                   Get started
                   <span className="sr-only">: {pkg.title}</span>
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden>
-                    <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden
+                  >
+                    <path
+                      d="M5 12h14M13 6l6 6-6 6"
+                      stroke="currentColor"
+                      strokeWidth="2.4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </Link>
-                <p className="mt-6 text-xs font-bold tracking-[0.08em] text-[#5B6782] uppercase">What&apos;s included</p>
+                <p className="mt-6 text-xs font-bold tracking-[0.08em] text-[#5B6782] uppercase">
+                  What&apos;s included
+                </p>
                 <ul className="mt-3 flex flex-col gap-3 text-sm leading-snug text-[#33415C]">
                   {shown.map((line) => (
                     <li key={line} className="flex gap-2.5">
@@ -207,7 +248,10 @@ export function PricingTabs({ titleAs = "h2" }: { titleAs?: "h1" | "h2" }) {
 
         <p className="mt-8 text-center text-[15px] text-[#5B6782]">
           Not sure which package fits?{" "}
-          <Link href="/schedule" className="font-bold text-[#1F5BD8] hover:underline">
+          <Link
+            href="/schedule"
+            className="font-bold text-[#1F5BD8] hover:underline"
+          >
             Book a free 15-minute call
           </Link>
         </p>
@@ -223,18 +267,36 @@ export function PricingTabs({ titleAs = "h2" }: { titleAs?: "h1" | "h2" }) {
                 <span className="inline-flex rounded-full bg-[#1F5BD8]/25 px-3 py-1 text-xs font-bold tracking-[0.06em] text-[#BFD3FF] uppercase">
                   Save 10% with the bundle
                 </span>
-                <h3 className="mt-3 text-2xl font-extrabold text-white sm:text-[28px]">{complete.title}</h3>
-                <p className="mt-2 max-w-xl text-[15px] leading-relaxed">{complete.descriptions[0]}</p>
+                <h3 className="mt-3 text-2xl font-extrabold text-white sm:text-[28px]">
+                  {complete.title}
+                </h3>
+                <p className="mt-2 max-w-xl text-[15px] leading-relaxed">
+                  {complete.descriptions[0]}
+                </p>
               </div>
               <div className="flex flex-col items-start gap-3 sm:items-end">
-                <b className="text-[40px] leading-none font-extrabold tracking-[-0.03em] text-white">{complete.price}</b>
+                <b className="text-[40px] leading-none font-extrabold tracking-[-0.03em] text-white">
+                  {complete.price}
+                </b>
                 <Link
                   href={contactLinkForPackage(complete.title, complete.price)}
                   className="inline-flex min-h-[50px] items-center justify-center gap-2 rounded-full bg-white px-6 text-[15px] font-bold text-[#0B1B3A] transition-colors hover:bg-[#EAF0FF]"
                 >
                   Get the complete package
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden>
-                    <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden
+                  >
+                    <path
+                      d="M5 12h14M13 6l6 6-6 6"
+                      stroke="currentColor"
+                      strokeWidth="2.4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </Link>
               </div>
@@ -250,7 +312,13 @@ function CheckIcon() {
   return (
     <span className="mt-px grid h-4 w-4 shrink-0 place-items-center rounded-full bg-[#E7EFFE] text-[#1F5BD8]">
       <svg width="10" height="10" viewBox="0 0 24 24" fill="none" aria-hidden>
-        <path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round" />
+        <path
+          d="M5 12.5l4.5 4.5L19 7.5"
+          stroke="currentColor"
+          strokeWidth="3.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </svg>
     </span>
   );

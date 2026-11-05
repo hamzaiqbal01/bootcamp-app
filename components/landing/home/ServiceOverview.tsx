@@ -25,12 +25,20 @@ const tones = {
 
 type Tone = keyof typeof tones;
 
-const cards: { title: string; body: string; price: string; href: string; cta: string; tone: Tone; icon: ReactNode }[] = [
+const cards: {
+  title: string;
+  body: string;
+  price: string;
+  href: string;
+  cta: string;
+  tone: Tone;
+  icon: ReactNode;
+}[] = [
   {
     title: "Interview Coaching",
     body: "Traditional and MMI mock interviews with the questions dental schools actually ask.",
     price: "From $347",
-    href: "/pricing",
+    href: "/pricing?tab=interview#pricing",
     cta: "See plans",
     tone: "purple",
     icon: <PeopleIcon />,
@@ -39,7 +47,7 @@ const cards: { title: string; body: string; price: string; href: string; cta: st
     title: "Personal Statement",
     body: "Multiple rounds of edits from a practicing dentist who has read hundreds of statements.",
     price: "From $167",
-    href: "/pricing",
+    href: "/pricing?tab=statement#pricing",
     cta: "See plans",
     tone: "orange",
     icon: <EditIcon />,
@@ -48,7 +56,7 @@ const cards: { title: string; body: string; price: string; href: string; cta: st
     title: "Application Review",
     body: "School list, experiences, and your full AADSAS application reviewed before you submit.",
     price: "From $87",
-    href: "/pricing",
+    href: "/pricing?tab=application#pricing",
     cta: "See plans",
     tone: "green",
     icon: <LayersIcon />,
@@ -66,7 +74,10 @@ const cards: { title: string; body: string; price: string; href: string; cta: st
 
 export function ServiceOverview() {
   return (
-    <section id="services" className="relative isolate scroll-mt-24 overflow-hidden bg-[#F6F8FC] py-20 sm:py-24">
+    <section
+      id="services"
+      className="relative isolate scroll-mt-24 overflow-hidden bg-[#F6F8FC] py-20 sm:py-24"
+    >
       <div className="pointer-events-none absolute top-[24px] right-[24px] -z-10 hidden w-[230px] lg:block xl:top-[20px] xl:right-[64px] xl:w-[320px]">
         <CellIllustration className="animate-cell-float h-auto w-full" />
       </div>
@@ -79,7 +90,8 @@ export function ServiceOverview() {
             Dental school admissions consulting, from first DAT to acceptance
           </h2>
           <p className="max-w-[60ch] text-lg text-[#5B6782]">
-            Most students come to us for one thing and stay for the rest. Start with the section that is holding your application back.
+            Most students come to us for one thing and stay for the rest. Start
+            with the section that is holding your application back.
           </p>
         </div>
         <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
@@ -91,20 +103,41 @@ export function ServiceOverview() {
                 href={card.href}
                 className="group relative isolate flex flex-col gap-3.5 overflow-hidden rounded-2xl border border-[#E4E9F2] bg-white p-7 shadow-[0_10px_30px_-24px_rgba(11,27,58,0.35)] transition duration-300 hover:-translate-y-1 hover:border-[#D3DDF0] hover:shadow-[0_22px_40px_-24px_rgba(11,27,58,0.4)]"
               >
-                <CornerWave from={tone.wave[0]} to={tone.wave[1]} id={card.tone} />
+                <CornerWave
+                  from={tone.wave[0]}
+                  to={tone.wave[1]}
+                  id={card.tone}
+                />
                 <span
                   className={`svc-tile svc-tile-${card.tone} flex h-12 w-12 items-center justify-center rounded-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.8),0_6px_14px_-8px_rgba(11,27,58,0.35)] ring-1 ${tone.tile}`}
                 >
                   {card.icon}
                 </span>
-                <h3 className="text-[19px] font-bold text-[#0B1B3A]">{card.title}</h3>
-                <p className="text-[15px] leading-relaxed text-[#5B6782]">{card.body}</p>
+                <h3 className="text-[19px] font-bold text-[#0B1B3A]">
+                  {card.title}
+                </h3>
+                <p className="text-[15px] leading-relaxed text-[#5B6782]">
+                  {card.body}
+                </p>
                 <div className="mt-auto flex items-center justify-between border-t border-[#E4E9F2] pt-3.5 text-sm">
                   <b className="text-[#0B1B3A]">{card.price}</b>
                   <span className="inline-flex items-center gap-1 font-bold text-[#1F5BD8]">
                     {card.cta}
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden className="transition-transform group-hover:translate-x-0.5">
-                      <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      aria-hidden
+                      className="transition-transform group-hover:translate-x-0.5"
+                    >
+                      <path
+                        d="M5 12h14M13 6l6 6-6 6"
+                        stroke="currentColor"
+                        strokeWidth="2.4"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
                     </svg>
                   </span>
                 </div>
@@ -118,7 +151,15 @@ export function ServiceOverview() {
 }
 
 // Soft coloured swoosh in the card's bottom-right corner, behind the content.
-function CornerWave({ from, to, id }: { from: string; to: string; id: string }) {
+function CornerWave({
+  from,
+  to,
+  id,
+}: {
+  from: string;
+  to: string;
+  id: string;
+}) {
   const gid = `svc-wave-${id}`;
   return (
     <svg
@@ -134,8 +175,18 @@ function CornerWave({ from, to, id }: { from: string; to: string; id: string }) 
           <stop offset="1" stopColor={to} stopOpacity="0.95" />
         </linearGradient>
       </defs>
-      <path d="M220 0 C196 30 184 70 140 92 C102 111 54 118 0 140 L220 140 Z" fill={`url(#${gid})`} />
-      <path className="svc-wave-line" d="M220 46 C202 70 182 96 150 112 C122 126 96 132 70 140" fill="none" stroke="#FFFFFF" strokeOpacity="0.6" strokeWidth="2" />
+      <path
+        d="M220 0 C196 30 184 70 140 92 C102 111 54 118 0 140 L220 140 Z"
+        fill={`url(#${gid})`}
+      />
+      <path
+        className="svc-wave-line"
+        d="M220 46 C202 70 182 96 150 112 C122 126 96 132 70 140"
+        fill="none"
+        stroke="#FFFFFF"
+        strokeOpacity="0.6"
+        strokeWidth="2"
+      />
     </svg>
   );
 }
@@ -156,8 +207,18 @@ function ToothIcon() {
 function EditIcon() {
   return (
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path d="M11 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" />
-      <path d="M17.5 3.5a2.1 2.1 0 0 1 3 3L12 15l-4 1 1-4 8.5-8.5Z" stroke="currentColor" strokeWidth="1.9" strokeLinejoin="round" />
+      <path
+        d="M11 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"
+        stroke="currentColor"
+        strokeWidth="1.9"
+        strokeLinecap="round"
+      />
+      <path
+        d="M17.5 3.5a2.1 2.1 0 0 1 3 3L12 15l-4 1 1-4 8.5-8.5Z"
+        stroke="currentColor"
+        strokeWidth="1.9"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
@@ -165,9 +226,26 @@ function EditIcon() {
 function LayersIcon() {
   return (
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path d="M12 3 2.5 8 12 13l9.5-5L12 3Z" stroke="currentColor" strokeWidth="1.9" strokeLinejoin="round" />
-      <path d="m2.5 12.5 9.5 5 9.5-5" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="m2.5 16.5 9.5 5 9.5-5" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        d="M12 3 2.5 8 12 13l9.5-5L12 3Z"
+        stroke="currentColor"
+        strokeWidth="1.9"
+        strokeLinejoin="round"
+      />
+      <path
+        d="m2.5 12.5 9.5 5 9.5-5"
+        stroke="currentColor"
+        strokeWidth="1.9"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="m2.5 16.5 9.5 5 9.5-5"
+        stroke="currentColor"
+        strokeWidth="1.9"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
@@ -176,9 +254,19 @@ function PeopleIcon() {
   return (
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
       <circle cx="9" cy="8" r="3.5" stroke="currentColor" strokeWidth="1.9" />
-      <path d="M2.5 20c.6-3.4 3.2-5.5 6.5-5.5s5.9 2.1 6.5 5.5" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" />
+      <path
+        d="M2.5 20c.6-3.4 3.2-5.5 6.5-5.5s5.9 2.1 6.5 5.5"
+        stroke="currentColor"
+        strokeWidth="1.9"
+        strokeLinecap="round"
+      />
       <circle cx="17" cy="9" r="2.6" stroke="currentColor" strokeWidth="1.9" />
-      <path d="M17 14c2.5 0 4.2 1.6 4.6 4.2" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" />
+      <path
+        d="M17 14c2.5 0 4.2 1.6 4.6 4.2"
+        stroke="currentColor"
+        strokeWidth="1.9"
+        strokeLinecap="round"
+      />
     </svg>
   );
 }

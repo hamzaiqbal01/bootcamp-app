@@ -3,6 +3,7 @@
 import Link from "next/link";
 import type { FormEvent, ReactNode } from "react";
 import { useState, useSyncExternalStore } from "react";
+import { trackLead } from "@/lib/analytics";
 
 type SubmitState = "idle" | "submitting" | "success" | "error";
 
@@ -106,6 +107,7 @@ export function ContactSection() {
         throw new Error(`Contact API responded with ${res.status}`);
       }
 
+      trackLead("contact_form", { package_name: selectedPackage || undefined });
       setState("success");
       form.reset();
       setDismissed(true);

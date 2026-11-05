@@ -4,8 +4,13 @@ import "./globals.css";
 import "@/components/fdp-dat/fdp-dat.css";
 import "./theme-dark-planner.css";
 import "./theme-dark.css";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { ChatWidget } from "@/components/chat/ChatWidget";
-import { JsonLd, organizationSchema, websiteSchema } from "@/components/seo/JsonLd";
+import {
+  JsonLd,
+  organizationSchema,
+  websiteSchema,
+} from "@/components/seo/JsonLd";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -16,7 +21,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://futuredentalprep.com"),
   title: {
-    default: "Future Dental Prep | Dental School Admissions Consulting & DAT Tutoring",
+    default:
+      "Future Dental Prep | Dental School Admissions Consulting & DAT Tutoring",
     template: "%s | Future Dental Prep",
   },
   description:
@@ -44,7 +50,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-scroll-behavior="smooth" className={`${inter.variable} scroll-smooth`} suppressHydrationWarning>
+    <html
+      lang="en"
+      data-scroll-behavior="smooth"
+      className={`${inter.variable} scroll-smooth`}
+      suppressHydrationWarning
+    >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
@@ -52,6 +63,7 @@ export default function RootLayout({
         <JsonLd data={[organizationSchema, websiteSchema]} />
         {children}
         <ChatWidget />
+        <GoogleAnalytics />
       </body>
     </html>
   );

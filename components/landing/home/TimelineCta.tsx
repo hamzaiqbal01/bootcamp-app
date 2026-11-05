@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { trackLead } from "@/lib/analytics";
 
 // A broad preview of the cycle; the emailed timeline and the guide carry the exact dates.
 const milestones = [
@@ -13,7 +14,9 @@ const milestones = [
 
 export function TimelineCta() {
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
+    "idle",
+  );
 
   async function onSubmit(event: React.FormEvent) {
     event.preventDefault();
@@ -31,6 +34,7 @@ export function TimelineCta() {
         }),
       });
       if (!res.ok) throw new Error("Request failed");
+      trackLead("timeline_email");
       setStatus("sent");
     } catch {
       setStatus("error");
@@ -53,20 +57,36 @@ export function TimelineCta() {
           <div className="relative grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_380px]">
             <div>
               <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[12px] font-bold tracking-[0.1em] text-[#C9D8FA] uppercase">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#7FA6F5]" aria-hidden />
+                <span
+                  className="h-1.5 w-1.5 rounded-full bg-[#7FA6F5]"
+                  aria-hidden
+                />
                 Fall 2027 cycle
               </span>
               <h2 className="mt-5 text-[clamp(28px,3.6vw,44px)] leading-[1.1] font-extrabold tracking-[-0.025em]">
                 Get the free 2027 application timeline
               </h2>
               <p className="mt-4 max-w-[52ch] text-[17px] leading-relaxed text-[#C9D4EA]">
-                Leave your email and we will send the Fall 2027 timeline. You can also read it now in the guide.
+                Leave your email and we will send the Fall 2027 timeline. You
+                can also read it now in the guide.
               </p>
 
               {status === "sent" ? (
                 <p className="mt-7 inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/10 px-4 py-3 text-sm">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden>
-                    <path d="M3.5 8.5l3 3 6-7" stroke="#7FE0B0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    aria-hidden
+                  >
+                    <path
+                      d="M3.5 8.5l3 3 6-7"
+                      stroke="#7FE0B0"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                   Request received. We will email the timeline to {email}.
                 </p>
@@ -92,29 +112,51 @@ export function TimelineCta() {
                     disabled={status === "sending"}
                     className="min-h-[50px] rounded-full bg-[#1F5BD8] px-5 text-[15px] font-bold text-white transition-colors hover:bg-[#3A72E8] disabled:opacity-70"
                   >
-                    {status === "sending" ? "Sending…" : "Email me the timeline"}
+                    {status === "sending"
+                      ? "Sending…"
+                      : "Email me the timeline"}
                   </button>
                 </form>
               )}
               {status === "error" ? (
-                <p className="mt-3 text-sm text-[#F7C1C1]">That request did not send. Try the contact page.</p>
+                <p className="mt-3 text-sm text-[#F7C1C1]">
+                  That request did not send. Try the contact page.
+                </p>
               ) : null}
               <Link
                 href="/blog/is-it-too-late-to-apply-dental-school-2027"
                 className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-white/85 transition-colors hover:text-white"
               >
                 Read the 2027 timeline guide
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden>
-                  <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  aria-hidden
+                >
+                  <path
+                    d="M6 3l5 5-5 5"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </Link>
             </div>
 
             <ol className="relative hidden rounded-[24px] border border-white/12 bg-white/[0.06] p-6 backdrop-blur sm:block">
               {milestones.map((item, index) => (
-                <li key={item.when} className="relative flex gap-4 pb-6 last:pb-0">
+                <li
+                  key={item.when}
+                  className="relative flex gap-4 pb-6 last:pb-0"
+                >
                   {index < milestones.length - 1 ? (
-                    <span className="absolute top-7 left-[13px] h-[calc(100%-20px)] w-px bg-white/20" aria-hidden />
+                    <span
+                      className="absolute top-7 left-[13px] h-[calc(100%-20px)] w-px bg-white/20"
+                      aria-hidden
+                    />
                   ) : null}
                   <span className="relative mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#1F5BD8] text-[12px] font-bold ring-4 ring-[#1F5BD8]/25">
                     {index + 1}
@@ -123,7 +165,9 @@ export function TimelineCta() {
                     <span className="block text-[12px] font-bold tracking-[0.08em] text-[#9DB9F5] uppercase">
                       {item.when}
                     </span>
-                    <span className="mt-0.5 block text-[15px] font-semibold text-white">{item.what}</span>
+                    <span className="mt-0.5 block text-[15px] font-semibold text-white">
+                      {item.what}
+                    </span>
                   </span>
                 </li>
               ))}
