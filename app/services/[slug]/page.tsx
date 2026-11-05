@@ -5,6 +5,7 @@ import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
 import { ServiceLandingPage } from "@/components/services/ServiceLandingPage";
 import { getServicePage, servicePages } from "@/lib/data/service-pages";
+import { OG_IMAGE } from "@/lib/og-image";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -33,12 +34,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: page.metaDescription,
     alternates: { canonical: url },
     openGraph: {
+      images: [OG_IMAGE],
       title: page.metaTitle,
       description: page.metaDescription,
       url,
       type: "website",
     },
     twitter: {
+      images: [OG_IMAGE.url],
       card: "summary_large_image",
       title: page.metaTitle,
       description: page.metaDescription,

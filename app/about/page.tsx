@@ -14,6 +14,7 @@ import {
   TutorsSection,
 } from "@/components/services/TrustSections";
 import { Breadcrumbs } from "@/components/seo/JsonLd";
+import { OG_IMAGE } from "@/lib/og-image";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export const metadata: Metadata = {
     canonical: "/about",
   },
   openGraph: {
+    images: [OG_IMAGE],
     title: "About Future Dental Prep",
     description:
       "Dentists and recent dental school admits helping pre-dental students 1-on-1 with the DAT and dental school applications.",

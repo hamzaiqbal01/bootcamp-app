@@ -11,6 +11,7 @@ import {
   organizationSchema,
   websiteSchema,
 } from "@/components/seo/JsonLd";
+import { OG_IMAGE } from "@/lib/og-image";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,11 +29,13 @@ export const metadata: Metadata = {
   description:
     "Expert-led dental school admissions consulting and DAT tutoring from a team of dental professionals and top students. Trusted by 1,000+ pre-dental students.",
   openGraph: {
+    images: [OG_IMAGE],
     siteName: "Future Dental Prep",
     type: "website",
     locale: "en_US",
   },
   twitter: {
+    images: [OG_IMAGE.url],
     card: "summary_large_image",
   },
   robots: {

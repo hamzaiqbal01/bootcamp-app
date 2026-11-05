@@ -7,6 +7,7 @@ import {
 } from "@/components/international/InternationalPage";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
+import { OG_IMAGE } from "@/lib/og-image";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -19,12 +20,14 @@ export const metadata: Metadata = {
   description: INTL_DESCRIPTION,
   alternates: { canonical: "/international-applicants" },
   openGraph: {
+    images: [OG_IMAGE],
     title: INTL_TITLE,
     description: INTL_DESCRIPTION,
     url: "/international-applicants",
     type: "website",
   },
   twitter: {
+    images: [OG_IMAGE.url],
     card: "summary_large_image",
     title: INTL_TITLE,
     description: INTL_DESCRIPTION,

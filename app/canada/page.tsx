@@ -7,6 +7,7 @@ import {
 } from "@/components/canada/CanadaPage";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
+import { OG_IMAGE } from "@/lib/og-image";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -19,12 +20,14 @@ export const metadata: Metadata = {
   description: CANADA_DESCRIPTION,
   alternates: { canonical: "/canada" },
   openGraph: {
+    images: [OG_IMAGE],
     title: CANADA_TITLE,
     description: CANADA_DESCRIPTION,
     url: "/canada",
     type: "website",
   },
   twitter: {
+    images: [OG_IMAGE.url],
     card: "summary_large_image",
     title: CANADA_TITLE,
     description: CANADA_DESCRIPTION,

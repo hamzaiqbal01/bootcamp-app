@@ -2,16 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CharacterCounter } from "@/components/tools/CharacterCounter";
 import { ToolPageLayout } from "@/components/tools/ToolPageLayout";
+import { OG_IMAGE } from "@/lib/og-image";
 
 const title = "Dental School Personal Statement Character Counter";
 const description =
   "Free AADSAS personal statement character counter. Check your dental school essay against the 4,500-character limit, with spaces, words, and paragraphs counted live.";
 
 export const metadata: Metadata = {
-  title: { absolute: "AADSAS Personal Statement Character Counter (4,500 Limit) | Future Dental Prep" },
+  title: {
+    absolute:
+      "AADSAS Personal Statement Character Counter (4,500 Limit) | Future Dental Prep",
+  },
   description,
   alternates: { canonical: "/personal-statement-character-counter" },
   openGraph: {
+    images: [OG_IMAGE],
     title: "Free AADSAS Personal Statement Character Counter",
     description,
     url: "/personal-statement-character-counter",
@@ -56,12 +61,14 @@ export default function PersonalStatementCounterPage() {
           body: (
             <>
               <p>
-                Paste your draft into the box. The bar turns amber when you are within 10% of the limit and red when
-                you go over, with the exact number of characters left or over shown underneath.
+                Paste your draft into the box. The bar turns amber when you are
+                within 10% of the limit and red when you go over, with the exact
+                number of characters left or over shown underneath.
               </p>
               <p>
-                Formatting such as bold, italics, and bullet points does not carry into a plain-text application box,
-                so it is safest to paste plain text here and in AADSAS.
+                Formatting such as bold, italics, and bullet points does not
+                carry into a plain-text application box, so it is safest to
+                paste plain text here and in AADSAS.
               </p>
             </>
           ),
@@ -71,13 +78,18 @@ export default function PersonalStatementCounterPage() {
           body: (
             <>
               <p>
-                Start with sentences that repeat an idea you already made, then filler openings such as &ldquo;I
-                have always wanted to&rdquo; and long lists of activities that are already in your application.
-                Keep the specific moments that only you could describe.
+                Start with sentences that repeat an idea you already made, then
+                filler openings such as &ldquo;I have always wanted to&rdquo;
+                and long lists of activities that are already in your
+                application. Keep the specific moments that only you could
+                describe.
               </p>
               <p>
                 If you want an expert read before you submit, our{" "}
-                <Link href="/pricing" className="font-semibold text-[#1F5BD8] hover:underline">
+                <Link
+                  href="/pricing"
+                  className="font-semibold text-[#1F5BD8] hover:underline"
+                >
                   personal statement packages
                 </Link>{" "}
                 include review from a practicing dentist.

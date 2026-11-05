@@ -15,6 +15,7 @@ import { ServiceOverview } from "@/components/landing/home/ServiceOverview";
 import { StatsStrip } from "@/components/landing/home/StatsStrip";
 import { TimelineCta } from "@/components/landing/home/TimelineCta";
 import { ToolsGrid } from "@/components/landing/home/ToolsGrid";
+import { OG_IMAGE } from "@/lib/og-image";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -32,7 +33,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "DAT Tutoring & Dental School Admissions Consulting | Future Dental Prep",
+    images: [OG_IMAGE],
+    title:
+      "DAT Tutoring & Dental School Admissions Consulting | Future Dental Prep",
     description:
       "Dental school admissions consulting for the personal statement, secondaries, school list, and interviews, plus 1-on-1 DAT tutoring. Schedule a free call.",
     url: "https://futuredentalprep.com",

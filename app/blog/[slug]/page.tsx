@@ -26,6 +26,7 @@ import {
   slugifyCategory,
 } from "@/lib/data/blog";
 import { Breadcrumbs } from "@/components/seo/JsonLd";
+import { OG_IMAGE } from "@/lib/og-image";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -59,15 +60,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       publishedTime: post.publishedAt,
       authors: [post.author.name],
-      ...(post.coverImage
-        ? { images: [{ url: post.coverImage, width: 1200, height: 630 }] }
-        : {}),
+      images: post.coverImage
+        ? [{ url: post.coverImage, width: 1200, height: 630 }]
+        : [OG_IMAGE],
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.description,
-      ...(post.coverImage ? { images: [post.coverImage] } : {}),
+      images: [post.coverImage ?? OG_IMAGE.url],
     },
   };
 }
