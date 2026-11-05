@@ -4,7 +4,8 @@ import Link from "next/link";
 import { useEffect, useId, useRef, useState } from "react";
 import type { FormEvent } from "react";
 
-const SHOW_AFTER_MS = 30_000;
+// Counted only while the tab is visible, so it appears after a full minute of actual reading.
+const SHOW_AFTER_MS = 60_000;
 
 export function BlogDemoCallPopup({ slug }: { slug: string }) {
   const titleId = useId();
@@ -188,7 +189,7 @@ export function BlogDemoCallPopup({ slug }: { slug: string }) {
             <button
               type="submit"
               disabled={state === "submitting"}
-              className="mt-5 inline-flex w-full items-center justify-center rounded-2xl bg-[#0B1020] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-stone-800 disabled:cursor-not-allowed disabled:opacity-60"
+              className="mt-5 inline-flex w-full items-center justify-center rounded-full bg-[#0B1020] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-stone-800 disabled:cursor-not-allowed disabled:opacity-60"
             >
               {state === "submitting" ? "Sending…" : "Get my free demo tutor"}
             </button>

@@ -1,3 +1,5 @@
+import { getCoach } from "@/lib/data/coaches";
+
 export type BlogPost = {
   slug: string;
   title: string;
@@ -8,18 +10,31 @@ export type BlogPost = {
   coverGradient: string;
   coverEmoji: string;
   coverImage?: string;
-  author: {
-    name: string;
-    role: string;
-    imageUrl: string;
-  };
+  author: BlogAuthor;
   content: string;
 };
 
-const BLOG_AUTHOR = {
-  name: "Future Dental Prep",
-  role: "Admissions Team",
-  imageUrl: "/images/logo-fdp.png",
+export type BlogAuthor = {
+  name: string;
+  role: string;
+  imageUrl: string | null;
+  initials: string;
+  /** Team profile page for the author. */
+  href: string;
+};
+
+// Every article is credited to one of our tutors, matched to the topic they coach.
+function authorFrom(id: string, role: string): BlogAuthor {
+  const coach = getCoach(id);
+  if (!coach) throw new Error(`Unknown blog author: ${id}`);
+  return { name: coach.name, role, imageUrl: coach.photo, initials: coach.initials, href: `/team/${coach.id}` };
+}
+
+const AUTHORS = {
+  todd: authorFrom("dr-todd-chastain", "Practicing dentist · UAB School of Dentistry"),
+  celina: authorFrom("celina-yang", "Dental student · Penn Dental Medicine"),
+  hansuja: authorFrom("hansuja-chaurasia", "Dental student · UConn School of Dental Medicine"),
+  neil: authorFrom("neil-desai", "Dental student · Case Western Reserve"),
 };
 
 export const blogPosts: BlogPost[] = [
@@ -34,7 +49,7 @@ export const blogPosts: BlogPost[] = [
     coverGradient: "from-slate-800 to-indigo-900",
     coverEmoji: "📬",
     coverImage: "/images/blog-no-interview-invite-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.todd,
     content: `
 ## Silence in November Is Not a Decision
 
@@ -110,7 +125,7 @@ Future Dental Prep’s interview coaching is two hours of 1-on-1 mock sessions, 
     coverGradient: "from-indigo-700 to-slate-900",
     coverEmoji: "💻",
     coverImage: "/images/blog-virtual-dental-interview-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.todd,
     content: `
 ## A Zoom Interview Is Not a Casual Call
 
@@ -182,7 +197,8 @@ Future Dental Prep’s interview coaching includes 1-on-1 mock sessions on video
     category: "DAT Prep",
     coverGradient: "from-teal-700 to-slate-900",
     coverEmoji: "📆",
-    author: BLOG_AUTHOR,
+    coverImage: "/images/blog-dat-dates-2027-cover.png",
+    author: AUTHORS.neil,
     content: `
 ## There Is No Published List of DAT Dates for 2027
 
@@ -288,7 +304,8 @@ Pick the entry year first. Then book a Prometric day that still leaves three to 
     category: "Application Tips",
     coverGradient: "from-rose-700 to-slate-900",
     coverEmoji: "⏳",
-    author: BLOG_AUTHOR,
+    coverImage: "/images/blog-too-late-to-apply-2027-cover.png",
+    author: AUTHORS.hansuja,
     content: `
 ## No — The Cycle Is Open. Your School’s Deadline May Not Be.
 
@@ -400,7 +417,8 @@ If you want that list checked against your GPA, DAT, and the weeks left, [schedu
     category: "Admissions Guide",
     coverGradient: "from-sky-700 to-indigo-950",
     coverEmoji: "📅",
-    author: BLOG_AUTHOR,
+    coverImage: "/images/blog-dental-timeline-fall-2028-cover.png",
+    author: AUTHORS.hansuja,
     content: `
 ## Fall 2028 Dental School Means You Apply in 2027
 
@@ -519,7 +537,8 @@ Pick the DAT month that still leaves a retake, then build the weeks backward fro
     category: "DAT Prep",
     coverGradient: "from-violet-700 to-amber-700",
     coverEmoji: "🧪",
-    author: BLOG_AUTHOR,
+    coverImage: "/images/blog-dat-orgo-changes-2026-cover.png",
+    author: AUTHORS.neil,
     content: `
 ## No — DAT Organic Chemistry Did Not Add a New Course
 
@@ -637,7 +656,7 @@ Build the weeks around your test date, with mechanisms and two-step synthesis ea
     coverGradient: "from-cyan-600 to-slate-900",
     coverEmoji: "⏳",
     coverImage: "/images/blog-aadsas-verification-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.hansuja,
     content: `
 ## Short Answer: Up to 10 Business Days After “Complete”
 
@@ -742,7 +761,7 @@ Want a personal submit + DAT calendar for Fall 2027? [Schedule a free call](/sch
     coverGradient: "from-emerald-600 to-teal-900",
     coverEmoji: "💸",
     coverImage: "/images/blog-aadsas-fap-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.hansuja,
     content: `
 ## Short Answer: 3 School Fee Waiver If You Qualify
 
@@ -861,7 +880,7 @@ Need a low-cost application strategy (FAP + school count + DAT timing)? [Schedul
     coverGradient: "from-violet-600 to-indigo-950",
     coverEmoji: "🧠",
     coverImage: "/images/blog-casper-dental-school-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.celina,
     content: `
 ## Short Answer: Only If Your Schools Require It
 
@@ -971,17 +990,18 @@ Want a school-list audit (Casper + DAT + FAP)? [Schedule a free call](/schedule)
   },
   {
     slug: "dat-scoring-scale-200-600",
-    title: "420 DAT to Old Score = 20 (Full Chart)",
-    description:
-      "420 DAT to old score = 20. 460 DAT to old score = 22. Full conversion chart from the 200–600 scale to the old 1–30 scale.",
+    title: "DAT Conversion Chart: 420 = 20 on the Old Scale",
+    description: "420 DAT = 20 and 460 = 22 on the old scale. Full 200–600 to 1–30 conversion chart, what changed in 2025, and a free DAT score calculator.",
     publishedAt: "2026-08-05",
     readingTime: "10 min read",
     category: "DAT Prep",
     coverGradient: "from-teal-600 to-emerald-900",
     coverEmoji: "📐",
     coverImage: "/images/blog-dat-scoring-scale-200-600-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.neil,
     content: `
+Have section scores already? The free [DAT score calculator](/dat-score-calculator) works out your Academic Average and converts it between scales.
+
 ## 420 DAT to Old Score = 20
 
 **420 DAT to old score = 20 AA. 460 DAT to old score = 22 AA.**
@@ -1121,7 +1141,7 @@ Want a score target and retake calendar for Fall 2027 entry? [Schedule a free ca
     coverGradient: "from-indigo-600 to-slate-900",
     coverEmoji: "📅",
     coverImage: "/images/blog-dental-school-decision-day-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.celina,
     content: `
 ## Short Answer: Decision Day Is December 15, 2026
 
@@ -1225,7 +1245,7 @@ Need a plan for offers vs waitlists? [Schedule a free call](/schedule).
     coverGradient: "from-rose-600 to-slate-900",
     coverEmoji: "🎯",
     coverImage: "/images/blog-dental-school-2-5-gpa-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.celina,
     content: `
 ## Short Answer: Possible, but Rare Without a Rebuild
 
@@ -1246,6 +1266,8 @@ If you are closer to **3.0**, start with our [3.0 GPA guide](/blog/dental-school
 | **~3.0** | Possible with clear compensating strengths |
 | **2.7–2.9** | High risk; often needs recent A’s in hard sciences |
 | **~2.5** | Usually need a **new academic record** before a serious cycle |
+
+Closer to 3.0? See [can you get into dental school with a 3.0 GPA](/blog/dental-school-gpa-requirements).
 
 Committees are not only looking at “love of dentistry.” They are predicting whether you survive biomedical coursework. A 2.5 overall (especially a low BCP) is a risk signal unless newer grades prove otherwise.
 
@@ -1332,7 +1354,7 @@ Want a transcript review and post-bacc vs apply-now call? [Schedule a free consu
     coverGradient: "from-amber-600 to-orange-900",
     coverEmoji: "🗓️",
     coverImage: "/images/blog-dental-school-timeline-fall-2027-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.hansuja,
     content: `
 ## Short Answer: Fall 2027 = 2026–27 AADSAS Cycle
 
@@ -1470,7 +1492,7 @@ Want a personalized 2027 calendar (DAT date + school list)? [Schedule a free cal
     coverGradient: "from-sky-700 to-indigo-900",
     coverEmoji: "⏱️",
     coverImage: "/images/blog-how-to-become-a-dentist-usa-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.todd,
     content: `
 ## The Short Answer: 8 Years Minimum
 
@@ -1591,17 +1613,18 @@ Want a timeline built around *your* GPA, DAT date, and school list? [Schedule a 
   },
   {
     slug: "aadsas-bcp-gpa-explained",
-    title: "AADSAS Science GPA Includes Math and Statistics",
-    description:
-      "Yes. AADSAS Science GPA includes math and statistics. BCP GPA does not — BCP is Biology, Chemistry, Physics, and Biochemistry only.",
+    title: "AADSAS BCP vs Science GPA: What Counts (Calculator)",
+    description: "Yes, AADSAS Science GPA includes math and statistics; BCP GPA does not. See which courses count, A- = 3.67, and calculate both GPAs free.",
     publishedAt: "2026-07-28",
     readingTime: "11 min read",
     category: "Application Tips",
     coverGradient: "from-emerald-600 to-teal-800",
     coverEmoji: "🧮",
     coverImage: "/images/blog-dental-school-gpa-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.hansuja,
     content: `
+Want the numbers for your own transcript? Use the free [AADSAS GPA calculator](/aadsas-gpa-calculator) to get your BCP, science, and overall GPA.
+
 ## AADSAS Science GPA Includes Math and Statistics
 
 **Yes.** AADSAS **Science GPA** includes **math and statistics**. **BCP GPA does not.**
@@ -1820,7 +1843,7 @@ If you want help reading your transcript the way adcoms will — BCP vs Science 
     coverGradient: "from-amber-600 to-orange-700",
     coverEmoji: "🔄",
     coverImage: "/images/blog-should-i-retake-the-dat-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.neil,
     content: `
 ## The Real Question Is Not “Can I Score Higher?”
 
@@ -1935,7 +1958,7 @@ If you are stuck between “retake now” vs “apply with this score,” [sched
     coverGradient: "from-teal-700 to-indigo-800",
     coverEmoji: "📅",
     coverImage: "/images/blog-when-does-aadsas-open-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.hansuja,
     content: `
 ## When Does AADSAS Open?
 
@@ -2050,7 +2073,7 @@ If you want a day-one submission plan built around your GPA, DAT, and school lis
     coverGradient: "from-cyan-700 to-blue-800",
     coverEmoji: "🧩",
     coverImage: "/images/blog-dat-perceptual-ability-practice-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.neil,
     content: `
 ## Why Generic PAT Practice Stalls Your Score
 
@@ -2187,7 +2210,7 @@ If PAT is the section holding your AA down and self-study has plateaued, [privat
     coverGradient: "from-blue-700 to-indigo-800",
     coverEmoji: "🦷",
     coverImage: "/images/blog-how-to-become-a-dentist-usa-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.todd,
     content: `
 ## The Path to Becoming a Dentist in the USA
 
@@ -2390,7 +2413,7 @@ If you want expert guidance mapping out your personal path — from DAT prep to 
   },
   {
     slug: "dental-school-vs-medical-school",
-    title: "Do Dentists Go to Medical School?",
+    title: "Do Dentists Go to Med School? Dental vs Medical School",
     description:
       "No. Dentists do not go to medical school. They earn a DDS or DMD at dental school. Compare training, cost, and day-to-day work before you choose.",
     publishedAt: "2026-07-22",
@@ -2399,7 +2422,7 @@ If you want expert guidance mapping out your personal path — from DAT prep to 
     coverGradient: "from-teal-600 to-blue-700",
     coverEmoji: "⚖️",
     coverImage: "/images/blog-dental-vs-medical-school-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.todd,
     content: `
 ## No — Dentists Go to Dental School, Not Medical School
 
@@ -2566,7 +2589,7 @@ If you've decided dentistry is your path — or you're leaning that way and want
     coverGradient: "from-violet-700 to-indigo-800",
     coverEmoji: "📝",
     coverImage: "/images/blog-write-personal-statement-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.celina,
     content: `
 ## Why Most Personal Statements Stall Before They Start
 
@@ -2719,7 +2742,7 @@ If you want line-by-line feedback from someone who has reviewed dental applicati
     coverGradient: "from-sky-700 to-blue-900",
     coverEmoji: "🏫",
     coverImage: "/images/blog-dental-school-secondary-essays-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.celina,
     content: `
 ## Why Secondary Essays Matter More Than Applicants Think
 
@@ -2880,7 +2903,7 @@ If you want help building a secondary story bank and polishing "Why this school?
     coverGradient: "from-teal-700 to-emerald-600",
     coverEmoji: "🔢",
     coverImage: "/images/blog-dat-quantitative-reasoning-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.celina,
     content: `
 ## Why DAT Quantitative Reasoning Scores Stall Out
 
@@ -3069,7 +3092,7 @@ If you want help building a QR plan around your weak topics, [schedule a free co
     coverGradient: "from-indigo-700 to-violet-600",
     coverEmoji: "📖",
     coverImage: "/images/blog-dat-reading-comprehension-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.hansuja,
     content: `
 ## The Myth That Keeps DAT Reading Scores Stuck
 
@@ -3231,7 +3254,7 @@ If your RC score is the only section holding down your AA, structured practice w
     coverGradient: "from-indigo-700 to-amber-600",
     coverEmoji: "🧪",
     coverImage: "/images/blog-dat-organic-chemistry-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.neil,
     content: `
 ## Why DAT Organic Chemistry Feels Harder Than It Is
 
@@ -3453,7 +3476,7 @@ For focused help on those weak clusters, [schedule a free consultation with Futu
     coverGradient: "from-blue-700 to-cyan-700",
     coverEmoji: "⚗️",
     coverImage: "/images/blog-dat-general-chemistry-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.neil,
     content: `
 ## Why DAT General Chemistry Is a Score Lever Most Applicants Underuse
 
@@ -3665,7 +3688,7 @@ If you want help identifying your Gen Chem weak points and fixing them with a st
     coverGradient: "from-blue-600 to-sky-700",
     coverEmoji: "📅",
     coverImage: "/images/blog-interview-prep-2-weeks-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.todd,
     content: `
 ## You Have Two Weeks. Here's How to Use Them.
 
@@ -3869,7 +3892,7 @@ At Future Dental Prep, we run focused mock interview sessions — full panel for
     coverGradient: "from-green-600 to-teal-700",
     coverEmoji: "🧬",
     coverImage: "/images/blog-dat-biology-study-guide-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.celina,
     content: `
 ## Why DAT Biology Deserves More of Your Study Time Than You're Giving It
 
@@ -4090,7 +4113,7 @@ For applicants who have been studying consistently and are still falling short o
     coverGradient: "from-indigo-600 to-violet-700",
     coverEmoji: "🚪",
     coverImage: "/images/blog-mmi-interview-guide-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.todd,
     content: `
 ## What Is the MMI and Why Do Dental Schools Use It?
 
@@ -4331,7 +4354,7 @@ If you'd like to do a mock MMI session with personalized feedback from someone w
     coverGradient: "from-red-600 to-rose-700",
     coverEmoji: "🚫",
     coverImage: "/images/blog-personal-statement-mistakes-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.celina,
     content: `
 ## Why Good Applicants Get Rejected for Bad Writing
 
@@ -4517,7 +4540,7 @@ If you're ready to get real feedback on your personal statement — not encourag
     coverGradient: "from-teal-600 to-emerald-700",
     coverEmoji: "🎤",
     coverImage: "/images/blog-why-dentistry-interview-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.todd,
     content: `
 ## The Question Every Dental School Interviewer Will Ask You
 
@@ -4698,7 +4721,7 @@ If you're preparing for interviews and want structured feedback on your response
     coverGradient: "from-violet-600 to-indigo-700",
     coverEmoji: "✍️",
     coverImage: "/images/blog-personal-statement-examples-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.celina,
     content: `
 ## Why Most Dental School Personal Statements Fail
 
@@ -4892,7 +4915,7 @@ If you can check all six boxes, your statement is ready. If not, go back and loo
     coverGradient: "from-violet-600 to-indigo-600",
     coverEmoji: "🧠",
     coverImage: "/images/blog-dat-pat-guide-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.neil,
     content: `
 ## Why PAT Destroys More DAT Scores Than Any Other Section
 
@@ -5181,7 +5204,7 @@ For a complete overview of the entire DAT and how to approach every section, rea
     coverGradient: "from-amber-500 to-violet-700",
     coverEmoji: "⏳",
     coverImage: "/images/blog-dental-waitlist-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.celina,
     content: `
 ## A Waitlist Is Not a Rejection — But It Requires Action
 
@@ -5409,16 +5432,15 @@ If you want personalized support navigating your waitlist strategy — including
   },
   {
     slug: "dental-school-acceptance-rates",
-    title: "Dental School Acceptance Rates: What Are Your Real Odds of Getting In?",
-    description:
-      "What are your actual chances of getting into dental school? This guide breaks down national acceptance rates, the most and least competitive programs, what separates accepted from rejected applicants with the same stats, and how to build a school list that maximizes your odds of getting in.",
+    title: "Dental School Acceptance Rates: Your Real Odds",
+    description: "National dental school acceptance rates, the stats that predict who gets in, and how to build a school list around your odds. 2026–27 cycle data.",
     publishedAt: "2026-07-02",
     readingTime: "12 min read",
     category: "Application Tips",
     coverGradient: "from-rose-600 to-indigo-700",
     coverEmoji: "📈",
     coverImage: "/images/blog-dental-acceptance-rates-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.celina,
     content: `
 ## Your Odds of Getting Into Dental School — The Honest Numbers
 
@@ -5667,7 +5689,7 @@ If you'd like a personalized school list review based on your specific GPA, DAT 
     coverGradient: "from-emerald-500 to-indigo-600",
     coverEmoji: "💰",
     coverImage: "/images/blog-dental-school-cost-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.hansuja,
     content: `
 ## The Number That Scares Students Away From Dentistry
 
@@ -5969,7 +5991,7 @@ If you want to talk through how to position your application for schools where s
     coverGradient: "from-violet-600 to-sky-600",
     coverEmoji: "🗓️",
     coverImage: "/images/blog-dental-application-timeline-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.hansuja,
     content: `
 ## When Do Dental School Applications Open?
 
@@ -6295,7 +6317,7 @@ We'll review your current timeline, identify the gaps, and make sure you're not 
   },
   {
     slug: "dental-school-prerequisites",
-    title: "Dental School Prerequisites: Required Courses",
+    title: "Dental School Prerequisites: 2026 Course Checklist",
     description:
       "Complete dental school prerequisite list — biology, chemistry, physics, math, and more — plus AP credit rules, GPA impact, and how to plan your schedule.",
     publishedAt: "2026-07-01",
@@ -6304,7 +6326,7 @@ We'll review your current timeline, identify the gaps, and make sure you're not 
     coverGradient: "from-indigo-500 to-emerald-600",
     coverEmoji: "📚",
     coverImage: "/images/blog-dental-prerequisites-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.hansuja,
     content: `
 ## The Question That Trips Up Every First-Year Pre-Dental Student
 
@@ -6599,7 +6621,7 @@ If you'd like a personalized review of your current coursework and how it maps t
     coverGradient: "from-amber-500 to-indigo-700",
     coverEmoji: "✉️",
     coverImage: "/images/blog-dental-lor-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.todd,
     content: `
 ## Why Letters of Recommendation Matter More Than Students Think
 
@@ -6849,7 +6871,7 @@ If you want a personalized review of your planned recommender list and how to fr
   },
   {
     slug: "dental-school-gpa-requirements",
-    title: "Yes, You Can Get Into Dental School With a 3.0",
+    title: "Can You Get Into Dental School With a 3.0 GPA? Yes",
     description:
       "Yes. A 3.0 GPA can get you into dental school with a DAT around 440–460 (old 21–22), an upward science trend, and a realistic school list.",
     publishedAt: "2026-06-30",
@@ -6858,7 +6880,7 @@ If you want a personalized review of your planned recommender list and how to fr
     coverGradient: "from-emerald-500 to-indigo-700",
     coverEmoji: "📊",
     coverImage: "/images/blog-dental-school-gpa-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.hansuja,
     content: `
 ## Yes — a 3.0 GPA Can Get You Into Dental School
 
@@ -7110,7 +7132,7 @@ If you'd like to talk through your specific GPA, DAT score, and application stra
   },
   {
     slug: "dental-shadowing-hours-for-dental-school",
-    title: "Dental Shadowing Hours: How Many You Need",
+    title: "How Many Shadowing Hours for Dental School? (100–150)",
     description:
       "Aim for 100–150 dental shadowing hours for dental school. See school ranges, how to find opportunities, what to log, and how hours work in AADSAS.",
     publishedAt: "2026-06-26",
@@ -7119,7 +7141,7 @@ If you'd like to talk through your specific GPA, DAT score, and application stra
     coverGradient: "from-sky-600 to-indigo-700",
     coverEmoji: "🦷",
     coverImage: "/images/blog-dental-shadowing-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.todd,
     content: `
 ## Why Dental Shadowing Is the Most Underestimated Part of Your Application
 
@@ -7361,7 +7383,7 @@ If you'd like personalized guidance on how to position your shadowing experience
     coverGradient: "from-emerald-600 to-indigo-700",
     coverEmoji: "📅",
     coverImage: "/images/blog-dat-study-schedule-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.neil,
     content: `
 ## The #1 Reason Students Score Below Their Potential on the DAT
 
@@ -7689,7 +7711,7 @@ Your target score is achievable. You just needed the right plan.
     coverGradient: "from-indigo-600 to-blue-700",
     coverEmoji: "🎤",
     coverImage: "/images/blog-dental-interview-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.todd,
     content: `
 ## Getting a Dental School Interview Is Half the Battle — Winning It Is the Other Half
 
@@ -8007,17 +8029,18 @@ Your interview invitation was earned. Now go close the deal.
   },
   {
     slug: "best-dat-tutor-guide",
-    title: "How to Find the Best DAT Tutor in 2025–2026 (Complete Guide)",
-    description:
-      "Not all DAT tutors are created equal. This guide breaks down exactly what to look for in a DAT tutor, how much tutoring costs, red flags to avoid, and how to get the most out of every session — so you can hit your target score and get into dental school.",
+    title: "How to Choose a DAT Tutor: Cost and Red Flags",
+    description: "How to choose a DAT tutor: what a good tutor does, what DAT tutoring costs, red flags to avoid, and how to get the most from every session.",
     publishedAt: "2026-06-23",
     readingTime: "12 min read",
     category: "DAT Prep",
     coverGradient: "from-violet-600 to-indigo-700",
     coverEmoji: "🎯",
     coverImage: "/images/blog-dat-tutor-cover.png",
-    author: BLOG_AUTHOR,
+    author: AUTHORS.neil,
     content: `
+Want 1-on-1 help instead of choosing on your own? See our [private DAT tutoring](/private-dat-tutoring) packages.
+
 ## Do You Actually Need a DAT Tutor?
 
 Let's be honest from the start: not every pre-dental student needs a DAT tutor. If you're disciplined, have a strong science background, and can score consistently above 20 on practice tests — a structured self-study plan may be enough.
@@ -8217,7 +8240,8 @@ Your DAT score is not fixed. The right tutor, the right plan, and 8–12 weeks o
     category: "Admissions Guide",
     coverGradient: "from-indigo-600 to-violet-700",
     coverEmoji: "🎓",
-    author: BLOG_AUTHOR,
+    coverImage: "/images/blog-how-to-get-into-dental-school-cover.png",
+    author: AUTHORS.todd,
     content: `
 ## The Reality of Dental School Admissions
 
@@ -8392,7 +8416,7 @@ If you want personalized guidance on your specific situation, [schedule a free 1
 
   {
     slug: "dat-score-guide",
-    title: "What Is a Good DAT Score in 2026?",
+    title: "What Is a Good DAT Score in 2026? 420 vs 460",
     description:
       "A competitive DAT is about 420 AA (old 20). Selective schools often want about 460 (old 22). Use the conversion chart for every score.",
     publishedAt: "2026-04-28",
@@ -8400,7 +8424,8 @@ If you want personalized guidance on your specific situation, [schedule a free 1
     category: "DAT Prep",
     coverGradient: "from-emerald-500 to-teal-600",
     coverEmoji: "📊",
-    author: BLOG_AUTHOR,
+    coverImage: "/images/blog-good-dat-score-cover.png",
+    author: AUTHORS.neil,
     content: `
 ## What Is a Good DAT Score?
 
@@ -8435,13 +8460,7 @@ But here's what most resources won't tell you: **the score you need depends heav
 
 **Important (March 1, 2025+):** Official DAT reporting uses a **200–600** scale (10-point steps), not 1–30. Full conversion chart, percentiles, and AADSAS notes: [DAT scoring scale 200–600 explained](/blog/dat-scoring-scale-200-600).
 
-Many school profiles and older articles still quote **1–30**. Use this page’s benchmarks as **legacy AA language**, then convert:
-
-| Old AA (1–30) | Approx. new AA |
-|---|---|
-| 17 | ~370 |
-| 20 | ~420 |
-| 22 | ~460 |
+Many school profiles and older articles still quote **1–30**. Convert any old score with the [DAT conversion chart](/blog/dat-scoring-scale-200-600).
 
 Sections are unchanged in structure:
 

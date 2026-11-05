@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { DatStudyPlanExperience } from "@/components/dat-study-plan/DatStudyPlanExperience";
+import { DatPlanner } from "@/components/fdp-dat/DatPlanner";
 import { SeoContent, studyPlanFaqJsonLd } from "@/components/dat-study-plan/SeoContent";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
+import { Breadcrumbs } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: {
@@ -19,12 +20,15 @@ export default function DatStudyPlanPage() {
   return (
     <>
       <Header />
+      <Breadcrumbs
+        trail={[{ name: "DAT Study Plan Generator", path: "/dat-study-plan-generator" }]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(studyPlanFaqJsonLd()) }}
       />
       <main>
-        <DatStudyPlanExperience />
+        <DatPlanner />
         <SeoContent />
       </main>
       <Footer />

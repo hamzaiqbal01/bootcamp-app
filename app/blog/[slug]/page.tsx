@@ -1,18 +1,30 @@
 import type { Metadata } from "next";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
-import { btn, btnSize } from "@/components/ui/button-styles";
 import { BlogAdSense } from "@/components/ads/BlogAdSense";
 import { BlogAdSenseLoader } from "@/components/ads/BlogAdSenseLoader";
 import { BlogDemoCallPopup } from "@/components/blog/BlogDemoCallPopup";
 import { BlogLeadForm } from "@/components/blog/BlogLeadForm";
+import { BlogSummary } from "@/components/blog/BlogSummary";
+import { BlogServiceCta } from "@/components/blog/BlogServiceCta";
+import { getServiceForPost } from "@/lib/data/service-pages";
+import { AuthorAvatar } from "@/components/blog/AuthorAvatar";
+import { blogSummaries } from "@/lib/data/blog-summaries";
 import { blogHasLeadForm } from "@/lib/blog-lead";
 import { BlogTableOfContents } from "@/components/blog/BlogTableOfContents";
 import { extractH2Headings, slugifyHeading } from "@/lib/blog-toc";
 import { blogPosts, getAdjacentPosts, getPostBySlug, getRelatedPosts, slugifyCategory } from "@/lib/data/blog";
+import { Breadcrumbs } from "@/components/seo/JsonLd";
+
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--fdp-head",
+});
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -78,7 +90,7 @@ function renderMarkdown(content: string) {
       i++;
     } else if (line.startsWith("### ")) {
       elements.push(
-        <h3 key={key++} className="mb-3 mt-8 text-xl font-bold text-slate-900 scroll-mt-28">
+        <h3 key={key++} className="mb-3 mt-9 scroll-mt-28 text-[1.25rem] font-bold tracking-[-0.01em] text-[#0B1B3A]">
           {line.slice(4)}
         </h3>,
       );
@@ -95,7 +107,7 @@ function renderMarkdown(content: string) {
         <h2
           key={key++}
           id={id}
-          className="mb-4 mt-12 scroll-mt-28 text-2xl font-extrabold tracking-tight text-slate-900 first:mt-0 sm:text-[1.65rem]"
+          className="mb-4 mt-14 scroll-mt-28 text-[1.6rem] leading-tight font-extrabold tracking-[-0.02em] text-[#0B1B3A] first:mt-0 sm:text-[1.8rem]"
         >
           {raw.replaceAll(/\*\*(.+?)\*\*/g, "$1")}
         </h2>,
@@ -121,7 +133,7 @@ function renderMarkdown(content: string) {
       }
       const rows = tableLines.filter((l) => !/^\|[-| :]+\|$/.test(l.trim()));
       elements.push(
-        <div key={key++} className="my-7 overflow-x-auto rounded-xl border border-slate-200 shadow-sm">
+        <div key={key++} className="my-7 overflow-x-auto rounded-[16px] border border-slate-200">
           <table className="min-w-full divide-y divide-slate-100 text-sm sm:text-[0.95rem]">
             <thead>
               <tr className="bg-slate-50">
@@ -181,12 +193,12 @@ function renderMarkdown(content: string) {
         <ol key={key++} className="my-5 space-y-2 pl-1">
           {items.map((item, ii) => (
             <li key={ii} className="flex items-start gap-3 text-slate-700">
-              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-100 text-xs font-bold text-brand-700">
+              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#E8EFFD] text-xs font-bold text-[#1F5BD8]">
                 {ii + 1}
               </span>
               <span
                 className="leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: item.replaceAll(/\*\*(.+?)\*\*/g, "<strong class='font-semibold text-slate-900'>$1</strong>").replaceAll(/\[(.+?)\]\((.+?)\)/g, "<a href='$2' class='text-brand-600 hover:underline'>$1</a>") }}
+                dangerouslySetInnerHTML={{ __html: item.replaceAll(/\*\*(.+?)\*\*/g, "<strong class='font-semibold text-slate-900'>$1</strong>").replaceAll(/\[(.+?)\]\((.+?)\)/g, "<a href='$2' class='font-medium text-[#1F5BD8] underline decoration-[#1F5BD8]/30 underline-offset-2 hover:decoration-[#1F5BD8]'>$1</a>") }}
               />
             </li>
           ))}
@@ -202,10 +214,10 @@ function renderMarkdown(content: string) {
         <ul key={key++} className="my-5 space-y-2 pl-1">
           {items.map((item, ii) => (
             <li key={ii} className="flex items-start gap-3 text-slate-700">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" aria-hidden />
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#1F5BD8]" aria-hidden />
               <span
                 className="leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: item.replaceAll(/\*\*(.+?)\*\*/g, "<strong class='font-semibold text-slate-900'>$1</strong>").replaceAll(/\[(.+?)\]\((.+?)\)/g, "<a href='$2' class='text-brand-600 hover:underline'>$1</a>") }}
+                dangerouslySetInnerHTML={{ __html: item.replaceAll(/\*\*(.+?)\*\*/g, "<strong class='font-semibold text-slate-900'>$1</strong>").replaceAll(/\[(.+?)\]\((.+?)\)/g, "<a href='$2' class='font-medium text-[#1F5BD8] underline decoration-[#1F5BD8]/30 underline-offset-2 hover:decoration-[#1F5BD8]'>$1</a>") }}
               />
             </li>
           ))}
@@ -213,7 +225,7 @@ function renderMarkdown(content: string) {
       );
     } else if (line.startsWith("> ")) {
       elements.push(
-        <blockquote key={key++} className="my-6 border-l-4 border-brand-500 bg-brand-50/50 py-4 pl-6 pr-4">
+        <blockquote key={key++} className="my-6 rounded-r-[14px] border-l-4 border-[#1F5BD8] bg-[#F4F7FE] py-4 pl-6 pr-4">
           <p className="text-base italic text-slate-700">{line.slice(2)}</p>
         </blockquote>,
       );
@@ -238,12 +250,12 @@ function renderMarkdown(content: string) {
         elements.push(
           <p
             key={key++}
-            className="my-5 text-[1.05rem] leading-[1.85] text-slate-700 sm:text-[1.075rem]"
+            className="my-5 text-[1.0625rem] leading-[1.85] text-slate-700 sm:text-[1.1rem]"
             dangerouslySetInnerHTML={{
               __html: text
                 .replaceAll(/\*\*(.+?)\*\*/g, "<strong class='font-semibold text-slate-900'>$1</strong>")
                 .replaceAll(/\*(.+?)\*/g, "<em>$1</em>")
-                .replaceAll(/\[(.+?)\]\((.+?)\)/g, "<a href='$2' class='text-brand-600 font-medium hover:underline'>$1</a>"),
+                .replaceAll(/\[(.+?)\]\((.+?)\)/g, "<a href='$2' class='font-medium text-[#1F5BD8] underline decoration-[#1F5BD8]/30 underline-offset-2 hover:decoration-[#1F5BD8]'>$1</a>"),
             }}
           />,
         );
@@ -266,6 +278,8 @@ export default async function BlogPostPage({ params }: Props) {
   const related = getRelatedPosts(slug, 3);
   const { newer, older } = getAdjacentPosts(slug);
   const tocHeadings = extractH2Headings(post.content);
+  const summary = blogSummaries[slug] ?? null;
+  const service = getServiceForPost(post.slug, post.category);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -274,8 +288,10 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.description,
     datePublished: post.publishedAt,
     author: {
-      "@type": "Organization",
+      "@type": "Person",
       name: post.author.name,
+      jobTitle: post.author.role,
+      url: `https://futuredentalprep.com${post.author.href}`,
     },
     publisher: {
       "@type": "Organization",
@@ -853,8 +869,15 @@ export default async function BlogPostPage({ params }: Props) {
   const gpaFaqLd = blogFaqBySlug[slug] ?? null;
 
   return (
-    <>
+    <div className={`${jakarta.className} ${jakarta.variable}`}>
       <Header />
+      <Breadcrumbs
+        trail={[
+          { name: "Blog", path: "/blog" },
+          { name: post.category, path: `/blog/category/${slugifyCategory(post.category)}` },
+          { name: post.title, path: `/blog/${post.slug}` },
+        ]}
+      />
       <BlogAdSenseLoader />
       <script
         type="application/ld+json"
@@ -868,167 +891,162 @@ export default async function BlogPostPage({ params }: Props) {
       )}
       <main>
         {/* Post header */}
-        <section className={`relative overflow-hidden ${post.coverImage ? "bg-slate-900" : `bg-gradient-to-br ${post.coverGradient}`} pb-16 pt-14 sm:pb-20 sm:pt-18`}>
-          {post.coverImage && (
-            <div className="absolute inset-0">
-              <Image
-                src={post.coverImage}
-                alt={post.title}
-                fill
-                className="object-cover opacity-40"
-                priority
-                sizes="100vw"
-              />
+        <section className="relative isolate overflow-hidden bg-[linear-gradient(180deg,#F4F7FE_0%,#FFFFFF_100%)] pt-8 pb-12 sm:pt-12 sm:pb-16">
+          <div
+            className="pointer-events-none absolute -top-40 left-1/3 -z-10 h-[420px] w-[820px] -translate-x-1/2 rounded-full bg-[#1F5BD8]/[0.08] blur-3xl"
+            aria-hidden
+          />
+          <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <nav aria-label="Breadcrumb" className="text-[13.5px] font-medium text-[#8A93A3]">
+                <ol className="flex flex-wrap items-center gap-2">
+                  <li>
+                    <Link href="/" className="transition hover:text-[#1F5BD8]">
+                      Home
+                    </Link>
+                  </li>
+                  <li aria-hidden>/</li>
+                  <li>
+                    <Link href="/blog" className="transition hover:text-[#1F5BD8]">
+                      Blog
+                    </Link>
+                  </li>
+                  <li aria-hidden>/</li>
+                  <li>
+                    <Link
+                      href={`/blog/category/${slugifyCategory(post.category)}`}
+                      className="transition hover:text-[#1F5BD8]"
+                    >
+                      {post.category}
+                    </Link>
+                  </li>
+                </ol>
+              </nav>
+              <Link
+                href="/blog"
+                className="inline-flex items-center gap-1.5 rounded-full border border-[#E4E9F2] bg-white px-3.5 py-1.5 text-[13px] font-bold text-[#33415C] transition hover:border-[#C9D8F6] hover:text-[#1F5BD8]"
+              >
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden>
+                  <path d="M13 8H3M3 8L7 4M3 8L7 12" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                Back to Blog
+              </Link>
             </div>
-          )}
-          <div className="pointer-events-none absolute inset-0 bg-black/30" />
-          <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
-            <nav aria-label="Breadcrumb" className="mb-5 text-sm text-white/70">
-              <ol className="flex flex-wrap items-center gap-2">
-                <li>
-                  <Link href="/" className="hover:text-white">
-                    Home
-                  </Link>
-                </li>
-                <li aria-hidden>/</li>
-                <li>
-                  <Link href="/blog" className="hover:text-white">
-                    Blog
-                  </Link>
-                </li>
-                <li aria-hidden>/</li>
-                <li>
+
+            <div className={`mt-8 grid gap-10 ${post.coverImage ? "lg:grid-cols-[minmax(0,1fr)_460px] lg:items-center" : ""}`}>
+              <div className="min-w-0">
+                <div className="flex flex-wrap items-center gap-3 text-[13.5px] font-medium text-[#8A93A3]">
                   <Link
                     href={`/blog/category/${slugifyCategory(post.category)}`}
-                    className="hover:text-white"
+                    className="rounded-full bg-[#E8EFFD] px-3 py-1 text-[12px] font-bold tracking-[0.04em] text-[#1F5BD8] transition hover:bg-[#DCE6FA]"
                   >
                     {post.category}
                   </Link>
-                </li>
-              </ol>
-            </nav>
+                  <span>{formatDate(post.publishedAt)}</span>
+                  <span aria-hidden>·</span>
+                  <span>{post.readingTime}</span>
+                </div>
 
-            <Link
-              href="/blog"
-              className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-sm ring-1 ring-white/30 transition hover:bg-white/25"
-            >
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden>
-                <path d="M13 8H3M3 8L7 4M3 8L7 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-              Back to Blog
-            </Link>
+                <h1 className="mt-5 max-w-[22ch] text-[clamp(30px,4vw,46px)] leading-[1.1] font-extrabold tracking-[-0.03em] text-[#0B1B3A]">
+                  {post.title}
+                </h1>
+                <p className="mt-5 max-w-[62ch] text-[17px] leading-relaxed text-[#5B6782] sm:text-[18px]">
+                  {post.description}
+                </p>
 
-            <div className="mt-6 flex flex-wrap items-center gap-3">
-              <Link
-                href={`/blog/category/${slugifyCategory(post.category)}`}
-                className="rounded-full bg-white/20 px-3.5 py-1 text-xs font-bold text-white ring-1 ring-white/30 backdrop-blur-sm transition hover:bg-white/30"
-              >
-                {post.category}
-              </Link>
-              <span className="text-sm text-white/70">{formatDate(post.publishedAt)}</span>
-              <span className="text-sm text-white/70">·</span>
-              <span className="text-sm text-white/70">{post.readingTime}</span>
-            </div>
+                {/* Author */}
+                <Link href={post.author.href} className="group mt-7 inline-flex items-center gap-3">
+                  <AuthorAvatar author={post.author} size={46} className="ring-2 ring-white shadow-[0_6px_16px_-8px_rgba(11,27,58,0.5)]" />
+                  <div>
+                    <p className="text-[12px] font-semibold text-[#8A93A3]">Written by</p>
+                    <p className="text-[14.5px] font-bold text-[#0B1B3A] transition group-hover:text-[#1F5BD8]">{post.author.name}</p>
+                    <p className="text-[13px] text-[#5B6782]">{post.author.role}</p>
+                  </div>
+                </Link>
 
-            <h1 className="mt-5 max-w-4xl text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl lg:text-[2.75rem]">
-              {post.title}
-            </h1>
-            <p className="mt-5 max-w-3xl text-lg text-white/80">{post.description}</p>
-
-            {/* Author */}
-            <div className="mt-8 flex items-center gap-4">
-              <Image
-                src={post.author.imageUrl}
-                alt={post.author.name}
-                width={52}
-                height={52}
-                className="h-13 w-13 rounded-full object-cover object-top ring-2 ring-white/40"
-              />
-              <div>
-                <p className="font-semibold text-white">{post.author.name}</p>
-                <p className="text-sm text-white/70">{post.author.role}</p>
+                {summary ? <BlogSummary summary={summary} /> : null}
               </div>
+
+              {post.coverImage && (
+                <div className="relative mx-auto hidden aspect-[3/2] w-full max-w-[460px] overflow-hidden rounded-[24px] shadow-[0_30px_60px_-36px_rgba(11,27,58,0.6)] ring-1 ring-[#E4E9F2] lg:block lg:self-start">
+                  <Image src={post.coverImage} alt={post.title} fill className="object-cover" priority sizes="460px" />
+                </div>
+              )}
             </div>
           </div>
         </section>
 
         {/* Article body */}
-        <section className="bg-white py-12 sm:py-16 lg:py-20">
-          <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+        <section className="bg-white pt-6 pb-14 sm:pb-20">
+          <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
             {/* Mobile TOC */}
             <BlogTableOfContents headings={tocHeadings} variant="mobile" />
 
-            <div className="grid gap-10 xl:grid-cols-[minmax(0,1fr)_280px] xl:items-start xl:gap-14">
-              {/* Main content — wider reading column */}
-              <article className="min-w-0 max-w-none">
+            <div className="grid gap-10 xl:grid-cols-[minmax(0,1fr)_300px] xl:items-start xl:justify-between xl:gap-16">
+              {/* Main content, kept to a comfortable line length */}
+              <article className="min-w-0 max-w-[800px]">
                 <BlogAdSense format="horizontal" className="mb-2 mt-0" />
                 <div className="blog-prose">{renderMarkdown(post.content)}</div>
+                {service ? <BlogServiceCta service={service} /> : null}
                 {blogHasLeadForm(post.slug) ? <BlogLeadForm slug={post.slug} /> : null}
                 <BlogAdSense format="rectangle" />
 
-                {/* Author card — below content */}
-                <div className="mt-12 rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
-                  <p className="mb-4 text-xs font-bold uppercase tracking-widest text-slate-500">
-                    Written By
-                  </p>
-                  <div className="flex items-center gap-4">
-                    <Image
-                      src={post.author.imageUrl}
-                      alt={post.author.name}
-                      width={56}
-                      height={56}
-                      className="h-14 w-14 rounded-full object-cover object-top"
-                    />
-                    <div>
-                      <p className="font-semibold text-slate-900">{post.author.name}</p>
-                      <p className="text-sm text-slate-500">{post.author.role}</p>
-                    </div>
+                {/* Author card, below content */}
+                <div className="mt-12 flex flex-wrap items-center gap-4 rounded-[20px] border border-[#E4E9F2] bg-[#F7F9FD] p-6">
+                  <AuthorAvatar author={post.author} size={56} />
+                  <div className="min-w-0 flex-1">
+                    <p className="text-[11px] font-bold tracking-[0.14em] text-[#8A93A3] uppercase">Written by</p>
+                    <p className="mt-0.5 font-bold text-[#0B1B3A]">{post.author.name}</p>
+                    <p className="text-[13.5px] text-[#5B6782]">{post.author.role}</p>
                   </div>
+                  <Link
+                    href={post.author.href}
+                    className="inline-flex min-h-[40px] items-center rounded-full border border-[#E4E9F2] bg-white px-4 text-[13.5px] font-bold text-[#1F5BD8] transition hover:border-[#C9D8F6]"
+                  >
+                    View profile →
+                  </Link>
                 </div>
               </article>
 
-              {/* Sticky TOC + CTA — desktop */}
+              {/* Sticky TOC + CTA, desktop */}
               <aside className="hidden xl:block">
-                <div className="sticky top-28 space-y-6">
-                  <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+                <div className="sticky top-28 space-y-5">
+                  <div className="overflow-hidden rounded-[20px] border border-[#E4E9F2] bg-white">
                     <video
                       src="/videos/gabriela-green.mp4"
                       poster="/images/reviews/gabriela-green.jpg"
                       controls
                       playsInline
-                      preload="metadata"
-                      className="aspect-[1280/854] w-full bg-slate-900 object-cover"
+                      preload="none"
+                      className="aspect-[1280/854] w-full bg-[#0B1B3A] object-cover"
                     />
                     <div className="px-4 py-3">
-                      <p className="text-[11px] font-bold tracking-[0.16em] text-brand-600 uppercase">
-                        Student review
-                      </p>
-                      <p className="mt-1 text-sm font-semibold text-slate-900">Gabriela Green</p>
-                      <p className="mt-1 text-xs leading-5 text-slate-500">
+                      <p className="text-[11px] font-bold tracking-[0.14em] text-[#1F5BD8] uppercase">Student review</p>
+                      <p className="mt-1 text-[14px] font-bold text-[#0B1B3A]">Gabriela Green</p>
+                      <p className="mt-1 text-[12.5px] leading-5 text-[#5B6782]">
                         Interview at MUSC College of Dentistry after Future Dental Prep tutoring.
                       </p>
                     </div>
                   </div>
-
                   <BlogTableOfContents headings={tocHeadings} variant="sidebar" />
 
-                  <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-brand-600 to-brand-700 p-6 text-white shadow-lg shadow-brand-600/15">
-                    <p className="text-sm font-bold uppercase tracking-widest text-brand-100">
+                  <div className="relative overflow-hidden rounded-[20px] bg-[linear-gradient(135deg,#0B1B3A_0%,#132B5E_60%,#1F5BD8_140%)] p-6 text-white">
+                    <div className="pointer-events-none absolute -top-16 -right-12 h-40 w-40 rounded-full bg-[#1F5BD8]/40 blur-3xl" aria-hidden />
+                    <p className="relative text-[11px] font-bold tracking-[0.14em] text-[#9DB9F5] uppercase">
                       Free Consultation
                     </p>
-                    <p className="mt-3 text-lg font-extrabold leading-snug">
+                    <p className="relative mt-2.5 text-[17px] leading-snug font-extrabold">
                       Get personalized guidance for your application
                     </p>
-                    <p className="mt-2 text-sm text-brand-100">
-                      15 minutes. No obligation. Real advice.
-                    </p>
+                    <p className="relative mt-2 text-[13.5px] text-white/70">15 minutes. No obligation. Real advice.</p>
                     <Link
                       href="/schedule"
-                      className={`mt-5 w-full ${btn.inverse} ${btnSize.sm}`}
+                      className="relative mt-5 inline-flex min-h-[42px] w-full items-center justify-center rounded-full bg-white px-4 text-[14px] font-bold text-[#0B1B3A] transition hover:bg-[#E8EFFD]"
                     >
                       Schedule Free Call →
                     </Link>
                   </div>
+
                 </div>
               </aside>
             </div>
@@ -1037,17 +1055,15 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* Prev / Next */}
         {(newer || older) && (
-          <section className="border-t border-slate-100 bg-white py-10">
-            <div className="mx-auto grid w-full max-w-6xl gap-4 px-4 sm:grid-cols-2 sm:px-6 lg:px-8">
+          <section className="border-t border-[#EEF2F8] bg-white py-10">
+            <div className="mx-auto grid w-full max-w-7xl gap-4 px-4 sm:grid-cols-2 sm:px-6 lg:px-8">
               {older ? (
                 <Link
                   href={`/blog/${older.slug}`}
-                  className="rounded-2xl border border-slate-100 bg-slate-50 p-5 transition hover:border-brand-200 hover:bg-white"
+                  className="group rounded-[18px] border border-[#E4E9F2] bg-[#F7F9FD] p-5 transition hover:border-[#C9D8F6] hover:bg-white"
                 >
-                  <p className="text-xs font-bold tracking-widest text-slate-400 uppercase">
-                    Older article
-                  </p>
-                  <p className="mt-2 font-semibold text-slate-900 line-clamp-2">{older.title}</p>
+                  <p className="text-[11px] font-bold tracking-[0.14em] text-[#8A93A3] uppercase">← Older article</p>
+                  <p className="mt-2 line-clamp-2 font-bold text-[#0B1B3A] transition group-hover:text-[#1F5BD8]">{older.title}</p>
                 </Link>
               ) : (
                 <div />
@@ -1055,12 +1071,10 @@ export default async function BlogPostPage({ params }: Props) {
               {newer ? (
                 <Link
                   href={`/blog/${newer.slug}`}
-                  className="rounded-2xl border border-slate-100 bg-slate-50 p-5 text-right transition hover:border-brand-200 hover:bg-white sm:justify-self-end"
+                  className="group rounded-[18px] border border-[#E4E9F2] bg-[#F7F9FD] p-5 text-right transition hover:border-[#C9D8F6] hover:bg-white"
                 >
-                  <p className="text-xs font-bold tracking-widest text-slate-400 uppercase">
-                    Newer article
-                  </p>
-                  <p className="mt-2 font-semibold text-slate-900 line-clamp-2">{newer.title}</p>
+                  <p className="text-[11px] font-bold tracking-[0.14em] text-[#8A93A3] uppercase">Newer article →</p>
+                  <p className="mt-2 line-clamp-2 font-bold text-[#0B1B3A] transition group-hover:text-[#1F5BD8]">{newer.title}</p>
                 </Link>
               ) : null}
             </div>
@@ -1069,27 +1083,38 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* Related posts */}
         {related.length > 0 && (
-          <section className="border-t border-slate-100 bg-slate-50 py-16 sm:py-20">
+          <section className="bg-[linear-gradient(180deg,#F3F6FD_0%,#EEF3FD_100%)] py-16 sm:py-20">
             <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-              <p className="mb-8 text-xs font-bold uppercase tracking-widest text-slate-500">
+              <p className="mb-6 text-[12px] font-bold tracking-[0.12em] text-[#1F5BD8] uppercase">
                 Related in {post.category}
               </p>
-              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                 {related.map((rp) => (
                   <Link
                     key={rp.slug}
                     href={`/blog/${rp.slug}`}
-                    className="group flex gap-5 overflow-hidden rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:shadow-md hover:border-brand-100"
+                    className="group flex flex-col overflow-hidden rounded-[20px] border border-[#E4E9F2] bg-white shadow-[0_16px_36px_-30px_rgba(11,27,58,0.45)] transition duration-300 hover:-translate-y-0.5 hover:border-[#C9D8F6]"
                   >
-                    <div className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br ${rp.coverGradient} text-3xl`}>
-                      {rp.coverEmoji}
+                    <div className={`relative h-36 w-full overflow-hidden bg-gradient-to-br ${rp.coverGradient}`}>
+                      {rp.coverImage ? (
+                        <Image
+                          src={rp.coverImage}
+                          alt={rp.title}
+                          fill
+                          className="object-cover transition duration-500 group-hover:scale-[1.04]"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        />
+                      ) : (
+                        <span className="absolute inset-0 flex items-center justify-center text-5xl" role="img" aria-label={rp.category}>
+                          {rp.coverEmoji}
+                        </span>
+                      )}
                     </div>
-                    <div className="min-w-0">
-                      <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">{rp.category}</span>
-                      <h3 className="mt-1 font-bold leading-snug text-slate-900 group-hover:text-brand-600 transition line-clamp-2">
+                    <div className="flex flex-1 flex-col p-5">
+                      <h3 className="line-clamp-2 text-[16px] leading-snug font-extrabold text-[#0B1B3A] transition group-hover:text-[#1F5BD8]">
                         {rp.title}
                       </h3>
-                      <p className="mt-1 text-xs text-slate-400">{rp.readingTime}</p>
+                      <p className="mt-2 text-[12.5px] text-[#8A93A3]">{rp.readingTime}</p>
                     </div>
                   </Link>
                 ))}
@@ -1099,15 +1124,14 @@ export default async function BlogPostPage({ params }: Props) {
         )}
 
         {/* Mobile CTA */}
-        <section className="bg-gradient-to-br from-brand-600 via-indigo-600 to-violet-700 py-16 lg:hidden">
-          <div className="mx-auto w-full max-w-xl px-4 text-center sm:px-6">
-            <h2 className="text-2xl font-extrabold text-white">Ready for personalized help?</h2>
-            <p className="mt-3 text-indigo-100">
-              Schedule a free 15-minute call with our team.
-            </p>
+        <section className="bg-white px-4 py-12 sm:px-6 xl:hidden">
+          <div className="relative mx-auto max-w-xl overflow-hidden rounded-[24px] bg-[linear-gradient(135deg,#0B1B3A_0%,#132B5E_60%,#1F5BD8_140%)] p-8 text-center text-white">
+            <div className="pointer-events-none absolute -top-20 -right-16 h-48 w-48 rounded-full bg-[#1F5BD8]/40 blur-3xl" aria-hidden />
+            <h2 className="relative text-[24px] font-extrabold tracking-[-0.02em]">Ready for personalized help?</h2>
+            <p className="relative mt-3 text-white/70">Schedule a free 15-minute call with our team.</p>
             <Link
               href="/schedule"
-              className={`mt-6 ${btn.inverse} ${btnSize.lg}`}
+              className="relative mt-6 inline-flex min-h-[48px] items-center justify-center rounded-full bg-white px-6 text-[15px] font-bold text-[#0B1B3A] transition hover:bg-[#E8EFFD]"
             >
               Schedule a Free Call
             </Link>
@@ -1116,6 +1140,6 @@ export default async function BlogPostPage({ params }: Props) {
       </main>
       <Footer />
       <BlogDemoCallPopup slug={post.slug} />
-    </>
+    </div>
   );
 }

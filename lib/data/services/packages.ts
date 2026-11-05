@@ -41,7 +41,7 @@ export const servicePackages: ServicePackage[] = [
     notes: [
       "Please note: We do not write your personal statement for you. We help you with idea generation, outline and/or revision of an already written personal statement.",
     ],
-    cta: "Get a Personal Statement Review",
+    cta: "Choose Platinum",
   },
   {
     id: "ps-gold",
@@ -60,7 +60,7 @@ export const servicePackages: ServicePackage[] = [
     notes: [
       "Please note: We do not write your personal statement for you. We help you with idea generation, outline and/or revision of an already written personal statement or help you get started.",
     ],
-    cta: "Get a Personal Statement Review",
+    cta: "Choose Gold",
   },
   {
     id: "secondary",
@@ -81,7 +81,7 @@ export const servicePackages: ServicePackage[] = [
     notes: [
       "Please note: We do not write secondaries for you. We help you with idea generation, outline and/or revision of already written answers.",
     ],
-    cta: "Get a Secondary Application Review",
+    cta: "Get a Secondary Review",
   },
   {
     id: "ps-express",
@@ -99,7 +99,7 @@ export const servicePackages: ServicePackage[] = [
     notes: [
       "Please note: This is not the personal statement review package. This is a single review service. We do not write your personal statement for you. We help you with idea generation and outline of an already written personal statement.",
     ],
-    cta: "Get a Personal Statement Express Overview",
+    cta: "Choose Express",
   },
   {
     id: "cv-review",

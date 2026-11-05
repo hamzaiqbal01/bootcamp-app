@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
+  <!-- Generic profile placeholder for coaches without a photo yet. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EEF2FB"/>
+      <stop offset="1" stop-color="#D5DEF2"/>
+    </linearGradient>
+    <linearGradient id="person" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A9B8DA"/>
+      <stop offset="1" stop-color="#8496C2"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" fill="url(#bg)"/>
+  <circle cx="160" cy="132" r="58" fill="url(#person)"/>
+  <path d="M48 320 C48 248 98 206 160 206 C222 206 272 248 272 320 Z" fill="url(#person)"/>
+</svg>

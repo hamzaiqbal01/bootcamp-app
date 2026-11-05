@@ -15,12 +15,12 @@ export default async function AdminPanelLayout({ children }: { children: React.R
               FDP <span className="text-brand-600">Admin</span>
             </Link>
             <nav className="flex items-center gap-1 text-sm font-medium">
-              <Link href="/admin" className="rounded-lg px-3 py-1.5 text-slate-600 hover:bg-slate-100 hover:text-slate-900">
+              <Link href="/admin" className="rounded-full px-3 py-1.5 text-slate-600 hover:bg-slate-100 hover:text-slate-900">
                 Leads
               </Link>
               <Link
                 href="/admin/leads/new"
-                className="rounded-lg px-3 py-1.5 text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+                className="rounded-full px-3 py-1.5 text-slate-600 hover:bg-slate-100 hover:text-slate-900"
               >
                 Add lead
               </Link>
@@ -31,7 +31,7 @@ export default async function AdminPanelLayout({ children }: { children: React.R
               View site ↗
             </Link>
             <form action={logoutAction}>
-              <button type="submit" className="rounded-lg px-3 py-1.5 font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900">
+              <button type="submit" className="rounded-full px-3 py-1.5 font-medium text-slate-600 hover:bg-slate-100 hover:text-slate-900">
                 Log out
               </button>
             </form>

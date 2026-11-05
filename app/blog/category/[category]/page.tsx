@@ -11,6 +11,7 @@ import {
   getPostsByCategory,
   slugifyCategory,
 } from "@/lib/data/blog";
+import { Breadcrumbs } from "@/components/seo/JsonLd";
 
 type Props = {
   params: Promise<{ category: string }>;
@@ -53,6 +54,12 @@ export default async function BlogCategoryPage({ params }: Props) {
   return (
     <>
       <Header />
+      <Breadcrumbs
+        trail={[
+          { name: "Blog", path: "/blog" },
+          { name: category, path: `/blog/category/${categorySlug}` },
+        ]}
+      />
       <BlogAdSenseLoader />
       <main>
         <section className="border-b border-slate-100 bg-[linear-gradient(135deg,#0F172A_0%,#1E1B4B_60%,#312E81_100%)] pb-16 pt-14 sm:pb-20 sm:pt-18">

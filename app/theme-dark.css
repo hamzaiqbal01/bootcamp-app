@@ -1,0 +1,297 @@
+/*
+ * Dark theme. The site's colors are hard-coded utility classes, so dark mode remaps the palette
+ * here instead of adding a dark: variant to every element. Active when <html> has the "dark" class.
+ * Keep the palette consistent: reuse the colors below when adding a mapping.
+ */
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark body {
+  background-color: #111111;
+  color: #F2F2F2;
+}
+
+.theme-dark-only {
+  display: none;
+}
+
+html.dark .theme-dark-only {
+  display: revert;
+}
+
+html.dark .theme-light-only {
+  display: none;
+}
+
+/* Theme switch: the toggle swaps the whole page in one view transition (see ThemeToggle),
+   so turn off the default crossfade and let the circular reveal do the work. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+html.dark .bg-white { background-color: #1A1A1A; }
+html.dark .bg-white\/80 { background-color: rgba(26,26,26,0.9); }
+html.dark .bg-white\/85 { background-color: rgba(26,26,26,0.9); }
+html.dark .bg-white\/90 { background-color: rgba(26,26,26,0.9); }
+html.dark .bg-white\/95 { background-color: rgba(26,26,26,0.9); }
+html.dark .bg-\[\#FFFEFB\] { background-color: #1A1A1A; }
+html.dark .bg-\[\#FBFCFE\] { background-color: #1A1A1A; }
+html.dark .bg-\[\#F6F8FC\] { background-color: #111111; }
+html.dark .bg-slate-50 { background-color: #111111; }
+html.dark .bg-\[\#F6F4F0\] { background-color: #111111; }
+html.dark .bg-\[\#EDF2FC\] { background-color: #111111; }
+html.dark .bg-slate-50\/50 { background-color: rgba(17,17,17,0.5); }
+html.dark .bg-\[\#F7F9FD\] { background-color: #222222; }
+html.dark .bg-\[\#F2F5FB\] { background-color: #222222; }
+html.dark .bg-slate-100 { background-color: #222222; }
+html.dark .bg-\[\#F4F7FE\] { background-color: #222222; }
+html.dark .bg-\[\#F4F7FD\] { background-color: #222222; }
+html.dark .bg-\[\#F1F4FA\] { background-color: #222222; }
+html.dark .bg-\[\#F1F5FE\] { background-color: #222222; }
+html.dark .bg-\[\#E9EEF6\] { background-color: #222222; }
+html.dark .bg-\[\#E4E9F2\] { background-color: #2A2A2A; }
+html.dark .bg-\[\#DCE5F7\] { background-color: #2A2A2A; }
+html.dark .bg-\[\#EEF2F8\] { background-color: #2A2A2A; }
+html.dark .bg-\[\#C9D2E3\] { background-color: #2A2A2A; }
+html.dark .bg-\[\#EEF3FE\] { background-color: rgba(110,150,255,0.14); }
+html.dark .bg-\[\#E8EFFD\] { background-color: rgba(110,150,255,0.14); }
+html.dark .bg-\[\#EAF0FF\] { background-color: rgba(110,150,255,0.14); }
+html.dark .bg-brand-50 { background-color: rgba(110,150,255,0.14); }
+html.dark .bg-\[\#E6ECF8\] { background-color: rgba(110,150,255,0.14); }
+html.dark .bg-\[\#EAF0FA\] { background-color: rgba(110,150,255,0.14); }
+html.dark .bg-\[\#E7EFFE\] { background-color: rgba(110,150,255,0.14); }
+html.dark .bg-\[\#E3F6EF\] { background-color: rgba(64,201,150,0.14); }
+html.dark .bg-\[\#E8F6EE\] { background-color: rgba(64,201,150,0.14); }
+html.dark .bg-\[\#FFF4DB\] { background-color: rgba(231,164,0,0.15); }
+html.dark .text-\[\#8A5A00\] { color: #F2C14E; }
+html.dark .bg-\[\#FFF4E5\] { background-color: rgba(231,164,0,0.15); }
+html.dark .bg-\[\#EEF0FF\] { background-color: rgba(140,120,255,0.16); }
+html.dark .bg-\[\#FDECEC\] { background-color: rgba(255,110,100,0.14); }
+html.dark .bg-\[\#0B1B3A\] { background-color: #2A2A2A; }
+html.dark .bg-\[\#0B1020\] { background-color: #2A2A2A; }
+html.dark .bg-slate-800 { background-color: #F2F2F2; }
+html.dark .hover\:bg-\[\#E8EFFD\]:hover { background-color: #222222; }
+html.dark .hover\:bg-slate-50:hover { background-color: #222222; }
+html.dark .hover\:bg-slate-100:hover { background-color: #222222; }
+html.dark .focus\:bg-white:focus { background-color: #1A1A1A; }
+html.dark .open\:bg-white[open] { background-color: #1A1A1A; }
+html.dark .text-\[\#0B1B3A\] { color: #F2F2F2; }
+html.dark .text-slate-900 { color: #F2F2F2; }
+html.dark .text-stone-900 { color: #F2F2F2; }
+html.dark .text-slate-800 { color: #F2F2F2; }
+html.dark .text-\[\#33415C\] { color: #C8C8C8; }
+html.dark .text-slate-700 { color: #C8C8C8; }
+html.dark .text-stone-700 { color: #C8C8C8; }
+html.dark .text-\[\#5B6782\] { color: #9A9A9A; }
+html.dark .text-slate-600 { color: #9A9A9A; }
+html.dark .text-stone-600 { color: #9A9A9A; }
+html.dark .text-slate-500 { color: #9A9A9A; }
+html.dark .text-stone-500 { color: #9A9A9A; }
+html.dark .text-\[\#8A93A3\] { color: #7A7A7A; }
+html.dark .text-slate-400 { color: #7A7A7A; }
+html.dark .text-stone-400 { color: #7A7A7A; }
+html.dark .text-\[\#A3ACBD\] { color: #7A7A7A; }
+html.dark .text-\[\#9AA6BD\] { color: #7A7A7A; }
+html.dark .text-\[\#C9D2E3\] { color: #7A7A7A; }
+html.dark .text-\[\#1F5BD8\] { color: #82A8FF; }
+html.dark .text-brand-600 { color: #82A8FF; }
+html.dark .text-brand-700 { color: #82A8FF; }
+html.dark .text-\[\#0F7A5C\] { color: #63D6A8; }
+html.dark .text-\[\#14804A\] { color: #63D6A8; }
+html.dark .text-\[\#12925F\] { color: #63D6A8; }
+html.dark .text-\[\#9A6A00\] { color: #F2C14E; }
+html.dark .text-\[\#B45309\] { color: #F2C14E; }
+html.dark .text-\[\#4B3FD1\] { color: #B3A6FF; }
+html.dark .text-\[\#6B47D6\] { color: #B3A6FF; }
+html.dark .text-\[\#B42318\] { color: #FF8F85; }
+html.dark .hover\:text-\[\#0B1B3A\]:hover { color: #FFFFFF; }
+html.dark .hover\:text-slate-900:hover { color: #FFFFFF; }
+html.dark .hover\:text-\[\#1F5BD8\]:hover { color: #82A8FF; }
+html.dark .placeholder\:text-\[\#8A93A3\]::placeholder { color: #7A7A7A; }
+html.dark .border-\[\#E4E9F2\] { border-color: #2A2A2A; }
+html.dark .border-\[\#D5DDEA\] { border-color: #2A2A2A; }
+html.dark .border-slate-200 { border-color: #2A2A2A; }
+html.dark .border-slate-100 { border-color: #2A2A2A; }
+html.dark .border-stone-200 { border-color: #2A2A2A; }
+html.dark .border-\[\#EEF1F7\] { border-color: #2A2A2A; }
+html.dark .border-\[\#DCE5F7\] { border-color: #2A2A2A; }
+html.dark .border-slate-300 { border-color: #2A2A2A; }
+html.dark .border-stone-300 { border-color: #2A2A2A; }
+html.dark .border-\[\#EEF2F8\] { border-color: #2A2A2A; }
+html.dark .border-slate-200\/70 { border-color: #2A2A2A; }
+html.dark .border-\[\#E9EDF5\] { border-color: #2A2A2A; }
+html.dark .border-\[\#C9D2E3\] { border-color: #2A2A2A; }
+html.dark .border-\[\#C9D8F6\] { border-color: #363636; }
+html.dark .border-\[\#0B1B3A\] { border-color: #363636; }
+html.dark .border-\[\#C9D6EE\] { border-color: #363636; }
+html.dark .border-\[\#C9D6F2\] { border-color: #363636; }
+html.dark .border-\[\#C9D8FA\] { border-color: #363636; }
+html.dark .border-\[\#D3DDF0\] { border-color: #363636; }
+html.dark .hover\:border-\[\#C9D8F6\]:hover { border-color: #363636; }
+html.dark .hover\:border-\[\#0B1B3A\]:hover { border-color: #363636; }
+html.dark .hover\:border-slate-300:hover { border-color: #363636; }
+html.dark .hover\:border-\[\#C9D6EE\]:hover { border-color: #363636; }
+html.dark .hover\:border-\[\#C9D6F2\]:hover { border-color: #363636; }
+html.dark .hover\:border-\[\#C9D8FA\]:hover { border-color: #363636; }
+html.dark .open\:border-\[\#C9D8F6\][open] { border-color: #363636; }
+
+/* Light section gradients become near-black ones. */
+html.dark [class*="bg-[linear-gradient(180deg,#F"],
+html.dark [class*="bg-[linear-gradient(180deg,#FFFFFF"],
+html.dark [class*="bg-[linear-gradient(135deg,#FAFAFE"] {
+  background-image: linear-gradient(180deg, #141414 0%, #111111 100%);
+}
+
+html.dark #mobile-menu {
+  background-image: linear-gradient(180deg, #1A1A1A 0%, #141414 100%);
+}
+
+/* Tailwind gradient stops used on the light hero and placeholder art. */
+html.dark .from-\[\#F4F7FD\] {
+  --tw-gradient-from: #141414;
+}
+html.dark .to-white {
+  --tw-gradient-to: #111111;
+}
+html.dark .from-\[\#DCE7FC\],
+html.dark .from-\[\#D9F0EC\],
+html.dark .from-\[\#E7DEFA\],
+html.dark .from-\[\#FBE7D2\],
+html.dark .from-\[\#EAF1FF\],
+html.dark .from-\[\#E4F8EF\],
+html.dark .from-\[\#F1ECFF\],
+html.dark .from-\[\#FFF1E7\] {
+  --tw-gradient-from: #242424;
+}
+html.dark .to-\[\#EEF3FE\],
+html.dark .to-\[\#EEF8F6\],
+html.dark .to-\[\#F3EFFD\],
+html.dark .to-\[\#FDF3E9\] {
+  --tw-gradient-to: #1C1C1C;
+}
+
+/* Navy feature cards turn graphite, lifted off the black page with a soft edge. */
+html.dark [class*="bg-[linear-gradient(135deg,#0B1B3A"],
+html.dark [class*="bg-[linear-gradient(160deg,#0B1B3A"] {
+  background-image: linear-gradient(135deg, #1C1C1C 0%, #242424 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 40px 80px -50px rgba(0, 0, 0, 0.9);
+}
+
+/* Inputs, selects and native controls pick dark fills. */
+html.dark input,
+html.dark select,
+html.dark textarea {
+  color-scheme: dark;
+}
+
+/* Light text on navy reads heavier than dark text on white; soften the nav so it matches the light header's weight. */
+html.dark #nav > div:first-child a {
+  color: #B0B0B0;
+}
+
+html.dark #nav > div:first-child a:hover {
+  color: #FFFFFF;
+}
+
+/* Homepage hero: "My DAT Study Plan" card (components/fdp-dat/fdp-dat.css). */
+html.dark .fdp-dat .stage { background-image: radial-gradient(rgba(130,168,255,0.16) 1.2px, transparent 1.2px); }
+html.dark .fdp-dat .card-back { background: #222222; border-color: #2A2A2A; }
+html.dark .fdp-dat .plan-card {
+  background: #1A1A1A;
+  border-color: #2A2A2A;
+  box-shadow: 0 30px 70px -30px rgba(0,0,0,0.75), 0 2px 6px rgba(0,0,0,0.3);
+}
+html.dark .fdp-dat .pc-icon { background: rgba(110,150,255,0.14); }
+html.dark .fdp-dat .pc-icon svg { stroke: #82A8FF; }
+html.dark .fdp-dat .pc-name,
+html.dark .fdp-dat .ring-num,
+html.dark .fdp-dat .hrs-swap,
+html.dark .fdp-dat .bars .focus { color: #F2F2F2; }
+html.dark .fdp-dat .pc-sub,
+html.dark .fdp-dat .ring-lbl,
+html.dark .fdp-dat .pc-meta,
+html.dark .fdp-dat .phase-labels,
+html.dark .fdp-dat .task-time { color: #9A9A9A; }
+html.dark .fdp-dat .pc-label,
+html.dark .fdp-dat .bars,
+html.dark .fdp-dat .task { color: #C8C8C8; }
+html.dark .fdp-dat .phase-labels .now { color: #82A8FF; }
+html.dark .fdp-dat .status-pill { color: #6EE7A8; background: rgba(64,201,150,0.12); border-color: rgba(64,201,150,0.3); }
+html.dark .fdp-dat .status-dot { background: #34D399; }
+html.dark .fdp-dat .ring-wrap circle:first-child { stroke: #2A2A2A; }
+html.dark .fdp-dat .ring-wrap .a-ring { stroke: #4F8BFF; }
+html.dark .fdp-dat .week-tag { color: #82A8FF; background: rgba(110,150,255,0.14); }
+html.dark .fdp-dat .phase-track > div { background: #2A2A2A; }
+html.dark .fdp-dat .pc-section { border-top-color: #262626; }
+html.dark .fdp-dat .focus-tag { color: #FBBF24; background: rgba(251,191,36,0.14); }
+html.dark .fdp-dat .track { background: #262626; }
+html.dark .fdp-dat .task-check { border-color: #444444; }
+html.dark .fdp-dat .task-progress { border-color: #4F8BFF; border-right-color: #2A2A2A; }
+html.dark .fdp-dat .a-strike { color: #7A7A7A; animation-name: strike-dark; }
+@keyframes strike-dark {
+  0%,33% { color: #F2F2F2; text-decoration-color: transparent; }
+  37%,88% { color: #7A7A7A; text-decoration-color: #7A7A7A; }
+  93%,100% { color: #F2F2F2; text-decoration-color: transparent; }
+}
+html.dark .fdp-dat .float-score,
+html.dark .fdp-dat .float-cal,
+html.dark .fdp-dat .float-res {
+  background: #222222;
+  border-color: #363636;
+  box-shadow: 0 16px 36px -14px rgba(0,0,0,0.7);
+}
+html.dark .fdp-dat .float-adapt { background: #1F5BD8; box-shadow: 0 16px 36px -14px rgba(0,0,0,0.7); }
+html.dark .fdp-dat .float-adapt small { color: #D6E2FF; }
+html.dark .fdp-dat .float b { color: #F2F2F2; }
+html.dark .fdp-dat .float small { color: #9A9A9A; }
+html.dark .fdp-dat .float-score .ic { background: rgba(64,201,150,0.14); }
+html.dark .fdp-dat .float-cal .ic,
+html.dark .fdp-dat .float-res .ic { background: rgba(110,150,255,0.14); }
+html.dark .fdp-dat .hero-visual-link { color: #82A8FF; }
+
+/* Hero backdrop: the light-blue glows read as grey fog on black. Swap them for faint deep-blue light. */
+html.dark .hero-glow-a { background-color: rgba(31, 91, 216, 0.06); }
+html.dark .hero-glow-b { background-color: rgba(31, 91, 216, 0.12); }
+html.dark .hero-glow-c { display: none; }
+
+/* Homepage "What we offer" and "Free tools" cards: tinted glass icon tiles and a quiet corner glow instead of pastel blocks. */
+html.dark .svc-tile.svc-tile-purple { background-image: none; background-color: rgba(167,139,250,0.12); color: #C4B5FD; box-shadow: inset 0 0 0 1px rgba(167,139,250,0.28); }
+html.dark .svc-tile.svc-tile-orange { background-image: none; background-color: rgba(251,146,60,0.12); color: #FDBA74; box-shadow: inset 0 0 0 1px rgba(251,146,60,0.28); }
+html.dark .svc-tile.svc-tile-green { background-image: none; background-color: rgba(52,211,153,0.12); color: #6EE7B7; box-shadow: inset 0 0 0 1px rgba(52,211,153,0.28); }
+html.dark .svc-tile.svc-tile-blue { background-image: none; background-color: rgba(96,165,250,0.12); color: #93C5FD; box-shadow: inset 0 0 0 1px rgba(96,165,250,0.28); }
+html.dark .svc-wave { opacity: 0.16; filter: blur(14px); transition: opacity 0.3s ease; }
+html.dark a:hover > .svc-wave { opacity: 0.26; }
+html.dark .svc-wave-line { display: none; }
+html.dark .tool-glow { opacity: 0.35; transition: opacity 0.3s ease; }
+html.dark a:hover > .tool-glow { opacity: 0.6; }
+
+/* Footer: a shade below the page black, like BoosterPrep, instead of slate navy. */
+html.dark .site-footer { background-color: #0A0A0A; border-top-color: #222222; }
+html.dark .site-footer-bottom { border-top-color: #1F1F1F; }
+
+/* DAT study plan generator: the navy primary button (Continue / Build my plan) reads as the brand blue on black. */
+html.dark .fdp-dat .btn-dark { background: #1F5BD8; color: #FFFFFF; }
+html.dark .fdp-dat .btn-dark:hover { background: #3A72E8; }
+html.dark .fdp-dat .conf.on { background: #1F5BD8; border-color: #1F5BD8; color: #FFFFFF; }
+html.dark .fdp-dat .tog.on { background: #333333; color: #FFFFFF; box-shadow: none; }
+html.dark .fdp-dat .opt.on { border-color: #4F7BFF; background: rgba(79,123,255,0.12); box-shadow: 0 0 0 3px rgba(79,123,255,0.18); }
+html.dark .fdp-dat .opt.on .dot { border-color: #4F7BFF; }
+html.dark .fdp-dat .pill.on { border-color: #4F7BFF; background: rgba(79,123,255,0.14); color: #FFFFFF; }
+
+/* Tool pages: "More free tools" list rows hover to a soft graphite, not the light-mode near-white. */
+html.dark .hover\:bg-\[\#F6F8FC\]:hover { background-color: #222222; }
+html.dark .hover\:bg-\[\#F1F4FA\]:hover,
+html.dark .hover\:bg-\[\#F2F5FB\]:hover,
+html.dark .hover\:bg-\[\#F4F7FE\]:hover { background-color: #222222; }
+html.dark .hover\:bg-\[\#DCE6FA\]:hover,
+html.dark .hover\:bg-\[\#EAF0FF\]:hover { background-color: rgba(110,150,255,0.18); }
+html.dark .hover\:bg-\[\#FDECEC\]:hover { background-color: rgba(255,110,100,0.14); }
+
+/* Secondaries: "How to answer" tip boxes under each prompt */
+html.dark .border-\[\#DCE7FC\] { border-color: #2A2A2A; }

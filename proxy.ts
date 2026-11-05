@@ -1,9 +1,24 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
+// Only the real domain should be indexed. The Vercel URLs (production alias and previews) serve the same
+// pages and were showing up in Google, so any other host gets a noindex header. Local development is left alone.
+const INDEXABLE_HOSTS = new Set(["futuredentalprep.com", "www.futuredentalprep.com"]);
+
+function shouldNoindex(request: NextRequest) {
+  const host = (request.headers.get("host") ?? "").split(":")[0].toLowerCase();
+  if (!host || host === "localhost" || host === "127.0.0.1" || host.endsWith(".localhost")) return false;
+  return !INDEXABLE_HOSTS.has(host);
+}
+
+function withIndexing(request: NextRequest, response: NextResponse) {
+  if (shouldNoindex(request)) response.headers.set("X-Robots-Tag", "noindex, nofollow");
+  return response;
+}
+
 export function proxy(request: NextRequest) {
   if (process.env.MAINTENANCE_MODE !== "true") {
-    return NextResponse.next();
+    return withIndexing(request, NextResponse.next());
   }
 
   const { pathname } = request.nextUrl;
@@ -20,12 +35,12 @@ export function proxy(request: NextRequest) {
     pathname === "/sitemap.xml" ||
     pathname === "/ads.txt"
   ) {
-    return NextResponse.next();
+    return withIndexing(request, NextResponse.next());
   }
 
   const url = request.nextUrl.clone();
   url.pathname = "/maintenance";
-  return NextResponse.rewrite(url);
+  return withIndexing(request, NextResponse.rewrite(url));
 }
 
 export const config = {

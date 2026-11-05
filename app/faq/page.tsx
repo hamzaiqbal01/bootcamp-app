@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
 import { FaqSection } from "@/components/landing/FaqSection";
+import { Breadcrumbs } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: {
@@ -18,6 +19,9 @@ export default function FaqPage() {
   return (
     <>
       <Header />
+      <Breadcrumbs
+        trail={[{ name: "FAQ", path: "/faq" }]}
+      />
       <main>
         <FaqSection />
       </main>

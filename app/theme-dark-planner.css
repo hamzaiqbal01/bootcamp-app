@@ -1,0 +1,182 @@
+/* Generated dark overrides for components/fdp-dat/fdp-dat.css (DAT study plan generator + homepage plan card).
+   Each colour declaration is remapped to the black/graphite dark palette by what it paints.
+   Regenerate with the scratchpad script if fdp-dat.css changes; hand tweaks go in theme-dark.css. */
+html.dark .fdp-dat { color: #F2F2F2; }
+html.dark .fdp-dat body { color: #F2F2F2; background: #1A1A1A; }
+html.dark .fdp-dat body.page-cream { background: #222222; }
+html.dark .fdp-dat a { color: #8A99E5; }
+html.dark .fdp-dat a:hover { color: #8794E8; }
+html.dark .fdp-dat :focus-visible { outline: 2px solid #2F49D1; }
+html.dark .fdp-dat .announce { background: #1F1F1F; color: #E6EAF5; }
+html.dark .fdp-dat .announce a { color: #FFFFFF; }
+html.dark .fdp-dat .site-header { background: #1A1A1A; border-bottom: 1px solid #2A2A2A; }
+html.dark .fdp-dat .logo-name { color: #F2F2F2; }
+html.dark .fdp-dat .logo-name span { color: #81A4EE; }
+html.dark .fdp-dat .logo-tag { color: #C8C8C8; }
+html.dark .fdp-dat .nav-links a { color: #F2F2F2; }
+html.dark .fdp-dat .nav-links a:hover { color: #81A4EE; }
+html.dark .fdp-dat .btn-blue { background: #1E5BDB; color: #FFFFFF; }
+html.dark .fdp-dat .btn-blue:hover { background: #1849B5; color: #FFFFFF; }
+html.dark .fdp-dat .btn-line { background: #1A1A1A; color: #F2F2F2; border-color: #2A2A2A; }
+html.dark .fdp-dat .btn-line:hover { border-color: #1E5BDB; color: #81A4EE; }
+html.dark .fdp-dat .btn-dark { background: #1F1F1F; color: #FFFFFF; }
+html.dark .fdp-dat .btn-dark:hover { background: #1F1F1F; }
+html.dark .fdp-dat .btn-dark.is-waiting { background: #2A2A2A; }
+html.dark .fdp-dat .btn-ghost { background: #1A1A1A; border-color: #3A3A3A; color: #F2F2F2; }
+html.dark .fdp-dat .btn-ghost:hover { border-color: #2A2A2A; }
+html.dark .fdp-dat .btn-white { background: #1A1A1A; color: #F2F2F2; }
+html.dark .fdp-dat .btn-white:hover { color: #F2F2F2; background: rgba(92,122,214,0.14); }
+html.dark .fdp-dat .link-btn { color: #8A99E5; }
+html.dark .fdp-dat .hero-badge { border: 1px solid rgba(92,124,214,0.32); background: #1A1A1A; color: #F2F2F2; }
+html.dark .fdp-dat .hero-badge:hover { color: #F2F2F2; border-color: rgba(92,123,214,0.32); }
+html.dark .fdp-dat .hero-badge .new { background: #1E5BDB; color: #FFFFFF; }
+html.dark .fdp-dat .hero h1 { color: #F2F2F2; }
+html.dark .fdp-dat .hero h1 span { color: #8A99E5; }
+html.dark .fdp-dat .hero-lead { color: #C8C8C8; }
+html.dark .fdp-dat .avatars span { color: #FFFFFF; border: 2px solid #2A2A2A; }
+html.dark .fdp-dat .proof-text { color: #C8C8C8; }
+html.dark .fdp-dat .proof-text strong { color: #F2F2F2; }
+html.dark .fdp-dat .stars { color: #FBBC74; }
+html.dark .fdp-dat .hero-visual-link { color: #8A99E5; }
+html.dark .fdp-dat .stage { background-image: radial-gradient(#2A2A2A 1.2px, transparent 1.2px); }
+html.dark .fdp-dat .card-back { background: rgba(92,122,214,0.14); border: 1px solid rgba(92,126,214,0.32); }
+html.dark .fdp-dat .plan-card { background: #1A1A1A; border: 1px solid #2A2A2A; box-shadow: 0 24px 60px -24px rgba(0,0,0,0.62), 0 2px 6px rgba(0,0,0,0.11); }
+html.dark .fdp-dat .pc-icon { background: rgba(51,99,255,0.14); }
+html.dark .fdp-dat .pc-name { color: #F2F2F2; }
+html.dark .fdp-dat .pc-sub { color: #9A9A9A; }
+html.dark .fdp-dat .status-pill { color: #F2F2F2; background: rgba(70,236,138,0.14); border: 1px solid rgba(92,214,139,0.32); }
+html.dark .fdp-dat .status-dot { background: #16A34A; }
+html.dark .fdp-dat .ring-num { color: #F2F2F2; }
+html.dark .fdp-dat .ring-lbl { color: #9A9A9A; }
+html.dark .fdp-dat .pc-label { color: #F2F2F2; }
+html.dark .fdp-dat .pc-meta { color: #9A9A9A; }
+html.dark .fdp-dat .week-tag { color: #81A4EE; background: rgba(51,99,255,0.14); }
+html.dark .fdp-dat .phase-track > div { background: rgba(76,115,230,0.14); }
+html.dark .fdp-dat .phase-labels { color: #9A9A9A; }
+html.dark .fdp-dat .phase-labels .now { color: #81A4EE; }
+html.dark .fdp-dat .pc-section { border-top: 1px solid #2A2A2A; }
+html.dark .fdp-dat .bars { color: #F2F2F2; }
+html.dark .fdp-dat .bars .focus { color: #F2F2F2; }
+html.dark .fdp-dat .focus-tag { color: #F8AF77; background: rgba(251,212,55,0.14); }
+html.dark .fdp-dat .track { background: #222222; }
+html.dark .fdp-dat .hrs-swap { color: #F2F2F2; }
+html.dark .fdp-dat .task-check { border: 1.5px solid #3A3A3A; }
+html.dark .fdp-dat .task-check .tick { background: #1E5BDB; }
+html.dark .fdp-dat .task-progress { border: 2px solid #1E5BDB; border-right-color: rgba(84,118,222,0.32); }
+html.dark .fdp-dat .task-time { color: #9A9A9A; }
+html.dark .fdp-dat .float-score { background: #1A1A1A; border: 1px solid #2A2A2A; box-shadow: 0 14px 34px -14px rgba(0,0,0,0.66); }
+html.dark .fdp-dat .float-score .ic { background: rgba(70,236,138,0.14); }
+html.dark .fdp-dat .float-adapt { background: #1F1F1F; color: #FFFFFF; box-shadow: 0 14px 34px -14px rgba(0,0,0,0.8); }
+html.dark .fdp-dat .float-cal { background: #1A1A1A; border: 1px solid #2A2A2A; box-shadow: 0 14px 34px -14px rgba(0,0,0,0.66); }
+html.dark .fdp-dat .float-cal .ic, html.dark .fdp-dat .float-res .ic { background: rgba(62,119,244,0.14); }
+html.dark .fdp-dat .float-res { background: #1A1A1A; border: 1px solid #2A2A2A; box-shadow: 0 14px 34px -14px rgba(0,0,0,0.66); }
+html.dark .fdp-dat .float small { color: #9A9A9A; }
+html.dark .fdp-dat .float-adapt small { color: #B9C4E0; }
+html.dark .fdp-dat .float b { color: #F2F2F2; }
+html.dark .fdp-dat .float-adapt b { color: #FFFFFF; }
+html.dark .fdp-dat .stats { border-top: 1px solid #2A2A2A; border-bottom: 1px solid #2A2A2A; }
+html.dark .fdp-dat .stat-num { color: #F2F2F2; }
+html.dark .fdp-dat .stat-lbl { color: #C8C8C8; }
+html.dark .fdp-dat .a-strike { color: #9A9A9A; }
+html.dark .fdp-dat .eyebrow { color: #8A99E5; }
+html.dark .fdp-dat .intro h1 { color: #F2F2F2; }
+html.dark .fdp-dat .intro-meta { color: #C8C8C8; }
+html.dark .fdp-dat .stp { color: #9A9A9A; }
+html.dark .fdp-dat .stp .n { border: 1.5px solid #3A3A3A; color: #9A9A9A; background: #1A1A1A; }
+html.dark .fdp-dat .stp.cur { background: #1A1A1A; border-color: #2A2A2A; color: #F2F2F2; }
+html.dark .fdp-dat .stp.cur .n { background: #1F1F1F; border-color: #2A2A2A; color: #FFFFFF; }
+html.dark .fdp-dat .stp.done { color: #8A99E5; }
+html.dark .fdp-dat .stp.done .n { background: rgba(51,87,255,0.14); border-color: #2F49D1; color: #8A99E5; }
+html.dark .fdp-dat .time-left { color: #C8C8C8; }
+html.dark .fdp-dat .bar-bg { background: #2A2A2A; }
+html.dark .fdp-dat .bar-fill { background: #2F49D1; }
+html.dark .fdp-dat .card { background: #1A1A1A; border: 1px solid #2A2A2A; box-shadow: 0 1px 2px rgba(0,0,0,0.09); }
+html.dark .fdp-dat .step-head h2 { color: #F2F2F2; }
+html.dark .fdp-dat .step-head p { color: #C8C8C8; }
+html.dark .fdp-dat .ql { color: #F2F2F2; }
+html.dark .fdp-dat .ql .opt-note { color: #C8C8C8; }
+html.dark .fdp-dat .qh { color: #C8C8C8; }
+html.dark .fdp-dat .opt { border: 1.5px solid #2A2A2A; background: #1A1A1A; color: #F2F2F2; }
+html.dark .fdp-dat .opt:hover { border-color: rgba(92,116,214,0.32); }
+html.dark .fdp-dat .opt.on { border-color: #2F49D1; background: rgba(51,87,255,0.14); box-shadow: 0 0 0 3px rgba(47,73,209,.12); }
+html.dark .fdp-dat .dot { border: 1.5px solid #3A3A3A; background: #1A1A1A; }
+html.dark .fdp-dat .opt.on .dot { border: 5.5px solid #2F49D1; }
+html.dark .fdp-dat .optsub { color: #C8C8C8; }
+html.dark .fdp-dat .chip { border: 1.5px solid #2A2A2A; background: #1A1A1A; color: #F2F2F2; }
+html.dark .fdp-dat .chip:hover { border-color: rgba(92,116,214,0.32); }
+html.dark .fdp-dat .chip.on { border-color: #2F49D1; background: #2F49D1; color: #FFFFFF; }
+html.dark .fdp-dat .pill { border: 1.5px solid #2A2A2A; background: #1A1A1A; color: #F2F2F2; }
+html.dark .fdp-dat .pill:hover { border-color: rgba(92,116,214,0.32); }
+html.dark .fdp-dat .pill.on { border-color: #2F49D1; background: rgba(51,87,255,0.14); color: #8A94E5; box-shadow: 0 0 0 3px rgba(47,73,209,.12); }
+html.dark .fdp-dat .toggle { background: #222222; }
+html.dark .fdp-dat .tog { color: #C8C8C8; }
+html.dark .fdp-dat .tog.on { background: #1A1A1A; color: #F2F2F2; box-shadow: 0 1px 3px rgba(0,0,0,0.33); }
+html.dark .fdp-dat .conf-list { border: 1px solid #2A2A2A; }
+html.dark .fdp-dat .conf-row { border-bottom: 1px solid #2A2A2A; background: #1A1A1A; }
+html.dark .fdp-dat .conf-row .name { color: #F2F2F2; }
+html.dark .fdp-dat .conf { border: 1.5px solid #2A2A2A; background: #1A1A1A; color: #F2F2F2; }
+html.dark .fdp-dat .conf.on { background: #1F1F1F; border-color: #2A2A2A; color: #FFFFFF; }
+html.dark .fdp-dat .daybtn { border: 1.5px solid #2A2A2A; background: #1A1A1A; color: #F2F2F2; }
+html.dark .fdp-dat .daybtn.on { background: #2F49D1; border-color: #2F49D1; color: #FFFFFF; }
+html.dark .fdp-dat .field { border: 1.5px solid #2A2A2A; background: #1A1A1A; color: #F2F2F2; }
+html.dark .fdp-dat .field:focus { border-color: #2F49D1; box-shadow: 0 0 0 3px rgba(47,73,209,.15); }
+html.dark .fdp-dat .field::placeholder { color: #9A9A9A; }
+html.dark .fdp-dat .field-label { color: #F2F2F2; }
+html.dark .fdp-dat .badge-soft { color: #8A94E5; background: rgba(51,87,255,0.14); }
+html.dark .fdp-dat .hint { color: #C8C8C8; }
+html.dark .fdp-dat .error { color: #EE8981; }
+html.dark .fdp-dat .preview { background: #1F1F1F; color: #FFFFFF; }
+html.dark .fdp-dat .live { color: #B9C4E0; }
+html.dark .fdp-dat .live i { background: #4ADE80; }
+html.dark .fdp-dat .kv { border-top: 1px solid #2A2A2A; }
+html.dark .fdp-dat .kv div { border-bottom: 1px solid #2A2A2A; }
+html.dark .fdp-dat .kv span:first-child { color: #B9C4E0; }
+html.dark .fdp-dat .pv-label { color: #B9C4E0; }
+html.dark .fdp-dat .pv-empty { color: #9A9A9A; }
+html.dark .fdp-dat .pv-track-empty { background: repeating-linear-gradient(90deg, #1F1F1F 0 18%, transparent 18% 20%); }
+html.dark .fdp-dat .pv-legend em { color: #B9C4E0; }
+html.dark .fdp-dat .pv-chip { background: #1F1F1F; border: 1px solid #33427A; }
+html.dark .fdp-dat .pv-foot { border-top: 1px solid #2A2A2A; color: #B9C4E0; }
+html.dark .fdp-dat .ready { color: #F2F2F2; background: rgba(70,236,138,0.14); border: 1px solid rgba(92,214,139,0.32); }
+html.dark .fdp-dat .result-head h1 { color: #F2F2F2; }
+html.dark .fdp-dat .result-head p { color: #C8C8C8; }
+html.dark .fdp-dat .tile { background: #1A1A1A; border: 1px solid #2A2A2A; }
+html.dark .fdp-dat .tile .k { color: #C8C8C8; }
+html.dark .fdp-dat .tile .v { color: #F2F2F2; }
+html.dark .fdp-dat .tile .s { color: #C8C8C8; }
+html.dark .fdp-dat .note-warn { background: rgba(255,198,51,0.14); border: 1px solid rgba(239,191,67,0.32); color: #F2F2F2; }
+html.dark .fdp-dat .panel { background: #1A1A1A; border: 1px solid #2A2A2A; }
+html.dark .fdp-dat .panel-head h2 { color: #F2F2F2; }
+html.dark .fdp-dat .panel-head span { color: #C8C8C8; }
+html.dark .fdp-dat .phase-card { border: 1px solid #2A2A2A; }
+html.dark .fdp-dat .phase-card .r { color: #C8C8C8; }
+html.dark .fdp-dat .phase-card .n { color: #F2F2F2; }
+html.dark .fdp-dat .phase-card .d { color: #C8C8C8; }
+html.dark .fdp-dat .alloc-top .n { color: #F2F2F2; }
+html.dark .fdp-dat .alloc-top .h { color: #F2F2F2; }
+html.dark .fdp-dat .tag { color: #F3A97D; background: rgba(251,212,55,0.14); }
+html.dark .fdp-dat .alloc-track { background: #222222; }
+html.dark .fdp-dat .day-row { background: #1A1A1A; border: 1px solid #2A2A2A; }
+html.dark .fdp-dat .day-row.rest { background: #222222; border-color: #2A2A2A; }
+html.dark .fdp-dat .day-row .d { color: #F2F2F2; }
+html.dark .fdp-dat .day-row .a { color: #F2F2F2; }
+html.dark .fdp-dat .day-row .b { color: #C8C8C8; }
+html.dark .fdp-dat .day-row .h { color: #F2F2F2; }
+html.dark .fdp-dat .unlock { background: #1F1F1F; color: #FFFFFF; }
+html.dark .fdp-dat .unlock p { color: #C5CEE6; }
+html.dark .fdp-dat .unlock-form { background: #1A1A1A; color: #F2F2F2; }
+html.dark .fdp-dat .consent { color: #C8C8C8; }
+html.dark .fdp-dat .consent input { accent-color: #8A99E5; }
+html.dark .fdp-dat .form-err { color: #EE8981; }
+html.dark .fdp-dat .sent-ic { background: #16A34A; }
+html.dark .fdp-dat .sent-msg .s { color: #C5CEE6; }
+html.dark .fdp-dat .tutor-cta { background: #1A1A1A; border: 1px solid #2A2A2A; }
+html.dark .fdp-dat .tutor-cta .t { color: #F2F2F2; }
+html.dark .fdp-dat .tutor-cta .s { color: #C8C8C8; }
+html.dark .fdp-dat .dayres-d { color: #F2F2F2; }
+html.dark .fdp-dat .res-tag { color: #8A99E5; background: rgba(62,108,244,0.14); }
+html.dark .fdp-dat .btn-ghost.is-waiting { color: #9A9A9A; }
+html.dark .fdp-dat .cal-panel { background: linear-gradient(135deg, #1A1A1A 0%, #1A1A1A 100%); border-color: rgba(72,114,234,0.32); }
+html.dark .fdp-dat .cal-copy { color: #C8C8C8; }
+html.dark .fdp-dat .cal-note { color: #8AA2E5; background: rgba(62,108,244,0.14); border: 1px solid rgba(69,109,237,0.32); }
+html.dark .fdp-dat.page-cream { background: linear-gradient(to bottom, #1A1A1A, #1A1A1A); color: #F2F2F2; }

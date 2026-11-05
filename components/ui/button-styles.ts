@@ -1,5 +1,5 @@
 const base =
-  "inline-flex items-center justify-center rounded-2xl font-semibold tracking-[-0.01em] transition disabled:cursor-not-allowed disabled:opacity-60";
+  "inline-flex items-center justify-center rounded-full font-semibold tracking-[-0.01em] transition disabled:cursor-not-allowed disabled:opacity-60";
 
 export const btn = {
   primary: `${base} bg-[#0B1020] text-white hover:bg-stone-800`,

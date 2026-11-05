@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
+import { Breadcrumbs } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -20,6 +21,9 @@ export default function PrivacyPage() {
   return (
     <>
       <Header />
+      <Breadcrumbs
+        trail={[{ name: "Privacy Policy", path: "/privacy" }]}
+      />
       <main>
         {/* Header */}
         <section className="border-b border-slate-100 bg-[linear-gradient(135deg,#FAFAFE_0%,#EEF2FF_50%,#F5F3FF_100%)] py-14 sm:py-18">

@@ -10,6 +10,7 @@ export type Testimonial = {
   author: string;
   video?: string;
   poster?: string;
+  photo?: string;
 };
 
 export const ratingBars: BarDatum[] = [

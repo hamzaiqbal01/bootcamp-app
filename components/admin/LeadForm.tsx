@@ -70,7 +70,7 @@ export function LeadForm({ lead }: Props) {
         <button
           type="submit"
           disabled={pending}
-          className="rounded-xl bg-[#0B1020] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 disabled:opacity-60"
+          className="rounded-full bg-[#0B1020] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 disabled:opacity-60"
         >
           {pending ? "Saving…" : lead ? "Save changes" : "Add lead"}
         </button>

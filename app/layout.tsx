@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "@/components/fdp-dat/fdp-dat.css";
+import "./theme-dark-planner.css";
+import "./theme-dark.css";
+import { ChatWidget } from "@/components/chat/ChatWidget";
+import { JsonLd, organizationSchema, websiteSchema } from "@/components/seo/JsonLd";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -30,14 +35,24 @@ export const metadata: Metadata = {
   },
 };
 
+// Runs before first paint so a saved dark theme never flashes light.
+const themeScript = `try{if(localStorage.getItem("theme")==="dark")document.documentElement.classList.add("dark")}catch(e){}`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} scroll-smooth`}>
-      <body className={`${inter.className} min-h-screen`}>{children}</body>
+    <html lang="en" data-scroll-behavior="smooth" className={`${inter.variable} scroll-smooth`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
+      <body className={`${inter.className} min-h-screen`}>
+        <JsonLd data={[organizationSchema, websiteSchema]} />
+        {children}
+        <ChatWidget />
+      </body>
     </html>
   );
 }

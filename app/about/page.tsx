@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
 import { btn, btnSize } from "@/components/ui/button-styles";
+import { Breadcrumbs } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -30,6 +31,9 @@ export default function AboutPage() {
   return (
     <>
       <Header />
+      <Breadcrumbs
+        trail={[{ name: "About", path: "/about" }]}
+      />
       <main>
         {/* Hero */}
         <section className="relative isolate overflow-hidden bg-[linear-gradient(135deg,#FAFAFE_0%,#EEF2FF_50%,#F5F3FF_100%)] pb-20 pt-16 sm:pb-28 sm:pt-20">

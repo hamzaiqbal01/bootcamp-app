@@ -113,7 +113,7 @@ export function BlogLeadForm({ slug }: { slug: string }) {
       <button
         type="submit"
         disabled={state === "submitting"}
-        className="mt-5 inline-flex items-center justify-center rounded-2xl bg-[#0B1020] px-6 py-3 text-sm font-semibold text-white transition hover:bg-stone-800 disabled:cursor-not-allowed disabled:opacity-60"
+        className="mt-5 inline-flex items-center justify-center rounded-full bg-[#0B1020] px-6 py-3 text-sm font-semibold text-white transition hover:bg-stone-800 disabled:cursor-not-allowed disabled:opacity-60"
       >
         {state === "submitting" ? "Sending…" : "Email me the check"}
       </button>

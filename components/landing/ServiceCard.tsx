@@ -1,69 +1,49 @@
 import Link from "next/link";
-import { btn, btnSize } from "@/components/ui/button-styles";
 import type { IncludeEntry, ServiceBadge, ServicePackage } from "@/lib/data/services";
+import { contactLinkForPackage } from "@/lib/contact-link";
 
-function badgeStyles(badge: ServiceBadge, featured: boolean): string {
-  if (featured) {
-    return "border-white/20 bg-white/8 text-white/80";
-  }
-  switch (badge) {
-    case "platinum":
-      return "border-indigo-200/80 bg-indigo-50/60 text-indigo-800";
-    case "gold":
-      return "border-amber-200/80 bg-amber-50/70 text-amber-900";
-    case "express":
-      return "border-emerald-200/80 bg-emerald-50/70 text-emerald-800";
-    default:
-      return "border-stone-200 text-stone-600";
-  }
-}
+// How many "What's included" items a compact card shows before the rest fold away.
+const VISIBLE_INCLUDES = 4;
+
+const BADGE_STYLES: Record<ServiceBadge, string> = {
+  platinum: "bg-[#EEF0FF] text-[#4B3FD1]",
+  gold: "bg-[#FFF4DB] text-[#9A6A00]",
+  express: "bg-[#E3F6EF] text-[#0F7A5C]",
+};
 
 function CheckIcon({ featured }: { featured: boolean }) {
   return (
-    <svg
-      width="16"
-      height="16"
-      viewBox="0 0 16 16"
-      fill="none"
+    <span
+      className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full ${
+        featured ? "bg-white/15 text-[#9DB9F5]" : "bg-[#E8EFFD] text-[#1F5BD8]"
+      }`}
       aria-hidden
-      className={`mt-1 shrink-0 ${featured ? "text-indigo-300" : "text-brand-600"}`}
     >
-      <circle cx="8" cy="8" r="7.25" stroke="currentColor" strokeOpacity="0.35" />
-      <path
-        d="M4.75 8.15 6.9 10.2 11.25 5.8"
-        stroke="currentColor"
-        strokeWidth="1.4"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
+      <svg width="11" height="11" viewBox="0 0 16 16" fill="none">
+        <path d="M3.5 8.5l3 3 6-7" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    </span>
   );
 }
 
-function IncludeList({
-  items,
-  isFeatured = false,
-}: {
-  items: IncludeEntry[];
-  isFeatured?: boolean;
-}) {
+function IncludeList({ items, featured = false }: { items: IncludeEntry[]; featured?: boolean }) {
   return (
-    <ul className={`space-y-3 text-[0.95rem] leading-relaxed ${isFeatured ? "text-white/88" : "text-stone-700"}`}>
+    <ul className={`space-y-2.5 text-[14px] leading-relaxed ${featured ? "text-white/85" : "text-[#33415C]"}`}>
       {items.map((item, i) =>
         typeof item === "string" ? (
-          <li key={i} className="flex gap-3">
-            <CheckIcon featured={isFeatured} />
+          <li key={i} className="flex gap-2.5">
+            <CheckIcon featured={featured} />
             <span>{item}</span>
           </li>
         ) : (
-          <li key={i} className="flex gap-3">
-            <CheckIcon featured={isFeatured} />
+          <li key={i} className="flex gap-2.5">
+            <CheckIcon featured={featured} />
             <div>
               <span>{item.text}</span>
-              <ul className={`mt-2 space-y-1.5 pl-0.5 text-[0.84rem] ${isFeatured ? "text-white/65" : "text-stone-500"}`}>
+              <ul className={`mt-1.5 space-y-1 text-[13px] ${featured ? "text-white/60" : "text-[#5B6782]"}`}>
                 {item.sub.map((s, j) => (
                   <li key={j} className="flex gap-2">
-                    <span className={`mt-2 h-px w-2.5 shrink-0 ${isFeatured ? "bg-white/30" : "bg-stone-300"}`} />
+                    <span className={`mt-2 h-px w-2 shrink-0 ${featured ? "bg-white/30" : "bg-[#C9D2E3]"}`} />
                     {s}
                   </li>
                 ))}
@@ -76,163 +56,163 @@ function IncludeList({
   );
 }
 
-export function ServiceCard({ pkg }: { pkg: ServicePackage }) {
-  const isFeatured = pkg.featured;
-  const ctaWhite = pkg.ctaVariant === "white";
-  const hasNarrative =
-    pkg.descriptions.length > 0 || (pkg.notes && pkg.notes.length > 0);
-
+function Price({ pkg, featured = false }: { pkg: ServicePackage; featured?: boolean }) {
   return (
-    <article
-      className={`group relative h-fit self-start overflow-hidden rounded-[28px] border transition duration-300 ${
-        isFeatured
-          ? "border-white/10 bg-[#0B1020] text-white shadow-[0_30px_80px_-28px_rgba(15,23,42,0.55)]"
-          : "border-stone-200/90 bg-[#FFFEFB] shadow-[0_1px_0_rgba(15,23,42,0.04)] hover:-translate-y-0.5 hover:border-stone-300 hover:shadow-[0_28px_60px_-32px_rgba(15,23,42,0.18)]"
-      }`}
-    >
+    <div>
       <div
-        className={`pointer-events-none absolute inset-x-10 top-0 h-px ${
-          isFeatured
-            ? "bg-linear-to-r from-transparent via-indigo-300/80 to-transparent"
-            : "bg-linear-to-r from-transparent via-stone-300 to-transparent"
+        className={`flex flex-wrap items-baseline gap-1.5 text-[30px] leading-none font-extrabold tracking-[-0.02em] tabular-nums ${
+          featured ? "text-white" : "text-[#0B1B3A]"
         }`}
-      />
-
-      <div className="px-7 pt-8 sm:px-9">
-        <div className="flex items-start justify-between gap-4">
-          <div className="flex flex-wrap items-center gap-2">
-            {pkg.badge && (
-              <span
-                className={`inline-flex rounded-full border px-2.5 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.16em] ${badgeStyles(pkg.badge, Boolean(isFeatured))}`}
-              >
-                {pkg.badge}
-              </span>
-            )}
-            {pkg.ribbon && (
-              <span
-                className={`inline-flex rounded-full border px-2.5 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.16em] ${
-                  isFeatured
-                    ? "border-amber-300/35 bg-amber-400/10 text-amber-200"
-                    : "border-amber-200 bg-amber-50 text-amber-800"
-                }`}
-              >
-                {pkg.ribbon}
-              </span>
-            )}
-          </div>
-
-          <div className="shrink-0 text-right">
-            <div
-              className={`text-[1.75rem] font-semibold tabular-nums tracking-tight sm:text-[1.9rem] ${
-                isFeatured ? "text-white" : "text-stone-900"
-              }`}
-            >
-              {pkg.priceAlt ? (
-                <span className="flex flex-wrap items-baseline justify-end gap-1.5">
-                  <span>{pkg.price}</span>
-                  <span className={`text-base font-normal ${isFeatured ? "text-white/40" : "text-stone-300"}`}>
-                    /
-                  </span>
-                  <span>{pkg.priceAlt}</span>
-                </span>
-              ) : (
-                pkg.price
-              )}
-            </div>
-            {pkg.priceUnit && (
-              <div
-                className={`mt-1 text-xs font-medium uppercase tracking-[0.12em] ${
-                  isFeatured ? "text-white/50" : "text-stone-400"
-                }`}
-              >
-                {pkg.priceUnit}
-              </div>
-            )}
-          </div>
-        </div>
-        <h3
-          className={`mt-5 text-2xl font-semibold leading-snug tracking-tight sm:text-[1.65rem] ${
-            isFeatured ? "text-white" : "text-stone-900"
+      >
+        <span>{pkg.price}</span>
+        {pkg.priceAlt ? (
+          <>
+            <span className={`text-base font-normal ${featured ? "text-white/40" : "text-[#C9D2E3]"}`}>/</span>
+            <span>{pkg.priceAlt}</span>
+          </>
+        ) : null}
+      </div>
+      {pkg.priceUnit ? (
+        <div
+          className={`mt-1.5 text-[11px] font-semibold tracking-[0.1em] uppercase ${
+            featured ? "text-white/50" : "text-[#8A93A3]"
           }`}
         >
-          {pkg.title}
-        </h3>
-      </div>
-
-      <div className={`mx-7 mt-6 h-px sm:mx-9 ${isFeatured ? "bg-white/10" : "bg-stone-200/80"}`} />
-
-      <div className="grid gap-6 px-7 py-7 sm:px-9">
-        <div>
-          {pkg.courseIntros && pkg.courseIntros.length > 0 && (
-            <div
-              className={`mb-5 space-y-3 text-[0.98rem] leading-[1.75] ${
-                isFeatured ? "text-white/75" : "text-stone-600"
-              }`}
-            >
-              {pkg.courseIntros.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
-            </div>
-          )}
-          {pkg.includes.length > 0 && (
-            <>
-              <h4
-                className={`mb-4 text-[0.7rem] font-semibold uppercase tracking-[0.18em] ${
-                  isFeatured ? "text-white/45" : "text-stone-400"
-                }`}
-              >
-                What&apos;s included
-              </h4>
-              <IncludeList items={pkg.includes} isFeatured={isFeatured} />
-            </>
-          )}
-          {pkg.courseClosing && pkg.courseClosing.length > 0 && (
-            <div
-              className={`mt-5 space-y-3 text-[0.98rem] leading-[1.75] ${
-                isFeatured ? "text-white/75" : "text-stone-600"
-              }`}
-            >
-              {pkg.courseClosing.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
-            </div>
-          )}
+          {pkg.priceUnit}
         </div>
+      ) : null}
+    </div>
+  );
+}
 
-        {hasNarrative && (
-          <div
-            className={`space-y-3 text-[0.95rem] leading-[1.8] ${
-              isFeatured ? "text-white/70" : "text-stone-600"
-            }`}
-          >
-            {pkg.descriptions.map((p, i) => (
-              <p key={i}>{p}</p>
-            ))}
-            {pkg.notes?.map((n, i) => (
-              <p
-                key={i}
-                className={`border-l pl-4 text-[0.82rem] italic ${
-                  isFeatured
-                    ? "border-white/20 text-white/55"
-                    : "border-stone-300 text-stone-500"
-                }`}
-              >
-                {n}
-              </p>
-            ))}
+function Narrative({ pkg, featured = false }: { pkg: ServicePackage; featured?: boolean }) {
+  const paragraphs = [...(pkg.courseIntros ?? []), ...pkg.descriptions, ...(pkg.courseClosing ?? [])];
+  if (paragraphs.length === 0 && !pkg.notes?.length) return null;
+
+  return (
+    <div className={`space-y-3 text-[14px] leading-[1.7] ${featured ? "text-white/70" : "text-[#5B6782]"}`}>
+      {paragraphs.map((p, i) => (
+        <p key={i}>{p}</p>
+      ))}
+      {pkg.notes?.map((n, i) => (
+        <p
+          key={i}
+          className={`border-l-2 pl-3 text-[13px] italic ${
+            featured ? "border-white/20 text-white/55" : "border-[#DCE5F7] text-[#8A93A3]"
+          }`}
+        >
+          {n}
+        </p>
+      ))}
+    </div>
+  );
+}
+
+/** Dark, full-width card for the bundle. */
+export function FeaturedServiceCard({ pkg }: { pkg: ServicePackage }) {
+  return (
+    <article className="relative overflow-hidden rounded-[28px] bg-[linear-gradient(135deg,#0B1B3A_0%,#132B5E_60%,#1F5BD8_140%)] p-7 text-white shadow-[0_40px_80px_-50px_rgba(11,27,58,0.8)] sm:p-10">
+      <div
+        className="pointer-events-none absolute -top-28 -right-20 h-[360px] w-[360px] rounded-full bg-[#1F5BD8]/35 blur-3xl"
+        aria-hidden
+      />
+      <div className="relative grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)]">
+        <div className="flex flex-col">
+          {pkg.ribbon ? (
+            <span className="inline-flex w-fit rounded-full bg-[#E7A400]/15 px-3 py-1 text-[11px] font-bold tracking-[0.12em] text-[#FFD36E] uppercase">
+              {pkg.ribbon}
+            </span>
+          ) : null}
+          <h2 className="mt-4 text-[clamp(24px,3vw,32px)] leading-tight font-extrabold tracking-[-0.02em]">
+            {pkg.title}
+          </h2>
+          <div className="mt-5">
+            <Price pkg={pkg} featured />
           </div>
-        )}
+          <div className="mt-6">
+            <Narrative pkg={pkg} featured />
+          </div>
+          <Link
+            href={contactLinkForPackage(pkg.title, pkg.price)}
+            className="mt-8 inline-flex min-h-[50px] w-fit items-center gap-2 rounded-full bg-white px-6 text-[15px] font-bold text-[#0B1B3A] transition-colors hover:bg-[#E8EFFD]"
+          >
+            {pkg.cta}
+            <span aria-hidden>→</span>
+          </Link>
+        </div>
+        {pkg.includes.length > 0 ? (
+          <div className="rounded-[20px] border border-white/10 bg-white/[0.06] p-6 backdrop-blur">
+            <h3 className="mb-4 text-[11px] font-bold tracking-[0.14em] text-white/50 uppercase">What&apos;s included</h3>
+            <IncludeList items={pkg.includes} featured />
+          </div>
+        ) : null}
+      </div>
+    </article>
+  );
+}
+
+/** Compact card: first few inclusions up front, the rest and the fine print one click away. */
+export function ServiceCard({ pkg, titleAs: Title = "h2" }: { pkg: ServicePackage; titleAs?: "h2" | "h3" }) {
+  const visible = pkg.includes.slice(0, VISIBLE_INCLUDES);
+  const hidden = pkg.includes.slice(VISIBLE_INCLUDES);
+  const hasNarrative =
+    pkg.descriptions.length > 0 ||
+    Boolean(pkg.notes?.length || pkg.courseIntros?.length || pkg.courseClosing?.length);
+  const hasMore = hidden.length > 0 || hasNarrative;
+
+  return (
+    <article className="flex h-full flex-col rounded-[22px] border border-[#E4E9F2] bg-white p-6 shadow-[0_16px_36px_-30px_rgba(11,27,58,0.45)] transition duration-300 hover:-translate-y-0.5 hover:border-[#C9D8F6] hover:shadow-[0_24px_48px_-32px_rgba(11,27,58,0.5)]">
+      <div className="flex items-start justify-between gap-3">
+        <Title className="text-[18px] leading-snug font-extrabold text-[#0B1B3A]">{pkg.title}</Title>
+        {pkg.badge ? (
+          <span
+            className={`shrink-0 rounded-full px-2.5 py-1 text-[10.5px] font-bold tracking-[0.12em] uppercase ${BADGE_STYLES[pkg.badge]}`}
+          >
+            {pkg.badge}
+          </span>
+        ) : null}
       </div>
 
-      <div className="px-7 pb-8 sm:px-9">
+      <div className="mt-4">
+        <Price pkg={pkg} />
+      </div>
+
+      <div className="my-5 h-px bg-[#EEF2F8]" />
+
+      {visible.length > 0 ? <IncludeList items={visible} /> : null}
+
+      {hasMore ? (
+        <details className="group mt-3">
+          <summary className="inline-flex cursor-pointer list-none items-center gap-1 text-[13px] font-bold text-[#1F5BD8] hover:underline [&::-webkit-details-marker]:hidden">
+            <span className="group-open:hidden">
+              {hidden.length > 0 ? `See all ${pkg.includes.length} inclusions` : "See details"}
+            </span>
+            <span className="hidden group-open:inline">Show less</span>
+            <svg
+              className="transition-transform group-open:rotate-180"
+              width="12"
+              height="12"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden
+            >
+              <path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </summary>
+          <div className="mt-3 space-y-4">
+            {hidden.length > 0 ? <IncludeList items={hidden} /> : null}
+            <Narrative pkg={pkg} />
+          </div>
+        </details>
+      ) : null}
+
+      <div className="mt-auto pt-6">
         <Link
-          href="/contact"
-          className={`w-full ${btnSize.md} ${ctaWhite || isFeatured ? btn.inverse : btn.outline}`}
+          href={contactLinkForPackage(pkg.title, pkg.price)}
+          className="inline-flex min-h-[46px] w-full items-center justify-center gap-2 rounded-full border border-[#D5DDEA] px-4 text-center text-[14px] font-bold whitespace-nowrap text-[#0B1B3A] transition-colors hover:border-[#1F5BD8] hover:bg-[#1F5BD8] hover:text-white"
         >
           {pkg.cta}
-          <span className="ml-2 text-sm" aria-hidden>
-            →
-          </span>
+          <span aria-hidden>→</span>
         </Link>
       </div>
     </article>

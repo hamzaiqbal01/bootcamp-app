@@ -12,6 +12,7 @@ export type TutoringPackage = {
   extras?: string[];
 };
 
+// For the 10–20 hour packages, "was" is the standard $199/hour rate, so the saving is against that rate.
 export const privateDatTutoringPackages: TutoringPackage[] = [
   {
     hours: 4,
@@ -33,18 +34,18 @@ export const privateDatTutoringPackages: TutoringPackage[] = [
   {
     hours: 10,
     title: "10 Hours of Tutoring",
-    priceWas: 2199,
-    priceNow: 1999,
-    save: 200,
+    priceWas: 1990,
+    priceNow: 1680,
+    save: 310,
     blurb: "Great for students who need focused help in one subject after they’ve already started prep.",
     cta: "Get 10 Hours of Tutoring",
   },
   {
     hours: 16,
     title: "16 Hours of Tutoring",
-    priceWas: 3399,
-    priceNow: 2999,
-    save: 400,
+    priceWas: 3184,
+    priceNow: 2544,
+    save: 640,
     blurb: "Great for students of all types seeking comprehensive tutoring.",
     cta: "Get 16 Hours of Tutoring",
     popular: true,
@@ -52,9 +53,9 @@ export const privateDatTutoringPackages: TutoringPackage[] = [
   {
     hours: 20,
     title: "20 Hours of Tutoring",
-    priceWas: 4299,
-    priceNow: 3699,
-    save: 600,
+    priceWas: 3980,
+    priceNow: 2960,
+    save: 1020,
     blurb: "Great for students who want intensive, targeted help across multiple subjects.",
     cta: "Get 20 Hours of Tutoring",
   },

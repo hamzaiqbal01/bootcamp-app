@@ -122,7 +122,7 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
           <option value="newest">Newest first</option>
           <option value="oldest">Oldest first</option>
         </select>
-        <button type="submit" className="rounded-xl bg-[#0B1020] px-5 py-2.5 text-sm font-semibold text-white hover:bg-slate-800">
+        <button type="submit" className="rounded-full bg-[#0B1020] px-5 py-2.5 text-sm font-semibold text-white hover:bg-slate-800">
           Search
         </button>
         {(q || source || sort === "oldest") && (
@@ -202,12 +202,12 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
           </span>
           <div className="flex gap-2">
             {page > 1 && (
-              <Link href={hrefWith(current, { page: page - 1 })} className="rounded-lg bg-white px-3 py-1.5 ring-1 ring-slate-200 hover:ring-slate-400">
+              <Link href={hrefWith(current, { page: page - 1 })} className="rounded-full bg-white px-3 py-1.5 ring-1 ring-slate-200 hover:ring-slate-400">
                 ← Previous
               </Link>
             )}
             {page < pages && (
-              <Link href={hrefWith(current, { page: page + 1 })} className="rounded-lg bg-white px-3 py-1.5 ring-1 ring-slate-200 hover:ring-slate-400">
+              <Link href={hrefWith(current, { page: page + 1 })} className="rounded-full bg-white px-3 py-1.5 ring-1 ring-slate-200 hover:ring-slate-400">
                 Next →
               </Link>
             )}

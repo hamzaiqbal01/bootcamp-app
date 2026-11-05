@@ -42,3 +42,6 @@ next-env.d.ts
 
 # google search console credentials, tokens and exported reports
 /.gsc
+
+# Private Google Search Console exports
+/seo/gsc/

@@ -128,7 +128,7 @@ export function ImportSheetButton() {
       <button
         type="submit"
         disabled={pending}
-        className="inline-flex items-center rounded-xl border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-900 hover:text-slate-900 disabled:opacity-60"
+        className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-900 hover:text-slate-900 disabled:opacity-60"
       >
         {pending ? "Importing…" : "Import from Google Sheet"}
       </button>

@@ -39,6 +39,28 @@ body {
   animation: float-soft 5.5s ease-in-out infinite 1s;
 }
 
+/* Slow drift with a slight tilt, for the decorative cell in "What we offer". */
+@keyframes cell-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(-6px, -14px, 0) rotate(-4deg);
+  }
+}
+
+.animate-cell-float {
+  animation: cell-float 9s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-cell-float {
+    animation: none;
+  }
+}
+
 /* Decorative background shapes used across landing sections */
 .bg-shapes {
   pointer-events: none;
@@ -103,4 +125,153 @@ body {
 
 .reviews-swiper .swiper-pagination-bullet-active {
   background: #4f46e5;
+}
+
+.home-reviews-swiper .swiper-pagination-bullet-active {
+  background: #1f5bd8;
+}
+
+/* Slim, translucent scrollbar for the playlist on the dark video section. */
+.video-playlist {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(157, 184, 245, 0.45) transparent;
+}
+
+.video-playlist::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.video-playlist::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.video-playlist::-webkit-scrollbar-thumb {
+  background: rgba(157, 184, 245, 0.35);
+  border-radius: 999px;
+}
+
+.video-playlist::-webkit-scrollbar-thumb:hover {
+  background: rgba(157, 184, 245, 0.6);
+}
+
+.video-playlist::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Room for the cards' hover lift, which the swiper's overflow would otherwise clip. */
+.team-swiper.swiper {
+  padding-top: 8px;
+}
+
+.team-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.team-swiper .swiper-slide {
+  height: auto;
+}
+
+.team-swiper .swiper-pagination-bullet-active {
+  background: #1f5bd8;
+}
+
+/* Gentle drift for decorative hero art. */
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+}
+
+.hero-float {
+  animation: hero-float 9s ease-in-out infinite;
+}
+
+.hero-float-slow {
+  animation: hero-float 12s ease-in-out infinite reverse;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-float,
+  .hero-float-slow {
+    animation: none;
+  }
+}
+
+/* Chat widget palette: white on the light site, navy when the site is in dark mode. */
+.fdp-chat {
+  --c-panel: linear-gradient(180deg, #ffffff 0%, #f5f8fe 100%);
+  --c-ink: #0b1b3a;
+  --c-ink2: #33415c;
+  --c-sub: #5b6782;
+  --c-mute: #8a93a3;
+  --c-line: #e4e9f2;
+  --c-line2: #d5ddea;
+  --c-line3: #a9bce6;
+  --c-tint: #f4f7fd;
+  --c-tint2: #e9effb;
+  --c-card: #ffffff;
+  --c-pop: #ffffff;
+  --c-ring: #ffffff;
+  --c-accent: #1f5bd8;
+  --c-error: #b42318;
+}
+
+html.dark .fdp-chat {
+  --c-panel: linear-gradient(180deg, #1c1c1c 0%, #141414 100%);
+  --c-ink: #ffffff;
+  --c-ink2: rgba(255, 255, 255, 0.86);
+  --c-sub: rgba(255, 255, 255, 0.62);
+  --c-mute: rgba(255, 255, 255, 0.45);
+  --c-line: rgba(255, 255, 255, 0.1);
+  --c-line2: rgba(255, 255, 255, 0.18);
+  --c-line3: rgba(255, 255, 255, 0.3);
+  --c-tint: rgba(255, 255, 255, 0.05);
+  --c-tint2: rgba(255, 255, 255, 0.1);
+  --c-card: #222222;
+  --c-pop: #1e1e1e;
+  --c-ring: #111111;
+  --c-accent: #82a8ff;
+  --c-error: #ff8f85;
+}
+
+.fdp-chat-panel {
+  background-image: var(--c-panel);
+}
+
+/* Slim scrollbars inside the chat widget. */
+.fdp-chat * {
+  scrollbar-width: thin;
+  scrollbar-color: var(--c-line2) transparent;
+}
+
+.fdp-chat button:not(:disabled),
+.fdp-chat a {
+  cursor: pointer;
+}
+
+/* Blog article summary panel */
+@keyframes fdp-summary-in {
+  from { opacity: 0; transform: translateY(8px) scale(0.99); }
+  to { opacity: 1; transform: none; }
+}
+.fdp-summary-in { animation: fdp-summary-in 0.35s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+@keyframes fdp-summary-shimmer {
+  from { background-position: 100% 0; }
+  to { background-position: -100% 0; }
+}
+.fdp-summary-shimmer {
+  background: linear-gradient(90deg, #EEF3FD 0%, #DCE6FA 50%, #EEF3FD 100%);
+  background-size: 200% 100%;
+  animation: fdp-summary-shimmer 1.2s linear infinite;
+}
+html.dark .fdp-summary-shimmer {
+  background-image: linear-gradient(90deg, #222222 0%, #2E2E2E 50%, #222222 100%);
+}
+@media (prefers-reduced-motion: reduce) {
+  .fdp-summary-in, .fdp-summary-shimmer { animation: none; }
 }

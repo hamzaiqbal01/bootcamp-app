@@ -88,8 +88,15 @@ function escapeHtml(value: string): string {
     .replaceAll("'", "&#39;");
 }
 
+export type EmailAttachment = {
+  filename: string;
+  /** Base64-encoded file contents. */
+  content: string;
+};
+
 export async function sendContactNotificationEmail(
   payload: ContactPayload,
+  attachments: EmailAttachment[] = [],
 ): Promise<void> {
   const apiKey = process.env.RESEND_API_KEY;
   const to = process.env.CONTACT_NOTIFY_EMAIL;
@@ -242,6 +249,7 @@ export async function sendContactNotificationEmail(
       reply_to: payload.email,
       subject: `Contact form: ${payload.subject}`,
       html,
+      ...(attachments.length > 0 ? { attachments } : {}),
     }),
   });
 
