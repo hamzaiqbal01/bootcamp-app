@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | Future Dental Prep",
   },
   description:
-    "Expert-led dental school admissions consulting and DAT tutoring from a team of dental professionals and top students. Trusted by 10,000+ pre-dental students.",
+    "Expert-led dental school admissions consulting and DAT tutoring from a team of dental professionals and top students. Trusted by 1,000+ pre-dental students.",
   openGraph: {
     siteName: "Future Dental Prep",
     type: "website",
