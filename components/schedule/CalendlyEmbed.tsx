@@ -2,6 +2,7 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { preconnect, preload } from "react-dom";
 import { track, trackLead } from "@/lib/analytics";
 
 declare global {
@@ -39,12 +40,23 @@ function loadScript(): Promise<void> {
 }
 
 export function CalendlyEmbed({ bookingUrl }: { bookingUrl: string }) {
+  // Start fetching Calendly as soon as the page HTML arrives, before React runs, so the calendar opens sooner.
+  preconnect("https://calendly.com");
+  preconnect("https://assets.calendly.com");
+  preload(SCRIPT_SRC, { as: "script" });
+
   const router = useRouter();
   const params = useSearchParams();
   const containerRef = useRef<HTMLDivElement>(null);
   const [failed, setFailed] = useState(false);
   const [saving, setSaving] = useState(false);
-  const [dark, setDark] = useState(false);
+  // Read the theme on the first client render so a dark-mode visitor doesn't load the calendar twice.
+  // (The value only feeds the Calendly URL, never the HTML, so server and client markup still match.)
+  const [dark, setDark] = useState(
+    () =>
+      typeof document !== "undefined" &&
+      document.documentElement.classList.contains("dark"),
+  );
   // Calendly reports its content height; follow it so there's no empty space under the calendar.
   const [height, setHeight] = useState(560);
   // Our loader covers the widget until Calendly says the calendar is showing.
@@ -93,12 +105,14 @@ export function CalendlyEmbed({ bookingUrl }: { bookingUrl: string }) {
           url: embedUrl,
           parentElement: containerRef.current,
         });
-        // Backup signal: the iframe finished loading (Calendly paints a moment later).
+        // Keep our loader up until Calendly itself says the calendar is showing (event_type_viewed /
+        // page_height below). Its iframe "load" fires seconds earlier, while it still shows only its own
+        // spinner, so that only starts a 3-second backup in case Calendly's message never arrives.
         containerRef.current
           .querySelector("iframe")
           ?.addEventListener(
             "load",
-            () => window.setTimeout(() => !cancelled && setReady(true), 500),
+            () => window.setTimeout(() => !cancelled && setReady(true), 3000),
             { once: true },
           );
       })
@@ -106,7 +120,7 @@ export function CalendlyEmbed({ bookingUrl }: { bookingUrl: string }) {
     // Never hide the calendar for good if Calendly's ready message is missed.
     const fallback = window.setTimeout(
       () => !cancelled && setReady(true),
-      12000,
+      15000,
     );
     return () => {
       cancelled = true;

@@ -439,7 +439,12 @@ export function ChatWidget() {
 
   return (
     // The wrapper ignores clicks so the closed panel never blocks the page beneath it.
-    <div className="fdp-chat pointer-events-none fixed right-5 bottom-4 z-[70] flex flex-col items-end gap-3 sm:right-10 sm:bottom-6">
+    // On phones the booking page hides the chat button so it doesn't sit on top of the calendar.
+    <div
+      className={`fdp-chat pointer-events-none fixed right-5 bottom-4 z-[70] flex flex-col items-end gap-3 sm:right-10 sm:bottom-6 ${
+        pathname === "/schedule" ? "max-lg:hidden" : ""
+      }`}
+    >
       {/* Panel */}
       <div
         role="dialog"
