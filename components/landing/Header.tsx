@@ -6,11 +6,12 @@ import { TopBar } from "@/components/landing/home/TopBar";
 import { Logo } from "@/components/ui/Logo";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
+// "Home" comes first so blog readers (most search visitors) can find the main site without guessing the logo.
 const nav = [
+  { href: "/", label: "Home" },
   { href: "/services", label: "Application Services" },
   { href: "/private-dat-tutoring", label: "DAT Services" },
   { href: "/secondaries", label: "Secondaries" },
-  { href: "/#team", label: "Team" },
   { href: "/blog", label: "Blog" },
   { href: "/#tools", label: "Tools" },
   { href: "/pricing", label: "Pricing" },
@@ -67,8 +68,8 @@ export function Header() {
               ))}
             </div>
             {/* Theme toggle first, then the two calls to action side by side: Contact (outline) and Book (filled). */}
-            <div className="ml-2 flex items-center gap-2 xl:ml-3 xl:gap-2.5">
-              <ThemeToggle />
+            <div className="ml-1.5 flex items-center gap-2 xl:ml-2 xl:gap-2.5">
+              <ThemeToggle compact />
               <Link
                 href="/contact"
                 className="inline-flex min-h-10 items-center whitespace-nowrap rounded-full border border-[#D5DDEA] bg-white px-4 text-sm font-bold text-[#0B1B3A] transition-colors hover:border-[#0B1B3A]"
