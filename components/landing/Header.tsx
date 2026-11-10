@@ -65,13 +65,16 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
-              {/* Plain text link, not a button, so "Book a free consultation" stays the one clear call to action. */}
-              <Link href="/contact" className={navLink}>
+            </div>
+            {/* Theme toggle first, then the two calls to action side by side: Contact (outline) and Book (filled). */}
+            <div className="ml-2 flex items-center gap-2 xl:ml-3 xl:gap-2.5">
+              <ThemeToggle />
+              <Link
+                href="/contact"
+                className="inline-flex min-h-10 items-center whitespace-nowrap rounded-full border border-[#D5DDEA] bg-white px-4 text-sm font-bold text-[#0B1B3A] transition-colors hover:border-[#0B1B3A]"
+              >
                 Contact
               </Link>
-            </div>
-            <div className="ml-2 flex items-center gap-2.5 xl:ml-3">
-              <ThemeToggle />
               <Link
                 href="/schedule"
                 className="inline-flex min-h-10 items-center whitespace-nowrap rounded-full bg-[#1F5BD8] px-4 text-sm font-bold text-white hover:bg-[#1747AC]"
