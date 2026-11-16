@@ -539,6 +539,52 @@ export default async function BlogPostPage({ params }: Props) {
         },
       ],
     },
+    "dental-school-interview-questions": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How many questions are asked in a dental school interview?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A traditional or panel interview usually lasts 20 to 45 minutes, with a handful of main questions and follow-ups that depend on your answers. An MMI has 6 to 10 stations, each built around one prompt with follow-up questions.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the most common dental school interview question?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "\"Why do you want to be a dentist?\" Almost every school asks some version of it, often followed by \"Why dentistry and not medicine?\" Prepare a specific, personal answer for both.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How should I answer behavioral questions?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Use the STAR method: Situation, Task, Action, Result. Keep the situation short, spend most of your time on what you did, and end with what you learned.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How long should I prepare for a dental school interview?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Start about four weeks before your first interview if you can: research each school, prepare 5 to 6 stories you can reuse, and do several timed mock interviews out loud.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Should I memorize my answers?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. Memorized answers sound flat and fall apart when the interviewer asks a follow-up. Know your key stories and main points, then practice saying them naturally in different words each time.",
+          },
+        },
+      ],
+    },
     "dental-school-gpa-requirements": {
       "@context": "https://schema.org",
       "@type": "FAQPage",

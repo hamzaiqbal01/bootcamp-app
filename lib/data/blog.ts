@@ -99,7 +99,7 @@ The month-by-month calendar is in the [Fall 2027 application timeline](/blog/den
 
 Spend the time on three things:
 
-- **Format.** Traditional, panel, and MMI are different. The two-week plan is [how to prepare for a dental school interview](/blog/how-to-prepare-for-dental-school-interview). Station practice is the [MMI guide](/blog/dental-school-mmi-interview-guide). The question list is [30 common interview questions](/blog/dental-school-interview-questions).
+- **Format.** Traditional, panel, and MMI are different. The two-week plan is [how to prepare for a dental school interview](/blog/how-to-prepare-for-dental-school-interview). Station practice is the [MMI guide](/blog/dental-school-mmi-interview-guide). The question list is [45 dental school interview questions](/blog/dental-school-interview-questions).
 - **One answer you will actually be asked.** “Why dentistry?” fails when it is a slogan. The version that holds up is in [how to answer why dentistry](/blog/why-dentistry-interview-answer).
 - **Academic Update.** From **December 1, 2026 through February 5, 2027**, ADEA opens the second update window. Add a real grade when you have it. Do not enter a guess.
 
@@ -994,8 +994,8 @@ Want a school-list audit (Casper + DAT + FAP)? [Schedule a free call](/schedule)
   },
   {
     slug: "dat-scoring-scale-200-600",
-    title: "DAT Conversion Chart: 420 = 20 on the Old Scale",
-    description: "420 DAT = 20 and 460 = 22 on the old scale. Full 200–600 to 1–30 conversion chart, what changed in 2025, and a free DAT score calculator.",
+    title: "420 DAT to Old Score: 200–600 DAT Conversion Chart",
+    description: "420 on the new DAT equals a 20 on the old scale, and 460 equals a 22. Full 200–600 to 1–30 chart, what changed in 2025, and a free DAT score calculator.",
     publishedAt: "2026-08-05",
     readingTime: "10 min read",
     category: "DAT Prep",
@@ -1136,9 +1136,9 @@ Want a score target and retake calendar for Fall 2027 entry? [Schedule a free ca
   },
   {
     slug: "dental-school-decision-day",
-    title: "Dental School Decision Day 2026: Dec 15 Acceptances",
+    title: "Dental School Decision Day 2026: December 15 Explained",
     description:
-      "Dental school Decision Day for the 2026–27 cycle is December 15, 2026 — the first date schools may notify acceptances. What to expect, rolling admits, and what to do while you wait.",
+      "Dental school Decision Day is Tuesday, December 15, 2026, the first day schools can send acceptances. What to expect, waitlists, and what to do next.",
     publishedAt: "2026-08-05",
     readingTime: "8 min read",
     category: "Admissions Guide",
@@ -2308,7 +2308,7 @@ If your application is competitive, schools will invite you to **interview**. Fo
 Interviews assess communication, ethics, professionalism, and genuine motivation for dentistry. Prepare with:
 - [How to prepare for a dental school interview in 2 weeks](/blog/how-to-prepare-for-dental-school-interview)
 - [The MMI station-by-station guide](/blog/dental-school-mmi-interview-guide)
-- [30 common interview questions](/blog/dental-school-interview-questions)
+- [45 dental school interview questions](/blog/dental-school-interview-questions)
 - [How to answer "Why dentistry?"](/blog/why-dentistry-interview-answer)
 
 ---
@@ -2421,9 +2421,9 @@ If you want expert guidance mapping out your personal path — from DAT prep to 
   },
   {
     slug: "dental-school-vs-medical-school",
-    title: "Do Dentists Go to Med School? Dental vs Medical School",
+    title: "Do Dentists Go to Medical School? No. Here's the Path",
     description:
-      "No. Dentists do not go to medical school. They earn a DDS or DMD at dental school. Compare training, cost, and day-to-day work before you choose.",
+      "No. Dentists earn a DDS or DMD at dental school, not an MD. Compare training years, DAT vs MCAT, cost, income and lifestyle in one side-by-side table.",
     publishedAt: "2026-07-22",
     readingTime: "15 min read",
     category: "Admissions Guide",
@@ -5464,8 +5464,8 @@ If you want personalized support navigating your waitlist strategy — including
   },
   {
     slug: "dental-school-acceptance-rates",
-    title: "Dental School Acceptance Rates: Your Real Odds",
-    description: "National dental school acceptance rates, the stats that predict who gets in, and how to build a school list around your odds. 2026–27 cycle data.",
+    title: "Dental School Acceptance Rates: How Hard Is It? (2027)",
+    description: "12,491 people applied to dental school and 6,719 enrolled (ADEA, 2024). See acceptance rates by school tier, what predicts admission, and your odds.",
     publishedAt: "2026-07-02",
     readingTime: "12 min read",
     category: "Application Tips",
@@ -5475,6 +5475,8 @@ If you want personalized support navigating your waitlist strategy — including
     author: AUTHORS.celina,
     content: `
 ## Your Odds of Getting Into Dental School — The Honest Numbers
+
+**How many people apply to dental school each year?** In the 2024 entering class, **12,491 people applied** to US dental schools and **6,719 enrolled** as first-time first-year students, and applicants applied to **9.81 schools** on average ([ADEA GoDental](https://www.adea.org/GoDental/Application-Process/)). ADEA reported in April 2026 that applicants for the 2025 entering class reached their highest level in a decade.
 
 Every pre-dental student wants to know the same thing: *What are my chances?*
 
@@ -6201,7 +6203,7 @@ Interview invitations typically begin arriving in August and September for June 
 
 Build your answer bank for the most common dental school interview questions. Schedule at least 2 mock interviews. Research every school you applied to so you can speak specifically about why you chose them.
 
-Read our [dental school interview prep guide](/blog/dental-school-interview-questions) for the 30 most common questions with sample answers and a structured 4-week prep plan.
+Read our [dental school interview prep guide](/blog/dental-school-interview-questions) for 45 common questions with how to answer each and a structured 4-week prep plan.
 
 ---
 
@@ -6349,9 +6351,9 @@ We'll review your current timeline, identify the gaps, and make sure you're not 
   },
   {
     slug: "dental-school-prerequisites",
-    title: "Dental School Prerequisites: 2026 Course Checklist",
+    title: "Dental School Prerequisites 2027: Course Checklist",
     description:
-      "Complete dental school prerequisite list — biology, chemistry, physics, math, and more — plus AP credit rules, GPA impact, and how to plan your schedule.",
+      "Every course dental schools require, plus anatomy, microbiology and biochem rules, AP and community college credit, and a year-by-year course plan.",
     publishedAt: "2026-07-01",
     readingTime: "13 min read",
     category: "Application Tips",
@@ -6903,9 +6905,9 @@ If you want a personalized review of your planned recommender list and how to fr
   },
   {
     slug: "dental-school-gpa-requirements",
-    title: "Can You Get Into Dental School With a 3.0 GPA? Yes",
+    title: "Can You Get Into Dental School With a 3.0 GPA? (2027)",
     description:
-      "Yes. A 3.0 GPA can get you into dental school with a DAT around 440–460 (old 21–22), an upward science trend, and a realistic school list.",
+      "Yes, a 3.0 GPA can work. See average GPAs by school tier, how science GPA is judged, and what low-GPA applicants do to get in. Check your GPA free.",
     publishedAt: "2026-06-30",
     readingTime: "13 min read",
     category: "Application Tips",
@@ -6917,6 +6919,8 @@ If you want a personalized review of your planned recommender list and how to fr
 ## Yes — a 3.0 GPA Can Get You Into Dental School
 
 **Yes — you can get into dental school with a 3.0 GPA** if you add DAT **~21–22+ (≈440–460 AA)**, an upward science trend, and a realistic school list.
+
+Not sure what your AADSAS GPA is? The free [AADSAS GPA calculator](/aadsas-gpa-calculator) works out your overall, science and BCP GPA in a minute.
 
 It is not an automatic rejection. A **3.0 overall** is below the national accepted average (~**3.55** overall / ~**3.46** science), so you need clear compensating strengths — not an “average everything else” application.
 
@@ -7164,9 +7168,9 @@ If you'd like to talk through your specific GPA, DAT score, and application stra
   },
   {
     slug: "dental-shadowing-hours-for-dental-school",
-    title: "How Many Shadowing Hours for Dental School? (100–150)",
+    title: "How Many Shadowing Hours for Dental School? 2027 Guide",
     description:
-      "Aim for 100–150 dental shadowing hours for dental school. See school ranges, how to find opportunities, what to log, and how hours work in AADSAS.",
+      "Most applicants log 100 to 150 dental shadowing hours. See what schools expect, what counts, how to find a dentist to shadow, and how to log your hours.",
     publishedAt: "2026-06-26",
     readingTime: "11 min read",
     category: "Application Tips",
@@ -7736,11 +7740,11 @@ Your target score is achievable. You just needed the right plan.
   },
   {
     slug: "dental-school-interview-questions",
-    title: "30 Most Common Dental School Interview Questions (With Sample Answers)",
+    title: "Dental School Interview Questions: 45 With Answers",
     description:
-      "Preparing for your dental school interview? These are the 30 most frequently asked dental school interview questions — with expert sample answers, strategy breakdowns, and insider tips from a dentist who has sat on both sides of the table.",
+      "45 dental school interview questions for 2026–27 with how to answer each: why dentistry, ethics, MMI stations, current issues and school-specific.",
     publishedAt: "2026-06-24",
-    readingTime: "15 min read",
+    readingTime: "20 min read",
     category: "Interview Prep",
     coverGradient: "from-indigo-600 to-blue-700",
     coverEmoji: "🎤",
@@ -7757,7 +7761,7 @@ But here's what most pre-dental students get wrong: they show up to the intervie
 
 What they're evaluating now is **who you are**, **how you think**, and **whether they want you in their program for the next four years.**
 
-This guide covers the 30 most common dental school interview questions, exactly how to approach each one, and the strategy behind building answers that actually land.
+This guide covers 45 dental school interview questions for the 2026–27 cycle: the 30 most common ones, plus MMI practice stations, current issues in dentistry and school-specific questions. For each one you get what the interviewer is really asking and how to build an answer that lands. (These are dental school admissions interview questions, not questions for a dental office job.)
 
 ---
 
@@ -8034,19 +8038,129 @@ This is your final impression. Treat it as a closing statement. If there is some
 
 ---
 
+## Current Issues in Dentistry Questions
+
+Interviewers ask these to see whether you follow the profession you are about to join. You do not need to be an expert. You need a calm, balanced view, one or two facts you are sure of, and a link back to patients. Avoid strong claims you cannot support.
+
+### 31. "What do you think about teledentistry?"
+
+**What they're asking:** Do you understand how care is changing, and can you weigh benefits against limits?
+
+**How to answer:** Name one benefit (reaching rural or homebound patients, triage, follow-up visits) and one limit (you cannot drill or clean a tooth over video, and a remote exam can miss what a hands-on exam finds). Finish with how you would use it as a dentist: as a way into care, not a replacement for it.
+
+### 32. "How do you see AI changing dentistry?"
+
+**What they're asking:** Can you think about new technology without hype or fear?
+
+**How to answer:** Mention practical uses you have read about or seen while shadowing, such as help reading radiographs or scheduling. Then say who stays responsible for the diagnosis and the patient: the dentist. Show you are curious and careful at the same time.
+
+### 33. "Why do so many people go without dental care?"
+
+**What they're asking:** Do you understand access to care, and do you care about it?
+
+**How to answer:** Talk about cost, insurance gaps, distance to a dentist and fear of the dentist. If you volunteered at a free clinic or a community event, use what you saw there. Close with something you want to do about it, even something small.
+
+### 34. "What is your view on community water fluoridation?"
+
+**What they're asking:** Can you discuss a public health debate respectfully and with evidence?
+
+**How to answer:** Explain what fluoride does for teeth, acknowledge that the topic is debated in some communities, and say you would follow the best current evidence and explain it to patients clearly and without talking down to them. The way you discuss it matters more than the side you take.
+
+### 35. "How should dentists handle patients who cannot afford treatment?"
+
+**What they're asking:** How do you balance running a practice with caring for patients?
+
+**How to answer:** Give options: phasing treatment, prioritizing urgent problems, payment plans, referring to community clinics or dental school clinics. Show you would not simply turn the patient away, and that you also understand a practice has to stay open to help anyone.
+
+---
+
+## MMI Station Practice Prompts
+
+In a Multiple Mini Interview you rotate through short stations, usually 6 to 10 of them, around 6 to 8 minutes each, with a new evaluator at every station. Practice these five out loud with a timer: about 2 minutes to read, then talk. For the full format, see our [MMI guide](/blog/dental-school-mmi-interview-guide).
+
+### 36. Ethics station: "A patient asks you to whiten a tooth that you think needs a root canal first."
+
+**How to approach:** Name the conflict (the patient's request vs their health). Explain the risk in plain words, give options, and respect their choice once they understand it. Never just refuse, and never just do what they ask without explaining.
+
+### 37. Role-play station: "Your patient has waited 40 minutes and is angry when you walk in."
+
+**How to approach:** Acknowledge the feeling first ("I'm sorry you waited this long; that's frustrating"), explain briefly without excuses, and offer a fix: start now, or reschedule at a time that suits them. Evaluators score empathy and calm, not the perfect solution.
+
+### 38. Teamwork station: "Explain to your partner how to build a shape you can see and they cannot."
+
+**How to approach:** Agree on a plan before starting, give one clear step at a time, check understanding often ("Can you see the long edge now?") and stay patient if it goes wrong. They are watching how you communicate under a time limit.
+
+### 39. Policy station: "Should schools be allowed to sell sugary drinks to students?"
+
+**How to approach:** Give both sides (student health and dental decay vs personal choice and school budgets), then pick a position and support it. A balanced answer with a clear conclusion beats a one-sided speech.
+
+### 40. Personal station: "Tell us about a time you received criticism you disagreed with."
+
+**How to approach:** Use STAR. Show that you listened, separated the useful part from the rest, and changed something. Avoid stories where the other person was simply wrong.
+
+---
+
+## School-Specific and Virtual Interview Questions
+
+### 41. "What will you contribute to our class?"
+
+**How to answer:** Give one or two concrete things, such as a language you speak, a community you have worked with, or a skill from a past job, and connect each to something at that school: a clinic, a student organization, an outreach program.
+
+### 42. "Why should we choose you over other applicants?"
+
+**How to answer:** Do not compare yourself to others. Sum up your strongest evidence in three short points (motivation, preparation, fit with this school) and say it with calm confidence.
+
+### 43. "Which other schools are you interviewing at?"
+
+**How to answer:** Be honest but brief, and bring it back to why this school stands out for you. Schools know you applied widely; they want to see genuine interest in them.
+
+### 44. "Is there anything in your application you would like to explain?"
+
+**How to answer:** If there is a low semester, a gap or a DAT retake, explain it in two or three sentences: what happened, what you changed, and the proof it worked (better grades, a higher score). Don't make excuses, and don't over-explain.
+
+### 45. "How do you feel about interviewing online today?" (virtual interviews)
+
+**How to answer:** Keep it short and positive, then show you prepared: camera at eye level, good light, a quiet room, a tested connection. If something goes wrong technically, stay calm; how you handle it is part of the impression. More setup tips are in our [virtual interview guide](/blog/virtual-dental-school-interview).
+
+---
+
 ## How to Prepare: A 4-Week Interview Prep Plan
 
 **Week 1 — Foundation**
 Research each school thoroughly. Write out your core stories (why dentistry, greatest strength/weakness, biggest challenge). Practice out loud, not just in your head. Talking in the mirror is uncomfortable and effective.
 
 **Week 2 — Behavioral Questions**
-Work through all 30 questions above. For each behavioral question, identify 1–2 real experiences from your life. Record yourself on your phone. Listen back and identify filler words, pacing, and clarity.
+Work through all 45 questions above. For each behavioral question, identify 1–2 real experiences from your life. Record yourself on your phone. Listen back and identify filler words, pacing, and clarity.
 
 **Week 3 — Mock Interviews**
 Schedule at least 2 mock interviews — one with a mentor, advisor, or pre-dental society, and one with someone who will give you honest, critical feedback. Ask them to ask follow-up questions, not just let you finish your answer.
 
 **Week 4 — Polish and Logistics**
 Review your secondary application for each school so you remember what you wrote. Prepare your questions for each program. Confirm logistics (travel, attire, what to bring). Sleep and arrive early.
+
+---
+
+## Dental School Interview FAQ
+
+### How many questions are asked in a dental school interview?
+
+A traditional or panel interview usually lasts 20 to 45 minutes, with a handful of main questions and follow-ups that depend on your answers. An MMI has 6 to 10 stations, each built around one prompt with follow-up questions.
+
+### What is the most common dental school interview question?
+
+"Why do you want to be a dentist?" Almost every school asks some version of it, often followed by "Why dentistry and not medicine?" Prepare a specific, personal answer for both. Our guide to [answering why dentistry](/blog/why-dentistry-interview-answer) walks through examples.
+
+### How should I answer behavioral questions?
+
+Use the STAR method: Situation, Task, Action, Result. Keep the situation short, spend most of your time on what you did, and end with what you learned.
+
+### How long should I prepare for a dental school interview?
+
+Start about four weeks before your first interview if you can: research each school, prepare 5–6 stories you can reuse, and do several timed mock interviews out loud. The 4-week plan above lays it out week by week.
+
+### Should I memorize my answers?
+
+No. Memorized answers sound flat and fall apart when the interviewer asks a follow-up. Know your key stories and main points, then practice saying them naturally in different words each time.
 
 ---
 
@@ -8059,6 +8173,8 @@ The goal of the interview is not to be impressive. It's to be *real and prepared
 If you want expert, personalized dental school interview coaching from a dentist who has advised hundreds of successful applicants, [schedule a free 15-minute call with our team](/schedule). We'll assess your current readiness, identify your blind spots, and build a prep plan around your specific interview dates.
 
 Your interview invitation was earned. Now go close the deal.
+
+Want to practice with feedback? Our [dental school interview prep](/services/dental-school-interview-prep) includes mock MMI, traditional and panel interviews, recorded and reviewed with you 1-on-1.
 `,
   },
   {
@@ -8450,9 +8566,9 @@ If you want personalized guidance on your specific situation, [schedule a free 1
 
   {
     slug: "dat-score-guide",
-    title: "What Is a Good DAT Score in 2026? 420 vs 460",
+    title: "Is 420 a Good DAT Score? Averages and Targets for 2027",
     description:
-      "A competitive DAT is about 420 AA (old 20). Selective schools often want about 460 (old 22). Use the conversion chart for every score.",
+      "A 420 Academic Average equals an old 20 and is competitive at many schools. See averages at top dental schools, the score you need, and convert yours.",
     publishedAt: "2026-04-28",
     readingTime: "9 min read",
     category: "DAT Prep",
@@ -8464,6 +8580,8 @@ If you want personalized guidance on your specific situation, [schedule a free 1
 ## What Is a Good DAT Score?
 
 **A competitive DAT is about 420 AA (old 20). Selective programs often want about 460 AA (old 22).**
+
+Have your section scores? The free [DAT score calculator](/dat-score-calculator) works out your Academic Average and converts it between the old and new scales.
 
 420 DAT to old score = 20. 460 DAT to old score = 22.
 
