@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import Script from "next/script";
 import { useEffect } from "react";
 import { CookieConsent } from "@/components/analytics/CookieConsent";
@@ -87,6 +88,9 @@ function useLinkClickEvents() {
 
 export function GoogleAnalytics() {
   useLinkClickEvents();
+  // The admin panel is private: no analytics tag and no cookie banner there.
+  const pathname = usePathname();
+  if (pathname?.startsWith("/admin")) return null;
   return (
     <>
       <Script id="ga4" strategy="afterInteractive">

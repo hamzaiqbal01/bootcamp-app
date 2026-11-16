@@ -16,7 +16,10 @@ export type NewLead = {
 };
 
 export type LeadUpdate = Partial<
-  Pick<Lead, "name" | "email" | "phone" | "subject" | "message" | "status" | "notes">
+  Pick<
+    Lead,
+    "name" | "email" | "phone" | "subject" | "message" | "status" | "notes"
+  >
 >;
 
 const TABLE = "leads";
@@ -27,7 +30,12 @@ const LEAD_COLUMNS =
  * Same email + subject + message → same key. Used so re-importing the sheet
  * (which the contact form also writes to) never creates duplicates.
  */
-export function leadDedupeKey(lead: { name: string; email: string; subject: string; message: string }) {
+export function leadDedupeKey(lead: {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}) {
   const norm = (s: string) => s.trim().replace(/\s+/g, " ").toLowerCase();
   const who = norm(lead.email) || norm(lead.name);
   return createHash("sha256")
@@ -86,11 +94,18 @@ export type LeadListFilters = {
 
 /** Strip characters that have meaning in PostgREST filter syntax. */
 function sanitizeSearch(q: string): string {
-  return q.replace(/[^\p{L}\p{N}@.\-+' ]/gu, " ").replace(/\s+/g, " ").trim();
+  return q
+    .replace(/[^\p{L}\p{N}@.\-+' ]/gu, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
-export async function listLeads(filters: LeadListFilters): Promise<{ leads: Lead[]; total: number }> {
-  let query = getSupabase().from(TABLE).select(LEAD_COLUMNS, { count: "exact" });
+export async function listLeads(
+  filters: LeadListFilters,
+): Promise<{ leads: Lead[]; total: number }> {
+  let query = getSupabase()
+    .from(TABLE)
+    .select(LEAD_COLUMNS, { count: "exact" });
 
   if (filters.status) query = query.eq("status", filters.status);
   if (filters.source) query = query.eq("source", filters.source);
@@ -112,7 +127,9 @@ export async function listLeads(filters: LeadListFilters): Promise<{ leads: Lead
   return { leads: (data ?? []) as Lead[], total: count ?? 0 };
 }
 
-export async function countLeadsByStatus(): Promise<Record<LeadStatus | "all", number>> {
+export async function countLeadsByStatus(): Promise<
+  Record<LeadStatus | "all", number>
+> {
   const supabase = getSupabase();
   const counts = await Promise.all(
     LEAD_STATUSES.map(async (status) => {
@@ -130,16 +147,37 @@ export async function countLeadsByStatus(): Promise<Record<LeadStatus | "all", n
   return { ...byStatus, all };
 }
 
+/** Lightweight rows for dashboard charts: every lead created since `sinceIso`. */
+export async function leadActivitySince(
+  sinceIso: string,
+): Promise<Pick<Lead, "created_at" | "source" | "status">[]> {
+  const { data, error } = await getSupabase()
+    .from(TABLE)
+    .select("created_at, source, status")
+    .gte("created_at", sinceIso)
+    .order("created_at", { ascending: true })
+    .limit(5000);
+  if (error) throw new Error(error.message);
+  return (data ?? []) as Pick<Lead, "created_at" | "source" | "status">[];
+}
+
 export async function getLead(id: string): Promise<Lead | null> {
   if (!/^[0-9a-f-]{36}$/i.test(id)) return null;
 
-  const { data, error } = await getSupabase().from(TABLE).select(LEAD_COLUMNS).eq("id", id).maybeSingle();
+  const { data, error } = await getSupabase()
+    .from(TABLE)
+    .select(LEAD_COLUMNS)
+    .eq("id", id)
+    .maybeSingle();
 
   if (error) throw new Error(error.message);
   return (data as Lead | null) ?? null;
 }
 
-export async function updateLead(id: string, update: LeadUpdate): Promise<void> {
+export async function updateLead(
+  id: string,
+  update: LeadUpdate,
+): Promise<void> {
   const { error } = await getSupabase().from(TABLE).update(update).eq("id", id);
   if (error) throw new Error(error.message);
 }
@@ -150,7 +188,7 @@ export async function deleteLead(id: string): Promise<void> {
 }
 
 /** Minimal RFC 4180 CSV parser (quoted fields, "" escapes, newlines inside quotes). */
-function parseCsv(text: string): string[][] {
+export function parseCsv(text: string): string[][] {
   const rows: string[][] = [];
   let row: string[] = [];
   let field = "";
@@ -201,7 +239,10 @@ function readSheetRow(cells: string[]) {
   if (filled.length === 0) return null;
 
   const start = filled.every((i) => i <= 3) ? 0 : filled[0];
-  const [name = "", email = "", subject = "", message = ""] = values.slice(start, start + 4);
+  const [name = "", email = "", subject = "", message = ""] = values.slice(
+    start,
+    start + 4,
+  );
   return { name, email, subject, message };
 }
 
@@ -220,7 +261,10 @@ export function sheetRowCreatedAt(rowNumber: number): string {
  * Pulls every row from the Google Sheet (CSV export — the sheet must be
  * viewable by link) and inserts the ones not in Supabase yet.
  */
-export async function importLeadsFromSheet(): Promise<{ found: number; imported: number }> {
+export async function importLeadsFromSheet(): Promise<{
+  found: number;
+  imported: number;
+}> {
   const sheetId = process.env.GOOGLE_SHEET_ID;
   if (!sheetId) throw new Error("GOOGLE_SHEET_ID is not set.");
   const gid = process.env.GOOGLE_SHEET_GID ?? "0";
@@ -238,11 +282,17 @@ export async function importLeadsFromSheet(): Promise<{ found: number; imported:
   const rows = parseCsv(await res.text());
 
   // Same lead twice in the sheet → keep the lower (newer) row.
-  const byKey = new Map<string, ReturnType<typeof toRow> & { created_at: string }>();
+  const byKey = new Map<
+    string,
+    ReturnType<typeof toRow> & { created_at: string }
+  >();
   rows.slice(1).forEach((cells, i) => {
     const lead = readSheetRow(cells);
     if (!lead || !(lead.name || lead.email || lead.message)) return;
-    const row = { ...toRow({ ...lead, source: "sheet" }), created_at: sheetRowCreatedAt(i + 2) };
+    const row = {
+      ...toRow({ ...lead, source: "sheet" }),
+      created_at: sheetRowCreatedAt(i + 2),
+    };
     byKey.delete(row.dedupe_key);
     byKey.set(row.dedupe_key, row);
   });

@@ -1,6 +1,8 @@
 "use server";
 
-import { refresh } from "next/cache";
+import { refresh, updateTag } from "next/cache";
+import { GA4_TAG } from "@/lib/admin/ga4";
+import { GSC_TAG } from "@/lib/admin/gsc";
 import { redirect } from "next/navigation";
 import {
   checkAdminPassword,
@@ -9,7 +11,13 @@ import {
   isAdminConfigured,
   requireAdmin,
 } from "@/lib/admin/session";
-import { createLead, deleteLead, getLead, importLeadsFromSheet, updateLead } from "@/lib/leads/server";
+import {
+  createLead,
+  deleteLead,
+  getLead,
+  importLeadsFromSheet,
+  updateLead,
+} from "@/lib/leads/server";
 import { isLeadStatus, type LeadStatus } from "@/lib/leads/shared";
 
 export type ActionState = { ok?: string; error?: string } | undefined;
@@ -27,9 +35,15 @@ function errorMessage(error: unknown): string {
 
 // ---------- Auth ----------
 
-export async function loginAction(_prev: ActionState, formData: FormData): Promise<ActionState> {
+export async function loginAction(
+  _prev: ActionState,
+  formData: FormData,
+): Promise<ActionState> {
   if (!isAdminConfigured()) {
-    return { error: "Admin is not configured. Set ADMIN_PASSWORD and ADMIN_SESSION_SECRET." };
+    return {
+      error:
+        "Admin is not configured. Set ADMIN_PASSWORD and ADMIN_SESSION_SECRET.",
+    };
   }
 
   if (!checkAdminPassword(field(formData, "password"))) {
@@ -64,11 +78,15 @@ function readLeadFields(formData: FormData) {
 
 function validateLead(lead: ReturnType<typeof readLeadFields>): string | null {
   if (!lead.name && !lead.email) return "Add at least a name or an email.";
-  if (lead.email && !EMAIL_RE.test(lead.email)) return "That email address doesn't look valid.";
+  if (lead.email && !EMAIL_RE.test(lead.email))
+    return "That email address doesn't look valid.";
   return null;
 }
 
-export async function createLeadAction(_prev: ActionState, formData: FormData): Promise<ActionState> {
+export async function createLeadAction(
+  _prev: ActionState,
+  formData: FormData,
+): Promise<ActionState> {
   await requireAdmin();
 
   const lead = readLeadFields(formData);
@@ -84,7 +102,10 @@ export async function createLeadAction(_prev: ActionState, formData: FormData): 
   redirect(`/admin/leads/${id}`);
 }
 
-export async function updateLeadAction(_prev: ActionState, formData: FormData): Promise<ActionState> {
+export async function updateLeadAction(
+  _prev: ActionState,
+  formData: FormData,
+): Promise<ActionState> {
   await requireAdmin();
 
   const id = field(formData, "id");
@@ -102,7 +123,10 @@ export async function updateLeadAction(_prev: ActionState, formData: FormData): 
   return { ok: "Saved." };
 }
 
-export async function setLeadStatusAction(id: string, status: string): Promise<void> {
+export async function setLeadStatusAction(
+  id: string,
+  status: string,
+): Promise<void> {
   await requireAdmin();
   if (!isLeadStatus(status)) throw new Error("Invalid status.");
   await updateLead(id, { status });
@@ -119,10 +143,17 @@ export async function markRepliedAction(id: string): Promise<void> {
   }
 }
 
+/** Drop the cached Search Console and GA4 data so the next page load fetches fresh numbers. */
+export async function refreshGscAction(): Promise<void> {
+  await requireAdmin();
+  updateTag(GSC_TAG);
+  updateTag(GA4_TAG);
+}
+
 export async function deleteLeadAction(id: string): Promise<void> {
   await requireAdmin();
   await deleteLead(id);
-  redirect("/admin");
+  redirect("/admin/leads");
 }
 
 export async function importSheetAction(): Promise<ActionState> {

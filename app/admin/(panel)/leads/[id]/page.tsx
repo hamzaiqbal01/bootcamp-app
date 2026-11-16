@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { StudyPlanLeadCard } from "@/components/admin/StudyPlanLeadCard";
-import { DeleteLeadButton, LocalTime, ReplyButtons, StatusBadge } from "@/components/admin/LeadBits";
+import {
+  DeleteLeadButton,
+  LocalTime,
+  ReplyButtons,
+  StatusBadge,
+} from "@/components/admin/LeadBits";
 import { LeadForm } from "@/components/admin/LeadForm";
 import { requireAdmin } from "@/lib/admin/session";
 import { getLead } from "@/lib/leads/server";
@@ -27,7 +32,10 @@ export default async function AdminLeadPage({ params }: Props) {
 
   return (
     <div className="space-y-6">
-      <Link href="/admin" className="text-sm font-medium text-slate-500 hover:text-slate-900">
+      <Link
+        href="/admin/leads"
+        className="text-sm font-medium text-slate-500 hover:text-slate-900"
+      >
         ← All leads
       </Link>
 
@@ -36,10 +44,14 @@ export default async function AdminLeadPage({ params }: Props) {
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
           <div className="min-w-0">
             <div className="flex flex-wrap items-center gap-3">
-              <h1 className="text-2xl font-bold tracking-tight text-slate-900">{lead.name || "(no name)"}</h1>
+              <h1 className="text-2xl font-bold tracking-tight text-slate-900">
+                {lead.name || "(no name)"}
+              </h1>
               <StatusBadge status={lead.status} />
             </div>
-            <p className="mt-1 break-all text-slate-600">{lead.email || "No email"}</p>
+            <p className="mt-1 break-all text-slate-600">
+              {lead.email || "No email"}
+            </p>
             {lead.phone && <p className="text-slate-600">{lead.phone}</p>}
             <p className="mt-2 text-xs text-slate-400">
               {LEAD_SOURCE_LABELS[lead.source]} ·{" "}
@@ -58,13 +70,19 @@ export default async function AdminLeadPage({ params }: Props) {
 
         {(lead.subject || lead.message) && (
           <div className="mt-6 rounded-xl border-l-4 border-brand-500 bg-slate-50 px-5 py-4">
-            {lead.subject && <p className="font-semibold text-slate-900">{lead.subject}</p>}
-            <p className="mt-1 whitespace-pre-wrap text-sm leading-relaxed text-slate-700">{lead.message}</p>
+            {lead.subject && (
+              <p className="font-semibold text-slate-900">{lead.subject}</p>
+            )}
+            <p className="mt-1 whitespace-pre-wrap text-sm leading-relaxed text-slate-700">
+              {lead.message}
+            </p>
           </div>
         )}
       </section>
 
-      {lead.source === "dat-study-plan" && <StudyPlanLeadCard leadId={lead.id} />}
+      {lead.source === "dat-study-plan" && (
+        <StudyPlanLeadCard leadId={lead.id} />
+      )}
 
       {/* Edit */}
       <section className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
