@@ -96,47 +96,64 @@ export const instagramUrl = (handle: string) =>
     ? `https://instagram.com/${handle.replace(/^@/, "").replace(/\/+$/, "")}`
     : "";
 
-/** Message templates from the outreach kit, filled in for one target. */
+export const OUTREACH_INSTAGRAM = "https://www.instagram.com/futuredentalprep/";
+
+/** Message templates for one target: dentists + 1-on-1 tutoring first, free club website as the extra. */
 export function outreachMessages(
-  t: Pick<OutreachTarget, "name" | "organization" | "discount_code">,
+  t: Pick<OutreachTarget, "name" | "organization" | "discount_code" | "contact_name">,
 ) {
   const club = displayName(t);
   const code = t.discount_code || "[CODE]";
-  const dm = `Hi! I'm with Future Dental Prep (futuredentalprep.com). We're a team of dentists and dental students who help pre-dents with the DAT and dental school applications.
+  const hi = t.contact_name ? `Hi ${t.contact_name.trim().split(/\s+/)[0]},` : `Hi ${club} team,`;
 
-We'd love to support ${club} members with:
-• ${DISCOUNT_PERCENT}% off DAT tutoring and application help (personal statement, secondaries, interview prep) with the code ${code}
-• Free tools for your resources page: a secondaries guide for 50+ dental schools, a DAT score calculator and an AADSAS GPA calculator
+  const emailSubject = `1-on-1 DAT tutoring + a free website for ${club}`;
+  const emailBody = `${hi}
 
-Would your officer team be open to sharing these with your members? Happy to send more details!`;
+I'm reaching out from Future Dental Prep, a team of dentists and current dental students at Penn, UConn and Case Western. We'd love to partner with ${club}: discounted 1-on-1 tutoring for your members, and a free website for your club.
 
-  const emailSubject = `Free resources + member discount for ${club}`;
-  const emailBody = `Hi ${club} team,
+We offer 1-on-1 DAT tutoring and one-on-one help with dental school applications: personal statements, secondaries and interviews. Every student works directly with their own tutor, someone who took the DAT and got into dental school recently.
 
-I'm from Future Dental Prep (https://futuredentalprep.com). We're a team of dentists and dental students who help pre-dental students with the DAT and dental school applications.
+Our tutors also include Dr. Todd Chastain, DMD, a practicing dentist and faculty member at UAB School of Dentistry, with 10+ years of tutoring experience.
+https://futuredentalprep.com/about
 
-We'd love to support your members with:
+What ${club} gets:
+- ${DISCOUNT_PERCENT}% off 1-on-1 tutoring and application help with code ${code}
+- A free club website (officers, events, join form, resources), built by us and handed over at no cost
+- Free tools for members: DAT Score Calculator (https://futuredentalprep.com/dat-score-calculator) and AADSAS GPA Calculator (https://futuredentalprep.com/aadsas-gpa-calculator)
 
-An exclusive member discount
-${DISCOUNT_PERCENT}% off DAT tutoring and application help (personal statement, secondaries, interview prep) with the code ${code}
+In return, we'd just ask you to list us as a club partner and share the code with members once a semester. No cost, no contract.
 
-Free resources for your members or resources page
-- Dental school secondary questions guide (50+ schools): https://futuredentalprep.com/secondaries
-- DAT score calculator (new 200–600 scale): https://futuredentalprep.com/dat-score-calculator
-- AADSAS GPA calculator: https://futuredentalprep.com/aadsas-gpa-calculator
-- Free DAT study plan generator: https://futuredentalprep.com/dat-study-plan-generator
+Would you be open to partnering? A simple "yes" is enough, and I'll send the details.
 
-If it's helpful, we'd appreciate it if you could share these with your members or add them to your resources page.
-
-Thank you, and good luck to your members this cycle!
-
+Best,
 Future Dental Prep
-https://futuredentalprep.com
-futuredentistpreparation@gmail.com`;
+Website: https://futuredentalprep.com
+Instagram: @futuredentalprep (${OUTREACH_INSTAGRAM})`;
 
-  const followUp = `Hi ${club} team, just following up on my note last week. Happy to send the member discount code (${code}) and our free secondaries guide and DAT calculator for your members whenever it's useful. Thanks!`;
+  const followUp = `${hi}
 
-  return { dm, emailSubject, emailBody, followUp };
+Following up on my note. We'd still love to offer ${club} members ${DISCOUNT_PERCENT}% off 1-on-1 DAT tutoring and application help, and build your club a free website.
+https://futuredentalprep.com/private-dat-tutoring
+
+You can also see what we share on Instagram: ${OUTREACH_INSTAGRAM}
+
+Would you be open to it?
+
+Best,
+Future Dental Prep`;
+
+  const dm = `Hi! We're Future Dental Prep (@futuredentalprep), a team of dentists and dental students at Penn, UConn and Case Western offering 1-on-1 DAT tutoring and dental school application help.
+
+We'd love to partner with ${club}:
+• ${DISCOUNT_PERCENT}% off 1-on-1 tutoring for your members with code ${code}
+• A free website for your club, built by us at no cost
+• Free tools: DAT score calculator and AADSAS GPA calculator (futuredentalprep.com)
+
+All we'd ask is to be listed as a club partner and to share the code once a semester. Would your officer team be open to it?`;
+
+  const dmFollowUp = `Hi! Just following up. We'd still love to give ${club} members ${DISCOUNT_PERCENT}% off 1-on-1 DAT tutoring and build your club a free website. Would your officers be open to a quick chat?`;
+
+  return { dm, dmFollowUp, emailSubject, emailBody, followUp };
 }
 
 /** Gmail account outreach emails go out from (Gmail opens in this account if you are signed in to it). */

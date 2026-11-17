@@ -63,6 +63,7 @@ type MsgTarget = Pick<
   | "name"
   | "organization"
   | "discount_code"
+  | "contact_name"
   | "email"
   | "instagram"
   | "status"
@@ -134,7 +135,8 @@ export function MessageButtons({
       </div>
     );
 
-  const text = followUp ? m.followUp : m.dm;
+  // Copy / DM text: the short Instagram version (the email has its own Gmail link).
+  const text = followUp ? m.dmFollowUp : m.dm;
   async function copyText() {
     try {
       await navigator.clipboard.writeText(text);
@@ -241,7 +243,8 @@ export function MessagePreview({ t }: { t: MsgTarget }) {
     ["dm", "Instagram DM", m.dm],
     ["subject", "Email subject", m.emailSubject],
     ["email", "Email", m.emailBody],
-    ["follow", "Follow-up (7 days later)", m.followUp],
+    ["follow", "Email follow-up (7 days later)", m.followUp],
+    ["dmfollow", "DM follow-up (7 days later)", m.dmFollowUp],
   ];
   return (
     <div className="space-y-4">
@@ -441,7 +444,7 @@ export function OutreachForm({ t }: { t?: OutreachTarget }) {
         {text("email", "Email", "club@school.edu", "email")}
         {text("instagram", "Instagram", "@clubhandle")}
         {text("website", "Website / page", "https://…", "url")}
-        {text("discount_code", "Discount code", "UCSC10")}
+        {text("discount_code", "Discount code", "Leave empty to create one")}
         {text("link_url", "Our link lives at", "https://…/resources", "url")}
         {text("last_contacted_on", "Last message sent", undefined, "date")}
         {text("next_follow_up_on", "Next follow-up", undefined, "date")}

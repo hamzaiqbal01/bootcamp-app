@@ -33,7 +33,7 @@ export const organizationSchema = {
   },
   areaServed: ["US", "CA"],
   knowsAbout: ["Dental Admission Test (DAT)", "ADEA AADSAS", "Dental school admissions", "Dental school interviews"],
-  sameAs: [] as string[],
+  sameAs: ["https://www.instagram.com/futuredentalprep/"],
 };
 
 export const websiteSchema = {

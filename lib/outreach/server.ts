@@ -40,6 +40,52 @@ const dedupeKey = (organization: string, name: string) =>
 
 export const isoDate = (ms: number) => new Date(ms).toISOString().slice(0, 10);
 
+const STOP_WORDS = new Set(["of", "the", "and", "at", "for", "in", "a", "an", "&"]);
+// No 0/O or 1/I so a code read out loud or typed from a screenshot can't be mixed up.
+const CODE_CHARS = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+
+/**
+ * "UCLA" -> "UCLA", "UC Santa Cruz" -> "UCSC", "Texas A&M University" -> "TAMU",
+ * "University of Michigan" -> "UM", "" -> "FDP". Abbreviations stay whole. Letters only, max 6.
+ */
+function codePrefix(organization: string, name: string) {
+  const source = (organization || name).replace(/[^A-Za-z\s&]/g, " ").trim();
+  const words = source
+    .split(/\s+/)
+    .filter((w) => w && !STOP_WORDS.has(w.toLowerCase()))
+    .map((w) => w.replace(/&/g, ""))
+    .filter(Boolean);
+  if (!words.length) return "FDP";
+  const isAbbr = (w: string) => w.length <= 4 && w === w.toUpperCase();
+  const prefix =
+    words.length === 1 ? words[0] : words.map((w) => (isAbbr(w) ? w : w[0])).join("");
+  return prefix.toUpperCase().slice(0, 6);
+}
+
+/** A member discount code like "UCLA-7KQ", unique among `taken` (which it updates). */
+function newDiscountCode(organization: string, name: string, taken: Set<string>) {
+  const prefix = codePrefix(organization, name);
+  for (;;) {
+    const bytes = crypto.getRandomValues(new Uint8Array(3));
+    const tail = [...bytes].map((b) => CODE_CHARS[b % CODE_CHARS.length]).join("");
+    const code = `${prefix}-${tail}`;
+    if (!taken.has(code)) {
+      taken.add(code);
+      return code;
+    }
+  }
+}
+
+async function takenCodes(): Promise<Set<string>> {
+  const { data, error } = await getSupabase()
+    .from(TABLE)
+    .select("discount_code")
+    .neq("discount_code", "")
+    .limit(10000);
+  if (error) throw new Error(error.message);
+  return new Set((data ?? []).map((r) => String(r.discount_code).toUpperCase()));
+}
+
 /** True when the table exists. False means supabase/outreach.sql has not been run yet. */
 export async function outreachReady(): Promise<boolean> {
   // A plain select (not head: true) so a missing table returns a real error message.
@@ -76,6 +122,11 @@ export async function getOutreach(id: string): Promise<OutreachTarget | null> {
 }
 
 export async function createOutreach(input: OutreachInput): Promise<string> {
+  if (!input.discount_code)
+    input = {
+      ...input,
+      discount_code: newDiscountCode(input.organization, input.name, await takenCodes()),
+    };
   const { data, error } = await getSupabase()
     .from(TABLE)
     .insert({ ...input, dedupe_key: dedupeKey(input.organization, input.name) })
@@ -94,6 +145,13 @@ export async function updateOutreach(
   update: Partial<OutreachInput>,
 ): Promise<void> {
   const patch: Record<string, unknown> = { ...update };
+  // Clearing the code in the edit form gives the target a fresh one instead of none.
+  if (update.discount_code === "")
+    patch.discount_code = newDiscountCode(
+      update.organization ?? "",
+      update.name ?? "",
+      await takenCodes(),
+    );
   if (update.organization !== undefined && update.name !== undefined)
     patch.dedupe_key = dedupeKey(update.organization, update.name);
   const { error } = await getSupabase().from(TABLE).update(patch).eq("id", id);
@@ -228,6 +286,7 @@ export async function importOutreachCsv(
     );
 
   let skipped = 0;
+  const taken = await takenCodes();
   const byKey = new Map<string, Record<string, unknown>>();
   for (const cells of table.slice(1)) {
     const v: Partial<Record<keyof OutreachInput, string>> = {};
@@ -255,7 +314,9 @@ export async function importOutreachCsv(
       email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.email ?? "") ? v.email! : "",
       instagram: v.instagram ?? "",
       website: v.website ?? "",
-      discount_code: (v.discount_code ?? "").toUpperCase(),
+      discount_code:
+        (v.discount_code ?? "").toUpperCase() ||
+        newDiscountCode(v.organization ?? "", v.name ?? "", taken),
       notes: v.notes ?? "",
       dedupe_key: dedupeKey(v.organization ?? "", v.name ?? ""),
     };
