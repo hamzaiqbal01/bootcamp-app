@@ -119,7 +119,10 @@ https://futuredentalprep.com/about
 What ${club} gets:
 - ${DISCOUNT_PERCENT}% off 1-on-1 tutoring and application help with code ${code}
 - A free club website (officers, events, join form, resources), built by us and handed over at no cost
-- Free tools for members: DAT Score Calculator (https://futuredentalprep.com/dat-score-calculator) and AADSAS GPA Calculator (https://futuredentalprep.com/aadsas-gpa-calculator)
+- Free resources for members:
+  Secondary essay prompts for 50+ dental schools: https://futuredentalprep.com/secondaries
+  DAT Score Calculator: https://futuredentalprep.com/dat-score-calculator
+  AADSAS GPA Calculator: https://futuredentalprep.com/aadsas-gpa-calculator
 
 In return, we'd just ask you to list us as a club partner and share the code with members once a semester. No cost, no contract.
 
@@ -147,7 +150,7 @@ Future Dental Prep`;
 We'd love to partner with ${club}:
 • ${DISCOUNT_PERCENT}% off 1-on-1 tutoring for your members with code ${code}
 • A free website for your club, built by us at no cost
-• Free tools: DAT score calculator and AADSAS GPA calculator (futuredentalprep.com)
+• Free resources: secondary prompts for 50+ dental schools, a DAT score calculator and an AADSAS GPA calculator (futuredentalprep.com)
 
 All we'd ask is to be listed as a club partner and to share the code once a semester. Would your officer team be open to it?`;
 
