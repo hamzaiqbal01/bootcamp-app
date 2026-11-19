@@ -98,11 +98,32 @@ export const instagramUrl = (handle: string) =>
 
 export const OUTREACH_INSTAGRAM = "https://www.instagram.com/futuredentalprep/";
 
+/**
+ * The club's name as it should read in a message. When the club name already carries the school
+ * ("UNM Pre-Dental Society", "Pre-Dental Society at ASU"), the school isn't repeated in front of it.
+ */
+export function messageClubName(t: Pick<OutreachTarget, "name" | "organization">) {
+  const name = t.name.trim();
+  const org = t.organization.trim();
+  if (!name || !org) return displayName(t);
+  const words = name.split(/\s+/);
+  const hasShortForm = words.some(
+    (w) => /^[A-Z][A-Za-z&]{1,5}$/.test(w) && w === w.toUpperCase(),
+  );
+  // "Columbia University" + "Columbia Pre-Dental Society", "University of Connecticut" + "UConn …".
+  const first = words[0].toLowerCase().replace(/[^a-z]/g, "");
+  const orgText = org.toLowerCase();
+  const startsWithSchool =
+    first.length > 2 && (orgText.split(/[^a-z]+/).includes(first) || /^[a-z]+conn$/.test(first));
+  if (hasShortForm || startsWithSchool || name.toLowerCase().includes(orgText)) return name;
+  return `${org} ${name}`;
+}
+
 /** Message templates for one target: dentists + 1-on-1 tutoring first, free club website as the extra. */
 export function outreachMessages(
   t: Pick<OutreachTarget, "name" | "organization" | "discount_code" | "contact_name">,
 ) {
-  const club = displayName(t);
+  const club = messageClubName(t);
   const code = t.discount_code || "[CODE]";
   const hi = t.contact_name ? `Hi ${t.contact_name.trim().split(/\s+/)[0]},` : `Hi ${club} team,`;
 
@@ -145,16 +166,30 @@ Would you be open to it?
 Best,
 Future Dental Prep`;
 
-  const dm = `Hi! We're Future Dental Prep (@futuredentalprep), a team of dentists and dental students at Penn, UConn and Case Western offering 1-on-1 DAT tutoring and dental school application help.
+  const dm = `Hi ${club} team! 👋
 
-We'd love to partner with ${club}:
-• ${DISCOUNT_PERCENT}% off 1-on-1 tutoring for your members with code ${code}
-• A free website for your club, built by us at no cost
-• Free resources: secondary prompts for 50+ dental schools, a DAT score calculator and an AADSAS GPA calculator (futuredentalprep.com)
+We're Future Dental Prep, a team of dentists and current dental students at Penn, UConn and Case Western. We offer 1-on-1 DAT tutoring and one-on-one help with dental school applications.
 
-All we'd ask is to be listed as a club partner and to share the code once a semester. Would your officer team be open to it?`;
+We'd love to partner with your club:
+🦷 ${DISCOUNT_PERCENT}% off 1-on-1 tutoring for your members, code ${code}
+💻 A free website for your club, built by us at no cost
+📚 Free resources: secondary prompts for 50+ dental schools, a DAT score calculator and a GPA calculator (futuredentalprep.com)
 
-  const dmFollowUp = `Hi! Just following up. We'd still love to give ${club} members ${DISCOUNT_PERCENT}% off 1-on-1 DAT tutoring and build your club a free website. Would your officers be open to a quick chat?`;
+All we'd ask is to be listed as a club partner and to share the code with members once a semester. No cost, no contract.
+
+Would your officers be open to it?`;
+
+  // Self-contained, so it reads fine on Instagram even when the first message went out by email.
+  const dmFollowUp = `Hi ${club} team! 👋
+
+We reached out to your officers last week and wanted to make sure this got to you. We're Future Dental Prep, a team of dentists and dental students at Penn, UConn and Case Western offering 1-on-1 DAT tutoring and application help.
+
+For your members:
+🦷 ${DISCOUNT_PERCENT}% off 1-on-1 tutoring, code ${code}
+💻 A free website for your club, at no cost
+📚 Free secondary prompts for 50+ dental schools (futuredentalprep.com/secondaries)
+
+Would you be open to partnering? A quick "yes" is enough and we'll send the details. 😊`;
 
   // Formatted (HTML) versions of the two emails, pasted into Gmail so bold text and links survive.
   const e = escapeHtml;
