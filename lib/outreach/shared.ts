@@ -156,7 +156,67 @@ All we'd ask is to be listed as a club partner and to share the code once a seme
 
   const dmFollowUp = `Hi! Just following up. We'd still love to give ${club} members ${DISCOUNT_PERCENT}% off 1-on-1 DAT tutoring and build your club a free website. Would your officers be open to a quick chat?`;
 
-  return { dm, dmFollowUp, emailSubject, emailBody, followUp };
+  // Formatted (HTML) versions of the two emails, pasted into Gmail so bold text and links survive.
+  const e = escapeHtml;
+  const link = (url: string, label = url) => `<a href="${url}">${e(label)}</a>`;
+  const hiHtml = e(hi);
+  const clubHtml = e(club);
+  const emailHtml = wrapHtml(`<p>${hiHtml}</p>
+<p>I'm reaching out from <b>Future Dental Prep</b>, a team of dentists and current dental students at Penn, UConn and Case Western. We'd love to partner with ${clubHtml}: <b>discounted 1-on-1 tutoring</b> for your members, and <b>a free website</b> for your club.</p>
+<p><b><i>We offer 1-on-1 DAT tutoring and one-on-one help with dental school applications: personal statements, secondaries and interviews. Every student works directly with their own tutor, someone who took the DAT and got into dental school recently.</i></b></p>
+<p>Our tutors also include <b>Dr. Todd Chastain, DMD</b>, a practicing dentist and faculty member at UAB School of Dentistry, with 10+ years of tutoring experience. ${link("https://futuredentalprep.com/about", "Meet our team")}</p>
+<p><b>What ${clubHtml} gets:</b></p>
+<ul>
+<li><b>${DISCOUNT_PERCENT}% off</b> 1-on-1 tutoring and application help with code <b>${e(code)}</b></li>
+<li><b>A free club website</b> (officers, events, join form, resources), built by us and handed over at no cost</li>
+<li><b>Free resources for members:</b>
+<ul>
+<li>${link("https://futuredentalprep.com/secondaries", "Secondary essay prompts for 50+ dental schools")}</li>
+<li>${link("https://futuredentalprep.com/dat-score-calculator", "DAT Score Calculator")}</li>
+<li>${link("https://futuredentalprep.com/aadsas-gpa-calculator", "AADSAS GPA Calculator")}</li>
+</ul></li>
+</ul>
+<p>In return, we'd just ask you to list us as a club partner and share the code with members once a semester. <b>No cost, no contract.</b></p>
+<p>Would you be open to partnering? A simple "yes" is enough, and I'll send the details.</p>
+<p>Best,<br><b>Future Dental Prep</b><br>Website: ${link("https://futuredentalprep.com", "futuredentalprep.com")}<br>Instagram: ${link(OUTREACH_INSTAGRAM, "@futuredentalprep")}</p>`);
+
+  const followUpHtml = wrapHtml(`<p>${hiHtml}</p>
+<p>Following up on my note. We'd still love to offer ${clubHtml} members <b>${DISCOUNT_PERCENT}% off 1-on-1 DAT tutoring</b> and application help, and build your club <b>a free website</b>.</p>
+<p>${link("https://futuredentalprep.com/private-dat-tutoring", "See how our 1-on-1 DAT tutoring works")}<br>You can also see what we share on Instagram: ${link(OUTREACH_INSTAGRAM, "@futuredentalprep")}</p>
+<p>Would you be open to it?</p>
+<p>Best,<br><b>Future Dental Prep</b></p>`);
+
+  return { dm, dmFollowUp, emailSubject, emailBody, followUp, emailHtml, followUpHtml };
+}
+
+function escapeHtml(s: string) {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+const wrapHtml = (inner: string) =>
+  `<div style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 1.5; color: #222;">${inner}</div>`;
+
+/**
+ * Puts a formatted email on the clipboard (HTML, with a plain-text fallback) for pasting into Gmail.
+ * Returns false when the browser blocks it, so the caller can fall back to a plain prefilled email.
+ */
+export async function copyRichText(html: string, plain: string): Promise<boolean> {
+  try {
+    if (typeof ClipboardItem === "undefined" || !navigator.clipboard?.write) return false;
+    await navigator.clipboard.write([
+      new ClipboardItem({
+        "text/html": new Blob([html], { type: "text/html" }),
+        "text/plain": new Blob([plain], { type: "text/plain" }),
+      }),
+    ]);
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 /** Gmail account outreach emails go out from (Gmail opens in this account if you are signed in to it). */

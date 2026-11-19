@@ -12,6 +12,7 @@ import {
   updateOutreachAction,
 } from "@/app/admin/outreach-actions";
 import {
+  copyRichText,
   gmailComposeUrl,
   instagramUrl,
   OUTREACH_KIND_LABELS,
@@ -94,6 +95,7 @@ export function MessageButtons({
   size?: "sm" | "md";
 }) {
   const [undo, setUndo] = useState<Snapshot | null>(null);
+  const [pasteHint, setPasteHint] = useState(false);
   const [pending, start] = useTransition();
   const m = outreachMessages(t);
   const followUp = t.status === "contacted" || t.status === "followed-up";
@@ -144,13 +146,25 @@ export function MessageButtons({
       window.prompt("Copy this message:", text);
     }
   }
-  const gmail = t.email
-    ? gmailComposeUrl(
-        t.email,
-        followUp ? `Re: ${m.emailSubject}` : m.emailSubject,
-        followUp ? m.followUp : m.emailBody,
-      )
-    : "";
+  const subject = followUp ? `Re: ${m.emailSubject}` : m.emailSubject;
+  const plainBody = followUp ? m.followUp : m.emailBody;
+  // Plain prefilled email: the link target, and the fallback when the clipboard is blocked.
+  const gmail = t.email ? gmailComposeUrl(t.email, subject, plainBody) : "";
+
+  /** Copies the formatted email, then opens Gmail with To + Subject filled and an empty body to paste into. */
+  async function openFormattedEmail() {
+    const copied = await copyRichText(
+      followUp ? m.followUpHtml : m.emailHtml,
+      plainBody,
+    );
+    window.open(
+      copied ? gmailComposeUrl(t.email, subject, "") : gmail,
+      "_blank",
+      "noopener,noreferrer",
+    );
+    setPasteHint(copied);
+    logSent();
+  }
   const main = `${btn} ${pad} ${followUp ? "bg-amber-500 hover:bg-amber-600" : "bg-[#1F5BD8] hover:bg-[#1a4fbd]"} text-white`;
 
   const note = followUp
@@ -169,8 +183,11 @@ export function MessageButtons({
             href={gmail}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={logSent}
-            title="Opens Gmail with the email written. Press Send in Gmail."
+            onClick={(ev) => {
+              ev.preventDefault();
+              void openFormattedEmail();
+            }}
+            title="Copies the formatted email and opens Gmail. Click in the message and press Ctrl+V, then Send."
             className={main}
           >
             ✉ {followUp ? "Email follow-up" : "Email"}
@@ -218,6 +235,12 @@ export function MessageButtons({
           </a>
         ) : null}
       </div>
+      {pasteHint ? (
+        <span className="rounded-md bg-emerald-50 px-2 py-1 text-[11px] font-semibold text-emerald-800">
+          Formatted email copied. In Gmail, click in the message and press
+          Ctrl+V.
+        </span>
+      ) : null}
       {note || undoLink ? (
         <span className="flex items-center gap-2 text-[11px] text-slate-400">
           {note}
